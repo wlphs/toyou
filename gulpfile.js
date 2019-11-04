@@ -77,13 +77,12 @@ var dir  = {
   template        : 'sprite.support_1x.mustache',
   templateMb      : 'sprite.support_2x.mustache',
   dist_html       : pRoot + "html/"    ,                               // 생성 HTML 
-  dist_purehtml   : pRoot + "resources/poc/"     + 'html/',              // 생성 HTML 
-  dist_scripts    : pRoot + "resources/poc/"     + 'js/',              // inc => resources 생성 스크립트
-  dist_style      : pRoot + "resources/poc/"     + 'css/',             // inc => resources 생성 스타일
-  dist_images     : pRoot + "resources/poc/"     + 'images/',          // inc => resources 생성 이미지
+  dist_purehtml   : pRoot + "resources/"     + 'html/',              // 생성 HTML 
+  dist_scripts    : pRoot + "resources/"     + 'js/',              // inc => resources 생성 스크립트
+  dist_style      : pRoot + "resources/"     + 'css/',             // inc => resources 생성 스타일
+  dist_images     : pRoot + "resources/"     + 'images/',          // inc => resources 생성 이미지
 
   dev_html        : pRoot + "dev_html/" ,                     // 개발 HTML
-  dev_purehtml        : pRoot + "dev_purehtml/" ,                     // 개발 HTML
   dev_style       : pRoot + "dev_inc/"  + 'scss/',            // 개발 스타일
   dev_scripts     : pRoot + "dev_inc/"  + 'js/',              // 개발 스크립트
   dev_images      : pRoot + "dev_inc/"  + 'images/',          // 개발 이미지 느려짐 사용자제
@@ -216,6 +215,10 @@ function scriptsMin() {
     .pipe(lineec())                               // 줄끝 검사
     .pipe(rename({extname: ".min.js"}))
     .pipe(gulp.dest(dir.dist_scripts))
+    .pipe(minifyCSS()) 
+    .pipe(lineec())
+    .pipe(rename({extname: ".min.css"}))    
+    .pipe(gulp.dest(dir.dist_style ))
 };
 
 // ---------------------------------
@@ -242,7 +245,7 @@ function watch() {
   gulp.watch( [dir.dev_scripts      + 'library/**/*'] , gulp.series(debugModeFn, gulp.parallel(jquery, libraryConcatCss, libraryConcatJs)) );
   gulp.watch( [dir.dev_imagesSp    + 'sprite/**/*'],  gulp.parallel(spriteimg));   /// spriteimg, iconfonts
   gulp.watch( [dir.dev_style       + '**/*.scss'] , styles);
-  gulp.watch( [dir.dev_scripts     + '*.js']      , gulp.series(scripts,scriptsMin));
+  gulp.watch( [dir.dev_scripts     + '*.js']      , gulp.series(scripts));
   gulp.watch( [dir.dev_html        + '**/*.html'] , fileincludes);
   gulp.watch( [dir.dist_scripts + '**/*.js', dir.dist_images + 'common/*.*', dir.dist_style + '**/*.css', dir.dev_html + '**/*.html'])
     .on('change', reload);
@@ -261,7 +264,7 @@ function browser(){
 /*
  *`gulp.series`와`gulp.parallel`을 사용하여 태스크가 직렬 또는 병렬로 실행
  */
-var base        = gulp.series( gulp.parallel(jquery, libraryConcatCss, libraryConcatJs), gulp.parallel(spriteimg) , scripts, gulp.parallel(styles, scriptsMin, fileincludes) );  /// spriteimg
+var base        = gulp.series( gulp.parallel(jquery, libraryConcatCss, libraryConcatJs), gulp.parallel(spriteimg) , scripts, gulp.parallel(styles,  fileincludes) );  /// spriteimg
 
 var debug       = gulp.series(debugModeFn, fileincludes);
 var build       = gulp.series(buildModeFn);
