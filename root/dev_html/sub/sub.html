@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<!-- header -->
+	@@include('../../dev_html/include/_head.html', {"title" : "SK Broadband Application"})
+	<!-- //header -->
+</head>
+
+<body class="pageclass">
+	<p class="accessibility" id="skipTop">
+		<a href="#container">본문 바로가기</a>
+		<a href="#gnb" class="js-gnb_btn">주메뉴 바로가기</a> 
+	</p>
+	<div class="wrapper">
+		<!-- header -->
+		<header id="header" class="header">
+			<div class="header_fixed_group border_bottom">
+				<div class="top_bar">
+					<div class="locations"> 
+						<div class="view_page"><h1 class="sub_title"><img src="/resources/poc/images/common/logo.png" alt="SK Broadband" class="logo"></h1></div>
+					</div>
+					<div class="top_left">
+						<!-- 
+						<span href="javascript:history.go(-1);" class="history_back"><span class="hide">이전페이지로 이동</span></a> 
+						-->
+						<a href="#gnb" class="btn_menu js-gnb_btn"><span class="hide">전체메뉴</span></a>
+					</div>
+					<div class="top_right">
+						<a href="#" class="btn_notice on"><span class="hide txt_off">알림이 없습니다.</span><span class="hide txt_on">알림이 있습니다.</span></a>
+					</div>
+				</div>
+			</div> 
+			@@include('../../dev_html/include/_gnb.html')
+		</header>
+		<!-- //header -->
+
+		<!-- container -->
+		<div id="container">
+			<div id="contents">
+				<h2 class="hide">서브 타이틀</h2>
+				<div class="cont_inner">
+					container > sub 
+				</div> 
+
+				<div class="cont_inner_bg mt15">
+					컨텐츠
+				</div>
+
+				<div class="cont_inner_full colorBGf mt15">
+					adfadfd
+				</div>
+
+				<div class="cont_inner mt40">
+					<h3 class="title">title</h3>
+					<div class="inner_box">
+						adfad
+					</div>
+				</div>
+
+				<div class="cont_inner mt40">
+					<h3 class="title">title</h3>
+					<div class="inner_box_full">
+						full content
+					</div>
+				</div>
+				
+				<!--자주찾는질문 //-->
+				<div class="cont_inner mt40 more_btn-box">
+					<h3 class="title">자주 찾는 질문  <em>Best 5</em></h3>
+					<div class="inner_box_full">
+						<div class="accordion-wrap noneline">
+							<ul class="accordion-list qna js-acc_qna">
+								<li>
+									<div class="header-area">
+										<a href="#none">[B tv] VOD가 뭐예요?</a>
+									</div>
+									<div class="con-area">
+										<p class="qna_cont">
+											SK브로드밴드 이용약관 동의문구가 들어갑니다. SK브로드밴드 이용약관 동의문구가 들어갑니다.
+										</p>
+									</div>
+								</li>
+								<li>
+									<div class="header-area">
+										<a href="#none">국가유공자 감면혜택이 궁금 합니다.</a>
+									</div>
+									<div class="con-area">
+										<p class="qna_cont">
+											SK브로드밴드 이용약관 동의문구가 들어갑니다. SK브로드밴드 이용약관 동의문구가 들어갑니다.SK브로드밴드 이용약관 동의문구가 들어갑니다.SK브로드밴드 이용약관 
+											동의문구가 들어갑니다.
+										</p>
+									</div>
+								</li>
+								<li>
+									<div class="header-area">
+										<a href="#none">해지 시에 신규 설치비를 돌려 받을 수 있나요?</a>
+									</div>
+									<div class="con-area">
+										<p class="qna_cont">
+											SK브로드밴드 이용약관 동의문구가 들어갑니다. SK브로드밴드 이용약관 동의문구가 들어갑니다.SK브로드밴드 이용약관 동의문구가 들어갑니다.SK브로드밴드 이용약관 
+											동의문구가 들어갑니다.
+										</p>
+									</div>
+								</li>
+								<li>
+									<div class="header-area">
+										<a href="#none">콘텐츠 검색방법을 알려주세요</a>
+									</div>
+									<div class="con-area">
+										<p class="qna_cont">
+											SK브로드밴드 이용약관 동의문구가 들어갑니다. SK브로드밴드 이용약관 동의문구가 들어갑니다.
+										</p>
+									</div>
+								</li>
+								<li>
+									<div class="header-area">
+										<a href="#none">[Btv 스마트] 리모컨을 아무리 눌러도 셋톱박스의 반응이 없습니다.</a>
+									</div>
+									<div class="con-area">
+										<p class="qna_cont">
+											SK브로드밴드 이용약관 동의문구가 들어갑니다. 
+										</p>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<a href="#none" class="btn_more" title="자주 찾는 질문 전체보기">전체보기</a>
+						<script>
+							$('.js-acc_qna').trpAccordionMenu('.header-area','.con-area','on')
+						</script>
+					</div>
+				</div>
+
+				<!-- 데이터없음 //-->
+				<div class="inner_box_full mt40">
+					<div class="no_data">
+						<span></span>
+						<p>월정액 구매내역이 없습니다.</p>
+					</div>
+				</div>
+					
+				<!-- 알려드립니다. //-->
+				<div class="cont_inner_full colorBGf mt40">
+					<div class="accordion-wrap noneline">
+						<ul class="accordion-list notice_img js-acc_noticeImg">
+							<li>
+								<div class="header-area">
+									<a href="#none">알려드립니다.</a>
+								</div>
+								<div class="con-area">
+									요금 1% 절약방법을 알려드려요. 
+
+									<ul class="mark_dot-list mt15">
+										<li>
+											은행 자동이체를 신청하고 요금안내서를 이메일 또는 모바일 앱으로 받으면 이용요금의 1%를 할인 받을 수 있습니다.
+											<a href="#none" class="btn_more">계좌이체 신청하기</a>
+										</li>
+										<li>
+											매달 15~25일 사이에는 요금 관련 문의가 많습니다. <br/>
+											고객센터 연결이 지연될 수 있으니 홈페이지 > 1:1 상담 이용해 주세요.
+											<a href="#none" class="btn_more">1:1 상담 바로 가기</a>
+										</li>
+									</ul>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<script>
+						$('.js-acc_noticeImg').trpAccordionMenu('.header-area','.con-area','on')
+					</script>
+				</div>
+
+				
+				<!--공지사항 //-->
+				<div class="cont_inner more_btn-box mt40">
+					<h3 class="title">공지사항</h3>
+					<div class="inner_box_full">
+						<div class="accordion-wrap noneline">
+							<ul class="accordion-list notice js-acc_notice">
+								<li>
+									<a href="#none">개인정보 처리방침 변경사항 공지</a>
+								</li>
+								<li>
+									<a href="#none">B tv, 레드슈즈 소장용 예약 구매 이벤트 당첨자 발표 안내</a>
+								</li>
+							</ul>
+						</div>
+						<a href="#none" class="btn_more" title="공지사항 전체보기">전체보기</a>
+					</div>
+				</div>
+
+				
+				<div class="cont_inner_full">
+					<div class="cont_inner pb15 pt15">
+						<span class="rel">
+							<input id="checkbox0" type="checkbox" name="" class="chk js-all_check">
+							<label for="checkbox0" class="chk ft_b">전체 약관에 동의합니다.</label>
+						</span>
+					</div>
+					<div class="accordion-wrap">
+						<ul class="accordion-list js-acc">
+							<li>
+								<div class="header-area">
+									<span class="rel">
+										<input id="checkbox1" type="checkbox" name="" class="chk js-chk_item">
+										<label for="checkbox1" class="chk">개인정보 수집/이용동의<span class="colorP">(필수)</span></label>
+									</span>
+									<button class="acc_btn">
+										<span class="hide">개인정보 수집/이용 내용 보기</span>
+									</button>
+								</div>
+								<div class="con-area">
+									rtest
+								</div>
+							</li>
+							<li>
+								<div class="header-area">
+									<span class="rel">
+										<input id="checkbox2" type="checkbox" name="" class="chk js-chk_item">
+										<label for="checkbox2" class="chk">고유식별정보 처리 동의<span class="colorP">(필수)</span></label>
+									</span> 
+									<button class="acc_btn">
+										<span class="hide">고유식별정보 처리 내용 보기</span>
+									</button>
+								</div>
+								<div class="con-area">
+									<p class="policy_cont">
+											개인정보 수집 이용 동의 문구가 들어갑니다. 개인정보 수집
+											이용 동의 문구가 들어갑니다. 
+									</p>
+								</div>
+							</li>
+							<li> 
+								<div class="header-area">
+									<span class="rel">
+										<input id="checkbox3" type="checkbox" name="" class="chk js-chk_item">
+										<label for="checkbox3" class="chk">통신사 이용 약관 동의<span class="colorP">(필수)</span></label>
+									</span>
+									<button class="acc_btn">
+										<span class="hide">통신사 이용 약관 내용 보기</span>
+									</button>
+								</div>
+								<div class="con-area">
+									rtest 
+								</div>
+							</li> 
+							<li> 
+								<div class="header-area">
+									<span class="rel">
+										<input id="checkbox4" type="checkbox" name="" class="chk js-chk_item">
+										<label for="checkbox4" class="chk">서비스 이용 약관 동의<span class="colorP">(필수)</span></label>
+									</span>
+									<button class="acc_btn">
+										<span class="hide">서비스 이용 약관 내용 보기</span>
+									</button>
+								</div>
+								<div class="con-area">
+									rtest 
+								</div>
+							</li> 
+						</ul>
+					</div>
+				</div>
+
+				<script>
+					$('.js-all_check').allCheckbox('.js-chk_item');
+					$('.js-acc').trpAccordionMenu('.acc_btn','.con-area','on')
+				</script>
+			</div>
+		</div>
+
+		
+		@@include('../../dev_html/include/_footer.html')
+		<!-- //container -->
+	</div>
+</body>
+</html>

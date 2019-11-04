@@ -1,0 +1,16 @@
+.main {
+    section.main_card {border:1px solid #000; padding:15px; background:#fff; border-radius: 15px;
+        margin-bottom:30px;
+        .card_box { padding:15px;}
+        .card_edit_menu { margin-bottom:10px;
+            button { border:1px solid #000; padding:5px 10px;}
+        }
+    }
+}
+
+.sortable-drag { opacity: 0.6 !important;}
+
+
+.notice_inner { position: relative;
+
+}

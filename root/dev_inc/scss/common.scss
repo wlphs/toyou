@@ -1,0 +1,40 @@
+@charset "utf-8";
+/* common.scss */
+@import "common/variables";
+@import "common/fonts"; 
+
+// nomalize
+@import "common/normalize";
+
+// library iconfont
+//@import "lib/iconfont/iconfont";
+
+// library sprite
+@import "lib/spritesmith/sprite_mixins";
+@import "lib/spritesmith/sp_form";
+@import "lib/spritesmith/sp_icons";
+
+//@import "lib/iconfont/sp_iconfont";
+
+// library
+@import "lib/mixin";
+
+// import common style
+@import "common/base_mobile";
+@import "common/style_common";
+@import "common/ui_common";
+@import "common/form"; 
+@import "common/#header";
+@import "common/#footer";
+
+// page import 
+@import "import/common/login";
+@import "import/common/main";
+@import "import/customer/inquiry";
+@import "import/mypage/bill";
+
+
+// product 
+@import "import/product/prdt_common"; 
+@import "import/product/prdt_main"; 
+@import "import/product/prdt_view"; 

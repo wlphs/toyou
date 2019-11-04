@@ -1,0 +1,43 @@
+//  상품 메인 탑
+.prdt_sub_top{position:relative; width:100%; height:252px; background:#ff8700;
+    .ptdt_sub_title{width:100%; position:absolute; left:0; top:40px; color:#fff; text-align:center;font-size:23px;line-height:25px;}
+}
+
+// 상품 메인 슬라이드 컨테이너
+.ptdt_sub{margin-top:-145px;}     
+
+// 상품 메인 아코디언
+.prdt_main_acc_wrap{
+    border:0;
+    .prdt_main_acc{
+        >li{border-radius: 10px; margin-top:20px; overflow: hidden; transition: .2s padding-bottom;}
+        >li:first-child{margin-top:0;}
+        .header-area{
+            position: relative;  border:0; padding: 25px 28px; background:#fff; 
+            .tit{font-weight:bold; font-size:20px;}
+            .acc_btn{top: 19px; right:5px;}
+        }
+        .con-area{
+            position:relative; padding:0; border: 0; background:#fff;
+            .price_list{
+                
+                > li{border-top:2px solid #eeeeee; display:none;
+                    a{padding:20px 0;}
+                    // a{padding:25px 28px; display:block; display:flex; font-size:20px;
+                    //     span{font-weight:bold; display:inline-block}
+                    //     .desc{width:65%;color:$colorS;}
+                    //     .price{width:35%; text-align:right;
+                    //         em{font-size:14px; vertical-align: bottom; padding:0 3px 2px 0;}
+                    //     }
+                    // }
+                }
+                > li.on{display:block;}
+             } 
+        }
+    }
+    .more_btn{
+        position:absolute; left:50%; margin-top:-10px;  width:100px; margin-left:-40px; background:#222222; color:#fff; padding:5px 10px; font-size:13px; border-radius:15px; display:none;
+    }
+    .more_btn:before{content:''; width:10px; height:6.5px; padding-right:5px; display:inline-block; @include sp_icons($arrow_bot);}
+}
+

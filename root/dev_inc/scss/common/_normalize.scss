@@ -1,0 +1,20 @@
+html, body { -webkit-text-size-adjust:none;  }  /*글자자동조절방지*/
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td { margin:0; padding:0; border:0;  }
+ul, li, ol { list-style:none;  }
+img, fieldset , video{ border:0;  vertical-align:top; }
+input, textarea, select { vertical-align:middle; resize:none; position:relative; -webkit-border-radius:0; border-radius:0; }	
+button { border:0 none; background:transparent; cursor:pointer; }		
+caption, legend, .hide  { position:absolute; top:0; left:0; width:0; height:0; font-size:0; line-height:0; overflow:hidden; text-indent:-9999px; }
+table { border-collapse:collapse; border-spacing:0; line-height:1.5}
+a:link, a:visited  { text-decoration:none; }
+a:active, a:hover, a:focus { text-decoration:none; }		
+ins{text-decoration:none}
+del{text-decoration:line-through}
+/* HTML5 display-role reset for older browsers   */	
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display:block; box-sizing: border-box; }
+blockquote, q { quotes:none; }
+blockquote:before, blockquote:after, q:before, q:after { content:''; content:none; }
+body, li, dt, dd, td, th, div, p, input, textarea,  button, option, samp,
+h1, h2, h3, h4, h5, h6, legend, figcaption { padding: 0; letter-spacing: -.05em;
+    font-family: $baseFT, dotum,"돋움",Arial, AppleGothic, Sans-serif; box-sizing: border-box; }
+a, span, i, em { font-family: inherit; color:#222; font-size: inherit; font-weight: inherit; line-height: inherit; font-style: normal;letter-spacing: -.05em}

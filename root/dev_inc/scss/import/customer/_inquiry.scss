@@ -1,0 +1,71 @@
+/* sub tab */
+.sub_tab_menu_wrap { position: relative; display: inline-block; width:100%; border-top:1px solid #e6e6e6; border-left:1px solid #e6e6e6; background:#e6e6e6;
+    ul {
+        li { display:inline-block; width: 33.33333333%; float:left; min-height: 52px; border:1px solid #e6e6e6; text-align: center; border-left:0px; border-top:0; background:#fff;
+            a { display:block; font-size: 14px; line-height: 52px; color:#222; }
+    
+            &.active {
+                a { position: relative; color:$colorS;  font-weight: 700;
+                    &:after { content:''; display:inline-block; position:absolute; left:-1px; right:-1px; bottom: -1px; top: -1px; border:1px solid $colorS;}
+                }
+            }
+        }
+    }
+
+    .hide_tab { display: none;}
+}
+
+.btn_down {  clear:both; display:block; font-size: 14px; line-height: 52px; color:#222;text-align: center; background: #fff; border:1px solid #e6e6e6; border-left: 0; border-top:0;
+    .icon_down { display:inline-block; position: relative;  padding-right: 20px; 
+        &:after { content: ""; display: inline-block; transition: .2s transform; transform :rotate(180deg); @include sp_icons($arrow_up_md); position:absolute; right:0; top: 50%; margin-top: -3px; }
+    }
+}
+
+//키워드검색
+.keyword { display:block; margin: 15px 18px 0 18px;
+    dt { font-size: 14px; font-weight: 700; padding-right: 13px; position: absolute; }
+    dd { font-size: 14px; margin-left: 45px; padding-left: 11px; position: relative;
+        &::before { content:''; position: absolute; left: 0; top:4px; display:inline-block; width:1px; height :11px; background: #222;}
+        a { display:inline-block; margin:0  8px 0 0; vertical-align: middle;
+        }
+    }
+}
+
+//고객센터전화걸기
+.customer_call { display:block; background:#222; border-radius: 25px;
+    a { display:block; line-height: 43px; text-align:center; color: #fff;
+        span { color: $colorS; margin-right: 5px; }
+    }
+}
+
+//서브메인 - 아이콘설명
+.img_type-guide { 
+    li { padding-left: 84px; margin-top: 25px; min-height: 64px;
+        a  { display:block; padding-top:5px;}
+        &:first-child { margin-top:0;}
+        dt {  font-size: 15px; font-weight: 700; position: relative; padding-right: 15px;  margin-bottom: 4px;
+            &:after { content:''; display:inline-block; margin-left: 10px; margin-top: -3px; vertical-align: middle;
+                @include sp_icons($arrow_more);}
+        }
+        dd { font-size: 13px; color:$colorL; }
+    }
+
+    //문의하기
+    &.inquiry {
+        >li {
+            &:nth-child(1) { background:url('/resources/poc/images/customer/img_customer_01.png') no-repeat left top; background-size: 64px 64px;}
+            &:nth-child(2) { background:url('/resources/poc/images/customer/img_customer_02.png') no-repeat left top; background-size: 64px 64px;
+                >a { padding-top: 12px;}
+            }
+        }
+    } 
+
+    //지점마트대리점찾기
+    &.shop {
+        >li {
+            &:nth-child(1) { background:url('/resources/poc/images/customer/img_customer_03.png') no-repeat left top; background-size: 64px 64px;}
+            &:nth-child(2) { background:url('/resources/poc/images/customer/img_customer_04.png') no-repeat left top; background-size: 64px 64px; }
+            &:nth-child(3) { background:url('/resources/poc/images/customer/img_customer_05.png') no-repeat left top; background-size: 64px 64px;}
+        }
+    }
+}

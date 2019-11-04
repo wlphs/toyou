@@ -1,0 +1,12 @@
+/* footer.scss */
+#footer{ 
+    .inner { min-width: $G-width; border-top:1px solid #cccccc; }
+    .footer-inner  { position: relative; height: 80px;}
+    .copyright { padding-top: 25px;}
+    .footer-btnset { position: absolute; top:20px; right: 0;
+        .btn, .select-box { display: inline-block; width: 133px; 
+            select { width: 133px; min-width: 133px;}
+        }
+    }
+
+}

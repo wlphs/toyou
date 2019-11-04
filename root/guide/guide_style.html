@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>Style guide</title>
+	<meta name="viewport" id="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,initial-scale=1.0">
+  <link rel="stylesheet" href="../resources/poc/css/library/csslibrary.min.css">
+  <link rel="stylesheet" href="../resources/poc/css/common.css">
+  <!--[if lt IE 9]>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" 	type="text/javascript" charset="utf-8"></script>
+  <![endif]-->
+  <script src="../resources/poc/js/library/jquery.min.js"></script>
+  <script src="../resources/poc/js/library/jquerylibrary.js"></script>
+  <script src="../resources/poc/js/common.js"></script>
+  
+  <style>
+			.guide.wrap { width: 1280px; margin:0 auto; background-color: #fff; }
+			.guide.wrap #guide_container { padding-top:0; } 
+			.guide_h1 { padding: 20px; font-size: 30px; text-align: center; color:black;}
+			.guide_h2 { background-color: #333; color: aliceblue; padding:7px 10px; height:40px; cursor: pointer; font-size: 20px; font-weight: bold; }
+			.guide_h2:hover:after { content: "scrolltop"; margin-left: 30px; font-size:13px; color: crimson; vertical-align: middle;}
+			.guide_h3 { background-color: #666; padding: 3px 20px; font-size: 16px; font-weight: bold;  color: aliceblue;}
+			.guide .item-inner { position: relative; margin-bottom: 20px; }
+			.guide .item-inner iframe #trp-debug{ display: none; }
+			.guide .item-inner samp {  }
+			.guide .item-inner .codelabel-btn{ position: absolute; top: 0; right: 0; width: 75px; height: 25px; opacity: 0.70; background-color: #000;  z-index: 1; }
+			.guide .item-inner .codelabel-btn.show { opacity: 0; }
+			.guide .item-inner pre  { display:none; position: relative; margin-top: 15px; min-height: 25px; border:1px solid #ccc; }    
+			.guide .item-inner code { display: block; }
+			.guide .item-inner code.html::before{ content: "[ HTML ]"; display: inline-block; padding: 2px 5px; position: absolute; top:0; right: 0;
+					font-family: Malgun Gothic; font-size: 15px; font-weight: bold; color:#fff; background-color: #ff8c88; border-radius: 0 0 5px 5px;  }
+			.guide .item-inner code.css::before{ content: "[ CSS ]"; display: inline-block; padding: 2px 5px; position: absolute; top:0; right: 0;
+					font-family: Malgun Gothic; font-size: 15px; font-weight: bold; color:#fff; background-color: #85d8d8; border-radius: 0 0 5px 5px;  }
+			.guide .item-inner code.js::before{ content: "[ JS ]"; display: inline-block; padding: 2px 5px; position: absolute; top:0; right: 0;
+					font-family: Malgun Gothic; font-size: 15px; font-weight: bold; color:#fff; background-color: #fab309; border-radius: 0 0 5px 5px;  }
+			.guide .item-inner code { font-family: verdana; font-size: 12px;  max-height: 300px; overflow-y: auto;  }
+			.guide .tab_guide-list { overflow: hidden; list-style-type:none; }
+			.guide .tab_guide-list li { float: left;  }
+			.guide .tab_guide-list li a { display: block; margin: 10px;padding: 7px 15px;font-weight: bold;color: #fff;background-color: #11a0d8;border: 0;border-radius: 5px;}
+			.guide #guide_footer { background-color: #333333; width: 100%;  min-width:1080px;}
+			.guide #guide_footer .footer-inner { position: relative; width: 1080px;  margin: 0 auto;  padding: 20px 30px; color:#ccc;  font-size: 11px; }
+			
+	
+	</style>
+  <link rel="stylesheet" href="./atom-one-light.min.css">
+  <!-- <script type="text/javascript" src="http://code.jquery.com/jquery-1.12.1.min.js" ></script> -->
+  <script src="./highlight.min.js"></script>
+  
+</head>
+
+<body>
+<div class="wrapper">
+	<div class="guide wrap">
+		<!-- header -->  
+		<div id="guide_header">
+			<h1 class="guide_h1">Style Guide</h1>
+			<ul class="tab_guide-list">
+				<li><a href="#typo">typo</a></li>
+				<li><a href="#title">title</a></li>
+				<li><a href="#textlist">text list</a></li>
+				<li><a href="#table">table</a></li>
+				<!--<li><a href="#font_icon">font_icon</a></li>-->
+			</ul>
+		</div>
+	<!-- //header -->  
+
+  
+     <!-- container -->  
+    <div id="guide_container">            
+        <div class="contents">  
+				
+
+            <div class="article" id="typo">
+                <h2 class="guide_h2">typo</h2>      
+                <div class="item-inner">
+                    <h3 class="guide_h3">- (.h1)  </h3>
+                    <!-- === tag === -->
+                    <h2 class="h1">로그인 타이틀 (23px/700/#222222)</h2>
+                    <!-- //=== tag === -->
+                </div>
+                <div class="item-inner">
+                    <h3 class="guide_h3">- (.h2) √</h3>
+                    <!-- === tag === -->
+                    <h3 class="h2">상단 타이틀 (18px/700/#222222)</h3>
+                    <!-- //=== tag === -->
+                </div>  
+                <div class="item-inner">
+                    <h3 class="guide_h3">- (.h3) </h3>
+                    <!-- === tag === -->
+                    <h4 class="h3">컨텐츠 타이틀 16(16px/700/#222222)</h4>
+                    <!-- //=== tag === -->
+                </div>
+                <div class="item-inner">
+                    <h3 class="guide_h3">- (.h4)√ </h3>
+                    <!-- === tag === -->
+                    <h5 class="h4">컨텐츠 타이틀 15(15px/700/#222222) </h5>
+                    <!-- //=== tag === -->
+                </div> 
+                <div class="item-inner">
+                    <h3 class="guide_h3">- (.h5) √</h3>
+                    <!-- === tag === -->
+                    <p class="h5">기본 컨텐츠 14 (14px/500/#222222)√</p>
+                    <!-- //=== tag === -->
+                </div> 
+                <div class="item-inner">
+                    <h3 class="guide_h3">- (.h6) √</h3>
+                    <!-- === tag === -->
+                    <p class="h6">기본 컨텐츠 13 (13px/500/#222222)</p>
+                    <!-- //=== tag === -->
+                </div> 
+                <div class="item-inner">
+                    <h3 class="guide_h3">- 주의(.text-notice [.colorE, colorL, colorD, colorS]) </h3>
+                    <!-- === tag === -->
+                    <span class="text-notice colorE">[필수]</span>
+					<span class="text-notice colorL">[주의]</span>
+					<span class="text-notice">※ 14세 미만은 회원가입이 제한됩니다.</span>
+					<span class="text-notice colorS">※ 14세 미만은 회원가입이 제한됩니다.</span>
+                    <!-- //=== tag === -->
+                </div> 
+
+            </div>
+
+            <div class="article" id="textlist">
+				<h2 class="guide_h2">text list </h2>
+				<h3 class="guide_h3">- .mark_dot-list </h3>
+                <div class="item-inner">
+					<samp class="sample js-source" data-sample="code">
+						<ul class="mark_dot-list">
+							<li>도트리스트  <br>
+									items<br>
+									items
+							</li>
+							<li>dot-list </li>
+							<li>dot-list </li>
+						</ul>
+					</samp>
+
+                </div>
+            </div>
+
+
+
+            <div class="article" id="table">
+                <h2 class="guide_h2">table</h2>				
+				<h3 class="guide_h3">- 폼 테이블 (.formTable)</h3>
+                <div class="item-inner">
+
+				</div> 
+
+
+
+            </div>
+
+
+
+        </div>           
+    </div>
+    <!-- //container -->         
+
+	</div>
+</div>
+
+
+<script>
+	$(".guide_h2").on("click", function (e) {
+		$('body,html').animate({
+			scrollTop: 0
+		}, 100);
+		return false;
+	})
+</script>
+
+</body>
+</html>

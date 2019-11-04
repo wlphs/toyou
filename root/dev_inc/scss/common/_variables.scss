@@ -1,0 +1,52 @@
+@charset "utf-8";
+
+/* _variables.scss */
+
+//root path
+//$G-path: '../';
+$G-width:      360px;  // 사이트 컨텐츠 크기
+$G-maxWidth:   1080px;  // 디자안 최대크기
+$G-wMobile    : 768px;  // 미디어쿼리 모바일
+$G-minWidth   : 320px;  // 최소 모바일 
+
+
+
+//img path
+$Gpath-img:  '../images/';
+
+//body color
+//$G-body-color: #2f2d2d;
+
+// Color 
+$colorMain: #E0002A;
+$colorSub : #EF8009;
+$colorBGd : #fdfdfd;
+$colorBGw : #f6f6f6;
+
+
+// fonts Name
+$baseFT  : "Noto Sans KR";     // NotoSansKR
+$subFT   : "Roboto";     // Roboto
+$colorB  : #222222;  // 강조 컬러 
+$colorD  : #4b4b4b;  // 기본 컬러 
+$colorL  : #666666;  // 저체도 컬러
+$colorA  : #888888;  // input:placeholder
+$colorP  : #E72928;  // 포인트 컬러 ( hover 009999)
+$colorS  : #f29027;  // 서브 컬러
+$colorE  : #0a0909;  // 에러 경고 
+
+
+// form Color
+$formH   : 43px    ;       // text, select 높이
+$formBG  : #fff    ;  // form bg
+$formBG_di: #fff    ;  // form bg disabled /// e6e6e6
+$lineC_d : #ccc;         // 라인 기본값
+$lineC_s : #3e73d1  ;    // 라인 성공
+$lineC_e : #dd4c5c ;     // 라인 경고 에러
+$lineC_f : #ccc  ;    // 라인 포커스 
+    
+
+// border
+$borderTop : 1px solid #ababab;
+$borderLine : 1px solid #e6e6e6;
+$borderBottom : 1px solid #e6e6e6;

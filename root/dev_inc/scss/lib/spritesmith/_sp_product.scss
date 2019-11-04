@@ -1,0 +1,27 @@
+// how to use : Use following mixins.
+// variable : [X-axis] [Y-axis] [offset_x] [offset_y] [width] [height] [total_width] [total_height] [image_url] [image_name] [folder_name]
+    $service_area: 0px 0px 0px 0px 384px 271px 384px 271px '../images/common/sp_product.png' 'service_area' 'sp_product';
+
+//ancestor
+    $sp_product-width: 384px;
+    $sp_product-height: 271px;
+    $sp_product-image: '../images/common/sp_product.png';
+    $sp_product-sprites: ($service_area, );
+    $sp_product_sprites_name: (service_area, );
+    $sp_product: (384px, 271px, '../images/common/sp_product.png', $sp_product-sprites, );
+
+//mixin
+
+        %sp_product {
+        background-image: url('../images/common/sp_product.png');
+        $sprite-background-size-x: 384px / 2;
+        $sprite-background-size-y: 271px / 2;
+        -webkit-background-size: $sprite-background-size-x $sprite-background-size-y;
+        background-size: $sprite-background-size-x $sprite-background-size-y;
+        }
+
+        @mixin sp_product($sprite) {
+        @extend %sp_product;
+        @include spriteSize($sprite);
+        @include spriteBackgroundPosition($sprite);
+        }

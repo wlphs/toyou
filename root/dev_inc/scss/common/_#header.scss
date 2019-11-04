@@ -1,0 +1,55 @@
+/* header.scss */
+
+
+
+#header.fixing { padding-bottom: 48px;}
+.header { height:65px; width:100%;
+  .header_fixed_group {height:65px; background:#fff; position:fixed; top:0; left:0; width:100%; z-index:100;}
+  .header_rel_group {height:65px; background:#fff; position: relative;; top:0; left:0; width:100%; z-index:1;}
+  .border_bottom { border-bottom:1px solid #edebe9;}
+  .top_bar {position: relative; 
+    .locations {padding:0 55px;
+      .sub_title { text-align: center; line-height: 65px; font-size: 18px;}
+      .logo { width:108px; margin-top:25px;}
+    }
+    
+     
+    .top_left {position: absolute; left:0; top:0;}
+    .top_right {position: absolute; right:0; top:0; }
+    .history_back {  display:block; padding:22px 16px;
+      &:before {content:''; display:block; @include sp_icons($history_back);}
+    }
+    .btn_menu { display:block; padding:23px 16px;
+      &:before {content:''; display:block; @include sp_icons($gnb_menu);}
+    }
+    .btn_search {display:block; padding:23px 16px;
+      &:before {content:''; display:block; @include sp_icons($ic_search);}
+    }
+    .btn_notice { display:block; padding:22px 16px;
+      &:before {content:''; display:block; @include sp_icons($top_notice);}
+      &.on:after {content:'';  width:6px; height:6px; border-radius: 3px; background:$colorP; position: absolute; top:22px; left:10px;}
+      .txt_on { display:none;}
+      .txt_off {display:block;}
+      &.on {
+        .txt_off { display:none;}
+        .txt_on {display:block;}
+      }
+    }
+  }
+}
+
+#gnb .nav_box {height: 100%; width: 0; position: fixed; z-index: 100; top: 0; left: 0;background-color: #111;overflow-x: hidden;padding-top: 60px;transition: 0.5s; 
+  &.on {width:100%;}
+  a {padding: 8px 8px 8px 32px;text-decoration: none;font-size: 25px;color: #818181;display: block;transition: 0.3s;  }
+  a:hover {color: #f1f1f1;}
+  .closebtn {position: absolute;top: 0;right: 25px;font-size: 36px;margin-left: 50px;}
+}
+
+.wrapper {
+  &.content_push {
+    #contents {transform:translateX(100px)}
+    #header .header_fixed_group {transform:translateX(100px)}
+  }
+}
+
+#contents , #header .header_fixed_group {transition: 0.5s;}

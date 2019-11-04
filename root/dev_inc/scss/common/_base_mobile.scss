@@ -1,0 +1,100 @@
+@charset "utf-8";
+
+/* 클리어 */
+.clearfix:after {display:block;visibility:hidden;clear:both;height:0;content:'.'}
+.bg-alt, .img-alt { position:absolute; width:1px; height:1px; margin: 0; padding: 0; overflow:hidden; font-size:0; line-height:0; }
+.blind {overflow: hidden;position: absolute;clip: rect(0 0 0 0);width: 0;height: 0;margin: -1px;padding: 0;font-size: 1px;line-height: 0;color: transparent;}
+.fixed {position: fixed !important;}
+.bn { background:none !important}
+.cb { clear:both; overflow:hidden}
+.cl { clear:left; overflow:hidden}
+.cr { clear:right; overflow:hidden}
+
+
+/* 플로트 */
+.fl{float:left}.fr{float:right}.fn{float:none !important}
+
+/* 포지션 */
+.pr{position:relative}.pa{position:absolute}.pf{position:fixed}
+.ab-r { position:absolute; top:0; right:0;}
+.ab-l { position:absolute; top:0; left:0;}
+
+/* 텍스트 정렬 */
+.tal{text-align:left !important}.tac{text-align:center !important}.tar{text-align:right !important}
+
+/* 테이블 스타일 */
+.layout_t{ display: table; table-layout: fixed; border-collapse: separate; width: 100%; height: 100%;}
+.layout_t .layout_r{ display: table-row;}
+.layout_t .layout_c{ display: table-cell; vertical-align: middle; text-align: center;}
+
+
+/* margin, padding (5px 단위로 100px까지) mg0, mg5, mg10 */
+$trpClassName     : mg mt mb ml mr pd pt pb pl pr;
+$trpAttributeName : margin margin-top margin-bottom margin-left margin-right
+                 padding padding-top padding-bottom padding-left padding-right;    
+
+@mixin trpAttrSet($class, $atrribute){
+    @for $j from 0 through 20  {
+        .#{$class}#{5 * $j} { #{$atrribute} : (5 * $j)+px !important;}
+    } 
+}
+
+@for $i from 1 through length($trpClassName)  {
+    @include trpAttrSet( #{nth($trpClassName , $i)} , #{nth($trpAttributeName , $i)} );  
+}
+
+
+
+/* width */
+.w100 { width:100px !important;} .w200 { width:200px !important;}
+.w300 { width:300px !important;} .w400 { width:400px !important;}
+.w500 { width:500px !important;} .w600 { width:600px !important;}
+.w700 { width:700px !important;} .w800 { width:800px !important;}
+.w900 { width:900px !important;}
+.w10p  { width:10% !important;}  
+.w20p  { width:20% !important;}  .w25p  { width:25% !important;}  
+.w30p  { width:30% !important;}
+.w40p  { width:40% !important;}  .w45p  { width:45% !important;}  
+.w50p  { width:50% !important;}
+.w55p  { width:55% !important;}  .w60p  { width:60% !important;}
+.w70p  { width:70% !important;}  .w75p  { width:75% !important;}
+.w80p  { width:80% !important;}  .w90p  { width:90% !important;}
+.w95p  { width:95% !important;}  .w100p { width:100% !important;}
+
+/* height */
+.h100 { height:100px !important;} .h200 { height:200px !important;}
+.h300 { height:300px !important;} .h400 { height:400px !important;}
+.h500 { height:500px !important;} .h600 { height:600px !important;}
+.h700 { height:700px !important;} .h800 { height:800px !important;}
+.h900 { height:900px !important;}
+.h10p  { height:10% !important;}  .h20p  { height:20% !important;}
+.h30p  { height:30% !important;}  .h40p  { height:40% !important;}  
+.h50p  { height:50% !important;}  .h60p  { height:60% !important;}
+.h70p  { height:70% !important;}  .h80p  { height:80% !important;}  
+.h90p  { height:90% !important;}  .h100p { height:100% !important;}
+
+
+/* ========================== layout */
+.col1, .col2, .col3, .col4, .col5, .col6, .col7, .col8 { &:after { content: ''; display: block; clear: both} }
+.col1>a, .col1>li , .col1>.colitem { float:left; box-sizing:border-box; width: 100%; }
+.col2>a, .col2>li , .col2>.colitem { float:left; box-sizing:border-box; width: 50%; }
+.col3>a, .col3>li , .col3>.colitem { float:left; box-sizing:border-box; width: 33.3333%; }
+.col4>a, .col4>li , .col4>.colitem { float:left; box-sizing:border-box; width: 25%; }
+.col5>a, .col5>li , .col5>.colitem { float:left; box-sizing:border-box; width: 20%; }
+.col6>a, .col6>li , .col6>.colitem { float:left; box-sizing:border-box; width: 16.6666%; }
+.col7>a, .col7>li , .col7>.colitem { float:left; box-sizing:border-box; width: 14.2857%; }
+.col8>a, .col8>li , .col8>.colitem { float:left; box-sizing:border-box; width: 10%; }
+
+#skipnavi {position: absolute;top: -200px;left: 0;}
+/* = Skip Navigation
+-----------------------------------------------------------------------------------*/
+.accessibility{position:absolute;width:100%; height:0;}
+.accessibility a{position:absolute; left:0; top:0; display:block; overflow:hidden; width:1px; height:1px; text-align:center; color:#000; white-space:nowrap; font-weight:bold;}
+.accessibility a:focus, .accessibility a:hover, .accessibility a:active {width:100%; height:auto; padding:10px 0; background:#000; color:#fff; z-index:1000;}
+
+
+.hide, legend {display: block;overflow: hidden;font-size: medium;line-height: normal;width: 0;height: 0;word-break: break-all;opacity: 0;filter: alpha(opacity=0);-ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(opacity=0)';}
+
+.rel {position: relative;}
+
+.hidden {position: absolute; top:auto; left:-10000px; width:0; height:1px;  overflow:hidden; display:block; text-indent: -90000px;}

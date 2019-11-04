@@ -1,0 +1,54 @@
+// how to use : Use following mixins.
+// variable : [X-axis] [Y-axis] [offset_x] [offset_y] [width] [height] [total_width] [total_height] [image_url] [image_name] [folder_name]
+    $arrow_bot: 80px 250px -80px -250px 20px 13px 327px 276px '../images/common/sp_icons.png' 'arrow_bot' 'sp_icons';
+    $arrow_md: 46px 250px -46px -250px 14px 20px 327px 276px '../images/common/sp_icons.png' 'arrow_md' 'sp_icons';
+    $arrow_more: 311px 35px -311px -35px 10px 19px 327px 276px '../images/common/sp_icons.png' 'arrow_more' 'sp_icons';
+    $arrow_right: 235px 188px -235px -188px 12px 22px 327px 276px '../images/common/sp_icons.png' 'arrow_right' 'sp_icons';
+    $arrow_up_md: 215px 156px -215px -156px 22px 12px 327px 276px '../images/common/sp_icons.png' 'arrow_up_md' 'sp_icons';
+    $gnb_menu: 122px 68px -122px -68px 42px 36px 327px 276px '../images/common/sp_icons.png' 'gnb_menu' 'sp_icons';
+    $history_back: 0px 188px 0px -188px 22px 42px 327px 276px '../images/common/sp_icons.png' 'history_back' 'sp_icons';
+    $ic_search: 62px 68px -62px -68px 40px 40px 327px 276px '../images/common/sp_icons.png' 'ic_search' 'sp_icons';
+    $ic_star_e: 105px 130px -105px -130px 34px 32px 327px 276px '../images/common/sp_icons.png' 'ic_star_e' 'sp_icons';
+    $ic_star_f: 51px 130px -51px -130px 34px 32px 327px 276px '../images/common/sp_icons.png' 'ic_star_f' 'sp_icons';
+    $ic_star_h: 159px 130px -159px -130px 34px 32px 327px 276px '../images/common/sp_icons.png' 'ic_star_h' 'sp_icons';
+    $ic_tel: 215px 0px -215px 0px 32px 32px 327px 276px '../images/common/sp_icons.png' 'ic_tel' 'sp_icons';
+    $icon_lock: 267px 56px -267px -56px 24px 31px 327px 276px '../images/common/sp_icons.png' 'icon_lock' 'sp_icons';
+    $icon_my_01: 267px 0px -267px 0px 24px 36px 327px 276px '../images/common/sp_icons.png' 'icon_my_01' 'sp_icons';
+    $icon_notice: 0px 130px 0px -130px 31px 38px 327px 276px '../images/common/sp_icons.png' 'icon_notice' 'sp_icons';
+    $icon_q: 142px 188px -142px -188px 27px 26px 327px 276px '../images/common/sp_icons.png' 'icon_q' 'sp_icons';
+    $layer_close: 215px 52px -215px -52px 32px 32px 327px 276px '../images/common/sp_icons.png' 'layer_close' 'sp_icons';
+    $minus_sm: 267px 149px -267px -149px 21px 21px 327px 276px '../images/common/sp_icons.png' 'minus_sm' 'sp_icons';
+    $minus_ss: 189px 188px -189px -188px 26px 26px 327px 276px '../images/common/sp_icons.png' 'minus_ss' 'sp_icons';
+    $more_btn: 0px 0px 0px 0px 195px 48px 327px 276px '../images/common/sp_icons.png' 'more_btn' 'sp_icons';
+    $phone: 215px 104px -215px -104px 32px 32px 327px 276px '../images/common/sp_icons.png' 'phone' 'sp_icons';
+    $plus_sm: 267px 190px -267px -190px 21px 21px 327px 276px '../images/common/sp_icons.png' 'plus_sm' 'sp_icons';
+    $plus_ss: 0px 250px 0px -250px 26px 26px 327px 276px '../images/common/sp_icons.png' 'plus_ss' 'sp_icons';
+    $plus_sx: 311px 0px -311px 0px 16px 15px 327px 276px '../images/common/sp_icons.png' 'plus_sx' 'sp_icons';
+    $slide_pause: 42px 188px -42px -188px 30px 30px 327px 276px '../images/common/sp_icons.png' 'slide_pause' 'sp_icons';
+    $slide_resume: 92px 188px -92px -188px 30px 30px 327px 276px '../images/common/sp_icons.png' 'slide_resume' 'sp_icons';
+    $top_notice: 0px 68px 0px -68px 42px 42px 327px 276px '../images/common/sp_icons.png' 'top_notice' 'sp_icons';
+    $x_sm: 267px 107px -267px -107px 22px 22px 327px 276px '../images/common/sp_icons.png' 'x_sm' 'sp_icons';
+
+//ancestor
+    $sp_icons-width: 327px;
+    $sp_icons-height: 276px;
+    $sp_icons-image: '../images/common/sp_icons.png';
+    $sp_icons-sprites: ($arrow_bot, $arrow_md, $arrow_more, $arrow_right, $arrow_up_md, $gnb_menu, $history_back, $ic_search, $ic_star_e, $ic_star_f, $ic_star_h, $ic_tel, $icon_lock, $icon_my_01, $icon_notice, $icon_q, $layer_close, $minus_sm, $minus_ss, $more_btn, $phone, $plus_sm, $plus_ss, $plus_sx, $slide_pause, $slide_resume, $top_notice, $x_sm, );
+    $sp_icons_sprites_name: (arrow_bot, arrow_md, arrow_more, arrow_right, arrow_up_md, gnb_menu, history_back, ic_search, ic_star_e, ic_star_f, ic_star_h, ic_tel, icon_lock, icon_my_01, icon_notice, icon_q, layer_close, minus_sm, minus_ss, more_btn, phone, plus_sm, plus_ss, plus_sx, slide_pause, slide_resume, top_notice, x_sm, );
+    $sp_icons: (327px, 276px, '../images/common/sp_icons.png', $sp_icons-sprites, );
+
+//mixin
+
+        %sp_icons {
+        background-image: url('../images/common/sp_icons.png');
+        $sprite-background-size-x: 327px / 2;
+        $sprite-background-size-y: 276px / 2;
+        -webkit-background-size: $sprite-background-size-x $sprite-background-size-y;
+        background-size: $sprite-background-size-x $sprite-background-size-y;
+        }
+
+        @mixin sp_icons($sprite) {
+        @extend %sp_icons;
+        @include spriteSize($sprite);
+        @include spriteBackgroundPosition($sprite);
+        }

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>highlight.js</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/monokai-sublime.min.css">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.12.1.min.js" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();hljs.configure({tabReplace: '    '})</script>
+</head>
+<body class="trp-sample">
+	<h1>highlight</h1>
+	<h2>highlight : <a href="https://highlightjs.org/">https://highlightjs.org/</a></h2>
+	CDN : <a href="https://cdnjs.com/libraries/highlight.js">https://cdnjs.com/libraries/highlight.js</a>
+	
+	
+	<br><br>
+	<h3>CSS</h3>
+	<pre><code class="css">
+      .guide.wrap { width: 1080px; margin:0 auto; }
+        .guide.wrap #guide_container { padding-top:0; }
+        .guide_h1 { padding: 20px; font-size: 30px; text-align: center; color:black;}
+        .guide_h2 { background-color: #333; color: aliceblue; padding:7px 10px; height:40px; cursor: pointer; font-size: 20px; font-weight: bold; }
+        .guide_h2:hover:after { content: "scrolltop"; margin-left: 30px; font-size:13px; color: crimson; vertical-align: middle;}
+        .guide_h3 { background-color: #666; padding: 3px 20px; font-size: 16px; font-weight: bold;  color: aliceblue;}
+        .guide .item-inner { position: relative; margin-bottom: 20px; }
+        .guide .tab_guide-list { overflow: hidden; list-style-type:none; }
+        .guide .tab_guide-list li { float: left;  }
+        .guide .tab_guide-list li a { display: block; margin: 10px;padding: 7px 15px;font-weight: bold;color: #fff;background-color: #11a0d8;border: 0;border-radius: 5px;}
+        .guide #guide_footer { background-color: #333333; width: 100%;  min-width:1080px;}
+        .guide #guide_footer .footer-inner { position: relative; width: 1080px;  margin: 0 auto;  padding: 20px 30px; color:#ccc;  }
+	</code></pre>
+
+
+	<br><br>
+	<h3> html > js 코드변환 </h3>
+	<pre><code class="html">		
+<div class="subMenu topSky">
+	<ul>
+		<li class="current"><a href="#">시청이력</a></li>
+		<li><a href="#">다운로드</a></li>
+		<li><a href="#">찜목록</a></li>
+		<li><a href="#">시청예약</a></li>
+		<li><a href="#">PARENTS</a></li>
+		<li><a href="#">내쿠폰함</a></li>
+		<li><a href="#">프로필</a></li>
+	</ul>
+</div>
+	</code></pre>
+	<!-- html 코드 변환 -->
+	<script type="text/javascript">
+		(function () { function htmlEscape($this) { var _str = $this.html(); _str = _str.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;'); $this.empty(); $this.append(_str); }; htmlEscape ( $("code.html") ); })();
+	</script>
+	<!-- html 코드 변환 -->		
+
+
+
+	<br><br>
+	<h3> html >  괄호 문자열 변경 :	<a href="https://accessify.com/tools-and-wizards/developer-tools/quick-escape/default.php">Escaped </a> </h3>
+	<pre><code class="html">		
+&lt;div class=&quot;subMenu topSky&quot;&gt;
+	&lt;ul&gt;
+		&lt;li class=&quot;current&quot;&gt;&lt;a href=&quot;#&quot;&gt;시청이력&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href=&quot;#&quot;&gt;다운로드&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href=&quot;#&quot;&gt;찜목록&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href=&quot;#&quot;&gt;시청예약&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href=&quot;#&quot;&gt;PARENTS&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href=&quot;#&quot;&gt;내쿠폰함&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href=&quot;#&quot;&gt;프로필&lt;/a&gt;&lt;/li&gt;
+	&lt;/ul&gt;
+&lt;/div&gt;	
+	</code></pre>
+	
+	<br><br>
+    <pre><code class="javascript">
+        
+	function trpFillLimitedFn($container, $image, $targetWidth, $targetHeight, $triggerWidth, $triggerHeight, $hearderHeight, $footerHeight ){
+		var _sw =  $triggerWidth; 				// window.innerWidth;
+		var _sh =  $triggerHeight; 				// window.innerHeight;
+		var header_height = $hearderHeight; 	// 0;
+		var footer_height = $footerHeight;  	// 0;        
+		var imgWidth = $targetWidth; 			// 1280;
+		var imgHeight = $targetHeight; 			// 720;
+        var _ratio = 1- ( (header_height + footer_height)/ imgHeight );                   // 비율
+		var mask_width = $($container).width();
+		var mask_height = _sh - header_height - footer_height;
+		var imgElement = $($image);
+		var imgW = Math.floor((imgWidth*_ratio) * mask_height / ( imgHeight- (header_height + footer_height) )) ;
+		var imgH = Math.floor(mask_height);
+                
+		if(imgW < mask_width){ 
+			var imgW = Math.floor(mask_width);
+			var imgH = Math.floor(imgHeight * mask_width / imgWidth);
+		}
+
+		var marginTop  = Math.floor(mask_height/2 - imgH/2);
+		var marginLeft = Math.floor(mask_width/2 - imgW/2);
+		if(imgElement){
+			imgElement.css({"margin-top":marginTop, "margin-left":marginLeft, width:imgW, height:imgH });
+		}
+		$($container).css({"height":(mask_height),"margin-top":header_height, "margin-bottom":footer_height });
+	}
+        
+    </code></pre>
+    
+    
+    
+</body>
+</html>

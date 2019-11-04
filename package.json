@@ -1,0 +1,50 @@
+{
+  "name": "skt_NITS",
+  "version": "1.07.16",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "TR",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
+    "@babel/register": "^7.4.4",
+    "browser-sync": "^2.26.7",
+    "browserslist": "^4.6.3",
+    "del": "^4.1.1",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^6.1.0",
+    "gulp-babel": "^8.0.0",
+    "gulp-clean-css": "^4.2.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-convert-encoding": "1.0.0",
+    "gulp-file-include": "^2.0.1",
+    "gulp-html-beautify": "^1.0.1",
+    "gulp-if": "^2.0.2",
+    "gulp-line-ending-corrector": "^1.0.3",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-uglify": "^3.0.2",
+    "gulp.spritesmith": "^6.11.0",
+    "jquery-sortablejs": "^1.0.1",
+    "merge-stream": "^2.0.0",
+    "node-sass": "^4.12.0",
+    "uglify-js": "^3.6.0"
+  },
+  "dependencies": {},
+  "browserslist": [
+    "last 3 version",
+    "> 1%",
+    "IE 9",
+    "not dead"
+  ],
+  "babel": {
+    "presets": [
+      "@babel/preset-env"
+    ]
+  }
+}

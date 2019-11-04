@@ -1,0 +1,80 @@
+// 상품 뷰
+.ptdt_view{
+    padding-bottom:50px; 
+    
+    // 최상단 상품소개
+    .top_pre{
+        text-align:center;
+        .icon{width:100%; height:auto; padding:30px 0 10px 0; 
+            img {width:75px;height:auto;}    
+        }
+        .txt{width:100%;
+            span{width:90%; height:auto; display:inline-block;font-size:14px;}
+            .tit{padding-top:2px; font-size:18px; font-weight:bold; line-height:20px;}
+            .tit_sub{padding:5px 0 20px 0;}
+        }
+    }
+
+    // 상품 상세소개 슬라이드
+    .prdt_view_slide{ 
+        margin:0 0 0 10px;  
+        .swiper-container{height:400px;}
+        .swiper-slide{width:70%;
+            >div {margin:18px 8px 8px 8px;  background:#fff; border-radius: 15px; box-shadow: 0px 3px 4px #d3d3d3 ; 
+                >a{width:100%; padding:20px 5px; display:inline-block;}
+                .tit{width:100%; text-align:center; font-weight:bold; color:$colorS; font-size:18px;}
+                .dex{width:100%; text-align:center; padding:7px 0 20px 0; color:#b7b7b7; font-size:14px; 
+                    >li {
+                        position:relative; padding:0 8px; display:inline-block; font-size:14px;
+                    }
+                    >li:before{
+                        content:''; width:4px; height:4px; position:absolute; left:0; top:50%; margin-top:-2px; background:#b7b7b7; display:block; border-radius: 100%;
+                    }
+                }
+                .price{width:100%; text-align:center;
+                    >span{padding:3px 20px; border-radius: 20px; background:$colorS; color:#fff; font-size:20px; font-weight:bold; display:inline-block;
+                        em{font-size:15px; font-weight:normal; padding-right:3px;}
+                    }
+                }
+                .desc_icon{text-align:center; padding:30px 0 15px 0;
+                    >li{display:inline-block; text-align: center; padding:0 7px;
+                        img {width:50px;height:auto;}
+                        span{width:100%; display:block; font-size:13px;}
+                    }
+                }
+            }
+        }
+        .on_data{
+            >div {
+                margin:8px 8px 8px 8px;
+                >a{padding:30px 5px; }
+            }
+        }
+    }
+}
+
+// 서비스가능지역 조회
+.service_area{ 
+    >a{
+        position:relative; width:100%; height:135px; display:inline-block;
+        span{position:absolute; left:40px;}
+        .subj{top:30px;font-size:18px;}
+        .subj:after{content:''; position:absolute; right:-25px; top:50%; margin-top:-5.5px; content:''; width:6px; height:11px; display:inline-block; @include sp_icons($arrow_right);}
+        .subt{top:55px;font-size:14px;}
+        img{position:absolute; right:0; top:0px; width:192px; height:135px;}
+    }
+}
+
+
+// 상담신청 온라인가입 빠른상담 하단 픽스
+.join_btn_fix{position: fixed; left:0; bottom:0; width:100%; padding:15px 10px; background:#fff; box-shadow:1px -5px 12px -4px #d3d3d3; z-index:20;
+    >.btn{width:auto; margin-right:5px;}
+    >.r{position:relative; float:right; padding:10px 20px 10px 25px;}
+    >.r:before{
+        content:''; position:absolute; left:0; top:12px; display:inline-block; @include sp_icons($phone);
+    }
+    >.r:after{
+        content:''; position:absolute; right:0; top:15px; display:inline-block; @include sp_icons($arrow_right);
+    }
+}
+ 

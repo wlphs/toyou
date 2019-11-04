@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>highlight.js</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/monokai-sublime.min.css">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.12.1.min.js" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js"></script>
+	@@include('../../dev_html/include/_head.html', {"title" : "SK Broadband Application"})
+
+
+	<style>
+	samp header {display:none;}
+	</style>
+	<script>
+		$(function() {
+			$('.js-btn').on('click', function() {
+				$('samp .header').hide();
+				$('.'+$(this).data('header') + ' header').show();
+			})
+			$('.js-btn').eq(0).trigger('click')
+		})
+	</script>
+	<script>hljs.initHighlightingOnLoad();hljs.configure({tabReplace: '    '})</script>
+</head>
+<body class="trp-sample">
+<p class="accessibility" id="skipTop"> 
+	<a href="#container">본문 바로가기</a>
+	<a href="#gnb" class="js-gnb_btn">주메뉴 바로가기</a>
+</p>
+<div class="wrapper">
+	<!-- header --> 
+	<samp class="js-header0">
+		<header id="header" class="header">
+			<div class="header_fixed_group border_bottom">
+				<div class="top_bar">
+					<div class="locations"> 
+						<div class="view_page"><h1 class="sub_title"><img src="/resources/poc/images/common/logo.png" alt="SK Broadband" class="logo"></h1></div>
+					</div>
+					<div class="top_left">
+						<!-- 
+						<span href="javascript:history.go(-1);" class="history_back"><span class="hide">이전페이지로 이동</span></a> 
+						-->
+						<a href="#gnb" class="btn_menu js-gnb_btn"><span class="hide">전체메뉴</span></a>
+					</div>
+					<div class="top_right">
+						<a href="#" class="btn_notice on"><span class="hide txt_off">알림이 없습니다.</span><span class="hide txt_on">알림이 있습니다.</span></a>
+					</div>
+				</div>
+			</div> 
+			@@include('../../dev_html/include/_gnb.html')
+		</header>
+
+	</samp>
+	
+	<samp class="js-header1">
+		<header id="header" class="header">
+			<div class="header_fixed_group border_bottom">
+				<div class="top_bar">
+					<div class="locations"> 
+						<div class="view_page"><h1 class="sub_title">타이틀</h1></div>
+					</div>
+					<div class="top_left">
+						<a href="#gnb" class="btn_menu js-gnb_btn"><span class="hide">전체메뉴</span></a>
+					</div>
+					<div class="top_right">
+						<a href="#" class="btn_search"><span class="hide">검색</span></a>
+					</div>
+				</div>
+			</div> 
+			@@include('../../dev_html/include/_gnb.html')
+		</header>
+
+	</samp>
+		
+	<samp class="js-header2">
+		<header id="header" class="header">
+			<div class="header_fixed_group border_bottom">
+				<div class="top_bar">
+					<div class="locations"> 
+						<div class="view_page"><h1 class="sub_title">타이틀</h1></div>
+					</div>
+					<div class="top_left">
+						<span href="javascript:history.go(-1);" class="history_back"><span class="hide">이전페이지로 이동</span></a> 
+					</div>
+				</div>
+			</div> 
+			@@include('../../dev_html/include/_gnb.html')
+		</header>
+	</samp>
+	
+	<samp class="js-header3">
+		<header id="header" class="header">
+			<div class="header_fixed_group border_bottom">
+				<div class="top_bar">
+					<div class="locations"> 
+						<div class="view_page"><h1 class="sub_title">타이틀</h1></div>
+					</div>
+					<div class="top_left">
+						<span href="javascript:history.go(-1);" class="history_back"><span class="hide">이전페이지로 이동</span></a> 
+					</div>
+				</div>
+			</div> 
+			@@include('../../dev_html/include/_gnb.html')
+		</header>
+	</samp>
+		
+	<samp class="js-header4">
+			<header id="header" class="header">
+				<div class="header_fixed_group border_bottom">
+					<div class="top_bar">
+						<div class="locations"> 
+							<div class="view_page"><h1 class="sub_title"><img src="/resources/poc/images/common/logo.png" alt="SK Broadband" class="logo"></h1></div>
+						</div>
+						<div class="top_left">
+							<!-- 
+							<span href="javascript:history.go(-1);" class="history_back"><span class="hide">이전페이지로 이동</span></a> 
+							-->
+							<a href="#gnb" class="btn_menu js-gnb_btn"><span class="hide">전체메뉴</span></a>
+						</div>
+						<div class="top_right">
+							<a href="#" class="btn_notice on"><span class="hide txt_off">알림이 없습니다.</span><span class="hide txt_on">알림이 있습니다.</span></a>
+						</div>
+					</div>
+				</div> 
+				@@include('../../dev_html/include/_gnb.html')
+			</header>
+		</samp>
+		<!-- //header -->
+			
+
+		<button class="btn btn_default btn_lg mt20 js-btn" data-header="js-header0">메뉴 + 로고 + 알림</button>
+		<pre><code class="html">
+			<header id="header" class="header">
+				<div class="header_fixed_group border_bottom">
+					<div class="top_bar">
+						<div class="locations"> 
+							<div class="view_page"><h1 class="sub_title"><img src="/resources/poc/images/common/logo.png" alt="SK Broadband" class="logo"></h1></div>
+						</div>
+						<div class="top_left">
+							<a href="#gnb" class="btn_menu js-gnb_btn"><span class="hide">전체메뉴</span></a>
+						</div>
+						<div class="top_right">
+							<a href="#" class="btn_notice on"><span class="hide txt_off">알림이 없습니다.</span><span class="hide txt_on">알림이 있습니다.</span></a>
+						</div>
+					</div>
+				</div> 
+				&#64;&#64;include('../../dev_html/include/_gnb.html')
+			</header>
+		</code></pre>
+
+
+
+		<button class="btn btn_default btn_lg mt20 js-btn" data-header="js-header1">메뉴 + 타이틀 + 검색</button>
+		<pre><code class="html">
+			<header id="header" class="header">
+				<div class="header_fixed_group border_bottom">
+					<div class="top_bar">
+						<div class="locations"> 
+							<div class="view_page"><h1 class="sub_title">타이틀</h1></div>
+						</div>
+						<div class="top_left">
+							<a href="#gnb" class="btn_menu js-gnb_btn"><span class="hide">전체메뉴</span></a>
+						</div>
+						<div class="top_right">
+							<a href="#" class="btn_search"><span class="hide">검색</span></a>
+						</div>
+					</div>
+				</div> 
+				&#64;&#64;include('../../dev_html/include/_gnb.html')
+			</header>
+		</code></pre>
+
+		<button class="btn btn_default btn_lg mt20 js-btn" data-header="js-header2">뒤로 + 타이틀</button>
+		<pre><code class="html">
+			<header id="header" class="header">
+				<div class="header_fixed_group border_bottom">
+					<div class="top_bar">
+						<div class="locations"> 
+							<div class="view_page"><h1 class="sub_title">타이틀</h1></div>
+						</div>
+						<div class="top_left">
+							<a href="#gnb" class="btn_menu js-gnb_btn"><span class="hide">전체메뉴</span></a>
+						</div>
+						<div class="top_right">
+							<a href="#" class="btn_search"><span class="hide">검색</span></a>
+						</div>
+					</div>
+				</div> 
+				&#64;&#64;include('../../dev_html/include/_gnb.html')
+			</header>
+		</code></pre>
+
+
+
+
+	<!-- html 코드 변환 -->
+	<script type="text/javascript">
+		(function () { 
+			function htmlEscape($this) { 
+				var _str = $this.html(); 
+				_str = _str.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;'); 
+				$this.empty(); 
+				$this.append(_str); 
+			}; 
+			$("code.html").each(function(i) {
+				htmlEscape ( $(this));
+			})
+		})();
+	</script>
+	<!-- html 코드 변환 -->		
+
+
+
+    
+    
+    
+</body>
+</html>

@@ -1,0 +1,1073 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>UI guide</title>
+	<meta name="viewport" id="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,initial-scale=1.0">
+	<link rel="stylesheet" href="../resources/poc/css/library/csslibrary.min.css">
+	<link rel="stylesheet" href="../resources/poc/css/common.css">
+	<!--[if lt IE 9]>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" 	type="text/javascript" charset="utf-8"></script>
+	<![endif]-->
+	<script src="../resources/poc/js/library/jquery.min.js"></script>
+	<script src="../resources/poc/js/library/jquerylibrary.js"></script>
+	
+	<script src="../resources/poc/js/common.js"></script>
+	<style>
+		.guide.wrap {
+			margin: 0 auto;
+			background-color: #fff;
+		}
+		.guide.wrap #guide_container {
+			padding-top: 0;
+		}
+		.guide_h1 {
+			padding: 20px;
+			font-size: 30px;
+			text-align: center;
+			color: black;
+		}
+		.guide_h2 {
+			background-color: #333;
+			color: aliceblue;
+			padding: 7px 10px;
+			height: 40px;
+			cursor: pointer;
+			font-size: 20px;
+			font-weight: bold;
+		}
+		.guide_h2:hover:after {
+			content: "scrolltop";
+			margin-left: 30px;
+			font-size: 13px;
+			color: crimson;
+			vertical-align: middle;
+		}
+		.guide_h3 {
+			background-color: #666;
+			padding: 3px 20px;
+			font-size: 16px;
+			font-weight: bold;
+			color: aliceblue;
+		}
+		.guide .item-inner {
+			position: relative;
+			margin-bottom: 20px;
+		}
+		.guide .item-inner iframe #trp-debug {
+			display: none;
+		}
+		.guide .item-inner .codelabel-btn {
+			position: absolute;
+			top: 0;
+			right: 0;
+			width: 75px;
+			height: 25px;
+			opacity: 0.70;
+			background-color: #000;
+			z-index: 1;
+		}
+		.guide .item-inner .codelabel-btn.show {
+			opacity: 0;
+		}
+		.guide .item-inner pre {
+			display: none;
+			position: relative;
+			margin-top: 15px;
+			min-height: 25px;
+			border: 1px solid #ccc;
+		}
+		.guide .item-inner code {
+			display: block;
+		}
+		.guide .item-inner code.html::before {
+			content: "[HTML ]";
+			display: inline-block;
+			padding: 2px 5px;
+			position: absolute;
+			top: 0;
+			right: 0;
+			font-family: Malgun Gothic;
+			font-size: 15px;
+			font-weight: bold;
+			color: #fff;
+			background-color: #ff8c88;
+			border-radius: 0 0 5px 5px;
+		}
+		.guide .item-inner code.css::before {
+			content: "[CSS ]";
+			display: inline-block;
+			padding: 2px 5px;
+			position: absolute;
+			top: 0;
+			right: 0;
+			font-family: Malgun Gothic;
+			font-size: 15px;
+			font-weight: bold;
+			color: #fff;
+			background-color: #85d8d8;
+			border-radius: 0 0 5px 5px;
+		}
+		.guide .item-inner code.js::before {
+			content: "[JS ]";
+			display: inline-block;
+			padding: 2px 5px;
+			position: absolute;
+			top: 0;
+			right: 0;
+			font-family: Malgun Gothic;
+			font-size: 15px;
+			font-weight: bold;
+			color: #fff;
+			background-color: #fab309;
+			border-radius: 0 0 5px 5px;
+		}
+		.guide .item-inner code {
+			font-family: verdana;
+			font-size: 12px;
+			max-height: 300px;
+			overflow-y: auto;
+		}
+		.guide .tab_guide-list {
+			overflow: hidden;
+			list-style-type: none;
+		}
+		.guide .tab_guide-list li {
+			float: left;
+		}
+		.guide .tab_guide-list li a {
+			display: block;
+			margin: 10px 5px;
+			padding: 7px 15px;
+			font-weight: bold;
+			color: #fff;
+			background-color: #f29027;
+			border: 0;
+			border-radius: 5px;
+		}
+		.guide #guide_footer {
+			background-color: #333333;
+			width: 100%;
+			min-width: 1080px;
+		}
+		.guide #guide_footer .footer-inner {
+			position: relative;
+			width: 1080px;
+			margin: 0 auto;
+			padding: 20px 30px;
+			color: #ccc;
+			font-size: 11px;
+		}
+		samp {
+			margin: 10px;
+			display: block;
+		}
+		samp > * {
+			margin: 5px 0;
+		}
+	</style>
+	<link rel="stylesheet" href="./atom-one-light.min.css">
+	<!-- <script type="text/javascript" src="http://code.jquery.com/jquery-1.12.1.min.js" ></script> -->
+	<script src="./highlight.min.js"></script>
+</head>
+<body>
+	<div class="wrapper">
+		<div class="guide wrap">
+			<!-- header -->
+			<div id="guide_header">
+				<h1 class="guide_h1">UI guide</h1>
+				<ul class="tab_guide-list">
+					<li>
+						<a href="#from">from</a>
+					</li>
+					<li>
+						<a href="#from_expansion">from(expansion)</a>
+					</li>
+					<li>
+						<a href="#button">버튼</a>
+					</li>
+					<li>
+						<a href="#paging">페이징</a>
+					</li>
+					<li>
+						<a href="#tabmenu">텝메뉴</a>
+					</li>
+					<!-- <li><a href="#accordion">아코디언메뉴</a></li> 
+								<li><a href="#layer_popup">레이어팝업</a></li>
+								<li><a href="#scrollbar">스크롤바</a></li>
+								<li><a href="#gallery">gallery</a></li> -->
+				</ul>
+			</div>
+			<!-- //header -->
+			<!-- container -->
+			<div id="guide_container">
+				<div class="guide_contents">
+					<div class="article" id="from">
+						<h2 class="guide_h2">form</h2>
+						<h3 class="guide_h3">- input:text
+						</h3>
+						<div class="item-inner">
+							<samp class="sample  js-source" data-sample="code">
+								<form action="" id="test1">
+									<input type="text" placeholder="활성화" id="">
+									<input type="text" placeholder="비활성화 disabled" disabled id="">
+									<input type="text" placeholder="" readonly id="" value="readonly">
+									<input type="text" placeholder="오류 class:error" class="error" id="">
+									<span class="input_del">
+										<input class="" type="text" placeholder="" value="input 삭제">
+										<button><span class="hide">검색어 삭제</span></button>
+									</span>
+									<span class="input_post">
+										<input class="" type="text" placeholder="우편번호를 검색해 주세요" value="">
+										<button class="btn btn_default btn_lg btn_round" type="button">우편번호 검색</button>
+									</span>
+									<span class="input_tel">
+										<select class="select_lineType" id="">
+											<option value="010">010</option>
+											<option value="011">011</option>
+											<option value="016">016</option>
+											<option value="018">018</option>
+											<option value="019">019</option>
+										</select>
+										<input class="" type="text" placeholder="휴대폰 번호를 입력해주세요" value="">
+									</span>
+									<span class="input_unit">
+										<input class="" type="text" placeholder="" value="">
+										<span class="unit">%</span>
+									</span>
+									<span class="input_unit unit2">
+										<input class="" type="text" placeholder="" value="">
+										<span class="unit">core</span>
+									</span>
+									<p>
+										
+									<input type="text" placeholder="이메일" id="" name="email" data-rule-required="true" data-rule-email="true" data-msg-required="필수다" data-msg-email="이메일을 넣어">
+									</p>
+									<p>
+										<input id="cname" name="name" minlength="2" type="text" required placeholder="텍스트 최소 2글자 (필수)">
+									</p>
+									<p>
+										<input id="cemail" type="text" name="email" required placeholder="E-Mail (필수)" data-rule-required="true" data-rule-email="true" data-msg-required="Please enter your email address" data-msg-email="Please enter a valid email address">
+									</p>
+									<p>
+										<input id="curl" type="text" name="url" data-rule-url="true" placeholder="URL (옵션)">
+									</p>
+									<p>
+										<input id="curl222" type="password"   required minlength="5" placeholder="비밀번호 (최소 5글자)">
+									</p>
+								</form>
+							</samp>
+							<script>
+								
+								$("#test1").validate();
+							</script>
+						</div>
+						<!-- 
+						<h3 class="guide_h3">- textarea </h3>
+						<div class="item-inner">
+							<samp class="sample  js-source"  data-sample="code">
+								<div class="textarea-box">
+									<textarea name="" id="" cols="30" rows="10" ></textarea>
+								</div>
+							
+								<div class="textarea-box">
+									<textarea name="" id="" cols="30" rows="10">요청 사항을 입력해 주세요</textarea>
+								<div class="byte_check">
+									<em>0</em><span> / 200byte</span>
+								</div>
+							</samp>
+						</div>
+						-->
+						<h3 class="guide_h3">- radio(.trp.radio-box)</h3>
+						<div class="item-inner">
+							<samp class="sample  js-source" data-sample="code">
+								
+								<span class="rel">
+									<input type="radio" id="trp-radio1" name="radioSet1" class="rdo" checked>
+									<label for="trp-radio1" class="rdo">radio1  radios</label>
+								</span>
+								<span class="rel">
+									<input id="radio1-2" type="radio" name="radioSet1" class="rdo">
+									<label for="radio1-2" class="rdo">radio2</label>
+								</span>
+								<span class="rel">
+									<input id="radio1-3" type="radio" name="radioSet1" class="rdo">
+									<label for="radio1-3" class="rdo">radio3</label>
+								</span>
+									<br>
+									<br>
+								<span class="rel">
+									<input id="radio2-1" type="radio" name="radioSet2" class="rdo">
+									<label for="radio2-1" class="rdo">radioSet2</label>
+								</span>
+								<span class="rel">
+									<input id="radio2-2" type="radio" name="radioSet2" class="rdo">
+									<label for="radio2-2" class="rdo">radioSet2</label>
+								</span>
+								<span class="rel">
+									<input id="radio2-3" type="radio" disabled name="radioSet2" class="rdo">
+									<label for="radio2-3" class="rdo">radioSet2[disalbed]</label>
+								</span>
+							</samp>
+						</div>
+
+						<h3 class="guide_h3">- checkbox(.trp.checkbox-box)</h3>
+						<div class="item-inner">
+							<samp class="sample js-source" data-sample="code">
+								<span class="rel">
+									<input id="checkbox1" type="checkbox" name="" class="chk">
+									<label for="checkbox1" class="chk">checkbox1</label>
+								</span>
+								<span class="rel">
+									<input id="checkbox2" type="checkbox" name="" class="chk">
+									<label for="checkbox2" class="chk">checkbox2</label>
+								</span>
+								<span class="rel">
+									<input id="checkbox3" type="checkbox" disabled name="" class="chk">
+									<label for="checkbox3" class="chk">checkbox3[disalbed]</label>
+								</span>
+							</samp>
+						</div>
+					</div>
+					<div class="article" id="from_expansion">
+						<h2 class="guide_h2">from(expansion)</h2>
+						<h3 class="guide_h3">- formsearch(.formsearch-box)</h3>
+						<div class="item-inner">
+							<samp class="sample js-source" data-sample="code">
+								<span class="formsearch-box">
+									<input type="text" class="">
+									<button class="search-btn">검색</button>
+								</span>
+							</samp>
+						</div>
+
+						<h3 class="guide_h3">- select-box formsearch-box</h3>
+						<div class="item-inner">
+							<samp class="sample js-source" data-sample="code">
+								<div class="">
+									<select class="" id="">
+										<option value="1">Giga인터넷 라이트</option>
+										<option value="2">Giga인터넷 라이트1</option>
+										<option value="3">Giga인터넷 라이트2</option>
+										<option value="4">Giga인터넷 라이트3</option>
+										<option value="5">Giga인터넷 라이트4</option>
+									</select>
+								</div>
+								<div class="">
+									<select class="select_lineType" id="">
+										<option value="1">B tv all</option>
+										<option value="2">B tv all2</option>
+										<option value="3">B tv all3</option>
+										<option value="4">B tv all4</option>
+										<option value="5">B tv all5</option>
+									</select>
+								</div>
+								<div class=""> 
+									<select class="select_lineType col_gray" id="">
+										<option value="1">B tv all</option>
+										<option value="2">B tv all2</option>
+										<option value="3">B tv all3</option>
+										<option value="4">B tv all4</option>
+										<option value="5">B tv all5</option>
+									</select>
+								</div>
+								<div class="">
+									<select class="select_nolineType" id="">
+										<option value="1">2019년 9월</option>
+										<option value="2">2019년 8월</option>
+										<option value="3">2019년 7월</option>
+										<option value="4">2019년 6월</option>
+										<option value="5">2019년 5월</option>
+									</select>
+								</div>
+								<div class="select_star_rate">
+									<select class="js-select2 " id="">
+										<option value="10">10</option>
+										<option value="9">9</option>
+										<option value="8">8</option>
+										<option value="7">7</option>
+										<option value="6">6</option>
+										<option value="5">5</option>
+										<option value="4">4</option>
+										<option value="3">3</option>
+										<option value="2">2</option>
+										<option value="1">1</option>
+									</select>
+
+									<script>
+$(".js-select2").select2({
+  theme: "classic",
+  templateResult : formatState,
+  templateSelection : formatState,
+  width:200,
+  minimumResultsForSearch: Infinity
+});
+function formatState (state) {
+  if (!state.id) {
+    return state.text;
+  }
+  var $state = "",
+  	  star_num = parseInt(state.text);
+  for (var i =0; i<5; i++) {
+	  if (i*2+1< star_num) {
+		$state += '<i class="ic ic_star_f"></i>';
+	  }
+	  else if (i*2+1==star_num) {
+		$state += '<i class="ic ic_star_h"></i>';
+	  }
+	  else {
+		$state += '<i class="ic ic_star_e"></i>';
+	  }
+  }
+  return $($state);
+};
+
+									</script>
+								</div>
+							</samp>
+						</div>
+
+						<h3 class="guide_h3">- datepicker(.datepicker-box .js-datepicker)</h3>
+						<div class="item-inner">
+							<samp class="sample js-source" data-sample="code">
+								<span class="datepicker-box">
+									<input type="text" placeholder="YY-MM-DD" class="js-datepicker">
+								</span>
+								<span class="datepicker-box">
+									<input type="text" placeholder="YY-MM-DD [disabled]" class="js-datepicker" disabled>
+								</span>
+							</samp>
+							<!--
+							<span class="datepicker-box">
+								<input type="text" placeholder="YY-MM" class="js-datepicker-yy_mm">
+							</span>
+							<span class="datepicker-box">
+								<input type="text" placeholder="YY" class="js-datepicker-yy">
+							</span> 
+							-->
+						</div>
+						
+						<h3 class="guide_h3">- tooltip(.icon_tooltip.js-tooltip)</h3>
+						<div class="item-inner">
+							<samp class="sample js-source" data-sample="code">
+								<i class="icon_tooltip js-tooltip" title="짧은 툴팁"></i>
+								<div class="tar">
+									<i class="icon_tooltip js-tooltip_sendstate" data-geo=".js_tooltip_sendstate"></i>
+									<div class="js_tooltip_sendstate" style="display: none">
+										장문 툴팁 장문 툴팁 장문 툴팁 장문 툴팁 장문 툴팁 장문 툴팁 장문 툴팁 장문 툴팁 장문 툴팁 장문 툴팁 장문 툴팁
+									</div>
+								</div>
+							</samp>
+						</div>
+					</div>
+					<div class="article" id="button">
+						<h2 class="guide_h2">button 샘플</h2>
+						<h3 class="guide_h3">- BUTTON size [H36, H30] ( btn [btn_lg , 기본30H ]  )</h3>
+						<div class="item-inner">
+							<samp class="sample js-source" data-sample="code">
+								<a class="btn btn_default btn_lg btn_round" href="#" role="button">a 버튼 H43</a>
+								<button class="btn btn_default btn_lg btn_round" type="button">Button 버튼 H43</button>
+								<input class="btn btn_default btn_lg btn_round" type="button" value="Input 버튼 H43">
+								<input class="btn btn_default btn_lg btn_round" type="submit" value="Submit 버튼 H43">
+								<br><br>
+							</samp>
+						</div>
+
+						<h3 class="guide_h3">- BUTTON Color</h3>
+						<div class="item-inner">
+							<samp class="sample js-source"  data-sample="code">
+								<a class="btn btn_default btn_lg btn_round" href="#" role="button">btn btn_default btn_lg btn_round</a>
+								<a class="btn btn_gray btn_lg btn_round" href="#" role="button">btn btn_gray btn_lg btn_round</a>
+								<a class="btn btn_line_default btn_lg btn_round" href="#" role="button">btn btn_line_default btn_lg btn_round</a>
+							</samp>
+						</div>
+					</div>
+					<div class="article" id="tabmenu">
+						<h2 class="guide_h2">Accordion Menu</h2>
+						<h3 class="guide_h3">- Accordion Menu (policy)
+						</h3>
+						<div class="item-inner">
+							<samp class="sample js-source" data-sample="code">
+								
+							<div class="accordion-wrap colorBGf">
+								<ul class="accordion-list js-acc">
+									<li>
+										<div class="header-area">
+											<span class="rel">
+												<input id="checkbox1001" type="checkbox" name="" class="chk js-chk_item2">
+												<label for="checkbox1001" class="chk">개인정보 수집/이용동의<span class="colorP">(필수)</span></label>
+											</span>
+											<button class="acc_btn">
+												<span class="hide">개인정보 수집/이용 내용 보기</span>
+											</button>
+										</div>
+										<div class="con-area">
+											<p class="policy_cont">
+												개인정보 수집 이용 동의 문구가 들어갑니다. 개인정보 수집
+												이용 동의 문구가 들어갑니다. 
+											</p>
+										</div>
+									</li>
+									<li>
+										<div class="header-area">
+											
+											<span class="rel">
+												<input id="checkbox1002" type="checkbox" name="" class="chk js-chk_item2">
+												<label for="checkbox1002" class="chk">고유식별정보 처리 동의<span class="colorP">(필수)</span></label>
+											</span>
+
+											<button class="acc_btn">
+												<span class="hide">고유식별정보 처리 내용 보기</span>
+											</button>
+										</div>
+										<div class="con-area">
+											<p class="policy_cont">
+												개인정보 수집 이용 동의 문구가 들어갑니다. 개인정보 수집
+												이용 동의 문구가 들어갑니다. 
+											</p>
+										</div>
+									</li>
+									<li>
+										<div class="header-area">
+											<span class="rel">
+												<input id="checkbox1003" type="checkbox" name="" class="chk js-chk_item2">
+												<label for="checkbox1003" class="chk">통신사 이용 약관 동의<span class="colorP">(필수)</span></label>
+											</span>
+											<button class="acc_btn">
+												<span class="hide">통신사 이용 약관 내용 보기</span>
+											</button>
+										</div>
+										<div class="con-area">
+											<p class="policy_cont">
+												개인정보 수집 이용 동의 문구가 들어갑니다. 개인정보 수집
+												이용 동의 문구가 들어갑니다.  <br>
+												
+												개인정보 수집 이용 동의 문구가 들어갑니다. 개인정보 수집
+												이용 동의 문구가 들어갑니다. <br>
+												
+												개인정보 수집 이용 동의 문구가 들어갑니다. 개인정보 수집
+												이용 동의 문구가 들어갑니다. <br>
+												
+												개인정보 수집 이용 동의 문구가 들어갑니다. 개인정보 수집
+												이용 동의 문구가 들어갑니다. <br>
+												
+												개인정보 수집 이용 동의 문구가 들어갑니다. 개인정보 수집
+												이용 동의 문구가 들어갑니다. <br>
+												
+												개인정보 수집 이용 동의 문구가 들어갑니다. 개인정보 수집
+												이용 동의 문구가 들어갑니다. <br>
+												
+												개인정보 수집 이용 동의 문구가 들어갑니다. 개인정보 수집
+												이용 동의 문구가 들어갑니다. <br>
+												
+												개인정보 수집 이용 동의 문구가 들어갑니다. 개인정보 수집
+												이용 동의 문구가 들어갑니다. <br>
+												
+												개인정보 수집 이용 동의 문구가 들어갑니다. 개인정보 수집
+												이용 동의 문구가 들어갑니다. <br>
+												
+												개인정보 수집 이용 동의 문구가 들어갑니다. 개인정보 수집
+												이용 동의 문구가 들어갑니다. <br>
+												
+												개인정보 수집 이용 동의 문구가 들어갑니다. 개인정보 수집
+												이용 동의 문구가 들어갑니다. <br>
+												
+												개인정보 수집 이용 동의 문구가 들어갑니다. 개인정보 수집
+												이용 동의 문구가 들어갑니다. <br>
+												
+												개인정보 수집 이용 동의 문구가 들어갑니다. 개인정보 수집
+												이용 동의 문구가 들어갑니다. <br>
+												
+												개인정보 수집 이용 동의 문구가 들어갑니다. 개인정보 수집
+												이용 동의 문구가 들어갑니다. <br>
+												
+												개인정보 수집 이용 동의 문구가 들어갑니다. 개인정보 수집
+												이용 동의 문구가 들어갑니다. <br>
+												
+												개인정보 수집 이용 동의 문구가 들어갑니다. 개인정보 수집
+												이용 동의 문구가 들어갑니다. <br>
+												
+												개인정보 수집 이용 동의 문구가 들어갑니다. 개인정보 수집
+												이용 동의 문구가 들어갑니다. 
+											</p>
+										</div>
+									</li> 
+									<li>
+										<div class="header-area">
+											
+											<span class="rel">
+												<input id="checkbox104" type="checkbox" name="" class="chk js-chk_item2">
+												<label for="checkbox104" class="chk">서비스 이용 약관 동의<span class="colorP">(필수)</span></label>
+											</span>
+											<button class="acc_btn">
+												<span class="hide">서비스 이용 약관 내용 보기</span>
+											</button>
+										</div>
+										<div class="con-area">
+											<p class="policy_cont">
+												개인정보 수집 이용 동의 문구가 들어갑니다. 개인정보 수집
+												이용 동의 문구가 들어갑니다. 
+											</p>
+										</div>
+									</li> 
+								</ul>
+							</div>
+							<script>
+								$('.js-acc').trpAccordionMenu('.acc_btn','.con-area','on')
+							</script>
+							</samp>
+						</div>
+
+						<div class="item-inner">
+							<div class="cont_inner_full colorBGf mt15">
+								<h3 class="title">자주 묻는 질문 <em>Best 10</em></h3>
+								<div class="accordion-wrap">
+									<ul class="accordion-list qna js-acc_qna">
+										<li>
+											<div class="header-area">
+												<a href="#none">[B tv] VOD가 뭐예요?</a>
+											</div>
+											<div class="con-area">
+												<p class="qna_cont">
+													SK브로드밴드 이용약관 동의문구가 들어갑니다. SK브로드밴드 이용약관 동의문구가 들어갑니다.SK브로드밴드 이용약관 동의문구가 들어갑니다.SK브로드밴드 이용약관 
+													동의문구가 들어갑니다.
+												</p>
+											</div>
+										</li>
+										<li>
+											<div class="header-area">
+												[B tv] VOD가 뭐예요?VOD가 뭐예요?VOD가 뭐예요?VOD가 뭐예요?VOD가 뭐예요?VOD가 뭐예요?
+											</div>
+											<div class="con-area">
+												<p class="qna_cont">
+													SK브로드밴드 이용약관 동의문구가 들어갑니다. SK브로드밴드 이용약관 동의문구가 들어갑니다.SK브로드밴드 이용약관 동의문구가 들어갑니다.SK브로드밴드 이용약관 
+													동의문구가 들어갑니다.
+												</p>
+											</div>
+										</li>
+									</ul>
+								</div>
+								<script>
+									$('.js-acc_qna').trpAccordionMenu('.header-area','.con-area','on')
+								</script>
+							</div>
+						</div>
+					</div>
+					<div class="article" id="tabmenu">
+						<h2 class="guide_h2">tabmenu</h2>
+						<h3 class="guide_h3">- tabmenu (default)
+						</h3>
+						<div class="item-inner">
+							<samp class="sample js-source" data-sample="code">
+									
+								<div class="tab-wrap tab_type1 js-tabStyle"> 
+									<div class="tab_menu_wrap">
+										<ul class="tab_menu clearfix">
+											<li class="on"><a href="#tab_cont0">방송/콘텐츠</a></li>
+											<li><a href="#tab_cont1">상품/신청</a></li>
+											<li><a href="#tab_cont2">스마트홈 안심캠</a></li>
+											<li><a href="#tab_cont3">상품/신청</a></li>
+											<li><a href="#tab_cont4">스마트홈 안심캠</a></li>
+											<li><a href="#tab_cont5">상품/신청</a></li>
+											<li><a href="#tab_cont1">스마트홈 안심캠</a></li>
+											<li><a href="#tab_cont2">상품/신청</a></li>
+											<li><a href="#tab_cont3">스마트홈 안심캠</a></li>
+										</ul> 
+									</div> 
+									<div class="tab_cont_wrap">
+										<div class="tab_cont" id="tab_cont0">
+											tab0_cont<br>
+											tab0_cont<br>
+											tab0_cont<br>
+											tab0_cont<br> 
+											tab0_cont<br>
+										</div>
+										<div class="tab_cont" id="tab_cont1">
+											tab1_cont<br>
+											tab1_cont<br>
+											tab1_cont<br>
+											tab1_cont<br> 
+											tab1_cont<br>
+											tab1_cont<br>
+											tab1_cont<br> 
+											tab1_cont<br>
+											tab1_cont<br>
+										</div>
+										<div class="tab_cont" id="tab_cont2">
+											tab2_cont
+										</div>
+										<div class="tab_cont" id="tab_cont3">
+											tab3_cont
+										</div>
+										<div class="tab_cont" id="tab_cont4">
+											tab4_cont
+										</div>
+										<div class="tab_cont" id="tab_cont5">
+											tab5_cont 
+										</div>
+									</div>
+								</div> 
+								<script>   
+								$(function() {
+									$('.js-tabStyle').setTabType(0); // param: 초기 활성화 메뉴 index 값
+								})
+								</script>
+							</samp>
+						</div>
+					</div>
+					<div class="article" id="tabmenu">
+						<h2 class="guide_h2">banner</h2>
+						<h3 class="guide_h3">- slide (default)</h3>
+						<div class="item-inner">
+							<samp class="sample js-source" data-sample="code">
+								<div class="slider_wrap swiper-container slider_imgBanner">
+									<ul class="swiper-wrapper">
+										<li class="swiper-slide">
+											<a href="#">
+												<img src="../resources/poc/images/temp/@banner_test.png" alt="5월 신규가입 이벤트. 기가인터넷, B tv 결합상품. 자세히보기">
+											</a>
+										</li>
+										<li class="swiper-slide">
+											<a href="#">
+												<img src="https://dummyimage.com/656x280/f29027/fff" alt="5월 신규가입 이벤트. 기가인터넷, B tv 결합상품. 자세히보기">
+											</a>
+										</li>
+										<li class="swiper-slide">
+											<a href="#">
+												<img src="https://dummyimage.com/656x280/E72928/fff" alt="5월 신규가입 이벤트. 기가인터넷, B tv 결합상품. 자세히보기">
+											</a>
+										</li>
+										<li class="swiper-slide">
+											<a href="#">
+												<img src="https://dummyimage.com/656x280/000/fff" alt="5월 신규가입 이벤트. 기가인터넷, B tv 결합상품. 자세히보기">
+											</a>
+										</li>
+									</ul>
+								</div>
+								<div class="swiper-pagination js-s_page">
+									
+								</div>
+								<script>
+									var mySwiper = new Swiper('.swiper-container', {
+										loop: true,
+										autoplay: {
+											delay: 5000,
+										},
+										pagination: {
+											el: '.js-s_page',
+											type: 'bullets',
+											clickable: true,
+											renderBullet: function (index, className) {
+												return '<span class="' + className + '"><i class="bullet"><em class="hide">' + (
+													index + 1
+												) + '</em></i></span>';
+											}
+										},
+										navigation: {
+											nextEl: '.swiper-button-next',
+											prevEl: '.swiper-button-prev'
+										},
+										on : {
+											init : function() {
+												console.log(111);
+											}
+										}
+									})
+									$('.js-s_page').append('<button class="swiper_pause"><span class="hide">자동재생 멈춤</span></button>');
+									$('.js-s_page .swiper_pause').on('click', function() {
+										$(this).toggleClass('on');
+										if($(this).hasClass('on')) {
+											mySwiper.autoplay.stop();
+										}
+										else {
+											mySwiper.autoplay.start();
+										}
+									})
+								</script>
+							</samp>
+						</div>
+					</div>
+					<div class="article" id="layer_popup">
+						<h2 class="guide_h2">레이어 팝업</h2>
+						<h3 class="guide_h3">- 기본 레이어 팝업  [ 팝업은 (.trp.popupfixed-wrap)  body ＞ .wrapper 과 같은 레벨에 있어야 함. ]
+						</h3>
+						<div class="item-inner">
+							<samp class="sample" data-sample="code">
+								<a href="#dialog-form" class="btn btn_default js-default_alert">레이어팝업</a>
+								<a href="#popup_layer0" class="btn btn_default js-layer_pop">전체창팝업</a>
+								<a href="#" class="btn btn_default js-snippet">Toast 팝업</a>
+							</samp>
+						</div>
+					</div>
+				</div>
+						<!-- //container -->
+			</div>
+		</div>
+	</div>
+
+
+
+	<!-- layou-popup -->
+	
+	<div id="dialog-form" class="trp popupfixed-wrap default_alert">
+		<div class="popup-align">
+			<div class="popup-vertical">
+				<div class="popup-layer pop_alert" style="width:300px">
+					<div class="pop_tit">AS 신청</div>
+					<!-- 알림 mode0 -->
+					<section class="section" style="display: block;">
+						<div class="alert">
+							<p class="alert_cont">홍길동 고객님께서 신청하신
+								<strong>7월 4일</strong>의 AS 신청이 완료 되었습니다.</p>
+						</div>
+						<div class="pop_btn_box">
+							<a class="btn btn_pop_gray js-closepop " href="#" role="button">취소</a>
+							<a class="btn btn_pop_orange js-closepop" href="#" role="button">확인</a>
+						</div>
+					</section>
+				</div>
+			</div>
+		</div>
+	  </div>
+	<script>
+	$( "#dialog-form" ).dialog({
+	  autoOpen: false,
+	  modal: true,
+	  create : function(event) {
+		$( ".js-default_alert" ).on( "click", function() {
+			modalFixedControl.open($(event.target));
+			$(event.target).dialog( "open" );
+		});
+	  },
+				resizable: false,
+	  open : function (event) {
+		$('.js-closepop', $(event.target)).on('click', function() {
+			$(event.target).dialog( "close" );
+			return false;
+		})
+	  },
+      close: function() {
+		modalFixedControl.close();
+      }
+	});
+ 	
+	</script>
+
+
+
+
+	<div id="popup_layer0" class="trp popupfixed-wrap cover_type">
+		<div class="popup-align">
+			<div class="popup-layer" >
+				<div class="header">
+					<div class="header_rel_group border_bottom">
+						<div class="top_bar">
+							<div class="locations">
+								<div class="view_page"><h1 class="sub_title"><img src="../resources/poc/images/common/logo.png" alt="SK Broadband" class="logo"></h1></div>
+							</div>
+							<div class="top_left">
+								<a href="#" class="history_back"><span class="hide">이전페이지로 이동</span></a>
+							</div>
+							<div class="top_right">
+								<a href="#" class="btn_close js-closepop"><span class="hide">닫기</span></a>
+							</div>
+						</div>
+					</div>
+				</div> 
+				<!-- 알림 mode0 -->
+				<section class="section colorBGw" style="display: block;">
+						<div class="cont_inner_full pb50">
+							<div class="cont_inner pb15 pt30">
+								<span class="rel">
+									<input id="checkbox0" type="checkbox" name="" class="chk js-all_check">
+									<label for="checkbox0" class="chk ft_b">전체 약관에 동의합니다.</label>
+								</span>
+								
+							</div>
+							<div class="accordion-wrap colorBGf">
+								<ul class="accordion-list js-acc2">
+									<li>
+										<div class="header-area">
+											<span class="rel">
+												<input id="checkbox001" type="checkbox" name="" class="chk js-chk_item">
+												<label for="checkbox001" class="chk">개인정보 수집/이용동의<span class="colorP">(필수)</span></label>
+											</span>
+											<button class="acc_btn">
+												<span class="hide">개인정보 수집/이용 내용 보기</span>
+											</button>
+										</div>
+										<div class="con-area">
+											<p class="policy_cont">
+												개인정보 수집 이용 동의 문구가 들어갑니다. 개인정보 수집
+												이용 동의 문구가 들어갑니다. 
+											</p>
+										</div>
+									</li>
+									<li>
+										<div class="header-area">
+											
+											<span class="rel">
+												<input id="checkbox002" type="checkbox" name="" class="chk js-chk_item">
+												<label for="checkbox002" class="chk">고유식별정보 처리 동의<span class="colorP">(필수)</span></label>
+											</span>
+											<button class="acc_btn">
+												<span class="hide">고유식별정보 처리 내용 보기</span>
+											</button>
+										</div>
+										<div class="con-area">
+											<p class="policy_cont">
+												개인정보 수집 이용 동의 문구가 들어갑니다. 개인정보 수집
+												이용 동의 문구가 들어갑니다. 
+											</p>
+										</div>
+									</li>
+									<li>
+										<div class="header-area">
+											<span class="rel">
+												<input id="checkbox003" type="checkbox" name="" class="chk js-chk_item">
+												<label for="checkbox003" class="chk">통신사 이용 약관 동의<span class="colorP">(필수)</span></label>
+											</span>
+											<button class="acc_btn">
+												<span class="hide">통신사 이용 약관 내용 보기</span>
+											</button>
+										</div>
+										<div class="con-area">
+											<p class="policy_cont">
+												개인정보 수집 이용 동의 문구가 들어갑니다. 개인정보 수집
+												이용 동의 문구가 들어갑니다.  <br>
+												
+												개인정보 수집 이용 동의 문구가 들어갑니다. 개인정보 수집
+												이용 동의 문구가 들어갑니다. <br>
+												
+												개인정보 수집 이용 동의 문구가 들어갑니다. 개인정보 수집
+												이용 동의 문구가 들어갑니다. <br>
+												
+												개인정보 수집 이용 동의 문구가 들어갑니다. 개인정보 수집
+												이용 동의 문구가 들어갑니다. <br>
+												
+												개인정보 수집 이용 동의 문구가 들어갑니다. 개인정보 수집
+												이용 동의 문구가 들어갑니다. <br>
+												
+												개인정보 수집 이용 동의 문구가 들어갑니다. 개인정보 수집
+												이용 동의 문구가 들어갑니다. <br>
+												
+												개인정보 수집 이용 동의 문구가 들어갑니다. 개인정보 수집
+												이용 동의 문구가 들어갑니다. <br>
+												
+												개인정보 수집 이용 동의 문구가 들어갑니다. 개인정보 수집
+												이용 동의 문구가 들어갑니다. <br>
+												
+												개인정보 수집 이용 동의 문구가 들어갑니다. 개인정보 수집
+												이용 동의 문구가 들어갑니다. <br>
+												
+												개인정보 수집 이용 동의 문구가 들어갑니다. 개인정보 수집
+												이용 동의 문구가 들어갑니다. <br>
+												
+												개인정보 수집 이용 동의 문구가 들어갑니다. 개인정보 수집
+												이용 동의 문구가 들어갑니다. <br>
+												
+												개인정보 수집 이용 동의 문구가 들어갑니다. 개인정보 수집
+												이용 동의 문구가 들어갑니다. <br>
+												
+												개인정보 수집 이용 동의 문구가 들어갑니다. 개인정보 수집
+												이용 동의 문구가 들어갑니다. <br>
+												
+												개인정보 수집 이용 동의 문구가 들어갑니다. 개인정보 수집
+												이용 동의 문구가 들어갑니다. <br>
+												
+												개인정보 수집 이용 동의 문구가 들어갑니다. 개인정보 수집
+												이용 동의 문구가 들어갑니다. <br>
+												
+												개인정보 수집 이용 동의 문구가 들어갑니다. 개인정보 수집
+												이용 동의 문구가 들어갑니다. <br>
+												
+												개인정보 수집 이용 동의 문구가 들어갑니다. 개인정보 수집
+												이용 동의 문구가 들어갑니다. 
+											</p>
+										</div>
+									</li> 
+									<li>
+										<div class="header-area">
+											
+											<span class="rel">
+												<input id="checkbox004" type="checkbox" name="" class="chk js-chk_item">
+												<label for="checkbox004" class="chk">서비스 이용 약관 동의<span class="colorP">(필수)</span></label>
+											</span>
+											<button class="acc_btn">
+												<span class="hide">서비스 이용 약관 내용 보기</span>
+											</button>
+										</div>
+										<div class="con-area">
+											<p class="policy_cont">
+												개인정보 수집 이용 동의 문구가 들어갑니다. 개인정보 수집
+												이용 동의 문구가 들어갑니다. 
+											</p>
+										</div>
+									</li> 
+								</ul>
+							</div>
+							<div class="cont_inner pt30">
+									<button class="btn btn_default btn_lg btn_round" type="button">인증번호 받기</button>
+							</div>
+						</div>
+		
+						<script>
+							$('.js-all_check').allCheckbox('.js-chk_item');
+							$('.js-acc2').trpAccordionMenu('.acc_btn','.con-area','on')
+						</script>
+					</div>
+				</section>
+			</div>
+		</div>
+	</div>
+	<script>
+		(function () {
+
+			$( "#popup_layer0" ).dialog({
+				autoOpen: false,
+				modal: true,
+				width:'100%',
+				height:$(window).innerHeight(),
+				resizable: false,
+				create : function(event) {
+					$( ".js-layer_pop" ).on( "click", function() {
+						modalFixedControl.open($(event.target));
+						$(event.target).dialog( "open" );
+					});
+				},
+				open : function (event) {
+					$('.js-closepop', $(event.target)).on('click', function() {
+						$(event.target).dialog( "close" );
+						return false;
+					})
+				},
+				close: function() {
+					modalFixedControl.close();
+				}
+			});
+
+
+		})();
+	</script>
+
+	<!-- // layou-popup -->
+	<!-- 
+	<div class="snippet_wrap js-snippet_wrap">
+		<p class="snippet_cont">1:1 상담이 등록되었습니다.</p>
+	</div> -->
+	<script>
+		$('.js-snippet').on('click', function () {
+			openSnippet("1:1 상담이 등록되었습니다.");
+			return false;
+		})
+	</script>
+	<script>
+		$(".guide_h2").on("click", function (e) {
+			$('body,html').animate({
+				scrollTop: 0
+			}, 100);
+			return false;
+		})
+	</script>
+</body>
+</html>
