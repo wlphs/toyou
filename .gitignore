@@ -1,0 +1,4 @@
+node_modules/
+root/resources/js/common.min.js
+root/resources/css/common.min.css
+package-lock.json
