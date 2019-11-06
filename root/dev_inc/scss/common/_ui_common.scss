@@ -48,7 +48,7 @@
 .btn.btn_sm { padding: 6px 15px 7px;   min-width: auto;  font-size: 14px; }
 
 .btn_arrow_sm { font-size:14px; color:#222222; padding-right:20px; position: relative;
-    &:after {content:''; position: absolute; right:5px; top:50%; margin-top:-5px; @include sp_icons($arrow_md);}
+    &:after {content:''; position: absolute; right:5px; top:50%; margin-top:-5px; background:url('/resources/images/common/sm_arrow.svg'); width:4px; height:7px;}
 }
 
 //더보기버튼

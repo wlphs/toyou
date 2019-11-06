@@ -5,6 +5,7 @@
 var _debugMode = true,       // 기본 디버그모드
     protNum = 9909,
     gulp = require('gulp'),
+	svgSprite = require('gulp-svg-sprite'),
     spritesmith = require('gulp.spritesmith'),
     merge = require('merge-stream'),
     sass = require('gulp-sass'),
@@ -28,6 +29,8 @@ var _debugMode = true,       // 기본 디버그모드
     gulpif = require('gulp-if'),
     browserSync = require('browser-sync').create()
     reload = browserSync.reload;
+
+
 
 
 // ---------------------------------
@@ -87,7 +90,34 @@ var dir  = {
   dev_scripts     : pRoot + "dev_inc/"  + 'js/',              // 개발 스크립트
   dev_images      : pRoot + "dev_inc/"  + 'images/',          // 개발 이미지 느려짐 사용자제
   dev_imagesSp    : pRoot + "dev_inc/"  + 'imagesSp/',        // 개발 스라이스 이미지
+  dev_svgSp :    pRoot + "dev_inc/"  + 'imagesSp/' + "svg/"
 };
+
+
+
+
+var svg_config = {
+    shape: {
+      dimension: { // Set maximum dimensions
+        maxWidth: 32,
+        maxHeight: 32
+      },
+      spacing: { // Add padding
+        padding: 10
+      },
+      dest:  dir.dev_svgSp + ''
+    },
+    mode: {
+      view: { // Activate the «view» mode
+        bust: false,
+        render: {
+          scss: true // Activate Sass output (with default options)
+        }
+      },
+      symbol: true // Activate the «symbol» mode
+    }
+  };
+
 
 // ---------------------------------
 // Functions 홀더경로 추출함수
@@ -154,6 +184,12 @@ getFolders = function (dir) {
 //--------------------------------
 // Tasks spriteimg  // spritesmith 합치기
 //--------------------------------
+
+function spritesvg() {
+	gulp.src(dir.dev_imagesSp + "svg/" + '**/*.svg', { cwd: dir.dev_svgSp})
+	  .pipe(svgSprite(svg_config))
+	  .pipe(gulp.dest(dir.dist_images + 'common'));
+}; 
 function spriteimg() {
   // set target folders
   var folders = getFolders(dir.dev_imagesSp + "sprite/");
@@ -244,6 +280,7 @@ function fileincludes() {
 function watch() {
   gulp.watch( [dir.dev_scripts      + 'library/**/*'] , gulp.series(debugModeFn, gulp.parallel(jquery, libraryConcatCss, libraryConcatJs)) );
   gulp.watch( [dir.dev_imagesSp    + 'sprite/**/*'],  gulp.parallel(spriteimg));   /// spriteimg, iconfonts
+  gulp.watch( [dir.dev_imagesSp    + 'svg/**/*'],  gulp.parallel(spritesvg)); 
   gulp.watch( [dir.dev_style       + '**/*.scss'] , styles);
   gulp.watch( [dir.dev_scripts     + '*.js']      , gulp.series(scripts));
   gulp.watch( [dir.dev_html        + '**/*.html'] , fileincludes);
@@ -264,7 +301,7 @@ function browser(){
 /*
  *`gulp.series`와`gulp.parallel`을 사용하여 태스크가 직렬 또는 병렬로 실행
  */
-var base        = gulp.series( gulp.parallel(jquery, libraryConcatCss, libraryConcatJs), gulp.parallel(spriteimg) , scripts, gulp.parallel(styles,  fileincludes) );  /// spriteimg
+var base        = gulp.series( gulp.parallel(jquery, libraryConcatCss, libraryConcatJs), gulp.parallel(spriteimg), gulp.parallel(spritesvg) , scripts, gulp.parallel(styles,  fileincludes) );  /// spriteimg
 
 var debug       = gulp.series(debugModeFn, fileincludes);
 var build       = gulp.series(buildModeFn);
@@ -279,6 +316,7 @@ exports.base = base;
 exports.styles = styles;
 exports.scripts = scripts;
 exports.spriteimg = spriteimg;
+exports.spritesvg = spritesvg;
 
 exports.fileincludes = fileincludes;
 

@@ -30,6 +30,7 @@
     "gulp-sourcemaps": "^2.6.5",
     "gulp-uglify": "^3.0.2",
     "gulp.spritesmith": "^6.11.0",
+    "gulp-svg-sprite": "^1.5.0",
     "jquery-sortablejs": "^1.0.1",
     "merge-stream": "^2.0.0",
     "node-sass": "^4.12.0",
