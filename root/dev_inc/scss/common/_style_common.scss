@@ -32,17 +32,6 @@ body { background-color: #fff;
 .sub_txt_b { font-size:23px; padding: 35px 16px 37px; }
 
 
-.ic {
-    &.ic_star_f {display:inline-block;
-        &:after {content:''; @include sp_icons($ic_star_f); display:block;}
-    }
-    &.ic_star_e {display:inline-block;
-        &:after {content:''; @include sp_icons($ic_star_e); display:block;}
-    }
-    &.ic_star_h {display:inline-block;
-        &:after {content:''; @include sp_icons($ic_star_h); display:block;}
-    }
-}
 
 
 
@@ -209,12 +198,10 @@ table.bottom_bar   { border-bottom: $borderBottom !important; }
                 span { padding-top: 3px;  }
                 .file_del-btn      { 
                     &::after { content: ""; display: block; 
-                        /*@include sp_icons($icon-file_del)*/
                     }
                 }
                 .file_download-btn { margin-left: 5px;
                     &::after { content: ""; display: block; 
-                        /*@include sp_icons($icon-file_download)*/
                     }
                  }
                 .file_name { margin-left: 5px; font-weight: bold; color:$colorB; }
@@ -412,10 +399,6 @@ table.bottom_bar   { border-bottom: $borderBottom !important; }
 .swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction {position: relative; bottom:auto; left:auto;}
 .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {margin:0; line-height:7px;}
 
-.swiper_pause { height:30px; padding:9px 5px; display:inline-block; position: relative;
-    &:after {content:''; @include sp_icons($slide_pause); display:block;}
-    &.on:after {@include sp_icons($slide_resume)}
-}
 
 
 

@@ -19,21 +19,8 @@
     .history_back {  display:block; padding:22px 16px;
       &:before {content:''; display:block; @include sp_icons($history_back);}
     }
-    .btn_menu { display:block; padding:23px 16px;
-      &:before {content:''; display:block; @include sp_icons($gnb_menu);}
-    }
     .btn_search {display:block; padding:23px 16px;
       &:before {content:''; display:block; @include sp_icons($ic_search);}
-    }
-    .btn_notice { display:block; padding:22px 16px;
-      &:before {content:''; display:block; @include sp_icons($top_notice);}
-      &.on:after {content:'';  width:6px; height:6px; border-radius: 3px; background:$colorP; position: absolute; top:22px; left:10px;}
-      .txt_on { display:none;}
-      .txt_off {display:block;}
-      &.on {
-        .txt_off { display:none;}
-        .txt_on {display:block;}
-      }
     }
   }
 }

@@ -5,7 +5,6 @@
 var _debugMode = true,       // 기본 디버그모드
     protNum = 9909,
     gulp = require('gulp'),
-	svgSprite = require('gulp-svg-sprite'),
     spritesmith = require('gulp.spritesmith'),
     merge = require('merge-stream'),
     sass = require('gulp-sass'),
@@ -29,7 +28,6 @@ var _debugMode = true,       // 기본 디버그모드
     gulpif = require('gulp-if'),
     browserSync = require('browser-sync').create()
     reload = browserSync.reload;
-
 
 
 
@@ -86,38 +84,12 @@ var dir  = {
   dist_images     : pRoot + "resources/"     + 'images/',          // inc => resources 생성 이미지
 
   dev_html        : pRoot + "dev_html/" ,                     // 개발 HTML
+  dev_purehtml        : pRoot + "dev_purehtml/" ,                     // 개발 HTML
   dev_style       : pRoot + "dev_inc/"  + 'scss/',            // 개발 스타일
   dev_scripts     : pRoot + "dev_inc/"  + 'js/',              // 개발 스크립트
   dev_images      : pRoot + "dev_inc/"  + 'images/',          // 개발 이미지 느려짐 사용자제
   dev_imagesSp    : pRoot + "dev_inc/"  + 'imagesSp/',        // 개발 스라이스 이미지
-  dev_svgSp :    pRoot + "dev_inc/"  + 'imagesSp/' + "svg/"
 };
-
-
-
-
-var svg_config = {
-    shape: {
-      dimension: { // Set maximum dimensions
-        maxWidth: 32,
-        maxHeight: 32
-      },
-      spacing: { // Add padding
-        padding: 10
-      },
-      dest:  dir.dev_svgSp + ''
-    },
-    mode: {
-      view: { // Activate the «view» mode
-        bust: false,
-        render: {
-          scss: true // Activate Sass output (with default options)
-        }
-      },
-      symbol: true // Activate the «symbol» mode
-    }
-  };
-
 
 // ---------------------------------
 // Functions 홀더경로 추출함수
@@ -179,17 +151,25 @@ getFolders = function (dir) {
       .pipe(gulp.dest( dir.dist_scripts + 'library/'));
     };
 
+    // ---------------------------------
+    // 이미지 최적화 Tasks
+    // ---------------------------------
+    // task.imagesmin
+    function imagesmin(){
+      return gulp.src(dir.dev_images+'**/*')
+      //.pipe(imagemin({ verbose : true }))
+      .pipe(imagemin([ 
+        imagesmin.gifsicle({interlaced:true}),
+        imagesmin.jspgtran({progressive:true}),
+        imagesmin.optipng({optimizationLevel:5})
+        ]))
+      .pipe(gulp.dest(dir.dist_images + ''));
+    };
 
 
 //--------------------------------
 // Tasks spriteimg  // spritesmith 합치기
 //--------------------------------
-
-function spritesvg() {
-	gulp.src(dir.dev_imagesSp + "svg/" + '**/*.svg', { cwd: dir.dev_svgSp})
-	  .pipe(svgSprite(svg_config))
-	  .pipe(gulp.dest(dir.dist_images + 'common'));
-}; 
 function spriteimg() {
   // set target folders
   var folders = getFolders(dir.dev_imagesSp + "sprite/");
@@ -230,8 +210,13 @@ function styles() {
     // output style is [nested | expanded | compact | compressed]
     .pipe(sass.sync({outputStyle: 'expanded'}).on('error', sass.logError))
     .pipe(autoprefixer())
+    //.pipe(postcss(autoprefixers()))
     .pipe(gulpif( _debugMode, sourcemaps.write("./maps") ))
     .pipe(gulp.dest(dir.dist_style ))    
+    .pipe(minifyCSS()) 
+    .pipe(lineec())
+    .pipe(rename({extname: ".min.css"}))    
+    .pipe(gulp.dest(dir.dist_style ))
 };
 
 
@@ -251,10 +236,6 @@ function scriptsMin() {
     .pipe(lineec())                               // 줄끝 검사
     .pipe(rename({extname: ".min.js"}))
     .pipe(gulp.dest(dir.dist_scripts))
-    .pipe(minifyCSS()) 
-    .pipe(lineec())
-    .pipe(rename({extname: ".min.css"}))    
-    .pipe(gulp.dest(dir.dist_style ))
 };
 
 // ---------------------------------
@@ -271,21 +252,37 @@ function fileincludes() {
     basepath: '@file'
   }))    
   .pipe(htmlbeautify(options))
-  .pipe(gulpif( _debugMode, convertEncoding({to: 'utf-8'}),  convertEncoding({to: 'euc-kr'}) ))
+  .pipe(gulpif( _debugMode, convertEncoding({to: 'utf-8'}) ))   //,  convertEncoding({to: 'euc-kr'}) ))
   .pipe(gulp.dest(dir.dist_html))
+  
+};
+function fileincludes2() {
+  var options = {
+      indentSize: 4, 
+      indent_with_tabs: false
+  };
+  return gulp.src([ dir.dev_purehtml + '**/*.html', '!'+dir.dev_html + 'include/**/*.html'], {base : dir.dev_purehtml})
+  .pipe(fileinclude({
+    prefix: '@@',
+    basepath: '@file'
+  }))    
+  .pipe(htmlbeautify(options))
+  .pipe(gulpif( _debugMode, convertEncoding({to: 'utf-8'}) ))   //,  convertEncoding({to: 'euc-kr'}) ))
+  //.pipe(gulpif( _debugMode, convertEncoding({to: 'utf-8'}),  convertEncoding({to: 'euc-kr'}) ))
+  .pipe(gulp.dest(dir.dist_purehtml))
   
 };
 
 
 function watch() {
   gulp.watch( [dir.dev_scripts      + 'library/**/*'] , gulp.series(debugModeFn, gulp.parallel(jquery, libraryConcatCss, libraryConcatJs)) );
-  gulp.watch( [dir.dev_imagesSp    + 'sprite/**/*'],  gulp.parallel(spriteimg));   /// spriteimg, iconfonts
-  gulp.watch( [dir.dev_imagesSp    + 'svg/**/*'],  gulp.parallel(spritesvg)); 
+  gulp.watch( [dir.dev_imagesSp    + 'sprite/**/*'],  gulp.parallel(spriteimg ));   /// spriteimg, iconfonts
   gulp.watch( [dir.dev_style       + '**/*.scss'] , styles);
-  gulp.watch( [dir.dev_scripts     + '*.js']      , gulp.series(scripts));
+  gulp.watch( [dir.dev_scripts     + '*.js']      , gulp.series(scripts,scriptsMin));
   gulp.watch( [dir.dev_html        + '**/*.html'] , fileincludes);
-  gulp.watch( [dir.dist_scripts + '**/*.js', dir.dist_images + 'common/*.*', dir.dist_style + '**/*.css', dir.dev_html + '**/*.html'])
-    .on('change', reload);
+  gulp.watch( [dir.dev_purehtml        + '**/*.html'] , fileincludes2);
+  // gulp.watch( [dir.dist_scripts + '**/*.js', dir.dist_images + 'common/*.*', dir.dist_style + '**/*.css', dir.dev_html + '**/*.html'])
+  //   .on('change', reload);
 }
 
 
@@ -301,7 +298,7 @@ function browser(){
 /*
  *`gulp.series`와`gulp.parallel`을 사용하여 태스크가 직렬 또는 병렬로 실행
  */
-var base        = gulp.series( gulp.parallel(jquery, libraryConcatCss, libraryConcatJs), gulp.parallel(spriteimg), gulp.parallel(spritesvg) , scripts, gulp.parallel(styles,  fileincludes) );  /// spriteimg
+var base        = gulp.series( gulp.parallel(jquery, libraryConcatCss, libraryConcatJs), gulp.parallel(spriteimg) , scripts, gulp.parallel(styles, scriptsMin, fileincludes) );  /// spriteimg, iconfonts
 
 var debug       = gulp.series(debugModeFn, fileincludes);
 var build       = gulp.series(buildModeFn);
@@ -316,9 +313,9 @@ exports.base = base;
 exports.styles = styles;
 exports.scripts = scripts;
 exports.spriteimg = spriteimg;
-exports.spritesvg = spritesvg;
-
+exports.imagesmin = imagesmin;
 exports.fileincludes = fileincludes;
+exports.fileincludes2 = fileincludes2;
 
 exports.build = build;
 exports.debug = debug;

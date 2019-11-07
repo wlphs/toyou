@@ -55,39 +55,7 @@
 .btn_more { font-size: 14px; padding-right: 15px; position: relative; display:inline-block; color:#222;
     &:after { content:''; display:inline-block; position: absolute; right:0; top: 50%; margin-top:-5px; @include sp_icons($arrow_more);}
 }
-.btn_more2 { font-size: 14px; display:block; color:#222; line-height: 50px; text-align:center; border-top:1px solid #e6e6e6;
-    span { position: relative; display:inline-block; padding-right: 18px; font-weight: 500;
-        &:after { content:''; display:inline-block; position: absolute; right:0; top: 50%; margin-top:-3px; @include sp_icons($arrow_up_md); transition: .2s transform; transform: rotate(180deg);}
-    }
-    &.on { 
-        span { 
-            &:after {transform :rotate(0);}
-        }
-    }
-}
 
-//긴더보기버튼
-.btn_more_long { display:block; position: relative;  text-align:center; 
-    &::before { content:''; display:inline-block; position:absolute; top:50%; left:0; right:0; height:1px; background: #ccc;}
-    a { display:block; background:#f6f6f6; font-size: 14px; color:#666666; padding: 10px 0;
-        span { position: relative; display:inline-block; padding:0 25px 0 15px; background:#f6f6f6; 
-            &:after { content:''; display:inline-block; position: absolute; right:10px; top: 50%; margin-top:-4px; @include sp_icons($plus_sx);}
-        }
-    }
-}
-
-//더보기이미지
-.btn_more-img { display:block; position: relative; font-size: 0; 
-    &:after { content:''; display:inline-block; position:absolute; right:0; top:50%; margin:-3px 0 0 -3px; @include sp_icons($plus_ss); }
-    &.on { 
-        &:after { @include sp_icons($minus_ss); transform :rotate(0);}
-    }
-}
-
-//마스킹해제
-.btn_lock { 
-    &::before { content:''; display:inline-block;  @include sp_icons($icon_lock); margin: 1px 5px 0 0; vertical-align: top }
-}
 
 // 버튼 정열
 .btn_bottom { position: relative; padding-top: 30px; @include clearfix();
@@ -288,97 +256,7 @@
         }
     }
 
-    //QNA
-    &.qna {
-        >li { font-size: 14px;
-            .header-area { position: relative;  padding: 16px 40px 16px 35px; border-top:1px solid #e6e6e6; border-bottom:0;
-                &::before { content:''; position: absolute; left:16px; top:19px;  @include sp_icons($icon_q);}
-                &:after { content: ""; display: block; position: absolute; top:20px; right:16px; transition: .2s transform; transform :rotate(180deg);
-                   @include sp_icons($plus_sm);}
-                a { display: block;}
-            }
-            >.con-area { padding: 22px 60px 22px 35px; border-top:1px solid #e6e6e6; border-bottom:0;}
-            &.on { 
-                .header-area { 
-                    &:after {  @include sp_icons($minus_sm); transform :rotate(0deg)}
-                }
-            }
-            &:first-child {
-                .header-area { border-top:0px;}
-            }
-        }
-        .key { color: $colorS; }
-    }
-
-    //공지사항 링크
-    &.notice {
-        >li { font-size: 14px; border-top:1px solid #e6e6e6;
-            a { position: relative;  padding: 16px 30px 16px 16px; display:block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
-                &:after { content:''; display:inline-block; position: absolute; right:16px; top: 50%; margin-top:-4px; @include sp_icons($arrow_more);}
-            }
-            &:first-child { border-top:0px;}
-        }
-    }
-
-    //알려드립니다.
-    &.notice_img {
-        >li { font-size: 15px;
-            .header-area { position: relative;  padding: 16px 40px 16px 40px; border-top:1px solid #e6e6e6; border-bottom:0;
-                &::before { content:''; position: absolute; left:16px; top:15px;  @include sp_icons($icon_notice);}
-                &:after { content: ""; display: block; position: absolute; top:50%; right:16px; margin-top: -3px; transition: .2s transform; transform :rotate(180deg);
-                   @include sp_icons($arrow_up_md);}
-                a { display: block;}
-            }
-            >.con-area { padding: 22px 16px 22px 16px; border-top:1px solid #e6e6e6; border-bottom:0; font-size: 14px;
-                .mark_dot-list { 
-                    li { margin-top: 25px; color:#666;
-                        &:first-child { margin-top: 0;}
-                        a { color:#222; margin-left: 5px;}
-                    }
-                }
-            }
-            &.on { 
-                .header-area { 
-                    &:after { transform :rotate(0deg)}
-                }
-            }
-            &:first-child {
-                .header-area { border-top:0px;}
-            }
-        }
-    }
-
-    //요금조회-서비스별상세
-    &.bill {
-        >li { border-bottom:1px solid #e6e6e6; 
-            .header-area { position: relative;  padding: 22px 30px 22px 0; border-bottom:0;
-                &:after { content: ""; display: block; position: absolute; top:50%; right:0; margin-top: -3px; transition: .2s transform; transform :rotate(180deg); @include sp_icons($arrow_up_md);}
-    
-                span { font-size: 16px; font-weight: 700;}
-                em { font-size:13px; color: $colorS; float:right;
-                    i { font-size: 16px; font-weight: 700; font-family: Roboto;}
-                }
-            }
-            &.on { 
-                .header-area { 
-                    &:after { transform :rotate(0deg)}
-                }
-            }
-            .con-area { padding-bottom: 15px; }
-            &:first-child {
-                .header-area { border-top:0px;}
-            }
-
-        }
-    }
-
-
 }
-
-.policy_cont {color:$colorL; font-size:14px; }
-
-
-
 
 /* ================== 팝업 레이아웃 */  
 /** //popup-wrap **/
