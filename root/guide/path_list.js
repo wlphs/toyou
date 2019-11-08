@@ -119,7 +119,7 @@ __CONSTANT_LIST = [
         dep1 		: '시작화면',
         dep2 		: '',
         dep3 		: '',
-        url 		: '',
+        url 		: '/html/main/home.html',
         pubUpdate 	: '2019-0000',
         etc 		: '',
     },

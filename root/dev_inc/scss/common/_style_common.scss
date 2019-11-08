@@ -9,7 +9,7 @@ body { background-color: #fff;
 .body-inner, .header-inner, .footer-inner { min-width: $G-width;
     width:$G-width; margin: 0 auto; position: relative; }
 
-#contents {background:#f6f6f6; min-height:calc( 100vh - 65px ); padding-bottom:50px;}
+#contents {min-height:calc( 100vh - 65px ); padding-bottom:50px;}
 
 .cont_inner_bg { background:#fff; padding: 25px 16px;
     .title { margin: 5px 0 15px;
@@ -38,7 +38,7 @@ body { background-color: #fff;
 /* ========================== text */
 
 .h1 { font-size: 23px; font-weight: 700; letter-spacing: -0.5; color:$colorB; font-family: $baseFT; } 
-.h2 { font-size: 18px; font-weight: 700; color:$colorB; font-family: $baseFT; } 
+.h2 { font-size: 22px; font-weight: 700; color:$colorB; font-family: $baseFT; } 
 .h3 { font-size: 16px; font-weight: 700; color:$colorB; font-family: $baseFT; } 
 .h4 { font-size: 15px; font-weight: 700; color:$colorB; font-family: $baseFT; } 
 .h5 { font-size: 14px; font-weight: 500; color:$colorB; font-family: $baseFT; } 

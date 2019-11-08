@@ -210,13 +210,15 @@ body, li, dt, dd, td, th, div, p, input, textarea, button, option, samp,
 h1, h2, h3, h4, h5, h6, legend, figcaption {
   padding: 0;
   letter-spacing: -.05em;
+  color: #000;
   font-family: "Noto Sans KR", dotum, "돋움", Arial, AppleGothic, Sans-serif;
   box-sizing: border-box;
+  font-size: 14px;
 }
 
 a, span, i, em {
   font-family: inherit;
-  color: #222;
+  color: #000;
   font-size: inherit;
   font-weight: inherit;
   line-height: inherit;
@@ -229,9 +231,9 @@ a, span, i, em {
   background-size: 80px 76.5px;
 }
 
-.btn_more:after, .accordion-list > li .header-area .acc_btn:after, .trp.popupfixed-wrap .btn_close:after, .header .top_bar .history_back:before, .header .top_bar .btn_search:before {
+.btn_more:after, .accordion-list > li .header-area .acc_btn:after, .trp.popupfixed-wrap .btn_close:after, .header .h1_logo, .header .location_top::before, .thum_list > li .btn_like::before, .thum_list > li .btn_like.on::before, .thum_list.big_type > li .btn_like::before, .thum_list.big_type > li .btn_like.on::before {
   background-image: url("../images/common/sp_icons.png");
-  background-size: 61px 51px;
+  background-size: 125.5px 103.5px;
 }
 
 /*  _mixin.scss
@@ -1534,7 +1536,6 @@ body {
 }
 
 #contents {
-  background: #f6f6f6;
   min-height: calc( 100vh - 65px);
   padding-bottom: 50px;
 }
@@ -1619,7 +1620,7 @@ body {
 }
 
 .h2 {
-  font-size: 18px;
+  font-size: 22px;
   font-weight: 700;
   color: #222222;
   font-family: "Noto Sans KR";
@@ -2888,11 +2889,10 @@ table.bottom_bar {
 }
 
 .btn_more {
-  font-size: 14px;
-  padding-right: 15px;
+  font-size: 12px;
+  padding: 10px;
   position: relative;
   display: inline-block;
-  color: #222;
 }
 
 .btn_more:after {
@@ -2903,8 +2903,8 @@ table.bottom_bar {
   top: 50%;
   margin-top: -5px;
   width: 5px;
-  height: 10px;
-  background-position: -56px 0px;
+  height: 8.5px;
+  background-position: -15px -93.5px;
 }
 
 .btn_bottom {
@@ -3373,7 +3373,7 @@ table.bottom_bar {
   transform: rotate(180deg);
   width: 11px;
   height: 6px;
-  background-position: -21px -30px;
+  background-position: -70.5px -62.5px;
 }
 
 .accordion-list > li > .con-area {
@@ -3459,7 +3459,7 @@ table.bottom_bar {
   top: 25px;
   width: 16px;
   height: 16px;
-  background-position: -30px 0px;
+  background-position: -86px -32.5px;
 }
 
 .trp.popupfixed-wrap.cover_type .popup-layer {
@@ -4462,94 +4462,43 @@ select:-moz-focusring {
 }
 
 /* header.scss */
-#header.fixing {
-  padding-bottom: 48px;
-}
-
 .header {
-  height: 65px;
+  height: 55px;
   width: 100%;
+  padding-left: 25px;
 }
 
-.header .header_fixed_group {
-  height: 65px;
-  background: #fff;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 100;
-}
-
-.header .header_rel_group {
-  height: 65px;
-  background: #fff;
-  position: relative;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 1;
-}
-
-.header .border_bottom {
-  border-bottom: 1px solid #edebe9;
-}
-
-.header .top_bar {
-  position: relative;
-}
-
-.header .top_bar .locations {
-  padding: 0 55px;
-}
-
-.header .top_bar .locations .sub_title {
-  text-align: center;
-  line-height: 65px;
-  font-size: 18px;
-}
-
-.header .top_bar .locations .logo {
-  width: 108px;
-  margin-top: 25px;
-}
-
-.header .top_bar .top_left {
+.header .h1_logo {
+  font-size: 0;
   position: absolute;
-  left: 0;
-  top: 0;
-}
-
-.header .top_bar .top_right {
-  position: absolute;
-  right: 0;
-  top: 0;
-}
-
-.header .top_bar .history_back {
-  display: block;
-  padding: 22px 16px;
-}
-
-.header .top_bar .history_back:before {
-  content: '';
-  display: block;
-  width: 11px;
-  height: 21px;
-  background-position: 0px -30px;
-}
-
-.header .top_bar .btn_search {
-  display: block;
-  padding: 23px 16px;
-}
-
-.header .top_bar .btn_search:before {
-  content: '';
-  display: block;
-  width: 20px;
-  height: 20px;
+  left: 25px;
+  top: 17px;
+  display: inline-block;
+  width: 125.5px;
+  height: 22.5px;
   background-position: 0px 0px;
+}
+
+.header .h1_logo a {
+  display: block;
+  height: 100%;
+}
+
+.header .location_top {
+  position: absolute;
+  right: 25px;
+  top: 20px;
+  font-size: 12px;
+}
+
+.header .location_top::before {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  margin: -2px 0 0 2px;
+  width: 11px;
+  height: 13px;
+  background-position: -112px -32.5px;
 }
 
 #gnb .nav_box {
@@ -4660,5 +4609,247 @@ select:-moz-focusring {
 }
 
 /* // ================== 로그인 ========================= */
+.main section.main_card {
+  border: 1px solid #000;
+  padding: 15px;
+  background: #fff;
+  border-radius: 15px;
+  margin-bottom: 30px;
+}
+
+.main section.main_card .card_box {
+  padding: 15px;
+}
+
+.main section.main_card .card_edit_menu {
+  margin-bottom: 10px;
+}
+
+.main section.main_card .card_edit_menu button {
+  border: 1px solid #000;
+  padding: 5px 10px;
+}
+
+.main section.fixbtn {
+  position: relative;
+}
+
+.main section.fixbtn .btn_more {
+  position: absolute;
+  right: 25px;
+  top: 0;
+}
+
+.main section.inbox {
+  margin-left: 25px;
+}
+
+.main section .h2 {
+  margin-bottom: 10px;
+}
+
+.key_list_box {
+  position: relative;
+  padding-bottom: 17px;
+  display: inline-block;
+  width: 100%;
+}
+
+.key_list_box::before {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  left: 25px;
+  bottom: 0;
+  right: 0;
+  height: 3px;
+  background: #000;
+}
+
+.key_list_box .key_list {
+  display: block;
+  margin: 0 15px 0 5px;
+}
+
+.key_list_box .key_list li {
+  float: left;
+  width: 33.333333%;
+}
+
+.key_list_box .key_list li a {
+  display: block;
+  font-weight: 500;
+  text-align: center;
+  padding-top: 48px;
+}
+
+.key_list_box .key_list li a.beauty {
+  background: url("/resources/images/common/icon_beauty.png") no-repeat center top;
+  background-size: 27px 38px;
+}
+
+.key_list_box .key_list li a.healing {
+  background: url("/resources/images/common/icon_healing.png") no-repeat center top;
+  background-size: 37px 38px;
+}
+
+.key_list_box .key_list li a.homept {
+  background: url("/resources/images/common/icon_homept.png") no-repeat center top;
+  background-size: 28px 33px;
+}
+
+.thum_list {
+  display: block;
+}
+
+.thum_list > li {
+  width: 143px;
+}
+
+.thum_list > li a {
+  display: block;
+}
+
+.thum_list > li span {
+  font-size: 10px;
+  vertical-align: middle;
+}
+
+.thum_list > li .img {
+  width: 100%;
+  height: 143px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.thum_list > li .img img {
+  width: 100%;
+  height: 100%;
+}
+
+.thum_list > li .thum_list_info {
+  display: block;
+}
+
+.thum_list > li .thum_list_info .title {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  word-break: keep-all;
+  margin-bottom: 3px;
+}
+
+.thum_list > li .thum_list_info .title span {
+  font-weight: 300;
+  display: block;
+  margin-bottom: 3px;
+}
+
+.thum_list > li .type {
+  display: block;
+}
+
+.thum_list > li .type span {
+  position: relative;
+  padding-left: 6px;
+  margin-left: 3px;
+}
+
+.thum_list > li .type span::before {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 1px;
+  height: 1px;
+  background: #000;
+}
+
+.thum_list > li .type span:first-child {
+  padding-left: 0;
+  margin-left: 0;
+}
+
+.thum_list > li .type span:first-child::before {
+  display: none;
+}
+
+.thum_list > li .type2 {
+  margin: -2px 0 0;
+}
+
+.thum_list > li .type2 span {
+  color: #777;
+  margin-right: 10px;
+}
+
+.thum_list > li .btn_like {
+  font-weight: 500;
+  color: #000;
+  position: relative;
+  display: inline-block;
+  padding: 0 0 0 20px;
+  margin-right: 0;
+}
+
+.thum_list > li .btn_like::before {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  width: 14px;
+  height: 13px;
+  background-position: -46.5px -62.5px;
+}
+
+.thum_list > li .btn_like.on::before {
+  width: 15.5px;
+  height: 14px;
+  background-position: -21px -62.5px;
+}
+
+.thum_list.big_type > li {
+  width: 220px;
+  position: relative;
+}
+
+.thum_list.big_type > li span {
+  font-size: 13px;
+}
+
+.thum_list.big_type > li .img {
+  width: 100%;
+  height: 220px;
+  overflow: hidden;
+}
+
+.thum_list.big_type > li .thum_list_info .title {
+  font-size: 17px;
+  line-height: 23px;
+}
+
+.thum_list.big_type > li .type2 {
+  margin: 0px 0 0;
+}
+
+.thum_list.big_type > li .btn_like {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+.thum_list.big_type > li .btn_like::before {
+  width: 18px;
+  height: 16.5px;
+  background-position: -30px -32.5px;
+}
+
+.thum_list.big_type > li .btn_like.on::before {
+  width: 18px;
+  height: 16.5px;
+  background-position: -58px -32.5px;
+}
 
 /*# sourceMappingURL=maps/common.css.map */

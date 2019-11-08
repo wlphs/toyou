@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<!-- header -->
+	@@include('../../dev_html/include/_head.html', {"title" : "SK Broadband Application"})
+	<!-- //header -->
+</head>
+
+<body class="pageclass">
+	<p class="accessibility" id="skipTop">
+		<a href="#container">본문 바로가기</a>
+		<a href="#gnb" class="js-gnb_btn">주메뉴 바로가기</a> 
+	</p>
+	<div class="wrapper">
+		<!-- header --> 
+		<header id="header" class="header">
+			<div class="header_fixed_group">
+				<h1 class="h1_logo"><a href="#none">TOYOU</a></h1>
+				<div class="location_top">
+					<a href="#none">서울시 양천구 목동로 173</a>
+				</div>
+			</div> 
+			@@include('../../dev_html/include/_gnb.html')
+		</header>
+		<!-- //header -->
+		<!-- container -->
+		<div id="container">
+			<div id="contents" class="main">
+
+				<section class="main_card">
+					상단롤링베너
+				</section>
+
+				<section>
+					<div class="key_list_box">
+						<ul class="key_list">
+							<li><a href="#none" class="beauty">뷰티</a></li>
+							<li><a href="#none" class="healing">힐링&테라피</a></li>
+							<li><a href="#none" class="homept">홈트레이닝</a></li>
+						</ul>
+					</div>
+				</section>
+
+				<section class="inbox fixbtn mt40">
+					<h2 class="h2">최근 본 서비스</h2>
+					<div class="">
+						<ul class="thum_list">
+							<li>
+								<div class="info_box">
+									<a href="#none">
+										<p class="img"><img src="/resources/images/temp/biel-morro-WW08JFg8SuI-unsplash@2x.png" alt=""></p>
+										
+										<div class="thum_list_info">
+											<p class="title">
+												<span>이너뷰티</span>
+												건조한 요즘, 수분 가득 촉촉한 메이크업
+											</p>
+											<p class="type"><span>메이크업</span> <span>홈테라피</span></p>
+											<p class="type2">
+												<span>리뷰 10+</span>
+												<span>전문가 댓글 10+</span>
+											</p>
+										</div>
+									</a>
+									<span class="btn_like">274</span>
+								</div>
+								<!-- <dl class="thum_list_info">
+									<dt>
+										<span>이너뷰티</span>
+										건조한 요즘, 수분 가득 촉촉한 메이크업
+									</dt>
+									<dd>
+										<p class="type"><span>메이크업</span> <span>홈테라피</span></p>
+										<p class="type2">
+											<span>리뷰 10+</span>
+											<span>전문가 댓글 10+</span>
+											<span class="like">274</span>
+										</p>
+										<script>
+											$('.thum_list_info .like').on('click', function () {
+												$(this).toggleClass('on');
+											})
+										</script>
+									</dd>
+								</dl> -->
+							</li>
+						</ul>
+					</div>
+					<a href="#none" class="btn_more">더보기</a>
+				</section>
+
+				<section class="inbox fixbtn mt40">
+					<h2 class="h2">추천</h2>
+					<div class="">
+						<ul class="thum_list big_type">
+							<li>
+								<div class="info_box">
+									<a href="#none">
+										<p class="img"><img src="/resources/images/temp/kelsey-marie-d96Aqz53Cc4-unsplash@2x.png" alt=""></p>
+										
+										<div class="thum_list_info">
+											<p class="title">
+												<span>이너뷰티</span>
+												건조한 요즘, 수분 가득 촉촉한 메이크업
+											</p>
+											<p class="type"><span>메이크업</span> <span>홈테라피</span></p>
+											<p class="type2">
+												<span>리뷰 10+</span>
+												<span>전문가 댓글 10+</span>
+											</p>
+										</div>
+									</a>
+									<span class="btn_like">274</span>
+									
+								</div>
+							</li>
+						</ul>
+					</div>
+					<a href="#none" class="btn_more">더보기</a>
+				</section>
+			</div>
+		</div>
+
+		
+		@@include('../../dev_html/include/_footer.html')
+
+		@@include('../../dev_html/include/_toolbar.html')
+		<!-- //container -->
+	</div>
+
+<script>
+	$('.info_box .btn_like').on('click', function () {
+		$(this).toggleClass('on');
+	})
+</script>
+</body>
+</html>

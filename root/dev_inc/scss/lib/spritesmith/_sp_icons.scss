@@ -1,25 +1,32 @@
 // how to use : Use following mixins.
 // variable : [X-axis] [Y-axis] [offset_x] [offset_y] [width] [height] [total_width] [total_height] [image_url] [image_name] [folder_name]
-    $arrow_more: 112px 0px -112px 0px 10px 20px 122px 102px '../images/common/sp_icons.png' 'arrow_more' 'sp_icons';
-    $arrow_up_md: 42px 60px -42px -60px 22px 12px 122px 102px '../images/common/sp_icons.png' 'arrow_up_md' 'sp_icons';
-    $history_back: 0px 60px 0px -60px 22px 42px 122px 102px '../images/common/sp_icons.png' 'history_back' 'sp_icons';
-    $ic_search: 0px 0px 0px 0px 40px 40px 122px 102px '../images/common/sp_icons.png' 'ic_search' 'sp_icons';
-    $layer_close: 60px 0px -60px 0px 32px 32px 122px 102px '../images/common/sp_icons.png' 'layer_close' 'sp_icons';
+    $arrow_more: 0px 187px 0px -187px 10px 20px 251px 207px '../images/common/sp_icons.png' 'arrow_more' 'sp_icons';
+    $arrow_more2: 30px 187px -30px -187px 10px 17px 251px 207px '../images/common/sp_icons.png' 'arrow_more2' 'sp_icons';
+    $arrow_up_md: 141px 125px -141px -125px 22px 12px 251px 207px '../images/common/sp_icons.png' 'arrow_up_md' 'sp_icons';
+    $h1_logo: 0px 0px 0px 0px 251px 45px 251px 207px '../images/common/sp_icons.png' 'h1_logo' 'sp_icons';
+    $history_back: 0px 125px 0px -125px 22px 42px 251px 207px '../images/common/sp_icons.png' 'history_back' 'sp_icons';
+    $ic_search: 0px 65px 0px -65px 40px 40px 251px 207px '../images/common/sp_icons.png' 'ic_search' 'sp_icons';
+    $icon_like: 93px 125px -93px -125px 28px 26px 251px 207px '../images/common/sp_icons.png' 'icon_like' 'sp_icons';
+    $icon_like_b: 60px 65px -60px -65px 36px 33px 251px 207px '../images/common/sp_icons.png' 'icon_like_b' 'sp_icons';
+    $icon_like_on: 42px 125px -42px -125px 31px 28px 251px 207px '../images/common/sp_icons.png' 'icon_like_on' 'sp_icons';
+    $icon_like_on_b: 116px 65px -116px -65px 36px 33px 251px 207px '../images/common/sp_icons.png' 'icon_like_on_b' 'sp_icons';
+    $icon_location: 224px 65px -224px -65px 22px 26px 251px 207px '../images/common/sp_icons.png' 'icon_location' 'sp_icons';
+    $layer_close: 172px 65px -172px -65px 32px 32px 251px 207px '../images/common/sp_icons.png' 'layer_close' 'sp_icons';
 
 //ancestor
-    $sp_icons-width: 122px;
-    $sp_icons-height: 102px;
+    $sp_icons-width: 251px;
+    $sp_icons-height: 207px;
     $sp_icons-image: '../images/common/sp_icons.png';
-    $sp_icons-sprites: ($arrow_more, $arrow_up_md, $history_back, $ic_search, $layer_close, );
-    $sp_icons_sprites_name: (arrow_more, arrow_up_md, history_back, ic_search, layer_close, );
-    $sp_icons: (122px, 102px, '../images/common/sp_icons.png', $sp_icons-sprites, );
+    $sp_icons-sprites: ($arrow_more, $arrow_more2, $arrow_up_md, $h1_logo, $history_back, $ic_search, $icon_like, $icon_like_b, $icon_like_on, $icon_like_on_b, $icon_location, $layer_close, );
+    $sp_icons_sprites_name: (arrow_more, arrow_more2, arrow_up_md, h1_logo, history_back, ic_search, icon_like, icon_like_b, icon_like_on, icon_like_on_b, icon_location, layer_close, );
+    $sp_icons: (251px, 207px, '../images/common/sp_icons.png', $sp_icons-sprites, );
 
 //mixin
 
         %sp_icons {
         background-image: url('../images/common/sp_icons.png');
-        $sprite-background-size-x: 122px / 2;
-        $sprite-background-size-y: 102px / 2;
+        $sprite-background-size-x: 251px / 2;
+        $sprite-background-size-y: 207px / 2;
         -webkit-background-size: $sprite-background-size-x $sprite-background-size-y;
         background-size: $sprite-background-size-x $sprite-background-size-y;
         }

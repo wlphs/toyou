@@ -115,11 +115,9 @@ textarea { width: 100%;  height: 70px;
         em   { vertical-align: bottom; font-size:12px;  color: $colorP; }    
         span { vertical-align: bottom; font-size:12px; }    
     }
-    
 }
 
 label.error {color:$colorP; padding:7px 20px; display:block; font-size:13px; font-weight:500;}
-
 
 input[type=number]::-webkit-inner-spin-button, 
 input[type=number]::-webkit-outer-spin-button { 
@@ -421,10 +419,6 @@ select:-moz-focusring {
         }
     }
 }
-
-
-
-
 
 .oneLine {
     input, select, .select-box { display:inline-block;width: auto;}

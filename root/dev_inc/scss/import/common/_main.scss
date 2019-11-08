@@ -6,11 +6,88 @@
             button { border:1px solid #000; padding:5px 10px;}
         }
     }
+
+    //메인section
+    section {
+        &.fixbtn { position: relative;
+            .btn_more { position: absolute; right:25px; top:0;}
+        }
+        &.inbox { margin-left: 25px;}
+
+        .h2 { margin-bottom: 10px;}
+    }
 }
 
-.sortable-drag { opacity: 0.6 !important;}
 
+//키메뉴리스트
+.key_list_box { position: relative; padding-bottom: 17px; display:inline-block; width: 100%;
+    &::before { content:''; display:inline-block; position: absolute; left: 25px; bottom:0; right:0; height: 3px; background:#000;}
+    .key_list { display:block; margin: 0 15px 0 5px;
+        li { float:left; width: 33.333333%;
+            a { display:block; font-weight: 500; text-align:center; padding-top: 48px;
+                &.beauty { background:url('/resources/images/common/icon_beauty.png') no-repeat center top; background-size: 27px 38px;}
+                &.healing { background:url('/resources/images/common/icon_healing.png') no-repeat center top; background-size: 37px 38px;}
+                &.homept { background:url('/resources/images/common/icon_homept.png') no-repeat center top; background-size: 28px 33px;}
+            }
+        }
+    }
+}
 
-.notice_inner { position: relative;
+//thumllist 
+.thum_list { display: block;
+    >li { width: 143px;
+        a { display:block;}
+        span { font-size: 10px; vertical-align: middle;}
+
+        .img { width: 100%; height: 143px; overflow: hidden; margin-bottom: 10px;
+            img { width: 100%; height:100%;}
+        }
+        
+        //리스트정보
+        .thum_list_info { display:block;
+            .title { font-size:14px; font-weight: 500; line-height: 20px; word-break: keep-all; margin-bottom: 3px;
+                span { font-weight: 300; display:block; margin-bottom: 3px; }
+            }
+        }
+            
+        .type { display:block; 
+            span { position: relative; padding-left: 6px; margin-left: 3px;
+                &::before { content: ''; display:inline-block; position: absolute; left:0; top: 50%; width:1px; height:1px; background:#000; }
+                &:first-child {  padding-left:0; margin-left:0;
+                    &::before { display:none;}
+                }
+            }
+        }
+        .type2 { margin: -2px 0 0;
+            span { color:#777; margin-right: 10px;}
+        }
+        
+        //좋아요버튼
+        .btn_like { font-weight: 500; color:#000; position: relative; display:inline-block; padding: 0 0 0 20px; margin-right:0;
+            &::before { content:''; display:inline-block; position: absolute; left:0; @include sp_icons($icon_like); }
+            &.on {
+                &::before {  @include sp_icons($icon_like_on); }
+            }
+        }
+        
+    }
+
+    //추천사이즈
+    &.big_type {
+        >li { width: 220px; position: relative;
+            span { font-size: 13px ; }
+            .img { width: 100%; height: 220px; overflow: hidden; }
+            .thum_list_info { 
+                .title { font-size:17px; line-height: 23px;}
+            }
+            .type2 { margin: 0px 0 0; }
+            .btn_like { position: absolute;  right:0; bottom:0; z-index: 1;
+                &::before {@include sp_icons($icon_like_b); }
+                &.on {
+                    &::before {  @include sp_icons($icon_like_on_b); }
+                }
+            }
+        }
+    }
 
 }
