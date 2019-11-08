@@ -231,9 +231,9 @@ a, span, i, em {
   background-size: 80px 76.5px;
 }
 
-.btn_more:after, .accordion-list > li .header-area .acc_btn:after, .trp.popupfixed-wrap .btn_close:after, .header .h1_logo, .header .location_top::before, .thum_list > li .btn_like::before, .thum_list > li .btn_like.on::before, .thum_list.big_type > li .btn_like::before, .thum_list.big_type > li .btn_like.on::before {
+.icon_label, .btn_more:after, .accordion-list > li .header-area .acc_btn:after, .trp.popupfixed-wrap .btn_close:after, .header .h1_logo, .header .location_top::before, .thum_list li .btn_like::before, .thum_list li .btn_like.on::before, .thum_list.big_type li .btn_like::before, .thum_list.big_type li .btn_like.on::before {
   background-image: url("../images/common/sp_icons.png");
-  background-size: 125.5px 103.5px;
+  background-size: 125.5px 116.5px;
 }
 
 /*  _mixin.scss
@@ -1620,7 +1620,7 @@ body {
 }
 
 .h2 {
-  font-size: 22px;
+  font-size: 24px;
   font-weight: 700;
   color: #222222;
   font-family: "Noto Sans KR";
@@ -1750,6 +1750,14 @@ a.link_txt,
   position: absolute;
   top: 8px;
   left: 4px;
+}
+
+.icon_label {
+  font-size: 0 !important;
+  display: inline-block;
+  width: 27px;
+  height: 27px;
+  background-position: 0px -32.5px;
 }
 
 /* wrap  */
@@ -2889,7 +2897,7 @@ table.bottom_bar {
 }
 
 .btn_more {
-  font-size: 12px;
+  font-size: 14px;
   padding: 10px;
   position: relative;
   display: inline-block;
@@ -2901,10 +2909,10 @@ table.bottom_bar {
   position: absolute;
   right: 0;
   top: 50%;
-  margin-top: -5px;
+  margin-top: -4px;
   width: 5px;
   height: 8.5px;
-  background-position: -15px -93.5px;
+  background-position: -36px -95.5px;
 }
 
 .btn_bottom {
@@ -3373,7 +3381,7 @@ table.bottom_bar {
   transform: rotate(180deg);
   width: 11px;
   height: 6px;
-  background-position: -70.5px -62.5px;
+  background-position: -96.5px -69.5px;
 }
 
 .accordion-list > li > .con-area {
@@ -3459,7 +3467,7 @@ table.bottom_bar {
   top: 25px;
   width: 16px;
   height: 16px;
-  background-position: -86px -32.5px;
+  background-position: 0px -69.5px;
 }
 
 .trp.popupfixed-wrap.cover_type .popup-layer {
@@ -4498,7 +4506,7 @@ select:-moz-focusring {
   margin: -2px 0 0 2px;
   width: 11px;
   height: 13px;
-  background-position: -112px -32.5px;
+  background-position: -75.5px -69.5px;
 }
 
 #gnb .nav_box {
@@ -4640,7 +4648,7 @@ select:-moz-focusring {
   top: 0;
 }
 
-.main section.inbox {
+.main section.cont_inner {
   margin-left: 25px;
 }
 
@@ -4702,60 +4710,69 @@ select:-moz-focusring {
   display: block;
 }
 
-.thum_list > li {
+.thum_list li {
   width: 143px;
 }
 
-.thum_list > li a {
+.thum_list li a {
   display: block;
 }
 
-.thum_list > li span {
-  font-size: 10px;
+.thum_list li span {
+  font-size: 11px;
   vertical-align: middle;
 }
 
-.thum_list > li .img {
+.thum_list li .img {
   width: 100%;
   height: 143px;
   overflow: hidden;
-  margin-bottom: 10px;
+  margin-bottom: 9px;
+  position: relative;
 }
 
-.thum_list > li .img img {
+.thum_list li .img img {
   width: 100%;
   height: 100%;
 }
 
-.thum_list > li .thum_list_info {
+.thum_list li .img .icon_label {
+  position: absolute;
+  right: 6px;
+  top: 6px;
+  z-index: 1;
+}
+
+.thum_list li .thum_list_info {
   display: block;
 }
 
-.thum_list > li .thum_list_info .title {
-  font-size: 14px;
+.thum_list li .thum_list_info .title {
+  font-size: 15px;
   font-weight: 500;
   line-height: 20px;
   word-break: keep-all;
   margin-bottom: 3px;
 }
 
-.thum_list > li .thum_list_info .title span {
+.thum_list li .thum_list_info .title span {
+  font-size: 12px;
   font-weight: 300;
   display: block;
   margin-bottom: 3px;
 }
 
-.thum_list > li .type {
+.thum_list li .type {
   display: block;
 }
 
-.thum_list > li .type span {
+.thum_list li .type span {
   position: relative;
   padding-left: 6px;
   margin-left: 3px;
 }
 
-.thum_list > li .type span::before {
+.thum_list li .type span::before {
   content: '';
   display: inline-block;
   position: absolute;
@@ -4766,90 +4783,96 @@ select:-moz-focusring {
   background: #000;
 }
 
-.thum_list > li .type span:first-child {
+.thum_list li .type span:first-child {
   padding-left: 0;
   margin-left: 0;
 }
 
-.thum_list > li .type span:first-child::before {
+.thum_list li .type span:first-child::before {
   display: none;
 }
 
-.thum_list > li .type2 {
+.thum_list li .type2 {
   margin: -2px 0 0;
 }
 
-.thum_list > li .type2 span {
+.thum_list li .type2 span {
   color: #777;
   margin-right: 10px;
 }
 
-.thum_list > li .btn_like {
+.thum_list li .btn_like {
   font-weight: 500;
   color: #000;
   position: relative;
   display: inline-block;
   padding: 0 0 0 20px;
   margin-right: 0;
+  font-size: 13px;
 }
 
-.thum_list > li .btn_like::before {
+.thum_list li .btn_like::before {
   content: '';
   display: inline-block;
   position: absolute;
   left: 0;
+  top: 50%;
+  margin-top: -6px;
   width: 14px;
   height: 13px;
-  background-position: -46.5px -62.5px;
+  background-position: -51.5px -69.5px;
 }
 
-.thum_list > li .btn_like.on::before {
+.thum_list li .btn_like.on::before {
   width: 15.5px;
   height: 14px;
-  background-position: -21px -62.5px;
+  background-position: -26px -69.5px;
 }
 
-.thum_list.big_type > li {
+.thum_list.big_type li {
   width: 220px;
   position: relative;
 }
 
-.thum_list.big_type > li span {
-  font-size: 13px;
+.thum_list.big_type li span {
+  font-size: 12px;
 }
 
-.thum_list.big_type > li .img {
+.thum_list.big_type li .img {
   width: 100%;
   height: 220px;
   overflow: hidden;
 }
 
-.thum_list.big_type > li .thum_list_info .title {
-  font-size: 17px;
-  line-height: 23px;
+.thum_list.big_type li .thum_list_info .title {
+  font-size: 18px;
+  line-height: 24px;
 }
 
-.thum_list.big_type > li .type2 {
+.thum_list.big_type li .type2 {
   margin: 0px 0 0;
 }
 
-.thum_list.big_type > li .btn_like {
+.thum_list.big_type li .btn_like {
   position: absolute;
   right: 0;
   bottom: 0;
   z-index: 1;
+  font-size: 15px;
+  padding-left: 22px;
 }
 
-.thum_list.big_type > li .btn_like::before {
+.thum_list.big_type li .btn_like::before {
   width: 18px;
   height: 16.5px;
-  background-position: -30px -32.5px;
+  background-position: -95px -32.5px;
+  margin-top: -7px;
 }
 
-.thum_list.big_type > li .btn_like.on::before {
+.thum_list.big_type li .btn_like.on::before {
   width: 18px;
   height: 16.5px;
-  background-position: -58px -32.5px;
+  background-position: -67px -32.5px;
 }
 
 /*# sourceMappingURL=maps/common.css.map */

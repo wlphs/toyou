@@ -33,12 +33,10 @@ body { background-color: #fff;
 
 
 
-
-
 /* ========================== text */
 
 .h1 { font-size: 23px; font-weight: 700; letter-spacing: -0.5; color:$colorB; font-family: $baseFT; } 
-.h2 { font-size: 22px; font-weight: 700; color:$colorB; font-family: $baseFT; } 
+.h2 { font-size: 24px; font-weight: 700; color:$colorB; font-family: $baseFT; } 
 .h3 { font-size: 16px; font-weight: 700; color:$colorB; font-family: $baseFT; } 
 .h4 { font-size: 15px; font-weight: 700; color:$colorB; font-family: $baseFT; } 
 .h5 { font-size: 14px; font-weight: 500; color:$colorB; font-family: $baseFT; } 
@@ -77,6 +75,8 @@ a.link_txt ,
     }
 }
 
+//라벨아이콘
+.icon_label { font-size:0 !important; display:inline-block; @include sp_icons($icon_label);}
 
 /* wrap  */
 .table-wrap { position: relative; }
@@ -379,12 +379,6 @@ table.bottom_bar   { border-bottom: $borderBottom !important; }
         background-color: #f6f6f6; vertical-align: top; padding-top: 12px;
     }
 }
-
-
-
-
-
-
 
 .slider_imgBanner { 
     li img { width:100%;}

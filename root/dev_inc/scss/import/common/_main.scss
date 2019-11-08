@@ -12,7 +12,7 @@
         &.fixbtn { position: relative;
             .btn_more { position: absolute; right:25px; top:0;}
         }
-        &.inbox { margin-left: 25px;}
+        &.cont_inner { margin-left: 25px;}
 
         .h2 { margin-bottom: 10px;}
     }
@@ -35,18 +35,19 @@
 
 //thumllist 
 .thum_list { display: block;
-    >li { width: 143px;
+    li { width: 143px;
         a { display:block;}
-        span { font-size: 10px; vertical-align: middle;}
+        span { font-size: 11px; vertical-align: middle;}
 
-        .img { width: 100%; height: 143px; overflow: hidden; margin-bottom: 10px;
+        .img { width: 100%; height: 143px; overflow: hidden; margin-bottom: 9px; position: relative;
             img { width: 100%; height:100%;}
+            .icon_label { position: absolute; right:6px; top:6px; z-index: 1;}
         }
         
         //리스트정보
         .thum_list_info { display:block;
-            .title { font-size:14px; font-weight: 500; line-height: 20px; word-break: keep-all; margin-bottom: 3px;
-                span { font-weight: 300; display:block; margin-bottom: 3px; }
+            .title { font-size:15px; font-weight: 500; line-height: 20px; word-break: keep-all; margin-bottom: 3px;
+                span { font-size:12px; font-weight: 300; display:block; margin-bottom: 3px; }
             }
         }
             
@@ -63,8 +64,8 @@
         }
         
         //좋아요버튼
-        .btn_like { font-weight: 500; color:#000; position: relative; display:inline-block; padding: 0 0 0 20px; margin-right:0;
-            &::before { content:''; display:inline-block; position: absolute; left:0; @include sp_icons($icon_like); }
+        .btn_like { font-weight: 500; color:#000; position: relative; display:inline-block; padding: 0 0 0 20px; margin-right:0; font-size: 13px;
+            &::before { content:''; display:inline-block; position: absolute; left:0; top:50%; margin-top:-6px; @include sp_icons($icon_like); }
             &.on {
                 &::before {  @include sp_icons($icon_like_on); }
             }
@@ -74,15 +75,15 @@
 
     //추천사이즈
     &.big_type {
-        >li { width: 220px; position: relative;
-            span { font-size: 13px ; }
+        li { width: 220px; position: relative;
+            span { font-size: 12px ; }
             .img { width: 100%; height: 220px; overflow: hidden; }
             .thum_list_info { 
-                .title { font-size:17px; line-height: 23px;}
+                .title { font-size:18px; line-height: 24px;}
             }
             .type2 { margin: 0px 0 0; }
-            .btn_like { position: absolute;  right:0; bottom:0; z-index: 1;
-                &::before {@include sp_icons($icon_like_b); }
+            .btn_like { position: absolute;  right:0; bottom:0; z-index: 1; font-size: 15px; padding-left:22px;
+                &::before {@include sp_icons($icon_like_b); margin-top:-7px;}
                 &.on {
                     &::before {  @include sp_icons($icon_like_on_b); }
                 }

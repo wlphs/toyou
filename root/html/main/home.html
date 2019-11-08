@@ -4,7 +4,7 @@
 <head>
     <!-- header -->
     <meta charset="UTF-8">
-    <title>SK Broadband Application</title>
+    <title>TOYOUCORP.</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" id="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,initial-scale=1.0">
     <link rel="stylesheet" href="/resources/css/library/csslibrary.css">
@@ -49,7 +49,17 @@
             <div id="contents" class="main">
 
                 <section class="main_card">
-                    상단롤링베너
+                    <div class="">
+                        <ul class="">
+                            <li>
+                                <a href="#none">
+                                    <p class="big_banner">
+                                        <img src="/resources/images/temp/img_main_1.png" alt="" />
+                                    </p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </section>
 
                 <section>
@@ -62,14 +72,17 @@
                     </div>
                 </section>
 
-                <section class="inbox fixbtn mt40">
-                    <h2 class="h2">최근 본 서비스</h2>
-                    <div class="">
-                        <ul class="thum_list">
-                            <li>
+                <section class="mt40 fixbtn">
+                    <h2 class="h2 cont_inner">최근 본 서비스</h2>
+                    <div class="slider_wrap swiper-container thum_list">
+                        <ul class="swiper-wrapper ">
+                            <li class="swiper-slide">
                                 <div class="info_box">
                                     <a href="#none">
-                                        <p class="img"><img src="/resources/images/temp/biel-morro-WW08JFg8SuI-unsplash@2x.png" alt=""></p>
+                                        <p class="img">
+                                            <img src="/resources/images/temp/@temp1.png" alt="">
+                                            <span class="icon_label">라벨</span>
+                                        </p>
 
                                         <div class="thum_list_info">
                                             <p class="title">
@@ -85,39 +98,22 @@
                                     </a>
                                     <span class="btn_like">274</span>
                                 </div>
-                                <!-- <dl class="thum_list_info">
-									<dt>
-										<span>이너뷰티</span>
-										건조한 요즘, 수분 가득 촉촉한 메이크업
-									</dt>
-									<dd>
-										<p class="type"><span>메이크업</span> <span>홈테라피</span></p>
-										<p class="type2">
-											<span>리뷰 10+</span>
-											<span>전문가 댓글 10+</span>
-											<span class="like">274</span>
-										</p>
-										<script>
-											$('.thum_list_info .like').on('click', function () {
-												$(this).toggleClass('on');
-											})
-										</script>
-									</dd>
-								</dl> -->
                             </li>
                         </ul>
+                        <!-- Add Scroll Bar -->
+                        <div class="swiper-scrollbar"></div>
                     </div>
                     <a href="#none" class="btn_more">더보기</a>
                 </section>
 
-                <section class="inbox fixbtn mt40">
-                    <h2 class="h2">추천</h2>
-                    <div class="">
-                        <ul class="thum_list big_type">
-                            <li>
+                <section class="mt40 fixbtn">
+                    <h2 class="h2 cont_inner">추천</h2>
+                    <div class="slider_wrap swiper-container thum_list big_type">
+                        <ul class="swiper-wrapper ">
+                            <li class="swiper-slide">
                                 <div class="info_box">
                                     <a href="#none">
-                                        <p class="img"><img src="/resources/images/temp/kelsey-marie-d96Aqz53Cc4-unsplash@2x.png" alt=""></p>
+                                        <p class="img"><img src="/resources/images/temp/@temp2.png" alt=""></p>
 
                                         <div class="thum_list_info">
                                             <p class="title">
@@ -132,12 +128,12 @@
                                         </div>
                                     </a>
                                     <span class="btn_like">274</span>
-
                                 </div>
                             </li>
                         </ul>
+                        <!-- Add Scroll Bar -->
+                        <div class="swiper-scrollbar"></div>
                     </div>
-                    <a href="#none" class="btn_more">더보기</a>
                 </section>
             </div>
         </div>
@@ -166,6 +162,38 @@
         $('.info_box .btn_like').on('click', function() {
             $(this).toggleClass('on');
         })
+
+        $(function() {
+            var swiper_001 = new Swiper('.swiper-container.list01', {
+                direction: 'horizontal',
+                slidesPerView: 'auto',
+                freeMode: true,
+                spaceBetween: 0,
+                // pagination: {
+                // 	el: '.js-s_page6',
+                // 	type: 'fraction',
+                // 	// clickable: true,
+                // 	// renderBullet: function (index, className) {
+                // 	//     return '<span class="' + className + '"><i class="bullet"><em class="hide">' + (
+                // 	//         index + 1
+                // 	//     ) + '</em></i></span>';
+                // 	// }
+                // },
+                scrollbar: {
+                    el: '.swiper-scrollbar',
+                },
+                mousewheel: true,
+                // navigation: {
+                //     nextEl: '.swiper-button-next',
+                //     prevEl: '.swiper-button-prev'
+                // },
+                on: {
+                    init: function() {
+                        //console.log(111);
+                    }
+                }
+            })
+        });
     </script>
 </body>
 
