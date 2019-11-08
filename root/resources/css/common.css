@@ -4591,31 +4591,6 @@ select:-moz-focusring {
 }
 
 /* ================== 로그인 ========================= */
-.login .login_box dt {
-  margin-bottom: 10px;
-}
-
-.login .login_box dt label {
-  font-size: 15px;
-  color: #222;
-  font-weight: 500;
-}
-
-.login .login_box dd {
-  margin-bottom: 20px;
-}
-
-.login .login_logo {
-  width: 190px;
-}
-
-.login .login_txt {
-  padding-top: 15px;
-  padding-bottom: 45px;
-  color: #666;
-  font-size: 14px;
-}
-
 /* // ================== 로그인 ========================= */
 .main section.main_card {
   border: 1px solid #000;
