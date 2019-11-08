@@ -18,7 +18,6 @@
                 b { display:block; font-weight: 700;}
             }
         }
-        
     } 
 
     //메인section
@@ -102,7 +101,7 @@
     &.big_type {
         li { width: 220px; position: relative;
             span { font-size: 12px ; }
-            .img { width: 100%; height: 220px; overflow: hidden; }
+            .img { height: 220px; overflow: hidden; }
             .thum_list_info { 
                 .title { font-size:18px; line-height: 24px; font-weight: 700;}
             }
@@ -122,5 +121,4 @@
     a { display:block; 
         img { width: 100%;}
     }
-     
 }

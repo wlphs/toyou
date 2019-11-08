@@ -4816,7 +4816,6 @@ select:-moz-focusring {
 }
 
 .thum_list.big_type li .img {
-  width: 100%;
   height: 220px;
   overflow: hidden;
 }
