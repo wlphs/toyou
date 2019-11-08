@@ -4572,12 +4572,21 @@ select:-moz-focusring {
 
 .main section.fixbtn {
   position: relative;
+  padding-left: 23px;
 }
 
 .main section.fixbtn .btn_more {
   position: absolute;
   right: 25px;
   top: 0;
+}
+
+.main section.fixbtn .h2 {
+  margin-left: 2px;
+}
+
+.main section.fixbtn .slider_wrap {
+  overflow: visible;
 }
 
 .main section.row_bar {
@@ -4686,7 +4695,7 @@ select:-moz-focusring {
 }
 
 .thum_list li {
-  width: 143px;
+  width: 150px;
   overflow: hidden;
 }
 
@@ -4704,7 +4713,7 @@ select:-moz-focusring {
 }
 
 .thum_list li .img {
-  height: 143px;
+  height: 150px;
   overflow: hidden;
   margin-bottom: 9px;
   position: relative;
@@ -4732,7 +4741,7 @@ select:-moz-focusring {
   font-weight: 500;
   line-height: 20px;
   word-break: keep-all;
-  margin-bottom: 3px;
+  margin-bottom: 5px;
   letter-spacing: -1px;
 }
 
@@ -4784,7 +4793,7 @@ select:-moz-focusring {
   position: relative;
   display: inline-block;
   padding: 0 0 0 20px;
-  margin-right: 0;
+  margin: 9px 0 0;
   font-size: 13px;
 }
 
@@ -4807,7 +4816,7 @@ select:-moz-focusring {
 }
 
 .thum_list.big_type li {
-  width: 220px;
+  width: 230px;
   position: relative;
 }
 
@@ -4816,7 +4825,7 @@ select:-moz-focusring {
 }
 
 .thum_list.big_type li .img {
-  height: 220px;
+  height: 230px;
   overflow: hidden;
 }
 
@@ -4827,7 +4836,7 @@ select:-moz-focusring {
 }
 
 .thum_list.big_type li .type2 {
-  margin: 0px 0 0;
+  margin: 3px 0 0;
 }
 
 .thum_list.big_type li .btn_like {
