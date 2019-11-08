@@ -209,11 +209,12 @@ blockquote:before, blockquote:after, q:before, q:after {
 body, li, dt, dd, td, th, div, p, input, textarea, button, option, samp,
 h1, h2, h3, h4, h5, h6, legend, figcaption {
   padding: 0;
-  letter-spacing: -.05em;
+  letter-spacing: -.02em;
   color: #000;
   font-family: "Noto Sans KR", dotum, "돋움", Arial, AppleGothic, Sans-serif;
   box-sizing: border-box;
   font-size: 14px;
+  outline: none;
 }
 
 a, span, i, em {
@@ -223,7 +224,8 @@ a, span, i, em {
   font-weight: inherit;
   line-height: inherit;
   font-style: normal;
-  letter-spacing: -.05em;
+  letter-spacing: -.02em;
+  outline: none;
 }
 
 .input_del button:after, input[type="checkbox"].chk + label.chk:after, input[type="checkbox"].chk:checked + label.chk:after, input[type="radio"].rdo + label.rdo:after, input[type="radio"].rdo:checked + label.rdo:after, .formsearch-box .search-btn:after, .datepicker-box:after {
@@ -231,9 +233,9 @@ a, span, i, em {
   background-size: 80px 76.5px;
 }
 
-.btn_more:after, .accordion-list > li .header-area .acc_btn:after, .trp.popupfixed-wrap .btn_close:after, .header .h1_logo, .header .location_top::before, .thum_list > li .btn_like::before, .thum_list > li .btn_like.on::before, .thum_list.big_type > li .btn_like::before, .thum_list.big_type > li .btn_like.on::before {
+.btn_more:after, .accordion-list > li .header-area .acc_btn:after, .trp.popupfixed-wrap .btn_close:after, .header .h1_logo, .header .location_top::before, .header .top_bar .history_back:before, .header .top_bar .btn_search:before, .thum_list > li .btn_like::before, .thum_list > li .btn_like.on::before, .thum_list.big_type > li .btn_like::before, .thum_list.big_type > li .btn_like.on::before {
   background-image: url("../images/common/sp_icons.png");
-  background-size: 125.5px 103.5px;
+  background-size: 125.5px 96.5px;
 }
 
 /*  _mixin.scss
@@ -2904,7 +2906,7 @@ table.bottom_bar {
   margin-top: -5px;
   width: 5px;
   height: 8.5px;
-  background-position: -15px -93.5px;
+  background-position: -30.5px -86.5px;
 }
 
 .btn_bottom {
@@ -3373,7 +3375,7 @@ table.bottom_bar {
   transform: rotate(180deg);
   width: 11px;
   height: 6px;
-  background-position: -70.5px -62.5px;
+  background-position: -49.5px -62.5px;
 }
 
 .accordion-list > li > .con-area {
@@ -4465,7 +4467,6 @@ select:-moz-focusring {
 .header {
   height: 55px;
   width: 100%;
-  padding-left: 25px;
 }
 
 .header .h1_logo {
@@ -4499,6 +4500,91 @@ select:-moz-focusring {
   width: 11px;
   height: 13px;
   background-position: -112px -32.5px;
+}
+
+.header {
+  height: 65px;
+  width: 100%;
+}
+
+.header .header_fixed_group {
+  height: 65px;
+  background: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+.header .header_rel_group {
+  height: 65px;
+  background: #fff;
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.header .border_bottom {
+  border-bottom: 1px solid #edebe9;
+}
+
+.header .top_bar {
+  position: relative;
+}
+
+.header .top_bar .locations {
+  padding: 0 40px;
+}
+
+.header .top_bar .locations .sub_title {
+  line-height: 65px;
+  font-size: 15px;
+}
+
+.header .top_bar .locations .logo {
+  width: 108px;
+  margin-top: 25px;
+}
+
+.header .top_bar .top_left {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.header .top_bar .top_right {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.header .top_bar .history_back {
+  display: block;
+  padding: 28px 10px 28px 24px;
+}
+
+.header .top_bar .history_back:before {
+  content: '';
+  display: block;
+  width: 5.5px;
+  height: 10px;
+  background-position: 0px -86.5px;
+}
+
+.header .top_bar .btn_search {
+  display: block;
+  padding: 23px 16px;
+}
+
+.header .top_bar .btn_search:before {
+  content: '';
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-position: 0px -32.5px;
 }
 
 #gnb .nav_box {
@@ -4775,13 +4861,13 @@ select:-moz-focusring {
   left: 0;
   width: 14px;
   height: 13px;
-  background-position: -46.5px -62.5px;
+  background-position: -25.5px -62.5px;
 }
 
 .thum_list > li .btn_like.on::before {
   width: 15.5px;
   height: 14px;
-  background-position: -21px -62.5px;
+  background-position: 0px -62.5px;
 }
 
 .thum_list.big_type > li {

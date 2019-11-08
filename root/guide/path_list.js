@@ -454,7 +454,7 @@ __CONSTANT_LIST = [
         dep1 		: '마이페이지',
         dep2 		: '서브메인',
         dep3 		: '',
-        url 		: '/html/.html',
+        url 		: '/html/basic/mypage/MY-0001.html',
         pubUpdate 	: '2019-0000',
         etc 		: '',
     },

@@ -15,6 +15,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 blockquote, q { quotes:none; }
 blockquote:before, blockquote:after, q:before, q:after { content:''; content:none; }
 body, li, dt, dd, td, th, div, p, input, textarea,  button, option, samp,
-h1, h2, h3, h4, h5, h6, legend, figcaption { padding: 0; letter-spacing: -.05em; color:#000;
-    font-family: $baseFT, dotum,"돋움",Arial, AppleGothic, Sans-serif; box-sizing: border-box; font-size: 14px;}
-a, span, i, em { font-family: inherit; color:#000; font-size: inherit; font-weight: inherit; line-height: inherit; font-style: normal;letter-spacing: -.05em}
+h1, h2, h3, h4, h5, h6, legend, figcaption { padding: 0; letter-spacing: -.02em; color:#000;
+    font-family: $baseFT, dotum,"돋움",Arial, AppleGothic, Sans-serif; box-sizing: border-box; font-size: 14px; outline:none; }
+a, span, i, em { font-family: inherit; color:#000; font-size: inherit; font-weight: inherit; line-height: inherit; font-style: normal;letter-spacing: -.02em; outline:none;}
