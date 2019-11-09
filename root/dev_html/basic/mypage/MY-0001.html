@@ -114,7 +114,7 @@
 				</div>
 			</div>
 		</div>
-	  </div>
+	</div>
 
 <script>
 	$("#getPhoto").dialog({
@@ -125,10 +125,9 @@
 		show: { effect: "slide",direction:"down", duration: 300 },
 		create : function(event) {
 		  $(".js-photo").on("click", function() {
-			
 			modalFixedControl.open($(event.target));
 			$(event.target).dialog("open");
-			
+			return false;
 		  });
 		},
 		resizable: false,
@@ -142,30 +141,6 @@
 			modalFixedControl.close();
 		}
 	});
-
-
-	var fileUpload = function() {
-
-var $img = $('#fileImg'),
-  imgWidth = $img.attr('width'),
-  $fileField = $('#file'),
-  $upLoad = $('#upload');
-
-var $file = $upLoad.css({
-  position: "absolute",
-  top: "0px",
-  right: "0px",
-  width: imgWidth + "px",
-  cursor: "pointer",
-  opacity: "0"
-});
-
-$file.on('change', function() {
-  var fileName = $(this).val();
-  $fileField.attr("disabled", "disabled").val(fileName);
-});
-
-}();
 
 </script>
 </body>
