@@ -233,9 +233,9 @@ a, span, i, em {
   background-size: 80px 76.5px;
 }
 
-.icon_label, .btn_more:after, .accordion-list > li .header-area .acc_btn:after, .trp.popupfixed-wrap .btn_close:after, .header .top_bar .history_back:before, .header .top_bar .btn_search:before, .profile_wrap .pf_photo_wrap .pf_photo_change:after, .profile_wrap .pf_manage a.btn_edit_pf:after, .profile_wrap .pf_manage a.btn_edit_cert:after, .main_header .h1_logo, .main_header .location_top::before, .main section.main_card .big_banner .txt em, .thum_list li .btn_like::before, .thum_list li .btn_like.on::before, .thum_list.big_type li .btn_like::before, .thum_list.big_type li .btn_like.on::before {
+.icon_label, .btn_menu_arrow:after, .btn_more:after, .accordion-list > li .header-area .acc_btn:after, .trp.popupfixed-wrap .btn_close:after, .header .top_bar .history_back:before, .header .top_bar .btn_search:before, .profile_wrap .pf_photo_wrap .pf_photo_change:after, .profile_wrap .pf_manage a.btn_edit_pf:after, .profile_wrap .pf_manage a.btn_edit_cert:after, .main_header .h1_logo, .main_header .location_top::before, .main section.main_card .big_banner .txt em, .thum_list li .btn_like::before, .thum_list li .btn_like.on::before, .thum_list.big_type li .btn_like::before, .thum_list.big_type li .btn_like.on::before {
   background-image: url("../images/common/sp_icons.png");
-  background-size: 141px 121.5px;
+  background-size: 142px 122px;
 }
 
 /*  _mixin.scss
@@ -1702,7 +1702,7 @@ a.link_txt,
   display: inline-block;
   width: 27px;
   height: 27px;
-  background-position: -43px -32.5px;
+  background-position: -43px -33px;
 }
 
 /* wrap  */
@@ -2807,6 +2807,34 @@ table.bottom_bar {
   background: none;
 }
 
+.btn_menu_arrow {
+  display: block;
+  font-weight: 400;
+  font-size: 16px;
+  padding: 25px 0;
+  position: relative;
+}
+
+.btn_menu_arrow:after {
+  content: '';
+  position: absolute;
+  right: 26px;
+  top: 50%;
+  margin-top: -4px;
+  width: 6px;
+  height: 8px;
+  background-position: -136px -40px;
+}
+
+.btn_menu_arrow .sm_txt {
+  font-size: 12px;
+  color: #777;
+  line-height: 22px;
+  display: inline-block;
+  vertical-align: middle;
+  padding-left: 5px;
+}
+
 .btn.btn_round {
   border-radius: 22px;
 }
@@ -2856,8 +2884,8 @@ table.bottom_bar {
   top: 50%;
   margin-top: -4px;
   width: 5px;
-  height: 8.5px;
-  background-position: -135.5px -40px;
+  height: 9px;
+  background-position: -136px -58px;
 }
 
 .btn_bottom {
@@ -3326,7 +3354,7 @@ table.bottom_bar {
   transform: rotate(180deg);
   width: 11px;
   height: 6px;
-  background-position: -75.5px -105.5px;
+  background-position: -73px -106px;
 }
 
 .accordion-list > li > .con-area {
@@ -3379,7 +3407,7 @@ table.bottom_bar {
 .trp.popupfixed-wrap .popup-vertical {
   display: table-cell;
   width: 100%;
-  padding: 20px 0;
+  padding: 0;
   text-align: center;
   vertical-align: middle;
 }
@@ -3390,6 +3418,7 @@ table.bottom_bar {
   display: inline-block;
   *display: inline;
   zoom: 1;
+  background: #fff;
 }
 
 .trp.popupfixed-wrap .btn_close {
@@ -3397,7 +3426,7 @@ table.bottom_bar {
   top: 0px;
   right: 0px;
   width: 50px;
-  height: 65px;
+  height: 60px;
   margin: 0;
   font-size: 0px;
   line-height: 1;
@@ -3409,10 +3438,10 @@ table.bottom_bar {
   content: '';
   position: absolute;
   right: 16px;
-  top: 25px;
+  top: 22px;
   width: 16px;
   height: 16px;
-  background-position: 0px -105.5px;
+  background-position: 0px -106px;
 }
 
 .trp.popupfixed-wrap.cover_type .popup-layer {
@@ -3465,6 +3494,18 @@ table.bottom_bar {
   background: #fff;
 }
 
+.trp.popupfixed-wrap .pop_header {
+  height: 60px;
+  border-bottom: 1px solid #ccc;
+}
+
+.trp.popupfixed-wrap .pop_header .tit {
+  text-align: center;
+  font-size: 18px;
+  line-height: 60px;
+  font-weight: 500;
+}
+
 .trp.popupfixed-wrap .section {
   position: relative;
   padding: 0px 30px 20px;
@@ -3487,6 +3528,33 @@ table.bottom_bar {
   color: #fff;
   font-size: 14px;
   text-align: center;
+}
+
+.select_layer .get_photo li {
+  border-top: 1px solid #ccc;
+  position: relative;
+}
+
+.select_layer .get_photo li input[type="file"] {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+
+.select_layer .get_photo li:first-child {
+  border-top: none;
+}
+
+.select_layer .get_photo .get_photo_btn {
+  height: 40px;
+  line-height: 40px;
+  font-size: 15px;
+  display: block;
+  text-align: center;
+  width: 100%;
 }
 
 .ui-dialog .ui-dialog-titlebar,
@@ -4475,15 +4543,15 @@ select:-moz-focusring {
 
 .header .top_bar .history_back {
   display: block;
-  padding: 28px 10px 28px 24px;
+  padding: 27px 10px 28px 24px;
 }
 
 .header .top_bar .history_back:before {
   content: '';
   display: block;
-  width: 5.5px;
+  width: 6px;
   height: 10px;
-  background-position: -135.5px 0px;
+  background-position: -136px 0px;
 }
 
 .header .top_bar .btn_search {
@@ -4496,7 +4564,7 @@ select:-moz-focusring {
   display: block;
   width: 20px;
   height: 20px;
-  background-position: 0px -75.5px;
+  background-position: 0px -76px;
 }
 
 #gnb .nav_box {
@@ -4614,7 +4682,7 @@ select:-moz-focusring {
   content: '';
   width: 33px;
   height: 33px;
-  background-position: 0px -32.5px;
+  background-position: 0px -33px;
   display: block;
 }
 
@@ -4624,7 +4692,7 @@ select:-moz-focusring {
   font-size: 24px;
   color: #000000;
   padding-top: 10px;
-  padding-bottom: 22px;
+  padding-bottom: 17px;
 }
 
 .profile_wrap .pf_manage {
@@ -4636,17 +4704,17 @@ select:-moz-focusring {
   position: relative;
   display: inline-block;
   color: #000;
-  padding-left: 20px;
+  padding: 5px 0 5px 20px;
 }
 
 .profile_wrap .pf_manage a.btn_edit_pf:after {
   content: '';
   display: block;
   width: 16px;
-  height: 16.5px;
-  background-position: -86px -75.5px;
+  height: 17px;
+  background-position: -86px -76px;
   position: absolute;
-  top: 0;
+  top: 5px;
   left: 0;
 }
 
@@ -4655,9 +4723,9 @@ select:-moz-focusring {
   display: block;
   width: 13px;
   height: 18px;
-  background-position: -110.5px -32.5px;
+  background-position: -111px -33px;
   position: absolute;
-  top: 0;
+  top: 5px;
   left: 0;
 }
 
@@ -4685,8 +4753,9 @@ select:-moz-focusring {
 .my_count li {
   float: left;
   width: 25%;
-  padding: 16px 0;
-  border-left: 1px dotted;
+  padding: 16px 0 14px;
+  background: url("/resources/images/common/dot_line.png") no-repeat left center;
+  background-size: 1px;
 }
 
 .my_count li a {
@@ -4707,6 +4776,14 @@ select:-moz-focusring {
   font-weight: 700;
 }
 
+.my_count li:first-child {
+  background: none;
+}
+
+.list_btn_wrap li {
+  border-bottom: 1px solid #efefef;
+}
+
 /* header.scss */
 .main_header {
   height: 55px;
@@ -4720,8 +4797,8 @@ select:-moz-focusring {
   left: 25px;
   top: 17px;
   display: inline-block;
-  width: 125.5px;
-  height: 22.5px;
+  width: 126px;
+  height: 23px;
   background-position: 0px 0px;
 }
 
@@ -4744,7 +4821,7 @@ select:-moz-focusring {
   margin: -2px 0 0 2px;
   width: 11px;
   height: 13px;
-  background-position: -112px -75.5px;
+  background-position: -52px -106px;
 }
 
 .main section.main_card {
@@ -4779,9 +4856,9 @@ select:-moz-focusring {
 
 .main section.main_card .big_banner .txt em {
   display: block;
-  width: 20.5px;
+  width: 21px;
   height: 20px;
-  background-position: -80px -32.5px;
+  background-position: -80px -33px;
   margin-bottom: 9px;
 }
 
@@ -5026,13 +5103,13 @@ select:-moz-focusring {
   margin-top: -6px;
   width: 14px;
   height: 13px;
-  background-position: -51.5px -105.5px;
+  background-position: -112px -76px;
 }
 
 .thum_list li .btn_like.on::before {
-  width: 15.5px;
+  width: 16px;
   height: 14px;
-  background-position: -26px -105.5px;
+  background-position: -26px -106px;
 }
 
 .thum_list.big_type li {
@@ -5070,15 +5147,15 @@ select:-moz-focusring {
 
 .thum_list.big_type li .btn_like::before {
   width: 18px;
-  height: 16.5px;
-  background-position: -30px -75.5px;
+  height: 17px;
+  background-position: -30px -76px;
   margin-top: -7px;
 }
 
 .thum_list.big_type li .btn_like.on::before {
   width: 18px;
-  height: 16.5px;
-  background-position: -58px -75.5px;
+  height: 17px;
+  background-position: -58px -76px;
 }
 
 .banner_zone {

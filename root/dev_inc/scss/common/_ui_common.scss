@@ -42,6 +42,12 @@
     font-size:16px; color:$colorS; padding:10px; border:none; background:none;
 }
 
+.btn_menu_arrow {display:block; font-weight: 400; font-size:16px; padding:25px 0; position: relative;
+    &:after {content:''; position: absolute; right:26px; top:50%; margin-top:-4px; @include sp_icons($arrow12);}
+    .sm_txt {font-size:12px; color:#777; line-height: 22px; display: inline-block; vertical-align: middle; padding-left:5px;}
+}
+
+
 // 크기
 .btn.btn_round { border-radius: 22px; }
 .btn.btn_lg { padding: 10px 20px 10px;  font-size: 15px; font-weight: 500; }
@@ -269,14 +275,14 @@
         width: 100%;height: 100%; background-color: transparent; z-index: 0;}
     .popup-align    { display: table;*display: block; table-layout: fixed;  width: 100%; height: 100%; text-align: center; }
     .popup-vertical {
-        display: table-cell;width: 100%;padding: 20px 0;
+        display: table-cell;width: 100%;padding: 0;
         text-align: center;vertical-align: middle;
     }
-    .popup-layer {   position: relative; z-index: 1; display: inline-block;*display: inline;zoom: 1;}
+    .popup-layer {   position: relative; z-index: 1; display: inline-block;*display: inline;zoom: 1;background: #fff;}
     .btn_close { position: absolute;top: 0px;right: 0px; 
-        width: 50px; height: 65px; margin: 0; 
+        width: 50px; height: 60px; margin: 0; 
         font-size: 0px; line-height: 1; color: transparent; box-sizing: border-box;
-        &:after { content:''; position: absolute; right:16px; top:25px; @include sp_icons($layer_close);}
+        &:after { content:''; position: absolute; right:16px; top:22px; @include sp_icons($layer_close);}
     }
     &.cover_type {
         .popup-layer {width:100%; height:100%; background:#fff; text-align:left;}
@@ -290,9 +296,14 @@
         }
         .alert_cont { font-size:15px; color:$colorB; text-align: left; padding-bottom:30px;}
     }
+
+    .popup-layer.select_layer {}
     .popup-layer.option {
        position: relative;top: 0px; width: 600px; min-width: 415px; height: auto;
        text-align: left;background: #fff;
+    }
+    .pop_header { height:60px; border-bottom:1px solid #ccc;
+        .tit {text-align: center; font-size:18px; line-height: 60px; font-weight: 500;}
     }
     .section {position: relative;padding: 0px 30px 20px;
        
@@ -305,6 +316,13 @@
 }
 
 
+.select_layer .get_photo {
+    li {border-top:1px solid #ccc; position: relative;
+        input[type="file"] { position: absolute; top:0; left:0; width:100%; height:100%; opacity: 0;}
+        &:first-child {border-top:none;}
+    }
+    .get_photo_btn {height:40px;line-height:40px; font-size:15px; display:block;text-align: center; width:100%;}
+}
 
 
 

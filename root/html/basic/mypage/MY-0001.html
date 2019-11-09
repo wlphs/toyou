@@ -28,7 +28,7 @@
                 <div class="top_bar">
                     <div class="locations">
                         <div class="view_page">
-                            <h1 class="sub_title">타이틀</h1>
+                            <h1 class="sub_title">마이페이지</h1>
                         </div>
                     </div>
                     <div class="top_left">
@@ -42,13 +42,12 @@
         <!-- container -->
         <div id="container">
             <div id="contents">
-                <h2 class="hide">서브 타이틀</h2>
                 <div class="profile_wrap">
                     <div class="pf_photo_wrap">
                         <div class="pf_photo">
                             <img src="/resources/images/temp/@temp_profile.png" alt="">
                         </div>
-                        <button class="pf_photo_change">이미지 변경</button>
+                        <button class="pf_photo_change js-photo">이미지 변경</button>
                     </div>
                     <p class="pf_name">김태리</p>
                     <div class="pf_manage">
@@ -57,7 +56,7 @@
                         <span class="cert_stat">신분인증 전</span>
                     </div>
                 </div>
-                <ul class="my_count mt40">
+                <ul class="my_count mt35">
                     <li>
                         <a href="#">
                             <span class="tit">예약내역</span>
@@ -83,12 +82,12 @@
                         </a>
                     </li>
                 </ul>
-                <ul class="cont_inner list_btn_wrap">
+                <ul class="cont_inner_right list_btn_wrap">
                     <li><a href="#" class="btn_menu_arrow">알림 설정</a></li>
                     <li><a href="#" class="btn_menu_arrow">안심 메시지 설정</a></li>
                     <li><a href="#" class="btn_menu_arrow">자주 묻는 질문</a></li>
                     <li><a href="#" class="btn_menu_arrow">채팅 고객 센터</a></li>
-                    <li><a href="#" class="btn_menu_arrow">버전 정보 (2,72) <span class="sm_txt">최신버전입니다.</span></a></li>
+                    <li><a href="#" class="btn_menu_arrow">버전 정보 (2.72) <span class="sm_txt">최신버전입니다.</span></a></li>
                     <li><a href="#" class="btn_menu_arrow">이용 약관 및 개인정보 보호정책</a></li>
                     <li><a href="#" class="btn_menu_arrow">로그아웃</a></li>
                     <li><a href="#" class="btn_menu_arrow">회원탈퇴 <span class="sm_txt">개인 정보와 설정이 모두 삭제됩니다.</span></a></li>
@@ -99,6 +98,94 @@
 
         <!-- //container -->
     </div>
+
+
+    <div id="getPhoto" class="trp popupfixed-wrap">
+        <div class="popup-align">
+            <div class="popup-vertical">
+                <div class="popup-layer select_layer" style="width:100%;">
+                    <div class="pop_header">
+                        <p class="tit">사진 가져오기</p>
+                        <a href="#" class="btn_close js-closepop"><span class="hide">닫기</span></a>
+                    </div>
+                    <section class="section pd0" style="display: block;">
+                        <ul class="get_photo">
+                            <li>
+                                <span class="get_photo_btn get_photo0">사진촬영</span>
+                                <input type="file" id="camera" name="camera" capture="camera" accept="image/*" />
+                            </li>
+                            <li>
+                                <span class="get_photo_btn get_photo1">앨범에서 가져오기</span>
+                                <input type="file" id="camera" name="camera">
+                            </li>
+                            <li>
+                                <button class="get_photo_btn get_photo2 js-closepop">취소</button>
+                            </li>
+                        </ul>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        $("#getPhoto").dialog({
+            autoOpen: false,
+            modal: true,
+            width: '100%',
+            position: {
+                my: "bottom",
+                at: "bottom"
+            },
+            show: {
+                effect: "slide",
+                direction: "down",
+                duration: 300
+            },
+            create: function(event) {
+                $(".js-photo").on("click", function() {
+
+                    modalFixedControl.open($(event.target));
+                    $(event.target).dialog("open");
+
+                });
+            },
+            resizable: false,
+            open: function(event) {
+                $('.js-closepop', $(event.target)).off('click').on('click', function() {
+                    $(event.target).dialog("close");
+                    return false;
+                })
+            },
+            close: function() {
+                modalFixedControl.close();
+            }
+        });
+
+
+        var fileUpload = function() {
+
+            var $img = $('#fileImg'),
+                imgWidth = $img.attr('width'),
+                $fileField = $('#file'),
+                $upLoad = $('#upload');
+
+            var $file = $upLoad.css({
+                position: "absolute",
+                top: "0px",
+                right: "0px",
+                width: imgWidth + "px",
+                cursor: "pointer",
+                opacity: "0"
+            });
+
+            $file.on('change', function() {
+                var fileName = $(this).val();
+                $fileField.attr("disabled", "disabled").val(fileName);
+            });
+
+        }();
+    </script>
 </body>
 
 </html>

@@ -2,21 +2,14 @@
 
 //.ready() called.
 function formatNumber(num) {
-    return console.log(num), console.log(num.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1,")), 
-    num.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1,");
+    return num.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1,");
 }
 
 function ModalFixedControl() {
     this.trpLayerFixedPopupScroll_top = 0, this.dialog;
 }
 
-$(function() {
-    console.log("common.js"), $(".js-gnb_btn").on("click", function() {
-        $("#gnb .nav_box").addClass("on"), $(".wrapper").addClass("content_push");
-    }), $(".js-close_gnb").on("click", function() {
-        $("#gnb .nav_box").removeClass("on"), $(".wrapper").removeClass("content_push");
-    });
-}), jQuery.fn.setTabType = function($activeTabNum) {
+$(function() {}), jQuery.fn.setTabType = function($activeTabNum) {
     var _this = this;
     function selectTab(num) {
         var _cont = $(".tab_cont_wrap", _this), _li = $(".tab_menu li", _this).eq(num);
@@ -77,18 +70,13 @@ jQuery.fn.trpAccordionMenu = function($btn, $cont, $activeClass, $activeFN) {
         }
     };
 }, ModalFixedControl.prototype.open = function(_dialog) {
-    var _self = this;
-    this.dialog = _dialog, console.log("open"), this.trpLayerFixedPopupScroll_top = $(window).scrollTop(), 
+    this.dialog = _dialog, this.trpLayerFixedPopupScroll_top = $(window).scrollTop(), 
     $("html, body").scrollTop(0), $(".wrapper").css({
         position: "fixed",
         top: -1 * this.trpLayerFixedPopupScroll_top
-    }), setTimeout(function() {
-        $(window).one("hashchange", function() {
-            $(_self.dialog).dialog("close"), console.log("change", window.location.hash, _self);
-        });
-    }, 100);
+    });
 }, ModalFixedControl.prototype.close = function() {
-    window.location.href = "#", $(".wrapper").css({
+    $(".wrapper").css({
         position: "relative",
         top: "0"
     }), $("html, body").scrollTop(this.trpLayerFixedPopupScroll_top);
