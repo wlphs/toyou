@@ -1,28 +1,27 @@
 
 
 
-// #header.fixing { padding-bottom: 48px;}
-// .header { height:65px; width:100%;
-//   .header_fixed_group {height:65px; background:#fff; position:fixed; top:0; left:0; width:100%; z-index:100;}
-//   .header_rel_group {height:65px; background:#fff; position: relative;; top:0; left:0; width:100%; z-index:1;}
-//   .border_bottom { border-bottom:1px solid #edebe9;}
-//   .top_bar {position: relative; 
-//     .locations {padding:0 55px;
-//       .sub_title { text-align: center; line-height: 65px; font-size: 18px;}
-//       .logo { width:108px; margin-top:25px;}
-//     }
+.header { height:65px; width:100%;
+  .header_fixed_group {height:65px; background:#fff; position:fixed; top:0; left:0; width:100%; z-index:100;}
+  .header_rel_group {height:65px; background:#fff; position: relative;; top:0; left:0; width:100%; z-index:1;}
+  .border_bottom { border-bottom:1px solid #edebe9;}
+  .top_bar {position: relative; 
+    .locations {padding:0 40px;
+      .sub_title {  line-height: 65px; font-size: 15px;}
+      .logo { width:108px; margin-top:25px;}
+    }
     
      
-//     .top_left {position: absolute; left:0; top:0;}
-//     .top_right {position: absolute; right:0; top:0; }
-//     .history_back {  display:block; padding:22px 16px;
-//       &:before {content:''; display:block; @include sp_icons($history_back);}
-//     }
-//     .btn_search {display:block; padding:23px 16px;
-//       &:before {content:''; display:block; @include sp_icons($ic_search);}
-//     }
-//   }
-// }
+    .top_left {position: absolute; left:0; top:0;}
+    .top_right {position: absolute; right:0; top:0; }
+    .history_back {  display:block; padding:27px 10px 28px 24px;
+      &:before {content:''; display:block; @include sp_icons($history_back);}
+    }
+    .btn_search {display:block; padding:23px 16px;
+      &:before {content:''; display:block; @include sp_icons($ic_search);}
+    }
+  }
+}
 
 #gnb .nav_box {height: 100%; width: 0; position: fixed; z-index: 100; top: 0; left: 0;background-color: #111;overflow-x: hidden;padding-top: 60px;transition: 0.5s; 
   &.on {width:100%;}
