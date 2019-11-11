@@ -13,8 +13,9 @@ $(function() {
     $("#footer .js-open").click(function() {
         $(this).toggleClass("on");
     }), $(window).scroll(function() {
-        var _st = $(window).scrollTop(), _h = $(window).height(), _toppos = _st - $("#footer").offset().top + _h + 30;
-        100 < _st ? $(".top_scroll").fadeIn() : $(".top_scroll").fadeOut(), $(".top_scroll").css("bottom", _toppos < 30 ? 30 : _toppos + "px");
+        var _st = $(window).scrollTop(), _h = $(window).height(), _toppos = 0;
+        $("#footer").length && (_toppos = _st - $("#footer").offset().top + _h + 30), 100 < _st ? $(".top_scroll").stop().fadeIn() : $(".top_scroll").stop().fadeOut(), 
+        $(".top_scroll").css("bottom", _toppos < 30 ? 30 : _toppos + "px");
     }), $(".top_scroll").on("click", function() {
         $("html, body").animate({
             scrollTop: 0
