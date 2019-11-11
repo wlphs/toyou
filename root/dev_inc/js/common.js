@@ -10,11 +10,11 @@ $(function(){
         _ft, _toppos =0;
     if ($('#footer').length) {
       _ft = $('#footer').offset().top;
-      _toppos = _st-_ft+_h+30;
+      _toppos = _st-_ft+_h+20;
     }
     if (_st > 100) $('.top_scroll').stop().fadeIn();
     else $('.top_scroll').stop().fadeOut();
-    $('.top_scroll').css('bottom', (_toppos < 30) ? 30 : _toppos + "px")
+    $('.top_scroll').css('bottom', (_toppos < 20) ? 20 : _toppos + "px")
   });
   $(".top_scroll").on("click", function(){
     $( 'html, body' ).animate( { scrollTop: 0 }, 200 );
