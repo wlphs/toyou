@@ -30,17 +30,20 @@
         var h = $(window).height();
         var bh = 0;
         if (st <= 100) {
-            $('.top_scroll').stop().hide().css('top', h + st + bh - 88);    // 스크롤 이동에 따른 위로버튼의 위치 이동
-            $('.top_scroll').fadeIn();
+            //$('.top_scroll').stop().hide();    // 스크롤 이동에 따른 위로버튼의 위치 이동
+            //$('.top_scroll').fadeIn();
         } else {
-            $('.top_scroll').animate({ top: st + h + bh - 78 + "px" }, { queue: false, duration: 150 });
+            //$('.top_scroll').animate({ top: st + h + bh - 78 + "px" }, { queue: false, duration: 150 });
+            
         }
         if (st > 100) {
             // 위로버튼을 보여주는 위치 지정	
             $('.top_scroll').fadeIn();
-        } else if (st < 100) { 
-            $('.top_scroll').stop().fadeOut();
+        } else { 
+            $('.top_scroll').fadeOut();
         }    // 위로버튼을 숨기는 위치 지정
+
+        $('.top_scroll').css('top', st + h + bh - 78 + "px")
     });
     $(".top_scroll").on("click", function(){
 		$( 'html, body' ).animate( { scrollTop: 0 }, 200 );
