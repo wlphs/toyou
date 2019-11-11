@@ -2940,6 +2940,23 @@ table.bottom_bar {
   display: inline-block;
 }
 
+.btn_bottom_fixed {
+  height: 47px;
+}
+
+.btn_bottom_fixed .fixed_wrap {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.btn_bottom_fixed .fixed_wrap:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
 .btn_set:after {
   content: '';
   display: block;
@@ -3594,24 +3611,24 @@ table.bottom_bar {
 
 /* ======================== input text  */
 /* placeholder */
-input[type="text"].placeholdersjs, input[type="password"].placeholdersjs,
+input[type="text"].placeholdersjs, input[type="password"].placeholdersjs, input[type="number"].placeholdersjs, input[type="email"].placeholdersjs,
 textarea.placeholdersjs {
-  color: #888888;
+  color: #999999;
 }
 
-input[type="text"]:-ms-input-placeholder, input[type="password"]:-ms-input-placeholder,
+input[type="text"]:-ms-input-placeholder, input[type="password"]:-ms-input-placeholder, input[type="number"]:-ms-input-placeholder, input[type="email"]:-ms-input-placeholder,
 textarea:-ms-input-placeholder {
-  color: #888888;
+  color: #999999;
 }
 
-input[type="text"]::-webkit-input-placeholder, input[type="password"]::-webkit-input-placeholder,
+input[type="text"]::-webkit-input-placeholder, input[type="password"]::-webkit-input-placeholder, input[type="number"]::-webkit-input-placeholder, input[type="email"]::-webkit-input-placeholder,
 textarea::-webkit-input-placeholder {
-  color: #888888;
+  color: #999999;
 }
 
-input[type="text"]::-moz-placeholder, input[type="password"]::-moz-placeholder,
+input[type="text"]::-moz-placeholder, input[type="password"]::-moz-placeholder, input[type="number"]::-moz-placeholder, input[type="email"]::-moz-placeholder,
 textarea::-moz-placeholder {
-  color: #888888;
+  color: #999999;
 }
 
 em.star {
@@ -3622,40 +3639,35 @@ em.star {
   font-weight: bold;
 }
 
-input[type="text"], input[type="password"] {
+input[type="text"], input[type="password"], input[type="number"], input[type="email"] {
   width: 100%;
-  height: 43px;
-  padding: 4px 18px 4px;
-  font-size: 14px;
+  height: 45px;
+  padding: 4px 16px 4px;
+  font-size: 15px;
   vertical-align: middle;
-  font-weight: 500;
-  border: 1px solid #ccc;
+  font-weight: 400;
+  border: 1px solid #f5f5f5;
   outline: none;
-  background-color: #fff;
-  border-radius: 22px;
+  background-color: #f5f5f5;
   -webkit-appearance: none;
   -moz-appearance: none;
 }
 
-input.h36[type="text"], input.h36[type="password"] {
-  height: 36px;
-}
-
 /* ======================== focus, ,disabled, input_error */
-input[type="text"]:focus, input[type="password"]:focus {
+input[type="text"]:focus, input[type="password"]:focus, input[type="number"]:focus, input[type="email"]:focus {
   border-color: #ccc;
 }
 
-input[type="text"]:disabled, input[type="password"]:disabled {
-  background: #fff;
+input[type="text"]:disabled, input[type="password"]:disabled, input[type="number"]:disabled, input[type="email"]:disabled {
+  background: #f5f5f5;
 }
 
-input[type="text"][readonly], input[type="password"][readonly] {
-  background: #fff;
+input[type="text"][readonly], input[type="password"][readonly], input[type="number"][readonly], input[type="email"][readonly] {
+  background: #f5f5f5;
 }
 
-input[type="text"].error, input[type="password"].error {
-  border-color: #dd4c5c;
+input[type="text"].error, input[type="password"].error, input[type="number"].error, input[type="email"].error {
+  border-color: #ff5c5c;
 }
 
 .input-box {
@@ -3858,7 +3870,7 @@ textarea {
   height: 70px;
   border: 1px solid #cccccc;
   padding: 8px 13px 8px;
-  background-color: #fff;
+  background-color: #f5f5f5;
   -webkit-appearance: none;
   -moz-appearance: none;
 }
@@ -3866,7 +3878,7 @@ textarea {
 .textarea-box {
   border: 1px solid #cccccc;
   padding: 8px 13px 8px;
-  background-color: #fff;
+  background-color: #f5f5f5;
   -webkit-appearance: none;
   -moz-appearance: none;
 }
@@ -3877,7 +3889,7 @@ textarea {
 }
 
 .textarea-box textarea:disabled {
-  background-color: #fff;
+  background-color: #f5f5f5;
 }
 
 .textarea-box .byte_check {
@@ -3900,10 +3912,11 @@ textarea {
 
 label.error {
   color: #ff5c5c;
-  padding: 7px 20px;
+  padding: 7px 0;
   display: block;
-  font-size: 13px;
+  font-size: 15px;
   font-weight: 500;
+  text-align: right;
 }
 
 input[type=number]::-webkit-inner-spin-button,
@@ -3984,76 +3997,6 @@ input[type="radio"].rdo:checked + label.rdo:after {
   background-position: -60px -30px;
 }
 
-select {
-  min-width: 96px;
-  background-color: #f29027;
-  border: thin solid #f29027;
-  border-radius: 22px;
-  display: inline-block;
-  font: inherit;
-  color: #fff;
-  line-height: 21px;
-  font-weight: 700;
-  font-size: 13px;
-  padding: 10px 40px 10px 20px;
-  margin: 0;
-  box-sizing: border-box;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  background-image: linear-gradient(45deg, transparent 50%, #fff 50%), linear-gradient(135deg, #fff 50%, transparent 50%), linear-gradient(to right, transparent, transparent);
-  background-position: calc(100% - 20px) calc(1em + 5px), calc(100% - 15px) calc(1em + 5px), 100% 0;
-  background-size: 5px 5px, 5px 5px, 2.5em 2.5em;
-  background-repeat: no-repeat;
-}
-
-select.select_lineType {
-  background-color: #fff;
-  border: thin solid #222;
-  color: #222;
-  background-image: linear-gradient(45deg, transparent 50%, #032222 50%), linear-gradient(135deg, #032222 50%, transparent 50%), linear-gradient(to right, transparent, transparent);
-  background-position: calc(100% - 20px) calc(1em + 5px), calc(100% - 15px) calc(1em + 5px), 100% 0;
-  background-size: 5px 5px, 5px 5px, 2.5em 2.5em;
-  background-repeat: no-repeat;
-}
-
-select.select_lineType.col_gray {
-  border: thin solid #d0d0d0;
-}
-
-select.select_nolineType {
-  background-color: transparent;
-  border: none;
-  color: #222;
-  padding: 5px 25px 5px 5px;
-  background-image: url("/resources/poc/images/common/select_arrow_sm.png");
-  background-size: 11px 6px;
-  background-position: calc(100% - 5px) calc(1em + 0px), calc(100% - 5px) calc(1em + 5px), 100% 0;
-}
-
-select:focus {
-  background-image: linear-gradient(45deg, white 50%, transparent 50%), linear-gradient(135deg, transparent 50%, white 50%), linear-gradient(to right, transparent, transparent);
-  background-position: calc(100% - 15px) calc(1em + 5px), calc(100% - 20px) calc(1em + 5px), 100% 0;
-  background-size: 5px 5px, 5px 5px, 2.5em 2.5em;
-  background-repeat: no-repeat;
-  outline: 0;
-}
-
-select:focus.select_lineType {
-  background-image: linear-gradient(45deg, #222 50%, transparent 50%), linear-gradient(135deg, transparent 50%, #222 50%), linear-gradient(to right, transparent, transparent);
-  background-position: calc(100% - 15px) calc(1em + 5px), calc(100% - 20px) calc(1em + 5px), 100% 0;
-}
-
-select:focus.select_nolineType {
-  background-image: url("/resources/poc/images/common/select_arrow_sm_up.png");
-  background-size: 11px 6px;
-  background-position: calc(100% - 5px) calc(1em + 0px), calc(100% - 5px) calc(1em + 5px), 100% 0;
-}
-
-select:-moz-focusring {
-  color: transparent;
-  text-shadow: 0 0 0 #000;
-}
-
 /* ========================  input file */
 .trp.file-box, .file_nonlabel-box {
   position: relative;
@@ -4072,11 +4015,11 @@ select:-moz-focusring {
 
 .trp.file-box .trp-Filetext, .file_nonlabel-box .trp-Filetext {
   width: 100%;
-  height: 43px;
+  height: 45px;
   padding: 4px 100px 4px 10px;
   font-size: 12px;
   vertical-align: middle;
-  border: 1px solid #ccc;
+  border: 1px solid #f5f5f5;
   outline: none;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -4087,7 +4030,7 @@ select:-moz-focusring {
   top: 0px;
   right: 0px;
   min-width: 95px;
-  height: 43px;
+  height: 45px;
   color: #fff;
   font-size: 12px;
   font-weight: 300;
@@ -4104,7 +4047,7 @@ select:-moz-focusring {
   top: 0;
   left: 0;
   width: 100%;
-  height: 43px;
+  height: 45px;
   opacity: 0;
   cursor: pointer;
   z-index: 1;
@@ -4146,7 +4089,7 @@ select:-moz-focusring {
   width: 100%;
   min-width: 120px;
   /* [0909] min-width: 155px; */
-  height: 43px;
+  height: 45px;
 }
 
 .formsearch-box.w_ss {
@@ -4157,7 +4100,7 @@ select:-moz-focusring {
   width: 100%;
   padding-right: 50px;
   z-index: 1;
-  border: 1px solid #ccc;
+  border: 1px solid #f5f5f5;
   box-sizing: border-box;
 }
 
@@ -4168,8 +4111,8 @@ select:-moz-focusring {
   font-size: 0;
   box-sizing: border-box;
   z-index: 1;
-  width: 43px;
-  height: 43px;
+  width: 45px;
+  height: 45px;
   border-radius: 0 22px 22px 0;
 }
 
@@ -4191,7 +4134,7 @@ select:-moz-focusring {
   display: inline-block;
   width: 100%;
   min-width: 110px;
-  height: 43px;
+  height: 45px;
 }
 
 .datepicker-box input {
@@ -4232,7 +4175,7 @@ select:-moz-focusring {
   border-bottom: 0px solid #f3f3f3;
   padding: 0px;
   height: 50px;
-  background-color: #E0002A;
+  background-color: #ff5c5c;
 }
 
 .ui-datepicker .ui-datepicker-header .ui-icon {
@@ -4332,7 +4275,7 @@ select:-moz-focusring {
 
 .ui-datepicker .ui-datepicker-calendar thead th {
   padding-top: 10px;
-  background-color: #E0002A;
+  background-color: #ff5c5c;
   color: #ffffff;
 }
 
@@ -4439,8 +4382,8 @@ select:-moz-focusring {
 
 .ui-count > a {
   position: relative;
-  width: 21.5px;
-  height: 21.5px;
+  width: 22.5px;
+  height: 22.5px;
   display: block;
   position: absolute;
 }
@@ -4454,7 +4397,7 @@ select:-moz-focusring {
 .ui-count .arrow_up {
   top: 1px;
   right: 0;
-  border-left: 1px solid #ccc;
+  border-left: 1px solid #f5f5f5;
 }
 
 .ui-count .arrow_up::after {
@@ -4468,8 +4411,8 @@ select:-moz-focusring {
 .ui-count .arrow_down {
   bottom: 0px;
   right: 0;
-  border-top: 1px solid #ccc;
-  border-left: 1px solid #ccc;
+  border-top: 1px solid #f5f5f5;
+  border-left: 1px solid #f5f5f5;
 }
 
 .ui-count .arrow_down::after {
