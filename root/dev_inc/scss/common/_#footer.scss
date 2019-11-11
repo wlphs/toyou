@@ -1,12 +1,44 @@
 /* footer.scss */
-#footer{ 
-    .inner { min-width: $G-width; border-top:1px solid #cccccc; }
-    .footer-inner  { position: relative; height: 80px;}
-    .copyright { padding-top: 25px;}
-    .footer-btnset { position: absolute; top:20px; right: 0;
-        .btn, .select-box { display: inline-block; width: 133px; 
-            select { width: 133px; min-width: 133px;}
+#footer { background:#EFEFEF; display:block; padding: 27px 24px; position: relative; margin-top: 80px;
+    // .inner { min-width: $G-width; border-top:1px solid #cccccc; }
+    // .footer-inner  { position: relative; height: 80px;}
+    // .copyright { padding-top: 25px;}
+    // .footer-btnset { position: absolute; top:20px; right: 0;
+    //     .btn, .select-box { display: inline-block; width: 133px; 
+    //         select { width: 133px; min-width: 133px;}
+    //     }
+    // }
+
+    .h2_logo { font-size: 0; width: 112px !important; height: 20px !important; @include sp_icons($h2_footer_logo); background-size: 100%;
+		a { display:block; height:100%;}
+    }
+    .opne_text { position: absolute; right: 24px; top: 27px; font-size: 14px; padding-right: 15px;
+        &:after { content:''; display:inline-block; position: absolute; right:0; top: 50%; margin-top: -3px;  @include sp_icons($arrow_up_md); transition: .2s transform;
+            transform: rotate(180deg); }
+    }
+    
+    .open_cont {
+        &.on { 
+            .opne_text { 
+                &:after { transform: rotate(0deg); }
+            }
+            .inner { display:block;}
         }
     }
 
+    .inner { font-size: 12px; color:#777; line-height: 18px; margin-top: 15px; display:none;
+        address { font-style: normal; display: inline-block;
+            span { vertical-align: middle; line-height: 18px;
+                &:after {content: ''; display:inline-block; width:1px; height: 10px; background: #777; margin:0 6px 0;} 
+                &.nobar { 
+                    &:after {content: ''; display:none;}
+                }
+            }
+            .copy { font-size: 12px; line-height: 18px; margin-top: 5px;}
+        }
+    }
+    .footer_txt {  margin-top: 16px; font-size: 12px;}
+}
+.top_scroll { display:none; position: absolute; bottom:30px; right: 12px; z-index:10; width: 43px; height: 43px; border-radius: 100%; border: 1px solid #dbdbdb; background:#fff; font-size: 0; text-align:center; box-shadow: 0px 6px 16px 0px rgba(0, 0, 0, 0.1);
+    &::before { content:''; display:inline-block; @include sp_icons($icon_top); vertical-align: top; margin-top: 13px;} 
 }

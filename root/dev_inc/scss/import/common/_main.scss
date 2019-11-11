@@ -22,10 +22,14 @@
 
     //메인section
     section { 
-        &.fixbtn { position: relative; padding-left: 23px;
+        &.fixbtn { position: relative; 
             .btn_more { position: absolute; right:25px; top:0;}
-            .h2 { margin-left: 2px;}
-            .slider_wrap { overflow:visible;}
+            .h2 { margin-left: 25px; }
+            .slider_wrap { //overflow:visible;
+                .swiper-container-android .swiper-slide, .swiper-wrapper li {
+                    &:first-child { margin-left: 23px;}
+                }
+            }
         }
         &.row_bar { padding-top: 40px; position: relative;
             &::before { content:''; display:inline-block; width:1px; height: 30px; background:#000; position:absolute; left:27px; top:0;}

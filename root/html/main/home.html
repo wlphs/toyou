@@ -459,9 +459,60 @@
 
 
         <!-- footer -->
-        <footer>
-
+        <footer id="footer">
+            <h2 class="h2_logo">TOYOU</h2>
+            <div class="open_cont js-open">
+                <a href="#none" class="opne_text">사업자 정보</a>
+                <div class="inner">
+                    <address>
+                        <span>대표 홍길등 1588-0015</span><span class="nobar">사업자등록번호 123-12-12345</span><br>
+                        <span class="nobar">통신판매업소신고번호 2019-서울강남-12345호</span><br />
+                        <span class="nobar">주소 서울특별시 강남구 강남로5길 7 AB타워 7층</span><br />
+                        <span class="nobar">이메일 help@toyou.kr</span><br />
+                        <p class="copy">ⓒ TOUYOU. All rights reserved.</p>
+                    </address>
+                </div>
+            </div>
+            <p class="footer_txt">
+                투유는 통산판매중개자이며 통신판매의 당사자가 아닙니다.<br />
+                따라서 투유는 상품거래정보 및 거래에 대한 책임을 지지 않습니다.
+            </p>
         </footer>
+
+        <a href="#none" class="top_scroll">위로 이동</a>
+        <script>
+            $('.js-open').click(function() {
+                $(this).toggleClass('on');
+            });
+            /* ===== scrollTop ==== */
+            $(window).scroll(function() {
+                var st = $(window).scrollTop();
+                var h = $(window).height();
+                var bh = 0;
+                if (st <= 100) {
+                    $('.top_scroll').stop().hide().css('top', h + st + bh - 88); // 스크롤 이동에 따른 위로버튼의 위치 이동
+                    $('.top_scroll').fadeIn();
+                } else {
+                    $('.top_scroll').animate({
+                        top: st + h + bh - 78 + "px"
+                    }, {
+                        queue: false,
+                        duration: 150
+                    });
+                }
+                if (st > 100) {
+                    // 위로버튼을 보여주는 위치 지정	
+                    $('.top_scroll').fadeIn();
+                } else if (st < 100) {
+                    $('.top_scroll').stop().fadeOut();
+                } // 위로버튼을 숨기는 위치 지정
+            });
+            $(".top_scroll").on("click", function() {
+                $('html, body').animate({
+                    scrollTop: 0
+                }, 200);
+            });
+        </script>
 
 
         <div class="toolBar">
