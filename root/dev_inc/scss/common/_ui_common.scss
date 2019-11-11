@@ -83,6 +83,9 @@
     }
     .form_set { position: relative; display: inline-block;  }
  }
+ .btn_bottom_fixed { height:47px;
+     .fixed_wrap {position: fixed; bottom:0; left:0; width:100%; @include clearfix();}
+  }
 .btn_set { @include clearfix(); 
     .item_ml { margin-left: 6px !important;}
     .btng-c  { text-align: center; .btn + .btn { margin-left: 1px;}  }

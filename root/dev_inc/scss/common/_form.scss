@@ -1,37 +1,33 @@
 /* ======================== input text  */
 /* placeholder */
 // ie
-input[type="text"].placeholdersjs,input[type="password"].placeholdersjs,
+input[type="text"].placeholdersjs,input[type="password"].placeholdersjs,input[type="number"].placeholdersjs,input[type="email"].placeholdersjs,
 textarea.placeholdersjs { color: $colorA; }
 // Internet Explorer 10 이상에 적용
-input[type="text"]:-ms-input-placeholder      ,input[type="password"]:-ms-input-placeholder      ,
+input[type="text"]:-ms-input-placeholder      ,input[type="password"]:-ms-input-placeholder      ,input[type="number"]:-ms-input-placeholder      ,input[type="email"]:-ms-input-placeholder      ,
 textarea:-ms-input-placeholder{ color: $colorA; }
 //  Webkit, Blink, Edge에 적용
-input[type="text"]::-webkit-input-placeholder ,input[type="password"]::-webkit-input-placeholder ,
+input[type="text"]::-webkit-input-placeholder ,input[type="password"]::-webkit-input-placeholder ,input[type="number"]::-webkit-input-placeholder ,input[type="email"]::-webkit-input-placeholder ,
 textarea::-webkit-input-placeholder    { color: $colorA; } 
 // Mozilla Firefox 4 부터 18에 적용
-input[type="text"]::-moz-placeholder          ,input[type="password"]::-moz-placeholder          ,
+input[type="text"]::-moz-placeholder          ,input[type="password"]::-moz-placeholder          ,input[type="number"]::-moz-placeholder          ,input[type="email"]::-moz-placeholder          ,
 textarea::-moz-placeholder             { color: $colorA; } 
 
 // input style
 em.star { display: inline-block; height: 14px; padding: 0 5px; color: #f24848; font-weight: bold; }
-input[type="text"], input[type="password"] {
-    width: 100%; height: $formH; padding: 4px 18px 4px;
-    font-size: 14px; vertical-align: middle;
-    font-weight: 500;
+input[type="text"], input[type="password"],input[type="number"], input[type="email"] {
+    width: 100%; height: $formH; padding: 4px 16px 4px;
+    font-size: 15px; vertical-align: middle;
+    font-weight: 400;
     border: 1px solid $lineC_d; outline: none; background-color: $formBG;
-    border-radius: 22px;
     -webkit-appearance: none;
     -moz-appearance: none;
 }
-input.h36[type="text"], input.h36[type="password"] {
-    height:36px;
-}
 /* ======================== focus, ,disabled, input_error */
-input[type="text"]:focus,input[type="password"]:focus { border-color: $lineC_f; }
-input[type="text"]:disabled, input[type="password"]:disabled { background  : $formBG_di; }  
-input[type="text"][readonly], input[type="password"][readonly] { background  : $formBG_di; }   
-input[type="text"].error,input[type="password"].error   { border-color: $lineC_e; }
+input[type="text"]:focus,input[type="password"]:focus,input[type="number"]:focus,input[type="email"]:focus { border-color: $lineC_f; }
+input[type="text"]:disabled, input[type="password"]:disabled, input[type="number"]:disabled, input[type="email"]:disabled { background  : $formBG_di; }  
+input[type="text"][readonly], input[type="password"][readonly], input[type="number"][readonly], input[type="email"][readonly] { background  : $formBG_di; }   
+input[type="text"].error,input[type="password"].error,input[type="number"].error,input[type="email"].error   { border-color: $lineC_e; }
 .input-box{ position: relative;  vertical-align: top;
     .check_byte-w { padding-right:  90px !important; }
     .check_byte-h { padding-bottom: 50px !important; }
@@ -117,7 +113,7 @@ textarea { width: 100%;  height: 70px;
     }
 }
 
-label.error {color:$colorP; padding:7px 20px; display:block; font-size:13px; font-weight:500;}
+label.error {color:$colorP; padding:7px 0; display:block; font-size:15px; font-weight:500; text-align: right;}
 
 input[type=number]::-webkit-inner-spin-button, 
 input[type=number]::-webkit-outer-spin-button { 
@@ -139,122 +135,6 @@ input[type="radio"].rdo + label.rdo { font-size:13px; color:#222222; padding-lef
 	
 }
 input[type="radio"].rdo:checked + label.rdo:after {@include sp_form($radio_on);}
-
-select {
-    min-width:96px;
-  background-color: #f29027;
-  border: thin solid #f29027;
-  border-radius: 22px;
-  display: inline-block;
-  font: inherit;
-  color:#fff;
-  line-height: 21px;
-  font-weight: 700;
-  font-size:13px;
-  padding: 10px 40px 10px 20px;
-
-
-  margin: 0;      
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-
-  
-  background-image:
-    linear-gradient(45deg, transparent 50%, #fff 50%),
-    linear-gradient(135deg, #fff 50%, transparent 50%),
-    linear-gradient(to right, transparent, transparent);
-  background-position:
-    calc(100% - 20px) calc(1em + 5px),
-    calc(100% - 15px) calc(1em + 5px),
-    100% 0;
-  background-size:
-    5px 5px,
-    5px 5px,
-    2.5em 2.5em;
-  background-repeat: no-repeat;
-
-  &.select_lineType {
-    
-    background-color: #fff;
-    border: thin solid #222;
-    color:#222;
-    background-image:
-        linear-gradient(45deg, transparent 50%, #032222 50%),
-        linear-gradient(135deg, #032222 50%, transparent 50%),
-        linear-gradient(to right, transparent, transparent);
-    background-position:
-        calc(100% - 20px) calc(1em + 5px),
-        calc(100% - 15px) calc(1em + 5px),
-        100% 0;
-    background-size:
-        5px 5px,
-        5px 5px,
-        2.5em 2.5em;
-    background-repeat: no-repeat;
-    &.col_gray {
-        border: thin solid #d0d0d0;
-    }
-  }
-  
-  &.select_nolineType {
-    background-color: transparent;
-    border:none; 
-    color:#222;
-    padding:5px 25px 5px 5px;
-    
-    background-image:url('/resources/poc/images/common/select_arrow_sm.png');
-    background-size: 11px 6px;
-    background-position:
-        calc(100% - 5px) calc(1em + 0px),
-        calc(100% - 5px) calc(1em + 5px),
-        100% 0;
-  }
-}
-select:focus {
-    background-image:
-      linear-gradient(45deg, white 50%, transparent 50%),
-      linear-gradient(135deg, transparent 50%, white 50%),
-      linear-gradient(to right, transparent, transparent);
-    background-position:
-      calc(100% - 15px) calc(1em + 5px),
-      calc(100% - 20px) calc(1em + 5px),
-      100% 0;
-    background-size:
-      5px 5px,
-      5px 5px,
-      2.5em 2.5em;
-    background-repeat: no-repeat;
-    outline: 0;
-    
-    &.select_lineType {
-        
-        background-image:
-            linear-gradient(45deg, #222 50%, transparent 50%),
-            linear-gradient(135deg, transparent 50%, #222 50%),
-            linear-gradient(to right, transparent, transparent);
-        background-position:
-            calc(100% - 15px) calc(1em + 5px),
-            calc(100% - 20px) calc(1em + 5px),
-            100% 0;
-
-    }
-    &.select_nolineType {
-        background-image:url('/resources/poc/images/common/select_arrow_sm_up.png');
-        background-size: 11px 6px;
-        background-position:
-          calc(100% - 5px) calc(1em + 0px),
-          calc(100% - 5px) calc(1em + 5px),
-          100% 0;
-    }
-  }
-  
-select:-moz-focusring {
-    color: transparent;
-    text-shadow: 0 0 0 #000;
-  }
 
 
 

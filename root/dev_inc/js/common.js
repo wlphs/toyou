@@ -19,7 +19,10 @@ $(function(){
   $(".top_scroll").on("click", function(){
     $( 'html, body' ).animate( { scrollTop: 0 }, 200 );
   });
-    
+  
+  $('.btn_bottom_fixed').each(function() {
+    $(this).height($(this).find('.fixed_wrap').innerHeight());
+  })
     
 }); //.ready() called.
 
