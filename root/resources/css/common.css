@@ -3959,17 +3959,19 @@ input[type="checkbox"].chk {
   margin: 0;
   margin-top: -10px;
   left: 0;
-  opacity: 1;
-  width: 20px;
-  height: 20px;
+  opacity: 0;
+  width: 1px;
+  height: 1px;
 }
 
 input[type="checkbox"].chk + label.chk {
-  font-size: 13px;
-  color: #222222;
-  padding-left: 25px;
+  font-size: 15px;
+  color: #000;
+  padding-left: 33px;
   display: inline-block;
   font-weight: 400;
+  position: relative;
+  line-height: 25px;
 }
 
 input[type="checkbox"].chk + label.chk:after {
@@ -3979,7 +3981,7 @@ input[type="checkbox"].chk + label.chk:after {
   background-position: 0px 0px;
   position: absolute;
   top: 50%;
-  margin-top: -10px;
+  margin-top: -13px;
   left: 0;
 }
 
@@ -4002,7 +4004,7 @@ input[type="radio"].rdo {
 
 input[type="radio"].rdo + label.rdo {
   font-size: 13px;
-  color: #222222;
+  color: #000;
   padding-left: 25px;
   display: inline-block;
   font-weight: 400;
