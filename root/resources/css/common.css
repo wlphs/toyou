@@ -230,7 +230,7 @@ a, span, i, em {
 
 .input_del button:after, input[type="checkbox"].chk + label.chk:after, input[type="checkbox"].chk:checked + label.chk:after, input[type="radio"].rdo + label.rdo:after, input[type="radio"].rdo:checked + label.rdo:after, .formsearch-box .search-btn:after, .datepicker-box:after {
   background-image: url("../images/common/sp_form.png");
-  background-size: 80px 76.5px;
+  background-size: 90px 81.5px;
 }
 
 .icon_label, .btn_menu_arrow:after, .btn_more:after, .accordion-list > li .header-area .acc_btn:after, .trp.popupfixed-wrap .btn_close:after, .header .top_bar .history_back:before, .header .top_bar .btn_search:before, #footer .h2_logo, #footer .opne_text:after, .top_scroll::before, .profile_wrap .pf_photo_wrap .pf_photo_change:after, .profile_wrap .pf_manage a.btn_edit_pf:after, .profile_wrap .pf_manage a.btn_edit_cert:after, .main_header .h1_logo, .main_header .location_top::before, .main section.main_card .big_banner .txt em, .thum_list li .btn_like::before, .thum_list li .btn_like.on::before, .thum_list.big_type li .btn_like::before, .thum_list.big_type li .btn_like.on::before {
@@ -2757,6 +2757,7 @@ table.bottom_bar {
   border: 1px solid #e6e6e6;
   -webkit-appearance: none;
   -moz-appearance: none;
+  box-sizing: border-box;
 }
 
 .btn:disabled {
@@ -2768,8 +2769,8 @@ table.bottom_bar {
 }
 
 .btn.btn_default {
-  background: #000;
-  border: 1px solid #000;
+  background: #808080;
+  border: 1px solid #808080;
   color: #fff;
 }
 
@@ -2781,11 +2782,13 @@ table.bottom_bar {
   border: none;
 }
 
-/*
-.btn.btn_gray { 
-    background:#e5e5e5; border:1px solid #e5e5e5; color:$colorB;
+.btn.btn_gray {
+  background: #f5f5f5;
+  border: 1px solid #f5f5f5;
+  color: #999999;
 }
 
+/*
 .btn.btn_line_default { 
     background:transparent; border:1px solid $colorB; color:$colorB;
 }
@@ -2844,6 +2847,14 @@ table.bottom_bar {
   font-weight: 400;
   line-height: 47px;
   height: 47px;
+}
+
+.btn.btn_md {
+  padding: 0px 13px;
+  height: 45px;
+  line-height: 45px;
+  min-width: auto;
+  font-size: 15px;
 }
 
 .btn.btn_sm {
@@ -3642,7 +3653,7 @@ em.star {
 input[type="text"], input[type="password"], input[type="number"], input[type="email"] {
   width: 100%;
   height: 45px;
-  padding: 4px 16px 4px;
+  padding: 4px 13px 4px;
   font-size: 15px;
   vertical-align: middle;
   font-weight: 400;
@@ -3776,7 +3787,7 @@ input[type="text"].error, input[type="password"].error, input[type="number"].err
   display: block;
   width: 20px;
   height: 20px;
-  background-position: -30px -30px;
+  background-position: -30px -35px;
 }
 
 .input_search {
@@ -3946,8 +3957,8 @@ input[type="checkbox"].chk + label.chk {
 
 input[type="checkbox"].chk + label.chk:after {
   content: '';
-  width: 20px;
-  height: 20px;
+  width: 25px;
+  height: 25px;
   background-position: 0px 0px;
   position: absolute;
   top: 50%;
@@ -3956,9 +3967,9 @@ input[type="checkbox"].chk + label.chk:after {
 }
 
 input[type="checkbox"].chk:checked + label.chk:after {
-  width: 20px;
-  height: 20px;
-  background-position: -30px 0px;
+  width: 25px;
+  height: 25px;
+  background-position: -35px 0px;
 }
 
 input[type="radio"].rdo {
@@ -3984,7 +3995,7 @@ input[type="radio"].rdo + label.rdo:after {
   content: '';
   width: 20px;
   height: 20px;
-  background-position: -60px 0px;
+  background-position: -70px 0px;
   position: absolute;
   top: 50%;
   margin-top: -10px;
@@ -3994,7 +4005,7 @@ input[type="radio"].rdo + label.rdo:after {
 input[type="radio"].rdo:checked + label.rdo:after {
   width: 20px;
   height: 20px;
-  background-position: -60px -30px;
+  background-position: -70px -30px;
 }
 
 /* ========================  input file */
@@ -4125,7 +4136,7 @@ input[type="radio"].rdo:checked + label.rdo:after {
   margin-top: -8px;
   width: 16.5px;
   height: 16.5px;
-  background-position: 0px -60px;
+  background-position: 0px -65px;
 }
 
 /* ========================  jQuery datepicker */
@@ -4152,7 +4163,7 @@ input[type="radio"].rdo:checked + label.rdo:after {
   right: 17px;
   width: 20px;
   height: 20px;
-  background-position: 0px -30px;
+  background-position: 0px -35px;
 }
 
 .ui-datepicker.ui-widget {
@@ -4436,6 +4447,28 @@ input[type="radio"].rdo:checked + label.rdo:after {
 .oneLine .select-box {
   margin: 0  5px;
   min-width: 100px;
+}
+
+select {
+  width: 100%;
+  background-color: #f5f5f5;
+  border: thin solid #f5f5f5;
+  display: inline-block;
+  font: inherit;
+  color: #000;
+  line-height: 21px;
+  font-weight: 400;
+  font-size: 13px;
+  height: 45px;
+  padding: 10px 20px 10px 13px;
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: linear-gradient(45deg, transparent 50%, #000 50%), linear-gradient(135deg, #000 50%, transparent 50%), linear-gradient(to right, transparent, transparent);
+  background-position: calc(100% - 13px) calc(1em + 5px), calc(100% - 8px) calc(1em + 5px), 100% 0;
+  background-size: 5px 5px, 5px 5px, 2.5em 2.5em;
+  background-repeat: no-repeat;
 }
 
 .header {
@@ -4833,6 +4866,11 @@ input[type="radio"].rdo:checked + label.rdo:after {
 }
 
 /* ================== 로그인 ========================= */
+.join_title .tit_desc {
+  font-size: 15px;
+  font-weight: 300;
+}
+
 .join_type li {
   padding: 35px 24px;
   text-align: center;
@@ -4873,6 +4911,77 @@ input[type="radio"].rdo:checked + label.rdo:after {
   color: #fff;
   font-size: 15px;
   margin-top: 10px;
+}
+
+input[type="radio"].type_btn_radio {
+  position: absolute;
+  opacity: 0;
+  width: 1px;
+  height: 1px;
+}
+
+input[type="radio"].type_btn_radio:checked + label {
+  background: url("/resources/images/common/point_bg.jpg");
+  background-size: 100% 100%;
+  color: #fff;
+  text-align: center;
+  border: none;
+  padding: 0px;
+  height: 45px;
+  line-height: 45px;
+  min-width: auto;
+  font-size: 15px;
+  display: block;
+  font-weight: 500;
+}
+
+input[type="radio"].type_btn_radio + label {
+  background: #f5f5f5;
+  border: 1px solid #f5f5f5;
+  color: #999999;
+  text-align: center;
+  padding: 0px;
+  height: 45px;
+  line-height: 45px;
+  min-width: auto;
+  font-size: 15px;
+  display: block;
+  font-weight: 500;
+}
+
+.join_cert_list li {
+  margin-top: 8px;
+}
+
+.join_cert_list li:first-child {
+  margin-top: 0;
+}
+
+.join_cert_list .join_cert_1:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.join_cert_list .join_cert_1 .item {
+  float: left;
+  position: relative;
+}
+
+.join_cert_list .join_cert_1 .item:nth-child(1) {
+  margin-right: 8px;
+}
+
+.join_cert_list .join_cert_1 .item:nth-child(2) {
+  margin-right: 8px;
+}
+
+.join_cert_list .join_cert_1 .item1 {
+  width: calc(100% - 150px);
+}
+
+.join_cert_list .join_cert_1 .item2 {
+  width: 67px;
 }
 
 /* // ================== 로그인 ========================= */

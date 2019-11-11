@@ -16,7 +16,7 @@ textarea::-moz-placeholder             { color: $colorA; }
 // input style
 em.star { display: inline-block; height: 14px; padding: 0 5px; color: #f24848; font-weight: bold; }
 input[type="text"], input[type="password"],input[type="number"], input[type="email"] {
-    width: 100%; height: $formH; padding: 4px 16px 4px;
+    width: 100%; height: $formH; padding: 4px 13px 4px;
     font-size: 15px; vertical-align: middle;
     font-weight: 400;
     border: 1px solid $lineC_d; outline: none; background-color: $formBG;
@@ -304,4 +304,42 @@ input[type="radio"].rdo:checked + label.rdo:after {@include sp_form($radio_on);}
     input, select, .select-box { display:inline-block;width: auto;}
     input { min-width: 80px; width:110px; }
     .select-box { margin:0  5px;  min-width: 100px; }
+}
+
+
+select {
+   width:100%;
+  background-color: #f5f5f5;
+  border: thin solid #f5f5f5;
+  display: inline-block;
+  font: inherit;
+  color:#000;
+  line-height: 21px;
+  font-weight: 400;
+  font-size:13px;
+  height:45px;
+  padding: 10px 20px 10px 13px;
+
+
+  margin: 0;      
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+  
+  background-image:
+    linear-gradient(45deg, transparent 50%, #000 50%),
+    linear-gradient(135deg, #000 50%, transparent 50%),
+    linear-gradient(to right, transparent, transparent);
+  background-position:
+    calc(100% - 13px) calc(1em + 5px),
+    calc(100% - 8px) calc(1em + 5px),
+    100% 0;
+  background-size:
+    5px 5px,
+    5px 5px,
+    2.5em 2.5em;
+  background-repeat: no-repeat;
 }

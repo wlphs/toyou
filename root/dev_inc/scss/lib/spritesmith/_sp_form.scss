@@ -1,27 +1,27 @@
 // how to use : Use following mixins.
 // variable : [X-axis] [Y-axis] [offset_x] [offset_y] [width] [height] [total_width] [total_height] [image_url] [image_name] [folder_name]
-    $checkbox_off: 0px 0px 0px 0px 40px 40px 160px 153px '../images/common/sp_form.png' 'checkbox_off' 'sp_form';
-    $checkbox_on: 60px 0px -60px 0px 40px 40px 160px 153px '../images/common/sp_form.png' 'checkbox_on' 'sp_form';
-    $icon-calender: 0px 60px 0px -60px 40px 40px 160px 153px '../images/common/sp_form.png' 'icon-calender' 'sp_form';
-    $icon-input-x: 60px 60px -60px -60px 40px 40px 160px 153px '../images/common/sp_form.png' 'icon-input-x' 'sp_form';
-    $icon-search: 0px 120px 0px -120px 33px 33px 160px 153px '../images/common/sp_form.png' 'icon-search' 'sp_form';
-    $radio_off: 120px 0px -120px 0px 40px 40px 160px 153px '../images/common/sp_form.png' 'radio_off' 'sp_form';
-    $radio_on: 120px 60px -120px -60px 40px 40px 160px 153px '../images/common/sp_form.png' 'radio_on' 'sp_form';
+    $checkbox_off: 0px 0px 0px 0px 50px 50px 180px 163px '../images/common/sp_form.png' 'checkbox_off' 'sp_form';
+    $checkbox_on: 70px 0px -70px 0px 50px 50px 180px 163px '../images/common/sp_form.png' 'checkbox_on' 'sp_form';
+    $icon-calender: 0px 70px 0px -70px 40px 40px 180px 163px '../images/common/sp_form.png' 'icon-calender' 'sp_form';
+    $icon-input-x: 60px 70px -60px -70px 40px 40px 180px 163px '../images/common/sp_form.png' 'icon-input-x' 'sp_form';
+    $icon-search: 0px 130px 0px -130px 33px 33px 180px 163px '../images/common/sp_form.png' 'icon-search' 'sp_form';
+    $radio_off: 140px 0px -140px 0px 40px 40px 180px 163px '../images/common/sp_form.png' 'radio_off' 'sp_form';
+    $radio_on: 140px 60px -140px -60px 40px 40px 180px 163px '../images/common/sp_form.png' 'radio_on' 'sp_form';
 
 //ancestor
-    $sp_form-width: 160px;
-    $sp_form-height: 153px;
+    $sp_form-width: 180px;
+    $sp_form-height: 163px;
     $sp_form-image: '../images/common/sp_form.png';
     $sp_form-sprites: ($checkbox_off, $checkbox_on, $icon-calender, $icon-input-x, $icon-search, $radio_off, $radio_on, );
     $sp_form_sprites_name: (checkbox_off, checkbox_on, icon-calender, icon-input-x, icon-search, radio_off, radio_on, );
-    $sp_form: (160px, 153px, '../images/common/sp_form.png', $sp_form-sprites, );
+    $sp_form: (180px, 163px, '../images/common/sp_form.png', $sp_form-sprites, );
 
 //mixin
 
         %sp_form {
         background-image: url('../images/common/sp_form.png');
-        $sprite-background-size-x: 160px / 2;
-        $sprite-background-size-y: 153px / 2;
+        $sprite-background-size-x: 180px / 2;
+        $sprite-background-size-y: 163px / 2;
         -webkit-background-size: $sprite-background-size-x $sprite-background-size-y;
         background-size: $sprite-background-size-x $sprite-background-size-y;
         }
