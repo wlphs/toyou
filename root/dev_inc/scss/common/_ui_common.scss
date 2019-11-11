@@ -57,7 +57,7 @@
 // 크기
 .btn.btn_round { border-radius: 22px; }
 .btn.btn_md { padding: 0px 13px; height:45px; line-height: 45px;  min-width: auto;  font-size: 15px; }
-.btn.btn_lg { padding:0 20px;  font-size: 15px; font-weight: 400; line-height: 45px; height:45px;}
+.btn.btn_lg { padding:0 10px;  font-size: 15px; font-weight: 400; line-height: 45px; height:45px;}
 .btn.btn_sm { padding: 6px 15px 7px;   min-width: auto;  font-size: 14px; }
 
 .btn_arrow_sm { font-size:14px; color:#222222; padding-right:20px; position: relative;
@@ -67,6 +67,10 @@
 //더보기버튼
 .btn_more { font-size: 14px; padding: 10px; position: relative; display:inline-block; 
     &:after { content:''; display:inline-block; position: absolute; right:0; top: 50%; margin-top:-4px; @include sp_icons($arrow_more2);}
+
+    &.red { font-size: 15px; color:#ff5c5c; padding-right: 16px; font-weight: 500;
+        &:after { content:''; display:inline-block; position: absolute; right:0; top: 50%; margin-top:-5px; @include sp_icons($arrow_more_r);}
+    }
 }
 
 
@@ -127,19 +131,41 @@
 
 /* ================== TAB MENU */
 .tab-wrap { position: relative; }
-
+.tab_type { 
+    .tab_menu_wrap { width:100%; overflow-x:auto; overflow-y:hidden;background:#fff;}
+    .tab_menu { text-align: center; margin: 0 auto;width:100%;
+        li {display:block; text-align: center; float:left; position: relative; padding-bottom: 5px;  width:50%;
+            &::before {content:''; height:5px; width:100%; background:#f5f5f5; position: absolute; bottom:0; left:0;}
+            a { display:block; height:42px; line-height: 42px; font-size: 15px; font-weight: 400; color:#999999; width:100%; letter-spacing: -.1em;}
+            &.on {
+                a { position: relative;color:#ff5c5c; font-weight: 500;
+                    &:after {content:''; height:5px; width:100%; background:#ff5c5c; position: absolute; bottom:-5px; left:0;}
+                }
+            }
+        }
+        &.tab_col2 { 
+            >li{  }
+        }
+        &.tab_col3 { 
+            >li { width:33.333333333%; }
+        }
+    }
+    .tab_cont_wrap { 
+        .tab_cont { padding-top: 30px;}
+    }
+}
 .tab_type1 { 
     .tab_menu_wrap { width:100%; overflow-x:auto; overflow-y:hidden;background:#fff;}
-    .tab_menu { text-align: center; margin: 0 auto;width:100%; 
+    .tab_menu { text-align: center; margin: 0 auto;width:100%;
         &.handful li {min-width: 110px; margin-left:0 !important; margin-right:0px !important;}
-        li {display:block; text-align: center; float:left; margin-left:26px;
+        li {display:block; text-align: center; float:left; margin-left:26px;  position: relative; padding-bottom: 5px;
+            &::before {content:''; height:5px; width:100%; background:#f5f5f5; position: absolute; bottom:0; left:0;}
             &:first-child {margin-left:16px;}
             &:last-child {margin-right:16px;}
-            a {display:block; height:60px; line-height: 60px;font-size: 15px; font-weight: 400; color:#262628; width:100%; letter-spacing: -.1em}
+            a { display:block; height:42px; line-height: 42px; font-size: 15px; font-weight: 400; color:#999999; width:100%; letter-spacing: -.1em;}
             &.on {
-                a { position: relative;color:#262628; font-weight: 700;
-
-                    &:after {content:''; height:2px; width:100%; background:$colorP; position: absolute; bottom:0; left:0;}
+                a { position: relative;color:#ff5c5c; font-weight: 500;
+                    &:after {content:''; height:5px; width:100%; background:#ff5c5c; position: absolute; bottom:-5px; left:0;}
                 }
             }
         }
@@ -151,7 +177,7 @@
         }
     }
     .tab_cont_wrap { 
-        .tab_cont {display:none;}
+        .tab_cont { padding-top: 30px;}
     }
 }
 
@@ -323,9 +349,13 @@
     .bottom_set { margin-top: 20px;}
 }
 
-.snippet_wrap {  position: fixed; top:100%; left:0; width:100%; background:rgba(0,0,0,0.9); padding:15px; 
-    .snippet_cont { color:#fff;font-size:14px;text-align: center;}
+.snippet_wrap { position: fixed; top:100%; left:0; width:100%; display:block;
+    .snippet_cont { color:#000;font-size:15px;text-align: center; position: relative; background:#f5f5f5; padding:20px;  margin-top:5px;
+        &::before { content:''; display:inline-block; position:absolute; right: 25px; top:-5px; @include sp_icons($icon_ball)  }
+        span { color:#ff5c5c;}
+    }
 }
+
 
 
 .select_layer .get_photo {
