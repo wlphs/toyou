@@ -39,6 +39,6 @@
     }
     .footer_txt {  margin-top: 16px; font-size: 12px;}
 }
-.top_scroll { display:none; position: absolute; bottom:30px; right: 12px; z-index:10; width: 43px; height: 43px; border-radius: 100%; border: 1px solid #dbdbdb; background:#fff; font-size: 0; text-align:center; box-shadow: 0px 6px 16px 0px rgba(0, 0, 0, 0.1);
+.top_scroll { display:none; position: fixed; bottom:30px; right: 12px; z-index:10; width: 43px; height: 43px; border-radius: 100%; border: 1px solid #dbdbdb; background:#fff; font-size: 0; text-align:center; box-shadow: 0px 6px 16px 0px rgba(0, 0, 0, 0.1);
     &::before { content:''; display:inline-block; @include sp_icons($icon_top); vertical-align: top; margin-top: 13px;} 
 }

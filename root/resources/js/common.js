@@ -9,7 +9,18 @@ function ModalFixedControl() {
     this.trpLayerFixedPopupScroll_top = 0, this.dialog;
 }
 
-$(function() {}), jQuery.fn.setTabType = function($activeTabNum) {
+$(function() {
+    $("#footer .js-open").click(function() {
+        $(this).toggleClass("on");
+    }), $(window).scroll(function() {
+        var _st = $(window).scrollTop(), _h = $(window).height(), _toppos = _st - $("#footer").offset().top + _h + 30;
+        100 < _st ? $(".top_scroll").fadeIn() : $(".top_scroll").fadeOut(), $(".top_scroll").css("bottom", _toppos < 30 ? 30 : _toppos + "px");
+    }), $(".top_scroll").on("click", function() {
+        $("html, body").animate({
+            scrollTop: 0
+        }, 200);
+    });
+}), jQuery.fn.setTabType = function($activeTabNum) {
     var _this = this;
     function selectTab(num) {
         var _cont = $(".tab_cont_wrap", _this), _li = $(".tab_menu li", _this).eq(num);

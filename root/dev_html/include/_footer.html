@@ -20,33 +20,3 @@
 </footer>
 
 <a href="#none" class="top_scroll">위로 이동</a>
-<script>
-    $('.js-open').click(function(){
-        $(this).toggleClass('on');
-    });
-    /* ===== scrollTop ==== */
-    $(window).scroll(function () {
-        var st = $(window).scrollTop();
-        var h = $(window).height();
-        var bh = 0;
-        if (st <= 100) {
-            //$('.top_scroll').stop().hide();    // 스크롤 이동에 따른 위로버튼의 위치 이동
-            //$('.top_scroll').fadeIn();
-        } else {
-            //$('.top_scroll').animate({ top: st + h + bh - 78 + "px" }, { queue: false, duration: 150 });
-            
-        }
-        if (st > 100) {
-            // 위로버튼을 보여주는 위치 지정	
-            $('.top_scroll').fadeIn();
-        } else { 
-            $('.top_scroll').fadeOut();
-        }    // 위로버튼을 숨기는 위치 지정
-
-        $('.top_scroll').css('top', st + h + bh - 78 + "px")
-    });
-    $(".top_scroll").on("click", function(){
-		$( 'html, body' ).animate( { scrollTop: 0 }, 200 );
-    });
-
-</script>

@@ -1,5 +1,21 @@
 $(function(){
+  
+  $('#footer .js-open').click(function(){
+      $(this).toggleClass('on');
+  });
 
+  $(window).scroll(function () {
+    let _st = $(window).scrollTop(),
+        _h = $(window).height(),
+        _ft = $('#footer').offset().top,
+        _toppos = _st-_ft+_h+30;
+    if (_st > 100) $('.top_scroll').fadeIn();
+    else $('.top_scroll').fadeOut();
+    $('.top_scroll').css('bottom', (_toppos < 30) ? 30 : _toppos + "px")
+  });
+  $(".top_scroll").on("click", function(){
+    $( 'html, body' ).animate( { scrollTop: 0 }, 200 );
+  });
     
     
 }); //.ready() called.
