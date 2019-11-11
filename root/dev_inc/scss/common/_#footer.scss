@@ -21,7 +21,7 @@
         &.on { 
             .opne_text { 
                 &:after { transform: rotate(0deg); }
-            }
+            } 
             .inner { display:block;}
         }
     }
