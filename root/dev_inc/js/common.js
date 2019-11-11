@@ -7,10 +7,13 @@ $(function(){
   $(window).scroll(function () {
     let _st = $(window).scrollTop(),
         _h = $(window).height(),
-        _ft = $('#footer').offset().top,
-        _toppos = _st-_ft+_h+30;
-    if (_st > 100) $('.top_scroll').fadeIn();
-    else $('.top_scroll').fadeOut();
+        _ft, _toppos =0;
+    if ($('#footer').length) {
+      _ft = $('#footer').offset().top;
+      _toppos = _st-_ft+_h+30;
+    }
+    if (_st > 100) $('.top_scroll').stop().fadeIn();
+    else $('.top_scroll').stop().fadeOut();
     $('.top_scroll').css('bottom', (_toppos < 30) ? 30 : _toppos + "px")
   });
   $(".top_scroll").on("click", function(){

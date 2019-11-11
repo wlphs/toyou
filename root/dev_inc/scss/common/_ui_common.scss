@@ -22,6 +22,11 @@
 .btn.btn_default { 
     background:$colorB; border:1px solid $colorB; color:#fff;
 }
+
+.btn.btn_point {
+    background:url('/resources/images/common/point_bg.jpg'); background-size: 100% 100%; color:#fff; text-align: center; border:none;
+}
+/*
 .btn.btn_gray { 
     background:#e5e5e5; border:1px solid #e5e5e5; color:$colorB;
 }
@@ -41,16 +46,16 @@
 .btn.btn_pop_orange {
     font-size:16px; color:$colorS; padding:10px; border:none; background:none;
 }
-
+*/
 .btn_menu_arrow {display:block; font-weight: 400; font-size:16px; padding:25px 0; position: relative;
     &:after {content:''; position: absolute; right:26px; top:50%; margin-top:-4px; @include sp_icons($arrow12);}
     .sm_txt {font-size:12px; color:#777; line-height: 22px; display: inline-block; vertical-align: middle; padding-left:5px;}
 }
 
-
+.btn.btn_block {display:block;}
 // 크기
 .btn.btn_round { border-radius: 22px; }
-.btn.btn_lg { padding: 10px 20px 10px;  font-size: 15px; font-weight: 500; }
+.btn.btn_lg { padding:0 20px;  font-size: 15px; font-weight: 400; line-height: 47px; height:47px;}
 .btn.btn_sm { padding: 6px 15px 7px;   min-width: auto;  font-size: 14px; }
 
 .btn_arrow_sm { font-size:14px; color:#222222; padding-right:20px; position: relative;
@@ -297,7 +302,9 @@
         .alert_cont { font-size:15px; color:$colorB; text-align: left; padding-bottom:30px;}
     }
 
-    .popup-layer.select_layer {}
+    .popup-layer.select_layer { border-top:10px solid $colorP;
+        .sel_wrap > li { background: url('/resources/images/common/dot_line_hor.png') repeat-x bottom left; background-size:4px 1px;}
+    }
     .popup-layer.option {
        position: relative;top: 0px; width: 600px; min-width: 415px; height: auto;
        text-align: left;background: #fff;
@@ -317,11 +324,12 @@
 
 
 .select_layer .get_photo {
-    li {border-top:1px solid #ccc; position: relative;
+    li { position: relative;
         input[type="file"] { position: absolute; top:0; left:0; width:100%; height:100%; opacity: 0;}
         &:first-child {border-top:none;}
     }
-    .get_photo_btn {height:40px;line-height:40px; font-size:15px; display:block;text-align: center; width:100%;}
+    .get_photo_btn {height:60px;line-height:60px; font-size:17px; display:block;text-align: center; width:100%;}
+    .btn_cancel {color:#999;}
 }
 
 

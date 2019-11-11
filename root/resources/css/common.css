@@ -1557,50 +1557,50 @@ body {
 
 /* ========================== text */
 .h1 {
-  font-size: 23px;
+  font-size: 27px;
   font-weight: 700;
   letter-spacing: -0.5;
-  color: #222222;
+  color: #000;
   font-family: "Noto Sans KR";
 }
 
 .h2 {
   font-size: 24px;
   font-weight: 700;
-  color: #222222;
+  color: #000;
   font-family: "Noto Sans KR";
 }
 
 .h3 {
   font-size: 16px;
   font-weight: 700;
-  color: #222222;
+  color: #000;
   font-family: "Noto Sans KR";
 }
 
 .h4 {
   font-size: 15px;
   font-weight: 700;
-  color: #222222;
+  color: #000;
   font-family: "Noto Sans KR";
 }
 
 .h5 {
   font-size: 14px;
   font-weight: 500;
-  color: #222222;
+  color: #000;
   font-family: "Noto Sans KR";
 }
 
 .h6 {
   font-size: 13px;
   font-weight: 500;
-  color: #222222;
+  color: #000;
   font-family: "Noto Sans KR";
 }
 
 .h1 em, .h2 em, .h3 em, .h4 em, .h5 em {
-  color: #E72928;
+  color: #ff5c5c;
 }
 
 a.link_txt,
@@ -1618,31 +1618,31 @@ a.link_txt,
 }
 
 .colorB {
-  color: #222222;
+  color: #000 !important;
 }
 
 .colorL {
-  color: #666666;
+  color: #666666 !important;
 }
 
 .colorP {
-  color: #E72928;
+  color: #ff5c5c !important;
 }
 
 .colorS {
-  color: #f29027;
+  color: #f29027 !important;
 }
 
 .colorE {
-  color: #0a0909;
+  color: #0a0909 !important;
 }
 
 .fs12 {
-  font-size: 12px;
+  font-size: 12px !important;
 }
 
 .fs13 {
-  font-size: 13px;
+  font-size: 13px !important;
 }
 
 .colorBGw {
@@ -1847,7 +1847,7 @@ table .must::after {
   top: 0px;
   left: 0;
   margin: 0 2px;
-  color: #E72928;
+  color: #ff5c5c;
   /* width: 4px; height: 4px; border-radius: 50%; background-color: $colorP ;  */
 }
 
@@ -1874,7 +1874,7 @@ table.bottom_bar {
   border-bottom: 1px solid #e6e6e6;
   background-color: #f6f6f6;
   font-size: 15px;
-  color: #222222;
+  color: #000;
   font-weight: bold;
   border-left: 1px solid #e6e6e6;
 }
@@ -1932,7 +1932,7 @@ table.bottom_bar {
 }
 
 .num.bold {
-  color: #222222;
+  color: #000;
 }
 
 .num.color {
@@ -1963,7 +1963,7 @@ table.bottom_bar {
   /* padding-top: 12px; vertical-align: top; */
   text-align: left;
   font-weight: bold;
-  color: #222222;
+  color: #000;
 }
 
 .form_table td.files {
@@ -2047,7 +2047,7 @@ table.bottom_bar {
 .form_table td.files .file-list li.fixed-add_remove .file_name {
   margin-left: 5px;
   font-weight: bold;
-  color: #222222;
+  color: #000;
 }
 
 .form_table td.files .file-list li.fixed-add_remove .file_size {
@@ -2534,7 +2534,7 @@ table.bottom_bar {
   padding-right: 2px;
   padding-top: 7px;
   font-size: 13px;
-  color: #222222;
+  color: #000;
   font-weight: bold;
 }
 
@@ -2581,7 +2581,7 @@ table.bottom_bar {
   /* padding-top: 12px;  vertical-align: top; */
   font-size: 13px;
   font-weight: bold;
-  color: #222222;
+  color: #000;
   /* line-height: 1.2; */
 }
 
@@ -2608,7 +2608,7 @@ table.bottom_bar {
   /*  padding-top: 12px; vertical-align: top;  */
   font-size: 13px;
   font-weight: bold;
-  color: #222222;
+  color: #000;
 }
 
 .form_table.style_address td {
@@ -2639,7 +2639,7 @@ table.bottom_bar {
 .form_table.style_view td.view_th {
   border-right: 1px solid #e6e6e6;
   font-weight: bold;
-  color: #222222;
+  color: #000;
 }
 
 .form_table.style_view th {
@@ -2647,7 +2647,7 @@ table.bottom_bar {
   vertical-align: top;
   text-align: left;
   font-weight: bold;
-  color: #222222;
+  color: #000;
   background-color: #f6f6f6;
   vertical-align: top;
   padding-top: 12px;
@@ -2768,45 +2768,40 @@ table.bottom_bar {
 }
 
 .btn.btn_default {
-  background: #222222;
-  border: 1px solid #222222;
+  background: #000;
+  border: 1px solid #000;
   color: #fff;
 }
 
-.btn.btn_gray {
-  background: #e5e5e5;
-  border: 1px solid #e5e5e5;
-  color: #222222;
+.btn.btn_point {
+  background: url("/resources/images/common/point_bg.jpg");
+  background-size: 100% 100%;
+  color: #fff;
+  text-align: center;
+  border: none;
 }
 
-.btn.btn_line_default {
-  background: transparent;
-  border: 1px solid #222222;
-  color: #222222;
+/*
+.btn.btn_gray { 
+    background:#e5e5e5; border:1px solid #e5e5e5; color:$colorB;
 }
 
-.btn.btn_transparent {
-  background: transparent;
-  border: 1px solid transparent;
-  color: #222222;
+.btn.btn_line_default { 
+    background:transparent; border:1px solid $colorB; color:$colorB;
 }
+
+.btn.btn_transparent { 
+    background:transparent; border:1px solid transparent; color:$colorB;
+}
+
 
 .btn.btn_pop_gray {
-  font-size: 16px;
-  color: #666666;
-  padding: 10px;
-  border: none;
-  background: none;
+    font-size:16px; color:$colorL; padding:10px; border:none; background:none;
 }
-
 .btn.btn_pop_orange {
-  font-size: 16px;
-  color: #f29027;
-  padding: 10px;
-  border: none;
-  background: none;
+    font-size:16px; color:$colorS; padding:10px; border:none; background:none;
 }
-
+*/
 .btn_menu_arrow {
   display: block;
   font-weight: 400;
@@ -2835,14 +2830,20 @@ table.bottom_bar {
   padding-left: 5px;
 }
 
+.btn.btn_block {
+  display: block;
+}
+
 .btn.btn_round {
   border-radius: 22px;
 }
 
 .btn.btn_lg {
-  padding: 10px 20px 10px;
+  padding: 0 20px;
   font-size: 15px;
-  font-weight: 500;
+  font-weight: 400;
+  line-height: 47px;
+  height: 47px;
 }
 
 .btn.btn_sm {
@@ -3128,7 +3129,7 @@ table.bottom_bar {
   content: '';
   height: 2px;
   width: 100%;
-  background: #E72928;
+  background: #ff5c5c;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -3249,7 +3250,7 @@ table.bottom_bar {
   content: '';
   height: 2px;
   width: 100%;
-  background: #E72928;
+  background: #ff5c5c;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -3306,11 +3307,11 @@ table.bottom_bar {
 }
 
 .tab-list.tab_type1 > .on .btn-area {
-  border-top: 2px solid #E72928 !important;
+  border-top: 2px solid #ff5c5c !important;
 }
 
 .tab-list.tab_type1 > .on .btn-area a {
-  color: #E72928;
+  color: #ff5c5c;
 }
 
 /* ================== accordion MENU */
@@ -3472,16 +3473,25 @@ table.bottom_bar {
   text-align: left;
   font-size: 15px;
   font-weight: normal;
-  color: #222222;
+  color: #000;
   line-height: 1.1;
   font-family: "Noto Sans KR";
 }
 
 .trp.popupfixed-wrap .popup-layer.pop_alert .alert_cont {
   font-size: 15px;
-  color: #222222;
+  color: #000;
   text-align: left;
   padding-bottom: 30px;
+}
+
+.trp.popupfixed-wrap .popup-layer.select_layer {
+  border-top: 10px solid #ff5c5c;
+}
+
+.trp.popupfixed-wrap .popup-layer.select_layer .sel_wrap > li {
+  background: url("/resources/images/common/dot_line_hor.png") repeat-x bottom left;
+  background-size: 4px 1px;
 }
 
 .trp.popupfixed-wrap .popup-layer.option {
@@ -3531,7 +3541,6 @@ table.bottom_bar {
 }
 
 .select_layer .get_photo li {
-  border-top: 1px solid #ccc;
   position: relative;
 }
 
@@ -3549,12 +3558,16 @@ table.bottom_bar {
 }
 
 .select_layer .get_photo .get_photo_btn {
-  height: 40px;
-  line-height: 40px;
-  font-size: 15px;
+  height: 60px;
+  line-height: 60px;
+  font-size: 17px;
   display: block;
   text-align: center;
   width: 100%;
+}
+
+.select_layer .get_photo .btn_cancel {
+  color: #999;
 }
 
 .ui-dialog .ui-dialog-titlebar,
@@ -3877,7 +3890,7 @@ textarea {
 .textarea-box .byte_check em {
   vertical-align: bottom;
   font-size: 12px;
-  color: #E72928;
+  color: #ff5c5c;
 }
 
 .textarea-box .byte_check span {
@@ -3886,7 +3899,7 @@ textarea {
 }
 
 label.error {
-  color: #E72928;
+  color: #ff5c5c;
   padding: 7px 20px;
   display: block;
   font-size: 13px;
@@ -4351,7 +4364,7 @@ select:-moz-focusring {
 }
 
 .ui-datepicker .ui-datepicker-calendar tbody tr .ui-datepicker-week-end:first-child .ui-state-default {
-  color: #E72928;
+  color: #ff5c5c;
 }
 
 .ui-datepicker .ui-datepicker-calendar tbody tr .ui-datepicker-week-end.ui-datepicker-today .ui-state-default {
@@ -4876,6 +4889,50 @@ select:-moz-focusring {
   border-bottom: 1px solid #efefef;
 }
 
+/* ================== 로그인 ========================= */
+.join_type li {
+  padding: 35px 24px;
+  text-align: center;
+  border-top: 10px solid #efefef;
+}
+
+.join_type li .txt {
+  font-size: 15px;
+  margin-bottom: 15px;
+  line-height: 24px;
+  font-weight: 500;
+}
+
+.join_type li.coming {
+  padding: 40px 0;
+  background: url("/resources/images/common/point_bg.jpg");
+  background-size: 100% 100%;
+}
+
+.join_type li.coming .txt1 {
+  padding: 2px 10px;
+  background: #fff;
+  color: #ff5c5c;
+  font-weight: 500;
+}
+
+.join_type li.coming .txt2 {
+  display: block;
+  margin-top: 15px;
+}
+
+.join_type li.coming .txt2 img {
+  width: 232px;
+}
+
+.join_type li.coming .txt3 {
+  display: block;
+  color: #fff;
+  font-size: 15px;
+  margin-top: 10px;
+}
+
+/* // ================== 로그인 ========================= */
 /* header.scss */
 .main_header {
   height: 55px;

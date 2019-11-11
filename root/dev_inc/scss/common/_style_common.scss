@@ -58,7 +58,7 @@ body { background-color: #fff;
 
 /* ========================== text */
 
-.h1 { font-size: 23px; font-weight: 700; letter-spacing: -0.5; color:$colorB; font-family: $baseFT; } 
+.h1 { font-size: 27px; font-weight: 700; letter-spacing: -0.5; color:$colorB; font-family: $baseFT; } 
 .h2 { font-size: 24px; font-weight: 700; color:$colorB; font-family: $baseFT; } 
 .h3 { font-size: 16px; font-weight: 700; color:$colorB; font-family: $baseFT; } 
 .h4 { font-size: 15px; font-weight: 700; color:$colorB; font-family: $baseFT; } 
@@ -73,13 +73,13 @@ a.link_txt ,
 .text-notice    { display: block;
     font-size:13px; font-weight: normal;   
     line-height: 1.25; letter-spacing: -0.5px; font-style: normal;}
-.colorB { color: $colorB; } // 강조진하게
-.colorL { color: $colorL; } // 저체도
-.colorP { color: $colorP; } // 포인트 컬러
-.colorS { color: $colorS; } // 서브컬러
-.colorE { color: $colorE; } // 에러
-.fs12 { font-size: 12px; }
-.fs13 { font-size: 13px; }
+.colorB { color: $colorB !important; } // 강조진하게
+.colorL { color: $colorL !important; } // 저체도
+.colorP { color: $colorP !important; } // 포인트 컬러
+.colorS { color: $colorS !important; } // 서브컬러
+.colorE { color: $colorE !important; } // 에러
+.fs12 { font-size: 12px !important; }
+.fs13 { font-size: 13px !important; }
 
 .colorBGw {background-color:$colorBGw !important;}
 .colorBGf {background-color:#fff !important;}
