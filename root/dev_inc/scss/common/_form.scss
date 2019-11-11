@@ -25,19 +25,16 @@ input[type="text"], input[type="password"],input[type="number"], input[type="ema
 }
 /* ======================== focus, ,disabled, input_error */
 input[type="text"]:focus,input[type="password"]:focus,input[type="number"]:focus,input[type="email"]:focus { border-color: $lineC_f; }
-input[type="text"]:disabled, input[type="password"]:disabled, input[type="number"]:disabled, input[type="email"]:disabled { background  : $formBG_di; }  
-input[type="text"][readonly], input[type="password"][readonly], input[type="number"][readonly], input[type="email"][readonly] { background  : $formBG_di; }   
+input[type="text"]:disabled, input[type="password"]:disabled, input[type="number"]:disabled, input[type="email"]:disabled { background  : $formBG; }  
+input[type="text"][readonly], input[type="password"][readonly], input[type="number"][readonly], input[type="email"][readonly] { background  : $formBG; }   
 input[type="text"].error,input[type="password"].error,input[type="number"].error,input[type="email"].error   { border-color: $lineC_e; }
 .input-box{ position: relative;  vertical-align: top;
     .check_byte-w { padding-right:  90px !important; }
     .check_byte-h { padding-bottom: 50px !important; }
-    label, .dash  { display: inline-block; 
-        padding: 8px 20px 8px ; box-sizing: border-box; }
+    label, .dash  { display: inline-block; padding: 8px 20px 8px ; box-sizing: border-box; }
     label:frist-child { padding-left: 0;  }
     .dash { padding: 8px 0px 8px 0px; } 
-    input[type="text"], input[type="password"] {
-       padding: 8px 15px 8px ;            
-    }
+    input[type="text"], input[type="password"] { padding: 8px 15px 8px ;  }
     .btn { margin-top:-1px;}
     .byte_check { position: absolute; top:10px; right:15px;
         em   { vertical-align: middle; font-size:14px;  color: #e90000; }    
@@ -46,14 +43,10 @@ input[type="text"].error,input[type="password"].error,input[type="number"].error
 }
 
 .input_post { position: relative; display:block;
-    button.btn {
-        position: absolute; top:0; right:0; display:inline-block; width:auto;
-    }
+    button.btn { position: absolute; top:0; right:0; display:inline-block; width:auto;}
 }
 .input_tel { position: relative; display:block;
-    select {
-        position: absolute; top:0; left:0; z-index: 1;
-    }
+    select { position: absolute; top:0; left:0; z-index: 1;  }
     input {padding-left:115px;}
 }
 
@@ -66,14 +59,17 @@ input[type="text"].error,input[type="password"].error,input[type="number"].error
         }
     }
 }
-.input_search { position: relative; display: inline-block; width: 100%;
-    input { padding-right: 30px; }
-    button { position: relative; position: absolute; top:50%; right: 5px; margin-top: -10px;
-        &:after { content: ""; display: block; 
-            /*@include sp_icons($icon-btn_search); */
-        }
+
+.input_search { position: relative; display:block;
+    input { width: calc(100% - 75px);}
+    .btn { position: absolute; top:0; right:0; display:inline-block; width:auto; height:45px;
     }
+    .input_del { position: relative; width: calc(100% - 75px);
+        input { width: 100%;}
+    } 
 }
+
+
 .input_unit { position: relative; display: inline-block; width: 100%;
     input { padding-right: 32px; text-align:right; }
     .unit { position: absolute; top:11px; right:15px; 
