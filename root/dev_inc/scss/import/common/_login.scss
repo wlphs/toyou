@@ -17,7 +17,35 @@
     }
   }
 }
-
+.profile_photo_wrap {width:160px; margin: 0 auto; position: relative;
+    .profile_photo { border-radius: 80px; width:160px; height:160px; overflow: hidden;
+        img { width:160px; }
+    }
+    .pf_photo_change {font-size: 0; position: absolute; bottom:2px; right:-3px; width:50px; height:50px; 
+        &:after {content:''; @include sp_icons($ic_set_profile); display:block; }
+    }
+}
+.profile_alert_txt {margin-top:30px; height:20px; color:$colorP; font-size:15px; text-align: center;}
+.profile_later_wrap {margin-top:50px; text-align: center;
+  .later_link {font-size:17px; display:inline-block; padding:10px;}
+}
+.agree_all_warp {padding-bottom:18px;
+  background: url('/resources/images/common/dot_line_hor.png') repeat-x bottom left; background-size:4px 1px;
+  label.chk {font-weight: 700 !important;}
+}
+.agree_list {
+  li { margin-top:18px; position: relative;
+    p {font-size:15px; font-weight: 300; line-height:25px; display:inline-block; vertical-align: top; }
+    .agree_view { position: absolute; right:0; top:50%; margin-top:-14px;  padding:10px;
+      &:after {content:''; position: relative;@include sp_icons($arrow_more2); display:block;}
+    }
+  }
+}
+.agree_options { text-align: center; margin-top:18px;
+  li {display:inline-block; padding:0 6px;
+    label {font-size:13px !important;}
+  }
+}
 input[type="radio"].type_btn_radio {
   position: absolute; opacity: 0; width:1px; height:1px;
 }
