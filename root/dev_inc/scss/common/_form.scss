@@ -67,20 +67,22 @@ input[type="text"].error,input[type="password"].error,input[type="number"].error
     .input_del { position: relative; width: calc(100% - 75px);
         input { width: 100%;}
     } 
+
+    &.type2 {
+        input { width: calc(100% - 115px);}
+    }
 }
 
 
 .input_unit { position: relative; display: inline-block; width: 100%;
-    input { padding-right: 32px; text-align:right; }
-    .unit { position: absolute; top:11px; right:15px; 
-        font-family:$baseFT; 
-        font-size: 14px; font-weight: bold; color:$colorD;  
+    input { padding-right: 50px; text-align:left; }
+    .unit { position: absolute; top:12px; right:15px; 
+        font-size: 15px; font-weight: 500; color:#ff5c5c;  
     }
 }
 .input_unit.unit2 { position: relative; display: inline-block; width: 100%;
     input { padding-right: 47px; text-align:right; }
     .unit { position: absolute; top:11px; right:15px; 
-        font-family:$baseFT;
         font-size: 14px; font-weight: bold; color:$colorD;  
     }
 }
@@ -110,6 +112,7 @@ textarea { width: 100%;  height: 70px;
 }
 
 label.error {color:$colorP; padding:7px 0; display:block; font-size:15px; font-weight:500; text-align: right;}
+.error_txt {color:$colorP; padding:7px 0; display:block; font-size:15px; font-weight:500; text-align: right;}
 
 input[type=number]::-webkit-inner-spin-button, 
 input[type=number]::-webkit-outer-spin-button { 
@@ -337,4 +340,62 @@ select {
     5px 5px,
     2.5em 2.5em;
   background-repeat: no-repeat;
+}
+
+//입력폼
+.form_list {
+    dt { font-size:15px; font-weight: 500; margin:20px 5px 10px;
+        &:first-child { margin-top:0;}
+        em {  color:#e72928; vertical-align: middle; margin: 3px 0 0 2px; display:inline-block;}
+    }
+    & + .btn_set { margin-top: 23px;}
+    
+    dd {
+        .textarea-box {
+            textarea { height: 100px;}
+        }
+    }
+
+    //     //자주찾는질문
+    //     .js-hide_show {display: none;
+    //         &.on { display:block;}
+    //     }
+    //     .accordion-wrap { border:1px solid #d0d0d0; border-radius: 10px; overflow: hidden;
+    //         .con-area { background:#f6f6f6; color:$colorL;}
+
+    //         //라인없을때
+    //         &.type2 { border:0px; border-radius: 0; margin-top: -6px;
+    //             .header-area { border:0px; padding:0; line-height:40px;
+    //                 .acc_btn { top:0px}
+    //             }
+    //             .con-area { padding: 0; border-bottom:0; margin-bottom:10px;}
+    //         }
+    //     }
+
+    //     //1:1온라인문의
+    //     .select_area {
+    //         .select_lineType { width: 100%; margin-top:10px;
+    //             &:first-child { margin-top:0;}
+    //         }
+    //     }
+
+    //     //요금납부방법변경toggle
+    //     .toggle_select{ position: relative; overflow: hidden;
+    //         .top_fixed { position: absolute; top: 0;
+    //             &.ml40 { left: 70px;}
+    //         }
+    //         .select_cont { margin-top: 35px; display:none;}
+    //     }
+
+    // }
+    
+    // .h4 {margin: 25px 5px 10px; }
+
+    // //텍스트
+    // &.text { 
+    //     dt { font-size: 14px; font-weight: 400; margin:25px 0 10px; color:#222;
+    //         &:first-child { margin-top:7px;}
+    //     }
+    // }
+    
 }

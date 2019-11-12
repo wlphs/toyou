@@ -26,6 +26,15 @@ $(function(){
     
 }); //.ready() called.
 
+function openSnippet(msg) {
+  var ran = Math.floor(Math.random()*10000000);
+  $('body').append('<div class="snippet_wrap js-snippet_wrap'+ran+'"><p class="snippet_cont">'+msg+'</p></div>')
+  var snippet = $('.js-snippet_wrap'+ran);
+  snippet.animate({"margin-top":-snippet.innerHeight()}, 300).delay(2000).fadeOut(300, function () {
+    snippet.remove();
+  });
+}
+
 
 function formatNumber(num) {
   return num.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,')

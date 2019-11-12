@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<!-- header -->
+	@@include('../../include/_head.html', {"title" : "TOYOUCORP."})
+	<!-- //header -->
+</head>
+
+<body class="pageclass">
+	<p class="accessibility" id="skipTop">
+		<a href="#container">본문 바로가기</a>
+		<a href="#gnb" class="js-gnb_btn">주메뉴 바로가기</a> 
+	</p>
+	<div class="wrapper">
+		<!-- header --> 
+		<header id="header" class="header">
+			<div class="header_fixed_group">
+				<div class="top_bar">
+					<div class="top_left">
+						<a href="javascript:history.go(-1);" class="history_back"><span class="hide">이전페이지로 이동</span></a> 
+					</div>
+				</div>
+			</div> 
+		</header>
+		<!-- //header -->
+
+		<!-- container -->
+		<div id="container">
+			<div id="contents">
+                <form action="" id="test1">
+                <div class="join_title cont_inner mb25">
+                    <h1 class="h1"><em>비밀번호를</em><br>입력해 주세요</h1>
+                </div>
+                <div class="join_cont cont_inner">
+					<input type="password" placeholder="영문, 숫자 혼합 8~16자로 입력해 주세요.">
+					<p class="error_txt">* 비밀번호를 입력해 주세요.</p>
+                </div>
+                <div class="btn_bottom_fixed">
+                    <div class="fixed_wrap">
+                        <a href="#" class="btn btn_lg btn_point btn_block js-snippet">로그인</a>
+                    </div>
+                </div>
+                </form> 
+			</div>
+		</div>
+
+		<!-- <div class="snippet_wrap">
+			<div class="snippet_cont">
+				비밀번호가 변경되었습니다.
+			</div>
+		</div> -->
+        
+		<!-- //container -->
+		@@include('../../include/_toolbar.html')
+	</div>
+<script>
+	$("#test1").validate();
+	$('.js-snippet').on('click', function () {
+		openSnippet("비밀번호가 변경되었습니다.");
+		return false;
+	})
+</script>
+
+</body>
+</html>
