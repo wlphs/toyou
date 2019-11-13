@@ -58,6 +58,7 @@
 .btn.btn_round { border-radius: 22px; }
 .btn.btn_md { padding: 0px 13px; height:45px; line-height: 45px;  min-width: auto;  font-size: 15px; }
 .btn.btn_lg { padding:0 10px;  font-size: 15px; font-weight: 400; line-height: 45px; height:45px;}
+.btn.btn_llg { padding:0 10px;  font-size: 17px; font-weight: 400; line-height: 55px; height:55px;}
 .btn.btn_sm { padding: 6px 15px 7px;   min-width: auto;  font-size: 14px; }
 
 .btn_arrow_sm { font-size:14px; color:#222222; padding-right:20px; position: relative;
@@ -128,6 +129,24 @@
         min-width:auto;
     }
 }
+
+
+.ellipsis3 {@include ellipsis-line(3)}
+.btn_more_point {color:#ff5c5c; font-weight: 500; display:inline-block; position: relative; padding-right:12px;
+    &:after {content:''; position: absolute; right:0; top:50%; margin-top:-5px; @include sp_icons($arrow_more_r)}
+}
+.btn_arrow_type { display:block; padding-right:50px; position: relative;
+    &:after {content:''; position: absolute; right:0px; top:50%; margin-top:-7px; @include sp_icons($lg_arrow);}
+}
+
+.dot_type_list {
+    &.space15 li {margin-top:15px;}
+    li { padding-left:7px;position: relative; margin-top:5px; font-size:15px;
+        &:first-child {margin-top:0;}
+        &:after {content:''; width:2px; height:2px; background:#000; border-radius: 1px; position: absolute; left:0; top:8px;}
+    }
+}
+
 
 /* ================== TAB MENU */
 .tab-wrap { position: relative; }

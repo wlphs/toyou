@@ -1,52 +1,60 @@
 // how to use : Use following mixins.
 // variable : [X-axis] [Y-axis] [offset_x] [offset_y] [width] [height] [total_width] [total_height] [image_url] [image_name] [folder_name]
-    $arrow12: 402px 363px -402px -363px 12px 16px 465px 453px '../images/common/sp_icons.png' 'arrow12' 'sp_icons';
-    $arrow_more: 372px 363px -372px -363px 10px 20px 465px 453px '../images/common/sp_icons.png' 'arrow_more' 'sp_icons';
-    $arrow_more2: 90px 417px -90px -417px 10px 18px 465px 453px '../images/common/sp_icons.png' 'arrow_more2' 'sp_icons';
-    $arrow_more_r: 340px 363px -340px -363px 12px 20px 465px 453px '../images/common/sp_icons.png' 'arrow_more_r' 'sp_icons';
-    $arrow_up_md: 440px 289px -440px -289px 22px 12px 465px 453px '../images/common/sp_icons.png' 'arrow_up_md' 'sp_icons';
-    $h1_logo: 0px 103px 0px -103px 252px 46px 465px 453px '../images/common/sp_icons.png' 'h1_logo' 'sp_icons';
-    $h2_footer_logo: 0px 0px 0px 0px 465px 83px 465px 453px '../images/common/sp_icons.png' 'h2_footer_logo' 'sp_icons';
-    $history_back: 450px 103px -450px -103px 12px 20px 465px 453px '../images/common/sp_icons.png' 'history_back' 'sp_icons';
-    $ic_cart: 120px 169px -120px -169px 90px 90px 465px 453px '../images/common/sp_icons.png' 'ic_cart' 'sp_icons';
-    $ic_chatting: 74px 289px -74px -289px 50px 50px 465px 453px '../images/common/sp_icons.png' 'ic_chatting' 'sp_icons';
-    $ic_mypage0: 270px 289px -270px -289px 32px 34px 465px 453px '../images/common/sp_icons.png' 'ic_mypage0' 'sp_icons';
-    $ic_mypage1: 0px 417px 0px -417px 26px 36px 465px 453px '../images/common/sp_icons.png' 'ic_mypage1' 'sp_icons';
-    $ic_mypage_pf: 330px 169px -330px -169px 66px 66px 465px 453px '../images/common/sp_icons.png' 'ic_mypage_pf' 'sp_icons';
-    $ic_play: 46px 417px -46px -417px 24px 32px 465px 453px '../images/common/sp_icons.png' 'ic_play' 'sp_icons';
-    $ic_pop_caution: 230px 169px -230px -169px 80px 80px 465px 453px '../images/common/sp_icons.png' 'ic_pop_caution' 'sp_icons';
-    $ic_search: 334px 103px -334px -103px 40px 40px 465px 453px '../images/common/sp_icons.png' 'ic_search' 'sp_icons';
-    $ic_set_profile: 0px 169px 0px -169px 100px 100px 465px 453px '../images/common/sp_icons.png' 'ic_set_profile' 'sp_icons';
-    $ic_share: 416px 169px -416px -169px 34px 42px 465px 453px '../images/common/sp_icons.png' 'ic_share' 'sp_icons';
-    $ic_tel: 144px 289px -144px -289px 50px 50px 465px 453px '../images/common/sp_icons.png' 'ic_tel' 'sp_icons';
-    $icon_ball: 374px 289px -374px -289px 46px 20px 465px 453px '../images/common/sp_icons.png' 'icon_ball' 'sp_icons';
-    $icon_label: 0px 289px 0px -289px 54px 54px 465px 453px '../images/common/sp_icons.png' 'icon_label' 'sp_icons';
-    $icon_like: 250px 363px -250px -363px 28px 26px 465px 453px '../images/common/sp_icons.png' 'icon_like' 'sp_icons';
-    $icon_like_b: 214px 289px -214px -289px 36px 34px 465px 453px '../images/common/sp_icons.png' 'icon_like_b' 'sp_icons';
-    $icon_like_on: 198px 363px -198px -363px 32px 28px 465px 453px '../images/common/sp_icons.png' 'icon_like_on' 'sp_icons';
-    $icon_like_on_b: 394px 103px -394px -103px 36px 34px 465px 453px '../images/common/sp_icons.png' 'icon_like_on_b' 'sp_icons';
-    $icon_location: 298px 363px -298px -363px 22px 26px 465px 453px '../images/common/sp_icons.png' 'icon_location' 'sp_icons';
-    $icon_logo_w: 272px 103px -272px -103px 42px 40px 465px 453px '../images/common/sp_icons.png' 'icon_logo_w' 'sp_icons';
-    $icon_top: 0px 363px 0px -363px 28px 34px 465px 453px '../images/common/sp_icons.png' 'icon_top' 'sp_icons';
-    $layer_close: 322px 289px -322px -289px 32px 32px 465px 453px '../images/common/sp_icons.png' 'layer_close' 'sp_icons';
-    $serv_01: 148px 363px -148px -363px 30px 30px 465px 453px '../images/common/sp_icons.png' 'serv_01' 'sp_icons';
-    $serv_02: 98px 363px -98px -363px 30px 30px 465px 453px '../images/common/sp_icons.png' 'serv_02' 'sp_icons';
-    $serv_03: 48px 363px -48px -363px 30px 30px 465px 453px '../images/common/sp_icons.png' 'serv_03' 'sp_icons';
+    $arrow12: 555px 386px -555px -386px 12px 16px 581px 507px '../images/common/sp_icons.png' 'arrow12' 'sp_icons';
+    $arrow_down_sm: 555px 274px -555px -274px 20px 12px 581px 507px '../images/common/sp_icons.png' 'arrow_down_sm' 'sp_icons';
+    $arrow_more: 555px 346px -555px -346px 10px 20px 581px 507px '../images/common/sp_icons.png' 'arrow_more' 'sp_icons';
+    $arrow_more2: 555px 422px -555px -422px 10px 18px 581px 507px '../images/common/sp_icons.png' 'arrow_more2' 'sp_icons';
+    $arrow_more_r: 555px 234px -555px -234px 12px 20px 581px 507px '../images/common/sp_icons.png' 'arrow_more_r' 'sp_icons';
+    $arrow_up_md: 555px 202px -555px -202px 22px 12px 581px 507px '../images/common/sp_icons.png' 'arrow_up_md' 'sp_icons';
+    $h1_logo: 0px 103px 0px -103px 252px 46px 581px 507px '../images/common/sp_icons.png' 'h1_logo' 'sp_icons';
+    $h2_footer_logo: 0px 0px 0px 0px 465px 83px 581px 507px '../images/common/sp_icons.png' 'h2_footer_logo' 'sp_icons';
+    $history_back: 555px 306px -555px -306px 12px 20px 581px 507px '../images/common/sp_icons.png' 'history_back' 'sp_icons';
+    $ic_cart: 120px 299px -120px -299px 90px 90px 581px 507px '../images/common/sp_icons.png' 'ic_cart' 'sp_icons';
+    $ic_chatting: 404px 299px -404px -299px 50px 50px 581px 507px '../images/common/sp_icons.png' 'ic_chatting' 'sp_icons';
+    $ic_mypage0: 0px 419px 0px -419px 32px 34px 581px 507px '../images/common/sp_icons.png' 'ic_mypage0' 'sp_icons';
+    $ic_mypage1: 555px 0px -555px 0px 26px 36px 581px 507px '../images/common/sp_icons.png' 'ic_mypage1' 'sp_icons';
+    $ic_mypage_pf: 390px 169px -390px -169px 66px 66px 581px 507px '../images/common/sp_icons.png' 'ic_mypage_pf' 'sp_icons';
+    $ic_play: 555px 56px -555px -56px 24px 32px 581px 507px '../images/common/sp_icons.png' 'ic_play' 'sp_icons';
+    $ic_pop_caution: 230px 299px -230px -299px 80px 80px 581px 507px '../images/common/sp_icons.png' 'ic_pop_caution' 'sp_icons';
+    $ic_search: 485px 200px -485px -200px 40px 40px 581px 507px '../images/common/sp_icons.png' 'ic_search' 'sp_icons';
+    $ic_set_profile: 0px 299px 0px -299px 100px 100px 581px 507px '../images/common/sp_icons.png' 'ic_set_profile' 'sp_icons';
+    $ic_share: 485px 260px -485px -260px 34px 42px 581px 507px '../images/common/sp_icons.png' 'ic_share' 'sp_icons';
+    $ic_share0: 0px 169px 0px -169px 110px 110px 581px 507px '../images/common/sp_icons.png' 'ic_share0' 'sp_icons';
+    $ic_share1: 260px 169px -260px -169px 110px 110px 581px 507px '../images/common/sp_icons.png' 'ic_share1' 'sp_icons';
+    $ic_share2: 130px 169px -130px -169px 110px 110px 581px 507px '../images/common/sp_icons.png' 'ic_share2' 'sp_icons';
+    $ic_tel: 485px 70px -485px -70px 50px 50px 581px 507px '../images/common/sp_icons.png' 'ic_tel' 'sp_icons';
+    $icon_ball: 485px 376px -485px -376px 46px 20px 581px 507px '../images/common/sp_icons.png' 'icon_ball' 'sp_icons';
+    $icon_label: 330px 299px -330px -299px 54px 54px 581px 507px '../images/common/sp_icons.png' 'icon_label' 'sp_icons';
+    $icon_like: 306px 419px -306px -419px 28px 26px 581px 507px '../images/common/sp_icons.png' 'icon_like' 'sp_icons';
+    $icon_like_b: 272px 103px -272px -103px 36px 34px 581px 507px '../images/common/sp_icons.png' 'icon_like_b' 'sp_icons';
+    $icon_like_on: 254px 419px -254px -419px 32px 28px 581px 507px '../images/common/sp_icons.png' 'icon_like_on' 'sp_icons';
+    $icon_like_on_b: 485px 322px -485px -322px 36px 34px 581px 507px '../images/common/sp_icons.png' 'icon_like_on_b' 'sp_icons';
+    $icon_location: 555px 108px -555px -108px 22px 26px 581px 507px '../images/common/sp_icons.png' 'icon_location' 'sp_icons';
+    $icon_logo_w: 485px 140px -485px -140px 42px 40px 581px 507px '../images/common/sp_icons.png' 'icon_logo_w' 'sp_icons';
+    $icon_top: 0px 473px 0px -473px 28px 34px 581px 507px '../images/common/sp_icons.png' 'icon_top' 'sp_icons';
+    $layer_close: 52px 419px -52px -419px 32px 32px 581px 507px '../images/common/sp_icons.png' 'layer_close' 'sp_icons';
+    $lg_arrow: 555px 154px -555px -154px 16px 28px 581px 507px '../images/common/sp_icons.png' 'lg_arrow' 'sp_icons';
+    $review_like: 485px 0px -485px 0px 50px 50px 581px 507px '../images/common/sp_icons.png' 'review_like' 'sp_icons';
+    $serv_01: 204px 419px -204px -419px 30px 30px 581px 507px '../images/common/sp_icons.png' 'serv_01' 'sp_icons';
+    $serv_02: 154px 419px -154px -419px 30px 30px 581px 507px '../images/common/sp_icons.png' 'serv_02' 'sp_icons';
+    $serv_03: 104px 419px -104px -419px 30px 30px 581px 507px '../images/common/sp_icons.png' 'serv_03' 'sp_icons';
+    $sm_like: 328px 103px -328px -103px 36px 34px 581px 507px '../images/common/sp_icons.png' 'sm_like' 'sp_icons';
+    $sm_like_on: 384px 103px -384px -103px 36px 34px 581px 507px '../images/common/sp_icons.png' 'sm_like_on' 'sp_icons';
 
 //ancestor
-    $sp_icons-width: 465px;
-    $sp_icons-height: 453px;
+    $sp_icons-width: 581px;
+    $sp_icons-height: 507px;
     $sp_icons-image: '../images/common/sp_icons.png';
-    $sp_icons-sprites: ($arrow12, $arrow_more, $arrow_more2, $arrow_more_r, $arrow_up_md, $h1_logo, $h2_footer_logo, $history_back, $ic_cart, $ic_chatting, $ic_mypage0, $ic_mypage1, $ic_mypage_pf, $ic_play, $ic_pop_caution, $ic_search, $ic_set_profile, $ic_share, $ic_tel, $icon_ball, $icon_label, $icon_like, $icon_like_b, $icon_like_on, $icon_like_on_b, $icon_location, $icon_logo_w, $icon_top, $layer_close, $serv_01, $serv_02, $serv_03, );
-    $sp_icons_sprites_name: (arrow12, arrow_more, arrow_more2, arrow_more_r, arrow_up_md, h1_logo, h2_footer_logo, history_back, ic_cart, ic_chatting, ic_mypage0, ic_mypage1, ic_mypage_pf, ic_play, ic_pop_caution, ic_search, ic_set_profile, ic_share, ic_tel, icon_ball, icon_label, icon_like, icon_like_b, icon_like_on, icon_like_on_b, icon_location, icon_logo_w, icon_top, layer_close, serv_01, serv_02, serv_03, );
-    $sp_icons: (465px, 453px, '../images/common/sp_icons.png', $sp_icons-sprites, );
+    $sp_icons-sprites: ($arrow12, $arrow_down_sm, $arrow_more, $arrow_more2, $arrow_more_r, $arrow_up_md, $h1_logo, $h2_footer_logo, $history_back, $ic_cart, $ic_chatting, $ic_mypage0, $ic_mypage1, $ic_mypage_pf, $ic_play, $ic_pop_caution, $ic_search, $ic_set_profile, $ic_share, $ic_share0, $ic_share1, $ic_share2, $ic_tel, $icon_ball, $icon_label, $icon_like, $icon_like_b, $icon_like_on, $icon_like_on_b, $icon_location, $icon_logo_w, $icon_top, $layer_close, $lg_arrow, $review_like, $serv_01, $serv_02, $serv_03, $sm_like, $sm_like_on, );
+    $sp_icons_sprites_name: (arrow12, arrow_down_sm, arrow_more, arrow_more2, arrow_more_r, arrow_up_md, h1_logo, h2_footer_logo, history_back, ic_cart, ic_chatting, ic_mypage0, ic_mypage1, ic_mypage_pf, ic_play, ic_pop_caution, ic_search, ic_set_profile, ic_share, ic_share0, ic_share1, ic_share2, ic_tel, icon_ball, icon_label, icon_like, icon_like_b, icon_like_on, icon_like_on_b, icon_location, icon_logo_w, icon_top, layer_close, lg_arrow, review_like, serv_01, serv_02, serv_03, sm_like, sm_like_on, );
+    $sp_icons: (581px, 507px, '../images/common/sp_icons.png', $sp_icons-sprites, );
 
 //mixin
 
         %sp_icons {
         background-image: url('../images/common/sp_icons.png');
-        $sprite-background-size-x: 465px / 2;
-        $sprite-background-size-y: 453px / 2;
+        $sprite-background-size-x: 581px / 2;
+        $sprite-background-size-y: 507px / 2;
         -webkit-background-size: $sprite-background-size-x $sprite-background-size-y;
         background-size: $sprite-background-size-x $sprite-background-size-y;
         }

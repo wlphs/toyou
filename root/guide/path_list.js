@@ -120,8 +120,8 @@ __CONSTANT_LIST = [
         dep2 		: '',
         dep3 		: '',
         url 		: '',
-        pubUpdate 	: '2019-1111',
-        etc 		: '',
+        pubUpdate 	: '2019-0000',
+        etc 		: '2019-1201',
     },
  
 	{
@@ -130,8 +130,8 @@ __CONSTANT_LIST = [
         dep2 		: '이메일/카카오/네이버',
         dep3 		: '',
         url 		: '/html/start/join/JO-0001.html',
-        pubUpdate 	: '2019-0000',
-        etc 		: '',
+        pubUpdate 	: '2019-1113',
+        etc 		: '2019-1113',
     },
 	{
         stateLine   : "", 
@@ -140,7 +140,7 @@ __CONSTANT_LIST = [
         dep3 		: '전문가로 가입하기',
         url 		: '',
         pubUpdate 	: '2019-0000',
-        etc 		: '',
+        etc 		: '2019-1113',
     },
 	{
         stateLine   : "", 
@@ -148,8 +148,8 @@ __CONSTANT_LIST = [
         dep2 		: '',
         dep3 		: '이메일 입력',
         url 		: '/html/start/join/JO-0002.html',
-        pubUpdate 	: '2019-0000',
-        etc 		: '',
+        pubUpdate 	: '2019-1113',
+        etc 		: '2019-1113',
     },
 	{
         stateLine   : "", 
@@ -157,8 +157,8 @@ __CONSTANT_LIST = [
         dep2 		: '',
         dep3 		: '휴대폰 본인인증',
         url 		: '/html/start/join/JO-0003.html',
-        pubUpdate 	: '2019-0000',
-        etc 		: '',
+        pubUpdate 	: '2019-1113',
+        etc 		: '2019-1113',
     },
 	{
         stateLine   : "", 
@@ -166,8 +166,8 @@ __CONSTANT_LIST = [
         dep2 		: '',
         dep3 		: '비밀번호입력',
         url 		: '/html/start/join/JO-0004.html',
-        pubUpdate 	: '2019-0000',
-        etc 		: '',
+        pubUpdate 	: '2019-1113',
+        etc 		: '2019-1113',
     },
 	{
         stateLine   : "", 
@@ -175,8 +175,8 @@ __CONSTANT_LIST = [
         dep2 		: '',
         dep3 		: '프로필 사진 등록',
         url 		: '/html/start/join/JO-0005.html',
-        pubUpdate 	: '2019-0000',
-        etc 		: '',
+        pubUpdate 	: '2019-1113',
+        etc 		: '2019-1113',
     },
 	{
         stateLine   : "", 
@@ -184,8 +184,8 @@ __CONSTANT_LIST = [
         dep2 		: '',
         dep3 		: '약관동의',
         url 		: '/html/start/join/JO-0006.html',
-        pubUpdate 	: '2019-0000',
-        etc 		: '',
+        pubUpdate 	: '2019-1113',
+        etc 		: '2019-1113',
     },
 	{
         stateLine   : "", 
@@ -194,7 +194,7 @@ __CONSTANT_LIST = [
         dep3 		: '가입축하 이메일 발송',
         url 		: '',
         pubUpdate 	: '2019-0000',
-        etc 		: '',
+        etc 		: '2019-1113',
     },
 	{
         stateLine   : "", 
@@ -203,7 +203,7 @@ __CONSTANT_LIST = [
         dep3 		: '',
         url 		: '',
         pubUpdate 	: '2019-0000',
-        etc 		: '',
+        etc 		: '2019-1113',
     },
 	{
         stateLine   : "", 
@@ -211,8 +211,8 @@ __CONSTANT_LIST = [
         dep2 		: '',
         dep3 		: '이메일 로그인',
         url 		: '/html/start/login/LO_0001.html',
-        pubUpdate 	: '2019-0000',
-        etc 		: '',
+        pubUpdate 	: '2019-1113',
+        etc 		: '2019-1113',
     },
 	{
         stateLine   : "", 
@@ -220,8 +220,8 @@ __CONSTANT_LIST = [
         dep2 		: '',
         dep3 		: '비밀번호입력',
         url 		: '/html/start/login/LO_0002.html',
-        pubUpdate 	: '2019-0000',
-        etc 		: '',
+        pubUpdate 	: '2019-1113',
+        etc 		: '2019-1113',
     },
 	{
         stateLine   : "", 
@@ -229,8 +229,8 @@ __CONSTANT_LIST = [
         dep2 		: '',
         dep3 		: '휴대폰변경',
         url 		: '/html/start/login/LO_0003.html',
-        pubUpdate 	: '2019-0000',
-        etc 		: '',
+        pubUpdate 	: '2019-1113',
+        etc 		: '2019-1113',
     },
 	{
         stateLine   : "", 
@@ -238,8 +238,8 @@ __CONSTANT_LIST = [
         dep2 		: '',
         dep3 		: '아이디찾기',
         url 		: '/html/start/login/LO_0004.html',
-        pubUpdate 	: '2019-0000',
-        etc 		: '',
+        pubUpdate 	: '2019-1113',
+        etc 		: '2019-1113',
     },
 	{
         stateLine   : "", 
@@ -247,8 +247,8 @@ __CONSTANT_LIST = [
         dep2 		: '',
         dep3 		: '비밀번호찾기',
         url 		: '/html/start/login/LO_0005.html',
-        pubUpdate 	: '2019-0000',
-        etc 		: '',
+        pubUpdate 	: '2019-1113',
+        etc 		: '2019-1113',
     },
 	{
         stateLine   : "", 
@@ -267,7 +267,7 @@ __CONSTANT_LIST = [
         dep3 		: '',
         url 		: '/html/basic/main/home.html',
         pubUpdate 	: '2019-1111',
-        etc 		: '',
+        etc 		: '2019-1113',
     },
 	{
         stateLine   : "", 
@@ -275,8 +275,8 @@ __CONSTANT_LIST = [
         dep2 		: '홈서비스 주소입력',
         dep3 		: '',
         url 		: '/html/basic/main/MA_0001.html',
-        pubUpdate 	: '2019-0000',
-        etc 		: '',
+        pubUpdate 	: '2019-1113',
+        etc 		: '2019-1113',
     },
 	{
         stateLine   : "", 
@@ -284,8 +284,8 @@ __CONSTANT_LIST = [
         dep2 		: '홈서비스 주소입력 2',
         dep3 		: '',
         url 		: '/html/basic/main/MA_0002.html',
-        pubUpdate 	: '2019-0000',
-        etc 		: '',
+        pubUpdate 	: '2019-1113',
+        etc 		: '2019-1113',
     },
 	{
         stateLine   : "", 
@@ -293,15 +293,15 @@ __CONSTANT_LIST = [
         dep2 		: '상세 주소 입력',
         dep3 		: '',
         url 		: '/html/basic/main/MA_0003.html',
-        pubUpdate 	: '2019-0000',
-        etc 		: '',
+        pubUpdate 	: '2019-1113',
+        etc 		: '2019-1113',
     },
 	{
         stateLine   : "", 
         dep1 		: '서비스찾기',
         dep2 		: '상세검색/결과',
         dep3 		: '',
-        url 		: '/html/.html',
+        url 		: '',
         pubUpdate 	: '2019-0000',
         etc 		: '',
     },
@@ -312,7 +312,7 @@ __CONSTANT_LIST = [
         dep3 		: '목록',
         url 		: '/html/.html',
         pubUpdate 	: '2019-0000',
-        etc 		: '',
+        etc 		: '2019-1117',
     },
 	{
         stateLine   : "", 
@@ -321,16 +321,16 @@ __CONSTANT_LIST = [
         dep3 		: '필터',
         url 		: '/html/.html',
         pubUpdate 	: '2019-0000',
-        etc 		: '',
+        etc 		: '2019-1117',
     },
 	{
         stateLine   : "", 
         dep1 		: '',
         dep2 		: '상세',
         dep3 		: '소개',
-        url 		: '/html/.html',
-        pubUpdate 	: '2019-0000',
-        etc 		: '',
+        url 		: '/html/basic/service/SV-0001.html',
+        pubUpdate 	: '2019-1113',
+        etc 		: '2019-1117',
     },
 	{
         stateLine   : "", 
@@ -340,7 +340,7 @@ __CONSTANT_LIST = [
         dep4 		: '취소 및 환불정책',
         url 		: '/html/.html',
         pubUpdate 	: '2019-0000',
-        etc 		: '',
+        etc 		: '2019-1117',
     },
 	{
         stateLine   : "", 
@@ -350,7 +350,7 @@ __CONSTANT_LIST = [
         dep4 		: '신고하기',
         url 		: '/html/.html',
         pubUpdate 	: '2019-0000',
-        etc 		: '',
+        etc 		: '2019-1117',
     },
 	{
         stateLine   : "", 
@@ -360,7 +360,7 @@ __CONSTANT_LIST = [
         dep4 		: '공유하기',
         url 		: '/html/.html',
         pubUpdate 	: '2019-0000',
-        etc 		: '',
+        etc 		: '2019-1117',
     },
 	{
         stateLine   : "", 
@@ -369,7 +369,7 @@ __CONSTANT_LIST = [
         dep3 		: '서비스',
         url 		: '/html/.html',
         pubUpdate 	: '2019-0000',
-        etc 		: '',
+        etc 		: '2019-1117',
     },
 	{
         stateLine   : "", 
@@ -378,7 +378,7 @@ __CONSTANT_LIST = [
         dep3 		: '리뷰',
         url 		: '/html/.html',
         pubUpdate 	: '2019-0000',
-        etc 		: '',
+        etc 		: '2019-1117',
     },
 	{
         stateLine   : "", 
@@ -388,7 +388,7 @@ __CONSTANT_LIST = [
         dep4 		: '서비스 예약하기',
         url 		: '/html/.html',
         pubUpdate 	: '2019-0000',
-        etc 		: '',
+        etc 		: '2019-1117',
     },
 	{
         stateLine   : "", 
@@ -398,7 +398,7 @@ __CONSTANT_LIST = [
         dep4 		: '예약일시 선택',
         url 		: '/html/.html',
         pubUpdate 	: '2019-0000',
-        etc 		: '',
+        etc 		: '2019-1117',
     },
 	{
         stateLine   : "", 
@@ -408,7 +408,7 @@ __CONSTANT_LIST = [
         dep4 		: '장바구니',
         url 		: '/html/.html',
         pubUpdate 	: '2019-0000',
-        etc 		: '',
+        etc 		: '2019-1117',
     },
 	{
         stateLine   : "", 
@@ -418,7 +418,7 @@ __CONSTANT_LIST = [
         dep4 		: '예약 결제하기',
         url 		: '/html/.html',
         pubUpdate 	: '2019-0000',
-        etc 		: '',
+        etc 		: '2019-1117',
     },
 	{
         stateLine   : "", 
@@ -428,7 +428,7 @@ __CONSTANT_LIST = [
         dep4 		: '입금계좌정보확인팝업',
         url 		: '/html/.html',
         pubUpdate 	: '2019-0000',
-        etc 		: '',
+        etc 		: '2019-1117',
     },
 	{
         stateLine   : "", 
@@ -438,7 +438,7 @@ __CONSTANT_LIST = [
         dep4 		: '예약완료',
         url 		: '/html/.html',
         pubUpdate 	: '2019-0000',
-        etc 		: '',
+        etc 		: '2019-1117',
     },
 	{
         stateLine   : "", 
@@ -447,7 +447,7 @@ __CONSTANT_LIST = [
         dep3 		: '',
         url 		: '/html/.html',
         pubUpdate 	: '2019-0000',
-        etc 		: '',
+        etc 		: '2019-1120',
     },
 	{
         stateLine   : "", 
@@ -456,7 +456,7 @@ __CONSTANT_LIST = [
         dep3 		: '카카오톡 안심 메시지 발송',
         url 		: '/html/.html',
         pubUpdate 	: '2019-0000',
-        etc 		: '',
+        etc 		: '2019-1120',
     },
 	{
         stateLine   : "", 
@@ -465,7 +465,7 @@ __CONSTANT_LIST = [
         dep3 		: '',
         url 		: '/html/.html',
         pubUpdate 	: '2019-0000',
-        etc 		: '',
+        etc 		: '2019-1120',
     },
 	{
         stateLine   : "", 
@@ -474,7 +474,7 @@ __CONSTANT_LIST = [
         dep3 		: '',
         url 		: '/html/.html',
         pubUpdate 	: '2019-0000',
-        etc 		: '',
+        etc 		: '2019-1120',
     },
 	{
         stateLine   : "", 
@@ -483,7 +483,7 @@ __CONSTANT_LIST = [
         dep3 		: '',
         url 		: '/html/basic/mypage/MY-0001.html',
         pubUpdate 	: '2019-0000',
-        etc 		: '',
+        etc 		: '2019-1120',
     },
 	{
         stateLine   : "", 
@@ -492,7 +492,7 @@ __CONSTANT_LIST = [
         dep3 		: '',
         url 		: '/html/.html',
         pubUpdate 	: '2019-0000',
-        etc 		: '',
+        etc 		: '2019-1120',
     },
 	{
         stateLine   : "", 
@@ -501,7 +501,7 @@ __CONSTANT_LIST = [
         dep3 		: '휴대폰번호 변경, 비밀번호 변경',
         url 		: '/html/.html',
         pubUpdate 	: '2019-0000',
-        etc 		: '',
+        etc 		: '2019-1120',
     },
 	{
         stateLine   : "", 
@@ -510,7 +510,7 @@ __CONSTANT_LIST = [
         dep3 		: '진행중',
         url 		: '/html/.html',
         pubUpdate 	: '2019-0000',
-        etc 		: '',
+        etc 		: '2019-1120',
     },
 	{
         stateLine   : "", 
@@ -519,7 +519,7 @@ __CONSTANT_LIST = [
         dep3 		: '완료',
         url 		: '/html/.html',
         pubUpdate 	: '2019-0000',
-        etc 		: '',
+        etc 		: '2019-1120',
     },
 	{
         stateLine   : "", 
@@ -528,7 +528,7 @@ __CONSTANT_LIST = [
         dep3 		: '미진행/취소',
         url 		: '/html/.html',
         pubUpdate 	: '2019-0000',
-        etc 		: '',
+        etc 		: '2019-1120',
     },
 	{
         stateLine   : "", 
@@ -537,7 +537,7 @@ __CONSTANT_LIST = [
         dep3 		: '예약내역 상세',
         url 		: '/html/.html',
         pubUpdate 	: '2019-0000',
-        etc 		: '',
+        etc 		: '2019-1120',
     },
 	{
         stateLine   : "", 
@@ -547,7 +547,7 @@ __CONSTANT_LIST = [
         dep4 		: '취소사유입력, 투유안전센터',
         url 		: '/html/.html',
         pubUpdate 	: '2019-0000',
-        etc 		: '',
+        etc 		: '2019-1120',
     },
 	{
         stateLine   : "", 
@@ -557,7 +557,7 @@ __CONSTANT_LIST = [
         dep4 		: '환불계좌입력',
         url 		: '/html/.html',
         pubUpdate 	: '2019-0000',
-        etc 		: '',
+        etc 		: '2019-1120',
     },
 	{
         stateLine   : "", 
@@ -567,7 +567,7 @@ __CONSTANT_LIST = [
         dep4 		: '리뷰',
         url 		: '/html/.html',
         pubUpdate 	: '2019-0000',
-        etc 		: '',
+        etc 		: '2019-1120',
     },
 	{
         stateLine   : "", 
@@ -576,7 +576,7 @@ __CONSTANT_LIST = [
         dep3 		: '결제',
         url 		: '/html/.html',
         pubUpdate 	: '2019-0000',
-        etc 		: '',
+        etc 		: '2019-1120',
     },
 	{
         stateLine   : "", 
@@ -585,7 +585,7 @@ __CONSTANT_LIST = [
         dep3 		: '취소',
         url 		: '/html/.html',
         pubUpdate 	: '2019-0000',
-        etc 		: '',
+        etc 		: '2019-1120',
     },
 	{
         stateLine   : "", 
@@ -594,7 +594,7 @@ __CONSTANT_LIST = [
         dep3 		: '목록',
         url 		: '/html/.html',
         pubUpdate 	: '2019-0000',
-        etc 		: '',
+        etc 		: '2019-1120',
     },
 	{
         stateLine   : "", 
@@ -603,7 +603,7 @@ __CONSTANT_LIST = [
         dep3 		: '목록',
         url 		: '/html/.html',
         pubUpdate 	: '2019-0000',
-        etc 		: '',
+        etc 		: '2019-1120',
     },
 	{
         stateLine   : "", 
@@ -612,7 +612,7 @@ __CONSTANT_LIST = [
         dep3 		: '',
         url 		: '/html/.html',
         pubUpdate 	: '2019-0000',
-        etc 		: '',
+        etc 		: '2019-1120',
     },
 	{
         stateLine   : "", 
@@ -621,7 +621,7 @@ __CONSTANT_LIST = [
         dep3 		: '',
         url 		: '/html/.html',
         pubUpdate 	: '2019-0000',
-        etc 		: '',
+        etc 		: '2019-1120',
     },
 	{
         stateLine   : "", 
@@ -630,7 +630,7 @@ __CONSTANT_LIST = [
         dep3 		: '목록/상세',
         url 		: '/html/.html',
         pubUpdate 	: '2019-0000',
-        etc 		: '',
+        etc 		: '2019-1120',
     },
 	{
         stateLine   : "", 
@@ -639,7 +639,7 @@ __CONSTANT_LIST = [
         dep3 		: '',
         url 		: '/html/.html',
         pubUpdate 	: '2019-0000',
-        etc 		: '',
+        etc 		: '2019-1120',
     },
 	{
         stateLine   : "", 
@@ -648,7 +648,7 @@ __CONSTANT_LIST = [
         dep3 		: '',
         url 		: '/html/.html',
         pubUpdate 	: '2019-0000',
-        etc 		: '',
+        etc 		: '2019-1120',
     },
 	{
         stateLine   : "", 
@@ -657,7 +657,7 @@ __CONSTANT_LIST = [
         dep3 		: '이용약관',
         url 		: '/html/.html',
         pubUpdate 	: '2019-0000',
-        etc 		: '',
+        etc 		: '2019-1120',
     },
 	{
         stateLine   : "", 
@@ -666,7 +666,7 @@ __CONSTANT_LIST = [
         dep3 		: '개인정보보호정책',
         url 		: '/html/.html',
         pubUpdate 	: '2019-0000',
-        etc 		: '',
+        etc 		: '2019-1120',
     },
 	{
         stateLine   : "", 
@@ -675,7 +675,7 @@ __CONSTANT_LIST = [
         dep3 		: '',
         url 		: '/html/.html',
         pubUpdate 	: '2019-0000',
-        etc 		: '',
+        etc 		: '2019-1120',
     },
 	{
         stateLine   : "", 
@@ -684,7 +684,7 @@ __CONSTANT_LIST = [
         dep3 		: '',
         url 		: '/html/.html',
         pubUpdate 	: '2019-0000',
-        etc 		: '',
+        etc 		: '2019-1120',
     },
 	{
         stateLine   : "", 
@@ -703,7 +703,7 @@ __CONSTANT_LIST = [
         dep3 		: '',
         url 		: '/html/.html',
         pubUpdate 	: '2019-0000',
-        etc 		: '',
+        etc 		: '2019-1124',
     },
 	{
         stateLine   : "", 
@@ -712,7 +712,7 @@ __CONSTANT_LIST = [
         dep3 		: '진행중',
         url 		: '/html/.html',
         pubUpdate 	: '2019-0000',
-        etc 		: '',
+        etc 		: '2019-1124',
     },
 	{
         stateLine   : "", 
@@ -721,7 +721,7 @@ __CONSTANT_LIST = [
         dep3 		: '완료',
         url 		: '/html/.html',
         pubUpdate 	: '2019-0000',
-        etc 		: '',
+        etc 		: '2019-1124',
     },
 	{
         stateLine   : "", 
@@ -730,7 +730,7 @@ __CONSTANT_LIST = [
         dep3 		: '미진행/취소',
         url 		: '/html/.html',
         pubUpdate 	: '2019-0000',
-        etc 		: '',
+        etc 		: '2019-1124',
     },
 	{
         stateLine   : "", 
@@ -740,7 +740,7 @@ __CONSTANT_LIST = [
         dep4 		: '미진행 사유입력, 투유 안전센터',
         url 		: '/html/.html',
         pubUpdate 	: '2019-0000',
-        etc 		: '',
+        etc 		: '2019-1124',
     },
 	{
         stateLine   : "", 
@@ -750,7 +750,7 @@ __CONSTANT_LIST = [
         dep4 		: '리뷰',
         url 		: '/html/.html',
         pubUpdate 	: '2019-0000',
-        etc 		: '',
+        etc 		: '2019-1124',
     },
 	{
         stateLine   : "", 
@@ -759,7 +759,7 @@ __CONSTANT_LIST = [
         dep3 		: '',
         url 		: '/html/.html',
         pubUpdate 	: '2019-0000',
-        etc 		: '',
+        etc 		: '2019-1124',
     },
 	{
         stateLine   : "", 
@@ -768,7 +768,7 @@ __CONSTANT_LIST = [
         dep3 		: '전문가 프로필 수정',
         url 		: '/html/.html',
         pubUpdate 	: '2019-0000',
-        etc 		: '',
+        etc 		: '2019-1124',
     },
 	{
         stateLine   : "", 
@@ -778,7 +778,7 @@ __CONSTANT_LIST = [
         dep4 		: '동록/수정',
         url 		: '/html/.html',
         pubUpdate 	: '2019-0000',
-        etc 		: '',
+        etc 		: '2019-1124',
     },
 	{
         stateLine   : "", 
@@ -788,7 +788,7 @@ __CONSTANT_LIST = [
         dep4 		: '전문성 어필하기',
         url 		: '/html/.html',
         pubUpdate 	: '2019-0000',
-        etc 		: '',
+        etc 		: '2019-1124',
     },
 	{
         stateLine   : "", 
@@ -797,7 +797,7 @@ __CONSTANT_LIST = [
         dep3 		: '미리보기',
         url 		: '/html/.html',
         pubUpdate 	: '2019-0000',
-        etc 		: '',
+        etc 		: '2019-1124',
     },
 	{
         stateLine   : "", 
@@ -806,7 +806,7 @@ __CONSTANT_LIST = [
         dep3 		: '',
         url 		: '/html/.html',
         pubUpdate 	: '2019-0000',
-        etc 		: '',
+        etc 		: '2019-1124',
     },
 	{
         stateLine   : "", 
@@ -815,7 +815,7 @@ __CONSTANT_LIST = [
         dep3 		: '카카오톡 안심 메시지 발송',
         url 		: '/html/.html',
         pubUpdate 	: '2019-0000',
-        etc 		: '',
+        etc 		: '2019-1124',
     },
 	{
         stateLine   : "", 
@@ -824,7 +824,7 @@ __CONSTANT_LIST = [
         dep3 		: '',
         url 		: '/html/.html',
         pubUpdate 	: '2019-0000',
-        etc 		: '',
+        etc 		: '2019-1124',
     },
 	{
         stateLine   : "", 
@@ -833,7 +833,7 @@ __CONSTANT_LIST = [
         dep3 		: '',
         url 		: '/html/.html',
         pubUpdate 	: '2019-0000',
-        etc 		: '',
+        etc 		: '2019-1124',
     },
 	{
         stateLine   : "", 
@@ -842,7 +842,7 @@ __CONSTANT_LIST = [
         dep3 		: '',
         url 		: '/html/.html',
         pubUpdate 	: '2019-0000',
-        etc 		: '',
+        etc 		: '2019-1124',
     },
 	{
         stateLine   : "", 
@@ -852,7 +852,7 @@ __CONSTANT_LIST = [
         dep4 		: '',
         url 		: '/html/.html',
         pubUpdate 	: '2019-0000',
-        etc 		: '',
+        etc 		: '2019-1124',
     },
 	{
         stateLine   : "", 
@@ -862,7 +862,7 @@ __CONSTANT_LIST = [
         dep4 		: '',
         url 		: '/html/.html',
         pubUpdate 	: '2019-0000',
-        etc 		: '',
+        etc 		: '2019-1124',
     },
 	{
         stateLine   : "", 
@@ -872,7 +872,7 @@ __CONSTANT_LIST = [
         dep4 		: '',
         url 		: '/html/.html',
         pubUpdate 	: '2019-0000',
-        etc 		: '',
+        etc 		: '2019-1124',
     },
 	{
         stateLine   : "", 
@@ -882,7 +882,7 @@ __CONSTANT_LIST = [
         dep4 		: '',
         url 		: '/html/.html',
         pubUpdate 	: '2019-0000',
-        etc 		: '',
+        etc 		: '2019-1124',
     },
 	{
         stateLine   : "", 
@@ -892,7 +892,7 @@ __CONSTANT_LIST = [
         dep4 		: '',
         url 		: '/html/.html',
         pubUpdate 	: '2019-0000',
-        etc 		: '',
+        etc 		: '2019-1127',
     },
 	{
         stateLine   : "", 
@@ -902,7 +902,7 @@ __CONSTANT_LIST = [
         dep4 		: '',
         url 		: '/html/.html',
         pubUpdate 	: '2019-0000',
-        etc 		: '',
+        etc 		: '2019-1127',
     },
 	{
         stateLine   : "", 
@@ -912,7 +912,7 @@ __CONSTANT_LIST = [
         dep4 		: '',
         url 		: '/html/.html',
         pubUpdate 	: '2019-0000',
-        etc 		: '',
+        etc 		: '2019-1127',
     },
 	{
         stateLine   : "", 
@@ -922,7 +922,7 @@ __CONSTANT_LIST = [
         dep4 		: '',
         url 		: '/html/.html',
         pubUpdate 	: '2019-0000',
-        etc 		: '',
+        etc 		: '2019-1127',
     },
 	{
         stateLine   : "", 
@@ -932,7 +932,7 @@ __CONSTANT_LIST = [
         dep4 		: '',
         url 		: '/html/.html',
         pubUpdate 	: '2019-0000',
-        etc 		: '',
+        etc 		: '2019-1127',
     },
 	{
         stateLine   : "", 
@@ -942,7 +942,7 @@ __CONSTANT_LIST = [
         dep4 		: '',
         url 		: '/html/.html',
         pubUpdate 	: '2019-0000',
-        etc 		: '',
+        etc 		: '2019-1127',
     },
 	{
         stateLine   : "", 
@@ -952,7 +952,7 @@ __CONSTANT_LIST = [
         dep4 		: '',
         url 		: '/html/.html',
         pubUpdate 	: '2019-0000',
-        etc 		: '',
+        etc 		: '2019-1127',
     },
 	{
         stateLine   : "", 
@@ -962,7 +962,7 @@ __CONSTANT_LIST = [
         dep4 		: '',
         url 		: '/html/.html',
         pubUpdate 	: '2019-0000',
-        etc 		: '',
+        etc 		: '2019-1127',
     },
 	{
         stateLine   : "", 
@@ -972,7 +972,7 @@ __CONSTANT_LIST = [
         dep4 		: '',
         url 		: '/html/.html',
         pubUpdate 	: '2019-0000',
-        etc 		: '',
+        etc 		: '2019-1127',
     },
 	{
         stateLine   : "", 
@@ -982,7 +982,7 @@ __CONSTANT_LIST = [
         dep4 		: '',
         url 		: '/html/.html',
         pubUpdate 	: '2019-0000',
-        etc 		: '',
+        etc 		: '2019-1127',
     },
 	{
         stateLine   : "", 
@@ -992,7 +992,7 @@ __CONSTANT_LIST = [
         dep4 		: '',
         url 		: '/html/.html',
         pubUpdate 	: '2019-0000',
-        etc 		: '',
+        etc 		: '2019-1127',
     },
 	{
         stateLine   : "", 
@@ -1002,7 +1002,7 @@ __CONSTANT_LIST = [
         dep4 		: '',
         url 		: '/html/.html',
         pubUpdate 	: '2019-0000',
-        etc 		: '',
+        etc 		: '2019-1127',
     },
 	{
         stateLine   : "", 
@@ -1012,7 +1012,7 @@ __CONSTANT_LIST = [
         dep4 		: '',
         url 		: '/html/.html',
         pubUpdate 	: '2019-0000',
-        etc 		: '',
+        etc 		: '2019-1127',
     },
 	{
         stateLine   : "", 
@@ -1032,7 +1032,7 @@ __CONSTANT_LIST = [
         dep4 		: '',
         url 		: '/html/.html',
         pubUpdate 	: '2019-0000',
-        etc 		: '',
+        etc 		: '2019-1201',
     },
 	{
         stateLine   : "", 
@@ -1042,7 +1042,7 @@ __CONSTANT_LIST = [
         dep4 		: '',
         url 		: '/html/.html',
         pubUpdate 	: '2019-0000',
-        etc 		: '',
+        etc 		: '2019-1201',
     },
 	{
         stateLine   : "", 
@@ -1052,7 +1052,7 @@ __CONSTANT_LIST = [
         dep4 		: '',
         url 		: '/html/.html',
         pubUpdate 	: '2019-0000',
-        etc 		: '',
+        etc 		: '2019-1204',
     },
  
 ];
