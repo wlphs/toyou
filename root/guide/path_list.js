@@ -266,7 +266,7 @@ __CONSTANT_LIST = [
         dep2 		: '',
         dep3 		: '',
         url 		: '/html/basic/main/home.html',
-        pubUpdate 	: '2019-1111',
+        pubUpdate 	: '2019-1113',
         etc 		: '2019-1113',
     },
 	{
@@ -303,7 +303,7 @@ __CONSTANT_LIST = [
         dep3 		: '',
         url 		: '',
         pubUpdate 	: '2019-0000',
-        etc 		: '',
+        etc 		: '2019-1117',
     },
 	{
         stateLine   : "", 
@@ -329,7 +329,7 @@ __CONSTANT_LIST = [
         dep2 		: '상세',
         dep3 		: '소개',
         url 		: '/html/basic/service/SV-0001.html',
-        pubUpdate 	: '2019-1113',
+        pubUpdate 	: '2019-0000',
         etc 		: '2019-1117',
     },
 	{
@@ -492,7 +492,7 @@ __CONSTANT_LIST = [
         dep3 		: '',
         url 		: '/html/basic/mypage/MY-0002.html',
         pubUpdate 	: '2019-0000',
-        etc 		: '',
+        etc 		: '2019-1120',
     },
 	{
         stateLine   : "", 
@@ -510,7 +510,7 @@ __CONSTANT_LIST = [
         dep3 		: '',
         url 		: '/html/basic/mypage/MY-0004.html',
         pubUpdate 	: '2019-0000',
-        etc 		: '',
+        etc 		: '2019-1120',
     },
 	{
         stateLine   : "", 
@@ -519,7 +519,7 @@ __CONSTANT_LIST = [
         dep3 		: '비밀번호 변경',
         url 		: '/html/basic/mypage/MY-0005.html',
         pubUpdate 	: '2019-0000',
-        etc 		: '',
+        etc 		: '2019-1120',
     },
 	{
         stateLine   : "", 
