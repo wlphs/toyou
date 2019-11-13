@@ -192,8 +192,8 @@ __CONSTANT_LIST = [
         dep1 		: '',
         dep2 		: '',
         dep3 		: '가입축하 이메일 발송',
-        url 		: '',
-        pubUpdate 	: '2019-0000',
+        url 		: '/html/basic/main/mail_form.html',
+        pubUpdate 	: '2019-1113',
         etc 		: '2019-1113',
     },
 	{
