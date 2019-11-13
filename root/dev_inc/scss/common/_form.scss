@@ -169,10 +169,16 @@ input[type="radio"].rdo:checked + label.rdo:after {@include sp_form($radio_on);}
 .formsearch-box { position: relative;  display: inline-block; width:100%; min-width: 120px; /* [0909] min-width: 155px; */ height: $formH;
     &.w_ss { min-width:100px; }
     input { width: 100%;  padding-right: 50px; z-index: 1; border:1px solid $lineC_d;  box-sizing: border-box;}
-    .search-btn{ position: absolute;top:0; right:0;  font-size: 0;   
+    .search-btn{ position: absolute;top:0; right:4px;  font-size: 0;   
         box-sizing: border-box; z-index: 1;
-        width: $formH; height: $formH; border-radius: 0 22px 22px 0;
-        &:after { content: "" ; display: block; position: absolute; top:50%; right: 20px; margin-top: -8px; @include sp_form($icon-search); }
+        width: $formH; height: $formH;
+        &:after { content: "" ; display: block; position: absolute; top:50%; right: 13px; margin-top: -10px; @include sp_form($icon-search); }
+    }
+
+    //다른타입
+    &.type2 { position: relative;
+        input { padding: 0 0 0 50px;}
+        &:after { content: "" ; display: block; position: absolute; top:50%; left: 13px; margin-top: -10px; margin-left: 4px; @include sp_form($icon-search); z-index:1;}
     }
 }
 
