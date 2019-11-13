@@ -1,0 +1,118 @@
+.serv_visual {
+    img {width:100%;}
+}
+.border_top10 {border-top:10px solid #f5f5f5;}
+.serv_wrap {
+    .visual_tit {position: absolute; z-index:1; right:0; margin-top:-20px; padding:0 25px; line-height: 40px; height:40px; color:#fff; background:$colorP;}
+    .serv_detail {
+        .serv_info {padding:20px 0;
+            .name {font-size:23px; font-weight: 700;}
+            .desc { font-size:15px; margin-top:8px;}
+            .reaction { @include clearfix(); margin-top:15px;
+                li { font-size:15px; float:left; position: relative; padding-left:20px; margin-right:28px;
+                    &:last-child {margin-right:0;}
+                    em {color:$colorP;}
+                    &.like:after {content:''; @include sp_icons($serv_01); display:block; position: absolute; top:2px; left:0;}
+                    &.review:after {content:''; @include sp_icons($serv_02); display:block; position: absolute; top:2px; left:0;}
+                    &.reply:after {content:''; @include sp_icons($serv_03); display:block; position: absolute; top:2px; left:0;}
+                }
+            }
+        }
+        .expert_wrap { padding-bottom:25px; padding-top:5px;
+            .introduce {padding:30px 0 30px 90px; position: relative; 
+                background:url('/resources/images/common/dot_line_hor.png') repeat-x left bottom; background-size:4px;
+                .pf_photo {position: absolute; top:50%; margin-top:-35px; left:0; width:70px; height:70px; border-radius: 35px; overflow: hidden;
+                    img {width:100%;}
+                }
+                .txt {font-size:15px; line-height: 22px; font-weight: 700;}
+            }
+            .ability {font-size:15px; padding-top:15px; margin-bottom:13px;}
+        }
+        .serv_tab_wrap {
+            .tab_wrap { @include clearfix();
+                .tab_btn {width:33.3333%; float:left; text-align: center;
+                    &.on a {padding-bottom:13px; border-bottom:5px solid $colorP;}
+                    a {display:block; padding:18px 0 18px; }
+                }
+            }
+            .tab_cont {display:none;
+                &.on {display:block;}
+            }
+        }
+        .serv_basic_info {padding:25px 0;}
+    }
+    .serv_tit {font-size:19px; font-weight: 500;
+        &.under_point { padding-bottom:15px; position: relative;
+            &:after {content:''; width:20px; height:2px; background:#000; position: absolute;bottom:0; left:0;}
+        }
+    }
+    .serv_menu_tit { position: relative; padding-top:17px; font-weight: 500; font-size:15px;
+        &:after {content:''; position: absolute; left:0; top:0; width:20px; height:2px; background:#000;}
+    }
+    .serv_menu_cont {margin-top:10px; position: relative; padding-right:115px;
+        .menu_txt {font-size:15px;}
+        .menu_price { position: absolute; right:0; top:50%; margin-top:-12px; font-weight: 700; font-size:19px; 
+            .unit {font-size:15px;font-weight: 400; padding-left:2px;}
+        }
+    }
+    .serv_txt {font-size:15px; font-weight: 300;}
+
+    .serv_review_wrap {padding-bottom:30px;
+        .review_total_like { position: relative;
+            .like_count {position: absolute; right:0; top:0; padding-left:32px;
+                &:after {content:''; position: absolute; left:0; top:0; @include sp_icons($review_like)}
+            }
+        }
+        .review_list {
+            li {position: relative;
+                .writer {position: relative; padding-left:62px; padding-top:20px; padding-bottom:20px;
+                    .pf_photo {position: absolute; top:50%; margin-top:-25px; left:0; width:50px; height:50px; border-radius: 25px; overflow: hidden;
+                        img {width:100%;}
+                    }
+                    .re_name {font-size:15px; font-weight: 500; }
+                    .re_date {color:#999999; font-size:13px; margin-top:4px;}
+                    .review_like { position: absolute; right:0; top:50%; margin-top:-25px;
+                        .btn_review_like {padding:5px 5px 5px 20px; height:30px; position: relative; display:block; float:left; font-size:15px; color:$colorP; font-weight: 500;
+                            &:after {content:''; @include sp_icons($serv_01); position: absolute; top:50%; left:0; margin-top:-8px; }
+                        }
+                        //.like_count { line-height: 30px; display:block;float:left; vertical-align: top; margin-left:-2px;}
+                    }
+                }
+                .review_cont {
+                    // @include ellipsis_line(3);
+                }
+            }
+        }
+    }
+}
+.serv_dot_border {
+    &.fst_pt0 li:first-child{ padding-top:0;}
+    > li { padding:17px 0;
+        background:url('/resources/images/common/dot_line_hor.png') repeat-x left bottom; background-size:4px;
+        &:last-child {background: none;}
+    }
+}
+.movieWrap { position: relative;
+    .movie_play { position: absolute; top:50%; left:50%; margin-left:-25px; margin-top:-25px; width:50px; height:50px; background:$colorP; border-radius: 25px;
+        &:after{ content:''; @include sp_icons($ic_play); position: absolute; left:50%; top:50%; margin-top:-8px; margin-left:-4px;}
+    }
+    
+    img {width:100%;}
+}
+
+.service_bottom { padding-left:110px; height:55px;
+    .btn_chat {width:55px; height:55px; display:block; position: absolute; left:0; top:0; background:#f5f5f5; border-right:1px solid #fff; box-sizing: border-box;
+        &:after {content:''; @include sp_icons($ic_chatting); position: absolute; top:50%; left:50%; margin-left:-12px; margin-top:-12px;}
+    }
+    .btn_tel {width:55px; height:55px; display:block; position: absolute; left:55px; top:0;background:#f5f5f5;
+        &:after {content:''; @include sp_icons($ic_tel); position: absolute; top:50%; left:50%; margin-left:-12px; margin-top:-12px;}
+    }
+}
+
+.review_more_wrap { 
+    text-align: center;padding:15px; background:url('/resources/images/common/dot_line_hor.png') repeat-x left top; background-size:4px;
+    .btn_review_more { padding:5px 35px 5px 10px; font-size:15px; font-weight: 500; position: relative;
+        .count {color:$colorP;}
+        &:after {content:''; position: absolute; right:10px; top:50%; margin-top:-4px; @include sp_icons($arrow_down_sm);}
+     }
+}
