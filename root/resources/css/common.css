@@ -235,7 +235,7 @@ a, span, i, em {
 
 .icon_label, .btn_menu_arrow:after, .btn_more:after, .btn_more.red:after, .accordion-list > li .header-area .acc_btn:after, .trp.popupfixed-wrap .btn_close:after, .trp.popupfixed-wrap .caution_wrap:after, .snippet_wrap .snippet_cont::before, .header .top_bar .history_back:before, .header .top_bar .btn_search:before, #footer .h2_logo, #footer .opne_text:after, .top_scroll::before, .profile_wrap .pf_photo_wrap .pf_photo_change:after, .profile_wrap .pf_manage a.btn_edit_pf:after, .profile_wrap .pf_manage a.btn_edit_cert:after, .profile_photo_wrap .pf_photo_change:after, .agree_list li .agree_view:after, .main_header .h1_logo, .main_header .location_top::before, .main section.main_card .big_banner .txt em, .thum_list li .btn_like::before, .thum_list li .btn_like.on::before, .thum_list.big_type li .btn_like::before, .thum_list.big_type li .btn_like.on::before {
   background-image: url("../images/common/sp_icons.png");
-  background-size: 232.5px 209.5px;
+  background-size: 232.5px 226.5px;
 }
 
 /*  _mixin.scss
@@ -1702,7 +1702,7 @@ a.link_txt,
   display: inline-block;
   width: 27px;
   height: 27px;
-  background-position: -153px -84.5px;
+  background-position: 0px -144.5px;
 }
 
 /* wrap  */
@@ -2835,7 +2835,7 @@ table.bottom_bar {
   margin-top: -4px;
   width: 6px;
   height: 8px;
-  background-position: -110px -171.5px;
+  background-position: -201px -181.5px;
 }
 
 .btn_menu_arrow .sm_txt {
@@ -2912,7 +2912,7 @@ table.bottom_bar {
   margin-top: -4px;
   width: 5px;
   height: 9px;
-  background-position: -15px -199.5px;
+  background-position: -45px -208.5px;
 }
 
 .btn_more.red {
@@ -2930,8 +2930,8 @@ table.bottom_bar {
   top: 50%;
   margin-top: -5px;
   width: 6px;
-  height: 9.5px;
-  background-position: -94px -171.5px;
+  height: 10px;
+  background-position: -170px -181.5px;
 }
 
 .btn_bottom {
@@ -3496,7 +3496,7 @@ table.bottom_bar {
   transform: rotate(180deg);
   width: 11px;
   height: 6px;
-  background-position: -85px -144.5px;
+  background-position: -220px -144.5px;
 }
 
 .accordion-list > li > .con-area {
@@ -3583,7 +3583,7 @@ table.bottom_bar {
   top: 22px;
   width: 16px;
   height: 16px;
-  background-position: -26px -144.5px;
+  background-position: -161px -144.5px;
 }
 
 .trp.popupfixed-wrap.cover_type .popup-layer {
@@ -3681,7 +3681,7 @@ table.bottom_bar {
   margin-top: -20px;
   width: 40px;
   height: 40px;
-  background-position: -60px -84.5px;
+  background-position: -115px -84.5px;
 }
 
 .trp.popupfixed-wrap .caution_wrap .tit {
@@ -3727,7 +3727,7 @@ table.bottom_bar {
   top: -5px;
   width: 23px;
   height: 10px;
-  background-position: -52px -144.5px;
+  background-position: -187px -144.5px;
 }
 
 .snippet_wrap .snippet_cont span {
@@ -4851,7 +4851,7 @@ select {
   margin-top: -3px;
   width: 11px;
   height: 6px;
-  background-position: -85px -144.5px;
+  background-position: -220px -144.5px;
   transition: .2s transform;
   transform: rotate(180deg);
 }
@@ -4928,7 +4928,7 @@ select {
   display: inline-block;
   width: 14px;
   height: 17px;
-  background-position: -218px -84.5px;
+  background-position: 0px -181.5px;
   vertical-align: top;
   margin-top: 13px;
 }
@@ -4967,7 +4967,7 @@ select {
   content: '';
   width: 33px;
   height: 33px;
-  background-position: -110px -84.5px;
+  background-position: -165px -84.5px;
   display: block;
 }
 
@@ -4997,7 +4997,7 @@ select {
   display: block;
   width: 16px;
   height: 17px;
-  background-position: 0px -144.5px;
+  background-position: -135px -144.5px;
   position: absolute;
   top: 5px;
   left: 0;
@@ -5008,7 +5008,7 @@ select {
   display: block;
   width: 13px;
   height: 18px;
-  background-position: 0px -171.5px;
+  background-position: 0px -208.5px;
   position: absolute;
   top: 5px;
   left: 0;
@@ -5206,7 +5206,7 @@ select {
   position: relative;
   width: 5px;
   height: 9px;
-  background-position: -15px -199.5px;
+  background-position: -45px -208.5px;
   display: block;
 }
 
@@ -5338,7 +5338,7 @@ input[type="radio"].type_btn_radio + label {
   margin: -2px 0 0 2px;
   width: 11px;
   height: 13px;
-  background-position: -73px -171.5px;
+  background-position: -149px -181.5px;
 }
 
 .main section.main_card {
@@ -5619,13 +5619,13 @@ input[type="radio"].type_btn_radio + label {
   margin-top: -6px;
   width: 14px;
   height: 13px;
-  background-position: -49px -171.5px;
+  background-position: -125px -181.5px;
 }
 
 .thum_list li .btn_like.on::before {
   width: 16px;
   height: 14px;
-  background-position: -23px -171.5px;
+  background-position: -99px -181.5px;
 }
 
 .thum_list.big_type li {
@@ -5664,7 +5664,7 @@ input[type="radio"].type_btn_radio + label {
 .thum_list.big_type li .btn_like::before {
   width: 18px;
   height: 17px;
-  background-position: -190px -84.5px;
+  background-position: -107px -144.5px;
   margin-top: -7px;
 }
 
