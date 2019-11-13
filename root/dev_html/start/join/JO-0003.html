@@ -2,7 +2,7 @@
 <html lang="ko">
 <head>
 	<!-- header -->
-	@@include('../../include/_head.html', {"title" : "SK Broadband Application"})
+	@@include('../../include/_head.html', {"title" : "TOYOUCORP."})
 	<!-- //header -->
 </head>
 
@@ -51,7 +51,7 @@
                             </div>
                         </li>
                         <li>
-                            <input type="text" placeholder="생년월일 예)891224">
+                            <input type="number" placeholder="생년월일 예)891224">
                         </li>
                         <li>
                             <div class="join_cert_1">
@@ -67,21 +67,50 @@
                             </div>
                         </li>
                         <li>
-                            <input type="text" placeholder="전송된 인증번호(6자리) 입력">
+                            <input type="number" placeholder="전송된 인증번호(6자리) 입력">
                         </li>
                     </ul>
 
                     <div class="mt25 join_agree_wrap">
                         <div class="agree_all_warp">
-                            <input type="checkbox" class="chk" id="agree_all">
+                            <input type="checkbox" class="chk js-all_check" id="agree_all">
                             <label for="agree_all" class="chk">아래 약관에 모두 동의합니다.</label>
                         </div>
-                        
+                        <ul class="agree_list pb50">
+                            <li>
+                                <input type="checkbox" class="chk js-chk_item" id="agree0">
+                                <label for="agree0" class="chk"><span class="hide">본인확인 서비스 이용 동의</span></label>
+                                <p><a href="#">본인확인 서비스 이용</a> 동의 <span class="colorP">(필수)</span></p>
+                            </li>
+                            <li>
+                                <input type="checkbox" class="chk js-chk_item" id="agree1">
+                                <label for="agree1" class="chk"><span class="hide">본인확인 서비스 개인정보처리방침 동의</span></label>
+                                <p>본인확인 서비스 <a href="#">개인정보처리방침</a> 동의 <span class="colorP">(필수)</span></p>
+                            </li>
+                            <li>
+                                <input type="checkbox" class="chk js-chk_item" id="agree2">
+                                <label for="agree2" class="chk"><span class="hide">본인확인 서비스 고유식별 정보 처리 동의</span></label>
+                                <p>본인확인 서비스 <a href="#">고유식별 정보 처리</a> 동의 <span class="colorP">(필수)</span></p>
+                            </li>
+                            <li>
+                                <input type="checkbox" class="chk js-chk_item" id="agree3">
+                                <label for="agree3" class="chk"><span class="hide">본인확인 서비스 개인정보 수집 이용 동의</span></label>
+                                <p>본인확인 서비스 <a href="#">개인정보 수집 이용</a> 동의 <span class="colorP">(필수)</span></p>
+                            </li>
+                            <li>
+                                <input type="checkbox" class="chk js-chk_item" id="agree4">
+                                <label for="agree4" class="chk"><span class="hide">본인확인 서비스 통신사 이용약관 동의</span></label>
+                                <p>본인확인 서비스 <a href="#">통신사 이용약관</a> 동의 <span class="colorP">(필수)</span></p>
+                            </li>
+                        </ul>
                     </div>
                 </div>
+                <script>
+                    $('.js-all_check').allCheckbox('.js-chk_item');
+                </script>
                 <div class="btn_bottom_fixed">
                     <div class="fixed_wrap">
-                        <a href="#" class="btn btn_lg btn_point btn_block">다음</a>
+                        <a href="#" class="btn btn_lg btn_point btn_block js-caution">다음</a>
                     </div>
                 </div>
                 </form>
@@ -90,10 +119,58 @@
         
 		<!-- //container -->
 		@@include('../../include/_toolbar.html')
-	</div>
+    </div>
+    
+
+    
+	<div id="only_woman" class="trp popupfixed-wrap">
+            <div class="popup-align">
+                <div class="popup-vertical caution">
+                    <div class="popup-layer " style="width:100%;">
+                        <!-- <div class="pop_header">
+                            <p class="tit">사진 가져오기</p>
+                            <a href="#" class="btn_close js-closepop"><span class="hide">닫기</span></a>
+                        </div>  -->
+                        <section class="section pd0" style="display: block;">
+                            <div class="cont_inner caution_wrap">
+                                <p class="tit">가입 불가 알림</p>
+                                <p class="txt">투유는 여성 전용 서비스로, 여성 회원만 가입이 가능합니다.</p>
+                                <button class="btn btn_lg btn_point btn_block js-closepop">확인</button>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
 <script>
-	$("#test1").validate();
-</script>
+        $("#only_woman").dialog({
+            autoOpen: false,
+            modal: true,
+            width:'100%',
+            position: { my: "bottom", at: "bottom" },
+            create : function(event) {
+                $(".js-caution").on("click", function() {
+                    modalFixedControl.open($(event.target));
+                    $(event.target).dialog("open");
+                    return false;
+                });
+            },
+            resizable: false,
+            open : function (event) {
+                $('.js-closepop', $(event.target)).off('click').on('click', function() {
+                    $(event.target).dialog( "close" );
+                    return false;
+                })
+            },
+            close: function() {
+                modalFixedControl.close();
+            }
+        });
+    
+    </script>
+        
 
 </body>
 </html>

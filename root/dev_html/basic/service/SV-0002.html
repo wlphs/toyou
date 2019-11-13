@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<!-- header -->
+	@@include('../../include/_head.html', {"title" : "TOYOUCORP."})
+	<!-- //header -->
+</head>
+
+<body class="pageclass">
+	<p class="accessibility" id="skipTop">
+		<a href="#container">본문 바로가기</a>
+		<a href="#gnb" class="js-gnb_btn">주메뉴 바로가기</a> 
+	</p>
+	<div class="wrapper">
+		<!-- header --> 
+		<header id="header" class="header">
+			<div class="header_fixed_group">
+				<div class="top_bar">
+					<div class="top_left">
+						<a href="javascript:history.go(-1);" class="history_back"><span class="hide">이전페이지로 이동</span></a> 
+					</div>
+					<div class="top_right">
+                        <button class="btn_share"><span class="hide">공유하기</span></button>
+                        <span class="">
+                            <button class="btn_like"><span class="hide">좋아요</span></button><span class="link_num">100</span>
+                        </span>
+                    </div>
+				</div>
+			</div> 
+		</header>
+		<!-- //header -->
+
+		<!-- container -->
+		<div id="container">
+			<div id="contents">
+                <div class="tab_inner">
+                    <div class="cont_inner">
+                        <p class="serv_tit">대표 서비스</p>
+                        <p class="serv_menu_tit">힐링&테라피</p>
+                        <div class="serv_menu_cont">
+                            <p class="menu_txt">[스킨&바디케어] Relaxing 아로마 테라피 (2시간)</p>
+                            <p class="menu_price">80,000<span class="unit">원</span></p>
+                        </div>
+                    </div>
+                    <div class="cont_inner">
+                        <p class="serv_tit">제공 서비스</p>
+                        <p class="serv_menu_tit">뷰티</p>
+                        <ul class="dot_list">
+                            <li>
+                                <div class="serv_menu_cont">
+                                    <p class="menu_txt">[메이크업] 특별한 날을 위한 헤어, 메이크업 (1시간)</p>
+                                    <p class="menu_price">100,000<span class="unit">원</span></p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="serv_menu_cont">
+                                    <p class="menu_txt">[퍼스널브랜딩] 나만의 색을 찾아! 퍼스널 브랜딩 (2시간)</p>
+                                    <p class="menu_price">150,000<span class="unit">원</span></p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="serv_menu_cont">
+                                    <p class="menu_txt">[퍼스널브랜딩] 나만의 색을 찾아서! 퍼스널 브랜딩 (1시간)</p>
+                                    <p class="menu_price">120,000<span class="unit">원</span></p>
+                                </div>
+                            </li>
+                        </ul>
+                        <p class="serv_menu_tit">할인 패키지</p>
+                        <ul class="dot_list">
+                            <li>
+                                <div class="serv_menu_cont">
+                                    <p class="menu_txt">특별한 날을 위한 헤어, 메이크업 (1시간) + [Relaxing] 아로마 테라피 (2시간) (총 3시간)</p>
+                                    <p class="menu_price">180,000<span class="unit">원</span></p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+			</div>
+		</div>
+        
+		<!-- //container -->
+		@@include('../../include/_toolbar.html')
+	</div>
+<script>
+</script>
+
+</body>
+</html>

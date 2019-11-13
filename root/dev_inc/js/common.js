@@ -79,7 +79,24 @@ jQuery.fn.setTabType = function( $activeTabNum){
     setWidth();
   });
 }
+jQuery.fn.coverImage = function(){
+  
+  $(this).each(function() {
+    var _img = $(this),
+        _wrap =  $(this).parent(), 
+        _w = _wrap.width(),
+        _h = _wrap.height();
 
+    if (_img.width()/_img.height()> _w/_h) {  // 가로가 더 길 때
+      _img.css({'width':'auto', 'height' : '100%'});
+      _img.css({'margin-top': 0, 'margin-left':( _w - _img.width())/2 });
+    }
+    else {
+      _img.css({'width':'100%', 'height' : 'auto'});
+      _img.css({'margin-left': 0, 'margin-top':( _h - _img.height())/2 });
+    }
+  })
+}
 
 /**
  * trpAccordionMenu				: 아코디언메뉴
