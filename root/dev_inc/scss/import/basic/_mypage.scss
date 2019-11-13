@@ -5,6 +5,11 @@
         }
         .pf_photo_change {font-size: 0; position: absolute; bottom:5px; right:-6px; width:33px; height:33px; 
             &:after {content:''; @include sp_icons($ic_mypage_pf); display:block; }
+
+
+            &.type2 { width:35px; height:35px; 
+                &:after {content:''; @include sp_icons($ic_mypage_pf2); display:block; }
+            }
         }
     }
     .pf_name {text-align: center; font-weight: 500; font-size:24px; color:#000000; padding-top:10px; padding-bottom:17px;}
@@ -29,4 +34,29 @@
 
 .list_btn_wrap {
     li {border-bottom:1px solid #efefef;}
+}
+
+//신분인증
+.position_cont {
+    .txt_desc { font-size: 15px; line-height: 23px;
+        em { color:#ff5c5c;}
+    }
+    .photo_area { position: relative;
+        .photo { min-height: 220px; overflow:hidden; margin-right: -24px;
+            img { width: 100%;}
+        }
+
+        //사진변경
+        .pf_photo_change {font-size: 0; position: absolute; top:-25px; right:-10px; width:50px; height:50px; 
+            &:after {content:''; @include sp_icons($icon_photo); display:block; }
+        }
+    }
+}
+
+//안심메시지발송
+.heder_area {  position: relative;
+    .sub_tit { font-size: 19px; font-weight: 700; position: relative; padding-bottom: 16px;
+        &::before { content:''; display:inline-block; width: 20px; height: 2px; background:#000; position:absolute; left:0; bottom:0;}
+    }
+    .btn_more { position:absolute; right:0; top: -7px;}
 }

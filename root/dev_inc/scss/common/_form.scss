@@ -26,7 +26,7 @@ input[type="text"], input[type="password"],input[type="number"], input[type="ema
 /* ======================== focus, ,disabled, input_error */
 input[type="text"]:focus,input[type="password"]:focus,input[type="number"]:focus,input[type="email"]:focus { border-color: $lineC_f; }
 input[type="text"]:disabled, input[type="password"]:disabled, input[type="number"]:disabled, input[type="email"]:disabled { background  : $formBG; }  
-input[type="text"][readonly], input[type="password"][readonly], input[type="number"][readonly], input[type="email"][readonly] { background  : $formBG; }   
+input[type="text"][readonly], input[type="password"][readonly], input[type="number"][readonly], input[type="email"][readonly] { background  : $formBG; color:#999999;}   
 input[type="text"].error,input[type="password"].error,input[type="number"].error,input[type="email"].error   { border-color: $lineC_e; }
 .input-box{ position: relative;  vertical-align: top;
     .check_byte-w { padding-right:  90px !important; }
