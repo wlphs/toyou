@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<!-- header -->
+	@@include('../../include/_head.html', {"title" : "TOYOUCORP."})
+	<!-- //header -->
+</head>
+
+<body class="pageclass">
+	<p class="accessibility" id="skipTop">
+		<a href="#container">본문 바로가기</a>
+		<a href="#gnb" class="js-gnb_btn">주메뉴 바로가기</a> 
+	</p>
+	<div class="wrapper">
+		<!-- header --> 
+		<header id="header" class="header">
+			<div class="header_fixed_group">
+				<div class="top_bar">
+					<div class="top_left">
+						<a href="javascript:history.go(-1);" class="history_back"><span class="hide">이전페이지로 이동</span></a> 
+					</div>
+				</div>
+			</div> 
+		</header>
+		<!-- //header -->
+
+		<!-- container -->
+		<div id="container">
+			<div id="contents">
+                <form action="" id="test1">
+                <div class="join_title cont_inner mb25">
+                    <h1 class="h1"><em>변경할 휴대폰 번호를</em><br>입력해 주세요</h1>
+                </div>
+                <div class="join_cont cont_inner">
+					<dl class="form_list">
+						<dt>휴대폰 번호</dt>
+						<dd>
+							<span class="input_search type2">
+								<input type="number" placeholder="휴대폰 번호를 입력해 주세요." value="" name="phone" data-rule-required="true" data-rule-phone="true" data-msg-required="" data-msg-phone="">
+								<button class="btn btn_gray btn_lg js-snippet" type="button">인증번호 전송</button>
+							</span>
+						</dd>
+						<dt>인증번호</dt>
+						<dd>
+							<span class="input_unit">
+								<input type="password" placeholder="인증번호를 입력해 주세요."  name="password" data-rule-required="true" data-rule-password="true" data-msg-required="" data-msg-password="">
+								<span class="unit">1:27</span>
+							</span>
+							<p class="error_txt">* 인증번호를 정상적으로 입력해 주세요.</p>
+						</dd>
+					</dl>
+                </div>
+                <div class="btn_bottom_fixed">
+                    <div class="fixed_wrap">
+                        <a href="#" class="btn btn_lg btn_point btn_block js-snippet">로그인</a>
+                    </div>
+                </div>
+                </form> 
+			</div>
+		</div>
+
+		<!-- <div class="snippet_wrap">
+			<div class="snippet_cont">
+				휴대폰 번호가 <span>010-1234-1234</span>로 변경되었습니다.
+			</div>
+		</div> -->
+        
+		<!-- //container -->
+		@@include('../../include/_toolbar.html')
+	</div>
+<script>
+	$("#test1").validate();
+	$('.js-snippet').on('click', function () {
+		openSnippet("휴대폰 번호가 <span>010-1234-1234</span>로 변경되었습니다.");
+		return false;
+	})
+</script>
+
+</body>
+</html>

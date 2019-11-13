@@ -28,45 +28,37 @@
 		<div id="container">
 			<div id="contents">
                 <form action="" id="test1">
-                <div class="sub_title cont_inner pb25">
-                    <h1 class="h1">홈서비스 주소</h1>
+                <div class="join_title cont_inner mb25">
+                    <h1 class="h1"><em>비밀번호를</em><br>입력해 주세요</h1>
                 </div>
-                <div class="address_cont cont_inner">
-					<div class="map_area">
-						<img src="/resources/images/temp/@temp21.png" alt="">
-					</div>
-
-					<div class="add_list">
-						<ul class="post_list no_line">
-							<li>
-								<dl>
-									<dt>서초래미안아파트</dt>
-									<dd>
-										<span>서울 서초구 서초동 1682 서초래미안아파트</span>
-										<span>[도로명] 서초대로 65길 13-10</span>
-									</dd>
-									<dd class="mt20">
-										<input class="" type="text" placeholder="상세 주소를 입력해 주세요. 예)105동 302호" value="">
-									</dd>
-								</dl>
-							</li>
-						</ul>
-					</div>
+                <div class="join_cont cont_inner">
+					<input type="password" placeholder="영문, 숫자 혼합 8~16자로 입력해 주세요.">
+					<p class="error_txt">* 비밀번호를 입력해 주세요.</p>
                 </div>
                 <div class="btn_bottom_fixed">
                     <div class="fixed_wrap">
-                        <a href="#" class="btn btn_lg btn_point btn_block">완료</a>
+                        <a href="#" class="btn btn_lg btn_point btn_block js-snippet">로그인</a>
                     </div>
                 </div>
-                </form>
+                </form> 
 			</div>
 		</div>
+
+		<!-- <div class="snippet_wrap">
+			<div class="snippet_cont">
+				비밀번호가 변경되었습니다.
+			</div>
+		</div> -->
         
 		<!-- //container -->
 		@@include('../../include/_toolbar.html')
 	</div>
 <script>
 	$("#test1").validate();
+	$('.js-snippet').on('click', function () {
+		openSnippet("비밀번호가 변경되었습니다.");
+		return false;
+	})
 </script>
 
 </body>

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <!-- header -->
+    <meta charset="UTF-8">
+    <title>TOYOUCORP.</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" id="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,initial-scale=1.0">
+    <link rel="stylesheet" href="/resources/css/library/csslibrary.css">
+    <link rel="stylesheet" href="/resources/css/common.css">
+    <script src="/resources/js/jquery-3.4.1.min.js"></script>
+    <script src="/resources/js/library/jquerylibrary.min.js"></script>
+    <script src="/resources/js/common.js"></script>
+
+    <!-- //header -->
+</head>
+
+<body class="pageclass">
+    <p class="accessibility" id="skipTop">
+        <a href="#container">본문 바로가기</a>
+        <a href="#gnb" class="js-gnb_btn">주메뉴 바로가기</a>
+    </p>
+    <div class="wrapper">
+        <!-- header -->
+        <header id="header" class="header">
+            <div class="header_fixed_group">
+                <div class="top_bar">
+                    <div class="locations">
+                        <div class="view_page">
+                            <h1 class="sub_title">프로필 수정</h1>
+                        </div>
+                    </div>
+                    <div class="top_left">
+                        <a href="javascript:history.go(-1);" class="history_back"><span class="hide">이전페이지로 이동</span></a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- //header -->
+
+        <!-- container -->
+        <div id="container">
+            <div id="contents">
+                <div class="profile_wrap pt0">
+                    <div class="pf_photo_wrap">
+                        <div class="pf_photo">
+                            <img src="/resources/images/temp/@temp_profile.png" alt="">
+                        </div>
+                        <button class="pf_photo_change type2 js-photo">이미지 변경</button>
+                    </div>
+                </div>
+
+                <div class="cont_inner mt35 mb35">
+                    <dl class="form_list">
+                        <dt>이름</dt>
+                        <dd>
+                            <input type="text" placeholder="" value="홍길동" readonly>
+                        </dd>
+                        <dt>이메일 주소</dt>
+                        <dd>
+                            <input type="text" placeholder="" value="ab2@naver.com">
+                        </dd>
+                        <dt>휴대폰 번호</dt>
+                        <dd>
+                            <span class="input_search">
+                                <input type="number" placeholder="휴대폰 번호를 입력해 주세요." value="" name="phone" data-rule-required="true" data-rule-phone="true" data-msg-required="" data-msg-phone="">
+                                <button class="btn btn_gray btn_lg" type="button">변경</button>
+                            </span>
+                            <p class="error_txt">실제 번호가 아닌 안심번호가 공개됩니다.</p>
+                        </dd>
+                        <dt>비밀번호</dt>
+                        <dd>
+                            <button class="btn btn_gray btn_lg w100p" type="button">비밀번호 변경하기</button>
+                        </dd>
+                    </dl>
+                </div>
+
+
+                <div class="btn_bottom_fixed">
+                    <div class="fixed_wrap">
+                        <a href="#" class="btn btn_lg btn_point btn_block">저장하기</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- //container -->
+        <!-- 
+<div class="toolBar">
+    <ul>
+        <li class="toolbar_btn0"><a href="#">서비스찾기</a></li>
+        <li class="toolbar_btn1"><a href="#">알림</a></li>
+        <li class="toolbar_btn2"><a href="#">홈</a></li>
+        <li class="toolbar_btn3"><a href="#">채팅</a></li>
+        <li class="toolbar_btn4"><a href="#">마이페이지</a></li>
+    </ul>
+</div> -->
+        <a href="#none" class="top_scroll">위로 이동</a>
+    </div>
+
+
+    <div id="getPhoto" class="trp popupfixed-wrap">
+        <div class="popup-align">
+            <div class="popup-vertical">
+                <div class="popup-layer select_layer" style="width:100%;">
+                    <!-- <div class="pop_header">
+						<p class="tit">사진 가져오기</p>
+						<a href="#" class="btn_close js-closepop"><span class="hide">닫기</span></a>
+					</div>  -->
+                    <section class="section pd0" style="display: block;">
+                        <ul class="sel_wrap get_photo">
+                            <li>
+                                <span class="get_photo_btn get_photo0">사진촬영</span>
+                                <input type="file" id="camera" name="camera" capture="camera" accept="image/*" />
+                            </li>
+                            <li>
+                                <span class="get_photo_btn get_photo1">앨범에서 가져오기</span>
+                                <input type="file" id="camera" name="camera">
+                            </li>
+                            <li>
+                                <button class="get_photo_btn btn_cancel js-closepop">취소</button>
+                            </li>
+                        </ul>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        $("#getPhoto").dialog({
+            autoOpen: false,
+            modal: true,
+            width: '100%',
+            position: {
+                my: "bottom",
+                at: "bottom"
+            },
+            show: {
+                effect: "slide",
+                direction: "down",
+                duration: 300
+            },
+            create: function(event) {
+                $(".js-photo").on("click", function() {
+                    modalFixedControl.open($(event.target));
+                    $(event.target).dialog("open");
+                    return false;
+                });
+            },
+            resizable: false,
+            open: function(event) {
+                $('.js-closepop', $(event.target)).off('click').on('click', function() {
+                    $(event.target).dialog("close");
+                    return false;
+                })
+            },
+            close: function() {
+                modalFixedControl.close();
+            }
+        });
+        // 이미지를 동그란 영역에 맞춰 중앙 정렬
+        // 이미지가 변경될 때 아래 함수를 실행시켜 주세요
+        $('.pf_photo img').coverImage();
+    </script>
+</body>
+
+</html>

@@ -28,16 +28,42 @@
 		<div id="container">
 			<div id="contents">
                 <form action="" id="test1">
-                <div class="join_title cont_inner mb25">
-                    <h1 class="h1"><em>비밀번호를</em><br>입력해 주세요</h1>
+
+                <div class="cont_inner mb25">
+					<div class="tab-wrap tab_type"> 
+						<div class="tab_menu_wrap">
+							<ul class="tab_menu clearfix ">
+								<li class="on"><a href="#">아이디 찾기</a></li>
+								<li><a href="#">비밀번호 찾기</a></li>
+							</ul> 
+						</div> 
+						<div class="tab_cont_wrap">
+							<div class="tab_cont">
+								<dl class="form_list">
+									<dt>휴대폰 번호</dt>
+									<dd>
+										<span class="input_search type2">
+											<input type="number" placeholder="휴대폰 번호를 입력해 주세요." value="" name="phone" data-rule-required="true" data-rule-phone="true" data-msg-required="" data-msg-phone="">
+											<button class="btn btn_gray btn_lg js-snippet" type="button">인증번호 전송</button>
+										</span>
+									</dd>
+									<dt>인증번호</dt>
+									<dd>
+										<span class="input_unit">
+											<input type="password" placeholder="인증번호를 입력해 주세요."  name="password" data-rule-required="true" data-rule-password="true" data-msg-required="" data-msg-password="">
+											<span class="unit">1:27</span>
+										</span>
+										<p class="error_txt">인증번호를 정상적으로 입력해 주세요.</p>
+									</dd>
+								</dl>
+							</div>
+						</div>
+					</div> 
                 </div>
-                <div class="join_cont cont_inner">
-					<input type="password" placeholder="영문, 숫자 혼합 8~16자로 입력해 주세요.">
-					<p class="error_txt">* 비밀번호를 입력해 주세요.</p>
-                </div>
+                
                 <div class="btn_bottom_fixed">
                     <div class="fixed_wrap">
-                        <a href="#" class="btn btn_lg btn_point btn_block js-snippet">로그인</a>
+                        <a href="#" class="btn btn_lg btn_point btn_block">아이디 찾기</a>
                     </div>
                 </div>
                 </form> 
@@ -46,7 +72,7 @@
 
 		<!-- <div class="snippet_wrap">
 			<div class="snippet_cont">
-				비밀번호가 변경되었습니다.
+				인증번호가 전송되었습니다.
 			</div>
 		</div> -->
         
@@ -56,7 +82,7 @@
 <script>
 	$("#test1").validate();
 	$('.js-snippet').on('click', function () {
-		openSnippet("비밀번호가 변경되었습니다.");
+		openSnippet("인증번호가 전송되었습니다.");
 		return false;
 	})
 </script>

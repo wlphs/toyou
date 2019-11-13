@@ -233,9 +233,9 @@ a, span, i, em {
   background-size: 90px 81.5px;
 }
 
-.icon_label, .btn_menu_arrow:after, .btn_more:after, .btn_more.red:after, .btn_more_point:after, .btn_arrow_type:after, .accordion-list > li .header-area .acc_btn:after, .trp.popupfixed-wrap .btn_close:after, .trp.popupfixed-wrap .caution_wrap:after, .snippet_wrap .snippet_cont::before, .header .top_bar .history_back:before, .header .top_bar .btn_share:after, .header .top_bar .btn_like:after, .header .top_bar .btn_search:before, #footer .h2_logo, #footer .opne_text:after, .top_scroll::before, .serv_wrap .serv_detail .serv_info .reaction li.like:after, .serv_wrap .serv_detail .serv_info .reaction li.review:after, .serv_wrap .serv_detail .serv_info .reaction li.reply:after, .serv_wrap .serv_review_wrap .review_total_like .like_count:after, .serv_wrap .serv_review_wrap .review_list li .writer .review_like .btn_review_like:after, .movieWrap .movie_play:after, .service_bottom .btn_chat:after, .service_bottom .btn_tel:after, .review_more_wrap .btn_review_more:after, .profile_wrap .pf_photo_wrap .pf_photo_change:after, .profile_wrap .pf_manage a.btn_edit_pf:after, .profile_wrap .pf_manage a.btn_edit_cert:after, .profile_photo_wrap .pf_photo_change:after, .agree_list li .agree_view:after, .main_header .h1_logo, .main_header .location_top::before, .main section.main_card .big_banner .txt em, .thum_list li .btn_like::before, .thum_list li .btn_like.on::before, .thum_list.big_type li .btn_like::before, .thum_list.big_type li .btn_like.on::before {
+.icon_label, .btn_menu_arrow:after, .btn_more:after, .btn_more.red:after, .btn_more_point:after, .btn_arrow_type:after, .accordion-list > li .header-area .acc_btn:after, .trp.popupfixed-wrap .btn_close:after, .trp.popupfixed-wrap .caution_wrap:after, .snippet_wrap .snippet_cont::before, .header .top_bar .history_back:before, .header .top_bar .btn_share:after, .header .top_bar .btn_like:after, .header .top_bar .btn_search:before, #footer .h2_logo, #footer .opne_text:after, .top_scroll::before, .serv_wrap .serv_detail .serv_info .reaction li.like:after, .serv_wrap .serv_detail .serv_info .reaction li.review:after, .serv_wrap .serv_detail .serv_info .reaction li.reply:after, .serv_wrap .serv_review_wrap .review_total_like .like_count:after, .serv_wrap .serv_review_wrap .review_list li .writer .review_like .btn_review_like:after, .movieWrap .movie_play:after, .service_bottom .btn_chat:after, .service_bottom .btn_tel:after, .review_more_wrap .btn_review_more:after, .profile_wrap .pf_photo_wrap .pf_photo_change:after, .profile_wrap .pf_photo_wrap .pf_photo_change.type2:after, .profile_wrap .pf_manage a.btn_edit_pf:after, .profile_wrap .pf_manage a.btn_edit_cert:after, .position_cont .photo_area .pf_photo_change:after, .profile_photo_wrap .pf_photo_change:after, .agree_list li .agree_view:after, .main_header .h1_logo, .main_header .location_top::before, .main section.main_card .big_banner .txt em, .thum_list li .btn_like::before, .thum_list li .btn_like.on::before, .thum_list.big_type li .btn_like::before, .thum_list.big_type li .btn_like.on::before {
   background-image: url("../images/common/sp_icons.png");
-  background-size: 290.5px 253.5px;
+  background-size: 298.5px 257.5px;
 }
 
 /*  _mixin.scss
@@ -1524,8 +1524,25 @@ body {
   padding: 0 24px;
 }
 
+.cont_inner.top_line {
+  border-top: 5px solid #f5f5f5;
+  padding-top: 32px;
+  margin-top: 35px;
+}
+
 .cont_inner_right {
   padding: 0 0 0 24px;
+}
+
+.sub_title .tit_desc {
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 23px;
+  word-break: keep-all;
+}
+
+.top_line {
+  border-top: 5px solid #f5f5f5;
 }
 
 /* ================== 3줄 말줄임 */
@@ -1702,7 +1719,7 @@ a.link_txt,
   display: inline-block;
   width: 27px;
   height: 27px;
-  background-position: -165px -149.5px;
+  background-position: -242.5px -43px;
 }
 
 /* wrap  */
@@ -2835,7 +2852,7 @@ table.bottom_bar {
   margin-top: -4px;
   width: 6px;
   height: 8px;
-  background-position: -277.5px -193px;
+  background-position: -285.5px -193px;
 }
 
 .btn_menu_arrow .sm_txt {
@@ -2920,7 +2937,7 @@ table.bottom_bar {
   margin-top: -4px;
   width: 5px;
   height: 9px;
-  background-position: -277.5px -211px;
+  background-position: -285.5px -211px;
 }
 
 .btn_more.red {
@@ -2939,7 +2956,7 @@ table.bottom_bar {
   margin-top: -5px;
   width: 6px;
   height: 10px;
-  background-position: -277.5px -117px;
+  background-position: -285.5px -117px;
 }
 
 .btn_bottom {
@@ -3163,7 +3180,7 @@ table.bottom_bar {
   margin-top: -5px;
   width: 6px;
   height: 10px;
-  background-position: -277.5px -117px;
+  background-position: -285.5px -117px;
 }
 
 .btn_arrow_type {
@@ -3180,7 +3197,7 @@ table.bottom_bar {
   margin-top: -7px;
   width: 8px;
   height: 14px;
-  background-position: -277.5px -77px;
+  background-position: -285.5px -77px;
 }
 
 .dot_type_list.space15 li {
@@ -3574,7 +3591,7 @@ table.bottom_bar {
   transform: rotate(180deg);
   width: 11px;
   height: 6px;
-  background-position: -277.5px -101px;
+  background-position: -285.5px -101px;
 }
 
 .accordion-list > li > .con-area {
@@ -3661,7 +3678,7 @@ table.bottom_bar {
   top: 22px;
   width: 16px;
   height: 16px;
-  background-position: -26px -209.5px;
+  background-position: -137px -209.5px;
 }
 
 .trp.popupfixed-wrap.cover_type .popup-layer {
@@ -3759,7 +3776,7 @@ table.bottom_bar {
   margin-top: -20px;
   width: 40px;
   height: 40px;
-  background-position: -115px -149.5px;
+  background-position: -175px -149.5px;
 }
 
 .trp.popupfixed-wrap .caution_wrap .tit {
@@ -3805,7 +3822,7 @@ table.bottom_bar {
   top: -5px;
   width: 23px;
   height: 10px;
-  background-position: -242.5px -188px;
+  background-position: -242.5px -185px;
 }
 
 .snippet_wrap .snippet_cont span {
@@ -3916,6 +3933,7 @@ input[type="text"]:disabled, input[type="password"]:disabled, input[type="number
 
 input[type="text"][readonly], input[type="password"][readonly], input[type="number"][readonly], input[type="email"][readonly] {
   background: #f5f5f5;
+  color: #999999;
 }
 
 input[type="text"].error, input[type="password"].error, input[type="number"].error, input[type="email"].error {
@@ -4823,7 +4841,7 @@ select {
   display: block;
   width: 6px;
   height: 10px;
-  background-position: -277.5px -153px;
+  background-position: -285.5px -153px;
 }
 
 .header .top_bar .btn_share {
@@ -4839,7 +4857,7 @@ select {
   display: block;
   width: 17px;
   height: 21px;
-  background-position: -242.5px -130px;
+  background-position: 0px -209.5px;
 }
 
 .header .top_bar .serv_like_wrap {
@@ -4866,7 +4884,7 @@ select {
   display: block;
   width: 18px;
   height: 17px;
-  background-position: -164px -51.5px;
+  background-position: -83px -209.5px;
 }
 
 .header .top_bar .btn_search {
@@ -4877,9 +4895,9 @@ select {
 .header .top_bar .btn_search:before {
   content: '';
   display: block;
-  width: 20px;
+  width: 18.5px;
   height: 20px;
-  background-position: -242.5px -100px;
+  background-position: -167px -51.5px;
 }
 
 #gnb .nav_box {
@@ -4973,7 +4991,7 @@ select {
   margin-top: -3px;
   width: 11px;
   height: 6px;
-  background-position: -277.5px -101px;
+  background-position: -285.5px -101px;
   transition: .2s transform;
   transform: rotate(180deg);
 }
@@ -5050,7 +5068,7 @@ select {
   display: inline-block;
   width: 14px;
   height: 17px;
-  background-position: 0px -236.5px;
+  background-position: 0px -240.5px;
   vertical-align: top;
   margin-top: 13px;
 }
@@ -5119,7 +5137,7 @@ select {
   content: '';
   width: 15px;
   height: 15px;
-  background-position: -102px -209.5px;
+  background-position: -188px -209.5px;
   display: block;
   position: absolute;
   top: 2px;
@@ -5130,7 +5148,7 @@ select {
   content: '';
   width: 15px;
   height: 15px;
-  background-position: -77px -209.5px;
+  background-position: -163px -209.5px;
   display: block;
   position: absolute;
   top: 2px;
@@ -5141,7 +5159,7 @@ select {
   content: '';
   width: 15px;
   height: 15px;
-  background-position: -52px -209.5px;
+  background-position: -213px -209.5px;
   display: block;
   position: absolute;
   top: 2px;
@@ -5310,7 +5328,7 @@ select {
   top: 0;
   width: 25px;
   height: 25px;
-  background-position: -242.5px 0px;
+  background-position: -242.5px -80px;
 }
 
 .serv_wrap .serv_review_wrap .review_list li {
@@ -5372,7 +5390,7 @@ select {
   content: '';
   width: 15px;
   height: 15px;
-  background-position: -102px -209.5px;
+  background-position: -188px -209.5px;
   position: absolute;
   top: 50%;
   left: 0;
@@ -5413,7 +5431,7 @@ select {
   content: '';
   width: 12px;
   height: 16px;
-  background-position: -277.5px -28px;
+  background-position: -285.5px -28px;
   position: absolute;
   left: 50%;
   top: 50%;
@@ -5446,7 +5464,7 @@ select {
   content: '';
   width: 25px;
   height: 25px;
-  background-position: -202px -149.5px;
+  background-position: -242.5px -115px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -5468,7 +5486,7 @@ select {
   content: '';
   width: 25px;
   height: 25px;
-  background-position: -242.5px -35px;
+  background-position: -242.5px -150px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -5502,7 +5520,7 @@ select {
   margin-top: -4px;
   width: 10px;
   height: 6px;
-  background-position: -277.5px -137px;
+  background-position: -285.5px -137px;
 }
 
 .profile_wrap {
@@ -5539,6 +5557,19 @@ select {
   content: '';
   width: 33px;
   height: 33px;
+  background-position: -242.5px 0px;
+  display: block;
+}
+
+.profile_wrap .pf_photo_wrap .pf_photo_change.type2 {
+  width: 35px;
+  height: 35px;
+}
+
+.profile_wrap .pf_photo_wrap .pf_photo_change.type2:after {
+  content: '';
+  width: 35px;
+  height: 35px;
   background-position: -195px -84.5px;
   display: block;
 }
@@ -5569,7 +5600,7 @@ select {
   display: block;
   width: 16px;
   height: 17px;
-  background-position: 0px -209.5px;
+  background-position: -111px -209.5px;
   position: absolute;
   top: 5px;
   left: 0;
@@ -5580,7 +5611,7 @@ select {
   display: block;
   width: 13px;
   height: 18px;
-  background-position: -277.5px 0px;
+  background-position: -285.5px 0px;
   position: absolute;
   top: 5px;
   left: 0;
@@ -5639,6 +5670,74 @@ select {
 
 .list_btn_wrap li {
   border-bottom: 1px solid #efefef;
+}
+
+.position_cont .txt_desc {
+  font-size: 15px;
+  line-height: 23px;
+}
+
+.position_cont .txt_desc em {
+  color: #ff5c5c;
+}
+
+.position_cont .photo_area {
+  position: relative;
+}
+
+.position_cont .photo_area .photo {
+  min-height: 220px;
+  overflow: hidden;
+  margin-right: -24px;
+}
+
+.position_cont .photo_area .photo img {
+  width: 100%;
+}
+
+.position_cont .photo_area .pf_photo_change {
+  font-size: 0;
+  position: absolute;
+  top: -25px;
+  right: -10px;
+  width: 50px;
+  height: 50px;
+}
+
+.position_cont .photo_area .pf_photo_change:after {
+  content: '';
+  width: 50px;
+  height: 50px;
+  background-position: -60px -149.5px;
+  display: block;
+}
+
+.heder_area {
+  position: relative;
+}
+
+.heder_area .sub_tit {
+  font-size: 19px;
+  font-weight: 700;
+  position: relative;
+  padding-bottom: 16px;
+}
+
+.heder_area .sub_tit::before {
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 2px;
+  background: #000;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.heder_area .btn_more {
+  position: absolute;
+  right: 0;
+  top: -7px;
 }
 
 /* ================== 로그인 ========================= */
@@ -5778,7 +5877,7 @@ select {
   position: relative;
   width: 5px;
   height: 9px;
-  background-position: -277.5px -211px;
+  background-position: -285.5px -211px;
   display: block;
 }
 
@@ -5910,7 +6009,7 @@ input[type="radio"].type_btn_radio + label {
   margin: -2px 0 0 2px;
   width: 11px;
   height: 13px;
-  background-position: -277.5px -54px;
+  background-position: -285.5px -54px;
 }
 
 .main section.main_card {
@@ -5947,7 +6046,7 @@ input[type="radio"].type_btn_radio + label {
   display: block;
   width: 21px;
   height: 20px;
-  background-position: -242.5px -70px;
+  background-position: -136px -51.5px;
   margin-bottom: 9px;
 }
 
@@ -6191,13 +6290,13 @@ input[type="radio"].type_btn_radio + label {
   margin-top: -6px;
   width: 14px;
   height: 13px;
-  background-position: -153px -209.5px;
+  background-position: -47.5px -240.5px;
 }
 
 .thum_list li .btn_like.on::before {
   width: 16px;
   height: 14px;
-  background-position: -127px -209.5px;
+  background-position: -238px -209.5px;
 }
 
 .thum_list.big_type li {
@@ -6236,14 +6335,14 @@ input[type="radio"].type_btn_radio + label {
 .thum_list.big_type li .btn_like::before {
   width: 18px;
   height: 17px;
-  background-position: -136px -51.5px;
+  background-position: -55px -209.5px;
   margin-top: -7px;
 }
 
 .thum_list.big_type li .btn_like.on::before {
   width: 18px;
   height: 17px;
-  background-position: -242.5px -161px;
+  background-position: -195.5px -51.5px;
 }
 
 .banner_zone {
