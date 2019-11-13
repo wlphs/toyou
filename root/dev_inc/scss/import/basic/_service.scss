@@ -116,3 +116,9 @@
         &:after {content:''; position: absolute; right:10px; top:50%; margin-top:-4px; @include sp_icons($arrow_down_sm);}
      }
 }
+
+//취소환불정책
+.txt_policy {
+    dt { font-size: 17px; font-weight: 500; margin-bottom: 10px;}
+    dd { font-size: 15px; line-height:23px; word-break: keep-all; }
+}
