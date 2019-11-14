@@ -233,7 +233,7 @@ a, span, i, em {
   background-size: 90px 85px;
 }
 
-.icon_label, .btn_menu_arrow:after, .btn_more:after, .btn_more.red:after, .btn_more_point:after, .btn_arrow_type:after, .accordion-list > li .header-area .acc_btn:after, .trp.popupfixed-wrap .btn_close:after, .trp.popupfixed-wrap .caution_wrap:after, .header .top_bar .history_back:before, .header .top_bar .btn_share:after, .header .top_bar .btn_like:after, .header .top_bar .btn_search:before, #footer .opne_text:after, .top_scroll::before, .chatting_area .chatting_list > li .icon, .serv_wrap .serv_detail .serv_info .reaction li.like:after, .serv_wrap .serv_detail .serv_info .reaction li.review:after, .serv_wrap .serv_detail .serv_info .reaction li.reply:after, .serv_wrap .serv_review_wrap .review_total_like .like_count:after, .serv_wrap .serv_review_wrap .review_list li .writer .review_like .btn_review_like:after, .movieWrap .movie_play:after, .service_bottom .btn_chat:after, .service_bottom .btn_tel:after, .review_more_wrap .btn_review_more:after, .profile_wrap .pf_photo_wrap .pf_photo_change:after, .profile_wrap .pf_photo_wrap .pf_photo_change.type2:after, .profile_wrap .pf_manage a.btn_edit_pf:after, .profile_wrap .pf_manage a.btn_edit_cert:after, .position_cont .photo_area .pf_photo_change:after, .profile_photo_wrap .pf_photo_change:after, .agree_list li .agree_view:after, .main_header .h1_logo, .main_header .location_top::before, .main section.main_card .big_banner .txt em, .thum_list li .btn_like::before, .thum_list li .btn_like.on::before, .thum_list.big_type li .btn_like::before, .thum_list.big_type li .btn_like.on::before {
+.icon_label, .btn_menu_arrow:after, .btn_more:after, .btn_more.red:after, .btn_more_point:after, .btn_arrow_type:after, .accordion-list > li .header-area .acc_btn:after, .trp.popupfixed-wrap .btn_close:after, .trp.popupfixed-wrap .caution_wrap:after, .trp.popupfixed-wrap .share_wrap .share_list li .btn_facebook:after, .trp.popupfixed-wrap .share_wrap .share_list li .btn_kakao:after, .trp.popupfixed-wrap .share_wrap .share_list li .btn_share:after, .header .top_bar .history_back:before, .header .top_bar .btn_share:after, .header .top_bar .btn_like:after, .header .top_bar .btn_search:before, #footer .opne_text:after, .top_scroll::before, .chatting_area .chatting_list > li .icon, .serv_wrap .serv_detail .serv_info .reaction li.like:after, .serv_wrap .serv_detail .serv_info .reaction li.review:after, .serv_wrap .serv_detail .serv_info .reaction li.reply:after, .serv_wrap .serv_review_wrap .review_total_like .like_count:after, .serv_wrap .serv_review_wrap .review_list li .writer .review_like .btn_review_like:after, .movieWrap .movie_play:after, .service_bottom .btn_chat:after, .service_bottom .btn_tel:after, .review_more_wrap .btn_review_more:after, .profile_wrap .pf_photo_wrap .pf_photo_change:after, .profile_wrap .pf_photo_wrap .pf_photo_change.type2:after, .profile_wrap .pf_manage a.btn_edit_pf:after, .profile_wrap .pf_manage a.btn_edit_cert:after, .position_cont .photo_area .pf_photo_change:after, .profile_photo_wrap .pf_photo_change:after, .agree_list li .agree_view:after, .main_header .h1_logo, .main_header .location_top::before, .main section.main_card .big_banner .txt em, .thum_list li .btn_like::before, .thum_list li .btn_like.on::before, .thum_list.big_type li .btn_like::before, .thum_list.big_type li .btn_like.on::before {
   background-image: url("../images/common/sp_icons.png");
   background-size: 298.5px 282.5px;
 }
@@ -2819,6 +2819,12 @@ table.bottom_bar {
   color: #fff;
 }
 
+.btn.btn_gray2 {
+  background: #c8c8c8;
+  border: 1px solid #c8c8c8;
+  color: #fff;
+}
+
 /*
 .btn.btn_line_default { 
     background:transparent; border:1px solid $colorB; color:$colorB;
@@ -3651,7 +3657,7 @@ table.bottom_bar {
 
 .trp.popupfixed-wrap .popup-layer {
   position: relative;
-  z-index: 1;
+  z-index: 20;
   display: inline-block;
   *display: inline;
   zoom: 1;
@@ -3790,6 +3796,77 @@ table.bottom_bar {
   text-align: center;
   font-size: 13px;
   margin-bottom: 20px;
+}
+
+.trp.popupfixed-wrap .share_wrap {
+  padding: 25px;
+}
+
+.trp.popupfixed-wrap .share_wrap .tit {
+  text-align: center;
+  font-size: 21px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.trp.popupfixed-wrap .share_wrap .txt {
+  text-align: center;
+  font-size: 13px;
+  margin-bottom: 20px;
+}
+
+.trp.popupfixed-wrap .share_wrap .share_list {
+  padding-bottom: 20px;
+}
+
+.trp.popupfixed-wrap .share_wrap .share_list:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.trp.popupfixed-wrap .share_wrap .share_list li {
+  float: left;
+  width: 33.33333%;
+  padding-top: 66px;
+  position: relative;
+  text-align: center;
+}
+
+.trp.popupfixed-wrap .share_wrap .share_list li .btn_facebook:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -27px;
+  width: 55px;
+  height: 55px;
+  background-position: -65px -84.5px;
+  display: block;
+}
+
+.trp.popupfixed-wrap .share_wrap .share_list li .btn_kakao:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -27px;
+  width: 55px;
+  height: 55px;
+  background-position: 0px -84.5px;
+  display: block;
+}
+
+.trp.popupfixed-wrap .share_wrap .share_list li .btn_share:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -27px;
+  width: 55px;
+  height: 55px;
+  background-position: -130px -84.5px;
+  display: block;
 }
 
 .trp.popupfixed-wrap .bottom_set {

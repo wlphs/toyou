@@ -20,7 +20,7 @@
 						<a href="javascript:history.go(-1);" class="history_back"><span class="hide">이전페이지로 이동</span></a> 
 					</div>
 					<div class="top_right">
-                        <button class="btn_share"><span class="hide">공유하기</span></button>
+                        <button class="btn_share js-share"><span class="hide">공유하기</span></button>
                         <span class="serv_like_wrap">
                             <button class="btn_like"><span class="hide">좋아요</span></button><span class="link_num">100</span>
                         </span>
@@ -272,7 +272,38 @@
         
 		<!-- //container -->
 		@@include('../../include/_toolbar.html')
-	</div>
+    </div>
+    
+
+    
+    
+	<div id="pop_share" class="trp popupfixed-wrap">
+        <div class="popup-align">
+            <div class="popup-vertical caution">
+                <div class="popup-layer " style="width:100%;">
+                    <section class="section pd0" style="display: block;">
+                        <div class="cont_inner share_wrap">
+                            <p class="tit">공유하기</p>
+                            <p class="txt">[메이크업ㆍ명상] 이너뷰티 - 센스있는 네일 디자인 해드려요.</p>
+                            <ul class="share_list">
+                                <li>
+                                    <button class="btn_facebook">페이스북</button>
+                                </li>
+                                <li>
+                                    <button class="btn_kakao">카카오톡</button>
+                                </li>
+                                <li>
+                                    <button class="btn_share">공유</button>
+                                </li>
+                            </ul>
+                            <button class="btn btn_lg btn_gray2 btn_block js-closepop">취소</button>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+    
 <script>
     
 		var swiper_001 = new Swiper('.swiper-container.main', {
@@ -284,7 +315,39 @@
 			},
         })
         
+        $("#pop_share").dialog({
+            autoOpen: false,
+            modal: true,
+            width:'100%',
+            position: { my: "bottom", at: "bottom" },
+            create : function(event) {
+                $(".js-share").on("click", function() {
+                    modalFixedControl.open($(event.target));
+                    $(event.target).dialog("open");
+                    return false;
+                });
+            },
+            resizable: false,
+            open : function (event) {
+                $('.js-closepop', $(event.target)).off('click').on('click', function() {
+                    $(event.target).dialog( "close" );
+                    return false;
+                })
+            },
+            close: function() {
+                modalFixedControl.close();
+            }
+        });
 
+        $('.tab_wrap .tab_btn a').on('click', function() {
+            var id = $(this).attr('href');
+            $('.tab_cont').removeClass('on');
+            $('.tab_cont'+id).addClass('on');
+
+            $('.tab_wrap .tab_btn').removeClass('on');
+            $(this).closest('.tab_btn').addClass('on');
+            return false;
+        })
         // tab1
         $(window).on('load', function() {
             ellipsis_chk()

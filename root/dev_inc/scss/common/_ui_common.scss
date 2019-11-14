@@ -30,6 +30,9 @@
 .btn.btn_gray { 
     background:#777; border:1px solid #777; color:#fff;
 }
+.btn.btn_gray2 { 
+    background:#c8c8c8; border:1px solid #c8c8c8; color:#fff;
+}
 
 /*
 .btn.btn_line_default { 
@@ -333,7 +336,7 @@
         display: table-cell;width: 100%;padding: 0;
         text-align: center;vertical-align: middle;
     }
-    .popup-layer {   position: relative; z-index: 1; display: inline-block;*display: inline;zoom: 1;background: #fff;}
+    .popup-layer {   position: relative; z-index: 20; display: inline-block;*display: inline;zoom: 1;background: #fff;}
     .btn_close { position: absolute;top: 0px;right: 0px; 
         width: 50px; height: 60px; margin: 0; 
         font-size: 0px; line-height: 1; color: transparent; box-sizing: border-box;
@@ -370,6 +373,23 @@
         &:after {content:''; position: absolute; top:0; left:50%; margin-left:-20px; margin-top:-20px; @include sp_icons($ic_pop_caution)}
         .tit {text-align: center; font-size:19px; font-weight: 700; margin-bottom:10px;}
         .txt {text-align: center; font-size:13px; margin-bottom:20px;}
+    }
+    .share_wrap { padding:25px;
+        .tit {text-align: center; font-size:21px; font-weight: 700; margin-bottom:10px;}
+        .txt {text-align: center; font-size:13px; margin-bottom:20px;}
+        .share_list { @include clearfix(); padding-bottom:20px;
+            li {float:left; width:33.33333%; padding-top:66px; position: relative; text-align: center;
+                .btn_facebook:after {
+                    content:''; position: absolute; top:0; left:50%; margin-left: -27px; @include sp_icons($ic_share0); display:block;
+                }
+                .btn_kakao:after {
+                    content:''; position: absolute; top:0; left:50%; margin-left: -27px; @include sp_icons($ic_share1); display:block;
+                }
+                .btn_share:after {
+                    content:''; position: absolute; top:0; left:50%; margin-left: -27px; @include sp_icons($ic_share2); display:block;
+                }
+            }
+        }
     }
     .bottom_set { margin-top: 20px;}
 }

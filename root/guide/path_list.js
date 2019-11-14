@@ -329,7 +329,7 @@ __CONSTANT_LIST = [
         dep2 		: '상세',
         dep3 		: '소개',
         url 		: '/html/basic/service/SV-0001.html',
-        pubUpdate 	: '2019-0000',
+        pubUpdate 	: '2019-1117',
         etc 		: '2019-1117',
     },
 	{
@@ -358,8 +358,8 @@ __CONSTANT_LIST = [
         dep2 		: '',
         dep3 		: '',
         dep4 		: '공유하기',
-        url 		: '/html/.html',
-        pubUpdate 	: '2019-0000',
+        url 		: '/html/basic/service/SV-0001.html',
+        pubUpdate 	: '2019-1117',
         etc 		: '2019-1117',
     },
 	{
@@ -367,8 +367,8 @@ __CONSTANT_LIST = [
         dep1 		: '',
         dep2 		: '',
         dep3 		: '서비스',
-        url 		: '/html/.html',
-        pubUpdate 	: '2019-0000',
+        url 		: '/html/basic/service/SV-0001.html',
+        pubUpdate 	: '2019-1117',
         etc 		: '2019-1117',
     },
 	{
@@ -376,8 +376,8 @@ __CONSTANT_LIST = [
         dep1 		: '',
         dep2 		: '',
         dep3 		: '리뷰',
-        url 		: '/html/.html',
-        pubUpdate 	: '2019-0000',
+        url 		: '/html/basic/service/SV-0001.html',
+        pubUpdate 	: '2019-1117',
         etc 		: '2019-1117',
     },
 	{
