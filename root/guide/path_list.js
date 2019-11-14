@@ -301,7 +301,7 @@ __CONSTANT_LIST = [
         dep1 		: '',
         dep2 		: '',
         dep3 		: '필터',
-        url 		: '/html/.html',
+        url 		: '/html/basic/service/SV-0004.html',
         pubUpdate 	: '2019-0000',
         etc 		: '2019-1117',
     },
