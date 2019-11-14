@@ -32,6 +32,8 @@
 }
 .btn.btn_gray2 { 
     background:#c8c8c8; border:1px solid #c8c8c8; color:#fff;
+.btn.btn_gray_w { 
+    background:#ccc; border:1px solid #ccc; color:#fff;
 }
 
 /*
@@ -117,8 +119,8 @@
 .btn_set-double { padding: 0px;
     &::after { content: ""; display: block; clear: both;}
     .btn_item { position: relative; width: 50%; float: left; a { width: 100%;} }
-    .btn_item:first-child { padding-right:5px; }
-    .btn_item:last-child  { padding-left:5px;  }
+    // .btn_item:first-child { padding-right:5px; }
+    // .btn_item:last-child  { padding-left:5px;  }
 }
 .btn_set-triple { padding: 0px;
     &::after { content: ""; display: block; clear: both;}
@@ -373,6 +375,7 @@
         &:after {content:''; position: absolute; top:0; left:50%; margin-left:-20px; margin-top:-20px; @include sp_icons($ic_pop_caution)}
         .tit {text-align: center; font-size:19px; font-weight: 700; margin-bottom:10px;}
         .txt {text-align: center; font-size:13px; margin-bottom:20px;}
+        .txt2 {text-align: center; font-size:15px; margin-bottom:20px;}
     }
     .share_wrap { padding:25px;
         .tit {text-align: center; font-size:21px; font-weight: 700; margin-bottom:10px;}

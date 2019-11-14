@@ -1525,7 +1525,7 @@ body {
 }
 
 .cont_inner.top_line {
-  border-top: 5px solid #f5f5f5;
+  border-top: 10px solid #f5f5f5;
   padding-top: 32px;
   margin-top: 35px;
 }
@@ -1542,7 +1542,7 @@ body {
 }
 
 .top_line {
-  border-top: 5px solid #f5f5f5;
+  border-top: 10px solid #f5f5f5;
 }
 
 /* ================== 3줄 말줄임 */
@@ -2819,9 +2819,15 @@ table.bottom_bar {
   color: #fff;
 }
 
+<<<<<<< HEAD
 .btn.btn_gray2 {
   background: #c8c8c8;
   border: 1px solid #c8c8c8;
+=======
+.btn.btn_gray_w {
+  background: #ccc;
+  border: 1px solid #ccc;
+>>>>>>> 46571bec25302855d666027ef2c173f4fadfbc77
   color: #fff;
 }
 
@@ -3114,14 +3120,6 @@ table.bottom_bar {
 
 .btn_set-double .btn_item a {
   width: 100%;
-}
-
-.btn_set-double .btn_item:first-child {
-  padding-right: 5px;
-}
-
-.btn_set-double .btn_item:last-child {
-  padding-left: 5px;
 }
 
 .btn_set-triple {
@@ -3798,6 +3796,7 @@ table.bottom_bar {
   margin-bottom: 20px;
 }
 
+<<<<<<< HEAD
 .trp.popupfixed-wrap .share_wrap {
   padding: 25px;
 }
@@ -3869,6 +3868,14 @@ table.bottom_bar {
   display: block;
 }
 
+=======
+.trp.popupfixed-wrap .caution_wrap .txt2 {
+  text-align: center;
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+
+>>>>>>> 46571bec25302855d666027ef2c173f4fadfbc77
 .trp.popupfixed-wrap .bottom_set {
   margin-top: 20px;
 }
@@ -4239,7 +4246,6 @@ input[type="text"].error, input[type="password"].error, input[type="number"].err
 textarea {
   width: 100%;
   height: 70px;
-  border: 1px solid #cccccc;
   padding: 8px 13px 8px;
   background-color: #f5f5f5;
   -webkit-appearance: none;
@@ -4247,7 +4253,6 @@ textarea {
 }
 
 .textarea-box {
-  border: 1px solid #cccccc;
   padding: 8px 13px 8px;
   background-color: #f5f5f5;
   -webkit-appearance: none;
@@ -4297,6 +4302,7 @@ label.error {
   font-size: 15px;
   font-weight: 500;
   text-align: right;
+  line-height: 23px;
 }
 
 input[type=number]::-webkit-inner-spin-button,
@@ -4850,7 +4856,7 @@ select {
   color: #000;
   line-height: 21px;
   font-weight: 400;
-  font-size: 13px;
+  font-size: 15px;
   height: 45px;
   padding: 10px 20px 10px 13px;
   margin: 0;
@@ -4885,7 +4891,7 @@ select {
 }
 
 .form_list dd .textarea-box textarea {
-  height: 100px;
+  height: 250px;
 }
 
 .header {
@@ -5188,22 +5194,14 @@ select {
   margin-top: 13px;
 }
 
-.chatting_area .chatting_list {
-  border: 1px solid red;
-}
-
 .chatting_area .chatting_list > li {
-  margin-top: 35px;
+  margin-top: 30px;
   position: relative;
   padding-left: 55px;
 }
 
 .chatting_area .chatting_list > li:first-child {
   margin-top: 0;
-}
-
-.chatting_area .chatting_list > li span {
-  display: inline-block;
 }
 
 .chatting_area .chatting_list > li .chat_img {
@@ -5214,6 +5212,7 @@ select {
   height: 45px;
   overflow: hidden;
   border-radius: 100%;
+  display: inline-block;
 }
 
 .chatting_area .chatting_list > li .chat_img img {
@@ -5225,14 +5224,65 @@ select {
   font-size: 15px;
   font-weight: 500;
   color: #000;
+  width: calc(100% - 70px);
 }
 
 .chatting_area .chatting_list > li .icon {
+  display: inline-block;
   width: 15px;
   height: 15px;
   background-position: -163px -209.5px;
   vertical-align: top;
   margin: 1px 0 0 5px;
+}
+
+.chatting_area .chatting_list > li .chat_category {
+  font-size: 13px;
+  color: #999999;
+  font-weight: 300;
+  display: block;
+  margin-top: 4px;
+}
+
+.chatting_area .chatting_list > li .chat_view {
+  display: inline-block;
+  color: #010101;
+  font-size: 13px;
+  position: relative;
+  margin-top: 14px;
+  width: 100%;
+}
+
+.chatting_area .chatting_list > li .chat_view .txt {
+  padding-right: 70px;
+  display: inline-block;
+  width: calc(100% - 70px);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.chatting_area .chatting_list > li .chat_view .count {
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 10px;
+  font-weight: 500;
+  color: #fff;
+  background: #ff5c5c;
+  height: 17px;
+  line-height: 17px;
+  border-radius: 15px;
+  min-width: 28px;
+  text-align: center;
+}
+
+.chatting_area .chatting_list > li .time {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 13px;
+  color: #999999;
 }
 
 .serv_visual img {
@@ -5683,6 +5733,18 @@ select {
   width: 10px;
   height: 6px;
   background-position: -285.5px -157px;
+}
+
+.txt_policy dt {
+  font-size: 17px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.txt_policy dd {
+  font-size: 15px;
+  line-height: 23px;
+  word-break: keep-all;
 }
 
 .profile_wrap {
