@@ -5295,7 +5295,7 @@ select {
 }
 
 .chatting_area {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .chatting_area .chatting_list > li {
@@ -7217,6 +7217,9 @@ input[type="radio"].type_btn_radio + label {
 
 .thum_list.service {
   margin-left: 13px;
+  display: table;
+  padding-bottom: 20px;
+  border: 1px solid red;
 }
 
 .thum_list.service li {
