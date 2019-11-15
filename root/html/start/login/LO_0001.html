@@ -45,12 +45,12 @@
                         <dl class="form_list">
                             <dt>이메일 주소</dt>
                             <dd>
-                                <input type="text" placeholder="이메일 주소를 입력해 주세요." name="email" data-rule-required="true" data-rule-email="true" data-msg-required="* 이메일 주소를 입력해 주세요" data-msg-email="* 이메일 주소 형식에 맞게 입력해 주세요">
+                                <input type="text" class="js-id" placeholder="이메일 주소를 입력해 주세요." name="email" data-rule-required="true" data-rule-email="true" data-msg-required="이메일 주소를 입력해 주세요" data-msg-email="이메일 주소 형식에 맞게 입력해 주세요">
                             </dd>
                             <dt>비밀번호</dt>
                             <dd>
-                                <input type="password" placeholder="영문, 숫자 혼합 8~16자로 입력해 주세요.">
-                                <p class="error_txt">* 비밀번호를 입력해 주세요.</p>
+                                <input type="password" class="js-pwd" placeholder="영문, 숫자 혼합 8~16자로 입력해 주세요." required data-msg-required="비밀번호를 입력해 주세요">
+                                <!-- <p class="error_txt ">* 비밀번호를 입력해 주세요.</p> -->
                             </dd>
                         </dl>
 
@@ -62,7 +62,7 @@
                     </div>
                     <div class="btn_bottom_fixed">
                         <div class="fixed_wrap">
-                            <a href="#" class="btn btn_llg btn_point btn_block">로그인</a>
+                            <a href="#" class="btn btn_llg btn_gray btn_block js-login">로그인</a>
                         </div>
                     </div>
                 </form>
@@ -84,6 +84,19 @@
     </div>
     <script>
         $("#test1").validate();
+        $('.form_list input').on('change', function() {
+            if ($('.js-id').val() && $('.js-pwd').val()) {
+                $('.js-login').addClass('btn_point');
+                $('.js-login').removeClass('btn_gray');
+            } else {
+                $('.js-login').removeClass('btn_point');
+                $('.js-login').addClass('btn_gray');
+            }
+        })
+        $('.js-login').on('click', function() {
+            if (!$(this).hasClass('btn_point')) return false;
+            $("#test1").submit();
+        })
     </script>
 
 </body>
