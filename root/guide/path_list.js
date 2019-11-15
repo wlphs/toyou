@@ -429,7 +429,7 @@ __CONSTANT_LIST = [
         dep3 		: '',
         url 		: '/html/.html',
         pubUpdate 	: '2019-0000',
-        etc 		: '2019-1120',
+        etc 		: '2019-1117',
     },
 	{
         stateLine   : "", 
@@ -438,7 +438,7 @@ __CONSTANT_LIST = [
         dep3 		: '카카오톡 안심 메시지 발송',
         url 		: '/html/.html',
         pubUpdate 	: '2019-0000',
-        etc 		: '2019-1120',
+        etc 		: '2019-1117',
     },
 	{
         stateLine   : "", 
@@ -447,7 +447,7 @@ __CONSTANT_LIST = [
         dep3 		: '',
         url 		: '/html/basic/chatting/CH_0001.html',
         pubUpdate 	: '2019-0000',
-        etc 		: '2019-1120',
+        etc 		: '2019-1117',
     },
 	{
         stateLine   : "", 
@@ -456,7 +456,7 @@ __CONSTANT_LIST = [
         dep3 		: '',
         url 		: '/html/basic/chatting/CH_0002.html',
         pubUpdate 	: '2019-0000',
-        etc 		: '2019-1120',
+        etc 		: '2019-1117',
     },
 	{
         stateLine   : "", 
@@ -465,7 +465,7 @@ __CONSTANT_LIST = [
         dep3 		: '',
         url 		: '/html/basic/mypage/MY-0001.html',
         pubUpdate 	: '2019-0000',
-        etc 		: '2019-1120',
+        etc 		: '2019-1117',
     },
 	{
         stateLine   : "", 
@@ -474,7 +474,7 @@ __CONSTANT_LIST = [
         dep3 		: '',
         url 		: '/html/basic/mypage/MY-0002.html',
         pubUpdate 	: '2019-0000',
-        etc 		: '2019-1120',
+        etc 		: '2019-1117',
     },
 	{
         stateLine   : "", 
@@ -483,7 +483,7 @@ __CONSTANT_LIST = [
         dep3 		: '',
         url 		: '/html/basic/mypage/MY-0003.html',
         pubUpdate 	: '2019-0000',
-        etc 		: '2019-1120',
+        etc 		: '2019-1117',
     },
 	{
         stateLine   : "", 
@@ -492,7 +492,7 @@ __CONSTANT_LIST = [
         dep3 		: '',
         url 		: '/html/basic/mypage/MY-0004.html',
         pubUpdate 	: '2019-0000',
-        etc 		: '2019-1120',
+        etc 		: '2019-1117',
     },
 	{
         stateLine   : "", 
@@ -501,7 +501,7 @@ __CONSTANT_LIST = [
         dep3 		: '비밀번호 변경',
         url 		: '/html/basic/mypage/MY-0005.html',
         pubUpdate 	: '2019-0000',
-        etc 		: '2019-1120',
+        etc 		: '2019-1117',
     },
 	{
         stateLine   : "", 
@@ -510,7 +510,7 @@ __CONSTANT_LIST = [
         dep3 		: '휴대폰번호 변경',
         url 		: '/html/basic/mypage/MY-0006.html',
         pubUpdate 	: '2019-0000',
-        etc 		: '2019-1120',
+        etc 		: '2019-1117',
     },
 	{
         stateLine   : "", 
