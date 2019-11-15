@@ -43,11 +43,11 @@
                         <p class="tit_desc mt15">이메일 주소는 아이디로 사용됩니다.</p>
                     </div>
                     <div class="join_cont cont_inner">
-                        <input type="text" placeholder="moongmoong@gmail.com" name="email" data-rule-required="true" data-rule-email="true" data-msg-required="* 이메일을 입력해주세요." data-msg-email="* 유효한 이메일 주소가 아닙니다.">
+                        <input type="text" class="js-email" placeholder="moongmoong@gmail.com" name="email" data-rule-required="true" data-rule-email="true" data-msg-required="이메일을 입력해주세요." data-msg-email="유효한 이메일 주소가 아닙니다.">
                     </div>
                     <div class="btn_bottom_fixed">
                         <div class="fixed_wrap">
-                            <a href="#" class="btn btn_llg btn_point btn_block">다음</a>
+                            <a href="#" class="btn btn_llg btn_gray btn_block js-next">다음</a>
                         </div>
                     </div>
                 </form>
@@ -69,6 +69,21 @@
     </div>
     <script>
         $("#test1").validate();
+
+
+        $('.js-email').on('keyup', function() {
+            if ($(this).val()) {
+                $('.js-next').addClass('btn_point');
+                $('.js-next').removeClass('btn_gray');
+            } else {
+                $('.js-next').removeClass('btn_point');
+                $('.js-next').addClass('btn_gray');
+            }
+        })
+        $('.js-next').on('click', function() {
+            if (!$(this).hasClass('btn_point')) return false;
+
+        })
     </script>
 
 </body>

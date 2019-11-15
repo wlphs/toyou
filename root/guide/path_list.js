@@ -138,7 +138,7 @@ __CONSTANT_LIST = [
         dep1 		: '',
         dep2 		: '',
         dep3 		: '전문가로 가입하기',
-        url 		: '',
+        url 		: '/html/start/join/JO-0000.html',
         pubUpdate 	: '2019-0000',
         etc 		: '2019-1113', 
     },

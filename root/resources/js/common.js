@@ -5,8 +5,9 @@ function openSnippet(msg) {
     var ran = Math.floor(1e7 * Math.random());
     $("body").append('<div class="snippet_wrap js-snippet_wrap' + ran + '"><p class="snippet_cont">' + msg + "</p></div>");
     var snippet = $(".js-snippet_wrap" + ran);
-    snippet.animate({
-        "margin-top": -snippet.innerHeight()
+    $("#contents .btn_bottom_fixed").length && snippet.css("bottom", $("#contents .btn_bottom_fixed").innerHeight()), 
+    $(".snippet_cont", snippet).animate({
+        top: 0
     }, 300).delay(2e3).fadeOut(300, function() {
         snippet.remove();
     });
