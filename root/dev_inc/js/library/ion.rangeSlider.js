@@ -317,6 +317,7 @@
             prefix: "",
             postfix: "",
             max_postfix: "",
+            max_postfix_price: "",
             decorate_both: true,
             values_separator: " — ",
 
@@ -386,6 +387,7 @@
             prefix: $inp.data("prefix"),
             postfix: $inp.data("postfix"),
             max_postfix: $inp.data("maxPostfix"),
+            max_postfix_price: $inp.data("maxPostfixPrice"),
             decorate_both: $inp.data("decorateBoth"),
             values_separator: $inp.data("valuesSeparator"),
 
@@ -2118,7 +2120,6 @@
             }
 
             decorated += num;
-
             if (o.max_postfix) {
                 if (o.values.length && num === o.p_values[o.max]) {
                     decorated += o.max_postfix;
@@ -2126,7 +2127,13 @@
                         decorated += " ";
                     }
                 } else if (original === o.max) {
+                    
+            if (o.max_postfix_price) {
+                console.log('decorate' , o.max_postfix_price)
+                return o.max_postfix_price;
+            }
                     decorated += o.max_postfix;
+                    return decorated;
                     if (o.postfix) {
                         decorated += " ";
                     }
