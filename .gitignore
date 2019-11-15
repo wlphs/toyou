@@ -4,3 +4,4 @@ root/resources/js/maps/common.js.map
 root/resources/css/common.min.css
 root/resources/css/maps/common.css.map
 package-lock.json
+root/.vscode/tasks.json
