@@ -75,11 +75,35 @@
 .btn_more { font-size: 14px; padding: 10px; position: relative; display:inline-block; 
     &:after { content:''; display:inline-block; position: absolute; right:0; top: 50%; margin-top:-4px; @include sp_icons($arrow_more2);}
 
-    &.red { font-size: 15px; color:#ff5c5c; padding-right: 16px; font-weight: 500;
+    &.red { font-size: 15px; color:$colorP; padding-right: 16px; font-weight: 500;
         &:after { content:''; display:inline-block; position: absolute; right:0; top: 50%; margin-top:-5px; @include sp_icons($arrow_more_r);}
     }
 }
 
+//카메라버튼
+.btn_file { position: relative; font-size: 0; text-align: center; background:#f5f5f5; width: 55px; height: 55px; line-height: 55px; display:inline-block;
+    &::before { content:''; display:inline-block; @include sp_icons($icon_camera); vertical-align: middle; }
+}
+//신고하기버튼
+.btn_report { color:$colorP; font-size: 14px; display:inline-block; font-weight: 500; padding:5px 0 5px 0;
+    &::before { content:''; display:inline-block; @include sp_icons($icon_report); margin-right: 8px;}
+}
+//전체보기
+.btn_all_more { padding:5px 20px 5px 0; font-size:14px; font-weight: 500; position: relative;
+    &:after {content:''; position: absolute; right:0; top:50%; margin-top:-4px; @include sp_icons($arrow_down_sm); transform :rotate(0deg); transition: .2s transform;}
+}
+//신고하기버튼
+.btn_filter { font-size: 14px; display:inline-block; font-weight: 500; padding:5px 0 5px 0;
+    &::before { content:''; display:inline-block; @include sp_icons($icon_filter); vertical-align:top; margin:2px 8px 0 0;}
+}
+//전체삭제
+.btn_del { font-size: 14px; display:inline-block; font-weight: 500; padding:5px 0 5px 0;
+    &::before { content:''; display:inline-block; @include sp_icons($icon_del); vertical-align:top; margin:2px 8px 0 0;}
+}
+
+  
+
+  
 
 // 버튼 정열
 .btn_bottom { position: relative; padding-top: 30px; @include clearfix();

@@ -26,8 +26,16 @@
         <header id="header" class="header">
             <div class="header_fixed_group">
                 <div class="top_bar">
+                    <div class="locations">
+                        <div class="view_page">
+                            <h1 class="sub_title">장바구니</h1>
+                        </div>
+                    </div>
                     <div class="top_left">
                         <a href="javascript:history.go(-1);" class="history_back"><span class="hide">이전페이지로 이동</span></a>
+                    </div>
+                    <div class="top_right">
+                        <a href="#none" class="btn_del">전체삭제</a>
                     </div>
                 </div>
             </div>
@@ -37,22 +45,76 @@
         <!-- container -->
         <div id="container">
             <div id="contents">
-                <div class="sub_title cont_inner pb25">
-                    <h1 class="h1"><em>인증하고 신분 인증 뱃지를</em><br />받으세요.</h1>
-                    <p class="tit_desc mt15">신분증 제출을 통한 신원 인증을 통해 투유 서비스의 안전을 강화합니다. 신분증은 투유에서 확인용도로만 사용되며, 공개되지 않습니다.</p>
-                </div>
-                <div class="position_cont cont_inner pb35">
-                    <div class="photo_area">
-                        <p class="photo"><img src="/resources/images/temp/@temp22.png" alt=""></p>
-                        <button class="pf_photo_change js-photo">이미지 변경</button>
+                <div class="profile_wrap">
+                    <div class="pf_photo_wrap">
+                        <div class="pf_photo">
+                            <img src="/resources/images/temp/@temp_profile.png" alt="">
+                        </div>
                     </div>
-                    <p class="txt_desc mt20"><em>주민등록증, 운전면허증, 여권</em> 등의 사진을 등록해 주세요. 주민번호 뒷자리는 가리셔도 됩니다.</p>
+                    <p class="pf_name pb5">이너뷰티</p>
+                    <div class="pf_manage">
+                        센스있는 네일 디자인 해드려요.
+                    </div>
                 </div>
+
+                <div class="pb30">
+                    <div class="cont_inner_right">
+                        <div class="shopping_basket mt50">
+                            <h2>힐링&테라피</h2>
+                            <ul class="shopping_list mt15">
+                                <li>
+                                    <div class="list_name">
+                                        <p class="name">
+                                            <b>[메이크업]특별한 날을 위한 헤어, 메이크업</b>
+                                            2019-11-16(목) / 오후 12:30~02:30 (2시간)
+                                            <em class="price">100,000원</em>
+                                        </p>
+                                        <button class="txt_del" type="button">삭제</button>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="cont_inner_right top_line">
+                        <div class="shopping_basket">
+                            <h2 class="mt30">뷰티</h2>
+                            <ul class="shopping_list mt15">
+                                <li>
+                                    <div class="list_name">
+                                        <p class="name">
+                                            <b>[메이크업]특별한 날을 위한 헤어, 메이크업</b>
+                                            2019-11-16(목) / 오후 12:30~02:30 (2시간)
+                                            <em class="price">100,000원</em>
+                                        </p>
+                                        <button class="txt_del" type="button">삭제</button>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="list_name">
+                                        <p class="name">
+                                            <b>[메이크업]특별한 날을 위한 헤어, 메이크업특별한 날을 위한 헤어, 메이크업</b>
+                                            2019-11-16(목) / 오후 12:30~02:30 (2시간)
+                                            <em class="price">100,000원</em>
+                                        </p>
+                                        <button class="txt_del" type="button">삭제</button>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="more_wrap">
+                        <button class="btn_all_more"><span class="txt">추가하기</span></button>
+                    </div>
+                </div>
+
                 <div class="btn_bottom_fixed">
                     <div class="fixed_wrap">
-                        <a href="#" class="btn btn_llg btn_point btn_block">제출하기</a>
+                        <a href="#" class="btn btn_llg btn_point btn_block">서비스 예약하기</a>
                     </div>
                 </div>
+
             </div>
         </div>
 
@@ -69,6 +131,8 @@
 </div> -->
         <a href="#none" class="top_scroll">위로 이동</a>
     </div>
+
+
     <div id="getPhoto" class="trp popupfixed-wrap">
         <div class="popup-align">
             <div class="popup-vertical">
@@ -129,7 +193,20 @@
                 modalFixedControl.close();
             }
         });
+
+
+        // 이미지를 동그란 영역에 맞춰 중앙 정렬
+        // 이미지가 변경될 때 아래 함수를 실행시켜 주세요
+        $('.pf_photo img').coverImage();
     </script>
+
+
+
+    <script>
+
+    </script>
+
+
 </body>
 
 </html>

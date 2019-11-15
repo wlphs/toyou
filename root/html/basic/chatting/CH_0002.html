@@ -28,11 +28,14 @@
                 <div class="top_bar">
                     <div class="locations">
                         <div class="view_page">
-                            <h1 class="sub_title">프로필 수정</h1>
+                            <h1 class="sub_title">채팅</h1>
                         </div>
                     </div>
                     <div class="top_left">
                         <a href="javascript:history.go(-1);" class="history_back"><span class="hide">이전페이지로 이동</span></a>
+                    </div>
+                    <div class="top_right">
+                        <a href="#none" class="btn_report">신고하기</a>
                     </div>
                 </div>
             </div>
@@ -42,46 +45,89 @@
         <!-- container -->
         <div id="container">
             <div id="contents">
-                <div class="profile_wrap pt0">
-                    <div class="pf_photo_wrap">
-                        <div class="pf_photo">
-                            <img src="/resources/images/temp/@temp_profile.png" alt="">
-                        </div>
-                        <button class="pf_photo_change type2 js-photo">이미지 변경</button>
+                <div class="cont_inner overhide">
+                    <div class="chatting_area mt20">
+                        <ul class="chatting_view">
+                            <li>
+                                <span class="photo_img"><img src="/resources/images/temp/@temp19.png" alt="" /></span>
+                                <p class="chat_name">안다미로안다미로안다미로</p>
+                                <div class="chat_area">
+                                    <div class="chat_view">
+                                        네 예약이 완료되었습니다.
+                                    </div>
+                                    <span class="time">2019.11.20</span>
+                                </div>
+                            </li>
+                            <li class="answer">
+                                <div class="chat_area">
+                                    <span class="time">2019.11.20</span>
+                                    <div class="chat_view">
+                                        네 예약이 완료되었습니다.
+                                    </div>
+
+                                </div>
+                            </li>
+                            <li class="line_date">
+                                <p class="chat_date">
+                                    <em>2019-11-15 (금)</em>
+                                </p>
+                            </li>
+                            <li>
+                                <span class="photo_img"><img src="/resources/images/temp/@temp19.png" alt="" /></span>
+                                <p class="chat_name">안다미로안다미로안다미로</p>
+                                <div class="chat_area">
+                                    <div class="chat_view">
+                                        안녕하세요, 얼굴 윤곽 마사지 전문 OO입니다.
+                                        다시 예약 문의를 보내주셔서 감사합니다.
+                                        요청하신 날짜로 예약 잡아드릴까요?
+                                    </div>
+                                    <span class="time">2019.11.20</span>
+                                </div>
+                            </li>
+                            <li class="answer">
+                                <div class="chat_area">
+                                    <span class="time">2019.11.20</span>
+                                    <div class="chat_view">
+                                        제가 갑자기 그 날 일이 생겨서 안 될 것 같아요.
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="photo_img"><img src="/resources/images/temp/@temp19.png" alt="" /></span>
+                                <p class="chat_name">안다미로안다미로안다미로</p>
+                                <div class="chat_area">
+                                    <div class="chat_view">
+                                        안녕하세요, 얼굴 윤곽 마사지 전문 OO입니다.
+                                        다시 예약 문의를 보내주셔서 감사합니다.
+                                        요청하신 날짜로 예약 잡아드릴까요?
+                                    </div>
+                                    <span class="time">2019.11.20</span>
+                                </div>
+                            </li>
+                            <li class="answer">
+                                <div class="chat_area">
+                                    <span class="time">2019.11.20</span>
+                                    <div class="chat_view">
+                                        제가 갑자기 그 날 일이 생겨서 안 될 것 같아요.
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
                 </div>
-
-                <div class="cont_inner mt35 mb35">
-                    <dl class="form_list">
-                        <dt>이름</dt>
-                        <dd>
-                            <input type="text" placeholder="" value="홍길동" readonly>
-                        </dd>
-                        <dt>이메일 주소</dt>
-                        <dd>
-                            <input type="text" placeholder="" value="ab2@naver.com">
-                        </dd>
-                        <dt>휴대폰 번호</dt>
-                        <dd>
-                            <span class="input_search">
-                                <input type="number" placeholder="휴대폰 번호를 입력해 주세요." value="" name="phone" data-rule-required="true" data-rule-phone="true" data-msg-required="" data-msg-phone="">
-                                <button class="btn btn_gray btn_lg" type="button">변경</button>
-                            </span>
-                            <p class="error_txt">실제 번호가 아닌 안심번호가 공개됩니다.</p>
-                        </dd>
-                        <dt>비밀번호</dt>
-                        <dd>
-                            <button class="btn btn_gray btn_lg w100p" type="button">비밀번호 변경하기</button>
-                        </dd>
-                    </dl>
-                </div>
-
 
                 <div class="btn_bottom_fixed">
                     <div class="fixed_wrap">
-                        <a href="#" class="btn btn_llg btn_point btn_block">저장하기</a>
+                        <div class="chat_fixed_file">
+                            <a href="#none" class="btn_file js-photo">파일첨부</a>
+                            <div class="input_btn">
+                                <input type="text" placeholder="메세지를 입력하세요.">
+                                <button class="btn btn_llg btn_point">전송</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
+
             </div>
         </div>
 
@@ -98,7 +144,6 @@
 </div> -->
         <a href="#none" class="top_scroll">위로 이동</a>
     </div>
-
 
     <div id="getPhoto" class="trp popupfixed-wrap">
         <div class="popup-align">

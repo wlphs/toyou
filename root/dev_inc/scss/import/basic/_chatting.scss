@@ -1,22 +1,102 @@
-.chatting_area{
+.chatting_area{ margin-bottom:20px;
     //채팅리스트
     .chatting_list { 
         >li { margin-top: 30px; position: relative; padding-left: 55px;
             &:first-child { margin-top:0;}
 
-            .chat_img { position: absolute; left:0; top:0; width: 45px; height: 45px; overflow:hidden; border-radius: 100%; display:inline-block;
+            .photo_img { position: absolute; left:0; top:0; width: 45px; height: 45px; overflow:hidden; border-radius: 100%; display:inline-block;
                 img { width:100%; height: 100%; }
             }
             .chat_name { font-size: 15px; font-weight: 500; color:#000; width: calc(100% - 70px);}
             .icon { display:inline-block; @include sp_icons($icon_label_s); vertical-align: top; margin: 1px 0 0 5px;}
             .chat_category { font-size: 13px; color:#999999; font-weight: 300; display:block;margin-top: 4px;}
-            .chat_view { display:inline-block; color:#010101; font-size: 13px; position: relative; margin-top: 14px; width: 100%;
+            .chat_view { display:inline-block; color:#010101; font-size: 13px; position: relative; margin-top: 12px; width: 100%;
                 .txt { padding-right: 70px; display:inline-block; width: calc(100% - 70px); overflow:hidden; text-overflow: ellipsis; white-space: nowrap;}
                 .count { position:absolute; right:0; top:0; font-size: 10px; font-weight: 500; color:#fff; background:#ff5c5c; height: 17px; line-height: 17px; border-radius:  15px; min-width: 28px; text-align: center; }
             }
             .time { position:absolute; top:0; right:0; font-size: 13px; color:#999999;}
         }
-    
     }
 
+    //채팅상세
+    .chatting_view {
+        >li { margin-top: 20px; position: relative; padding-left: 55px;
+            &:first-child { margin-top:0;}
+            .photo_img { position: absolute; left:0; top:0; width: 45px; height: 45px; overflow:hidden; border-radius: 100%; display:inline-block;
+                img { width:100%; height: 100%; }
+            }
+            .chat_name { font-size: 14px; font-weight: 500; color:#000; }
+            .chat_area {position: relative; padding: 0 0 0 5px; margin-top: 7px; 
+                &:after { content:''; clear:both; display:block; }
+                .chat_view { border:1px solid #e8e8e8; border-radius: 8px; padding: 13px; position: relative; display: inline-block; max-width: 74%; line-height:22px; letter-spacing: -0.05em;
+                    &::before { content:''; display:inline-block; position: absolute; left: -6px; top:-1px; @include sp_icons($icon_point_01); }
+                }
+            }
+            .time { color: #999999; display: inline-block; vertical-align: bottom; margin: 0 0 0 5px; font-size: 12px;}
+
+            //답변
+            &.answer { padding: 0 0 0 0; text-align: right;
+                .chat_area { padding:0 5px 0 0; 
+                    .chat_view { max-width: 77%; text-align:left; border:0px; background: url(/resources/images/common/point_bg.jpg); background-size: 100% 100%; color:#fff;
+                        &::before { left: auto; right: -6px; top:0; @include sp_icons($icon_point_02); }
+                    }
+                }
+                .time { margin:0  5px 0 0;}
+            }
+
+            //날짜경계
+            .chat_date { padding-right: 55px; text-align:center;
+                &::before { content:''; display:block; position:absolute; left:0; right:-50%; height: 1px; top:50%; z-index: -1;background: url(/resources/images/common/dot_line_hor.png) repeat-x bottom left;}
+                em { background:#fff;  padding: 0 10px; font-size: 12px; color:#000;}
+            
+            }
+        }
+    }
 }
+
+//채팅입력창
+.chat_fixed_file { background:#fff;
+    .btn_file { position:absolute; left:0; top:0;}
+    .input_btn { position: relative; margin-left: 56px;
+        input { width: calc( 100% - 68px); height: 55px;}
+        .btn { position: absolute; right:0;}
+    }
+}
+
+//알림내역
+.alarm_area{ 
+    .alarm_list {
+        >li { margin-top: 30px; position: relative; padding-left: 55px;
+            &::before { content:''; display:inline-block;  background: url(/resources/images/common/dot_line_hor.png) repeat-x bottom left; background-position: top; position:absolute; left:0; right:-50%; top:-20px; height: 1px;}
+            &:first-child { margin-top:0;
+                &::before { display:none;}
+            }
+            
+            .photo_img { position: absolute; left:0; top:0; width: 45px; height: 45px; overflow:hidden; border-radius: 100%; display:inline-block;
+                img { width:100%; height: 100%; }
+            }
+            .link { font-size: 14px; position: relative; display:block; padding-right:30px; word-break: keep-all; line-height: 22px;
+                &::before { content:''; display:inline-block; position:absolute; right:1px; top:50%; margin-top: -8px; @include sp_icons($arrow_more2);}
+                em { color:$colorP;}
+                .time { display:block; font-size: 12px; color:#000; font-weight: 300; margin-top: 5px; }
+            }
+        }
+    }
+}
+
+//알람타입선택
+.select_list {
+    &.on { 
+        .btn_all_more { 
+            &:after { transform :rotate(180deg);}
+        }
+        .select_alarm  { display: block;}
+    }
+}
+.select_alarm { display: none; position:absolute; top:50px; right: 25px; width: 120px; border-top:5px solid #fd5b5b; background:#f7f7f7; box-shadow: 4px 3px 10px 1px rgba(0, 0, 0, .1);
+    li { width:100%; height:50px; line-height:50px; font-size:14px; display:block; text-align: center;  background: url(/resources/images/common/dot_line_hor.png) repeat-x top left;
+        &:first-child { background:none;}
+        a { display:block;}
+    }
+}
+

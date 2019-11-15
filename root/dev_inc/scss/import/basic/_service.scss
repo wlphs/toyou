@@ -117,13 +117,15 @@
      }
 }
 
+.more_wrap {  text-align: center; border-top: 10px solid #f5f5f5; padding: 15px;
+    
+}
+ 
 //취소환불정책
 .txt_policy {
     dt { font-size: 17px; font-weight: 500; margin-bottom: 10px;}
     dd { font-size: 15px; line-height:23px; word-break: keep-all; }
 }
-
-
 
 
 .filter_wrap {
@@ -148,3 +150,52 @@
     &.js-grid-text-1 {margin-left:0 !important; margin-right:-10px; right:0; left:auto !important;}
 }
 .irs--modern.irs-with-grid {height:50px;}
+
+//서비스검색
+.service {
+    .service.thum_list { margin-left:20px;}
+}
+.list_category_main { position: relative; width: 100%; overflow-x: auto; overflow-y: hidden; white-space: nowrap; -webkit-overflow-scrolling: touch;
+    ul { width: 100%; font-size: 0; line-height: 0; white-space: nowrap; margin-left: 25px;border-bottom: 5px solid #f5f5f5;
+        li { position: relative; display: inline-block;clear: both; margin-left: 5px; 
+            &:first-child { margin-left: 0;
+                a { padding-left: 0;}
+            }
+            a { display:inline-block; color:#999; font-size: 14px; line-height: 26px; padding:0 12px 7px;}
+            &.on {
+                a { color:$colorP; position: relative;
+                    &::before { content:''; display:inline-block; position:absolute; left:0; bottom:-5px; right:0px; height: 5px; background:$colorP;}
+                }
+            }
+        }
+    }
+}
+.list_category_sub { position: relative; width: 100%; overflow-x: auto; overflow-y: hidden; white-space: nowrap; -webkit-overflow-scrolling: touch;
+    ul { width: 100%; font-size: 0; line-height: 0; white-space: nowrap; margin-left: 30px;
+        li { position: relative; display: inline-block;clear: both; margin-left: 5px;
+            &:first-child { margin-left: 0;}
+            a { display:inline-block; border:1px solid #e5e5e5; border-radius: 18px; color:#999; font-size: 12px; padding:0 15px; line-height:28px;}
+        }
+    }
+}
+
+
+//장바구니
+.shopping_basket {
+    h2 { font-size: 19px; font-weight:700;}
+    .shopping_list { border-top: 1px solid #05050b;
+        &.no_line { border-top:0;}
+        li { border-top:1px dashed #c5c5c7; padding: 15px 5px;
+            &:first-child { border-top:0;}
+            
+            .list_name { position: relative;
+                .name { width:calc(100% - 70px); font-size: 14px; font-weight: 300; line-height: 22px;
+                    b { font-weight: 500; display:block;}
+                    .price { font-size: 16px; display:block; margin-top: 3px; font-weight: 500;}
+                }
+                .txt_del { position: absolute; right:0; top: 50%; margin-top: -19px; padding: 10px 25px; color:$colorP; font-size: 14px; font-weight: 500;}
+            }
+            
+        }
+    }
+}

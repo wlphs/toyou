@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<!-- header -->
+	@@include('../../include/_head.html', {"title" : "TOYOUCORP."})
+	<!-- //header -->
+</head>
+
+<body class="pageclass">
+	<p class="accessibility" id="skipTop">
+		<a href="#container">본문 바로가기</a>
+		<a href="#gnb" class="js-gnb_btn">주메뉴 바로가기</a> 
+	</p>
+	<div class="wrapper">
+		<!-- header --> 
+		<header id="header" class="header">
+			<div class="header_fixed_group">
+				<div class="top_bar">
+					<div class="locations"> 
+						<div class="view_page"><h1 class="sub_title">뷰티</h1></div>
+					</div>
+					<div class="top_left">
+						<a href="javascript:history.go(-1);" class="history_back"><span class="hide">이전페이지로 이동</span></a> 
+					</div>
+					<div class="top_right">
+						<a href="#none" class="btn_filter">필터</a>
+					</div>
+				</div>
+			</div> 
+		</header>
+		<!-- //header -->
+
+		<!-- container -->
+		<div id="container">
+			<div id="contents">
+
+				<div class="service">
+					<div class="list_category_main">
+						<ul class="">
+							<li><a href="#none" class="">메이크업</a></li>
+							<li class="on"><a href="#none" class="">네일아트</a></li>
+							<li><a href="#none" class="">퍼스널브랜딩</a></li>
+							<li><a href="#none" class="">카테고리1</a></li>
+							<li><a href="#none" class="">왁싱</a></li>
+							<li><a href="#none" class="">퍼스널브랜딩</a></li>
+							<li><a href="#none" class="">헤어</a></li>
+							<li><a href="#none" class="">왁싱</a></li>
+						</ul>
+					</div>
+
+					<div class="thum_list service mt25">
+						<ul class="">
+							<li>
+								<div class="info_box">
+									<a href="#none">
+										<p class="img">
+											<img src="/resources/images/temp/@temp1.png" alt="">
+											<span class="icon_label">라벨</span>
+										</p>
+										
+										<div class="thum_list_info">
+											<p class="title">
+												<span>이너뷰티</span>
+												<em class="ellipsis-2">건조한 요즘, 수분 가득 촉촉한 메이크업 메이크업</em> 
+											</p>
+											<p class="type"><span>메이크업</span> <span>홈테라피</span></p>
+											<p class="type2">
+												<span>리뷰 10+</span>
+												<span>전문가 댓글 10+</span>
+											</p>
+										</div>
+									</a>
+									<span class="btn_like">274</span>
+								</div>
+							</li>
+							<li>
+								<div class="info_box">
+									<a href="#none">
+										<p class="img">
+											<img src="/resources/images/temp/@temp3.png" alt="">
+										</p>
+										
+										<div class="thum_list_info">
+											<p class="title">
+												<span>이너뷰티</span>
+												<em class="ellipsis-2">건조한 요즘, 수분 가득 촉촉한 메이크업</em> 
+											</p>
+											<p class="type"><span>메이크업</span> <span>홈테라피</span></p>
+											<p class="type2">
+												<span>리뷰 10+</span>
+												<span>전문가 댓글 10+</span>
+											</p>
+										</div>
+									</a>
+									<span class="btn_like">274</span>
+								</div>
+							</li>
+							<li>
+								<div class="info_box">
+									<a href="#none">
+										<p class="img">
+											<img src="/resources/images/temp/@temp4.png" alt="">
+										</p>
+										
+										<div class="thum_list_info">
+											<p class="title">
+												<span>이너뷰티</span>
+												<em class="ellipsis-2">건조한 요즘, 수분 가득 촉촉한 메이크업</em> 
+											</p>
+											<p class="type"><span>메이크업</span> <span>홈테라피</span></p>
+											<p class="type2">
+												<span>리뷰 10+</span>
+												<span>전문가 댓글 10+</span>
+											</p>
+										</div>
+									</a>
+									<span class="btn_like">274</span>
+								</div>
+							</li>
+							<li>
+								<div class="info_box">
+									<a href="#none">
+										<p class="img">
+											<img src="/resources/images/temp/@temp4.png" alt="">
+										</p>
+										
+										<div class="thum_list_info">
+											<p class="title">
+												<span>이너뷰티</span>
+												<em class="ellipsis-2">건조한 요즘, 수분 가득 촉촉한 메이크업</em> 
+											</p>
+											<p class="type"><span>메이크업</span> <span>홈테라피</span></p>
+											<p class="type2">
+												<span>리뷰 10+</span>
+												<span>전문가 댓글 10+</span>
+											</p>
+										</div>
+									</a>
+									<span class="btn_like">274</span>
+								</div>
+							</li>
+						</ul>
+
+						<div class="no_data">
+								<span class="img"></span>
+								<p>
+									<span>예약할 수있는 서비스가 없습니다.</span>
+									빠른 시일 내에 서비스 제공 예정입니다.
+								</p>
+							</div>
+					</div>
+					
+				</div>
+				
+			</div>
+		</div>
+        
+		<!-- //container -->
+		@@include('../../include/_toolbar.html')
+	</div>
+
+<script>
+	$('.info_box .btn_like').on('click', function () {
+		$(this).toggleClass('on');
+	})
+</script>
+		
+</body>
+</html>
