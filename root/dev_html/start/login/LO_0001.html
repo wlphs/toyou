@@ -64,7 +64,7 @@
 	</div>
 <script>
 	$("#test1").validate();
-	$('.form_list input').on('change', function() {
+	$('.form_list input').on('keyup', function() {
 		if ($('.js-id').val() && $('.js-pwd').val()) {
 			$('.js-login').addClass('btn_point');
 			$('.js-login').removeClass('btn_gray');
