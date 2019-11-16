@@ -399,7 +399,6 @@ select {
     
 }
 
-<<<<<<< HEAD
 //정보폼
 .form_list_info { display:block;
     &:after { content:''; display:block; clear:both;}
@@ -411,7 +410,7 @@ select {
     &.price {
         dd { font-weight: 500;}
     }
-=======
+}
 
 .calendar_wrap {
     .daterangepicker { display:block !important; border:none; position: relative; width:auto; top:0 !important; left:0 !important;
@@ -477,5 +476,4 @@ select {
         }
     }
     
->>>>>>> 414c98e0904a95f84db93b3b48a94b53f2116c51
 }

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <!-- header -->
+    <meta charset="UTF-8">
+    <title>TOYOUCORP.</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" id="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,initial-scale=1.0">
+    <link rel="stylesheet" href="/resources/css/library/csslibrary.css">
+    <link rel="stylesheet" href="/resources/css/common.css">
+    <script src="/resources/js/jquery-3.4.1.min.js"></script>
+    <script src="/resources/js/library/jquerylibrary.min.js"></script>
+    <script src="/resources/js/common.js"></script>
+
+    <!-- //header -->
+</head>
+
+<body class="pageclass">
+    <p class="accessibility" id="skipTop">
+        <a href="#container">본문 바로가기</a>
+        <a href="#gnb" class="js-gnb_btn">주메뉴 바로가기</a>
+    </p>
+    <div class="wrapper">
+        <!-- header -->
+        <header id="header" class="header">
+            <div class="header_fixed_group">
+                <div class="top_bar">
+                    <div class="top_left">
+                        <a href="javascript:history.go(-1);" class="history_back"><span class="hide">이전페이지로 이동</span></a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- //header -->
+
+        <!-- container -->
+        <div id="container">
+            <div id="contents">
+                <form action="" id="test1">
+                    <div class="sub_title cont_inner pb25">
+                        <h1 class="h1">홈서비스 주소</h1>
+                    </div>
+                    <div class="address_cont cont_inner">
+                        <div class="map_area">
+                            <img src="/resources/images/temp/@temp21.png" alt="">
+                        </div>
+
+                        <div class="add_list pb20">
+                            <ul class="post_list no_line">
+                                <li>
+                                    <dl>
+                                        <dt>서초래미안아파트</dt>
+                                        <dd>
+                                            <span>서울 서초구 서초동 1682 서초래미안아파트</span>
+                                            <span>[도로명] 서초대로 65길 13-10</span>
+                                        </dd>
+                                        <dd class="mt20">
+                                            <input class="" type="text" placeholder="상세 주소를 입력해 주세요. 예)105동 302호" value="">
+                                        </dd>
+                                    </dl>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="btn_bottom_fixed">
+                        <div class="fixed_wrap">
+                            <a href="#" class="btn btn_llg btn_point btn_block">완료</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- //container -->
+        <!-- 
+<div class="toolBar">
+    <ul>
+        <li class="toolbar_btn0"><a href="#">서비스찾기</a></li>
+        <li class="toolbar_btn1"><a href="#">알림</a></li>
+        <li class="toolbar_btn2"><a href="#">홈</a></li>
+        <li class="toolbar_btn3"><a href="#">채팅</a></li>
+        <li class="toolbar_btn4"><a href="#">마이페이지</a></li>
+    </ul>
+</div> -->
+        <a href="#none" class="top_scroll">위로 이동</a>
+    </div>
+    <script>
+        $("#test1").validate();
+    </script>
+
+</body>
+
+</html>

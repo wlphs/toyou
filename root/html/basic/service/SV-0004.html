@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <!-- header -->
+    <meta charset="UTF-8">
+    <title>TOYOUCORP.</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" id="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,initial-scale=1.0">
+    <link rel="stylesheet" href="/resources/css/library/csslibrary.css">
+    <link rel="stylesheet" href="/resources/css/common.css">
+    <script src="/resources/js/jquery-3.4.1.min.js"></script>
+    <script src="/resources/js/library/jquerylibrary.min.js"></script>
+    <script src="/resources/js/common.js"></script>
+
+    <!-- //header -->
+</head>
+
+<body class="pageclass">
+    <p class="accessibility" id="skipTop">
+        <a href="#container">본문 바로가기</a>
+        <a href="#gnb" class="js-gnb_btn">주메뉴 바로가기</a>
+    </p>
+    <div class="wrapper">
+        <!-- header -->
+        <header id="header" class="header">
+            <div class="header_fixed_group">
+                <div class="top_bar">
+                    <div class="locations">
+                        <div class="view_page">
+                            <h1 class="sub_title">필터</h1>
+                        </div>
+                    </div>
+                    <div class="top_left">
+                        <a href="javascript:history.go(-1);" class="history_back"><span class="hide">이전페이지로 이동</span></a>
+                    </div>
+                    <div class="top_right">
+                        <a href="#" class="filter_reset js-reset">재설정</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- //header -->
+
+        <!-- container -->
+        <div id="container">
+            <div id="contents">
+                <div class="cont_inner mt20 filter_wrap pb50">
+                    <div>
+                        <p class="filter_tit">노출 기준을 선택해 주세요.</p>
+                        <ul class="filter_list">
+                            <li>
+                                <input type="radio" id="f_standard0" checked class="inp_filter" name="standard">
+                                <label for="f_standard0" class="inp_filter">거래순</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="f_standard1" class="inp_filter" name="standard">
+                                <label for="f_standard1" class="inp_filter">조회순</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="f_standard2" class="inp_filter" name="standard">
+                                <label for="f_standard2" class="inp_filter">리뷰순</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="f_standard3" class="inp_filter" name="standard">
+                                <label for="f_standard3" class="inp_filter">만족해요순</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="f_standard4" class="inp_filter" name="standard">
+                                <label for="f_standard4" class="inp_filter">최근 활동순</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="f_standard5" class="inp_filter" name="standard">
+                                <label for="f_standard5" class="inp_filter">낮은가격</label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="mt30">
+                        <p class="filter_tit">서비스 분야를 선택해 주세요.</p>
+                        <ul class="filter_list js-filter_btn js-select_check">
+                            <li>
+                                <input type="checkbox" id="f_field0" checked class="inp_filter js-filter_all">
+                                <label for="f_field0" class="inp_filter">전체</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="f_field1" class="inp_filter">
+                                <label for="f_field1" class="inp_filter">메이크업</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="f_field2" class="inp_filter">
+                                <label for="f_field2" class="inp_filter">네일아트</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="f_field3" class="inp_filter">
+                                <label for="f_field3" class="inp_filter">퍼스널브랜딩</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="f_field4" class="inp_filter">
+                                <label for="f_field4" class="inp_filter">헤어</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="f_field5" class="inp_filter">
+                                <label for="f_field5" class="inp_filter">왁싱</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="f_field6" class="inp_filter">
+                                <label for="f_field6" class="inp_filter">속눈썹</label>
+                            </li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                    <div class="mt30">
+                        <p class="filter_tit">가격대를 선택해 주세요.</p>
+                        <input type="text" class="js-range-slider1" name="price_range" value="" />
+                    </div>
+
+                    <div class="mt30">
+                        <p class="filter_tit">시간대를 선택해 주세요.</p>
+                        <ul class="filter_list js-filter_btn js-select_check">
+                            <li>
+                                <input type="radio" id="f_time0" checked name="filter_time" class="inp_filter js-filter_all">
+                                <label for="f_time0" class="inp_filter">전체</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="f_time1" name="filter_time" class="inp_filter">
+                                <label for="f_time1" class="inp_filter">오전</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="f_time2" name="filter_time" class="inp_filter">
+                                <label for="f_time2" class="inp_filter">오후</label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="mt30">
+                        <p class="filter_tit">전문가의 경력을 선택해 주세요.</p>
+                        <input type="text" class="js-range-slider2" name="career_range" value="" />
+                    </div>
+                    <div class="mt30">
+                        <p class="filter_tit">성별을 선택해 주세요.</p>
+                        <ul class="filter_list js-filter_btn js-select_check">
+                            <li>
+                                <input type="radio" id="f_sex0" checked name="filter_sex" class="inp_filter js-filter_all">
+                                <label for="f_sex0" class="inp_filter">전체</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="f_sex1" name="filter_sex" class="inp_filter">
+                                <label for="f_sex1" class="inp_filter">남성</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="f_sex2" name="filter_sex" class="inp_filter">
+                                <label for="f_sex2" class="inp_filter">여성</label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="mt30">
+                        <p class="filter_tit">선호하는 연령대를 선택해 주세요.</p>
+                        <ul class="filter_list js-filter_btn js-select_check">
+                            <li>
+                                <input type="checkbox" id="f_age0" checked class="inp_filter js-filter_all">
+                                <label for="f_age0" class="inp_filter">전체</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="f_age1" class="inp_filter">
+                                <label for="f_age1" class="inp_filter">20대</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="f_age2" class="inp_filter">
+                                <label for="f_age2" class="inp_filter">30대</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="f_age3" class="inp_filter">
+                                <label for="f_age3" class="inp_filter">40대</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="f_age4" class="inp_filter">
+                                <label for="f_age4" class="inp_filter">50대</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="f_age5" class="inp_filter">
+                                <label for="f_age5" class="inp_filter">60대 이상</label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+
+                <div class="btn_bottom_fixed">
+                    <div class="fixed_wrap">
+                        <a href="#" class="btn btn_llg btn_point btn_block">적용하기</a>
+                    </div>
+                </div>
+                <div class="style_wrap"></div>
+            </div>
+        </div>
+
+        <!-- //container -->
+        <!-- 
+<div class="toolBar">
+    <ul>
+        <li class="toolbar_btn0"><a href="#">서비스찾기</a></li>
+        <li class="toolbar_btn1"><a href="#">알림</a></li>
+        <li class="toolbar_btn2"><a href="#">홈</a></li>
+        <li class="toolbar_btn3"><a href="#">채팅</a></li>
+        <li class="toolbar_btn4"><a href="#">마이페이지</a></li>
+    </ul>
+</div> -->
+        <a href="#none" class="top_scroll">위로 이동</a>
+    </div>
+    <script>
+        $('.js-select_check').each(function() {
+            var _list = $(this);
+            $('input', $(this)).on('change', function() {
+                if ($(this).hasClass('js-filter_all') && $(this).prop('checked')) {
+                    $('input', _list).not('.js-filter_all').prop('checked', false);
+                } else {
+                    if ($('input', _list).not('.js-filter_all').length == $('input:checked', _list).not('.js-filter_all').length) {
+                        $('.js-filter_all', _list).prop('checked', true);
+                        $('input', _list).not('.js-filter_all').prop('checked', false);
+                    } else {
+                        $('.js-filter_all', _list).prop('checked', false);
+                    }
+
+                }
+            })
+        })
+        $('.js-reset').on('click', function() {
+            $('.filter_list').each(function() {
+                $(this).find('input').prop('checked', false)
+                $(this).find('input').eq(0).prop('checked', true);
+            });
+            price.reset();
+            career.reset();
+            setFromTo();
+            return false;
+        })
+        $(".js-range-slider1").ionRangeSlider({
+            type: "double",
+            skin: "modern",
+            extra_classes: "price-range",
+            min: 0,
+            max: 1000000,
+            from: 0,
+            to: 1000000,
+            step: 10000,
+            grid: true,
+            max_postfix: "-",
+            max_postfix_price: "100만원 이상",
+            postfix: "",
+            hide_min_max: true,
+            grid_margin: 1000000,
+            values_separator: " - ",
+            prettify_enabled: true,
+            prettify_separator: ",",
+            decorate_both: false,
+            grid_num: true,
+            onStart: function(data) {
+                $(data.slider).find('.irs-grid-text.js-grid-text-1').text("100만원 이상")
+            },
+            onChange: function(data) {
+                if (data.to == data.max) {
+                    //$(data.slider).find('.irs-to').text((data.max / 10000) + "만원 이상")
+                }
+                setFromTo();
+            },
+            onFinish: function(data) {
+                setFromTo();
+            },
+        });
+
+        $(".js-range-slider2").ionRangeSlider({
+            type: "double",
+            skin: "modern",
+            extra_classes: "career-range",
+            min: 1,
+            max: 10,
+            from: 1,
+            to: 10,
+            grid: true,
+            max_postfix: "년 이상",
+            postfix: "",
+            hide_min_max: true,
+            grid_margin: 10,
+            decorate_both: false,
+            grid_num: true,
+            values_separator: " - ",
+            onStart: function(data) {
+                $(data.slider).find('.irs-grid-text.js-grid-text-0').text("1년")
+                $(data.slider).find('.irs-grid-text.js-grid-text-1').text("10년 이상")
+            },
+            onChange: function(data) {
+                setFromTo();
+
+            },
+            onFinish: function(data) {
+                setFromTo();
+            },
+        });
+
+
+        var price = $(".js-range-slider1").data("ionRangeSlider");
+        var career = $(".js-range-slider2").data("ionRangeSlider");
+
+        function setFromTo() {
+            $('.style_wrap').empty()
+            var _ww = $(window).innerWidth()
+            var _style = "";
+            $('.irs.irs--modern').each(function() {
+                var $slider = $(this);
+                var _to = $($slider).find('.irs-to');
+                _to.css('margin-left', 0);
+
+
+                var _l = _to.offset().left + _to.innerWidth();
+                var _container = "." + $slider.attr('class').split(' ').join('.');
+
+                var _ww_l = Math.floor(_ww - _l);
+
+                if (_ww_l <= 20) {
+                    _to.css('margin-left', _ww_l - 20);
+                    _style += "<style>" + _container + " .irs-to:before {margin-left: " + (17 - (_ww_l)) + "px;} </style>"
+                } else {
+                    _to.css('margin-left', 0);
+                    _style += "<style>" + _container + " .irs-to:before {margin-left: -3px;} </style>"
+                }
+            })
+
+
+
+            $('.style_wrap').empty().append(_style);
+
+        }
+        setFromTo()
+    </script>
+</body>
+
+</html>

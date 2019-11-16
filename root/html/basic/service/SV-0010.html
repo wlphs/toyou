@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <!-- header -->
+    <meta charset="UTF-8">
+    <title>TOYOUCORP.</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" id="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,initial-scale=1.0">
+    <link rel="stylesheet" href="/resources/css/library/csslibrary.css">
+    <link rel="stylesheet" href="/resources/css/common.css">
+    <script src="/resources/js/jquery-3.4.1.min.js"></script>
+    <script src="/resources/js/library/jquerylibrary.min.js"></script>
+    <script src="/resources/js/common.js"></script>
+
+    <!-- //header -->
+</head>
+
+<body class="pageclass">
+    <p class="accessibility" id="skipTop">
+        <a href="#container">본문 바로가기</a>
+        <a href="#gnb" class="js-gnb_btn">주메뉴 바로가기</a>
+    </p>
+    <div class="wrapper">
+        <!-- header -->
+        <header id="header" class="header">
+            <div class="header_fixed_group">
+                <div class="top_bar">
+                    <div class="locations">
+                        <div class="view_page">
+                            <h1 class="sub_title">예약 일시</h1>
+                        </div>
+                    </div>
+                    <div class="top_left">
+                        <a href="javascript:history.go(-1);" class="history_back"><span class="hide">이전페이지로 이동</span></a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- //header -->
+
+        <!-- container -->
+        <div id="container">
+            <div id="contents">
+                <div class="cont_inner pb30">
+                    <div class="calendar_wrap">
+                        <input type="text" name="reserv_date" value="" class="js-calendar hide" />
+                    </div>
+                    <div class="reserv_info">
+                        <li class="disabled">예약불가</li>
+                        <li class="today">오늘</li>
+                        <li class="selected">선택</li>
+                    </div>
+                </div>
+                <div class="cont_inner border_top10 select_time">
+                    <div class="time_tit">오전</div>
+                    <ul class="time_check_list js-list0">
+                        <li>
+                            <input type="checkbox" class="chk_time" id="time10001">
+                            <label for="time10001" class="chk_time">09:00~<br>09:30</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" class="chk_time" id="time10002">
+                            <label for="time10002" class="chk_time">09:30~<br>10:00</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" class="chk_time" id="time10003">
+                            <label for="time10003" class="chk_time">10:00~<br>10:30</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" class="chk_time" id="time10004">
+                            <label for="time10004" class="chk_time">10:30~<br>11:00</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" class="chk_time" id="time10005">
+                            <label for="time10005" class="chk_time">11:00~<br>11:30</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" class="chk_time" id="time10006">
+                            <label for="time10006" class="chk_time">11:30~<br>12:00</label>
+                        </li>
+                    </ul>
+                    <div class="time_tit mt30">오후</div>
+                    <ul class="time_check_list js-list1">
+                        <li>
+                            <input type="checkbox" class="chk_time" id="time10007">
+                            <label for="time10007" class="chk_time">12:00~<br>12:30</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" class="chk_time" id="time10008">
+                            <label for="time10008" class="chk_time">12:30~<br>01:00</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" class="chk_time" id="time10009">
+                            <label for="time10009" class="chk_time">01:00~<br>01:30</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" class="chk_time" id="time10010">
+                            <label for="time10010" class="chk_time">01:30~<br>02:00</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" class="chk_time" id="time10011">
+                            <label for="time10011" class="chk_time">02:00~<br>02:30</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" class="chk_time" id="time10012">
+                            <label for="time10012" class="chk_time">02:30~<br>03:00</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" class="chk_time" id="time10013">
+                            <label for="time10013" class="chk_time">03:00~<br>03:30</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" class="chk_time" id="time10014">
+                            <label for="time10014" class="chk_time">03:30~<br>04:00</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" class="chk_time" id="time10015">
+                            <label for="time10015" class="chk_time">04:00~<br>04:30</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" class="chk_time" id="time10016">
+                            <label for="time10016" class="chk_time">04:30~<br>05:00</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" class="chk_time" id="time10017">
+                            <label for="time10017" class="chk_time">05:00~<br>05:30</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" class="chk_time" id="time10018">
+                            <label for="time10018" class="chk_time">05:30~<br>06:00</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" class="chk_time" id="time10019">
+                            <label for="time10019" class="chk_time">06:00~<br>06:30</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" class="chk_time" id="time10020">
+                            <label for="time10020" class="chk_time">06:30~<br>07:00</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" class="chk_time" id="time10021" disabled>
+                            <label for="time10021" class="chk_time">07:00~<br>07:30</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" class="chk_time" id="time10022">
+                            <label for="time10022" class="chk_time">07:30~<br>08:00</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" class="chk_time" id="time10023">
+                            <label for="time10023" class="chk_time">08:00~<br>08:30</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" class="chk_time" id="time10024">
+                            <label for="time10024" class="chk_time">08:30~<br>09:00</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" class="chk_time" id="time10025">
+                            <label for="time10025" class="chk_time">09:00~<br>09:30</label>
+                        </li>
+                    </ul>
+                    <div class="reserv_info">
+                        <li class="disabled">예약불가</li>
+                        <li class="today">오늘</li>
+                        <li class="selected">선택</li>
+                    </div>
+                    <p class="error_txt tal mt10 js-total_error">총 제공시간 <span class="js-error-time colorP">1시간</span> 이내로만 사용 가능합니다</p>
+                </div>
+                <div class="cont_inner border_top10 ">
+                    <p class="reserv_result">
+                        <span class="js-reserv_date"></span>
+                        <span class="js-reserv_time"></span>
+                        <span class="js-reserv_total"></span>
+                    </p>
+                </div>
+
+
+                <div class="btn_bottom_fixed">
+                    <div class="fixed_wrap">
+                        <a href="#" class="btn btn_llg btn_point btn_block">적용하기</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- //container -->
+        <!-- 
+<div class="toolBar">
+    <ul>
+        <li class="toolbar_btn0"><a href="#">서비스찾기</a></li>
+        <li class="toolbar_btn1"><a href="#">알림</a></li>
+        <li class="toolbar_btn2"><a href="#">홈</a></li>
+        <li class="toolbar_btn3"><a href="#">채팅</a></li>
+        <li class="toolbar_btn4"><a href="#">마이페이지</a></li>
+    </ul>
+</div> -->
+        <a href="#none" class="top_scroll">위로 이동</a>
+    </div>
+
+    <div id="pop_continue" class="trp popupfixed-wrap">
+        <div class="popup-align">
+            <div class="popup-vertical caution">
+                <div class="popup-layer " style="width:100%;">
+                    <section class="section pd0" style="display: block;">
+                        <div class="cont_inner caution_wrap">
+                            <p class="tit">예약 시간을 변경해 주세요.</p>
+                            <p class="txt">전문가의 서비스는 연속적인 시간으로만<br>예약하실 수 있습니다.</p>
+                            <button class="btn btn_lg btn_point btn_block js-closepop">확인</button>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        $("#pop_continue").dialog({
+            autoOpen: false,
+            modal: true,
+            width: '100%',
+            position: {
+                my: "bottom",
+                at: "bottom"
+            },
+            resizable: false,
+            open: function(event) {
+                $('.js-closepop', $(event.target)).off('click').on('click', function() {
+                    $(event.target).dialog("close");
+                    return false;
+                })
+            },
+            close: function() {
+                modalFixedControl.close();
+            }
+        });
+    </script>
+    <script type="text/javascript" src="/resources/js/library/daterangepicker.js"></script>
+    <script>
+        var calendar = $('.js-calendar').daterangepicker({
+            singleDatePicker: true,
+            showDropdowns: true,
+            alwaysShowCalendars: true,
+            minDate: moment().startOf('hour'),
+            autoUpdateInput: true,
+            parentEl: ".calendar_wrap",
+            locale: {
+                format: 'YYYY/M/DD (dddd)',
+                "daysOfWeek": ["일", "월", "화", "수", "목", "금", "토"],
+                "monthNames": ["1월", "2월", "3월", "4월", "5월", "6월", "7월", "8월", "9월", "10월", "11월", "12월"]
+            },
+            isInvalidDate: function(date) {
+                let invalid = []; // ["20191120", "20191125"];  // 예약 불가능한 날짜 입력
+                return invalid.indexOf(date.format('YYYYMMDD')) > -1;
+            },
+            minYear: parseInt(moment().format('YYYY'), 10),
+            maxYear: parseInt(moment().add(5, 'year').format('YYYY'), 10)
+        });
+
+
+
+
+        function TimeSelect($container, $time) {
+            this.container = $container;
+            this.time = $time * 2;
+            this.last_checked;
+            this.checkedAry = [];
+            this.addEvent();
+        }
+        TimeSelect.prototype.addEvent = function() {
+            var self = this;
+            var _timeTxt = "";
+            var _h = Math.floor(self.time / 2);
+            var _m = self.time % 2;
+            if (_h > 0) {
+                _timeTxt += _h + "시간";
+                if (_m > 0) _timeTxt += " "
+            }
+            if (_m > 0) _timeTxt += (_m * 30) + "분";
+            $('.js-error-time').text(_timeTxt)
+
+            $('input[type="checkbox"]', self.container).on('change', function() {
+                self.last_checked = $(this);
+                self.checkSelect();
+                self.result();
+            })
+        }
+        TimeSelect.prototype.checkSelect = function() {
+            var self = this;
+            self.checkAry()
+
+            for (let i = 1; i < self.checkedAry.length; i++) {
+                if (Math.abs(self.checkedAry[i - 1] - self.checkedAry[i]) != 1) {
+                    self.continueAlert();
+                    break;
+                }
+            }
+            if (self.checkedAry.length > self.time) {
+                self.excessAlert();
+            } else {
+                $('.js-total_error').hide();
+            }
+        }
+        TimeSelect.prototype.result = function() {
+            var self = this;
+            var noon = $('.js-list0 input[type="checkbox"]').length;
+            var dateTxt = "";
+            if (self.checkedAry.length > 0) {
+                var start = $('input[type="checkbox"]', self.container).eq(self.checkedAry[0]).siblings('label').text().split("~")[0];
+                var end = $('input[type="checkbox"]', self.container).eq(self.checkedAry[self.checkedAry.length - 1]).siblings('label').text().split("~")[1];
+                dateTxt = (self.checkedAry[0] < noon) ? " / 오전" : " / 오후";
+                dateTxt += " " + start + "~" + end;
+            }
+            $('.js-reserv_time').text(dateTxt);
+
+            var _timeTxt = "";
+            var _h = Math.floor(self.checkedAry.length / 2);
+            var _m = self.checkedAry.length % 2;
+            if (self.checkedAry.length > 0) _timeTxt += "(";
+            if (_h > 0) {
+                _timeTxt += _h + "시간";
+                if (_m > 0) _timeTxt += " "
+            }
+            if (_m > 0) _timeTxt += (_m * 30) + "분";
+            if (self.checkedAry.length > 0) _timeTxt += ")";
+
+            $('.js-reserv_total').text(_timeTxt);
+        }
+        TimeSelect.prototype.checkAry = function() {
+            var self = this;
+            self.checkedAry = [];
+            $('input[type="checkbox"]:checked', self.container).each(function() {
+                self.checkedAry.push($('input[type="checkbox"]', self.container).index($(this)));
+            })
+        }
+        TimeSelect.prototype.continueAlert = function() {
+            var self = this;
+            var _stat = self.last_checked.prop('checked');
+            self.last_checked.prop('checked', !_stat)
+            self.checkAry();
+
+            modalFixedControl.open();
+            $('#pop_continue').dialog("open");
+            console.log('continueAlert');
+        }
+        TimeSelect.prototype.excessAlert = function() {
+            var self = this;
+            var _stat = self.last_checked.prop('checked');
+            self.last_checked.prop('checked', !_stat)
+            self.checkAry()
+            $('.js-total_error').show();
+            console.log('excessAlert');
+        }
+
+        var timeSelect = new TimeSelect($('.time_check_list'), 2);
+
+        $('.js-calendar').on('change', function() {
+            var dddd = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+            var _rep_dddd = ["일", "월", "화", "수", "목", "금", "토"]
+            var txt = $(this).val();
+            for (var i = 0; i < dddd.length; i++) {
+                txt = txt.replace(dddd[i], _rep_dddd[i]);
+            }
+            $('.js-reserv_date').text(txt);
+        })
+
+
+        $('.js-calendar').trigger('click').trigger('change')
+    </script>
+
+
+</body>
+
+</html>
