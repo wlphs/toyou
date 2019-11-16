@@ -233,9 +233,9 @@ a, span, i, em {
   background-size: 90px 85px;
 }
 
-.icon_label, .btn_menu_arrow:after, .btn_more:after, .btn_more.red:after, .btn_file::before, .btn_report::before, .btn_all_more:after, .btn_filter::before, .btn_del::before, .btn_more_point:after, .btn_arrow_type:after, .accordion-list > li .header-area .acc_btn:after, .trp.popupfixed-wrap .btn_close:after, .trp.popupfixed-wrap .caution_wrap:after, .trp.popupfixed-wrap .share_wrap .share_list li .btn_facebook:after, .trp.popupfixed-wrap .share_wrap .share_list li .btn_kakao:after, .trp.popupfixed-wrap .share_wrap .share_list li .btn_share:after, .header .top_bar .history_back:before, .header .top_bar .btn_share:after, .header .top_bar .btn_like:after, .header .top_bar .btn_search:before, #footer .opne_text:after, .top_scroll::before, .chatting_area .chatting_list > li .icon, .chatting_area .chatting_view > li .chat_area .chat_view::before, .chatting_area .chatting_view > li.answer .chat_area .chat_view::before, .alarm_area .alarm_list > li .link::before, .serv_wrap .serv_detail .serv_info .reaction li.like:after, .serv_wrap .serv_detail .serv_info .reaction li.review:after, .serv_wrap .serv_detail .serv_info .reaction li.reply:after, .serv_wrap .serv_review_wrap .review_total_like .like_count:after, .serv_wrap .serv_review_wrap .review_list li .writer .review_like .btn_review_like:after, .movieWrap .movie_play:after, .service_bottom .btn_chat:after, .service_bottom .btn_tel:after, .review_more_wrap .btn_review_more:after, .profile_wrap .pf_photo_wrap .pf_photo_change:after, .profile_wrap .pf_photo_wrap .pf_photo_change.type2:after, .profile_wrap .pf_manage a.btn_edit_pf:after, .profile_wrap .pf_manage a.btn_edit_cert:after, .position_cont .photo_area .pf_photo_change:after, .profile_photo_wrap .pf_photo_change:after, .agree_list li .agree_view:after, .main_header .h1_logo, .main_header .location_top::before, .main section.main_card .big_banner .txt em, .thum_list li .btn_like::before, .thum_list li .btn_like.on::before, .thum_list.big_type li .btn_like::before, .thum_list.big_type li .btn_like.on::before {
+.icon_label, .btn_menu_arrow:after, .btn_more:after, .btn_more.red:after, .btn_file::before, .btn_report::before, .btn_all_more:after, .btn_filter::before, .btn_del::before, .btn_more_point:after, .btn_arrow_type:after, .accordion-list > li .header-area .acc_btn:after, .trp.popupfixed-wrap .btn_close:after, .trp.popupfixed-wrap .caution_wrap:after, .trp.popupfixed-wrap .share_wrap .share_list li .btn_facebook:after, .trp.popupfixed-wrap .share_wrap .share_list li .btn_kakao:after, .trp.popupfixed-wrap .share_wrap .share_list li .btn_share:after, .calendar_wrap .daterangepicker .calendar-table .prev:after, .calendar_wrap .daterangepicker .calendar-table .next:after, .header .top_bar .history_back:before, .header .top_bar .btn_share:after, .header .top_bar .filter_reset:after, .header .top_bar .btn_like:after, .header .top_bar .btn_search:before, #footer .opne_text:after, .top_scroll::before, .chatting_area .chatting_list > li .icon, .chatting_area .chatting_view > li .chat_area .chat_view::before, .chatting_area .chatting_view > li.answer .chat_area .chat_view::before, .alarm_area .alarm_list > li .link::before, .serv_wrap .serv_detail .serv_info .reaction li.like:after, .serv_wrap .serv_detail .serv_info .reaction li.review:after, .serv_wrap .serv_detail .serv_info .reaction li.reply:after, .serv_wrap .serv_review_wrap .review_total_like .like_count:after, .serv_wrap .serv_review_wrap .review_list li .writer .review_like .btn_review_like:after, .movieWrap .movie_play:after, .service_bottom .btn_chat:after, .service_bottom .btn_tel:after, .review_more_wrap .btn_review_more:after, .profile_wrap .pf_photo_wrap .pf_photo_change:after, .profile_wrap .pf_photo_wrap .pf_photo_change.type2:after, .profile_wrap .pf_manage a.btn_edit_pf:after, .profile_wrap .pf_manage a.btn_edit_cert:after, .position_cont .photo_area .pf_photo_change:after, .profile_photo_wrap .pf_photo_change:after, .agree_list li .agree_view:after, .main_header .h1_logo, .main_header .location_top::before, .main section.main_card .big_banner .txt em, .thum_list li .btn_like::before, .thum_list li .btn_like.on::before, .thum_list.big_type li .btn_like::before, .thum_list.big_type li .btn_like.on::before {
   background-image: url("../images/common/sp_icons.png");
-  background-size: 298.5px 282.5px;
+  background-size: 298.5px 286.5px;
 }
 
 /*  _mixin.scss
@@ -2973,7 +2973,7 @@ table.bottom_bar {
   margin-top: -5px;
   width: 6px;
   height: 10px;
-  background-position: -285.5px -197px;
+  background-position: -285.5px -217px;
 }
 
 .btn_file {
@@ -3009,7 +3009,7 @@ table.bottom_bar {
   display: inline-block;
   width: 13.5px;
   height: 15px;
-  background-position: 0px -267.5px;
+  background-position: 0px -271.5px;
   margin-right: 8px;
 }
 
@@ -3045,7 +3045,7 @@ table.bottom_bar {
   display: inline-block;
   width: 14.5px;
   height: 14px;
-  background-position: -75px -240.5px;
+  background-position: -261px -209.5px;
   vertical-align: top;
   margin: 2px 8px 0 0;
 }
@@ -3280,7 +3280,7 @@ table.bottom_bar {
   margin-top: -5px;
   width: 6px;
   height: 10px;
-  background-position: -285.5px -197px;
+  background-position: -285.5px -217px;
 }
 
 .btn_arrow_type {
@@ -3778,7 +3778,7 @@ table.bottom_bar {
   top: 22px;
   width: 16px;
   height: 16px;
-  background-position: -165px -209.5px;
+  background-position: -235px -209.5px;
 }
 
 .trp.popupfixed-wrap.cover_type .popup-layer {
@@ -3953,7 +3953,7 @@ table.bottom_bar {
   margin-left: -27px;
   width: 55px;
   height: 55px;
-  background-position: -65px -84.5px;
+  background-position: -130px -84.5px;
   display: block;
 }
 
@@ -3965,7 +3965,7 @@ table.bottom_bar {
   margin-left: -27px;
   width: 55px;
   height: 55px;
-  background-position: -130px -84.5px;
+  background-position: -65px -84.5px;
   display: block;
 }
 
@@ -4990,6 +4990,194 @@ select {
   height: 250px;
 }
 
+.calendar_wrap .daterangepicker {
+  display: block !important;
+  border: none;
+  position: relative;
+  width: auto;
+  top: 0 !important;
+  left: 0 !important;
+}
+
+.calendar_wrap .daterangepicker .calendar-table .prev {
+  position: relative;
+}
+
+.calendar_wrap .daterangepicker .calendar-table .prev:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -12px;
+  margin-left: -12px;
+  width: 25px;
+  height: 25px;
+  background-position: -242.5px -115px;
+  display: block;
+}
+
+.calendar_wrap .daterangepicker .calendar-table .next {
+  position: relative;
+}
+
+.calendar_wrap .daterangepicker .calendar-table .next:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -12px;
+  margin-left: -12px;
+  width: 25px;
+  height: 25px;
+  background-position: 0px -209.5px;
+  display: block;
+}
+
+.calendar_wrap .daterangepicker:before {
+  display: none;
+}
+
+.calendar_wrap .daterangepicker:after {
+  display: none;
+}
+
+.calendar_wrap .daterangepicker .drp-calendar {
+  max-width: none;
+  padding: 0 !important;
+}
+
+.calendar_wrap .daterangepicker .calendar-table th, .calendar_wrap .daterangepicker .calendar-table td {
+  width: auto;
+  font-size: 15px;
+  height: 46px;
+}
+
+.calendar_wrap .daterangepicker td {
+  position: relative;
+  border: none;
+}
+
+.calendar_wrap .daterangepicker td span {
+  position: relative;
+}
+
+.calendar_wrap .daterangepicker tr td:first-child {
+  color: #ff5c5c;
+}
+
+.calendar_wrap .daterangepicker tr td.disabled:before {
+  content: '';
+  background: #f5f5f5;
+  width: 100%;
+  height: 34px;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin-top: -17px;
+  z-index: -1;
+}
+
+.calendar_wrap .daterangepicker tr td.disabled:first-child:before {
+  border-top-left-radius: 17px;
+  border-bottom-left-radius: 17px;
+}
+
+.calendar_wrap .daterangepicker tr td.disabled:last-child:before, .calendar_wrap .daterangepicker tr td.disabled.yesterday:before {
+  border-top-right-radius: 17px;
+  border-bottom-right-radius: 17px;
+}
+
+.calendar_wrap .daterangepicker td.off.ends {
+  color: #c2c2c2 !important;
+}
+
+.calendar_wrap .daterangepicker td.today {
+  background: none;
+  color: #fff !important;
+  font-weight: 500;
+}
+
+.calendar_wrap .daterangepicker td.today:before {
+  content: '';
+  background: #272727;
+  border-radius: 17px;
+  width: 34px;
+  height: 34px;
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-top: -17px;
+  margin-left: -17px;
+  z-index: -1;
+}
+
+.calendar_wrap .daterangepicker td.active, .calendar_wrap .daterangepicker td.active:hover {
+  background: none;
+  font-weight: 500;
+  color: #fff !important;
+}
+
+.calendar_wrap .daterangepicker td.active:before, .calendar_wrap .daterangepicker td.active:hover:before {
+  content: '';
+  background: #ff5c5c;
+  border-radius: 17px;
+  width: 34px;
+  height: 34px;
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-top: -17px;
+  margin-left: -17px;
+  z-index: -1;
+}
+
+.calendar_wrap .daterangepicker td.disabled, .calendar_wrap .daterangepicker option.disabled {
+  text-decoration: none;
+}
+
+.calendar_wrap .daterangepicker td.start-date.end-date {
+  border-radius: 50%;
+}
+
+.calendar_wrap .daterangepicker .calendar-table {
+  background: transparent;
+}
+
+.calendar_wrap .daterangepicker td.off, .calendar_wrap .daterangepicker td.off.in-range, .calendar_wrap .daterangepicker td.off.start-date, .calendar_wrap .daterangepicker td.off.end-date {
+  background: transparent;
+}
+
+.calendar_wrap .daterangepicker select {
+  font-weight: 700;
+  width: auto;
+  padding-right: 15px;
+  background: #fff;
+  border: none;
+  margin: 0 10px;
+  font-size: 21px;
+  background-image: url("/resources/images/common/select_arrow.png");
+  background-repeat: no-repeat;
+  background-size: 10px;
+  background-position: right center;
+}
+
+.calendar_wrap .daterangepicker .calendar-table thead tr:first-child {
+  background: url("/resources/images/common/dot_line_hor.png") repeat-x bottom left;
+  background-size: 4px 1px;
+}
+
+.calendar_wrap .daterangepicker .calendar-table thead tr:first-child th {
+  padding: 15px 0;
+}
+
+.calendar_wrap .daterangepicker .calendar-table table {
+  background: url("/resources/images/common/dot_line_hor.png") repeat-x bottom left;
+  background-size: 4px 1px;
+}
+
 .header {
   height: 65px;
   width: 100%;
@@ -5064,7 +5252,7 @@ select {
   display: block;
   width: 6px;
   height: 10px;
-  background-position: -285.5px -217px;
+  background-position: -285.5px -197px;
 }
 
 .header .top_bar .btn_share {
@@ -5080,7 +5268,28 @@ select {
   display: block;
   width: 17px;
   height: 21px;
-  background-position: 0px -209.5px;
+  background-position: -70px -209.5px;
+}
+
+.header .top_bar .filter_reset {
+  display: block;
+  padding: 5px 5px 5px 20px;
+  float: left;
+  margin-top: 16px;
+  margin-right: 15px;
+  position: relative;
+}
+
+.header .top_bar .filter_reset:after {
+  content: '';
+  display: block;
+  width: 15px;
+  height: 15px;
+  background-position: -49px -244.5px;
+  position: absolute;
+  top: 50%;
+  margin-top: -8px;
+  left: 0;
 }
 
 .header .top_bar .serv_like_wrap {
@@ -5107,7 +5316,7 @@ select {
   display: block;
   width: 18px;
   height: 17px;
-  background-position: -83px -209.5px;
+  background-position: -125px -209.5px;
 }
 
 .header .top_bar .btn_search {
@@ -5289,7 +5498,7 @@ select {
   display: inline-block;
   width: 14px;
   height: 17px;
-  background-position: 0px -240.5px;
+  background-position: 0px -244.5px;
   vertical-align: top;
   margin-top: 13px;
 }
@@ -5335,7 +5544,7 @@ select {
   display: inline-block;
   width: 15px;
   height: 15px;
-  background-position: -191px -209.5px;
+  background-position: -24px -244.5px;
   vertical-align: top;
   margin: 1px 0 0 5px;
 }
@@ -5452,7 +5661,7 @@ select {
   top: -1px;
   width: 12px;
   height: 10px;
-  background-position: -285.5px -101px;
+  background-position: -285.5px -121px;
 }
 
 .chatting_area .chatting_view > li .time {
@@ -5487,7 +5696,7 @@ select {
   top: 0;
   width: 12px;
   height: 10px;
-  background-position: -285.5px -121px;
+  background-position: -285.5px -101px;
 }
 
 .chatting_area .chatting_view > li.answer .time {
@@ -5719,7 +5928,7 @@ select {
   content: '';
   width: 15px;
   height: 15px;
-  background-position: -216px -209.5px;
+  background-position: -74px -244.5px;
   display: block;
   position: absolute;
   top: 2px;
@@ -5730,7 +5939,7 @@ select {
   content: '';
   width: 15px;
   height: 15px;
-  background-position: -241px -209.5px;
+  background-position: -99px -244.5px;
   display: block;
   position: absolute;
   top: 2px;
@@ -5741,7 +5950,7 @@ select {
   content: '';
   width: 15px;
   height: 15px;
-  background-position: -24px -240.5px;
+  background-position: -124px -244.5px;
   display: block;
   position: absolute;
   top: 2px;
@@ -5910,7 +6119,7 @@ select {
   top: 0;
   width: 25px;
   height: 25px;
-  background-position: -242.5px -150px;
+  background-position: -242.5px -80px;
 }
 
 .serv_wrap .serv_review_wrap .review_list li {
@@ -5972,7 +6181,7 @@ select {
   content: '';
   width: 15px;
   height: 15px;
-  background-position: -216px -209.5px;
+  background-position: -74px -244.5px;
   position: absolute;
   top: 50%;
   left: 0;
@@ -6046,7 +6255,7 @@ select {
   content: '';
   width: 25px;
   height: 25px;
-  background-position: -242.5px -80px;
+  background-position: -242.5px -150px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -6068,7 +6277,7 @@ select {
   content: '';
   width: 25px;
   height: 25px;
-  background-position: -242.5px -115px;
+  background-position: -35px -209.5px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -6382,6 +6591,113 @@ select {
   font-weight: 500;
 }
 
+.reserv_result {
+  padding: 20px 0;
+  text-align: center;
+  min-height: 60px;
+}
+
+.reserv_result span {
+  color: #ff5c5c;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.reserv_info {
+  margin-top: 20px;
+}
+
+.reserv_info:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.reserv_info li {
+  float: left;
+  padding-left: 19px;
+  position: relative;
+  margin-right: 20px;
+}
+
+.reserv_info li:after {
+  content: '';
+  width: 15px;
+  height: 15px;
+  border-radius: 7px;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin-top: -7px;
+}
+
+.reserv_info li.disabled:after {
+  background: #f5f5f5;
+}
+
+.reserv_info li.today:after {
+  background: #272727;
+}
+
+.reserv_info li.selected:after {
+  background: #ff5c5c;
+}
+
+.select_time {
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
+
+.select_time .time_tit {
+  font-size: 21px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.select_time .time_check_list:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.select_time .time_check_list li {
+  width: 25%;
+  padding-right: 3px;
+  padding-bottom: 3px;
+  float: left;
+  position: relative;
+}
+
+.select_time .time_check_list li input[type="checkbox"].chk_time {
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 0;
+}
+
+.select_time .time_check_list li input[type="checkbox"].chk_time + label.chk_time {
+  display: block;
+  border: 1px solid #e5e5e5;
+  font-size: 15px;
+  text-align: center;
+  padding: 7px 0;
+}
+
+.select_time .time_check_list li input[type="checkbox"].chk_time:checked + label.chk_time {
+  background: #ff5c5c;
+  border-color: #ff5c5c;
+  font-weight: 400;
+  color: #fff;
+}
+
+.select_time .time_check_list li input[type="checkbox"].chk_time:disabled + label.chk_time {
+  background: #f5f5f5;
+  color: #999;
+}
+
 .profile_wrap {
   padding-top: 16px;
 }
@@ -6459,7 +6775,7 @@ select {
   display: block;
   width: 16px;
   height: 17px;
-  background-position: -139px -209.5px;
+  background-position: -209px -209.5px;
   position: absolute;
   top: 5px;
   left: 0;
@@ -7160,13 +7476,13 @@ input[type="radio"].type_btn_radio + label {
   margin-top: -6px;
   width: 14px;
   height: 13px;
-  background-position: -99.5px -240.5px;
+  background-position: -175px -244.5px;
 }
 
 .thum_list li .btn_like.on::before {
   width: 16px;
   height: 14px;
-  background-position: -49px -240.5px;
+  background-position: -149px -244.5px;
 }
 
 .thum_list.big_type li {
@@ -7205,14 +7521,14 @@ input[type="radio"].type_btn_radio + label {
 .thum_list.big_type li .btn_like::before {
   width: 18px;
   height: 17px;
-  background-position: -27px -209.5px;
+  background-position: -97px -209.5px;
   margin-top: -7px;
 }
 
 .thum_list.big_type li .btn_like.on::before {
   width: 18px;
   height: 17px;
-  background-position: -55px -209.5px;
+  background-position: -153px -209.5px;
 }
 
 .thum_list.service {

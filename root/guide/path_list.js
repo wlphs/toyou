@@ -378,8 +378,8 @@ __CONSTANT_LIST = [
         dep2 		: '',
         dep3 		: '',
         dep4 		: '예약일시 선택',
-        url 		: '/html/.html',
-        pubUpdate 	: '2019-0000',
+        url 		: '/html/basic/service/SV-0010.html',
+        pubUpdate 	: '2019-1117',
         etc 		: '2019-1117',
     },
 	{
