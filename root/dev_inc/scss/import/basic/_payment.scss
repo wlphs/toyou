@@ -1,0 +1,83 @@
+.payment_view {
+    .payment_date {background:#f5f5f5; padding: 7px 25px 7px 0; font-size:13px; text-align: right;}
+    
+    
+    .prd_price { background:url('/resources/images/common/dot_line_hor.png') repeat-x left top; background-size:4px;
+        li {padding-top:15px; position: relative;
+            .tit {font-size:15px; position: absolute; left:0; top:15px;}
+            .price {font-weight: 700;font-size:15px; text-align: right; padding-right:25px;}
+        }
+    }
+    .cancel_reason{ background:url('/resources/images/common/dot_line_hor.png') repeat-x left top; background-size:4px; padding-top:15px; margin-bottom:40px;
+        li {margin-bottom:15px; position: relative; padding-left:85px; padding-right:25px;
+            .tit {font-weight: 700;font-size:15px; position: absolute; left:0; top:0px;}
+            .txt {font-size:15px; line-height: 22px; }
+        }
+    }
+}
+
+.payment_view_detail{ position: relative; padding:25px 25px 25px 85px;background:#f5f5f5;
+    .prd_photo {width:55px; height:55px; overflow:hidden; position: absolute; left:16px; top:16px; 
+        img {width:100%; }
+    }
+    .prd_detail {
+        .prd_detail1 { padding-bottom:20px; background:url('/resources/images/common/dot_line_hor.png') repeat-x left bottom; background-size:4px;
+            .name {font-weight: 700; font-size:15px;}
+            .title { position: relative; margin-top:5px;
+                .tit {font-size:15px;display:block; @include ellipsis();}
+                .etc{font-size:15px; position: absolute; right:0; top:0;}
+            }
+            .price {font-weight: 700; font-size:17px; position: relative; margin-top:10px;
+                .date {font-size:13px; color:#999; position: absolute; right:0; top:3px; font-weight: 300;}
+            }
+        }
+        .prd_detail2 {padding-top:17px;
+            .prd_d_tit {font-size:13px; font-weight: 700; margin-bottom:4px;}
+            .prd_d_txt {font-size:13px; font-weight: 300; line-height: 18px;}
+        }
+    }
+}
+.payment_list { margin-top:5px;
+    li {background:url('/resources/images/common/dot_line_hor.png') repeat-x left bottom; background-size:4px; 
+        padding:25px 25px 20px 0}
+    a {display:block; padding-right:0px;}
+    .payment_view_detail {background: none;
+        padding:5px 25px 0px 70px;
+        .prd_photo  {left:0; top:0px;}
+        .prd_detail {
+            .prd_detail1 {background:none; padding-bottom:0;}
+        }
+    }
+}
+
+
+
+.reserv_list_type {
+    li {padding:20px 25px 20px 0; background:url('/resources/images/common/dot_line_hor.png') repeat-x left bottom; background-size:4px; 
+        .btn_arrow_type {display:block; position: relative;}
+        .stat { padding:2px 8px; min-width: 65px; text-align: center; display:inline-block; box-sizing: border-box;
+            &.before {border:1px solid #999; color:#999; font-size:13px;}
+            &.ing {border:1px solid $colorP; color: $colorP; font-size:13px;}
+            &.request {background:#f5f5f5; color:#999;}
+            &.confirm {background:$colorP; color:#fff;}
+            &.complete {background:#999999; color:#fff;}
+            &.cancel {background:#999999; color:#fff;}
+            &.waiting {background:#999999; color:#fff;}
+        }
+        .stat_time { font-size:13px; color:#999999; position: absolute; right:0; top:2px;}
+    }
+}
+
+.reserv_item_info { margin-top:10px; 
+    .name {font-weight: 700; font-size:15px;padding-bottom:10px; position: relative;
+        &:after {content:''; width:15px; height:1px; background:#000; position: absolute; bottom:0; left:0; display:block;}
+    }
+    .title { position: relative; margin-top:12px;
+        .tit {font-size:15px;display:block; @include ellipsis(); line-height: 1.6;}
+        .etc{font-size:15px; position: absolute; right:0; top:0; line-height: 1.6;}
+    }
+    .date {font-size:15px; color:#000; font-weight: 300;}
+    .price {font-weight: 700; font-size:17px; position: relative; margin-top:10px;
+        
+    }
+}

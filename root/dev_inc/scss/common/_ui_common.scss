@@ -324,23 +324,30 @@
 .accordion-wrap { border-top: $borderTop; }
 // 일반 아코디언
 .accordion-list{
-    >li { 
-        .header-area { position: relative;  padding: 16px 44px 16px 16px;
-            border-bottom:1px solid #e6e6e6;
+    >li { background: url('/resources/images/common/dot_line_hor.png') repeat-x bottom left; background-size:4px 1px;
+        .header-area { position: relative;  padding: 25px 44px 25px 0px;
+            a { font-size:15px;}
             .accordion_name  { display: block; 
                 @include ellipsis();
             }
-            .acc_btn {  position: absolute; box-sizing: border-box; top:8px; right:0;
+            .acc_btn {  position: absolute; box-sizing: border-box; top:50%; margin-top:-20px; right:0;
                  display: block; padding: 20px 20px 20px 20px;
                 &:after { content: ""; display: block; transition: .2s transform;
                     position: absolute; top:18px; right:15px; transform :rotate(180deg);
                    @include sp_icons($arrow_up_md);}
             }
         }
-        >.con-area { display: none;  padding: 22px 16px; border-bottom:1px solid #e6e6e6; }
+        >.con-area { display: none;  padding: 0px 50px 20px 0; line-height: 23px; font-size:15px;
+            .qna_cont {font-size:15px;}
+            .policy_cont {font-size:13px;
+                .tit {font-weight: 500; font-size:13px;}
+                .txt {font-size:13px;}
+            }
+        }
     }
     >li.on { 
         .header-area { 
+            a {font-weight: 700; }
             .acc_btn {
                 &:after { transform :rotate(0deg)}
             }
