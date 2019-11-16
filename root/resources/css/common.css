@@ -7217,9 +7217,8 @@ input[type="radio"].type_btn_radio + label {
 
 .thum_list.service {
   margin-left: 13px;
-  display: table;
   padding-bottom: 20px;
-  border: 1px solid red;
+  overflow: hidden;
 }
 
 .thum_list.service li {
