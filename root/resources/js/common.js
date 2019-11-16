@@ -18,7 +18,7 @@ function formatNumber(num) {
 }
 
 function ModalFixedControl() {
-    this.trpLayerFixedPopupScroll_top = 0, this.dialog;
+    this.trpLayerFixedPopupScroll_top = 0;
 }
 
 $(function() {
@@ -114,9 +114,9 @@ jQuery.fn.trpAccordionMenu = function($btn, $cont, $activeClass, $activeFN) {
             active($index);
         }
     };
-}, ModalFixedControl.prototype.open = function(_dialog) {
-    this.dialog = _dialog, this.trpLayerFixedPopupScroll_top = $(window).scrollTop(), 
-    $("html, body").scrollTop(0), $(".wrapper").css({
+}, ModalFixedControl.prototype.open = function() {
+    this.trpLayerFixedPopupScroll_top = $(window).scrollTop(), $("html, body").scrollTop(0), 
+    $(".wrapper").css({
         position: "fixed",
         top: -1 * this.trpLayerFixedPopupScroll_top
     });

@@ -22,6 +22,9 @@
 					<div class="top_left">
 						<a href="javascript:history.go(-1);" class="history_back"><span class="hide">이전페이지로 이동</span></a> 
 					</div>
+					<div class="top_right">
+						<a href="#" class="filter_reset js-reset">재설정</a> 
+					</div>
 				</div>
 			</div> 
 		</header>
@@ -201,8 +204,16 @@ $('.js-select_check').each(function() {
 		}
 	})
 })
-
-
+$('.js-reset').on('click', function() {
+	$('.filter_list').each(function() {
+		$(this).find('input').prop('checked', false)
+		$(this).find('input').eq(0).prop('checked', true);
+	});
+	price.reset();
+	career.reset();
+	setFromTo();
+	return false;
+})
 $(".js-range-slider1").ionRangeSlider({
 	type: "double",
 	skin: "modern",
@@ -258,13 +269,17 @@ $(".js-range-slider2").ionRangeSlider({
 		$(data.slider).find('.irs-grid-text.js-grid-text-1').text("10년 이상")
 	},
 	onChange: function (data) {
-		setFromTo(data.slider);
+		setFromTo();
 		
 	},
 	onFinish: function (data) {
-		setFromTo(data.slider);
+		setFromTo();
 	},
 });
+
+
+var price = $(".js-range-slider1").data("ionRangeSlider");
+var career = $(".js-range-slider2").data("ionRangeSlider");
 	function setFromTo() {
 		$('.style_wrap').empty()
 		var _ww = $(window).innerWidth()

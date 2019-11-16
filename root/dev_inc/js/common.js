@@ -160,11 +160,9 @@ $(this).on("click", $btn, function ($e) {
 
 function ModalFixedControl() {
   this.trpLayerFixedPopupScroll_top = 0;
-  this.dialog;
 }
-ModalFixedControl.prototype.open = function(_dialog) {
+ModalFixedControl.prototype.open = function() {
   var _self = this;
-  this.dialog = _dialog;
   this.trpLayerFixedPopupScroll_top = $(window).scrollTop();
   $("html, body").scrollTop(0);
   $(".wrapper").css({ position:"fixed",     top: (this.trpLayerFixedPopupScroll_top * -1) });
