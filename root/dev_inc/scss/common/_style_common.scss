@@ -68,6 +68,7 @@ body { background-color: #fff;
 
 .h1 { font-size: 27px; font-weight: 700; letter-spacing: -0.5; color:$colorB; font-family: $baseFT; } 
 .h2 { font-size: 24px; font-weight: 700; color:$colorB; font-family: $baseFT; } 
+.h2_sub { font-size: 19px; font-weight: 700; color:$colorB; font-family: $baseFT; } 
 .h3 { font-size: 16px; font-weight: 700; color:$colorB; font-family: $baseFT; } 
 .h4 { font-size: 15px; font-weight: 700; color:$colorB; font-family: $baseFT; } 
 .h5 { font-size: 14px; font-weight: 500; color:$colorB; font-family: $baseFT; } 
@@ -88,6 +89,7 @@ a.link_txt ,
 .colorE { color: $colorE !important; } // 에러
 .fs12 { font-size: 12px !important; }
 .fs13 { font-size: 13px !important; }
+.fs15 { font-size: 15px !important; }
 
 .colorBGw {background-color:$colorBGw !important;}
 .colorBGf {background-color:#fff !important;}

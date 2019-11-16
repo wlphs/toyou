@@ -45,7 +45,7 @@
 					</div>
 				</div>
 				
-				<div class="pb30">
+				<div class="buy_cont pb20">
 					<div class="cont_inner_right">
 						<div class="shopping_basket mt50">
 							<h2>힐링&테라피</h2>
@@ -98,10 +98,10 @@
 				</div>
 
 				<div class="btn_bottom_fixed">
-						<div class="fixed_wrap">
-							<a href="#" class="btn btn_llg btn_point btn_block">서비스 예약하기</a>
-						</div>
+					<div class="fixed_wrap">
+						<a href="#" class="btn btn_llg btn_point btn_block">서비스 예약하기</a>
 					</div>
+				</div>
 
 			</div>
 		</div>
@@ -109,75 +109,6 @@
 		<!-- //container -->
 		@@include('../../include/_toolbar.html')
 	</div>
-
-
-	<div id="getPhoto" class="trp popupfixed-wrap">
-		<div class="popup-align">
-			<div class="popup-vertical">
-				<div class="popup-layer select_layer" style="width:100%;">
-					<!-- <div class="pop_header">
-						<p class="tit">사진 가져오기</p>
-						<a href="#" class="btn_close js-closepop"><span class="hide">닫기</span></a>
-					</div>  -->
-					<section class="section pd0" style="display: block;">
-						<ul class="sel_wrap get_photo">
-							<li>
-								<span class="get_photo_btn get_photo0">사진촬영</span>
-								<input type="file" id="camera" name="camera" capture="camera" accept="image/*" />
-							</li>
-							<li>
-								<span class="get_photo_btn get_photo1">앨범에서 가져오기</span>
-								<input type="file" id="camera" name="camera">
-							</li>
-							<li>
-								<button class="get_photo_btn btn_cancel js-closepop">취소</button>
-							</li>
-						</ul>
-					</section>
-				</div>
-			</div>
-		</div>
-	</div>
-
-<script>
-	$("#getPhoto").dialog({
-		autoOpen: false,
-		modal: true,
-		width:'100%',
-		position: { my: "bottom", at: "bottom" },
-		show: { effect: "slide",direction:"down", duration: 300 },
-		create : function(event) {
-		  $(".js-photo").on("click", function() {
-			modalFixedControl.open($(event.target));
-			$(event.target).dialog("open");
-			return false;
-		  });
-		},
-		resizable: false,
-		open : function (event) {
-		  $('.js-closepop', $(event.target)).off('click').on('click', function() {
-			  $(event.target).dialog( "close" );
-			  return false;
-		  })
-		},
-		close: function() {
-			modalFixedControl.close();
-		}
-	});
-
-
-	// 이미지를 동그란 영역에 맞춰 중앙 정렬
-	// 이미지가 변경될 때 아래 함수를 실행시켜 주세요
-	$('.pf_photo img').coverImage();
-
-</script>
-
-
-
-<script>
-		
-	</script>
-
 
 </body>
 </html>

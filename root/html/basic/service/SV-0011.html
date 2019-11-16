@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <!-- header -->
+    <meta charset="UTF-8">
+    <title>TOYOUCORP.</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" id="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,initial-scale=1.0">
+    <link rel="stylesheet" href="/resources/css/library/csslibrary.css">
+    <link rel="stylesheet" href="/resources/css/common.css">
+    <script src="/resources/js/jquery-3.4.1.min.js"></script>
+    <script src="/resources/js/library/jquerylibrary.min.js"></script>
+    <script src="/resources/js/common.js"></script>
+
+    <!-- //header -->
+</head>
+
+<body class="pageclass">
+    <p class="accessibility" id="skipTop">
+        <a href="#container">본문 바로가기</a>
+        <a href="#gnb" class="js-gnb_btn">주메뉴 바로가기</a>
+    </p>
+    <div class="wrapper">
+        <!-- header -->
+        <header id="header" class="header">
+            <div class="header_fixed_group">
+                <div class="top_bar">
+                    <div class="locations">
+                        <div class="view_page">
+                            <h1 class="sub_title">장바구니</h1>
+                        </div>
+                    </div>
+                    <div class="top_left">
+                        <a href="javascript:history.go(-1);" class="history_back"><span class="hide">이전페이지로 이동</span></a>
+                    </div>
+                    <div class="top_right">
+                        <a href="#none" class="btn_del">전체삭제</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- //header -->
+
+        <!-- container -->
+        <div id="container">
+            <div id="contents">
+
+
+
+            </div>
+        </div>
+
+        <!-- //container -->
+        <!-- 
+<div class="toolBar">
+    <ul>
+        <li class="toolbar_btn0"><a href="#">서비스찾기</a></li>
+        <li class="toolbar_btn1"><a href="#">알림</a></li>
+        <li class="toolbar_btn2"><a href="#">홈</a></li>
+        <li class="toolbar_btn3"><a href="#">채팅</a></li>
+        <li class="toolbar_btn4"><a href="#">마이페이지</a></li>
+    </ul>
+</div> -->
+        <a href="#none" class="top_scroll">위로 이동</a>
+    </div>
+
+    <!--팝업//-->
+    <div id="popup_layer0" class="trp popupfixed-wrap cover_type">
+        <div class="popup-align">
+            <div class="popup-layer">
+                <div class="header">
+                    <div class="header_rel_group">
+                        <div class="top_bar">
+                            <div class="top_right">
+                                <a href="#" class="btn_close js-closepop"><span class="hide">레이어창닫기</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--컨텐츠//-->
+                <section class="section">
+                    <div class="cont_inner">
+                        <dl class="info_style mb20">
+                            <dt>상품명</dt>
+                            <dd>이너뷰티 / 특별한 날을 위한 헤어 <em>외 1건</em></dd>
+                            <dt>제공기간</dt>
+                            <dd>별도제공기간 없음</dd>
+                            <dt>상품금액</dt>
+                            <dd>50,000원</dd>
+                        </dl>
+                    </div>
+
+
+                    <div class="top_line">
+                        <div class="big_title_box">
+                            <h3 class="sub_tit">최종결제금액</h3>
+                            <p class="price">
+                                <span>50,000</span> 원
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="top_line">
+                        <div class="big_title_box">
+                            <h3 class="sub_tit">이용약관 동의</h3>
+                            <p class="check">
+                                <input type="checkbox" class="chk js-chk_item" id="agree0">
+                                <label for="agree0" class="chk">전체동의</label>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="top_line">
+                        <div class="big_title_box">
+                            <dl class="info_style">
+                                <dt class="full">입금은행 선택</dt>
+                                <dd class="full">
+                                    <input type="text" class="" value="홍길동" placeholder="" readonly>
+                                    <div class="item item2 mt10">
+                                        <select name="" id="">
+                                            <option value="">입금은행선택</option>
+                                        </select>
+                                    </div>
+                                </dd>
+                                <dt>계좌번호</dt>
+                                <dd>최종결제금액 50,000원</dd>
+                                <dt>마감기한</dt>
+                                <dd class="colorP">2019년 11월 9일 24시</dd>
+                            </dl>
+                        </div>
+                    </div>
+
+                    <div class="btn_bottom_fixed">
+                        <div class="fixed_wrap">
+                            <a href="#" class="btn btn_llg btn_point btn_block">확인</a>
+                        </div>
+                    </div>
+            </div>
+
+            </section>
+        </div>
+    </div>
+    </div>
+    <script>
+        (function() {
+            $("#popup_layer0").dialog({
+                autoOpen: true,
+                modal: true,
+                width: '100%',
+                height: $(window).innerHeight(),
+                resizable: false,
+                create: function(event) {
+                    $(".js-layer_pop").on("click", function() {
+                        modalFixedControl.open($(event.target));
+                        $(event.target).dialog("open");
+                    });
+                },
+                open: function(event) {
+                    $('.js-closepop', $(event.target)).on('click', function() {
+                        $(event.target).dialog("close");
+                        return false;
+                    })
+                },
+                close: function() {
+                    modalFixedControl.close();
+                }
+            });
+        })();
+    </script>
+
+
+</body>
+
+</html>

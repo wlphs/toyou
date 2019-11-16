@@ -17,14 +17,12 @@
 			<div class="header_fixed_group">
 				<div class="top_bar">
 					<div class="locations"> 
-						<div class="view_page"><h1 class="sub_title">장바구니</h1></div>
+						<div class="view_page"><h1 class="sub_title">이너뷰티 예약하기</h1></div>
 					</div>
 					<div class="top_left">
 						<a href="javascript:history.go(-1);" class="history_back"><span class="hide">이전페이지로 이동</span></a> 
 					</div>
-					<div class="top_right">
-						<a href="#none" class="btn_del">전체삭제</a>
-					</div>
+					
 				</div>
 			</div> 
 		</header>
@@ -45,61 +43,68 @@
 					</div>
 				</div>
 				
-				<div class="pb30">
+				<div class="buy_cont mt50">
 					<div class="cont_inner_right">
-						<div class="shopping_basket mt50">
-							<h2>힐링&테라피</h2>
-							<ul class="shopping_list mt15">
+						<div class="reserve_area">
+							<h2>대표 서비스</h2>
+							<h3>힐링&테라피</h3>
+							<ul class="reserve_list no_bt_line mb20">
 								<li>
-									<div class="list_name">
-										<p class="name">
-											<b>[메이크업]특별한 날을 위한 헤어, 메이크업</b>
-											2019-11-16(목) / 오후 12:30~02:30 (2시간)
-											<em class="price">100,000원</em>
-										</p>
-										<button class="txt_del" type="button">삭제</button>
-									</div>
+									<input type="checkbox" class="chk js-chk_item" id="reserve0" checked>
+									<label for="reserve0" class="chk">
+										<span>[메이크업]특별한 날을 위한 헤어, 메이크업</span>
+										<em class="price">100,000원</em>
+									</label>
 								</li>
 							</ul>
 						</div>
 					</div>
 					
 					<div class="cont_inner_right top_line">
-						<div class="shopping_basket">
-							<h2 class="mt30">뷰티</h2>
-							<ul class="shopping_list mt15">
+						<div class="reserve_area mt50">
+							<h2>제공 서비스</h2>
+							<h3>뷰티</h3>
+							<ul class="reserve_list mb35">
 								<li>
-									<div class="list_name">
-										<p class="name">
-											<b>[메이크업]특별한 날을 위한 헤어, 메이크업</b>
-											2019-11-16(목) / 오후 12:30~02:30 (2시간)
-											<em class="price">100,000원</em>
-										</p>
-										<button class="txt_del" type="button">삭제</button>
-									</div>
+									<input type="checkbox" class="chk js-chk_item" id="reserve1">
+									<label for="reserve1" class="chk">
+										<span>[메이크업]특별한 날을 위한 헤어, 메이크업</span>
+										<em class="price">100,000원</em>
+									</label>
 								</li>
 								<li>
-									<div class="list_name">
-										<p class="name">
-											<b>[메이크업]특별한 날을 위한 헤어, 메이크업특별한 날을 위한 헤어, 메이크업</b>
-											2019-11-16(목) / 오후 12:30~02:30 (2시간)
-											<em class="price">100,000원</em>
-										</p>
-										<button class="txt_del" type="button">삭제</button>
-									</div>
+									<input type="checkbox" class="chk js-chk_item" id="reserve2" checked>
+									<label for="reserve2" class="chk">
+										<span>[메이크업]특별한 날을 위한 헤어, 메이크업</span>
+										<em class="price">100,000원</em>
+									</label>
+								</li>
+							</ul>
+
+							<h3>할인 패키지</h3>
+							<ul class="reserve_list mb35">
+								<li>
+									<input type="checkbox" class="chk js-chk_item" id="reserve3">
+									<label for="reserve3" class="chk">
+										<span>[메이크업]특별한 날을 위한 헤어, 메이크업</span>
+										<em class="price">100,000원</em>
+									</label>
 								</li>
 							</ul>
 						</div>
 					</div>
 
-					<div class="more_wrap">
-						<button class="btn_all_more"><span class="txt">추가하기</span></button>
+					<div class="price_box">
+						<p class="total_sum">
+							<b>2</b>개 서비스
+						</p>
+						<p class="total_price">총 <span>55,000</span> 원</span></p>
 					</div>
 				</div>
 
 				<div class="btn_bottom_fixed">
 						<div class="fixed_wrap">
-							<a href="#" class="btn btn_llg btn_point btn_block">서비스 예약하기</a>
+							<a href="#" class="btn btn_llg btn_point btn_block">서비스 담기</a>
 						</div>
 					</div>
 
@@ -109,75 +114,6 @@
 		<!-- //container -->
 		@@include('../../include/_toolbar.html')
 	</div>
-
-
-	<div id="getPhoto" class="trp popupfixed-wrap">
-		<div class="popup-align">
-			<div class="popup-vertical">
-				<div class="popup-layer select_layer" style="width:100%;">
-					<!-- <div class="pop_header">
-						<p class="tit">사진 가져오기</p>
-						<a href="#" class="btn_close js-closepop"><span class="hide">닫기</span></a>
-					</div>  -->
-					<section class="section pd0" style="display: block;">
-						<ul class="sel_wrap get_photo">
-							<li>
-								<span class="get_photo_btn get_photo0">사진촬영</span>
-								<input type="file" id="camera" name="camera" capture="camera" accept="image/*" />
-							</li>
-							<li>
-								<span class="get_photo_btn get_photo1">앨범에서 가져오기</span>
-								<input type="file" id="camera" name="camera">
-							</li>
-							<li>
-								<button class="get_photo_btn btn_cancel js-closepop">취소</button>
-							</li>
-						</ul>
-					</section>
-				</div>
-			</div>
-		</div>
-	</div>
-
-<script>
-	$("#getPhoto").dialog({
-		autoOpen: false,
-		modal: true,
-		width:'100%',
-		position: { my: "bottom", at: "bottom" },
-		show: { effect: "slide",direction:"down", duration: 300 },
-		create : function(event) {
-		  $(".js-photo").on("click", function() {
-			modalFixedControl.open($(event.target));
-			$(event.target).dialog("open");
-			return false;
-		  });
-		},
-		resizable: false,
-		open : function (event) {
-		  $('.js-closepop', $(event.target)).off('click').on('click', function() {
-			  $(event.target).dialog( "close" );
-			  return false;
-		  })
-		},
-		close: function() {
-			modalFixedControl.close();
-		}
-	});
-
-
-	// 이미지를 동그란 영역에 맞춰 중앙 정렬
-	// 이미지가 변경될 때 아래 함수를 실행시켜 주세요
-	$('.pf_photo img').coverImage();
-
-</script>
-
-
-
-<script>
-		
-	</script>
-
 
 </body>
 </html>

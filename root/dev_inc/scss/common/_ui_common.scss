@@ -60,6 +60,7 @@
 }
 
 .btn.btn_block {display:block; width:100%;}
+
 // 크기
 .btn.btn_round { border-radius: 22px; }
 .btn.btn_md { padding: 0px 13px; height:45px; line-height: 45px;  min-width: auto;  font-size: 15px; }
@@ -100,11 +101,14 @@
 .btn_del { font-size: 14px; display:inline-block; font-weight: 500; padding:5px 0 5px 0;
     &::before { content:''; display:inline-block; @include sp_icons($icon_del); vertical-align:top; margin:2px 8px 0 0;}
 }
-
-  
-
-  
-
+//카카오톡
+.icon_kakao { font-size: 15px; display:inline-block; padding:5px;
+    &::before { content:''; display:inline-block; @include sp_icons($icon_kakao); vertical-align:top; margin:-2px 8px 0 0;}
+}
+//전화하기
+.icon_call {font-size: 15px; display:inline-block; padding:5px;
+    &::before { content:''; display:inline-block; @include sp_icons($icon_call); vertical-align:top; margin:-2px 8px 0 0;}
+}
 // 버튼 정열
 .btn_bottom { position: relative; padding-top: 30px; @include clearfix();
     .item_ml { margin-left: 6px !important;}
@@ -229,7 +233,6 @@
         .tab_cont { padding-top: 30px;}
     }
 }
-
 
 
 .tab-list.height_bg { height: 75px; }

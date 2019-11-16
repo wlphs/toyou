@@ -1,5 +1,5 @@
 .profile_wrap { padding-top:16px; 
-    .pf_photo_wrap {width:120px; margin: 0 auto; position: relative;
+    .pf_photo_wrap { width:120px; margin: 0 auto; position: relative;
         .pf_photo { border-radius: 60px; width:120px; height:120px; overflow: hidden;
             img { width:120px; }
         }
@@ -20,6 +20,19 @@
             &.btn_edit_cert {margin-left:24px;}
         }
         .cert_stat {font-size:12px; color:#000000; opacity: 0.6; margin-left:5px;}
+    }
+
+    //하단에위치할때
+    &.bottom { padding:25px 0;
+        .pf_photo_wrap { width:70px;}
+        .pf_photo { width:70px; height:70px;
+            img { width:70px; }
+        }
+        .pf_name { font-size: 19px; font-weight:700;}
+        .pf_link { text-align: center; margin-top:5px;
+            a { margin:0 10px;}
+            
+        }
     }
 }
 .my_count { background:#F7F7F7; @include clearfix();

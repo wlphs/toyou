@@ -187,15 +187,110 @@
         &.no_line { border-top:0;}
         li { border-top:1px dashed #c5c5c7; padding: 15px 5px;
             &:first-child { border-top:0;}
-            
-            .list_name { position: relative;
-                .name { width:calc(100% - 70px); font-size: 14px; font-weight: 300; line-height: 22px;
-                    b { font-weight: 500; display:block;}
-                    .price { font-size: 16px; display:block; margin-top: 3px; font-weight: 500;}
+        }
+    }
+}
+
+//도트라인
+.list_type_line { border-top: 1px solid #05050b; 
+    &.no_line { border-top:0;}
+    li { border-top:1px dashed #c5c5c7; padding: 15px 0;
+        &:first-child { border-top:0;}
+        .sub_tit { font-size: 15px; border-bottom: 1px solid #05050b; padding-bottom: 10px;}
+
+        //form
+        .form_list { margin-right: 25px;
+            dt, dd { font-size: 15px;}
+            dd {
+                .form_list_info { margin-top: -15px;
+                    dt, dd { margin-top: 13px; }
                 }
-                .txt_del { position: absolute; right:0; top: 50%; margin-top: -19px; padding: 10px 25px; color:$colorP; font-size: 14px; font-weight: 500;}
             }
-            
+        }
+    }
+
+    &.fs15 {
+        li { font-size: 15px; line-height: 23px;}
+    }
+}
+
+//정보들
+.list_name { position: relative;
+    .name { width:calc(100% - 70px); font-size: 15px; font-weight: 300; line-height: 22px;
+        b { font-weight: 500; display:block;}
+    }
+    .name_full { width:100%; font-size: 15px; font-weight: 300; line-height: 22px;
+        b { font-weight: 500; display:block;}
+    }
+    .price { font-size: 17px; display:block; margin-top: 5px; font-weight: 500;}
+    .txt_del { position: absolute; right:0; top: 50%; margin-top: -19px; padding: 10px 25px; color:$colorP; font-size: 15px; font-weight: 500;}
+}
+
+//formbox
+.form_box {
+    h2 { font-size: 19px; font-weight:700;}
+}
+.line_box { border:1px solid #bbbbbd; text-align:center; font-size: 15px; color: #000; line-height:23px; padding: 10px;}
+.dot_line_txt { border-top:1px dashed #c5c5c7; padding-top: 5px; }
+.price_box  { display:block; background:#f5f5f5; padding: 15px 25px;
+    .total_sum {  float:left; margin-top: 3px; font-weight: 300; font-size: 15px;
+        b { font-weight: 500;}
+    }
+    .total_price { text-align:right; font-size: 15px; font-weight: 300;
+        span { font-size: 19px; font-weight: 500;}
+    }
+}
+
+//서비스받을주소
+.service_add { position: relative; background:#f5f5f5; padding:16px 20px 15px; 
+    .add { width: calc(100% - 70px); font-size: 15px; font-weight: 300; line-height: 22px; font-size: 15px; }
+    .txt_del { position: absolute; right: 0; top: 50%; margin-top: -19px; padding: 10px 25px; color: #ff5c5c; font-size: 15px; font-weight: 500;}
+}
+
+//예약완료
+.buy_booking { padding: 35px 0;
+    .end {  text-align:center;
+        &:before { content:''; margin:0 auto 15px; display:block; @include sp_icons($icon_end); }
+        span { font-size:19px; font-weight: 700;}
+        p { font-size: 15px; line-height: 23px;  padding-top: 14px;}
+    }
+}
+
+//
+.big_title_box { display:block; overflow:hidden; padding: 23px 25px;
+    .sub_tit { font-size: 15px; float:left; font-weight: 500; }
+    .price { float: right; font-size: 15px; margin-top: -4px;
+        span { font-size: 19px; color:$colorP; font-weight: 700;}
+    }
+    .check { float: right; margin-top: -3px; }
+}
+
+//정보성마크업
+.info_style {
+    dt, dd { font-size: 15px; padding: 5px 0 6px ; }
+    dt { width: 75px; float:left; font-weight: 500;}
+    dd { margin-left: 75px; font-weight: 300;}
+
+    dt.full { width: 100%; display:block; float:none;}
+    dd.full { width: 100%; display:block; float:none; margin-left:0; margin-bottom: 15px;}
+}
+
+//서비스 예약
+.reserve_area { 
+    h2 { font-size: 19px; font-weight:700; margin-bottom: 20px;}
+    h3 { font-size: 15px; font-weight: 500; margin-bottom: 10px;}
+
+    .reserve_list { border-top: 1px solid #05050b; border-bottom: 1px solid #c7c7c9;
+        &.no_line { border:0;}
+        &.no_bt_line { border-bottom:0; }
+        li { border-top:1px dashed #c5c5c7; padding: 15px 0;
+            &:first-child { border-top:0;}
+
+            label { display:block !important; padding:0 85px 0 0 !important; 
+                span { display:block; font-size: 15px; font-weight: 300;}
+                em {  font-size: 17px; display:block;  font-weight: 500;}
+            }
+            input[type="checkbox"].chk + label.chk:after { left: auto; right: 25px;}
         }
     }
 }
