@@ -471,3 +471,11 @@
 	50%{-webkit-transform:scale(1.5) }
 	100%{-webkit-transform:scale(1) }
 }
+
+
+.dot_type_list2 {
+    li {
+        background: url('/resources/images/common/dot_line_hor.png') repeat-x bottom left; background-size:4px 1px;
+        &:last-child { background:none;}
+    }
+}

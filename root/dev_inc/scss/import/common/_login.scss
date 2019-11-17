@@ -8,12 +8,12 @@
   li { padding:35px 24px; text-align: center; border-top:10px solid #efefef; position: relative;
     .txt {font-size:15px; margin-bottom:15px; line-height: 24px; font-weight: 500;}
 
-    .coming { padding:45px 0; background:rgba(0,0,0,0.7); position: absolute; top:0; left:0; width:100%; height:100%;
-      .txt1 {padding:5px 20px; background:#fff; color:#000; font-weight: 500;}
-      .txt2 {display:block;  margin-top:20px;
+    .coming { padding:0px 0 45px;
+      .txt1 {padding:0px 20px; line-height: 45px; height:45px; margin-top:15px; display:block; background:#c8c8c8; font-weight: 400; color:#fff; font-size:15px;}
+      .txt2 {display:block;  
         img {width:232px;}
       }
-      .txt3 {display:block;  color:#fff; font-size:15px; margin-top:15px;}
+      .txt3 {display:block;  color:#000; font-size:15px; margin-top:10px;}
     }
   }
 }

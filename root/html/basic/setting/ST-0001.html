@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <!-- header -->
+    <meta charset="UTF-8">
+    <title>TOYOUCORP.</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" id="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,initial-scale=1.0">
+    <link rel="stylesheet" href="/resources/css/library/csslibrary.css">
+    <link rel="stylesheet" href="/resources/css/common.css">
+    <script src="/resources/js/jquery-3.4.1.min.js"></script>
+    <script src="/resources/js/library/jquerylibrary.min.js"></script>
+    <script src="/resources/js/common.js"></script>
+
+    <!-- //header -->
+</head>
+
+<body class="pageclass">
+    <p class="accessibility" id="skipTop">
+        <a href="#container">본문 바로가기</a>
+        <a href="#gnb" class="js-gnb_btn">주메뉴 바로가기</a>
+    </p>
+    <div class="wrapper">
+        <!-- header -->
+        <header id="header" class="header">
+            <div class="header_fixed_group">
+                <div class="top_bar">
+                    <div class="top_left">
+                        <a href="javascript:history.go(-1);" class="history_back"><span class="hide">이전페이지로 이동</span></a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- //header -->
+
+        <!-- container -->
+        <div id="container">
+            <div id="contents">
+                <div class="sub_title cont_inner pb25">
+                    <h1 class="h1"><em>기본 정보</em><br />수신 동의</h1>
+                    <p class="tit_desc mt15">예약 서비스 진행 단계, 채팅, 안전거래에 <br>대한 알림을 받아보세요.</p>
+                </div>
+
+                <div class="top_line cont_inner_right">
+                    <ul class="dot_type_list2">
+                        <li>
+                            <div class="toggle_box pl0">
+                                <h2 class="sub_tit">앱 푸시</h2>
+                                <span class="toggle">
+                                    <a href="#none" class="togBtn">
+                                        <span class="txt">off</span>
+                                        <input type="checkbox" id="" name="" checked>
+                                    </a>
+                                </span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="toggle_box pl0">
+                                <h2 class="sub_tit">카카오톡 알림</h2>
+                                <span class="toggle">
+                                    <a href="#none" class="togBtn">
+                                        <span class="txt">off</span>
+                                        <input type="checkbox" id="" name="" checked>
+                                    </a>
+                                </span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="toggle_box pl0">
+                                <h2 class="sub_tit">이메일</h2>
+                                <span class="toggle">
+                                    <a href="#none" class="togBtn">
+                                        <span class="txt">off</span>
+                                        <input type="checkbox" id="" name="" checked>
+                                    </a>
+                                </span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="toggle_box pl0">
+                                <h2 class="sub_tit">앱 푸시</h2>
+                                <span class="toggle">
+                                    <a href="#none" class="togBtn">
+                                        <span class="txt">off</span>
+                                        <input type="checkbox" id="" name="" checked>
+                                    </a>
+                                </span>
+                            </div>
+                        </li>
+                    </ul>
+
+
+                </div>
+                <div class="sub_title cont_inner pb25 top_line mt0">
+                    <h1 class="h1"><em>마케팅 정보</em><br />수신 동의</h1>
+                </div>
+                <div class="top_line cont_inner_right mb50">
+                    <ul class="dot_type_list2">
+                        <li>
+                            <div class="toggle_box pl0">
+                                <h2 class="sub_tit">앱 푸시</h2>
+                                <span class="toggle">
+                                    <a href="#none" class="togBtn">
+                                        <span class="txt">off</span>
+                                        <input type="checkbox" id="" name="">
+                                    </a>
+                                </span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="toggle_box pl0">
+                                <h2 class="sub_tit">카카오톡 알림</h2>
+                                <span class="toggle">
+                                    <a href="#none" class="togBtn">
+                                        <span class="txt">off</span>
+                                        <input type="checkbox" id="" name="">
+                                    </a>
+                                </span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="toggle_box pl0">
+                                <h2 class="sub_tit">이메일</h2>
+                                <span class="toggle">
+                                    <a href="#none" class="togBtn">
+                                        <span class="txt">off</span>
+                                        <input type="checkbox" id="" name="">
+                                    </a>
+                                </span>
+                            </div>
+                        </li>
+                    </ul>
+
+
+                </div>
+
+            </div>
+        </div>
+
+        <!-- //container -->
+        <!-- 
+<div class="toolBar">
+    <ul>
+        <li class="toolbar_btn0"><a href="#">서비스찾기</a></li>
+        <li class="toolbar_btn1"><a href="#">알림</a></li>
+        <li class="toolbar_btn2"><a href="#">홈</a></li>
+        <li class="toolbar_btn3"><a href="#">채팅</a></li>
+        <li class="toolbar_btn4"><a href="#">마이페이지</a></li>
+    </ul>
+</div> -->
+        <a href="#none" class="top_scroll">위로 이동</a>
+    </div>
+    <script>
+        //토글버튼
+        $(".toggle .togBtn").each(function() {
+            var self = this;
+            if ($(this).find("input[type=checkbox]").is(":checked")) {
+                $(this).addClass("active")
+            };
+            setTimeout(function() {
+                $(self).addClass('transition');
+            }, 1)
+
+            $(this).click(function(e) {
+                e.preventDefault();
+                if ($(this).hasClass("active")) {
+                    $(this).removeClass("active");
+                    $(this).find("input[type=checkbox]").prop("checked", false);
+                    $('.txt').html("off");
+                } else {
+                    $(this).addClass("active");
+                    $(this).find("input[type=checkbox]").prop("checked", true);
+                    $('.txt').html("on");
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

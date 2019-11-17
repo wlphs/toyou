@@ -66,13 +66,14 @@
 //알림내역
 .alarm_area{ 
     .alarm_list {
-        >li { margin-top: 30px; position: relative; padding-left: 55px;
-            &::before { content:''; display:inline-block;  background: url(/resources/images/common/dot_line_hor.png) repeat-x bottom left; background-position: top; position:absolute; left:0; right:-50%; top:-20px; height: 1px;}
+        >li {  position: relative; padding-left: 55px; padding-top:15px; padding-bottom:15px;
+            &::before { content:''; display:inline-block;  background: url(/resources/images/common/dot_line_hor.png) repeat-x bottom left; background-position: top; position:absolute; left:0; width:100%; margin-left:25px; top:0px; height: 1px;}
             &:first-child { margin-top:0;
                 &::before { display:none;}
             }
+            &.bg_f7 {background:#f7f7f7;}
             
-            .photo_img { position: absolute; left:0; top:0; width: 45px; height: 45px; overflow:hidden; border-radius: 100%; display:inline-block;
+            .photo_img { position: absolute; left:25px; top:15px; width: 45px; height: 45px; overflow:hidden; border-radius: 100%; display:inline-block;
                 img { width:100%; height: 100%; }
             }
             .link { font-size: 14px; position: relative; display:block; padding-right:30px; word-break: keep-all; line-height: 22px;

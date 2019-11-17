@@ -70,15 +70,15 @@
 						</a>
 					</li>
 				</ul>
-				<ul class="cont_inner_right list_btn_wrap">
+				<ul class="cont_inner_right list_btn_wrap mb50">
 					<li><a href="#" class="btn_menu_arrow">알림 설정</a></li>
 					<li><a href="#" class="btn_menu_arrow">안심 메시지 설정</a></li>
 					<li><a href="#" class="btn_menu_arrow">자주 묻는 질문</a></li>
 					<li><a href="#" class="btn_menu_arrow">채팅 고객 센터</a></li>
 					<li><a href="#" class="btn_menu_arrow">버전 정보 (2.72) <span class="sm_txt">최신버전입니다.</span></a></li>
 					<li><a href="#" class="btn_menu_arrow">이용 약관 및 개인정보 보호정책</a></li>
-					<li><a href="#" class="btn_menu_arrow">로그아웃</a></li>
-					<li><a href="#" class="btn_menu_arrow">회원탈퇴 <span class="sm_txt">개인 정보와 설정이 모두 삭제됩니다.</span></a></li>
+					<li><a href="#" class="btn_menu_arrow js-logout">로그아웃</a></li>
+					<li><a href="#" class="btn_menu_arrow js-secession">회원탈퇴 <span class="sm_txt">개인 정보와 설정이 모두 삭제됩니다.</span></a></li>
 				</ul>
 
 			</div>
@@ -117,6 +117,54 @@
 		</div>
 	</div>
 
+	
+    
+	<div id="pop_logout" class="trp popupfixed-wrap">
+		<div class="popup-align">
+			<div class="popup-vertical caution">
+				<div class="popup-layer " style="width:100%;">
+					<section class="section pd0" style="display: block;">
+						<div class="cont_inner caution_wrap">
+							<p class="txt2">로그 아웃 하시겠습니까?</p>
+							
+                            <div class="btn_set-double">
+								<div class="btn_item"><a href="#" class="btn btn_lg btn_gray_w js-closepop ">취소</a></div>
+								<div class="btn_item"><a href="#" class="btn btn_lg btn_point">확인</a></div>
+							</div>
+						</div>
+					</section>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+    <script>
+			$("#pop_logout").dialog({
+				autoOpen: false,
+				modal: true,
+				width:'100%',
+				position: { my: "bottom", at: "bottom" },
+				create : function(event) {
+					$(".js-logout").on("click", function() {
+						modalFixedControl.open($(event.target));
+						$(event.target).dialog("open");
+						return false;
+					});
+				},
+				resizable: false,
+				open : function (event) {
+					$('.js-closepop', $(event.target)).off('click').on('click', function() {
+						$(event.target).dialog( "close" );
+						return false;
+					})
+				},
+				close: function() {
+					modalFixedControl.close();
+				}
+			});
+	
+		</script>
 <script>
 	$("#getPhoto").dialog({
 		autoOpen: false,

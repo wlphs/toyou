@@ -117,9 +117,13 @@
     <script>
         //토글버튼
         $(".toggle .togBtn").each(function() {
+            var self = this;
             if ($(this).find("input[type=checkbox]").is(":checked")) {
                 $(this).addClass("active");
             };
+            setTimeout(function() {
+                $(self).addClass('transition');
+            }, 1)
             $(this).click(function(e) {
                 e.preventDefault();
                 if ($(this).hasClass("active")) {
