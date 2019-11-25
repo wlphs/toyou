@@ -337,8 +337,22 @@
 
 
 
-
-
+.cate_tit { font-size:18px; font-weight: 500; color:#000;}
+.category_list {@include clearfix();
+    li {float:left; width:25%; text-align: center; margin-top:18px; height:85px;
+        .cate_link { position: relative; padding-top:65px; display:inline-block; min-width: 55px;
+            &:after {content:''; position: absolute; top:0; left:50%; margin-left:-27px;}
+            &.ic_cl1:after { @include sp_category($cate01)}
+            &.ic_cl2:after { @include sp_category($cate02)}
+            &.ic_cl3:after { @include sp_category($cate03)}
+            &.ic_cl4:after { @include sp_category($cate04)}
+            &.ic_cl5:after { @include sp_category($cate05)}
+            &.ic_cl6:after { @include sp_category($cate06)}
+            &.ic_cl7:after { @include sp_category($cate07)}
+            &.ic_cl8:after { @include sp_category($cate08)}
+        }
+    }
+}
 
 
 
