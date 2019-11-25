@@ -29,7 +29,14 @@
             .chat_area {position: relative; padding: 0 0 0 5px; margin-top: 7px; 
                 &:after { content:''; clear:both; display:block; }
                 .chat_view { border:1px solid #e8e8e8; border-radius: 8px; padding: 13px; position: relative; display: inline-block; max-width: 74%; line-height:22px; letter-spacing: -0.05em;
-                    &::before { content:''; display:inline-block; position: absolute; left: -6px; top:-1px; @include sp_icons($icon_point_01); }
+                    &::before { content:''; display:inline-block; position: absolute; left: -6px; top:-1px; @include sp_icons($icon_point_01);}
+                    &.img { padding:0; border:0; background:none  !important;
+                        &::before { display: none;}
+                        .img { padding: 0; overflow: hidden; border-radius: 8px;
+                            img { width:100%;}
+                        }
+                    }
+                    
                 }
             }
             .time { color: #999999; display: inline-block; vertical-align: bottom; margin: 0 0 0 5px; font-size: 12px;}
@@ -38,7 +45,8 @@
             &.answer { padding: 0 0 0 0; text-align: right;
                 .chat_area { padding:0 5px 0 0; 
                     .chat_view { max-width: 77%; text-align:left; border:0px; background: url(/resources/images/common/point_bg.jpg); background-size: 100% 100%; color:#fff;
-                        &::before { left: auto; right: -6px; top:0; @include sp_icons($icon_point_02); }
+                        &::before { left: auto; right: -6px; top:1px; @include sp_icons($icon_point_02); }
+                        &.img { padding:0; border:0; background:none !important; }
                     }
                 }
                 .time { margin:0  5px 0 0;}

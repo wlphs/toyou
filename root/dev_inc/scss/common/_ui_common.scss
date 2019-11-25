@@ -101,6 +101,10 @@
 .btn_del { font-size: 14px; display:inline-block; font-weight: 500; padding:5px 0 5px 0;
     &::before { content:''; display:inline-block; @include sp_icons($icon_del); vertical-align:top; margin:2px 8px 0 0;}
 }
+//전체삭제
+.btn_del02 { font-size: 0; display:inline-block; font-weight: 500; padding:10px;
+    &::before { content:''; display:inline-block; @include sp_icons($icon_del02); vertical-align:top;}
+}
 //카카오톡
 .icon_kakao { font-size: 15px; display:inline-block; padding:5px;
     &::before { content:''; display:inline-block; @include sp_icons($icon_kakao); vertical-align:top; margin:-2px 8px 0 0;}
