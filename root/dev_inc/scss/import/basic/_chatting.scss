@@ -71,7 +71,7 @@
             &:first-child { margin-top:0;
                 &::before { display:none;}
             }
-            &.bg_f7 {background:#f7f7f7;}
+            &.bg_point {background:#ffe9e7;}
             
             .photo_img { position: absolute; left:25px; top:15px; width: 45px; height: 45px; overflow:hidden; border-radius: 100%; display:inline-block;
                 img { width:100%; height: 100%; }

@@ -81,6 +81,12 @@
                 .review_cont {
                     // @include ellipsis_line(3);
                 }
+                .reply { position: relative; padding-left:35px;
+                    .re_name {font-size:15px; font-weight: 500; position: relative; margin-bottom:10px;
+                        &:after {content:''; position: absolute; left:-15px; top:2px; width:9px; height:9px; display:block; border-bottom:2px solid #060f18;border-left:2px solid #060f18; box-sizing: border-box;}
+                     }
+                    .re_date {color:#999999; font-size:13px; position: absolute; right:0; top:0px;}
+                }
             }
         }
     }
@@ -140,16 +146,20 @@
 
 .irs--modern .irs-line {background:#e5e5e5; border:none; margin: 0 5px;}
 .irs--modern .irs-bar {border:none; border-radius:2px; background:url('/resources/images/common/point_bg.jpg') no-repeat left top; background-size:100% 100%;}
-.irs--modern .irs-from, .irs--modern .irs-to, .irs--modern .irs-single {font-size:13px;background-color:$colorP; padding:2px 6px; top:-3px;
+.irs--modern .irs-from, .irs--modern .irs-to, .irs--modern .irs-single {font-size:13px;background-color:$colorP; padding:2px 6px; top:-11px;
     &:before {border-top-color:$colorP;}
 }
-.irs--modern .irs-handle {display:none;}
+.irs--modern .irs-handle { border:none; box-shadow: none; background:none !important;
+    &:after {content:''; position: absolute; width:25px; height:25px; background: #ff5c5c; display:block; top:-21px; left:-7px; border-radius: 13px;}
+    &.to:after {background:#e445ab;}
+    i {display:none !important;}
+}
 .irs--modern .irs-grid-pol {display:none;}
 .irs--modern .irs-grid-text {color:#000; font-size:13px; 
     &.js-grid-text-0 {margin-left:-10px !important;}
     &.js-grid-text-1 {margin-left:0 !important; margin-right:-10px; right:0; left:auto !important;}
 }
-.irs--modern.irs-with-grid {height:50px;}
+.irs--modern.irs-with-grid {height:60px; margin-top:20px;}
 
 //서비스검색
 .service { 

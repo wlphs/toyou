@@ -5761,6 +5761,11 @@ select {
   vertical-align: top;
 }
 
+.agree_list li p a {
+  font-weight: 500;
+  border-bottom: 1px solid #000;
+}
+
 .agree_list li .agree_view {
   position: absolute;
   right: 0;
@@ -6665,8 +6670,8 @@ input[type="radio"].type_btn_radio + label {
   display: none;
 }
 
-.alarm_area .alarm_list > li.bg_f7 {
-  background: #f7f7f7;
+.alarm_area .alarm_list > li.bg_point {
+  background: #ffe9e7;
 }
 
 .alarm_area .alarm_list > li .photo_img {
@@ -7079,6 +7084,39 @@ input[type="radio"].type_btn_radio + label {
   margin-top: -8px;
 }
 
+.serv_wrap .serv_review_wrap .review_list li .reply {
+  position: relative;
+  padding-left: 35px;
+}
+
+.serv_wrap .serv_review_wrap .review_list li .reply .re_name {
+  font-size: 15px;
+  font-weight: 500;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.serv_wrap .serv_review_wrap .review_list li .reply .re_name:after {
+  content: '';
+  position: absolute;
+  left: -15px;
+  top: 2px;
+  width: 9px;
+  height: 9px;
+  display: block;
+  border-bottom: 2px solid #060f18;
+  border-left: 2px solid #060f18;
+  box-sizing: border-box;
+}
+
+.serv_wrap .serv_review_wrap .review_list li .reply .re_date {
+  color: #999999;
+  font-size: 13px;
+  position: absolute;
+  right: 0;
+  top: 0px;
+}
+
 .serv_dot_border.fst_pt0 li:first-child {
   padding-top: 0;
 }
@@ -7292,7 +7330,7 @@ input[type="radio"].type_btn_radio + label {
   font-size: 13px;
   background-color: #ff5c5c;
   padding: 2px 6px;
-  top: -3px;
+  top: -11px;
 }
 
 .irs--modern .irs-from:before, .irs--modern .irs-to:before, .irs--modern .irs-single:before {
@@ -7300,7 +7338,29 @@ input[type="radio"].type_btn_radio + label {
 }
 
 .irs--modern .irs-handle {
-  display: none;
+  border: none;
+  box-shadow: none;
+  background: none !important;
+}
+
+.irs--modern .irs-handle:after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  background: #ff5c5c;
+  display: block;
+  top: -21px;
+  left: -7px;
+  border-radius: 13px;
+}
+
+.irs--modern .irs-handle.to:after {
+  background: #e445ab;
+}
+
+.irs--modern .irs-handle i {
+  display: none !important;
 }
 
 .irs--modern .irs-grid-pol {
@@ -7324,7 +7384,8 @@ input[type="radio"].type_btn_radio + label {
 }
 
 .irs--modern.irs-with-grid {
-  height: 50px;
+  height: 60px;
+  margin-top: 20px;
 }
 
 .service .service.thum_list {
@@ -8295,18 +8356,17 @@ input[type="radio"].type_btn_radio + label {
   text-align: center;
   display: inline-block;
   box-sizing: border-box;
+  font-size: 13px;
 }
 
 .reserv_list_type li .stat.before {
   border: 1px solid #999;
   color: #999;
-  font-size: 13px;
 }
 
 .reserv_list_type li .stat.ing {
   border: 1px solid #ff5c5c;
   color: #ff5c5c;
-  font-size: 13px;
 }
 
 .reserv_list_type li .stat.request {
@@ -8332,6 +8392,16 @@ input[type="radio"].type_btn_radio + label {
 .reserv_list_type li .stat.waiting {
   background: #999999;
   color: #fff;
+}
+
+.reserv_list_type li .stat.deposit {
+  border: 1px solid #999999;
+  color: #999999;
+}
+
+.reserv_list_type li .stat.dday {
+  color: #ff5c5c;
+  background: #ffe9e7;
 }
 
 .reserv_list_type li .stat_time {

@@ -100,7 +100,7 @@
                                     </li>
                                 </ul>
                             </div>
-                            <div class="tab_cont" id="serv_introduce">
+                            <div class="tab_cont on" id="serv_introduce">
                                 <div class="serv_basic_info ">
                                     <div class="cont_inner">
                                         <p class="serv_tit">기본 정보</p>
@@ -133,10 +133,18 @@
                                     </ul>
                                 </div>
                                 <div class="cont_inner border_top10 pt20 pb20">
-                                    <p class="serv_tit">전문성</p>
+                                    <p class="serv_tit">학력, 대표경력, 수상내역</p>
                                     <ul class="dot_type_list mt10">
                                         <li>2019년 대한민상 뷰티멘토 대상 수상</li>
                                         <li>Diploma in Aromatherapy Level 3 수료</li>
+                                    </ul>
+                                </div>
+                                <div class="cont_inner border_top10 pt20 pb20">
+                                    <p class="serv_tit">뷰티ㆍ헬스케어 전문 라이선스 인증</p>
+                                    <ul class="dot_type_list mt10">
+                                        <li>아로마테라피스트 1급</li>
+                                        <li>아로마테라피스트 2급</li>
+                                        <li>아로마테라피스트 3급</li>
                                     </ul>
                                 </div>
                                 <div class="cont_inner border_top10 pt20 pb20">
@@ -215,7 +223,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="tab_cont on" id="serv_review">
+                            <div class="tab_cont" id="serv_review">
                                 <div class="serv_review_wrap cont_inner pt30">
                                     <div class="review_total_like">
                                         <span class="like_count">457</span>
@@ -240,6 +248,21 @@
                                                 진짜 나한테 어울리는 메이크업을 해보고 싶었는데 여기서 완전
                                                 감동했어요. 유튜브 보고 따라해봐도 제대로 되지 않고, 남들</div>
                                             <button class="btn_more_point mt15 js-ellipsis_open">더보기</button>
+                                        </li>
+                                        <li>
+                                            <div class="reply">
+                                                <p class="re_name">이진이</p>
+                                                <p class="re_date">2019.11.12</p>
+                                                <div class="review_cont js-ellipsis">유튜브 보고 따라해봐도 제대로 되지 않고, 남들 다 하는 거 말고
+                                                    진짜 나한테 어울리는 메이크업을 해보고 싶었는데 여기서 완전
+                                                    감동했어요. 유튜브 보고 따라해봐도 제대로 되지 않고, 남들유튜브 보고 따라해봐도 제대로 되지 않고, 남들 다 하는 거 말고
+                                                    진짜 나한테 어울리는 메이크업을 해보고 싶었는데 여기서 완전
+                                                    감동했어요. 유튜브 보고 따라해봐도 제대로 되지 않고, 남들</div>
+                                                <button class="btn_more_point mt15 js-ellipsis_open">더보기</button>
+                                            </div>
+
+
+
                                         </li>
                                         <li>
                                             <div class="writer">
@@ -368,6 +391,7 @@
 
             $('.tab_wrap .tab_btn').removeClass('on');
             $(this).closest('.tab_btn').addClass('on');
+            ellipsis_chk()
             return false;
         })
         // tab1
