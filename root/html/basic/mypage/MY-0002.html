@@ -50,7 +50,7 @@
                 </div>
                 <div class="btn_bottom_fixed">
                     <div class="fixed_wrap">
-                        <a href="#" class="btn btn_llg btn_point btn_block">제출하기</a>
+                        <a href="#" class="btn btn_llg btn_point btn_block js-snippet">제출하기</a>
                     </div>
                 </div>
             </div>
@@ -98,6 +98,11 @@
     </div>
 
     <script>
+        $('.js-snippet').on('click', function() {
+            openSnippet("제출되었습니다. 제출된 자료는 영업일 기준 최대 5일내 검토 후 신분인증 완료 처리해 드리게 됩니다.");
+            return false;
+        })
+
         $("#getPhoto").dialog({
             autoOpen: false,
             modal: true,

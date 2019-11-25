@@ -2989,7 +2989,7 @@ table.bottom_bar {
   margin-top: -5px;
   width: 6px;
   height: 10px;
-  background-position: -318.5px -214px;
+  background-position: -318.5px -250px;
 }
 
 .btn_file {
@@ -3044,7 +3044,7 @@ table.bottom_bar {
   margin-top: -4px;
   width: 10px;
   height: 6px;
-  background-position: -318.5px -198px;
+  background-position: -318.5px -214px;
   transform: rotate(0deg);
   transition: .2s transform;
 }
@@ -3344,7 +3344,7 @@ table.bottom_bar {
   margin-top: -5px;
   width: 6px;
   height: 10px;
-  background-position: -318.5px -214px;
+  background-position: -318.5px -250px;
 }
 
 .btn_arrow_type {
@@ -4036,7 +4036,7 @@ table.bottom_bar {
   margin-left: -27px;
   width: 55px;
   height: 55px;
-  background-position: 0px -84.5px;
+  background-position: -65px -84.5px;
   display: block;
 }
 
@@ -4048,7 +4048,7 @@ table.bottom_bar {
   margin-left: -27px;
   width: 55px;
   height: 55px;
-  background-position: -65px -84.5px;
+  background-position: 0px -84.5px;
   display: block;
 }
 
@@ -5154,7 +5154,7 @@ select {
   margin-left: -12px;
   width: 25px;
   height: 25px;
-  background-position: 0px -209.5px;
+  background-position: -195px -84.5px;
   display: block;
 }
 
@@ -5171,7 +5171,7 @@ select {
   margin-left: -12px;
   width: 25px;
   height: 25px;
-  background-position: -195px -84.5px;
+  background-position: -70px -209.5px;
   display: block;
 }
 
@@ -5394,7 +5394,7 @@ select {
   display: block;
   width: 6px;
   height: 10px;
-  background-position: -318.5px -234px;
+  background-position: -318.5px -230px;
 }
 
 .header .top_bar .btn_share {
@@ -5427,7 +5427,7 @@ select {
   display: block;
   width: 15px;
   height: 15px;
-  background-position: -292.5px -133px;
+  background-position: -292.5px -158px;
   position: absolute;
   top: 50%;
   margin-top: -8px;
@@ -5954,7 +5954,7 @@ input[type="radio"].type_btn_radio + label {
   right: 25px;
   width: 10px;
   height: 6px;
-  background-position: -318.5px -254px;
+  background-position: -318.5px -198px;
 }
 
 .main section.main_card {
@@ -6174,13 +6174,13 @@ input[type="radio"].type_btn_radio + label {
   margin-top: -6px;
   width: 18.5px;
   height: 16px;
-  background-position: 0px -244.5px;
+  background-position: -28.5px -244.5px;
 }
 
 .thum_list li .img .btn_like.on::before {
   width: 18.5px;
   height: 16px;
-  background-position: -28.5px -244.5px;
+  background-position: 0px -244.5px;
 }
 
 .thum_list li .thum_list_info {
@@ -6286,7 +6286,7 @@ input[type="radio"].type_btn_radio + label {
   margin-top: -9px;
   width: 15px;
   height: 15px;
-  background-position: -292.5px -158px;
+  background-position: -292.5px -183px;
 }
 
 .thum_list li .btn_like2.on::before {
@@ -6522,7 +6522,7 @@ input[type="radio"].type_btn_radio + label {
   display: inline-block;
   width: 15px;
   height: 15px;
-  background-position: -292.5px -108px;
+  background-position: -292.5px -133px;
   vertical-align: top;
   margin: 1px 0 0 5px;
 }
@@ -6639,7 +6639,7 @@ input[type="radio"].type_btn_radio + label {
   top: -1px;
   width: 12px;
   height: 10px;
-  background-position: -318.5px -98px;
+  background-position: -318.5px -118px;
 }
 
 .chatting_area .chatting_view > li .chat_area .chat_view.img {
@@ -6694,7 +6694,7 @@ input[type="radio"].type_btn_radio + label {
   top: 1px;
   width: 12px;
   height: 10px;
-  background-position: -318.5px -118px;
+  background-position: -318.5px -98px;
 }
 
 .chatting_area .chatting_view > li.answer .chat_area .chat_view.img {
@@ -6938,7 +6938,7 @@ input[type="radio"].type_btn_radio + label {
   content: '';
   width: 15px;
   height: 15px;
-  background-position: -292.5px -158px;
+  background-position: -292.5px -183px;
   display: block;
   position: absolute;
   top: 2px;
@@ -6949,7 +6949,7 @@ input[type="radio"].type_btn_radio + label {
   content: '';
   width: 15px;
   height: 15px;
-  background-position: -292.5px -183px;
+  background-position: -292.5px -208px;
   display: block;
   position: absolute;
   top: 2px;
@@ -6960,7 +6960,7 @@ input[type="radio"].type_btn_radio + label {
   content: '';
   width: 15px;
   height: 15px;
-  background-position: -292.5px -208px;
+  background-position: -292.5px -108px;
   display: block;
   position: absolute;
   top: 2px;
@@ -7191,7 +7191,7 @@ input[type="radio"].type_btn_radio + label {
   content: '';
   width: 15px;
   height: 15px;
-  background-position: -292.5px -158px;
+  background-position: -292.5px -183px;
   position: absolute;
   top: 50%;
   left: 0;
@@ -7298,7 +7298,7 @@ input[type="radio"].type_btn_radio + label {
   content: '';
   width: 25px;
   height: 25px;
-  background-position: -35px -209.5px;
+  background-position: 0px -209.5px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -7320,7 +7320,7 @@ input[type="radio"].type_btn_radio + label {
   content: '';
   width: 25px;
   height: 25px;
-  background-position: -70px -209.5px;
+  background-position: -35px -209.5px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -7354,7 +7354,7 @@ input[type="radio"].type_btn_radio + label {
   margin-top: -4px;
   width: 10px;
   height: 6px;
-  background-position: -318.5px -198px;
+  background-position: -318.5px -214px;
 }
 
 .more_wrap {
