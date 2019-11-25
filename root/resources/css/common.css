@@ -238,6 +238,11 @@ a, span, i, em {
   background-size: 306.5px 305.5px;
 }
 
+.category_list li .cate_link.ic_cl1:after, .category_list li .cate_link.ic_cl2:after, .category_list li .cate_link.ic_cl3:after, .category_list li .cate_link.ic_cl4:after, .category_list li .cate_link.ic_cl5:after, .category_list li .cate_link.ic_cl6:after, .category_list li .cate_link.ic_cl7:after, .category_list li .cate_link.ic_cl8:after {
+  background-image: url("../images/common/sp_category.png");
+  background-size: 185px 185px;
+}
+
 /*  _mixin.scss
     xxx {
         @include box-sizing(50%)  
@@ -2984,7 +2989,7 @@ table.bottom_bar {
   margin-top: -5px;
   width: 6px;
   height: 10px;
-  background-position: -276px -175px;
+  background-position: -223.5px -119.5px;
 }
 
 .btn_file {
@@ -3323,7 +3328,7 @@ table.bottom_bar {
   margin-top: -5px;
   width: 6px;
   height: 10px;
-  background-position: -276px -175px;
+  background-position: -223.5px -119.5px;
 }
 
 .btn_arrow_type {
@@ -4015,7 +4020,7 @@ table.bottom_bar {
   margin-left: -27px;
   width: 55px;
   height: 55px;
-  background-position: 0px -84.5px;
+  background-position: -65px -84.5px;
   display: block;
 }
 
@@ -4027,7 +4032,7 @@ table.bottom_bar {
   margin-left: -27px;
   width: 55px;
   height: 55px;
-  background-position: -65px -84.5px;
+  background-position: 0px -84.5px;
   display: block;
 }
 
@@ -4214,8 +4219,8 @@ input[type="text"]:disabled, input[type="password"]:disabled, input[type="number
 }
 
 input[type="text"][readonly], input[type="password"][readonly], input[type="number"][readonly], input[type="email"][readonly] {
-  background: #f5f5f5;
-  color: #999999;
+  background: #dedede;
+  color: #000;
 }
 
 input[type="text"].error, input[type="password"].error, input[type="number"].error, input[type="email"].error {
@@ -5133,7 +5138,7 @@ select {
   margin-left: -12px;
   width: 25px;
   height: 25px;
-  background-position: 0px -209.5px;
+  background-position: -195px -84.5px;
   display: block;
 }
 
@@ -5150,7 +5155,7 @@ select {
   margin-left: -12px;
   width: 25px;
   height: 25px;
-  background-position: -195px -84.5px;
+  background-position: -70px -209.5px;
   display: block;
 }
 
@@ -5373,7 +5378,7 @@ select {
   display: block;
   width: 6px;
   height: 10px;
-  background-position: -223.5px -119.5px;
+  background-position: -276px -175px;
 }
 
 .header .top_bar .btn_share {
@@ -5406,7 +5411,7 @@ select {
   display: block;
   width: 15px;
   height: 15px;
-  background-position: -25px -271.5px;
+  background-position: -100px -271.5px;
   position: absolute;
   top: 50%;
   margin-top: -8px;
@@ -5437,7 +5442,7 @@ select {
   display: block;
   width: 18px;
   height: 17px;
-  background-position: -223px -209.5px;
+  background-position: -195px -209.5px;
 }
 
 .header .top_bar .btn_search {
@@ -5705,7 +5710,7 @@ select {
   content: '';
   width: 50px;
   height: 50px;
-  background-position: -120px -149.5px;
+  background-position: 0px -149.5px;
   display: block;
 }
 
@@ -6233,14 +6238,14 @@ input[type="radio"].type_btn_radio + label {
 .thum_list.big_type li .btn_like::before {
   width: 18px;
   height: 17px;
-  background-position: -167px -209.5px;
+  background-position: -223px -209.5px;
   margin-top: -7px;
 }
 
 .thum_list.big_type li .btn_like.on::before {
   width: 18px;
   height: 17px;
-  background-position: -195px -209.5px;
+  background-position: -251px -209.5px;
 }
 
 .thum_list.service {
@@ -6434,7 +6439,7 @@ input[type="radio"].type_btn_radio + label {
   display: inline-block;
   width: 15px;
   height: 15px;
-  background-position: 0px -271.5px;
+  background-position: -50px -271.5px;
   vertical-align: top;
   margin: 1px 0 0 5px;
 }
@@ -6824,7 +6829,7 @@ input[type="radio"].type_btn_radio + label {
   content: '';
   width: 15px;
   height: 15px;
-  background-position: -50px -271.5px;
+  background-position: -25px -271.5px;
   display: block;
   position: absolute;
   top: 2px;
@@ -6835,7 +6840,7 @@ input[type="radio"].type_btn_radio + label {
   content: '';
   width: 15px;
   height: 15px;
-  background-position: -75px -271.5px;
+  background-position: 0px -271.5px;
   display: block;
   position: absolute;
   top: 2px;
@@ -6846,7 +6851,7 @@ input[type="radio"].type_btn_radio + label {
   content: '';
   width: 15px;
   height: 15px;
-  background-position: -100px -271.5px;
+  background-position: -75px -271.5px;
   display: block;
   position: absolute;
   top: 2px;
@@ -7077,7 +7082,7 @@ input[type="radio"].type_btn_radio + label {
   content: '';
   width: 15px;
   height: 15px;
-  background-position: -50px -271.5px;
+  background-position: -25px -271.5px;
   position: absolute;
   top: 50%;
   left: 0;
@@ -7184,7 +7189,7 @@ input[type="radio"].type_btn_radio + label {
   content: '';
   width: 25px;
   height: 25px;
-  background-position: -35px -209.5px;
+  background-position: 0px -209.5px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -7206,7 +7211,7 @@ input[type="radio"].type_btn_radio + label {
   content: '';
   width: 25px;
   height: 25px;
-  background-position: -70px -209.5px;
+  background-position: -35px -209.5px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -7685,7 +7690,7 @@ input[type="radio"].type_btn_radio + label {
   display: block;
   width: 50px;
   height: 50px;
-  background-position: 0px -149.5px;
+  background-position: -120px -149.5px;
 }
 
 .buy_booking .end span {
@@ -7919,6 +7924,89 @@ input[type="radio"].type_btn_radio + label {
 .select_time .time_check_list li input[type="checkbox"].chk_time:disabled + label.chk_time {
   background: #f5f5f5;
   color: #999;
+}
+
+.cate_tit {
+  font-size: 18px;
+  font-weight: 500;
+  color: #000;
+}
+
+.category_list:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.category_list li {
+  float: left;
+  width: 25%;
+  text-align: center;
+  margin-top: 18px;
+  height: 85px;
+}
+
+.category_list li .cate_link {
+  position: relative;
+  padding-top: 65px;
+  display: inline-block;
+  min-width: 55px;
+}
+
+.category_list li .cate_link:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -27px;
+}
+
+.category_list li .cate_link.ic_cl1:after {
+  width: 55px;
+  height: 55px;
+  background-position: 0px 0px;
+}
+
+.category_list li .cate_link.ic_cl2:after {
+  width: 55px;
+  height: 55px;
+  background-position: -65px 0px;
+}
+
+.category_list li .cate_link.ic_cl3:after {
+  width: 55px;
+  height: 55px;
+  background-position: 0px -65px;
+}
+
+.category_list li .cate_link.ic_cl4:after {
+  width: 55px;
+  height: 55px;
+  background-position: -65px -65px;
+}
+
+.category_list li .cate_link.ic_cl5:after {
+  width: 55px;
+  height: 55px;
+  background-position: -130px 0px;
+}
+
+.category_list li .cate_link.ic_cl6:after {
+  width: 55px;
+  height: 55px;
+  background-position: -130px -65px;
+}
+
+.category_list li .cate_link.ic_cl7:after {
+  width: 55px;
+  height: 55px;
+  background-position: 0px -130px;
+}
+
+.category_list li .cate_link.ic_cl8:after {
+  width: 55px;
+  height: 55px;
+  background-position: -65px -130px;
 }
 
 .profile_wrap {

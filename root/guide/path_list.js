@@ -281,8 +281,17 @@ __CONSTANT_LIST = [
 	{
         stateLine   : "", 
         dep1 		: '서비스찾기',
-        dep2 		: '상세검색/결과',
+        dep2 		: '카테고리',
         dep3 		: '',
+        url 		: '/html/basic/service/SV-0013.html',
+        pubUpdate 	: '2019-0000',
+        etc 		: '2019-1117',
+    },
+	{
+        stateLine   : "", 
+        dep1 		: '',
+        dep2 		: '',
+        dep3 		: '상세검색/결과',
         url 		: '/html/basic/service/SV-0005.html',
         pubUpdate 	: '2019-0000',
         etc 		: '2019-1117',
