@@ -4,8 +4,11 @@
 		a { display:block; height:100%;}
 	}
 	.location_top { position: absolute; right:25px; top:20px; font-size: 12px; 
-		&::before { content: ''; display:inline-block; vertical-align:middle; margin:-2px 0 0 2px; @include sp_icons($icon_location); }
-	}
+        &::before { content: ''; display:inline-block; vertical-align:middle; margin:-2px 0 0 2px; @include sp_icons($icon_location); }
+    }
+    .tip { position: absolute; right:0; top: 45px; padding: 12px 20px; color:#fff; background:$colorMain; font-size:13px; z-index:2;
+        &::before { content:''; display:inline-block; position: absolute; top:-5px; right:25px; @include sp_icons($icon_tip); }
+    }
 }
 
 .main {
@@ -71,7 +74,13 @@
 
         .img { height: 150px; overflow: hidden; margin-bottom: 9px; position: relative; //margin-left: -7px;
             img { width: 100%; height:100%;}
-            .icon_label { position: absolute; right:6px; top:6px; z-index: 1;}
+            .icon_label { position: absolute; right:7px; bottom:7px; z-index: 1; font-size:0;}
+            .btn_like  { position: absolute; right:10px; top:10px; z-index: 1; font-size:0;
+                &::before { content:''; display:inline-block; position: absolute; left:0; top:50%; margin-top:-6px; @include sp_icons($sm_like_t); }
+                &.on {
+                    &::before {  @include sp_icons($sm_like_t_on); }
+                }
+            }
         }
         
         //리스트정보
@@ -100,6 +109,14 @@
                 &::before {  @include sp_icons($icon_like_on); }
             }
         }
+
+        //
+        .btn_like2 { font-weight: 500; color:#000; position: relative; display:inline-block; padding: 0 0 0 20px; margin:9px 0 0; font-size: 11px; 
+            &::before { content:''; display:inline-block; position: absolute; left:0; top:50%; margin-top:-9px; @include sp_icons($serv_01); }
+            &.on {
+                &::before {  @include sp_icons($icon_like_on); }
+            }
+        }
         
     }
 
@@ -112,12 +129,12 @@
                 .title { font-size:18px; line-height: 24px; font-weight: 700;}
             }
             .type2 { margin: 3px 0 0; }
-            .btn_like { position: absolute;  right:10px; bottom:0; z-index: 1; font-size: 15px; padding-left:22px;
-                &::before {@include sp_icons($icon_like_b); margin-top:-7px;}
-                &.on {
-                    &::before {  @include sp_icons($icon_like_on_b); }
-                }
-            }
+            // .btn_like { position: absolute;  right:10px; bottom:0; z-index: 1; font-size: 15px; padding-left:22px;
+            //     &::before {@include sp_icons($icon_like_b); margin-top:-7px;}
+            //     &.on {
+            //         &::before {  @include sp_icons($icon_like_on_b); }
+            //     }
+            // }
         }
     }
 
@@ -147,14 +164,15 @@
 
         .post_list { border-top: 1px solid #05050b;
             &.no_line { border-top:0;}
-            li { border-top:1px dashed #c5c5c7; padding: 15px 5px;
+            li { border-top:1px dashed #c5c5c7; padding: 15px 5px; position: relative;
                 &:first-child { border-top:0;}
-                dl { 
+                dl { width: 95%;
                     dt { font-size: 17px; font-weight: 500; color:#000; vertical-align: top; margin-bottom: 9px;}
                     dd { color:#000; line-height: 23px;
                         span { color:#000; font-size: 15px;  display:block; }
                     }
                 }
+                .btn_del02 { position: absolute; right:15px; top: 50%; margin-top: -15px;}
             }
         }
     }
