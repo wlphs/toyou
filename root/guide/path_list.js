@@ -638,7 +638,7 @@ __CONSTANT_LIST = [
         dep1 		: '',
         dep2 		: '찜한 전문가',
         dep3 		: '목록',
-        url 		: '/html/.html',
+        url 		: '/html/basic/service/SV-0005_1.html',
         pubUpdate 	: '2019-0000',
         etc 		: '2019-1120',
     },

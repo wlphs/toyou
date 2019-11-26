@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <!-- header -->
+    <meta charset="UTF-8">
+    <title>TOYOUCORP.</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" id="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,initial-scale=1.0">
+    <link rel="stylesheet" href="/resources/css/library/csslibrary.css">
+    <link rel="stylesheet" href="/resources/css/common.css">
+    <script src="/resources/js/jquery-3.4.1.min.js"></script>
+    <script src="/resources/js/library/jquerylibrary.min.js"></script>
+    <script src="/resources/js/common.js"></script>
+
+    <!-- //header -->
+</head>
+
+<body class="pageclass">
+    <p class="accessibility" id="skipTop">
+        <a href="#container">본문 바로가기</a>
+        <a href="#gnb" class="js-gnb_btn">주메뉴 바로가기</a>
+    </p>
+    <div class="wrapper">
+        <!-- header -->
+        <header id="header" class="header">
+            <div class="header_fixed_group">
+                <div class="top_bar">
+                    <div class="locations">
+                        <div class="view_page">
+                            <h1 class="sub_title">결제 내역</h1>
+                        </div>
+                    </div>
+                    <div class="top_left">
+                        <a href="javascript:history.go(-1);" class="history_back"><span class="hide">이전페이지로 이동</span></a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- //header -->
+
+        <!-- container -->
+        <div id="container">
+            <div id="contents">
+                <div class="cont_inner_right">
+                    <div class="payment_view">
+                        <p class="payment_date">2019-09-08 (화)</p>
+                        <div class="payment_view_detail mt20">
+                            <div class="prd_photo">
+                                <img src="/resources/images/temp/@temp6.png" alt="">
+                            </div>
+                            <div class="prd_detail">
+                                <div class="prd_detail1">
+                                    <p class="name">이너뷰티</p>
+                                    <p class="title js-ellipsis_end">
+                                        <span class="tit">[스킨&바디케어] 매끈한 얼굴 매끈한 얼굴매끈한 얼굴</span>
+                                        <span class="etc">외 1건</span>
+                                    </p>
+                                    <p class="e_date">2019-11-30 (월)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- //container -->
+        <!-- 
+<div class="toolBar">
+    <ul>
+        <li class="toolbar_btn0"><a href="#">서비스찾기</a></li>
+        <li class="toolbar_btn1"><a href="#">알림</a></li>
+        <li class="toolbar_btn2"><a href="#">홈</a></li>
+        <li class="toolbar_btn3"><a href="#">채팅</a></li>
+        <li class="toolbar_btn4"><a href="#">마이페이지</a></li>
+    </ul>
+</div> -->
+        <a href="#none" class="top_scroll">위로 이동</a>
+    </div>
+    <script>
+        $(window).on('load', function() {
+            $('.js-ellipsis_end').each(function() {
+                var etc_w = $('.etc', $(this)).innerWidth();
+                $(this).css({
+                    "padding-right": etc_w
+                })
+            })
+
+        })
+    </script>
+</body>
+
+</html>

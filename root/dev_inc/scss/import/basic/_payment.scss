@@ -17,11 +17,12 @@
 }
 
 .payment_view_detail{ position: relative; padding:25px 25px 25px 85px;background:#f5f5f5;
-    .prd_photo {width:55px; height:55px; overflow:hidden; position: absolute; left:16px; top:16px; 
+    .prd_photo {width:55px; height:55px; overflow:hidden; position: absolute; left:16px; top:18px; 
         img {width:100%; }
     }
     .prd_detail {
         .prd_detail1 { padding-bottom:20px; background:url('/resources/images/common/dot_line_hor.png') repeat-x left bottom; background-size:4px;
+            &.no_border { background:none; padding-bottom:0;}
             .name {font-weight: 700; font-size:15px;}
             .title { position: relative; margin-top:5px;
                 .tit {font-size:15px;display:block; @include ellipsis();}
@@ -30,6 +31,7 @@
             .price {font-weight: 700; font-size:17px; position: relative; margin-top:10px;
                 .date {font-size:13px; color:#999; position: absolute; right:0; top:3px; font-weight: 300;}
             }
+            .e_date {font-size:13px; color:#999;  font-weight: 300; margin-top:12px;}
         }
         .prd_detail2 {padding-top:17px;
             .prd_d_tit {font-size:13px; font-weight: 700; margin-bottom:4px;}
