@@ -593,6 +593,7 @@ __CONSTANT_LIST = [
         dep2 		: '',
         dep3 		: '',
         dep4 		: '환불계좌입력',
+<<<<<<< HEAD
         url 		: '/html/basic/mypage/MY-0013.html',
         pubUpdate 	: '2019-0000',
         etc 		: '2019-1120',
@@ -644,6 +645,9 @@ __CONSTANT_LIST = [
         dep3 		: '',
         dep4 		: '서비스종료',
         url 		: '/html/basic/mypage/MY-0018.html',
+=======
+        url 		: '/html/basic/mypage/MY-0020.html',
+>>>>>>> d3d7d27df06779b6d355aa290ce8667308e42ca7
         pubUpdate 	: '2019-0000',
         etc 		: '2019-1120',
     },

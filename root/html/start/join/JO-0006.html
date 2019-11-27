@@ -49,17 +49,17 @@
                         </div>
                         <ul class="agree_list">
                             <li>
-                                <input type="checkbox" class="chk js-chk_item" id="agree0">
+                                <input type="checkbox" class="chk js-chk_item js-required" id="agree0">
                                 <label for="agree0" class="chk">서비스 이용약관 동의 <span class="colorP">(필수)</span></label>
                                 <button class="agree_view"><span class="hide">서비스 이용약관 보기</span></button>
                             </li>
                             <li>
-                                <input type="checkbox" class="chk js-chk_item" id="agree1">
+                                <input type="checkbox" class="chk js-chk_item js-required" id="agree1">
                                 <label for="agree1" class="chk">개인정보 수집 및 이용 <span class="colorP">(필수)</span></label>
                                 <button class="agree_view"><span class="hide">개인정보 수집 및 이용 보기</span></button>
                             </li>
                             <li>
-                                <input type="checkbox" class="chk js-chk_item" id="agree2">
+                                <input type="checkbox" class="chk js-chk_item js-required" id="agree2">
                                 <label for="agree2" class="chk">위치정보 이용약관 동의 <span class="colorP">(필수)</span></label>
                                 <button class="agree_view"><span class="hide">위치정보 이용약관 보기</span></button>
                             </li>
@@ -85,13 +85,9 @@
                         </ul>
                     </div>
                 </div>
-                <script>
-                    $('.js-all_check').allCheckbox_option('.js-chk_item', '.js-chk_option', '.js-chk_item_option');
-                    //$('.js-chk_option').oneCheckbox('.js-chk_item_option');
-                </script>
                 <div class="btn_bottom_fixed">
                     <div class="fixed_wrap">
-                        <a href="#" class="btn btn_llg btn_point btn_block js-caution">다음</a>
+                        <a href="#" class="btn btn_llg btn_gray btn_block js-next">다음</a>
                     </div>
                 </div>
             </div>
@@ -109,6 +105,21 @@
     </ul>
 </div> -->
         <a href="#none" class="top_scroll">위로 이동</a>
+
+        <script>
+            $('.js-all_check').allCheckbox_option('.js-chk_item', '.js-chk_option', '.js-chk_item_option');
+
+
+            $('input[type="checkbox"]').change(function() {
+                if ($('.js-required:checked').length == $('.js-required').length) {
+                    $('.js-next').addClass('btn_point');
+                    $('.js-next').removeClass('btn_gray');
+                } else {
+                    $('.js-next').removeClass('btn_point');
+                    $('.js-next').addClass('btn_gray');
+                }
+            })
+        </script>
     </div>
 
 

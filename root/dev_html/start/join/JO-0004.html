@@ -32,11 +32,11 @@
                     <h1 class="h1"><em>비밀번호를</em><br>입력해 주세요.</h1>
                 </div>
                 <div class="join_cont cont_inner">
-                    <input type="password" placeholder="영문, 숫자 혼합 8~16자리로 입력해 주세요.">
+                    <input type="password" class="js-input" placeholder="영문, 숫자 혼합 8~16자리로 입력해 주세요.">
                 </div>
                 <div class="btn_bottom_fixed">
                     <div class="fixed_wrap">
-                        <a href="#" class="btn btn_llg btn_point btn_block">다음</a>
+                        <a href="#" class="js-next btn btn_llg btn_gray btn_block">다음</a>
                     </div>
                 </div>
                 </form>
@@ -48,6 +48,17 @@
 	</div>
 <script>
 	$("#test1").validate();
+	
+	$('.js-input').on('keyup', function() {
+		if ($(this).val()) {
+			$('.js-next').addClass('btn_point');
+			$('.js-next').removeClass('btn_gray');
+		}
+		else {
+			$('.js-next').removeClass('btn_point');
+			$('.js-next').addClass('btn_gray');
+		}
+	})
 </script>
 
 </body>

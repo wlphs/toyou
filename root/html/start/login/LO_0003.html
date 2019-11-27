@@ -52,19 +52,19 @@
                                     <dl class="form_list">
                                         <dt>가입한 이메일 주소</dt>
                                         <dd>
-                                            <input type="text" placeholder="이메일 주소를 입력해 주세요." name="email" data-rule-required="true" data-rule-email="true" data-msg-required="* 이메일 주소를 입력해 주세요" data-msg-email="* 이메일 주소 형식에 맞게 입력해 주세요">
+                                            <input class="js-input" type="text" placeholder="이메일 주소를 입력해 주세요." name="email" data-rule-required="true" data-rule-email="true" data-msg-required="* 이메일 주소를 입력해 주세요" data-msg-email="* 이메일 주소 형식에 맞게 입력해 주세요">
                                         </dd>
                                         <dt>휴대폰 번호</dt>
                                         <dd>
                                             <span class="input_search type2">
-                                                <input type="number" placeholder="휴대폰 번호를 입력해 주세요." value="" name="phone" data-rule-required="true" data-rule-phone="true" data-msg-required="" data-msg-phone="">
+                                                <input class="js-input" type="number" placeholder="휴대폰 번호를 입력해 주세요." value="" name="phone" data-rule-required="true" data-rule-phone="true" data-msg-required="" data-msg-phone="">
                                                 <button class="btn btn_gray btn_lg js-snippet" type="button">인증번호 전송</button>
                                             </span>
                                         </dd>
                                         <dt>인증번호</dt>
                                         <dd>
                                             <span class="input_unit">
-                                                <input type="password" placeholder="인증번호를 입력해 주세요." name="password" data-rule-required="true" data-rule-password="true" data-msg-required="" data-msg-password="">
+                                                <input class="js-input" type="password" placeholder="인증번호를 입력해 주세요." name="password" data-rule-required="true" data-rule-password="true" data-msg-required="" data-msg-password="">
                                                 <span class="unit">1:27</span>
                                             </span>
                                             <p class="error_txt">인증번호를 정상적으로 입력해 주세요.</p>
@@ -77,7 +77,7 @@
 
                     <div class="btn_bottom_fixed">
                         <div class="fixed_wrap">
-                            <a href="#" class="btn btn_llg btn_point btn_block">비밀번호 찾기</a>
+                            <a href="#" class="btn btn_llg btn_gray btn_block js-next">비밀번호 찾기</a>
                         </div>
                     </div>
                 </form>
@@ -108,6 +108,16 @@
         $('.js-snippet').on('click', function() {
             openSnippet("인증번호가 전송되었습니다.");
             return false;
+        })
+
+        $('.js-input').on('keyup', function() {
+            if ($('.js-input').eq(0).val() && $('.js-input').eq(1).val() && $('.js-input').eq(2).val()) {
+                $('.js-next').addClass('btn_point');
+                $('.js-next').removeClass('btn_gray');
+            } else {
+                $('.js-next').removeClass('btn_point');
+                $('.js-next').addClass('btn_gray');
+            }
         })
     </script>
 
