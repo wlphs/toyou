@@ -39,7 +39,9 @@
   }
   li { margin-top:18px; position: relative;
     
-    p {font-size:15px; font-weight: 300; line-height:25px; display:inline-block; vertical-align: top; }
+    p {font-size:15px; font-weight: 300; line-height:25px; display:inline-block; vertical-align: top; 
+      a {font-weight: 500; border-bottom:1px solid #000;}
+    }
     .agree_view { position: absolute; right:0; top:50%; margin-top:-14px;  padding:10px;
       &:after {content:''; position: relative;@include sp_icons($arrow_more2); display:block;}
     }

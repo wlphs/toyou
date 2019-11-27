@@ -46,8 +46,8 @@
                             <dt>휴대폰 번호</dt>
                             <dd>
                                 <span class="input_search type2">
-                                    <input type="number" placeholder="휴대폰 번호를 입력해 주세요." value="" name="phone" data-rule-required="true" data-rule-phone="true" data-msg-required="" data-msg-phone="">
-                                    <button class="btn btn_gray btn_lg js-snippet" type="button">인증번호 전송</button>
+                                    <input type="number" placeholder="휴대폰 번호를 입력해 주세요." value="" name="phone" data-rule-required="true" data-rule-phone="true" data-msg-required="" data-msg-phone="" class="js-phone">
+                                    <button class="btn  btn_lg js-btn_color btn_point btn_gray" type="button">인증번호 전송</button>
                                 </span>
                             </dd>
                             <dt>인증번호</dt>
@@ -93,6 +93,13 @@
         $('.js-snippet').on('click', function() {
             openSnippet("휴대폰 번호가 <span>010-1234-1234</span>로 변경되었습니다.");
             return false;
+        })
+        $('.js-phone').on('keyup', function() {
+            if ($(this).val().length > 9) {
+                $('.js-btn_color').removeClass('btn_gray')
+            } else {
+                $('.js-btn_color').addClass('btn_gray')
+            }
         })
     </script>
 

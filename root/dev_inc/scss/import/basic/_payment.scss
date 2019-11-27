@@ -55,14 +55,16 @@
 .reserv_list_type {
     li {padding:20px 25px 20px 0; background:url('/resources/images/common/dot_line_hor.png') repeat-x left bottom; background-size:4px; 
         .btn_arrow_type {display:block; position: relative;}
-        .stat { padding:2px 8px; min-width: 65px; text-align: center; display:inline-block; box-sizing: border-box;
-            &.before {border:1px solid #999; color:#999; font-size:13px;}
-            &.ing {border:1px solid $colorP; color: $colorP; font-size:13px;}
+        .stat { padding:2px 8px; min-width: 65px; text-align: center; display:inline-block; box-sizing: border-box; font-size:13px;
+            &.before {border:1px solid #999; color:#999; }
+            &.ing {border:1px solid $colorP; color: $colorP; }
             &.request {background:#f5f5f5; color:#999;}
             &.confirm {background:$colorP; color:#fff;}
             &.complete {background:#999999; color:#fff;}
             &.cancel {background:#999999; color:#fff;}
             &.waiting {background:#999999; color:#fff;}
+            &.deposit {border:1px solid #999999; color:#999999;}
+            &.dday {color:#ff5c5c; background:#ffe9e7;}
         }
         .stat_time { font-size:13px; color:#999999; position: absolute; right:0; top:2px;}
     }

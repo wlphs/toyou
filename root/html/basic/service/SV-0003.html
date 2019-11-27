@@ -65,7 +65,7 @@
                     <div class="fixed_wrap">
                         <div class="btn_set-double">
                             <div class="btn_item"><a href="#" class="btn btn_lg btn_gray_w js-caution">취소</a></div>
-                            <div class="btn_item"><a href="#" class="btn btn_lg btn_point">신고하기</a></div>
+                            <div class="btn_item"><a href="#" class="btn btn_lg btn_point js-confirm">신고하기</a></div>
                         </div>
                     </div>
                 </div>
@@ -106,6 +106,33 @@
         </div>
     </div>
 
+    <div id="only_woman_confirm" class="trp popupfixed-wrap">
+        <div class="popup-align">
+            <div class="popup-vertical caution">
+                <div class="popup-layer " style="width:100%;">
+                    <section class="section pd0" style="display: block;">
+                        <div class="cont_inner caution_wrap">
+                            <p class="txt2">선택한 사유로 신고하시겠습니까?<br />허위인 경우 본인에게 불이익이 행해질 수 있습니다.</p>
+
+                            <div class="btn_set-double">
+                                <div class="btn_item"><a href="#" class="btn btn_lg btn_gray_w js-closepop ">취소</a></div>
+                                <div class="btn_item"><a href="#" class="btn btn_lg btn_point">확인</a></div>
+                            </div>
+
+                            <!--신고확인
+                            <p class="txt2">신고되었습니다.</p>
+
+                            <div class="btn_set-single">
+                                <div class="btn_item"><a href="#" class="btn btn_lg btn_point js-closepop">확인</a></div>
+                            </div>
+                            //-->
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script>
         $("#only_woman").dialog({
             autoOpen: false,
@@ -117,6 +144,32 @@
             },
             create: function(event) {
                 $(".js-caution").on("click", function() {
+                    modalFixedControl.open($(event.target));
+                    $(event.target).dialog("open");
+                    return false;
+                });
+            },
+            resizable: false,
+            open: function(event) {
+                $('.js-closepop', $(event.target)).off('click').on('click', function() {
+                    $(event.target).dialog("close");
+                    return false;
+                })
+            },
+            close: function() {
+                modalFixedControl.close();
+            }
+        });
+        $("#only_woman_confirm").dialog({
+            autoOpen: false,
+            modal: true,
+            width: '100%',
+            position: {
+                my: "bottom",
+                at: "bottom"
+            },
+            create: function(event) {
+                $(".js-confirm").on("click", function() {
                     modalFixedControl.open($(event.target));
                     $(event.target).dialog("open");
                     return false;

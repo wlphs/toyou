@@ -233,9 +233,14 @@ a, span, i, em {
   background-size: 90px 85px;
 }
 
-.icon_label, .btn_menu_arrow:after, .btn_more:after, .btn_more.red:after, .btn_file::before, .btn_report::before, .btn_all_more:after, .btn_filter::before, .btn_del::before, .icon_kakao::before, .icon_call::before, .btn_more_point:after, .btn_arrow_type:after, .accordion-list > li .header-area .acc_btn:after, .trp.popupfixed-wrap .btn_close:after, .trp.popupfixed-wrap .caution_wrap:after, .trp.popupfixed-wrap .share_wrap .share_list li .btn_facebook:after, .trp.popupfixed-wrap .share_wrap .share_list li .btn_kakao:after, .trp.popupfixed-wrap .share_wrap .share_list li .btn_share:after, .calendar_wrap .daterangepicker .calendar-table .prev:after, .calendar_wrap .daterangepicker .calendar-table .next:after, .header .top_bar .history_back:before, .header .top_bar .btn_share:after, .header .top_bar .filter_reset:after, .header .top_bar .btn_like:after, .header .top_bar .btn_search:before, #footer .opne_text:after, .top_scroll::before, .profile_photo_wrap .pf_photo_change:after, .agree_list li .agree_view:after, .main_header .h1_logo, .main_header .location_top::before, .main section.main_card .big_banner .txt em, .thum_list li .btn_like::before, .thum_list li .btn_like.on::before, .thum_list.big_type li .btn_like::before, .thum_list.big_type li .btn_like.on::before, .chatting_area .chatting_list > li .icon, .chatting_area .chatting_view > li .chat_area .chat_view::before, .chatting_area .chatting_view > li.answer .chat_area .chat_view::before, .alarm_area .alarm_list > li .link::before, .serv_wrap .serv_detail .serv_info .reaction li.like:after, .serv_wrap .serv_detail .serv_info .reaction li.review:after, .serv_wrap .serv_detail .serv_info .reaction li.reply:after, .serv_wrap .serv_review_wrap .review_total_like .like_count:after, .serv_wrap .serv_review_wrap .review_list li .writer .review_like .btn_review_like:after, .movieWrap .movie_play:after, .service_bottom .btn_chat:after, .service_bottom .btn_tel:after, .review_more_wrap .btn_review_more:after, .buy_booking .end:before, .profile_wrap .pf_photo_wrap .pf_photo_change:after, .profile_wrap .pf_photo_wrap .pf_photo_change.type2:after, .profile_wrap .pf_manage a.btn_edit_pf:after, .profile_wrap .pf_manage a.btn_edit_cert:after, .position_cont .photo_area .pf_photo_change:after {
+.icon_label, .btn_menu_arrow:after, .btn_more:after, .btn_more.red:after, .btn_file::before, .btn_report::before, .btn_all_more:after, .btn_filter::before, .btn_del::before, .btn_del02::before, .icon_kakao::before, .icon_call::before, .btn_more_point:after, .btn_arrow_type:after, .accordion-list > li .header-area .acc_btn:after, .trp.popupfixed-wrap .btn_close:after, .trp.popupfixed-wrap .caution_wrap:after, .trp.popupfixed-wrap .share_wrap .share_list li .btn_facebook:after, .trp.popupfixed-wrap .share_wrap .share_list li .btn_kakao:after, .trp.popupfixed-wrap .share_wrap .share_list li .btn_share:after, .calendar_wrap .daterangepicker .calendar-table .prev:after, .calendar_wrap .daterangepicker .calendar-table .next:after, .header .top_bar .history_back:before, .header .top_bar .btn_share:after, .header .top_bar .filter_reset:after, .header .top_bar .btn_like:after, .header .top_bar .btn_search:before, #footer .opne_text:after, .top_scroll::before, .profile_photo_wrap .pf_photo_change:after, .agree_list li .agree_view:after, .main_header .h1_logo, .main_header .location_top::before, .main_header .tip::before, .main section.main_card .big_banner .txt em, .thum_list li .img .btn_like::before, .thum_list li .img .btn_like.on::before, .thum_list li .btn_like::before, .thum_list li .btn_like.on::before, .thum_list li .btn_like2::before, .thum_list li .btn_like2.on::before, .chatting_area .chatting_list > li .icon, .chatting_area .chatting_view > li .chat_area .chat_view::before, .chatting_area .chatting_view > li.answer .chat_area .chat_view::before, .alarm_area .alarm_list > li .link::before, .serv_wrap .serv_detail .serv_info .reaction li.like:after, .serv_wrap .serv_detail .serv_info .reaction li.review:after, .serv_wrap .serv_detail .serv_info .reaction li.reply:after, .serv_wrap .serv_review_wrap .review_total_like .like_count:after, .serv_wrap .serv_review_wrap .review_list li .writer .review_like .btn_review_like:after, .movieWrap .movie_play:after, .service_bottom .btn_chat:after, .service_bottom .btn_tel:after, .review_more_wrap .btn_review_more:after, .buy_booking .end:before, .profile_wrap .pf_photo_wrap .pf_photo_change:after, .profile_wrap .pf_photo_wrap .pf_photo_change.type2:after, .profile_wrap .pf_manage a.btn_edit_pf:after, .profile_wrap .pf_manage a.btn_edit_cert:after, .position_cont .photo_area .pf_photo_change:after {
   background-image: url("../images/common/sp_icons.png");
-  background-size: 306.5px 305.5px;
+  background-size: 332px 284.5px;
+}
+
+.category_list li .cate_link.ic_cl1:after, .category_list li .cate_link.ic_cl2:after, .category_list li .cate_link.ic_cl3:after, .category_list li .cate_link.ic_cl4:after, .category_list li .cate_link.ic_cl5:after, .category_list li .cate_link.ic_cl6:after, .category_list li .cate_link.ic_cl7:after, .category_list li .cate_link.ic_cl8:after {
+  background-image: url("../images/common/sp_category.png");
+  background-size: 185px 185px;
 }
 
 /*  _mixin.scss
@@ -2880,7 +2885,7 @@ table.bottom_bar {
   margin-top: -4px;
   width: 6px;
   height: 8px;
-  background-position: -190.5px -271.5px;
+  background-position: -276px -175px;
 }
 
 .btn_menu_arrow .sm_txt {
@@ -2965,7 +2970,7 @@ table.bottom_bar {
   margin-top: -4px;
   width: 5px;
   height: 9px;
-  background-position: 0px -296.5px;
+  background-position: -223.5px -119.5px;
 }
 
 .btn_more.red {
@@ -2984,7 +2989,7 @@ table.bottom_bar {
   margin-top: -5px;
   width: 6px;
   height: 10px;
-  background-position: -276px -175px;
+  background-position: -318.5px -250px;
 }
 
 .btn_file {
@@ -3020,7 +3025,7 @@ table.bottom_bar {
   display: inline-block;
   width: 13.5px;
   height: 15px;
-  background-position: -292.5px -55px;
+  background-position: -318.5px 0px;
   margin-right: 8px;
 }
 
@@ -3039,7 +3044,7 @@ table.bottom_bar {
   margin-top: -4px;
   width: 10px;
   height: 6px;
-  background-position: -85px -244.5px;
+  background-position: -318.5px -214px;
   transform: rotate(0deg);
   transition: .2s transform;
 }
@@ -3056,7 +3061,7 @@ table.bottom_bar {
   display: inline-block;
   width: 14.5px;
   height: 14px;
-  background-position: -151px -271.5px;
+  background-position: 0px -270.5px;
   vertical-align: top;
   margin: 2px 8px 0 0;
 }
@@ -3073,9 +3078,25 @@ table.bottom_bar {
   display: inline-block;
   width: 12.5px;
   height: 14px;
-  background-position: -292.5px -129px;
+  background-position: -318.5px -51px;
   vertical-align: top;
   margin: 2px 8px 0 0;
+}
+
+.btn_del02 {
+  font-size: 0;
+  display: inline-block;
+  font-weight: 500;
+  padding: 10px;
+}
+
+.btn_del02::before {
+  content: '';
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-position: -318.5px -162px;
+  vertical-align: top;
 }
 
 .icon_kakao {
@@ -3323,7 +3344,7 @@ table.bottom_bar {
   margin-top: -5px;
   width: 6px;
   height: 10px;
-  background-position: -276px -175px;
+  background-position: -318.5px -250px;
 }
 
 .btn_arrow_type {
@@ -3340,7 +3361,7 @@ table.bottom_bar {
   margin-top: -7px;
   width: 8px;
   height: 14px;
-  background-position: -292.5px -216px;
+  background-position: -318.5px -138px;
 }
 
 .dot_type_list.space15 li {
@@ -3743,7 +3764,7 @@ table.bottom_bar {
   transform: rotate(180deg);
   width: 11px;
   height: 6px;
-  background-position: -292.5px -240px;
+  background-position: -318.5px -182px;
 }
 
 .accordion-list > li > .con-area {
@@ -3852,7 +3873,7 @@ table.bottom_bar {
   top: 22px;
   width: 16px;
   height: 16px;
-  background-position: -26px -244.5px;
+  background-position: -292.5px -27px;
 }
 
 .trp.popupfixed-wrap.cover_type .popup-layer {
@@ -4015,7 +4036,7 @@ table.bottom_bar {
   margin-left: -27px;
   width: 55px;
   height: 55px;
-  background-position: 0px -84.5px;
+  background-position: -65px -84.5px;
   display: block;
 }
 
@@ -4027,7 +4048,7 @@ table.bottom_bar {
   margin-left: -27px;
   width: 55px;
   height: 55px;
-  background-position: -65px -84.5px;
+  background-position: 0px -84.5px;
   display: block;
 }
 
@@ -4214,8 +4235,8 @@ input[type="text"]:disabled, input[type="password"]:disabled, input[type="number
 }
 
 input[type="text"][readonly], input[type="password"][readonly], input[type="number"][readonly], input[type="email"][readonly] {
-  background: #f5f5f5;
-  color: #999999;
+  background: #dedede;
+  color: #000;
 }
 
 input[type="text"].error, input[type="password"].error, input[type="number"].error, input[type="email"].error {
@@ -5133,7 +5154,7 @@ select {
   margin-left: -12px;
   width: 25px;
   height: 25px;
-  background-position: 0px -209.5px;
+  background-position: -195px -84.5px;
   display: block;
 }
 
@@ -5150,7 +5171,7 @@ select {
   margin-left: -12px;
   width: 25px;
   height: 25px;
-  background-position: -195px -84.5px;
+  background-position: -70px -209.5px;
   display: block;
 }
 
@@ -5373,7 +5394,7 @@ select {
   display: block;
   width: 6px;
   height: 10px;
-  background-position: -223.5px -119.5px;
+  background-position: -318.5px -230px;
 }
 
 .header .top_bar .btn_share {
@@ -5406,7 +5427,7 @@ select {
   display: block;
   width: 15px;
   height: 15px;
-  background-position: -25px -271.5px;
+  background-position: -292.5px -158px;
   position: absolute;
   top: 50%;
   margin-top: -8px;
@@ -5542,7 +5563,7 @@ select {
   margin-top: -3px;
   width: 11px;
   height: 6px;
-  background-position: -292.5px -240px;
+  background-position: -318.5px -182px;
   transition: .2s transform;
   transform: rotate(180deg);
 }
@@ -5619,7 +5640,7 @@ select {
   display: inline-block;
   width: 14px;
   height: 17px;
-  background-position: -292.5px 0px;
+  background-position: -292.5px -53px;
   vertical-align: top;
   margin-top: 13px;
 }
@@ -5761,6 +5782,11 @@ select {
   vertical-align: top;
 }
 
+.agree_list li p a {
+  font-weight: 500;
+  border-bottom: 1px solid #000;
+}
+
 .agree_list li .agree_view {
   position: absolute;
   right: 0;
@@ -5774,7 +5800,7 @@ select {
   position: relative;
   width: 5px;
   height: 9px;
-  background-position: 0px -296.5px;
+  background-position: -223.5px -119.5px;
   display: block;
 }
 
@@ -5906,7 +5932,29 @@ input[type="radio"].type_btn_radio + label {
   margin: -2px 0 0 2px;
   width: 11px;
   height: 13px;
-  background-position: -292.5px -153px;
+  background-position: -318.5px -75px;
+}
+
+.main_header .tip {
+  position: absolute;
+  right: 0;
+  top: 45px;
+  padding: 12px 20px;
+  color: #fff;
+  background: #ff5c5c;
+  font-size: 13px;
+  z-index: 2;
+}
+
+.main_header .tip::before {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  top: -5px;
+  right: 25px;
+  width: 10px;
+  height: 6px;
+  background-position: -318.5px -198px;
 }
 
 .main section.main_card {
@@ -6103,9 +6151,36 @@ input[type="radio"].type_btn_radio + label {
 
 .thum_list li .img .icon_label {
   position: absolute;
-  right: 6px;
-  top: 6px;
+  right: 7px;
+  bottom: 7px;
   z-index: 1;
+  font-size: 0;
+}
+
+.thum_list li .img .btn_like {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  z-index: 1;
+  font-size: 0;
+}
+
+.thum_list li .img .btn_like::before {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin-top: -6px;
+  width: 18.5px;
+  height: 16px;
+  background-position: -28.5px -244.5px;
+}
+
+.thum_list li .img .btn_like.on::before {
+  width: 18.5px;
+  height: 16px;
+  background-position: 0px -244.5px;
 }
 
 .thum_list li .thum_list_info {
@@ -6183,13 +6258,41 @@ input[type="radio"].type_btn_radio + label {
   margin-top: -6px;
   width: 14px;
   height: 13px;
-  background-position: -292.5px -106px;
+  background-position: -24.5px -270.5px;
 }
 
 .thum_list li .btn_like.on::before {
   width: 16px;
   height: 14px;
-  background-position: -125px -271.5px;
+  background-position: -292.5px -233px;
+}
+
+.thum_list li .btn_like2 {
+  font-weight: 500;
+  color: #000;
+  position: relative;
+  display: inline-block;
+  padding: 0 0 0 20px;
+  margin: 9px 0 0;
+  font-size: 11px;
+}
+
+.thum_list li .btn_like2::before {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin-top: -9px;
+  width: 15px;
+  height: 15px;
+  background-position: -292.5px -183px;
+}
+
+.thum_list li .btn_like2.on::before {
+  width: 16px;
+  height: 14px;
+  background-position: -292.5px -233px;
 }
 
 .thum_list.big_type li {
@@ -6214,28 +6317,6 @@ input[type="radio"].type_btn_radio + label {
 
 .thum_list.big_type li .type2 {
   margin: 3px 0 0;
-}
-
-.thum_list.big_type li .btn_like {
-  position: absolute;
-  right: 10px;
-  bottom: 0;
-  z-index: 1;
-  font-size: 15px;
-  padding-left: 22px;
-}
-
-.thum_list.big_type li .btn_like::before {
-  width: 18px;
-  height: 17px;
-  background-position: -167px -209.5px;
-  margin-top: -7px;
-}
-
-.thum_list.big_type li .btn_like.on::before {
-  width: 18px;
-  height: 17px;
-  background-position: -195px -209.5px;
 }
 
 .thum_list.service {
@@ -6297,10 +6378,15 @@ input[type="radio"].type_btn_radio + label {
 .address_cont .add_list .post_list li {
   border-top: 1px dashed #c5c5c7;
   padding: 15px 5px;
+  position: relative;
 }
 
 .address_cont .add_list .post_list li:first-child {
   border-top: 0;
+}
+
+.address_cont .add_list .post_list li dl {
+  width: 95%;
 }
 
 .address_cont .add_list .post_list li dl dt {
@@ -6320,6 +6406,13 @@ input[type="radio"].type_btn_radio + label {
   color: #000;
   font-size: 15px;
   display: block;
+}
+
+.address_cont .add_list .post_list li .btn_del02 {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  margin-top: -15px;
 }
 
 .address_cont .map_area {
@@ -6429,7 +6522,7 @@ input[type="radio"].type_btn_radio + label {
   display: inline-block;
   width: 15px;
   height: 15px;
-  background-position: 0px -271.5px;
+  background-position: -292.5px -133px;
   vertical-align: top;
   margin: 1px 0 0 5px;
 }
@@ -6546,7 +6639,27 @@ input[type="radio"].type_btn_radio + label {
   top: -1px;
   width: 12px;
   height: 10px;
-  background-position: -292.5px -176px;
+  background-position: -318.5px -118px;
+}
+
+.chatting_area .chatting_view > li .chat_area .chat_view.img {
+  padding: 0;
+  border: 0;
+  background: none  !important;
+}
+
+.chatting_area .chatting_view > li .chat_area .chat_view.img::before {
+  display: none;
+}
+
+.chatting_area .chatting_view > li .chat_area .chat_view.img .img {
+  padding: 0;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.chatting_area .chatting_view > li .chat_area .chat_view.img .img img {
+  width: 100%;
 }
 
 .chatting_area .chatting_view > li .time {
@@ -6578,10 +6691,16 @@ input[type="radio"].type_btn_radio + label {
 .chatting_area .chatting_view > li.answer .chat_area .chat_view::before {
   left: auto;
   right: -6px;
-  top: 0;
+  top: 1px;
   width: 12px;
   height: 10px;
-  background-position: -292.5px -196px;
+  background-position: -318.5px -98px;
+}
+
+.chatting_area .chatting_view > li.answer .chat_area .chat_view.img {
+  padding: 0;
+  border: 0;
+  background: none !important;
 }
 
 .chatting_area .chatting_view > li.answer .time {
@@ -6665,8 +6784,8 @@ input[type="radio"].type_btn_radio + label {
   display: none;
 }
 
-.alarm_area .alarm_list > li.bg_f7 {
-  background: #f7f7f7;
+.alarm_area .alarm_list > li.bg_point {
+  background: #ffe9e7;
 }
 
 .alarm_area .alarm_list > li .photo_img {
@@ -6703,7 +6822,7 @@ input[type="radio"].type_btn_radio + label {
   margin-top: -8px;
   width: 5px;
   height: 9px;
-  background-position: 0px -296.5px;
+  background-position: -223.5px -119.5px;
 }
 
 .alarm_area .alarm_list > li .link em {
@@ -6819,7 +6938,7 @@ input[type="radio"].type_btn_radio + label {
   content: '';
   width: 15px;
   height: 15px;
-  background-position: -50px -271.5px;
+  background-position: -292.5px -183px;
   display: block;
   position: absolute;
   top: 2px;
@@ -6830,7 +6949,7 @@ input[type="radio"].type_btn_radio + label {
   content: '';
   width: 15px;
   height: 15px;
-  background-position: -75px -271.5px;
+  background-position: -292.5px -208px;
   display: block;
   position: absolute;
   top: 2px;
@@ -6841,7 +6960,7 @@ input[type="radio"].type_btn_radio + label {
   content: '';
   width: 15px;
   height: 15px;
-  background-position: -100px -271.5px;
+  background-position: -292.5px -108px;
   display: block;
   position: absolute;
   top: 2px;
@@ -7072,11 +7191,44 @@ input[type="radio"].type_btn_radio + label {
   content: '';
   width: 15px;
   height: 15px;
-  background-position: -50px -271.5px;
+  background-position: -292.5px -183px;
   position: absolute;
   top: 50%;
   left: 0;
   margin-top: -8px;
+}
+
+.serv_wrap .serv_review_wrap .review_list li .reply {
+  position: relative;
+  padding-left: 35px;
+}
+
+.serv_wrap .serv_review_wrap .review_list li .reply .re_name {
+  font-size: 15px;
+  font-weight: 500;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.serv_wrap .serv_review_wrap .review_list li .reply .re_name:after {
+  content: '';
+  position: absolute;
+  left: -15px;
+  top: 2px;
+  width: 9px;
+  height: 9px;
+  display: block;
+  border-bottom: 2px solid #060f18;
+  border-left: 2px solid #060f18;
+  box-sizing: border-box;
+}
+
+.serv_wrap .serv_review_wrap .review_list li .reply .re_date {
+  color: #999999;
+  font-size: 13px;
+  position: absolute;
+  right: 0;
+  top: 0px;
 }
 
 .serv_dot_border.fst_pt0 li:first-child {
@@ -7113,7 +7265,7 @@ input[type="radio"].type_btn_radio + label {
   content: '';
   width: 12px;
   height: 16px;
-  background-position: -292.5px -80px;
+  background-position: -318.5px -25px;
   position: absolute;
   left: 50%;
   top: 50%;
@@ -7146,7 +7298,7 @@ input[type="radio"].type_btn_radio + label {
   content: '';
   width: 25px;
   height: 25px;
-  background-position: -35px -209.5px;
+  background-position: 0px -209.5px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -7168,7 +7320,7 @@ input[type="radio"].type_btn_radio + label {
   content: '';
   width: 25px;
   height: 25px;
-  background-position: -70px -209.5px;
+  background-position: -35px -209.5px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -7202,7 +7354,7 @@ input[type="radio"].type_btn_radio + label {
   margin-top: -4px;
   width: 10px;
   height: 6px;
-  background-position: -85px -244.5px;
+  background-position: -318.5px -214px;
 }
 
 .more_wrap {
@@ -7292,7 +7444,7 @@ input[type="radio"].type_btn_radio + label {
   font-size: 13px;
   background-color: #ff5c5c;
   padding: 2px 6px;
-  top: -3px;
+  top: -11px;
 }
 
 .irs--modern .irs-from:before, .irs--modern .irs-to:before, .irs--modern .irs-single:before {
@@ -7300,7 +7452,29 @@ input[type="radio"].type_btn_radio + label {
 }
 
 .irs--modern .irs-handle {
-  display: none;
+  border: none;
+  box-shadow: none;
+  background: none !important;
+}
+
+.irs--modern .irs-handle:after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  background: #ff5c5c;
+  display: block;
+  top: -21px;
+  left: -7px;
+  border-radius: 13px;
+}
+
+.irs--modern .irs-handle.to:after {
+  background: #e445ab;
+}
+
+.irs--modern .irs-handle i {
+  display: none !important;
 }
 
 .irs--modern .irs-grid-pol {
@@ -7324,7 +7498,8 @@ input[type="radio"].type_btn_radio + label {
 }
 
 .irs--modern.irs-with-grid {
-  height: 50px;
+  height: 60px;
+  margin-top: 20px;
 }
 
 .service .service.thum_list {
@@ -7860,6 +8035,89 @@ input[type="radio"].type_btn_radio + label {
   color: #999;
 }
 
+.cate_tit {
+  font-size: 18px;
+  font-weight: 500;
+  color: #000;
+}
+
+.category_list:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.category_list li {
+  float: left;
+  width: 25%;
+  text-align: center;
+  margin-top: 18px;
+  height: 85px;
+}
+
+.category_list li .cate_link {
+  position: relative;
+  padding-top: 65px;
+  display: inline-block;
+  min-width: 55px;
+}
+
+.category_list li .cate_link:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -27px;
+}
+
+.category_list li .cate_link.ic_cl1:after {
+  width: 55px;
+  height: 55px;
+  background-position: 0px 0px;
+}
+
+.category_list li .cate_link.ic_cl2:after {
+  width: 55px;
+  height: 55px;
+  background-position: -65px 0px;
+}
+
+.category_list li .cate_link.ic_cl3:after {
+  width: 55px;
+  height: 55px;
+  background-position: 0px -65px;
+}
+
+.category_list li .cate_link.ic_cl4:after {
+  width: 55px;
+  height: 55px;
+  background-position: -65px -65px;
+}
+
+.category_list li .cate_link.ic_cl5:after {
+  width: 55px;
+  height: 55px;
+  background-position: -130px 0px;
+}
+
+.category_list li .cate_link.ic_cl6:after {
+  width: 55px;
+  height: 55px;
+  background-position: -130px -65px;
+}
+
+.category_list li .cate_link.ic_cl7:after {
+  width: 55px;
+  height: 55px;
+  background-position: 0px -130px;
+}
+
+.category_list li .cate_link.ic_cl8:after {
+  width: 55px;
+  height: 55px;
+  background-position: -65px -130px;
+}
+
 .profile_wrap {
   padding-top: 16px;
 }
@@ -7937,7 +8195,7 @@ input[type="radio"].type_btn_radio + label {
   display: block;
   width: 16px;
   height: 17px;
-  background-position: 0px -244.5px;
+  background-position: -292.5px 0px;
   position: absolute;
   top: 5px;
   left: 0;
@@ -7948,7 +8206,7 @@ input[type="radio"].type_btn_radio + label {
   display: block;
   width: 13px;
   height: 18px;
-  background-position: -292.5px -27px;
+  background-position: -292.5px -80px;
   position: absolute;
   top: 5px;
   left: 0;
@@ -8295,18 +8553,17 @@ input[type="radio"].type_btn_radio + label {
   text-align: center;
   display: inline-block;
   box-sizing: border-box;
+  font-size: 13px;
 }
 
 .reserv_list_type li .stat.before {
   border: 1px solid #999;
   color: #999;
-  font-size: 13px;
 }
 
 .reserv_list_type li .stat.ing {
   border: 1px solid #ff5c5c;
   color: #ff5c5c;
-  font-size: 13px;
 }
 
 .reserv_list_type li .stat.request {
@@ -8332,6 +8589,16 @@ input[type="radio"].type_btn_radio + label {
 .reserv_list_type li .stat.waiting {
   background: #999999;
   color: #fff;
+}
+
+.reserv_list_type li .stat.deposit {
+  border: 1px solid #999999;
+  color: #999999;
+}
+
+.reserv_list_type li .stat.dday {
+  color: #ff5c5c;
+  background: #ffe9e7;
 }
 
 .reserv_list_type li .stat_time {
