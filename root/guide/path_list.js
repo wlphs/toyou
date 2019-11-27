@@ -583,7 +583,7 @@ __CONSTANT_LIST = [
         dep2 		: '',
         dep3 		: '',
         dep4 		: '환불계좌입력',
-        url 		: '/html/.html',
+        url 		: '/html/basic/mypage/MY-0020.html',
         pubUpdate 	: '2019-0000',
         etc 		: '2019-1120',
     },
