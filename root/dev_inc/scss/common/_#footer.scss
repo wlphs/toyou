@@ -15,7 +15,7 @@
     .opne_text { position: absolute; right: 24px; top: 27px; font-size: 14px; padding-right: 15px;
         &:after { content:''; display:inline-block; position: absolute; right:0; top: 50%; margin-top: -3px;  @include sp_icons($arrow_up_md); transition: .2s transform;
             transform: rotate(180deg); }
-    }
+    } 
     
     .open_cont {
         &.on { 

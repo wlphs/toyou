@@ -17,7 +17,7 @@
 			<div class="header_fixed_group">
 				<div class="top_bar">
                     <div class="locations"> 
-                        <div class="view_page"><h1 class="sub_title">결제 내역</h1></div>
+                        <div class="view_page"><h1 class="sub_title">예약 내역 상세</h1></div>
                     </div>
 					<div class="top_left">
 						<a href="javascript:history.go(-1);" class="history_back"><span class="hide">이전페이지로 이동</span></a> 
@@ -32,8 +32,7 @@
 			<div id="contents">
                 <div class="cont_inner_right">
                      <div class="payment_view">
-                        <p class="payment_date">2019-09-08 (화)</p>
-                        <div class="payment_view_detail mt20">
+                        <div class="payment_view_detail">
                             <div class="prd_photo">
                                 <img src="/resources/images/temp/@temp6.png" alt="">
                             </div>
@@ -56,7 +55,7 @@
                             요청하신 예약을 <em>전문가 님이 확인 중입니다.</em>
                         </p>
                         <div class="rel mt20">
-                            <a href="#" class="btn btn_lg btn_point w100p">예약 취소</a>
+                            <a href="#" class="btn btn_lg btn_point w100p js-cancel">예약 취소</a>
                         </div>
                     </div>
                 </div>
@@ -133,8 +132,60 @@
         </div>
 		<!-- //container -->
 		@@include('../../include/_toolbar.html')
-	</div>
+    </div>
+    
+    <div id="reserv_cancel" class="trp popupfixed-wrap">
+        <div class="popup-align">
+            <div class="popup-vertical caution">
+                <div class="popup-layer " style="width:100%;">
+                    <section class="section pd0" style="display: block;">
+                        <div class="cont_inner caution_wrap no">
+                            <dl class="form_list">
+                                <dt>취소 사유 입력</dt>
+                                <dd>
+                                    <div class="textarea-box">
+                                        <textarea name="" id="" cols="30" rows="10" he="" placeholder=""> </textarea>
+                                        <div class="byte_check">
+                                           0/80자
+                                        </div>
+                                    </div>
+                                </dd>
+                            </dl>
+                            <div class="btn_set-single mt20">
+                                <div class="btn_item"><a href="#" class="btn btn_lg btn_point js-closepop ">등록하기</a></div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script>
+        $("#reserv_cancel").dialog({
+            autoOpen: false,
+            modal: true,
+            width:'100%',
+            position: { my: "bottom", at: "bottom" },
+            create : function(event) {
+                $(".js-cancel").on("click", function() {
+                    modalFixedControl.open($(event.target));
+                    $(event.target).dialog("open");
+                    return false;
+                });
+            },
+            resizable: false,
+            open : function (event) {
+                $('.js-closepop', $(event.target)).off('click').on('click', function() {
+                    $(event.target).dialog( "close" );
+                    return false;
+                })
+            },
+            close: function() {
+                modalFixedControl.close();
+            }
+        });
+      
         $(window).on('load', function() {
             $('.js-ellipsis_end').each(function() {
                 var etc_w = $('.etc', $(this)).innerWidth();
@@ -142,7 +193,6 @@
             })
             
         })
-    
     </script>
 </body>
 </html>

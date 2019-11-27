@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<!-- header -->
+	@@include('../../include/_head.html', {"title" : "TOYOUCORP."})
+	<!-- //header -->
+</head>
+
+<body class="pageclass">
+	<p class="accessibility" id="skipTop">
+		<a href="#container">본문 바로가기</a>
+		<a href="#gnb" class="js-gnb_btn">주메뉴 바로가기</a> 
+	</p>
+	<div class="wrapper">
+		<!-- header --> 
+		<header id="header" class="header">
+			<div class="header_fixed_group">
+				<div class="top_bar">
+                    <div class="locations"> 
+                        <div class="view_page"><h1 class="sub_title">예약 내역 상세</h1></div>
+                    </div>
+					<div class="top_left">
+						<a href="javascript:history.go(-1);" class="history_back"><span class="hide">이전페이지로 이동</span></a> 
+					</div>
+				</div>
+			</div> 
+		</header>
+		<!-- //header -->
+
+		<!-- container -->
+		<div id="container">
+			<div id="contents">
+                <div class="cont_inner_right">
+                     <div class="payment_view">
+                        <div class="payment_view_detail">
+                            <div class="prd_photo">
+                                <img src="/resources/images/temp/@temp6.png" alt="">
+                            </div>
+                            <div class="prd_detail">
+                                <div class="prd_detail1 no_border">
+                                    <p class="name">이너뷰티</p>
+                                    <p class="title js-ellipsis_end">
+                                        <span class="tit">[스킨&바디케어] 매끈한 얼굴 매끈한 얼굴매끈한 얼굴</span>
+                                        <span class="etc">외 1건</span>
+                                    </p>
+                                    <p class="e_date">요청일시  2019-08-10 / 오후 09:50</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cont_inner">
+                    <div class="reserv_detail_wrap mt30 mb35">
+                        <p class="detail_tit cancel">
+                            요청하신 예약을 <em>취소하셨습니다.</em>
+                        </p>
+                        <div class="cancel_box mt20">
+                            <span><em>고객님</em> 님의 취소 사유</span>
+                            죄송합니다. 개인적인 사정으로 해당 일자의 서비스 진행이 어렵습니다. 향후 다시 예약 하겠습니다.
+                        </div>
+                    </div>
+                </div>
+                <div class="bg_f5">
+                    <div class="expert_profile">
+                        <div class=" cont_inner">
+                            <div class="prd_photo">
+                                <img src="/resources/images/temp/@temp6.png" alt="">
+                            </div>
+                            <p class="prd_name">이너뷰티</p>
+                            <ul class="link_connect mt20 mb20">
+                                <li><a href="#" class="ic_kakao">카카오톡</a></li>
+                                <li><a href="#" class="ic_call">전화하기</a></li>
+                            </ul>
+                        </div>
+                        <div class="cont_inner_right">
+                            <p class="prd_desc">
+                                메이크업, 스킨케어,  두피케어,  피부 마사지, 윤곽 
+                                마사지, 전신 마사지, 아로마테라피 전문 
+                            </p>
+                        </div>
+                        <div class="cont_inner tac pb20">
+                            <a href="#" class="btn_more red">전문가 소개 더보기</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="reserv_detail_info cont_inner_right">
+                    <p class="info_tit pt35">예약정보</p>
+                    <dl class="info_list">
+                        <dt>서비스 내역</dt>
+                        <dd>
+                            1. 특별한 날을 위한 헤어,메이크업 (2시간) <br>
+                            2. 나만의 색을 찾아서! 퍼스널 브랜딩 (2시간)
+                        </dd>
+                        <dt>서비스 일시</dt>
+                        <dd>
+                            2019-11-16(목) / 오후 12:30~03:30 (3시간)
+                        </dd>
+                        <dt>서비스 장소</dt>
+                        <dd>
+                            서울 서초구 서초대로 65길 13-10 서초래미안아파트 402동 1502호
+                        </dd>
+                        <dt>결제 방법</dt>
+                        <dd>
+                            안전 거래
+                        </dd>
+                        <dt>결제 금액</dt>
+                        <dd>
+                            <ul class="prd_price">
+                                <li>
+                                    <p class="price_tit">서비스 금액</p>
+                                    <p class="price_txt">50,000원</p>
+                                </li>
+                                <li>
+                                    <p class="price_tit">투유 안전거래 수수료</p>
+                                    <p class="price_txt">5,000원</p>
+                                </li>
+                                <li>
+                                    <p class="price_tit">총 결제 금액</p>
+                                    <p class="price_txt colorP">55,000원</p>
+                                </li>
+                            </ul>
+                        </dd>
+                    </dl>
+                </div>
+                <div class="reserv_detail_info border_top10 cont_inner_right">
+                    <p class="info_tit pt35">이후 진행 단계</p>
+                    <ul class="after_step">
+                        <li>전문가님이 예약 확정 시 예약된 일시에 방문할 예정입니다</li>
+                        <li>빠른 예약 확정을 원하실 경우엔 전문가님에게 연락해 보세요.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+		<!-- //container -->
+		@@include('../../include/_toolbar.html')
+	</div>
+    <script>
+        $(window).on('load', function() {
+            $('.js-ellipsis_end').each(function() {
+                var etc_w = $('.etc', $(this)).innerWidth();
+                $(this).css({"padding-right":etc_w})
+            })
+            
+        })
+    
+    </script>
+</body>
+</html>

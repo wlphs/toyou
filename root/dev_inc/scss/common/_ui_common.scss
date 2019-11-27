@@ -23,9 +23,12 @@
 .btn.btn_default { 
     background:#808080; border:1px solid #808080; color:#fff;
 }
-
 .btn.btn_point {
     background:url('/resources/images/common/point_bg.jpg'); background-size: 100% 100%; color:#fff; text-align: center; border:none;
+}
+.btn.btn_point2 { 
+    background:#e143b2; border:1px solid #e143b2; color:#fff;
+    &.disabled { background:#c8c8c8; border:1px solid #c8c8c8; color:#fff; }
 }
 .btn.btn_gray { 
     background:#777; border:1px solid #777; color:#fff;
@@ -89,6 +92,10 @@
 .btn_report { color:$colorP; font-size: 14px; display:inline-block; font-weight: 500; padding:5px 0 5px 0;
     &::before { content:''; display:inline-block; @include sp_icons($icon_report); margin-right: 8px;}
 }
+//신고하기버튼
+.btn_report2 { color:#fff; background:#ff5c5c; font-size: 13px; display:inline-block; font-weight: 500; padding:9px 18px 9px 18px;
+    &::before { content:''; display:inline-block; vertical-align: middle; margin-top: -6px; @include sp_icons($icon_report_w); margin-right: 8px;}
+}
 //전체보기
 .btn_all_more { padding:5px 20px 5px 0; font-size:14px; font-weight: 500; position: relative;
     &:after {content:''; position: absolute; right:0; top:50%; margin-top:-4px; @include sp_icons($arrow_down_sm); transform :rotate(0deg); transition: .2s transform;}
@@ -113,6 +120,18 @@
 .icon_call {font-size: 15px; display:inline-block; padding:5px;
     &::before { content:''; display:inline-block; @include sp_icons($icon_call); vertical-align:top; margin:-2px 8px 0 0;}
 }
+
+//화살표버튼
+.icon_01 { color:#fff; position: relative; padding-right: 20px; 
+    &::before { content:''; display:inline-block; position:absolute; right:0; top: 50%; margin-top: -3px;  @include sp_icons($arrow_down_sm_w); transform :rotate(0deg); transition: .2s transform;}
+}
+
+//만족해요아이콘
+.icon_02 { color:#fff; position: relative; padding-right: 23px; 
+    &::before { content:''; display:inline-block; position:absolute; right:0; top: 50%; margin-top: -10px;  @include sp_icons($serv_01_w);}
+}
+
+
 // 버튼 정열
 .btn_bottom { position: relative; padding-top: 30px; @include clearfix();
     .item_ml { margin-left: 6px !important;}
@@ -415,6 +434,10 @@
         .tit {text-align: center; font-size:19px; font-weight: 700; margin-bottom:10px;}
         .txt {text-align: center; font-size:13px; margin-bottom:20px;}
         .txt2 {text-align: center; font-size:15px; margin-bottom:20px;}
+
+        &.no { padding-top: 25px; text-align:left;
+            &:after { display:none;}
+        }
     }
     .share_wrap { padding:25px;
         .tit {text-align: center; font-size:21px; font-weight: 700; margin-bottom:10px;}
