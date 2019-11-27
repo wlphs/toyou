@@ -592,8 +592,7 @@ __CONSTANT_LIST = [
         dep1 		: '',
         dep2 		: '',
         dep3 		: '',
-        dep4 		: '환불계좌입력',
-<<<<<<< HEAD
+        dep4 		: '예약미진행',
         url 		: '/html/basic/mypage/MY-0013.html',
         pubUpdate 	: '2019-0000',
         etc 		: '2019-1120',
@@ -645,9 +644,6 @@ __CONSTANT_LIST = [
         dep3 		: '',
         dep4 		: '서비스종료',
         url 		: '/html/basic/mypage/MY-0018.html',
-=======
-        url 		: '/html/basic/mypage/MY-0020.html',
->>>>>>> d3d7d27df06779b6d355aa290ce8667308e42ca7
         pubUpdate 	: '2019-0000',
         etc 		: '2019-1120',
     },
@@ -658,6 +654,16 @@ __CONSTANT_LIST = [
         dep3 		: '',
         dep4 		: '취소사유입력',
         url 		: '/html/basic/mypage/MY-0010.html',
+        pubUpdate 	: '2019-0000',
+        etc 		: '2019-1120',
+    },
+    {
+        stateLine   : "", 
+        dep1 		: '',
+        dep2 		: '',
+        dep3 		: '',
+        dep4 		: '환불계좌입력',
+        url 		: '/html/basic/mypage/MY-0020.html',
         pubUpdate 	: '2019-0000',
         etc 		: '2019-1120',
     },
@@ -678,9 +684,9 @@ __CONSTANT_LIST = [
         dep2 		: '',
         dep3 		: '',
         dep4 		: '리뷰',
-        url 		: '/html/.html',
+        url 		: '/html/basic/mypage/MY-0018.html',
         pubUpdate 	: '2019-0000',
-        etc 		: '2019-1120',
+        etc 		: '2019-1120 만족해요 버튼 클릭시 팝업',
     },
 	{
         stateLine   : "", 
