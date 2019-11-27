@@ -93,6 +93,11 @@
 .btn_all_more { padding:5px 20px 5px 0; font-size:14px; font-weight: 500; position: relative;
     &:after {content:''; position: absolute; right:0; top:50%; margin-top:-4px; @include sp_icons($arrow_down_sm); transform :rotate(0deg); transition: .2s transform;}
 }
+
+.btn_plus { padding:5px 20px 5px 0; font-size:14px; font-weight: 500; position: relative;
+    &:after {content:''; position: absolute; right:0; top:50%; margin-top:-6px; @include sp_icons($ic_plus); transform :rotate(0deg); transition: .2s transform;}
+}
+
 //신고하기버튼
 .btn_filter { font-size: 14px; display:inline-block; font-weight: 500; padding:5px 0 5px 0;
     &::before { content:''; display:inline-block; @include sp_icons($icon_filter); vertical-align:top; margin:2px 8px 0 0;}
