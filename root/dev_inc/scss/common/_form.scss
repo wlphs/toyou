@@ -41,6 +41,7 @@ input[type="text"].error,input[type="password"].error,input[type="number"].error
         span { vertical-align: middle;  font-size:14px; }    
     }
 }
+input[type="text"].input_youtube,input[type="password"].input_youtube,input[type="number"].input_youtube,input[type="email"].input_youtube   { color:$colorP; }
 
 .input_post { position: relative; display:block;
     button.btn { position: absolute; top:0; right:0; display:inline-block; width:auto;}

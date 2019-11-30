@@ -45,63 +45,10 @@
                         <dl class="form_list">
                             <dt>은행명</dt>
                             <dd class="rel">
-                                <span class="btn_bank">변경</span>
-                                <select name="" id="" class="select_bank js-bank">
-                                    <option value="">은행명</option>
-                                    <option value="1">국민은행</option>
-                                    <option value="1">기업은행</option>
-                                    <option value="1">농협</option>
-                                    <option value="1">신한은행(구 조흥은행)</option>
-                                    <option value="1">외환은행</option>
-                                    <option value="1">우체국</option>
-                                    <option value="1">SC은행(스탠다드차타드)</option>
-                                    <option value="1">하나은행</option>
-                                    <option value="1">한국씨티은행(구 한미은행)</option>
-                                    <option value="1">우리은행</option>
-                                    <option value="1">경남은행</option>
-                                    <option value="1">광주은행</option>
-                                    <option value="1">대구은행</option>
-                                    <option value="1">도이치은행</option>
-                                    <option value="1">부산은행</option>
-                                    <option value="1">산업은행</option>
-                                    <option value="1">수협</option>
-                                    <option value="1">전북은행</option>
-                                    <option value="1">제주은행</option>
-                                    <option value="1">새마을금고</option>
-                                    <option value="1">신용협동조합</option>
-                                    <option value="1">홍콩상하이은행(HSBC)</option>
-                                    <option value="1">상호저축은행중앙회</option>
-                                    <option value="1">뱅크오브아메리카</option>
-                                    <option value="1">제이피모간체이스</option>
-                                    <option value="1">비엔피파리바은행</option>
-                                    <option value="1">우리투자증권</option>
-                                    <option value="1">유안타증권</option>
-                                    <option value="1">현대증권</option>
-                                    <option value="1">미래에셋증권</option>
-                                    <option value="1">대우증권</option>
-                                    <option value="1">삼성증권</option>
-                                    <option value="1">한국투자증권</option>
-                                    <option value="1">교보증권</option>
-                                    <option value="1">하이투자증권</option>
-                                    <option value="1">HMC투자증권</option>
-                                    <option value="1">SK증권</option>
-                                    <option value="1">한화투자증권</option>
-                                    <option value="1">하나대투증권</option>
-                                    <option value="1">신한금융투자</option>
-                                    <option value="1">유진투자증권</option>
-                                    <option value="1">메리츠종합금융증권</option>
-                                    <option value="1">신영증권</option>
-                                    <option value="1">이트레이드증권</option>
-                                    <option value="1">아이엠투자증권</option>
-                                    <option value="1">NH 농협증권</option>
-                                    <option value="1">LIG 투자증권</option>
-                                    <option value="1">산림조합</option>
-                                    <option value="1">부국증권</option>
-                                    <option value="1">키움증권</option>
-                                    <option value="1">대신증권</option>
-                                    <option value="1">동부증권</option>
-                                    <option value="1">페이팔</option>
-                                </select>
+                                <input type="hidden" name="" class="js-bank_code">
+                                <input type="text" class="js-bank_input js-input">
+                                <span class="btn_bank js-bank">변경</span>
+
                                 <p class="error_txt tal js-error0" style="display:none;">은행명을 선택해주세요</p>
                             </dd>
                             <dt>계좌번호</dt>
@@ -140,26 +87,245 @@
 </div> -->
         <a href="#none" class="top_scroll">위로 이동</a>
     </div>
+
+
+    <div id="selectBank" class="trp popupfixed-wrap">
+        <div class="popup-align">
+            <div class="popup-vertical fs0">
+                <div class="popup-layer select_layer" style="width:100%;">
+                    <!-- <div class="pop_header">
+						<p class="tit">사진 가져오기</p>
+						<a href="#" class="btn_close js-closepop"><span class="hide">닫기</span></a>
+					</div>  -->
+                    <section class="section pd0 rel" style="display: block;">
+                        <ul class="sel_wrap">
+                            <li>
+                                <button class="select_btn js-select_bank" data-code="000">국민은행</button>
+                            </li>
+                            <li>
+                                <button class="select_btn js-select_bank" data-code="001">기업은행</button>
+                            </li>
+                            <li>
+                                <button class="select_btn js-select_bank" data-code="002">농협</button>
+                            </li>
+                            <li>
+                                <button class="select_btn js-select_bank" data-code="003">신한은행(구 조흥은행)</button>
+                            </li>
+                            <li>
+                                <button class="select_btn js-select_bank" data-code="000">외환은행</button>
+                            </li>
+                            <li>
+                                <button class="select_btn js-select_bank" data-code="000">우체국</button>
+                            </li>
+                            <li>
+                                <button class="select_btn js-select_bank" data-code="000">SC은행(스탠다드차타드)</button>
+                            </li>
+                            <li>
+                                <button class="select_btn js-select_bank" data-code="000">하나은행</button>
+                            </li>
+                            <li>
+                                <button class="select_btn js-select_bank" data-code="000">한국씨티은행(구 한미은행)</button>
+                            </li>
+                            <li>
+                                <button class="select_btn js-select_bank" data-code="000">우리은행</button>
+                            </li>
+                            <li>
+                                <button class="select_btn js-select_bank" data-code="000">경남은행</button>
+                            </li>
+                            <li>
+                                <button class="select_btn js-select_bank" data-code="000">광주은행</button>
+                            </li>
+                            <li>
+                                <button class="select_btn js-select_bank" data-code="000">대구은행</button>
+                            </li>
+                            <li>
+                                <button class="select_btn js-select_bank" data-code="000">도이치은행</button>
+                            </li>
+                            <li>
+                                <button class="select_btn js-select_bank" data-code="000">부산은행</button>
+                            </li>
+                            <li>
+                                <button class="select_btn js-select_bank" data-code="000">산업은행</button>
+                            </li>
+                            <li>
+                                <button class="select_btn js-select_bank" data-code="000">수협</button>
+                            </li>
+                            <li>
+                                <button class="select_btn js-select_bank" data-code="000">전북은행</button>
+                            </li>
+                            <li>
+                                <button class="select_btn js-select_bank" data-code="000">제주은행</button>
+                            </li>
+                            <li>
+                                <button class="select_btn js-select_bank" data-code="000">새마을금고</button>
+                            </li>
+                            <li>
+                                <button class="select_btn js-select_bank" data-code="000">신용협동조합</button>
+                            </li>
+                            <li>
+                                <button class="select_btn js-select_bank" data-code="000">홍콩상하이은행(HSBC)</button>
+                            </li>
+                            <li>
+                                <button class="select_btn js-select_bank" data-code="000">상호저축은행중앙회</button>
+                            </li>
+                            <li>
+                                <button class="select_btn js-select_bank" data-code="000">뱅크오브아메리카</button>
+                            </li>
+                            <li>
+                                <button class="select_btn js-select_bank" data-code="000">제이피모간체이스</button>
+                            </li>
+                            <li>
+                                <button class="select_btn js-select_bank" data-code="000">비엔피파리바은행</button>
+                            </li>
+                            <li>
+                                <button class="select_btn js-select_bank" data-code="000">우리투자증권</button>
+                            </li>
+                            <li>
+                                <button class="select_btn js-select_bank" data-code="000">유안타증권</button>
+                            </li>
+                            <li>
+                                <button class="select_btn js-select_bank" data-code="000">현대증권</button>
+                            </li>
+                            <li>
+                                <button class="select_btn js-select_bank" data-code="000">미래에셋증권</button>
+                            </li>
+                            <li>
+                                <button class="select_btn js-select_bank" data-code="000">대우증권</button>
+                            </li>
+                            <li>
+                                <button class="select_btn js-select_bank" data-code="000">삼성증권</button>
+                            </li>
+                            <li>
+                                <button class="select_btn js-select_bank" data-code="000">한국투자증권</button>
+                            </li>
+                            <li>
+                                <button class="select_btn js-select_bank" data-code="000">교보증권</button>
+                            </li>
+                            <li>
+                                <button class="select_btn js-select_bank" data-code="000">하이투자증권</button>
+                            </li>
+                            <li>
+                                <button class="select_btn js-select_bank" data-code="000">HMC투자증권</button>
+                            </li>
+                            <li>
+                                <button class="select_btn js-select_bank" data-code="000">SK증권</button>
+                            </li>
+                            <li>
+                                <button class="select_btn js-select_bank" data-code="000">한화투자증권</button>
+                            </li>
+                            <li>
+                                <button class="select_btn js-select_bank" data-code="000">하나대투증권</button>
+                            </li>
+                            <li>
+                                <button class="select_btn js-select_bank" data-code="000">신한금융투자</button>
+                            </li>
+                            <li>
+                                <button class="select_btn js-select_bank" data-code="000">유진투자증권</button>
+                            </li>
+                            <li>
+                                <button class="select_btn js-select_bank" data-code="000">메리츠종합금융증권</button>
+                            </li>
+                            <li>
+                                <button class="select_btn js-select_bank" data-code="000">신영증권</button>
+                            </li>
+                            <li>
+                                <button class="select_btn js-select_bank" data-code="000">이트레이드증권</button>
+                            </li>
+                            <li>
+                                <button class="select_btn js-select_bank" data-code="000">아이엠투자증권</button>
+                            </li>
+                            <li>
+                                <button class="select_btn js-select_bank" data-code="000">NH 농협증권</button>
+                            </li>
+                            <li>
+                                <button class="select_btn js-select_bank" data-code="000">LIG 투자증권</button>
+                            </li>
+                            <li>
+                                <button class="select_btn js-select_bank" data-code="000">산림조합</button>
+                            </li>
+                            <li>
+                                <button class="select_btn js-select_bank" data-code="000">부국증권</button>
+                            </li>
+                            <li>
+                                <button class="select_btn js-select_bank" data-code="000">키움증권</button>
+                            </li>
+                            <li>
+                                <button class="select_btn js-select_bank" data-code="000">대신증권</button>
+                            </li>
+                            <li>
+                                <button class="select_btn js-select_bank" data-code="000">동부증권</button>
+                            </li>
+                            <li>
+                                <button class="select_btn js-select_bank" data-code="000">페이팔</button>
+                            </li>
+                        </ul>
+                        <ul class="sel_wrap abs_bottom">
+                            <li>
+                                <button class="select_btn btn_cancel js-closepop">취소</button>
+                            </li>
+                        </ul>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script>
-        $('.js-bank').on('change', function() {
-            chkInput();
+        $("#selectBank").dialog({
+            autoOpen: false,
+            modal: true,
+            width: '100%',
+            position: {
+                my: "bottom",
+                at: "bottom"
+            },
+            show: {
+                effect: "slide",
+                direction: "down",
+                duration: 300
+            },
+            create: function(event) {
+                $(".js-bank").on("click", function() {
+                    modalFixedControl.open($(event.target));
+                    $(event.target).dialog("open");
+                    return false;
+                });
+            },
+            resizable: false,
+            open: function(event) {
+                $('.js-closepop', $(event.target)).off('click').on('click', function() {
+                    $(event.target).dialog("close");
+                    return false;
+                })
+            },
+            close: function() {
+                modalFixedControl.close();
+            }
+        });
+        $('#selectBank .js-select_bank').on('click', function() {
+            $("#selectBank").dialog("close");
+            $('.js-bank_input').val($(this).text());
+            $('.js-bank_code').val($(this).data('code'))
+
         })
+
+
         $('.js-input').on('keyup', function() {
             chkInput();
         })
         $('.js-next').on('click', function() {
 
-            if (!$('.js-bank').val()) {
+            if (!$('.js-input').eq(0).val()) {
                 $('.js-error0').show();
             } else {
                 $('.js-error0').hide();
             }
-            if (!$('.js-input').eq(0).val()) {
+            if (!$('.js-input').eq(1).val()) {
                 $('.js-error1').show();
             } else {
                 $('.js-error1').hide();
             }
-            if (!$('.js-input').eq(1).val()) {
+            if (!$('.js-input').eq(2).val()) {
                 $('.js-error2').show();
             } else {
                 $('.js-error2').hide();
@@ -167,7 +333,7 @@
         })
 
         function chkInput() {
-            if ($('.js-bank').eq(0).val() && $('.js-input').eq(0).val() && $('.js-input').eq(1).val()) {
+            if ($('.js-input').eq(0).val() && $('.js-input').eq(1).val() && $('.js-input').eq(2).val()) {
                 $('.js-next').addClass('btn_point');
                 $('.js-next').removeClass('btn_gray');
             } else {

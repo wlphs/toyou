@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<!-- header -->
+	@@include('../../include/_head.html', {"title" : "TOYOUCORP."})
+	<!-- //header -->
+</head>
+
+<body class="pageclass">
+	<p class="accessibility" id="skipTop">
+		<a href="#container">본문 바로가기</a>
+		<a href="#gnb" class="js-gnb_btn">주메뉴 바로가기</a> 
+	</p>
+	<div class="wrapper">
+		<!-- header --> 
+		<header id="header" class="header">
+			<div class="header_fixed_group">
+				<div class="top_bar">
+					<div class="top_left">
+						<a href="javascript:history.go(-1);" class="history_back"><span class="hide">이전페이지로 이동</span></a> 
+					</div>
+					<div class="top_right">
+						<button class="btn_save_n_exit">저장 및 나가기</button> 
+					</div>
+				</div>
+			</div> 
+		</header>
+		<!-- //header -->
+
+		<!-- container -->
+		<div id="container">
+			<div id="contents">
+                <form action="" id="test1">
+                <div class="join_title cont_inner mb30">
+                    <h1 class="h1"><em>대표 분야를</em><br> 선택해 주세요.</h1>
+                    <p class="tit_desc mt10">(복수 선택 가능)</p>
+                </div>
+                <div class="cont_inner filter_wrap ">
+                        <p class="filter_tit">뷰티</p>
+                    <ul class="filter_list">
+                        <li>
+                            <input type="checkbox" id="f_standard0" class="inp_filter js-pick">
+                            <label for="f_standard0" class="inp_filter">메이크업</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="f_standard1"  class="inp_filter js-pick">
+                            <label for="f_standard1" class="inp_filter">네일아트</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="f_standard2"  class="inp_filter js-pick">
+                            <label for="f_standard2" class="inp_filter">홈트레이닝</label>
+                        </li>
+                    </ul>
+                    
+                    <p class="filter_tit mt30">힐링&테라피</p>
+                    <ul class="filter_list">
+                        <li>
+                            <input type="checkbox" id="f_standard3" class="inp_filter js-pick">
+                            <label for="f_standard3" class="inp_filter">스킨&바디케어</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="f_standard4"  class="inp_filter js-pick">
+                            <label for="f_standard4" class="inp_filter">명상</label>
+                        </li>
+                        <li></li>
+                    </ul>
+                    
+                    <p class="filter_tit mt30">홈트레이닝</p>
+                    <ul class="filter_list">
+                        <li>
+                            <input type="checkbox" id="f_standard5"  class="inp_filter js-pick">
+                            <label for="f_standard5" class="inp_filter">요가</label>
+                        </li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+                <div class="btn_bottom_fixed">
+                    <div class="fixed_wrap">
+                        <a href="#" class="btn btn_llg btn_gray btn_block js-next">다음</a>
+                    </div>
+                </div>
+                </form>
+			</div>
+		</div>
+        
+		<!-- //container -->
+		@@include('../../include/_toolbar.html')
+	</div>
+<script>
+
+	$('.js-pick').on('change', function() {
+        if ($('.js-pick:checked').length > 2) {
+            $(this).prop('checked', false);
+            return false;
+        }
+        if ($('.js-pick:checked').length ) {
+			$('.js-next').addClass('btn_point');
+			$('.js-next').removeClass('btn_gray');
+		}
+		else {
+			$('.js-next').removeClass('btn_point');
+			$('.js-next').addClass('btn_gray');
+        }
+        
+
+    })
+	$('.js-next').on('click', function() {
+		if (!$(this).hasClass('btn_point')) return false;
+		
+	})
+</script>
+
+</body>
+</html>

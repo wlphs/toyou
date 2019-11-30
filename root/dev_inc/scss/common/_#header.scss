@@ -22,6 +22,9 @@
     .btn_share { display:block; padding:5px; float:left;margin-top:16px; margin-right:15px;
       &:after {content:''; display:block; @include sp_icons($ic_share)}
     }
+    .btn_save_n_exit {display:block; padding:5px 5px 5px 20px; float:left;margin-top:16px; margin-right:15px; position: relative;
+      &:after {content:''; display:block; @include sp_icons($ic_save); position: absolute; top:50%; margin-top:-8px; left:0;}
+    }
     .filter_reset {display:block; padding:5px 5px 5px 20px; float:left;margin-top:16px; margin-right:15px; position: relative;
       &:after {content:''; display:block; @include sp_icons($ic_reset); position: absolute; top:50%; margin-top:-8px; left:0;}
     }

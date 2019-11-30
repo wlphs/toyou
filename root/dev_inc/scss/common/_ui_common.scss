@@ -421,7 +421,15 @@
     }
 
     .popup-layer.select_layer { border-top:10px solid $colorP;
-        .sel_wrap > li { background: url('/resources/images/common/dot_line_hor.png') repeat-x bottom left; background-size:4px 1px;}
+        .sel_wrap { max-height:calc(100vh - 70px); overflow-y:auto;
+            > li { background: url('/resources/images/common/dot_line_hor.png') repeat-x top left; background-size:4px 1px;
+                &:first-child {background:none;}
+                .select_btn { height:60px; line-height: 60px; width:100%; display:block; font-size:15px; color:#000; text-align: center;}
+            }
+            &.abs_bottom { height:60px;
+                li {position: absolute; bottom:0; left:0; width:100%; background: url('/resources/images/common/dot_line_hor.png') repeat-x top left; background-size:4px 1px;}
+            }
+        }
     }
     .popup-layer.option {
        position: relative;top: 0px; width: 600px; min-width: 415px; height: auto;
@@ -433,7 +441,7 @@
     .section {position: relative;padding: 0px 30px 20px;
        
     }
-    .popup-vertical.caution {padding-top:20px;}
+    .popup-vertical.fs0 {font-size:0;}
     .caution_wrap { padding-bottom:25px; padding-top:37px; position: relative;
         &:after {content:''; position: absolute; top:0; left:50%; margin-left:-20px; margin-top:-20px; @include sp_icons($ic_pop_caution)}
         .tit {text-align: center; font-size:19px; font-weight: 700; margin-bottom:10px;}

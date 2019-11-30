@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <!-- header -->
+    <meta charset="UTF-8">
+    <title>TOYOUCORP.</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" id="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,initial-scale=1.0">
+    <link rel="stylesheet" href="/resources/css/library/csslibrary.css">
+    <link rel="stylesheet" href="/resources/css/common.css">
+    <script src="/resources/js/jquery-3.4.1.min.js"></script>
+    <script src="/resources/js/library/jquerylibrary.min.js"></script>
+    <script src="/resources/js/common.js"></script>
+
+    <!-- //header -->
+</head>
+
+<body class="pageclass">
+    <p class="accessibility" id="skipTop">
+        <a href="#container">본문 바로가기</a>
+        <a href="#gnb" class="js-gnb_btn">주메뉴 바로가기</a>
+    </p>
+    <div class="wrapper">
+        <!-- header -->
+        <header id="header" class="header">
+            <div class="header_fixed_group border_bottom">
+                <div class="top_bar">
+                    <div class="locations">
+                        <div class="view_page">
+                            <h1 class="sub_title">마이페이지</h1>
+                        </div>
+                    </div>
+                    <div class="top_left">
+                        <a href="javascript:history.go(-1);" class="history_back"><span class="hide">이전페이지로 이동</span></a>
+                    </div>
+                    <div class="top_right">
+                        <button class="btn_stat_reserv stat_disabled">예약 가능</button>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- //header -->
+
+        <!-- container -->
+        <div id="container">
+            <div id="contents">
+                <div class="profile_wrap">
+                    <div class="pf_photo_wrap">
+                        <div class="pf_photo">
+                            <img src="/resources/images/temp/@temp_profile.png" alt="">
+                        </div>
+                        <button class="pf_photo_change js-photo">이미지 변경</button>
+                    </div>
+                    <p class="pf_name">김태리</p>
+                    <div class="pf_manage">
+                        <a href="#" class="btn_edit_pf">프로필 수정</a>
+                        <a href="#" class="btn_edit_cert">인증관리</a>
+                        <span class="cert_stat">신분인증 전</span>
+                    </div>
+                </div>
+                <ul class="my_count mt35 col3">
+                    <li>
+                        <a href="#">
+                            <span class="tit">예약내역</span>
+                            <span class="count">10</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="tit">결제내역</span>
+                            <span class="count">7</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="tit">수요예정정산</span>
+                            <span class="count">400,000<span class="won">원</span></span>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="cont_inner_right list_btn_wrap mb50">
+                    <li><a href="#" class="btn_menu_arrow">정산 정보 관리</a></li>
+                    <li><a href="#" class="btn_menu_arrow">알림 설정</a></li>
+                    <li><a href="#" class="btn_menu_arrow">안심 메시지 설정</a></li>
+                    <li><a href="#" class="btn_menu_arrow">자주 묻는 질문</a></li>
+                    <li><a href="#" class="btn_menu_arrow">채팅 고객 센터</a></li>
+                    <li><a href="#" class="btn_menu_arrow">버전 정보 (2.72) <span class="sm_txt">최신버전입니다.</span></a></li>
+                    <li><a href="#" class="btn_menu_arrow">버전 정보 (2.72) <span class="sm_txt colorP">최신버전(3.1)으로 업데이트하기</span></a></li>
+                    <li><a href="#" class="btn_menu_arrow">이용 약관 및 개인정보 보호정책</a></li>
+                    <li><a href="#" class="btn_menu_arrow js-logout">로그아웃</a></li>
+                    <li><a href="#" class="btn_menu_arrow js-secession">회원탈퇴 <span class="sm_txt">개인 정보와 설정이 모두 삭제됩니다.</span></a></li>
+                </ul>
+
+            </div>
+        </div>
+
+        <!-- //container -->
+        <!-- 
+<div class="toolBar">
+    <ul>
+        <li class="toolbar_btn0"><a href="#">서비스찾기</a></li>
+        <li class="toolbar_btn1"><a href="#">알림</a></li>
+        <li class="toolbar_btn2"><a href="#">홈</a></li>
+        <li class="toolbar_btn3"><a href="#">채팅</a></li>
+        <li class="toolbar_btn4"><a href="#">마이페이지</a></li>
+    </ul>
+</div> -->
+        <a href="#none" class="top_scroll">위로 이동</a>
+    </div>
+
+
+    <div id="getPhoto" class="trp popupfixed-wrap">
+        <div class="popup-align">
+            <div class="popup-vertical">
+                <div class="popup-layer select_layer" style="width:100%;">
+                    <!-- <div class="pop_header">
+						<p class="tit">사진 가져오기</p>
+						<a href="#" class="btn_close js-closepop"><span class="hide">닫기</span></a>
+					</div>  -->
+                    <section class="section pd0" style="display: block;">
+                        <ul class="sel_wrap get_photo">
+                            <li>
+                                <span class="get_photo_btn get_photo0">사진촬영</span>
+                                <input type="file" id="camera" name="camera" capture="camera" accept="image/*" />
+                            </li>
+                            <li>
+                                <span class="get_photo_btn get_photo1">앨범에서 가져오기</span>
+                                <input type="file" id="camera" name="camera">
+                            </li>
+                            <li>
+                                <button class="get_photo_btn btn_cancel js-closepop">취소</button>
+                            </li>
+                        </ul>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div id="pop_logout" class="trp popupfixed-wrap">
+        <div class="popup-align">
+            <div class="popup-vertical caution">
+                <div class="popup-layer " style="width:100%;">
+                    <section class="section pd0" style="display: block;">
+                        <div class="cont_inner caution_wrap">
+                            <p class="txt2">로그 아웃 하시겠습니까?</p>
+
+                            <div class="btn_set-double">
+                                <div class="btn_item"><a href="#" class="btn btn_lg btn_gray_w js-closepop ">취소</a></div>
+                                <div class="btn_item"><a href="#" class="btn btn_lg btn_point">확인</a></div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        $("#pop_logout").dialog({
+            autoOpen: false,
+            modal: true,
+            width: '100%',
+            position: {
+                my: "bottom",
+                at: "bottom"
+            },
+            create: function(event) {
+                $(".js-logout").on("click", function() {
+                    modalFixedControl.open($(event.target));
+                    $(event.target).dialog("open");
+                    return false;
+                });
+            },
+            resizable: false,
+            open: function(event) {
+                $('.js-closepop', $(event.target)).off('click').on('click', function() {
+                    $(event.target).dialog("close");
+                    return false;
+                })
+            },
+            close: function() {
+                modalFixedControl.close();
+            }
+        });
+    </script>
+    <script>
+        $("#getPhoto").dialog({
+            autoOpen: false,
+            modal: true,
+            width: '100%',
+            position: {
+                my: "bottom",
+                at: "bottom"
+            },
+            show: {
+                effect: "slide",
+                direction: "down",
+                duration: 300
+            },
+            create: function(event) {
+                $(".js-photo").on("click", function() {
+                    modalFixedControl.open($(event.target));
+                    $(event.target).dialog("open");
+                    return false;
+                });
+            },
+            resizable: false,
+            open: function(event) {
+                $('.js-closepop', $(event.target)).off('click').on('click', function() {
+                    $(event.target).dialog("close");
+                    return false;
+                })
+            },
+            close: function() {
+                modalFixedControl.close();
+            }
+        });
+
+
+        // 이미지를 동그란 영역에 맞춰 중앙 정렬
+        // 이미지가 변경될 때 아래 함수를 실행시켜 주세요
+        $('.pf_photo img').coverImage();
+
+        $('.btn_stat_reserv').on('click', function() {
+            $(this).toggleClass('stat_disabled');
+            if ($(this).hasClass('stat_disabled')) {
+                $(this).text('예약가능')
+            } else {
+                $(this).text('예약불가')
+            }
+        })
+    </script>
+
+
+
+    <script>
+
+    </script>
+
+
+</body>
+
+</html>
