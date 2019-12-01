@@ -26,7 +26,9 @@ input[type="text"], input[type="password"],input[type="number"], input[type="ema
 /* ======================== focus, ,disabled, input_error */
 /*input[type="text"]:focus,input[type="password"]:focus,input[type="number"]:focus,input[type="email"]:focus { border-color: $lineC_f; }*/
 input[type="text"]:disabled, input[type="password"]:disabled, input[type="number"]:disabled, input[type="email"]:disabled { background  : $formBG; }  
-input[type="text"][readonly], input[type="password"][readonly], input[type="number"][readonly], input[type="email"][readonly] { background  : #dedede; color:#000;}   
+input[type="text"][readonly], input[type="password"][readonly], input[type="number"][readonly], input[type="email"][readonly] { background  : #dedede; color:#000;
+    &.input_arrow {background-color: $formBG;}
+}   
 input[type="text"].error,input[type="password"].error,input[type="number"].error,input[type="email"].error   { border-color: $lineC_e; }
 .input-box{ position: relative;  vertical-align: top;
     .check_byte-w { padding-right:  90px !important; }
@@ -43,6 +45,9 @@ input[type="text"].error,input[type="password"].error,input[type="number"].error
 }
 input[type="text"].input_youtube,input[type="password"].input_youtube,input[type="number"].input_youtube,input[type="email"].input_youtube   { color:$colorP; }
 
+input[type="text"].input_arrow { background-color:$formBG ; background-image:url('/resources/images/common/select_arrow.png');background-repeat: no-repeat; background-position-x: 95%; background-position-y: center; background-size:10px 6px;
+
+}
 .input_post { position: relative; display:block;
     button.btn { position: absolute; top:0; right:0; display:inline-block; width:auto;}
 }

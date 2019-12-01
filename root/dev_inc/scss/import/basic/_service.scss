@@ -144,9 +144,20 @@
     dd { font-size: 15px; line-height:23px; word-break: keep-all; }
 }
 
-
+.reg_tit0 {font-size:19px; font-weight: 700; color:$colorP;}
+.reg_tit1 {font-size:15px; font-weight: 500; color:#000; padding-bottom: 7px; border-bottom:1px solid #000;}
+.reg_prd_wrap{ padding-right:25px;
+    .tit {font-size:15px; font-weight: 500; margin-bottom:5px;}
+}
+.assetWrap {
+    .assetItem {border-top:10px solid #f5f5f5; padding-bottom:20px;
+        &:first-child {border-top:none;}
+    }
+}
 .filter_wrap {
-    .filter_tit {font-size:15px; font-weight: 500; margin-bottom: 5px;}
+    .filter_tit {font-size:15px; font-weight: 500; margin-bottom: 5px;
+        em {color:$colorP;}
+    }
     .filter_list { @include clearfix(); border-top:1px solid #e5e5e5;border-right:1px solid #e5e5e5;
         li {position: relative; border-bottom:1px solid #e5e5e5; border-left:1px solid #e5e5e5; width:33.3333%; height:40px; float:left;}
     }

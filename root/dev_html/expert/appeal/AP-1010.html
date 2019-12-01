@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<!-- header -->
+	@@include('../../include/_head.html', {"title" : "TOYOUCORP."})
+	<!-- //header -->
+</head>
+
+<body class="pageclass">
+	<p class="accessibility" id="skipTop">
+		<a href="#container">본문 바로가기</a>
+		<a href="#gnb" class="js-gnb_btn">주메뉴 바로가기</a> 
+	</p>
+	<div class="wrapper">
+		<!-- header --> 
+		<header id="header" class="header">
+			<div class="header_fixed_group">
+				<div class="top_bar">
+					<div class="top_left">
+						<a href="javascript:history.go(-1);" class="history_back"><span class="hide">이전페이지로 이동</span></a> 
+					</div>
+					<div class="top_right">
+						<button class="btn_save_n_exit">저장 및 나가기</button> 
+					</div>
+				</div>
+			</div> 
+		</header>
+		<!-- //header -->
+
+		<!-- container -->
+		<div id="container">
+			<div id="contents">
+                <div class="join_title cont_inner mb30">
+                    <h1 class="h1"><em>서비스 가능 지역을</em><br> 선택해 주세요.</h1>
+                    <p class="tit_desc mt10">(5개까지 복수 선택 가능)</p>
+                </div>
+                <div class="cont_inner filter_wrap ">
+                    <p class="filter_tit">가능 지역1</p>
+                    <input type="text" class="input_arrow js-select_area" readonly>
+                </div>
+                <div class="cont_inner filter_wrap border_top10 mt20 pt20 js-add_area" style="display:none;">
+                    <p class="filter_tit rel ">가능 지역2
+                        <button class="btn_trash pos_abs_right">삭제하기</button>
+                    </p>
+                    
+                    <input type="text" class="input_arrow js-select_area" readonly>
+                </div>
+                <div class="cont_inner filter_wrap border_top10 mt20 pt20 js-add_area" style="display:none;">
+                    <p class="filter_tit rel ">가능 지역3
+                        <button class="btn_trash pos_abs_right">삭제하기</button>
+                    </p>
+                    
+                    <input type="text" class="input_arrow js-select_area" readonly>
+                </div>
+                <div class="cont_inner filter_wrap border_top10 mt20 pt20 js-add_area" style="display:none;">
+                    <p class="filter_tit rel ">가능 지역4
+                        <button class="btn_trash pos_abs_right">삭제하기</button>
+                    </p>
+                    
+                    <input type="text" class="input_arrow js-select_area" readonly>
+                </div>
+                <div class="cont_inner filter_wrap border_top10 mt20 pt20 js-add_area" style="display:none;">
+                    <p class="filter_tit rel ">가능 지역5
+                        <button class="btn_trash pos_abs_right">삭제하기</button>
+                    </p>
+                    
+                    <input type="text" class="input_arrow js-select_area" readonly>
+                </div>
+                <div class="more_wrap border_top10 mt20">
+                    <button class="btn_plus js-add"><span class="txt">추가하기</span></button>
+                </div>
+                <div class="btn_bottom_fixed">
+                    <div class="fixed_wrap">
+                        <a href="#" class="btn btn_llg btn_gray btn_block js-next">다음</a>
+                    </div>
+                </div>
+
+                
+			</div>
+		</div>
+        
+		<!-- //container -->
+		@@include('../../include/_toolbar.html')
+    </div>
+    
+
+
+    
+	<div id="selectArea1" class="trp popupfixed-wrap">
+		<div class="popup-align">
+			<div class="popup-vertical fs0">
+				<div class="popup-layer " style="width:100%;">
+                    <section class="section pd0 rel" style="display: block;">
+                        <div class="filter_wrap pt30 cont_inner">
+                            <div class="area_step1">
+                                <p class="filter_tit tal">시/도를 선택해 주세요.</p>
+                                <ul class="filter_list sel_lg">
+                                    <li>
+                                        <input type="radio" id="f_standard0" checked class="inp_filter" name="standard">
+                                        <label for="f_standard0" class="inp_filter">서울</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="f_standard1" class="inp_filter" name="standard">
+                                        <label for="f_standard1" class="inp_filter">부산</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="f_standard2" class="inp_filter" name="standard">
+                                        <label for="f_standard2" class="inp_filter">대구</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="f_standard3" class="inp_filter" name="standard">
+                                        <label for="f_standard3" class="inp_filter">인천</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="f_standard4" class="inp_filter" name="standard">
+                                        <label for="f_standard4" class="inp_filter">광주</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="f_standard5" class="inp_filter" name="standard">
+                                        <label for="f_standard5" class="inp_filter">대전</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="f_standard6" class="inp_filter" name="standard">
+                                        <label for="f_standard6" class="inp_filter">울산</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="f_standard7" class="inp_filter" name="standard">
+                                        <label for="f_standard7" class="inp_filter">세종</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="f_standard8" class="inp_filter" name="standard">
+                                        <label for="f_standard8" class="inp_filter">경기</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="f_standard9" class="inp_filter" name="standard">
+                                        <label for="f_standard9" class="inp_filter">강원</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="f_standard10" class="inp_filter" name="standard">
+                                        <label for="f_standard10" class="inp_filter">충북</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="f_standard11" class="inp_filter" name="standard">
+                                        <label for="f_standard11" class="inp_filter">충남</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="f_standard12" class="inp_filter" name="standard">
+                                        <label for="f_standard12" class="inp_filter">전북</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="f_standard13" class="inp_filter" name="standard">
+                                        <label for="f_standard13" class="inp_filter">전남</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="f_standard14" class="inp_filter" name="standard">
+                                        <label for="f_standard14" class="inp_filter">경북</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="f_standard15" class="inp_filter" name="standard">
+                                        <label for="f_standard15" class="inp_filter">경남</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="f_standard16" class="inp_filter" name="standard">
+                                        <label for="f_standard16" class="inp_filter">제주</label>
+                                    </li>
+                                    <li></li>
+                                </ul>
+                            </div>
+                            
+                            <div class="area_step2" style="display:none;">
+                                <p class="filter_tit tal"><em>서울시</em> > 시/군/구를 선택해 주세요.</p>
+                                <ul class="filter_list sel_lg">
+                                    <li>
+                                        <input type="radio" id="f_standard100" checked class="inp_filter" name="standard">
+                                        <label for="f_standard100" class="inp_filter">전체</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="f_standard101" class="inp_filter" name="standard">
+                                        <label for="f_standard101" class="inp_filter">강남구</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="f_standard102" class="inp_filter" name="standard">
+                                        <label for="f_standard102" class="inp_filter">강동구</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="f_standard103" class="inp_filter" name="standard">
+                                        <label for="f_standard103" class="inp_filter">강북구</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="f_standard104" class="inp_filter" name="standard">
+                                        <label for="f_standard104" class="inp_filter">강서구</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="f_standard105" class="inp_filter" name="standard">
+                                        <label for="f_standard105" class="inp_filter">관악구</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="f_standard106" class="inp_filter" name="standard">
+                                        <label for="f_standard106" class="inp_filter">광진구</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="f_standard107" class="inp_filter" name="standard">
+                                        <label for="f_standard107" class="inp_filter">구로구</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="f_standard108" class="inp_filter" name="standard">
+                                        <label for="f_standard108" class="inp_filter">금천구</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="f_standard109" class="inp_filter" name="standard">
+                                        <label for="f_standard109" class="inp_filter">노원구</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="f_standard110" class="inp_filter" name="standard">
+                                        <label for="f_standard110" class="inp_filter">도봉구</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="f_standard111" class="inp_filter" name="standard">
+                                        <label for="f_standard111" class="inp_filter">동대문구</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="f_standard112" class="inp_filter" name="standard">
+                                        <label for="f_standard112" class="inp_filter">동작구</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="f_standard113" class="inp_filter" name="standard">
+                                        <label for="f_standard113" class="inp_filter">마포구</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="f_standard114" class="inp_filter" name="standard">
+                                        <label for="f_standard114" class="inp_filter">서대문구</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="f_standard115" class="inp_filter" name="standard">
+                                        <label for="f_standard115" class="inp_filter">서초구</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="f_standard116" class="inp_filter" name="standard">
+                                        <label for="f_standard116" class="inp_filter">성동구</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="f_standard117" class="inp_filter" name="standard">
+                                        <label for="f_standard117" class="inp_filter">성북구</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="f_standard118" class="inp_filter" name="standard">
+                                        <label for="f_standard118" class="inp_filter">송파구</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="f_standard119" class="inp_filter" name="standard">
+                                        <label for="f_standard119" class="inp_filter">양천구</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="f_standard120" class="inp_filter" name="standard">
+                                        <label for="f_standard120" class="inp_filter">영등포구</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="f_standard121" class="inp_filter" name="standard">
+                                        <label for="f_standard121" class="inp_filter">용산구</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="f_standard122" class="inp_filter" name="standard">
+                                        <label for="f_standard122" class="inp_filter">은평구</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="f_standard123" class="inp_filter" name="standard">
+                                        <label for="f_standard123" class="inp_filter">종로구</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="f_standard124" class="inp_filter" name="standard">
+                                        <label for="f_standard124" class="inp_filter">중랑구</label>
+                                    </li>
+                                    <li></li>
+                                    <li></li>
+                                </ul>
+                            </div>
+                            <div class="btn_set-double mt20 mb20">
+								<div class="btn_item"><a href="#" class="btn btn_lg btn_gray_w js-closepop ">초기화</a></div>
+								<div class="btn_item"><a href="#" class="btn btn_lg btn_point js-pop_next">다음</a></div>
+							</div>
+                        </div>
+					</section>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<script>
+	$("#selectArea1").dialog({
+		autoOpen: false,
+		modal: true,
+		width:'100%',
+		position: { my: "bottom", at: "bottom" },
+		create : function(event) {
+			$(".js-select_area").on("click", function() {
+			modalFixedControl.open($(event.target));
+            $(event.target).dialog("open");
+            $(event.target).data('inp', $(this));
+			return false;
+			});
+		},
+		resizable: false,
+		open : function (event) {
+            $(event.target).closest('.ui-widget.ui-widget-content').css({
+                'top':'auto',
+                'bottom': '0px'
+            })
+			$('.js-closepop', $(event.target)).off('click').on('click', function() {
+				$(event.target).dialog( "close" );
+				return false;
+            })
+            $(event.target).find('.area_step1').show();
+            $(event.target).find('.area_step2').hide();
+            $(event.target).find('.js-pop_next').data('step',1);
+		},
+		close: function() {
+			modalFixedControl.close();
+		}
+    });
+    $('#selectArea1 .js-pop_next').on('click', function() {
+        if ($(this).data('step')==1 ){
+            if ($('#selectArea1 .area_step1 input:checked').length > 0) {
+                $(this).data('step', 2)
+                $(this).data('area1' , $('#selectArea1 .area_step1 input:checked').siblings('label').text())
+                $('#selectArea1 .area_step1').hide();
+                $('#selectArea1 .area_step2').show();
+            }
+        }
+        else if ($(this).data('step') == 2 ) {
+            if ($('#selectArea1 .area_step2 input:checked').length > 0) {
+                $(this).data('area2' , $('#selectArea1 .area_step2 input:checked').siblings('label').text())
+                $('#selectArea1').dialog( "close" );
+
+                var _txt = $(this).data('area1') + " > ";
+                _txt += $(this).data('area2');
+                $("#selectArea1").data('inp').val(_txt);
+
+                
+                $('.js-next').addClass('btn_point');
+                $('.js-next').removeClass('btn_gray');
+            }
+        }
+    })
+
+
+	$('.js-next').on('click', function() {
+		if (!$(this).hasClass('btn_point')) return false;
+		
+    })
+
+    $('.js-add').data('len',0);
+    $('.js-add').on('click', function() {
+        var l = $('.js-add').data('len');
+        
+        $('.js-add_area').eq(l).show();
+        $('.js-add').data('len' , l+1);
+        if ($('.js-add').data('len') == 4) {
+            $(this).hide();
+        }
+    })
+    $('.btn_trash').on('click', function() {
+        $(this).closest('.js-add_area').hide();
+        $('.js-add').show();
+        var l = $('.js-add').data('len');
+        $('.js-add').data('len' , l-1);
+    })
+
+    
+</script>
+
+</body>
+</html>

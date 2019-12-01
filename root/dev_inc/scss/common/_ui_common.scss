@@ -74,7 +74,10 @@
 .btn_arrow_sm { font-size:14px; color:#222222; padding-right:20px; position: relative;
     &:after {content:''; position: absolute; right:5px; top:50%; margin-top:-5px; background:url('/resources/images/common/sm_arrow.svg'); width:4px; height:7px;}
 }
-
+.btn_trash {padding: 5px 0px 5px 20px; position: relative; 
+    &:after {content:''; position: absolute; left:0; top:50%; margin-top:-7px; display:block; @include sp_icons($ic_trash); }
+    &.pos_abs_right {position: absolute; right:0px; top:-5px; }
+}
 //더보기버튼
 .btn_more { font-size: 14px; padding: 10px; position: relative; display:inline-block; 
     &:after { content:''; display:inline-block; position: absolute; right:0; top: 50%; margin-top:-4px; @include sp_icons($arrow_more2);}
