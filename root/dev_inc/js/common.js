@@ -26,14 +26,15 @@ $(function(){
     
 }); //.ready() called.
 
-function openSnippet(msg) {
+function openSnippet(msg, $delay) {
   var ran = Math.floor(Math.random()*10000000);
+  var _delay = ($delay) ?  $delay : 2000;
   $('body').append('<div class="snippet_wrap js-snippet_wrap'+ran+'"><p class="snippet_cont">'+msg+'</p></div>')
   var snippet = $('.js-snippet_wrap'+ran);
   if ($('#contents .btn_bottom_fixed').length) {
     snippet.css('bottom', $('#contents .btn_bottom_fixed').innerHeight());
   }
-  $('.snippet_cont',snippet).animate({"top":0}, 300).delay(2000).fadeOut(300, function () {
+  $('.snippet_cont',snippet).animate({"top":0}, 300).delay(_delay).fadeOut(300, function () {
     snippet.remove();
   });
 }
