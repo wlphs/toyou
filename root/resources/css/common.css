@@ -233,7 +233,7 @@ a, span, i, em {
   background-size: 90px 85px;
 }
 
-.icon_label, .btn_menu_arrow:after, .btn_trash:after, .btn_more:after, .btn_more.red:after, .btn_file::before, .photo::before, .btn_report::before, .btn_report2::before, .btn_all_more:after, .btn_plus:after, .btn_filter::before, .btn_del::before, .btn_del02::before, .icon_kakao::before, .icon_call::before, .icon_01::before, .icon_02::before, .save_logout::before, .btn_more_point:after, .btn_arrow_type:after, .accordion-list > li .header-area .acc_btn:after, .trp.popupfixed-wrap .btn_close:after, .trp.popupfixed-wrap .caution_wrap:after, .trp.popupfixed-wrap .share_wrap .share_list li .btn_facebook:after, .trp.popupfixed-wrap .share_wrap .share_list li .btn_kakao:after, .trp.popupfixed-wrap .share_wrap .share_list li .btn_share:after, .calendar_wrap .daterangepicker .calendar-table .prev:after, .calendar_wrap .daterangepicker .calendar-table .next:after, .header .top_bar .history_back:before, .header .top_bar .btn_share:after, .header .top_bar .btn_save_n_exit:after, .header .top_bar .filter_reset:after, .header .top_bar .btn_like:after, .header .top_bar .btn_search:before, #footer .opne_text:after, .top_scroll::before, .profile_photo_wrap .pf_photo_change:after, .agree_list li .agree_view:after, .main_header .h1_logo, .main_header .location_top::before, .main_header .tip::before, .main section.main_card .visual_txt .txt em, .thum_list li .img .btn_like::before, .thum_list li .img .btn_like.on::before, .thum_list li .btn_like::before, .thum_list li .btn_like.on::before, .thum_list li .btn_like2::before, .thum_list li .btn_like2.on::before, .introWrap li .intro_btns .btn_login span.log_naver:after, .introWrap li .intro_btns .btn_login span.log_kakao:after, .chatting_area .chatting_list > li .icon, .chatting_area .chatting_view > li .chat_area .chat_view::before, .chatting_area .chatting_view > li.answer .chat_area .chat_view::before, .alarm_area .alarm_list > li .link::before, .serv_wrap .serv_detail .serv_info .reaction li.like:after, .serv_wrap .serv_detail .serv_info .reaction li.review:after, .serv_wrap .serv_detail .serv_info .reaction li.reply:after, .serv_wrap .serv_review_wrap .review_total_like .like_count:after, .serv_wrap .serv_review_wrap .review_list li .writer .review_like .btn_review_like:after, .movieWrap .movie_play:after, .service_bottom .btn_chat:after, .service_bottom .btn_tel:after, .review_more_wrap .btn_review_more:after, .buy_booking .end:before, .reserv_detail_wrap .detail_tit.wait:after, .reserv_detail_wrap .detail_tit.end:after, .reserv_detail_wrap .detail_tit.cancel:after, .expert_profile .link_connect li a.ic_kakao:after, .expert_profile .link_connect li a.ic_call:after, .profile_wrap .pf_photo_wrap .pf_photo_change:after, .profile_wrap .pf_photo_wrap .pf_photo_change.type2:after, .profile_wrap .pf_manage a.btn_edit_pf:after, .profile_wrap .pf_manage a.btn_edit_cert:after, .btn_stat_reserv:after, .btn_stat_reserv.stat_disabled:after, .position_cont .photo_area .pf_photo_change:after {
+.icon_label, .btn_menu_arrow:after, .btn_trash:after, .btn_more:after, .btn_more.red:after, .btn_file::before, .photo::before, .btn_report::before, .btn_report2::before, .btn_all_more:after, .btn_plus:after, .btn_filter::before, .btn_del::before, .btn_del02::before, .icon_kakao::before, .icon_call::before, .icon_01::before, .icon_02::before, .save_logout::before, .btn_more_point:after, .btn_arrow_type:after, .accordion-list > li .header-area .acc_btn:after, .trp.popupfixed-wrap .btn_close:after, .trp.popupfixed-wrap .caution_wrap:after, .trp.popupfixed-wrap .share_wrap .share_list li .btn_facebook:after, .trp.popupfixed-wrap .share_wrap .share_list li .btn_kakao:after, .trp.popupfixed-wrap .share_wrap .share_list li .btn_share:after, .calendar_wrap .daterangepicker .calendar-table .prev:after, .calendar_wrap .daterangepicker .calendar-table .next:after, .header .top_bar .history_back:before, .header .top_bar .btn_share:after, .header .top_bar .btn_save_n_exit:after, .header .top_bar .filter_reset:after, .header .top_bar .btn_like:after, .header .top_bar .btn_search:before, #footer .opne_text:after, .top_scroll::before, .btn_cart:before, .profile_photo_wrap .pf_photo_change:after, .agree_list li .agree_view:after, .main_header .h1_logo, .main_header .location_top::before, .main_header .tip::before, .main section.main_card .visual_txt .txt em, .thum_list li .img .btn_like::before, .thum_list li .img .btn_like.on::before, .thum_list li .btn_like::before, .thum_list li .btn_like.on::before, .thum_list li .btn_like2::before, .thum_list li .btn_like2.on::before, .introWrap li .intro_btns .btn_login span.log_naver:after, .introWrap li .intro_btns .btn_login span.log_kakao:after, .chatting_area .chatting_list > li .icon, .chatting_area .chatting_view > li .chat_area .chat_view::before, .chatting_area .chatting_view > li.answer .chat_area .chat_view::before, .alarm_area .alarm_list > li .link::before, .serv_wrap .serv_detail .serv_info .reaction li.like:after, .serv_wrap .serv_detail .serv_info .reaction li.review:after, .serv_wrap .serv_detail .serv_info .reaction li.reply:after, .serv_wrap .serv_review_wrap .review_total_like .like_count:after, .serv_wrap .serv_review_wrap .review_list li .writer .review_like .btn_review_like:after, .movieWrap .movie_play:after, .service_bottom .btn_chat:after, .service_bottom .btn_tel:after, .review_more_wrap .btn_review_more:after, .buy_booking .end:before, .reserv_detail_wrap .detail_tit.wait:after, .reserv_detail_wrap .detail_tit.end:after, .reserv_detail_wrap .detail_tit.cancel:after, .expert_profile .link_connect li a.ic_kakao:after, .expert_profile .link_connect li a.ic_call:after, .profile_wrap .pf_photo_wrap .pf_photo_change:after, .profile_wrap .pf_photo_wrap .pf_photo_change.type2:after, .profile_wrap .pf_manage a.btn_edit_pf:after, .profile_wrap .pf_manage a.btn_edit_cert:after, .btn_stat_reserv:after, .btn_stat_reserv.stat_disabled:after, .position_cont .photo_area .pf_photo_change:after {
   background-image: url("../images/common/sp_icons.png");
   background-size: 343px 317px;
 }
@@ -2877,7 +2877,7 @@ table.bottom_bar {
   margin-top: -4px;
   width: 6px;
   height: 8px;
-  background-position: -24px -302px;
+  background-position: -285.5px -186px;
 }
 
 .btn_menu_arrow .sm_txt {
@@ -2985,7 +2985,7 @@ table.bottom_bar {
   margin-top: -4px;
   width: 5px;
   height: 9px;
-  background-position: -287.5px -185px;
+  background-position: -24px -302px;
 }
 
 .btn_more.red {
@@ -4132,7 +4132,7 @@ table.bottom_bar {
   margin-top: -20px;
   width: 40px;
   height: 40px;
-  background-position: -242.5px -115px;
+  background-position: -242.5px -116px;
 }
 
 .trp.popupfixed-wrap .caution_wrap .tit {
@@ -4587,8 +4587,8 @@ input[type="text"].input_arrow {
   top: 12px;
   right: 15px;
   font-size: 15px;
-  font-weight: 500;
-  color: #ff5c5c;
+  font-weight: 400;
+  color: #000;
 }
 
 .input_unit.unit2 {
@@ -5859,6 +5859,47 @@ select.select_bank {
   margin-top: 13px;
 }
 
+.btn_cart {
+  width: 46px;
+  height: 46px;
+  border-radius: 23px;
+  display: block;
+  position: fixed;
+  bottom: 85px;
+  right: 12px;
+  z-index: 10;
+  font-size: 0;
+  text-align: center;
+  box-shadow: 0px 6px 16px 0px rgba(0, 0, 0, 0.1);
+}
+
+.btn_cart .num {
+  display: block;
+  position: absolute;
+  border-radius: 6px;
+  width: 12px;
+  height: 12px;
+  background: #fff;
+  color: #ff5c5c;
+  font-size: 8px;
+  text-align: center;
+  line-height: 12px;
+  top: 11px;
+  left: 25px;
+  font-weight: 500;
+}
+
+.btn_cart:before {
+  content: '';
+  display: block;
+  width: 46px;
+  height: 46px;
+  background-position: -242.5px -60px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
 /* ================== 로그인 ========================= */
 .join_title .tit_desc {
   font-size: 15px;
@@ -6020,7 +6061,7 @@ select.select_bank {
   position: relative;
   width: 5px;
   height: 9px;
-  background-position: -287.5px -185px;
+  background-position: -24px -302px;
   display: block;
 }
 
@@ -7174,7 +7215,7 @@ input[type="radio"].type_btn_radio + label {
   margin-top: -8px;
   width: 5px;
   height: 9px;
-  background-position: -287.5px -185px;
+  background-position: -24px -302px;
 }
 
 .alarm_area .alarm_list > li .link em {
@@ -9245,7 +9286,7 @@ input[type="radio"].type_btn_radio + label {
   content: '';
   width: 33px;
   height: 33px;
-  background-position: -195px -85px;
+  background-position: -242.5px -166px;
   display: block;
 }
 
@@ -9258,7 +9299,7 @@ input[type="radio"].type_btn_radio + label {
   content: '';
   width: 35px;
   height: 35px;
-  background-position: -242.5px -165px;
+  background-position: -195px -85px;
   display: block;
 }
 

@@ -1113,13 +1113,13 @@ __CONSTANT_LIST = [
         etc 		: '2019-1124',
     },
 	{
-        stateLine   : "del", 
+        stateLine   : "", 
         dep1 		: '알림',
         dep2 		: '목록',
         dep3 		: '',
-        url 		: '',
+        url 		: '/html/expert/alarm/AL_0000.html',
         pubUpdate 	: '2019-0000',
-        etc 		: '2019-1124 공통',
+        etc 		: '2019-1124',
     },
 	{
         stateLine   : "del", 
