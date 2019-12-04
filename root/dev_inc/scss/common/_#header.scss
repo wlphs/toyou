@@ -7,7 +7,11 @@
   .border_bottom { border-bottom:1px solid #edebe9;}
   .top_bar {position: relative; 
     .locations {padding:0 40px;
-      .sub_title {  line-height: 65px; font-size: 15px;}
+      .sub_title {  line-height: 65px; font-size: 15px;
+        &.exp_main_tit {
+          img {width:119px; margin-top:21px; margin-right:10px;}
+        }
+      }
       .logo { width:108px; margin-top:25px;}
     }
     

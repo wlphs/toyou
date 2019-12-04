@@ -5555,6 +5555,12 @@ select.select_bank {
   font-size: 15px;
 }
 
+.header .top_bar .locations .sub_title.exp_main_tit img {
+  width: 119px;
+  margin-top: 21px;
+  margin-right: 10px;
+}
+
 .header .top_bar .locations .logo {
   width: 108px;
   margin-top: 25px;
