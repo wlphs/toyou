@@ -396,7 +396,14 @@
     //서비스진행중
     .service_ing_box { display:block; border-top:7px solid #ff5c5c; padding-top: 30px;
         .title { font-size: 19px; font-weight: 700; color:$colorP; text-align:center; letter-spacing: -1px;
-            span { display:block; font-size: 13px; color:$colorB; font-weight:500; margin-top: 10px;}
+            span { display:block; font-size: 13px; color:$colorB; font-weight:500; margin-top: 10px;
+                i { color: #ff5c5c;}
+            }
+
+            //전문가텍스트
+            &.expert { font-size: 18px; margin-right: 25px; word-break: keep-all;
+                em { font-size: 18px; font-weight: 700;  margin-top: 5px; }
+            }
         }
 
         //진행표시
@@ -414,6 +421,13 @@
                     }
                 }
             }
+
+            //전문가표시
+            &.expert {
+                ul {
+                    li { width: 25%;}
+                }
+            }
         }
 
         //지도영역
@@ -423,11 +437,15 @@
             }
             .fix_btn { position:absolute; right:0; bottom:-17px;}
         }
-        
     }
-
-    
 }
+
+ //전문가지도밑주소
+ .expert_add { width: 100%; margin-top:20px;
+    dt { font-size: 14px; font-weight: 500; color:#ff5c5c; vertical-align: top; margin-bottom: 9px;}
+    dd { color:#000; font-size: 14px; display: block; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
+}
+
 .js-hide_date { display: none; }
 //토글버튼
 .toggle_btn {
@@ -459,6 +477,7 @@
         }
     }
     .prd_desc {word-break: keep-all; text-align: center; padding-top:16px;padding-right:24px; background:url('/resources/images/common/dot_line_hor.png') repeat-x left top; background-size:4px; }
+
 }
 .reserv_detail_info {
     .info_tit {font-weight: 700; font-size:19px; color:#000; padding-bottom:6px; border-bottom:1px solid #05050b; }
@@ -474,6 +493,8 @@
                     .price_txt {font-weight: 700;font-size:15px; text-align: right; padding-right:25px;}
                 }
             }
+
+           
         }
     }
     .after_step { padding-right:24px; margin-top:20px;

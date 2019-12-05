@@ -107,3 +107,23 @@
     }
     .edite_date { font-size:12px; font-weight: 300; color:#777; display:inline-block; display:block; text-align:right;}
 }
+
+
+//전문가실명인증
+.user_confirm { background:#fff; margin-top:20px; overflow: hidden;
+    a { display:inline-block; text-align:center; line-height: 54px; float:left; position: relative; width: 50%; font-size: 17px; font-weight: 500;
+        &::before { content:''; display:inline-block; position:absolute; left: 0; top: 50%; margin-top: -8px; @include sp_icons($icon_bar); }
+        &:first-child {
+            &::before { display:none;}
+        }
+    }
+}
+.user_01 { 
+    &::before { content:''; display:inline-block; margin: 0 5px -2px 0; @include sp_icons($icon_blt_01); }
+}
+.user_02 { 
+    &::before { content:''; display:inline-block; margin: 0 5px -2px 0; @include sp_icons($icon_blt_02); }
+}
+.icon_position { 
+    &::before { content:''; display:inline-block; margin: 0 6px -4px 0; @include sp_icons($icon_location2); }
+}
