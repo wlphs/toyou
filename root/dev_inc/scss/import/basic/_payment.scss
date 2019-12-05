@@ -58,6 +58,7 @@
 
 .reserv_list_type {
     li {padding:20px 25px 20px 0; background:url('/resources/images/common/dot_line_hor.png') repeat-x left bottom; background-size:4px; 
+        &.no_data_list {background:none;}
         .btn_arrow_type {display:block; position: relative;}
         .stat { padding:2px 8px; min-width: 65px; text-align: center; display:inline-block; box-sizing: border-box; font-size:13px;
             &.before {border:1px solid #999; color:#999; }
