@@ -233,9 +233,9 @@ a, span, i, em {
   background-size: 90px 85px;
 }
 
-.icon_label, .btn_menu_arrow:after, .btn_trash:after, .btn_more:after, .btn_more.red:after, .btn_file::before, .photo::before, .btn_report::before, .btn_report2::before, .btn_all_more:after, .btn_plus:after, .btn_filter::before, .btn_del::before, .btn_del02::before, .icon_kakao::before, .icon_call::before, .icon_01::before, .icon_02::before, .save_logout::before, .btn_more_point:after, .btn_arrow_type:after, .accordion-list > li .header-area .acc_btn:after, .trp.popupfixed-wrap .btn_close:after, .trp.popupfixed-wrap .caution_wrap:after, .trp.popupfixed-wrap .share_wrap .share_list li .btn_facebook:after, .trp.popupfixed-wrap .share_wrap .share_list li .btn_kakao:after, .trp.popupfixed-wrap .share_wrap .share_list li .btn_share:after, .calendar_wrap .daterangepicker .calendar-table .prev:after, .calendar_wrap .daterangepicker .calendar-table .next:after, .header .top_bar .history_back:before, .header .top_bar .btn_share:after, .header .top_bar .btn_save_n_exit:after, .header .top_bar .filter_reset:after, .header .top_bar .btn_like:after, .header .top_bar .btn_search:before, #footer .opne_text:after, .top_scroll::before, .btn_cart:before, .profile_photo_wrap .pf_photo_change:after, .agree_list li .agree_view:after, .main_header .h1_logo, .main_header .location_top::before, .main_header .tip::before, .main section.main_card .visual_txt .txt em, .thum_list li .img .btn_like::before, .thum_list li .img .btn_like.on::before, .thum_list li .btn_like::before, .thum_list li .btn_like.on::before, .thum_list li .btn_like2::before, .thum_list li .btn_like2.on::before, .introWrap li .intro_btns .btn_login span.log_naver:after, .introWrap li .intro_btns .btn_login span.log_kakao:after, .chatting_area .chatting_list > li .icon, .chatting_area .chatting_view > li .chat_area .chat_view::before, .chatting_area .chatting_view > li.answer .chat_area .chat_view::before, .alarm_area .alarm_list > li .link::before, .serv_wrap .serv_detail .serv_info .reaction li.like:after, .serv_wrap .serv_detail .serv_info .reaction li.review:after, .serv_wrap .serv_detail .serv_info .reaction li.reply:after, .serv_wrap .serv_review_wrap .review_total_like .like_count:after, .serv_wrap .serv_review_wrap .review_list li .writer .review_like .btn_review_like:after, .movieWrap .movie_play:after, .service_bottom .btn_chat:after, .service_bottom .btn_tel:after, .review_more_wrap .btn_review_more:after, .buy_booking .end:before, .reserv_detail_wrap .detail_tit.wait:after, .reserv_detail_wrap .detail_tit.end:after, .reserv_detail_wrap .detail_tit.cancel:after, .expert_profile .link_connect li a.ic_kakao:after, .expert_profile .link_connect li a.ic_call:after, .profile_wrap .pf_photo_wrap .pf_photo_change:after, .profile_wrap .pf_photo_wrap .pf_photo_change.type2:after, .profile_wrap .pf_manage a.btn_edit_pf:after, .profile_wrap .pf_manage a.btn_edit_cert:after, .btn_stat_reserv:after, .btn_stat_reserv.stat_disabled:after, .position_cont .photo_area .pf_photo_change:after, .expert_my_service .reaction li.like:after, .expert_my_service .reaction li.review:after, .expert_my_service .reaction li.reply:after {
+.icon_label, .btn_menu_arrow:after, .btn_trash:after, .btn_more:after, .btn_more.red:after, .btn_file::before, .photo::before, .btn_report::before, .btn_report2::before, .btn_all_more:after, .btn_plus:after, .btn_filter::before, .btn_del::before, .btn_del02::before, .icon_kakao::before, .icon_call::before, .icon_01::before, .icon_02::before, .save_logout::before, .btn_more_point:after, .btn_arrow_type:after, .accordion-list > li .header-area .acc_btn:after, .trp.popupfixed-wrap .btn_close:after, .trp.popupfixed-wrap .caution_wrap:after, .trp.popupfixed-wrap .share_wrap .share_list li .btn_facebook:after, .trp.popupfixed-wrap .share_wrap .share_list li .btn_kakao:after, .trp.popupfixed-wrap .share_wrap .share_list li .btn_share:after, .calendar_wrap .daterangepicker .calendar-table .prev:after, .calendar_wrap .daterangepicker .calendar-table .next:after, .header .top_bar .history_back:before, .header .top_bar .btn_share:after, .header .top_bar .btn_save_n_exit:after, .header .top_bar .filter_reset:after, .header .top_bar .btn_like:after, .header .top_bar .btn_search:before, #footer .opne_text:after, .top_scroll::before, .btn_cart:before, .profile_photo_wrap .pf_photo_change:after, .agree_list li .agree_view:after, .main_header .h1_logo, .main_header .location_top::before, .main_header .tip::before, .main section.main_card .visual_txt .txt em, .thum_list li .img .btn_like::before, .thum_list li .img .btn_like.on::before, .thum_list li .btn_like::before, .thum_list li .btn_like.on::before, .thum_list li .btn_like2::before, .thum_list li .btn_like2.on::before, .introWrap li .intro_btns .btn_login span.log_naver:after, .introWrap li .intro_btns .btn_login span.log_kakao:after, .chatting_area .chatting_list > li .icon, .chatting_area .chatting_view > li .chat_area .chat_view::before, .chatting_area .chatting_view > li.answer .chat_area .chat_view::before, .alarm_area .alarm_list > li .link::before, .serv_wrap .serv_detail .serv_info .reaction li.like:after, .serv_wrap .serv_detail .serv_info .reaction li.review:after, .serv_wrap .serv_detail .serv_info .reaction li.reply:after, .serv_wrap .serv_review_wrap .review_total_like .like_count:after, .serv_wrap .serv_review_wrap .review_list li .writer .review_like .btn_review_like:after, .movieWrap .movie_play:after, .service_bottom .btn_chat:after, .service_bottom .btn_tel:after, .review_more_wrap .btn_review_more:after, .buy_booking .end:before, .reserv_detail_wrap .detail_tit.wait:after, .reserv_detail_wrap .detail_tit.end:after, .reserv_detail_wrap .detail_tit.cancel:after, .expert_profile .link_connect li a.ic_kakao:after, .expert_profile .link_connect li a.ic_call:after, .service_requset_wrap .req_wrap .req_cont .txt_wrap .ic_home, .profile_wrap .pf_photo_wrap .pf_photo_change:after, .profile_wrap .pf_photo_wrap .pf_photo_change.type2:after, .profile_wrap .pf_manage a.btn_edit_pf:after, .profile_wrap .pf_manage a.btn_edit_cert:after, .btn_stat_reserv:after, .btn_stat_reserv.stat_disabled:after, .btn_chk_reserv span:after, .btn_chk_reserv.chk_disabled span:after, .position_cont .photo_area .pf_photo_change:after, .expert_my_service .reaction li.like:after, .expert_my_service .reaction li.review:after, .expert_my_service .reaction li.reply:after {
   background-image: url("../images/common/sp_icons.png");
-  background-size: 343px 317px;
+  background-size: 343px 336px;
 }
 
 .category_list li .cate_link.ic_cl1:after, .category_list li .cate_link.ic_cl2:after, .category_list li .cate_link.ic_cl3:after, .category_list li .cate_link.ic_cl4:after, .category_list li .cate_link.ic_cl5:after, .category_list li .cate_link.ic_cl6:after, .category_list li .cate_link.ic_cl7:after, .category_list li .cate_link.ic_cl8:after {
@@ -2883,7 +2883,7 @@ table.bottom_bar {
   margin-top: -4px;
   width: 6px;
   height: 8px;
-  background-position: -285.5px -186px;
+  background-position: -24px -302px;
 }
 
 .btn_menu_arrow .sm_txt {
@@ -2966,7 +2966,7 @@ table.bottom_bar {
   display: block;
   width: 13px;
   height: 14px;
-  background-position: -329.5px -51.5px;
+  background-position: -329.5px -75.5px;
 }
 
 .btn_trash.pos_abs_right {
@@ -2991,7 +2991,7 @@ table.bottom_bar {
   margin-top: -4px;
   width: 5px;
   height: 9px;
-  background-position: -24px -302px;
+  background-position: 0px -327px;
 }
 
 .btn_more.red {
@@ -3010,7 +3010,7 @@ table.bottom_bar {
   margin-top: -5px;
   width: 6px;
   height: 10px;
-  background-position: -329.5px -275.5px;
+  background-position: -285.5px -166px;
 }
 
 .btn_file {
@@ -3103,7 +3103,7 @@ table.bottom_bar {
   margin-top: -4px;
   width: 10px;
   height: 6px;
-  background-position: -329.5px -259.5px;
+  background-position: -280px -247px;
   transform: rotate(0deg);
   transition: .2s transform;
 }
@@ -3157,7 +3157,7 @@ table.bottom_bar {
   display: inline-block;
   width: 13px;
   height: 14px;
-  background-position: -329.5px -75.5px;
+  background-position: -329.5px -51.5px;
   vertical-align: top;
   margin: 2px 8px 0 0;
 }
@@ -3225,7 +3225,7 @@ table.bottom_bar {
   margin-top: -3px;
   width: 10.5px;
   height: 5.5px;
-  background-position: -200px -277px;
+  background-position: -220px -277px;
   transform: rotate(0deg);
   transition: .2s transform;
 }
@@ -3479,7 +3479,7 @@ table.bottom_bar {
   margin-top: -5px;
   width: 6px;
   height: 10px;
-  background-position: -329.5px -275.5px;
+  background-position: -285.5px -166px;
 }
 
 .btn_arrow_type {
@@ -3899,7 +3899,7 @@ table.bottom_bar {
   transform: rotate(180deg);
   width: 11px;
   height: 6px;
-  background-position: -329.5px -243.5px;
+  background-position: -329.5px -283.5px;
 }
 
 .accordion-list > li > .con-area {
@@ -4212,7 +4212,7 @@ table.bottom_bar {
   margin-left: -27px;
   width: 55px;
   height: 55px;
-  background-position: 0px -85px;
+  background-position: -65px -85px;
   display: block;
 }
 
@@ -4224,7 +4224,7 @@ table.bottom_bar {
   margin-left: -27px;
   width: 55px;
   height: 55px;
-  background-position: -65px -85px;
+  background-position: -130px -85px;
   display: block;
 }
 
@@ -4236,7 +4236,7 @@ table.bottom_bar {
   margin-left: -27px;
   width: 55px;
   height: 55px;
-  background-position: -130px -85px;
+  background-position: 0px -85px;
   display: block;
 }
 
@@ -5392,7 +5392,7 @@ select.select_bank {
   margin-left: -12px;
   width: 25px;
   height: 25px;
-  background-position: -107px -210px;
+  background-position: -72px -210px;
   display: block;
 }
 
@@ -5638,7 +5638,7 @@ select.select_bank {
   display: block;
   width: 6px;
   height: 10px;
-  background-position: -329.5px -295.5px;
+  background-position: -329.5px -299.5px;
 }
 
 .header .top_bar .btn_share {
@@ -5692,7 +5692,7 @@ select.select_bank {
   display: block;
   width: 15px;
   height: 15px;
-  background-position: -302.5px -220px;
+  background-position: 0px -277px;
   position: absolute;
   top: 50%;
   margin-top: -8px;
@@ -5828,7 +5828,7 @@ select.select_bank {
   margin-top: -3px;
   width: 11px;
   height: 6px;
-  background-position: -329.5px -243.5px;
+  background-position: -329.5px -283.5px;
   transition: .2s transform;
   transform: rotate(180deg);
 }
@@ -6038,7 +6038,7 @@ select.select_bank {
   content: '';
   width: 50px;
   height: 50px;
-  background-position: -60px -150px;
+  background-position: 0px -150px;
   display: block;
 }
 
@@ -6112,7 +6112,7 @@ select.select_bank {
   position: relative;
   width: 5px;
   height: 9px;
-  background-position: -24px -302px;
+  background-position: 0px -327px;
   display: block;
 }
 
@@ -6266,7 +6266,7 @@ input[type="radio"].type_btn_radio + label {
   right: 25px;
   width: 10px;
   height: 6px;
-  background-position: -280px -247px;
+  background-position: -200px -277px;
 }
 
 .main section.main_card {
@@ -6495,13 +6495,13 @@ input[type="radio"].type_btn_radio + label {
   margin-top: -6px;
   width: 19px;
   height: 16px;
-  background-position: -197px -247px;
+  background-position: -226px -247px;
 }
 
 .thum_list li .img .btn_like.on::before {
   width: 19px;
   height: 16px;
-  background-position: -226px -247px;
+  background-position: -197px -247px;
 }
 
 .thum_list li .thum_list_info {
@@ -6607,7 +6607,7 @@ input[type="radio"].type_btn_radio + label {
   margin-top: -9px;
   width: 15px;
   height: 15px;
-  background-position: -255px -247px;
+  background-position: -302.5px -220px;
 }
 
 .thum_list li .btn_like2.on::before {
@@ -6857,13 +6857,13 @@ input[type="radio"].type_btn_radio + label {
 .introWrap li .intro_btns .btn_login span.log_naver:after {
   width: 18px;
   height: 18px;
-  background-position: -29px -247px;
+  background-position: -57px -247px;
 }
 
 .introWrap li .intro_btns .btn_login span.log_kakao:after {
   width: 18px;
   height: 18px;
-  background-position: -57px -247px;
+  background-position: -29px -247px;
 }
 
 .introWrap li .intro_btns .log_etc {
@@ -6966,7 +6966,7 @@ input[type="radio"].type_btn_radio + label {
   display: inline-block;
   width: 15px;
   height: 15px;
-  background-position: -276px -210px;
+  background-position: -25px -277px;
   vertical-align: top;
   margin: 1px 0 0 5px;
 }
@@ -7266,7 +7266,7 @@ input[type="radio"].type_btn_radio + label {
   margin-top: -8px;
   width: 5px;
   height: 9px;
-  background-position: -24px -302px;
+  background-position: 0px -327px;
 }
 
 .alarm_area .alarm_list > li .link em {
@@ -7389,7 +7389,7 @@ input[type="radio"].type_btn_radio + label {
   content: '';
   width: 15px;
   height: 15px;
-  background-position: -255px -247px;
+  background-position: -302.5px -220px;
   display: block;
   position: absolute;
   top: 2px;
@@ -7411,7 +7411,7 @@ input[type="radio"].type_btn_radio + label {
   content: '';
   width: 15px;
   height: 15px;
-  background-position: -50px -277px;
+  background-position: -255px -247px;
   display: block;
   position: absolute;
   top: 2px;
@@ -7614,7 +7614,7 @@ input[type="radio"].type_btn_radio + label {
   top: 0;
   width: 25px;
   height: 25px;
-  background-position: -177px -210px;
+  background-position: -142px -210px;
 }
 
 .serv_wrap .serv_review_wrap .review_list li {
@@ -7676,7 +7676,7 @@ input[type="radio"].type_btn_radio + label {
   content: '';
   width: 15px;
   height: 15px;
-  background-position: -255px -247px;
+  background-position: -302.5px -220px;
   position: absolute;
   top: 50%;
   left: 0;
@@ -7799,7 +7799,7 @@ input[type="radio"].type_btn_radio + label {
   content: '';
   width: 25px;
   height: 25px;
-  background-position: -142px -210px;
+  background-position: -177px -210px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -7821,7 +7821,7 @@ input[type="radio"].type_btn_radio + label {
   content: '';
   width: 25px;
   height: 25px;
-  background-position: -72px -210px;
+  background-position: -107px -210px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -7855,7 +7855,7 @@ input[type="radio"].type_btn_radio + label {
   margin-top: -4px;
   width: 10px;
   height: 6px;
-  background-position: -329.5px -259.5px;
+  background-position: -280px -247px;
 }
 
 .more_wrap {
@@ -8337,7 +8337,7 @@ input[type="radio"].type_btn_radio + label {
   display: block;
   width: 50px;
   height: 50px;
-  background-position: -120px -150px;
+  background-position: -180px -150px;
 }
 
 .buy_booking .end span {
@@ -8693,7 +8693,7 @@ input[type="radio"].type_btn_radio + label {
   margin-left: -25px;
   width: 50px;
   height: 50px;
-  background-position: 0px -150px;
+  background-position: -120px -150px;
 }
 
 .reserv_detail_wrap .detail_tit.end:after {
@@ -8704,7 +8704,7 @@ input[type="radio"].type_btn_radio + label {
   margin-left: -25px;
   width: 50px;
   height: 50px;
-  background-position: -120px -150px;
+  background-position: -180px -150px;
 }
 
 .reserv_detail_wrap .detail_tit.cancel:after {
@@ -9303,6 +9303,46 @@ input[type="radio"].type_btn_radio + label {
   color: #ff5c5c;
 }
 
+.service_requset_wrap .req_wrap {
+  height: calc(100vh - 65px);
+  position: relative;
+  background: url("/resources/images/common/intro_img0.jpg") no-repeat;
+  background-size: cover;
+  background-position: top center;
+}
+
+.service_requset_wrap .req_wrap .img_tag {
+  width: 9px;
+  position: absolute;
+  right: 16px;
+  top: 25px;
+}
+
+.service_requset_wrap .req_wrap .req_cont {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  width: 100%;
+}
+
+.service_requset_wrap .req_wrap .req_cont .txt_wrap .ic_home {
+  display: block;
+  width: 21px;
+  height: 20px;
+  background-position: -201px -52px;
+  margin-bottom: 9px;
+}
+
+.service_requset_wrap .req_wrap .req_cont .txt_wrap .txt1 {
+  font-size: 19px;
+  color: #fff;
+}
+
+.service_requset_wrap .req_wrap .req_cont .txt {
+  color: #fff;
+  font-size: 15px;
+}
+
 .profile_wrap {
   padding-top: 16px;
 }
@@ -9459,7 +9499,7 @@ input[type="radio"].type_btn_radio + label {
   margin-top: -8px;
   width: 15px;
   height: 15px;
-  background-position: 0px -277px;
+  background-position: -276px -210px;
 }
 
 .btn_stat_reserv.stat_disabled {
@@ -9469,7 +9509,50 @@ input[type="radio"].type_btn_radio + label {
 .btn_stat_reserv.stat_disabled:after {
   width: 15px;
   height: 15px;
-  background-position: -25px -277px;
+  background-position: -50px -277px;
+}
+
+.btn_chk_reserv {
+  position: relative;
+  padding: 10px 18px;
+  padding-bottom: 10px;
+  margin-top: 13px;
+  margin-right: 25px;
+  background: url("/resources/images/common/point_bg.jpg");
+  background-size: 100% 100%;
+  color: #fff;
+  text-align: center;
+  border: none;
+}
+
+.btn_chk_reserv span {
+  position: relative;
+  display: inline-block;
+  padding-left: 18px;
+  font-size: 13px;
+  color: #fff;
+  font-weight: 500;
+}
+
+.btn_chk_reserv span:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin-top: -5px;
+  width: 10px;
+  height: 10px;
+  background-position: -329.5px -227.5px;
+}
+
+.btn_chk_reserv.chk_disabled {
+  background: #808080;
+}
+
+.btn_chk_reserv.chk_disabled span:after {
+  width: 10px;
+  height: 10px;
+  background-position: -329.5px -247.5px;
 }
 
 .my_count {
@@ -9561,7 +9644,7 @@ input[type="radio"].type_btn_radio + label {
   content: '';
   width: 50px;
   height: 50px;
-  background-position: -180px -150px;
+  background-position: -60px -150px;
   display: block;
 }
 
@@ -9669,7 +9752,7 @@ input[type="radio"].type_btn_radio + label {
   content: '';
   width: 15px;
   height: 15px;
-  background-position: -255px -247px;
+  background-position: -302.5px -220px;
   display: block;
   position: absolute;
   top: 2px;
@@ -9691,7 +9774,7 @@ input[type="radio"].type_btn_radio + label {
   content: '';
   width: 15px;
   height: 15px;
-  background-position: -50px -277px;
+  background-position: -255px -247px;
   display: block;
   position: absolute;
   top: 2px;

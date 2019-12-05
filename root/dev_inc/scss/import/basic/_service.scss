@@ -594,3 +594,18 @@
     }
 
 }
+
+
+.service_requset_wrap {
+    .req_wrap { height:calc(100vh - 65px); position: relative; background: url('/resources/images/common/intro_img0.jpg') no-repeat; background-size:cover; background-position: top center;
+        .img_tag { width:9px; position: absolute; right:16px; top:25px;}
+        .req_cont { position: absolute; bottom:20px; left:0; width:100%;
+            .txt_wrap {
+                .ic_home { display:block; @include sp_icons($icon_logo_w); margin-bottom: 9px; }
+                .txt1 { font-size:19px; color:#fff;}
+            }
+            .txt {color:#fff; font-size:15px;}
+        }
+    }
+}
+

@@ -35,7 +35,7 @@
                         <a href="javascript:history.go(-1);" class="history_back"><span class="hide">이전페이지로 이동</span></a>
                     </div>
                     <div class="top_right">
-                        <button class="btn_stat_reserv stat_disabled">예약 가능</button>
+                        <button class="btn_chk_reserv "><span>예약 가능</span></button>
                     </div>
                 </div>
             </div>
@@ -227,12 +227,12 @@
         // 이미지가 변경될 때 아래 함수를 실행시켜 주세요
         $('.pf_photo img').coverImage();
 
-        $('.btn_stat_reserv').on('click', function() {
-            $(this).toggleClass('stat_disabled');
-            if ($(this).hasClass('stat_disabled')) {
-                $(this).text('예약가능')
+        $('.btn_chk_reserv').on('click', function() {
+            $(this).toggleClass('chk_disabled');
+            if (!$(this).hasClass('chk_disabled')) {
+                $('span', this).text('예약 가능')
             } else {
-                $(this).text('예약불가')
+                $('span', this).text('예약 불가')
             }
         })
     </script>
