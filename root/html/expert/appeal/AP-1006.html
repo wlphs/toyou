@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <!-- header -->
+    <meta charset="UTF-8">
+    <title>TOYOUCORP.</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" id="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,initial-scale=1.0">
+    <link rel="stylesheet" href="/resources/css/library/csslibrary.css">
+    <link rel="stylesheet" href="/resources/css/common.css">
+    <script src="/resources/js/jquery-3.4.1.min.js"></script>
+    <script src="/resources/js/library/jquerylibrary.min.js"></script>
+    <script src="/resources/js/common.js"></script>
+
+    <!-- //header -->
+</head>
+
+<body class="pageclass">
+    <p class="accessibility" id="skipTop">
+        <a href="#container">본문 바로가기</a>
+        <a href="#gnb" class="js-gnb_btn">주메뉴 바로가기</a>
+    </p>
+    <div class="wrapper">
+        <!-- header -->
+        <header id="header" class="header">
+            <div class="header_fixed_group">
+                <div class="top_bar">
+                    <div class="top_left">
+                        <a href="javascript:history.go(-1);" class="history_back"><span class="hide">이전페이지로 이동</span></a>
+                    </div>
+                    <div class="top_right">
+                        <button class="btn_save_n_exit">저장 및 나가기</button>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- //header -->
+
+        <!-- container -->
+        <div id="container">
+            <div id="contents">
+                <form action="" id="test1">
+                    <div class="join_title cont_inner mb30">
+                        <h1 class="h1"><em>세부 분야를</em><br> 선택해 주세요.</h1>
+                        <p class="tit_desc mt10">(복수 선택 가능)</p>
+                    </div>
+                    <div class="cont_inner filter_wrap ">
+                        <p class="filter_tit">뷰티</p>
+                        <ul class="filter_list">
+                            <li>
+                                <input type="checkbox" id="f_standard0" class="inp_filter js-pick">
+                                <label for="f_standard0" class="inp_filter">메이크업</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="f_standard1" class="inp_filter js-pick">
+                                <label for="f_standard1" class="inp_filter">네일아트</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="f_standard2" class="inp_filter js-pick">
+                                <label for="f_standard2" class="inp_filter">홈트레이닝</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="f_standard3" class="inp_filter js-pick">
+                                <label for="f_standard3" class="inp_filter">헤어</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="f_standard4" class="inp_filter js-pick">
+                                <label for="f_standard4" class="inp_filter">왁싱</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="f_standard5" class="inp_filter js-pick">
+                                <label for="f_standard5" class="inp_filter">속눈썹</label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="btn_bottom_fixed">
+                        <div class="fixed_wrap">
+                            <a href="#" class="btn btn_llg btn_gray btn_block js-next">다음</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- //container -->
+        <!-- 
+<div class="toolBar">
+    <ul>
+        <li class="toolbar_btn0"><a href="#">서비스찾기</a></li>
+        <li class="toolbar_btn1"><a href="#">알림</a></li>
+        <li class="toolbar_btn2"><a href="#">홈</a></li>
+        <li class="toolbar_btn3"><a href="#">채팅</a></li>
+        <li class="toolbar_btn4"><a href="#">마이페이지</a></li>
+    </ul>
+</div> -->
+        <a href="#none" class="btn_cart"><span class="num">3</span></a>
+        <a href="#none" class="top_scroll">위로 이동</a>
+    </div>
+    <script>
+        $('.js-pick').on('change', function() {
+            if ($('.js-pick:checked').length) {
+                $('.js-next').addClass('btn_point');
+                $('.js-next').removeClass('btn_gray');
+            } else {
+                $('.js-next').removeClass('btn_point');
+                $('.js-next').addClass('btn_gray');
+            }
+        })
+        $('.js-next').on('click', function() {
+            if (!$(this).hasClass('btn_point')) return false;
+
+        })
+    </script>
+
+</body>
+
+</html>

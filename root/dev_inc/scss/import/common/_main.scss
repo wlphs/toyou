@@ -12,14 +12,17 @@
 }
 
 .main {
-    section.main_card { margin-left: 25px;margin-bottom:20px;
-        .big_banner { overflow: hidden; position: relative;
+    section.main_card { margin-left: 25px;margin-bottom:20px; position: relative;
+        .big_banner { overflow: hidden; 
             img { width: 100%;}
-            .fix_text { position:absolute; right:18px; top:24px;}
-            .txt { position:absolute; left:32px; bottom:30px; color:#fff; font-size: 19px; font-weight: 300; line-height: 26px;
+        }
+        .visual_txt {
+            .txt { position:absolute; left:32px; bottom:30px; color:#fff; font-size: 19px; font-weight: 300; line-height: 26px; z-index: 1;
                 em { display:block; @include sp_icons($icon_logo_w); margin-bottom: 9px;}
                 b { display:block; font-weight: 700;}
+                .txt_toyou { color:$colorP; font-weight: 700; margin-top:7px; display:inline-block;}
             }
+            .fix_text { position:absolute; right:18px; top:24px;z-index: 1;}
         }
     } 
 
@@ -178,11 +181,11 @@
     }
 
     //주소지도
-    .map_area { min-height: 280px; overflow:hidden; margin-right: -24px;
-        img { width: 100%;}
-    }
 }
 
+.map_area { min-height: 280px; overflow:hidden; margin-right: -24px;
+    > img { width: 100%;}
+}
 //토글버튼
 .toggle_box { display:block; overflow:hidden; padding: 20px 25px;
     .sub_tit { font-size: 15px; float:left; line-height: 36px; }
@@ -200,4 +203,32 @@
         input {opacity:0;}
         &.active span {left:28px; background:#ff5c5c;} 
     }
+}
+
+
+
+.introWrap { width:100%; height:100vh; position: relative; background:url('/resources/images/common/splash_bg.jpg') no-repeat; background-size:cover; background-position:center bottom; 
+    li { height:100vh; 
+        .tit {font-size:27px; color:#fff; margin:175px 25px;}
+        .intro_btns {position: absolute; bottom:20px; width:100%;
+            .btn_login { display:block; background:#fff; height:48px; text-align: center; margin-top:10px; padding:14px 0; box-sizing: border-box;
+                span { color:#000; font-size:15px; font-weight: 500; display:inline-block; padding-left:25px; position: relative;
+                    &:after {content:''; position: absolute; left:0; top:50%; margin-top:-10px;}
+                    &.log_naver:after { @include sp_icons($ic_naver)}
+                    &.log_kakao:after { @include sp_icons($ic_kakao)}
+                }
+            }
+            .log_etc { margin-top:25px; font-size:15px; color:#fff; text-align: center; font-weight: 300;
+                a {color:#fff; font-size:15px; font-weight: 500; position: relative;
+                    &:after {content:'';  width:100%; height:2px; position: absolute; bottom:-2px; left:0; background:#fff;}
+                }
+            }
+        }
+    }
+    .intro_logo { position: absolute; top:30px; left:25px; z-index: 1;
+        img { height:30px;}
+    }
+    .intro_right_txt { width:10px; position: absolute; right:12px; top:45px;}
+    .swiper-pagination { position: absolute; bottom:20px; width:100%;}
+    .btn_intro_start { position: absolute; z-index: 2; right:25px; bottom:15px; color:#fff; font-size:15px; font-weight: 500;}
 }

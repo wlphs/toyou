@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<!-- header -->
+	@@include('../../include/_head.html', {"title" : "TOYOUCORP."})
+	<!-- //header -->
+</head>
+
+<body class="pageclass">
+	<p class="accessibility" id="skipTop">
+		<a href="#container">본문 바로가기</a>
+		<a href="#gnb" class="js-gnb_btn">주메뉴 바로가기</a> 
+	</p>
+	<div class="wrapper">
+		<!-- header --> 
+		<header id="header" class="header">
+			<div class="header_fixed_group">
+				<div class="top_bar">
+					<div class="top_left">
+						<a href="javascript:history.go(-1);" class="history_back"><span class="hide">이전페이지로 이동</span></a> 
+					</div>
+					<div class="top_right">
+						<button class="btn_save_n_exit">저장 및 나가기</button> 
+					</div>
+				</div>
+			</div> 
+		</header>
+		<!-- //header -->
+
+		<!-- container -->
+		<div id="container">
+			<div id="contents">
+                <form action="" id="test1">
+                <div class="join_title cont_inner mb30">
+                    <h1 class="h1"><em>전문가님의 서비스 가능</em><br>요일을 선택해 주세요.</h1>
+                    <p class="tit_desc mt10">(복수 선택 가능)</p>
+                </div>
+                <div class="cont_inner filter_wrap ">
+                    <ul class="filter_list js-select_check">
+                        <li>
+                            <input type="checkbox" id="f_standard0" class="inp_filter js-pick js-filter_all">
+                            <label for="f_standard0" class="inp_filter">전체</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="f_standard1"  class="inp_filter js-pick">
+                            <label for="f_standard1" class="inp_filter">월요일</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="f_standard2"  class="inp_filter js-pick">
+                            <label for="f_standard2" class="inp_filter">화요일</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="f_standard3" class="inp_filter js-pick">
+                            <label for="f_standard3" class="inp_filter">수요일</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="f_standard4"  class="inp_filter js-pick">
+                            <label for="f_standard4" class="inp_filter">목요일</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="f_standard5"  class="inp_filter js-pick">
+                            <label for="f_standard5" class="inp_filter">금요일</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="f_standard6"  class="inp_filter js-pick">
+                            <label for="f_standard6" class="inp_filter">토요일</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="f_standard7"  class="inp_filter js-pick">
+                            <label for="f_standard7" class="inp_filter">일요일</label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="btn_bottom_fixed">
+                    <div class="fixed_wrap">
+                        <a href="#" class="btn btn_llg btn_gray btn_block js-next">다음</a>
+                    </div>
+                </div>
+                </form>
+			</div>
+		</div>
+        
+		<!-- //container -->
+		@@include('../../include/_toolbar.html')
+	</div>
+<script>
+
+	$('.js-pick').on('change', function() {
+        if ($('.js-pick:checked').length ) {
+			$('.js-next').addClass('btn_point');
+			$('.js-next').removeClass('btn_gray');
+		}
+		else {
+			$('.js-next').removeClass('btn_point');
+			$('.js-next').addClass('btn_gray');
+        }
+        
+
+    })
+	$('.js-next').on('click', function() {
+		if (!$(this).hasClass('btn_point')) return false;
+		
+    })
+    
+    
+$('.js-select_check').each(function() {
+	var _list = $(this);
+	$('input', $(this)).on('change', function() {
+		if ($(this).hasClass('js-filter_all') && $(this).prop('checked')) {
+			$('input', _list).not('.js-filter_all').prop('checked', false);
+		}
+		else {
+			if ($('input', _list).not('.js-filter_all').length == $('input:checked', _list).not('.js-filter_all').length) {
+				$('.js-filter_all', _list).prop('checked', true);
+				$('input', _list).not('.js-filter_all').prop('checked', false);
+			}
+			else {
+				$('.js-filter_all', _list).prop('checked', false);
+			}
+			
+		}
+	})
+})
+</script>
+
+</body>
+</html>

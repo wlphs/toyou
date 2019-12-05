@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<!-- header -->
+	@@include('../../include/_head.html', {"title" : "TOYOUCORP."})
+	<!-- //header -->
+</head>
+
+<body class="">
+	<div class="wrapper">
+
+		<!-- container -->
+		<div id="container">
+			<div id="contents">
+                <div class="introWrap">
+                    <div class="swiper-container">
+                        <ul class="swiper-wrapper">
+                            <li class="swiper-slide">
+                                <p class="tit">
+                                    그녀들을 위한<br>
+                                    뷰티ㆍ헬스케어<br>
+                                    <b>방문 홈서비스,</b><br>
+                                    <b>투유</b>
+                                </p>
+                            </li>
+                            <li class="swiper-slide">
+                                <p class="tit">
+                                    간편한 홈서비스, <br>
+                                    오고가는 시간을 절약하고,<br>
+                                    <b>집에서 홈서비스 받아요!</b>
+                                </p>
+                            </li>
+                            <li class="swiper-slide">
+                                <p class="tit">
+                                    모바일 간편 예약 <br>
+                                    <b>홈서비스</b>
+                                </p>
+                            </li>
+                            <li class="swiper-slide">
+                                <p class="tit">
+                                    그녀들을 위한<br>
+                                    뷰티ㆍ헬스케어<br>
+                                    <b>방문 홈서비스,</b><br>
+                                    <b>투유</b>
+                                </p>
+                                <div class="intro_btns cont_inner">
+                                    <a href="#" class="btn_login ">
+                                        <span class="log_naver">네이버로 시작하기</span>
+                                    </a>
+                                    <a href="#" class="btn_login ">
+                                        <span class="log_kakao">카카오톡으로 시작하기</span>
+                                    </a>
+                                    <p class="log_etc">
+                                        이메일로 <a href="#">로그인</a> 또는 <a href="#">회원가입</a>하기
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                    <h1 class="intro_logo">
+                        <img src="/resources/images/common/img_splash_logo.png" alt="TOYOU HOME">
+                    </h1>
+                    <img src="/resources/images/common/img_splash_txt.png" alt="" class="intro_right_txt">
+                    <a href="#" class="btn_intro_start">시작하기</a>
+                </div>
+			</div>
+		</div>
+        
+    </div>
+<script>
+var mySwiper = new Swiper('.swiper-container', {
+    speed: 400,
+    pagination: {
+        el: '.swiper-pagination',
+        type: 'bullets',
+    },
+    spaceBetween: 0,
+    on: {
+        slideChangeTransitionStart : function() {
+            console.log(mySwiper.activeIndex);
+            if (mySwiper.activeIndex ==3) {
+                $('.btn_intro_start').fadeOut(100);
+                $('.swiper-pagination').fadeOut(100);
+            }
+            else {
+                $('.btn_intro_start').fadeIn(100);
+                $('.swiper-pagination').fadeIn(100);
+
+            }
+        }
+    }
+});
+$('.btn_intro_start').on('click', function() {mySwiper.slideTo(3)})
+</script>
+</body>
+</html>

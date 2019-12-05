@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<!-- header -->
+	@@include('../../include/_head.html', {"title" : "TOYOUCORP."})
+	<!-- //header -->
+</head>
+
+<body class="pageclass">
+	<p class="accessibility" id="skipTop">
+		<a href="#container">본문 바로가기</a>
+		<a href="#gnb" class="js-gnb_btn">주메뉴 바로가기</a> 
+	</p>
+	<div class="wrapper">
+		<!-- header --> 
+		<header id="header" class="header">
+			<div class="header_fixed_group">
+				<div class="top_bar">
+                    <div class="locations"> 
+                        <div class="view_page"><h1 class="sub_title">결제 내역</h1></div>
+                    </div>
+					<div class="top_left">
+						<a href="javascript:history.go(-1);" class="history_back"><span class="hide">이전페이지로 이동</span></a> 
+					</div>
+				</div>
+			</div> 
+		</header>
+		<!-- //header -->
+
+		<!-- container -->
+		<div id="container">
+			<div id="contents">
+                <div class="cont_inner_right">
+                     <div class="payment_view">
+                        <p class="payment_date">2019-09-08 (화)</p>
+                        <div class="payment_view_detail mt20">
+                            <div class="prd_photo">
+                                <img src="/resources/images/temp/@temp6.png" alt="">
+                            </div>
+                            <div class="prd_detail">
+                                <div class="prd_detail1">
+                                    <p class="name">이너뷰티</p>
+                                    <p class="title js-ellipsis_end">
+                                        <span class="tit">[스킨&바디케어] 매끈한 얼굴 매끈한 얼굴매끈한 얼굴</span>
+                                        <span class="etc">외 1건</span>
+                                    </p>
+                                    <p class="price">100,000원
+                                        <span class="date">2019-11-30 (월)</span>
+                                    </p>
+                                </div>
+                                <div class="prd_detail2">
+                                    <p class="prd_d_tit">고객명</p>
+                                    <p class="prd_d_txt">이하늬</p>
+                                    <p class="prd_d_tit mt15">서비스 일시</p>
+                                    <p class="prd_d_txt">2019-11-14(화) /  오후 3:30~5:30(2시간)</p>
+                                    <p class="prd_d_tit mt15">서비스 장소</p>
+                                    <p class="prd_d_txt">서울 서초구 서초대로 65길 13-10 <br> 서초래미안아파트 402동 1502호</p>
+                                </div>
+                            </div>
+                        </div>
+                        <ul class="prd_price mt20">
+                            <li>
+                                <p class="tit">서비스 금액</p>
+                                <p class="price">50,000원</p>
+                            </li>
+                            <li>
+                                <p class="tit">투유 안전거래 수수료</p>
+                                <p class="price">5,000원</p>
+                            </li>
+                            <li>
+                                <p class="tit">총 결제 금액</p>
+                                <p class="price colorP">55,000원</p>
+                            </li>
+                        </ul>
+                     </div>
+                </div>
+				
+
+				<div class="btn_bottom_fixed">
+                    <div class="fixed_wrap">
+                        <a href="#" class="btn btn_llg btn_gray2 btn_block">결제취소</a>
+                    </div>
+                </div>
+		    </div>
+		</div>
+        
+		<!-- //container -->
+		@@include('../../include/_toolbar.html')
+	</div>
+    <script>
+        $(window).on('load', function() {
+            $('.js-ellipsis_end').each(function() {
+                var etc_w = $('.etc', $(this)).innerWidth();
+                $(this).css({"padding-right":etc_w})
+            })
+            
+        })
+    
+    </script>
+</body>
+</html>

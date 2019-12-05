@@ -35,7 +35,19 @@
         }
     }
 }
+.btn_stat_reserv{ position: relative;padding-left:20px; font-size: 15px; color:#ff5c5c; padding-top:10px; padding-bottom:10px; margin-top:13px; font-weight: 500; margin-right:25px;
+    &:after {content:''; position: absolute; left:0; top:50%; margin-top:-8px; @include sp_icons($ic_reserv_ok);}
+    &.stat_disabled {  color:#000;
+        &:after {@include sp_icons($ic_reserv_no);}
+    }
+}
 .my_count { background:#F7F7F7; @include clearfix();
+    &.col3 {
+        li {
+            &:last-child {width:50%;}
+            .won {font-size:15px; font-family: $baseFT;}
+        }
+    }
     li { float:left; width:25%; padding:16px 0 14px; background: url('/resources/images/common/dot_line.png') no-repeat left center; background-size:1px;
         a {display:block; text-align: center;
             .tit {display:block; font-size:12px; font-weight: 300;}
