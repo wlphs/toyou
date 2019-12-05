@@ -592,10 +592,6 @@ __CONSTANT_LIST = [
         dep1 		: '',
         dep2 		: '',
         dep3 		: '',
-<<<<<<< HEAD
-        dep4 		: '환불계좌입력',
-        url 		: '/html/basic/mypage/MY-0020.html',
-=======
         dep4 		: '예약미진행',
         url 		: '/html/basic/mypage/MY-0013.html',
         pubUpdate 	: '2019-0000',
@@ -648,7 +644,6 @@ __CONSTANT_LIST = [
         dep3 		: '',
         dep4 		: '서비스종료',
         url 		: '/html/basic/mypage/MY-0018.html',
->>>>>>> cd4ba47da17e893207cccf2014ec3ebf7876ec62
         pubUpdate 	: '2019-0000',
         etc 		: '2019-1120',
     },
@@ -1136,11 +1131,11 @@ __CONSTANT_LIST = [
         etc 		: '2019-1124 공통',
     },
 	{
-        stateLine   : "del", 
+        stateLine   : "", 
         dep1 		: '채팅',
         dep2 		: '목록',
         dep3 		: '',
-        url 		: '', 
+        url 		: '/html/expert/chatting/CH_0001.html',
         pubUpdate 	: '2019-0000',
         etc 		: '2019-1124 공통',
     },
@@ -1173,12 +1168,12 @@ __CONSTANT_LIST = [
         etc 		: '2019-1124 공통',
     },
 	{
-        stateLine   : "del", 
+        stateLine   : "", 
         dep1 		: '',
         dep2 		: '전문가 프로필 수정',
         dep3 		: '휴대폰번호변경, 비밀번호변경',
         dep4 		: '',
-        url 		: '',
+        url 		: '/html/expert/mypage/E_MY-0003.html',
         pubUpdate 	: '2019-0000',
         etc 		: '2019-1124 공통',
     },

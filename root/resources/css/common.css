@@ -233,7 +233,7 @@ a, span, i, em {
   background-size: 90px 85px;
 }
 
-.icon_label, .btn_menu_arrow:after, .btn_trash:after, .btn_more:after, .btn_more.red:after, .btn_file::before, .photo::before, .btn_report::before, .btn_report2::before, .btn_all_more:after, .btn_plus:after, .btn_filter::before, .btn_del::before, .btn_del02::before, .icon_kakao::before, .icon_call::before, .icon_01::before, .icon_02::before, .save_logout::before, .btn_more_point:after, .btn_arrow_type:after, .accordion-list > li .header-area .acc_btn:after, .trp.popupfixed-wrap .btn_close:after, .trp.popupfixed-wrap .caution_wrap:after, .trp.popupfixed-wrap .share_wrap .share_list li .btn_facebook:after, .trp.popupfixed-wrap .share_wrap .share_list li .btn_kakao:after, .trp.popupfixed-wrap .share_wrap .share_list li .btn_share:after, .calendar_wrap .daterangepicker .calendar-table .prev:after, .calendar_wrap .daterangepicker .calendar-table .next:after, .header .top_bar .history_back:before, .header .top_bar .btn_share:after, .header .top_bar .btn_save_n_exit:after, .header .top_bar .filter_reset:after, .header .top_bar .btn_like:after, .header .top_bar .btn_search:before, #footer .opne_text:after, .top_scroll::before, .btn_cart:before, .profile_photo_wrap .pf_photo_change:after, .agree_list li .agree_view:after, .main_header .h1_logo, .main_header .location_top::before, .main_header .tip::before, .main section.main_card .visual_txt .txt em, .thum_list li .img .btn_like::before, .thum_list li .img .btn_like.on::before, .thum_list li .btn_like::before, .thum_list li .btn_like.on::before, .thum_list li .btn_like2::before, .thum_list li .btn_like2.on::before, .introWrap li .intro_btns .btn_login span.log_naver:after, .introWrap li .intro_btns .btn_login span.log_kakao:after, .chatting_area .chatting_list > li .icon, .chatting_area .chatting_view > li .chat_area .chat_view::before, .chatting_area .chatting_view > li.answer .chat_area .chat_view::before, .alarm_area .alarm_list > li .link::before, .serv_wrap .serv_detail .serv_info .reaction li.like:after, .serv_wrap .serv_detail .serv_info .reaction li.review:after, .serv_wrap .serv_detail .serv_info .reaction li.reply:after, .serv_wrap .serv_review_wrap .review_total_like .like_count:after, .serv_wrap .serv_review_wrap .review_list li .writer .review_like .btn_review_like:after, .movieWrap .movie_play:after, .service_bottom .btn_chat:after, .service_bottom .btn_tel:after, .review_more_wrap .btn_review_more:after, .buy_booking .end:before, .reserv_detail_wrap .detail_tit.wait:after, .reserv_detail_wrap .detail_tit.end:after, .reserv_detail_wrap .detail_tit.cancel:after, .expert_profile .link_connect li a.ic_kakao:after, .expert_profile .link_connect li a.ic_call:after, .profile_wrap .pf_photo_wrap .pf_photo_change:after, .profile_wrap .pf_photo_wrap .pf_photo_change.type2:after, .profile_wrap .pf_manage a.btn_edit_pf:after, .profile_wrap .pf_manage a.btn_edit_cert:after, .btn_stat_reserv:after, .btn_stat_reserv.stat_disabled:after, .position_cont .photo_area .pf_photo_change:after {
+.icon_label, .btn_menu_arrow:after, .btn_trash:after, .btn_more:after, .btn_more.red:after, .btn_file::before, .photo::before, .btn_report::before, .btn_report2::before, .btn_all_more:after, .btn_plus:after, .btn_filter::before, .btn_del::before, .btn_del02::before, .icon_kakao::before, .icon_call::before, .icon_01::before, .icon_02::before, .save_logout::before, .btn_more_point:after, .btn_arrow_type:after, .accordion-list > li .header-area .acc_btn:after, .trp.popupfixed-wrap .btn_close:after, .trp.popupfixed-wrap .caution_wrap:after, .trp.popupfixed-wrap .share_wrap .share_list li .btn_facebook:after, .trp.popupfixed-wrap .share_wrap .share_list li .btn_kakao:after, .trp.popupfixed-wrap .share_wrap .share_list li .btn_share:after, .calendar_wrap .daterangepicker .calendar-table .prev:after, .calendar_wrap .daterangepicker .calendar-table .next:after, .header .top_bar .history_back:before, .header .top_bar .btn_share:after, .header .top_bar .btn_save_n_exit:after, .header .top_bar .filter_reset:after, .header .top_bar .btn_like:after, .header .top_bar .btn_search:before, #footer .opne_text:after, .top_scroll::before, .btn_cart:before, .profile_photo_wrap .pf_photo_change:after, .agree_list li .agree_view:after, .main_header .h1_logo, .main_header .location_top::before, .main_header .tip::before, .main section.main_card .visual_txt .txt em, .thum_list li .img .btn_like::before, .thum_list li .img .btn_like.on::before, .thum_list li .btn_like::before, .thum_list li .btn_like.on::before, .thum_list li .btn_like2::before, .thum_list li .btn_like2.on::before, .introWrap li .intro_btns .btn_login span.log_naver:after, .introWrap li .intro_btns .btn_login span.log_kakao:after, .chatting_area .chatting_list > li .icon, .chatting_area .chatting_view > li .chat_area .chat_view::before, .chatting_area .chatting_view > li.answer .chat_area .chat_view::before, .alarm_area .alarm_list > li .link::before, .serv_wrap .serv_detail .serv_info .reaction li.like:after, .serv_wrap .serv_detail .serv_info .reaction li.review:after, .serv_wrap .serv_detail .serv_info .reaction li.reply:after, .serv_wrap .serv_review_wrap .review_total_like .like_count:after, .serv_wrap .serv_review_wrap .review_list li .writer .review_like .btn_review_like:after, .movieWrap .movie_play:after, .service_bottom .btn_chat:after, .service_bottom .btn_tel:after, .review_more_wrap .btn_review_more:after, .buy_booking .end:before, .reserv_detail_wrap .detail_tit.wait:after, .reserv_detail_wrap .detail_tit.end:after, .reserv_detail_wrap .detail_tit.cancel:after, .expert_profile .link_connect li a.ic_kakao:after, .expert_profile .link_connect li a.ic_call:after, .profile_wrap .pf_photo_wrap .pf_photo_change:after, .profile_wrap .pf_photo_wrap .pf_photo_change.type2:after, .profile_wrap .pf_manage a.btn_edit_pf:after, .profile_wrap .pf_manage a.btn_edit_cert:after, .btn_stat_reserv:after, .btn_stat_reserv.stat_disabled:after, .position_cont .photo_area .pf_photo_change:after, .expert_my_service .reaction li.like:after, .expert_my_service .reaction li.review:after, .expert_my_service .reaction li.reply:after {
   background-image: url("../images/common/sp_icons.png");
   background-size: 343px 317px;
 }
@@ -4675,6 +4675,45 @@ textarea {
   font-size: 12px;
 }
 
+.textarea-box2 {
+  padding: 8px 13px 8px;
+  position: relative;
+  background-color: #f5f5f5;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.textarea-box2 textarea {
+  padding: 0;
+  border: 0;
+}
+
+.textarea-box2 textarea:disabled {
+  background-color: #999999;
+}
+
+.textarea-box2 .byte_check {
+  margin-top: 5px;
+  height: 20px;
+  text-align: right;
+  padding-right: 5px;
+  color: #999999;
+  position: absolute;
+  right: 0;
+  top: -33px;
+}
+
+.textarea-box2 .byte_check em {
+  vertical-align: bottom;
+  font-size: 12px;
+  color: #ff5c5c;
+}
+
+.textarea-box2 .byte_check span {
+  vertical-align: bottom;
+  font-size: 12px;
+}
+
 label.error {
   color: #ff5c5c;
   padding: 7px 0;
@@ -7284,7 +7323,7 @@ input[type="radio"].type_btn_radio + label {
 .serv_wrap .serv_ing_txt {
   font-size: 26px;
   font-weight: 700;
-  color: #ff5c5c;
+  color: #000;
   margin: 0 25px 20px;
 }
 
@@ -9546,6 +9585,120 @@ input[type="radio"].type_btn_radio + label {
   position: absolute;
   right: 0;
   top: -7px;
+}
+
+.expert_my_service {
+  padding-bottom: 35px;
+}
+
+.expert_my_service .infor_box {
+  background: #f5f5f5;
+  position: relative;
+}
+
+.expert_my_service .photo_box {
+  width: 144px;
+  height: 143px;
+  overflow: hidden;
+  float: left;
+}
+
+.expert_my_service .photo_box img {
+  width: 100%;
+  height: 100%;
+}
+
+.expert_my_service .visual_txt {
+  position: absolute;
+  z-index: 1;
+  color: #000000;
+  font-size: 15px;
+  font-weight: 500;
+  top: 110px;
+}
+
+.expert_my_service .info {
+  padding: 20px 20px 20px 163px;
+  min-height: 143px;
+  border-bottom: 1px dashed #b8b8b9;
+}
+
+.expert_my_service .name {
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.expert_my_service .desc {
+  font-size: 15px;
+  margin-top: 8px;
+}
+
+.expert_my_service .reaction {
+  padding: 20px;
+}
+
+.expert_my_service .reaction:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.expert_my_service .reaction li {
+  font-size: 15px;
+  float: left;
+  position: relative;
+  padding-left: 20px;
+  margin-right: 20px;
+}
+
+.expert_my_service .reaction li:last-child {
+  margin-right: 0;
+}
+
+.expert_my_service .reaction li em {
+  color: #ff5c5c;
+}
+
+.expert_my_service .reaction li.like:after {
+  content: '';
+  width: 15px;
+  height: 15px;
+  background-position: -255px -247px;
+  display: block;
+  position: absolute;
+  top: 2px;
+  left: 0;
+}
+
+.expert_my_service .reaction li.review:after {
+  content: '';
+  width: 15px;
+  height: 15px;
+  background-position: -302.5px -245px;
+  display: block;
+  position: absolute;
+  top: 2px;
+  left: 0;
+}
+
+.expert_my_service .reaction li.reply:after {
+  content: '';
+  width: 15px;
+  height: 15px;
+  background-position: -50px -277px;
+  display: block;
+  position: absolute;
+  top: 2px;
+  left: 0;
+}
+
+.expert_my_service .edite_date {
+  font-size: 12px;
+  font-weight: 300;
+  color: #777;
+  display: inline-block;
+  display: block;
+  text-align: right;
 }
 
 .payment_date {

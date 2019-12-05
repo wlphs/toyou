@@ -113,6 +113,15 @@ textarea { width: 100%;  height: 70px;  padding: 8px 13px 8px; //border: 1px sol
         span { vertical-align: bottom; font-size:12px; }    
     }
 }
+.textarea-box2 {padding: 8px 13px 8px; position:relative; // border: 1px solid #cccccc; 
+    background-color: $formBG; -webkit-appearance: none; -moz-appearance: none;    
+    textarea { padding:0; border:0; }
+    textarea:disabled {  background-color: $formBG_di; }
+    .byte_check { margin-top:5px; height: 20px; text-align: right; padding-right: 5px; color: $colorA; position:absolute; right:0; top: -33px;
+        em   { vertical-align: bottom; font-size:12px;  color: $colorP; }    
+        span { vertical-align: bottom; font-size:12px; }    
+    }
+}
 
 label.error {color:$colorP; padding:7px 0; display:block; font-size:15px; font-weight:500; text-align: right;}
 .error_txt {color:$colorP; padding:7px 0; display:block; font-size:15px; font-weight:500; text-align: right; line-height: 23px;}

@@ -85,3 +85,25 @@
     }
     .btn_more { position:absolute; right:0; top: -7px;}
 }
+
+//마이-전문가
+.expert_my_service { padding-bottom:35px;
+    .infor_box { background:#f5f5f5;  position: relative;}
+    .photo_box { width: 144px; height: 143px; overflow:hidden; float:left; 
+        img { width:100%; height: 100%;}
+    }
+    .visual_txt {position: absolute; z-index:1; color:#000000; font-size: 15px; font-weight: 500; top: 110px;}
+    .info {padding: 20px 20px 20px 163px; min-height: 143px; border-bottom:1px dashed #b8b8b9; }
+    .name {font-size:15px; font-weight: 700;}
+    .desc { font-size:15px; margin-top:8px;}
+    .reaction { @include clearfix(); padding:20px;
+        li { font-size:15px; float:left; position: relative; padding-left:20px; margin-right:20px;
+            &:last-child {margin-right:0;}
+            em {color:$colorP;}
+            &.like:after {content:''; @include sp_icons($serv_01); display:block; position: absolute; top:2px; left:0;}
+            &.review:after {content:''; @include sp_icons($serv_02); display:block; position: absolute; top:2px; left:0;}
+            &.reply:after {content:''; @include sp_icons($serv_03); display:block; position: absolute; top:2px; left:0;}
+        }
+    }
+    .edite_date { font-size:12px; font-weight: 300; color:#777; display:inline-block; display:block; text-align:right;}
+}
