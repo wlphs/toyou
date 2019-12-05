@@ -28,11 +28,8 @@
                 <div class="top_bar">
                     <div class="locations pl20">
                         <div class="view_page">
-                            <h1 class="sub_title exp_main_tit"><img src="/resources/images/common/img_mail_logo.png" alt="to you home"> 예약내역</h1>
+                            <h1 class="sub_title exp_main_tit"><img src="/resources/images/common/img_mail_logo.png" alt="to you home"></h1>
                         </div>
-                    </div>
-                    <div class="top_right">
-                        <a href="#" class="filter_reset js-reset">&nbsp;<span class="hide">리프레시</span></a>
                     </div>
                 </div>
             </div>
@@ -42,32 +39,23 @@
         <!-- container -->
         <div id="container">
             <div id="contents">
-                <div class="cont_inner">
-                    <div class="tab-wrap tab_type">
-                        <div class="tab_menu_wrap">
-                            <ul class="tab_menu clearfix tab_col3">
-                                <li class="on"><a href="#">진행중</a></li>
-                                <li><a href="#">완료</a></li>
-                                <li><a href="#">미진행/취소</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="cont_inner_right">
-                    <ul class="reserv_list_type mt10 mb30">
-                        <li class="no_data_list">
-                            <div class="no_data">
-                                <span class="img"></span>
-                                <p>
-                                    <span>새 서비스 예약 요청을<br><b class="colorB">기다리는 중입니다.</b></span>
-                                </p>
+                <div class="service_requset_wrap">
+                    <div class="req_wrap">
+                        <div class="req_cont cont_inner">
+                            <div class="txt_wrap">
+                                <p class="ic_home"></p>
+                                <p class="txt1">투유홈으로</p>
+                                <p class="txt2 ft_b">보다 더 많은 고객을</p>
+                                <p class="txt2 ft_b">만나보세요!</p>
                             </div>
-                        </li>
-                    </ul>
+                            <a href="" class="btn btn_lg btn_white w100p ft_b">서비스 등록하기</a>
+                            <p class="txt"><b>서비스 정보 등록 후</b> 예약 요청을 받으실 수 있습니다.</p>
+                        </div>
+
+                    </div>
                 </div>
             </div>
         </div>
-
 
         <!-- //container -->
         <!-- 
@@ -85,16 +73,11 @@
     </div>
 
     <script>
-        $(window).on('load', function() {
-            $('.js-ellipsis_end').each(function() {
-                var etc_w = $('.etc', $(this)).innerWidth();
-                $(this).css({
-                    "padding-right": etc_w
-                })
-            })
-
+        $('.info_box .btn_like').on('click', function() {
+            $(this).toggleClass('on');
         })
     </script>
+
 </body>
 
 </html>
