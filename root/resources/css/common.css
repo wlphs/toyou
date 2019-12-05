@@ -7335,6 +7335,22 @@ input[type="radio"].type_btn_radio + label {
   font-weight: 700;
   color: #000;
   margin: 0 25px 20px;
+  position: relative;
+}
+
+.serv_wrap .serv_ing_txt .progress_txt {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 700;
+  color: #ff5c5c;
+  position: absolute;
+  right: 0;
+  top: 3px;
+}
+
+.serv_wrap .serv_ing_txt .progress_txt em {
+  font-size: 22px;
+  color: #ff5c5c;
 }
 
 .serv_wrap .visual_tit {
