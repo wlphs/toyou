@@ -2966,7 +2966,7 @@ table.bottom_bar {
   display: block;
   width: 13px;
   height: 14px;
-  background-position: -329.5px -123.5px;
+  background-position: -329.5px -99.5px;
 }
 
 .btn_trash.pos_abs_right {
@@ -3010,7 +3010,7 @@ table.bottom_bar {
   margin-top: -5px;
   width: 6px;
   height: 10px;
-  background-position: -285.5px -166px;
+  background-position: -285.5px -186px;
 }
 
 .btn_file {
@@ -3157,7 +3157,7 @@ table.bottom_bar {
   display: inline-block;
   width: 13px;
   height: 14px;
-  background-position: -329.5px -76.5px;
+  background-position: -329.5px -123.5px;
   vertical-align: top;
   margin: 2px 8px 0 0;
 }
@@ -3174,7 +3174,7 @@ table.bottom_bar {
   display: inline-block;
   width: 10px;
   height: 10px;
-  background-position: -329.5px -255.5px;
+  background-position: -243px -277px;
   vertical-align: top;
 }
 
@@ -3479,7 +3479,7 @@ table.bottom_bar {
   margin-top: -5px;
   width: 6px;
   height: 10px;
-  background-position: -285.5px -166px;
+  background-position: -285.5px -186px;
 }
 
 .btn_arrow_type {
@@ -3899,7 +3899,7 @@ table.bottom_bar {
   transform: rotate(180deg);
   width: 11px;
   height: 6px;
-  background-position: -284px -277px;
+  background-position: -263px -277px;
 }
 
 .accordion-list > li > .con-area {
@@ -4212,7 +4212,7 @@ table.bottom_bar {
   margin-left: -27px;
   width: 55px;
   height: 55px;
-  background-position: 0px -85px;
+  background-position: -65px -85px;
   display: block;
 }
 
@@ -4224,7 +4224,7 @@ table.bottom_bar {
   margin-left: -27px;
   width: 55px;
   height: 55px;
-  background-position: -65px -85px;
+  background-position: -130px -85px;
   display: block;
 }
 
@@ -4236,7 +4236,7 @@ table.bottom_bar {
   margin-left: -27px;
   width: 55px;
   height: 55px;
-  background-position: -130px -85px;
+  background-position: 0px -85px;
   display: block;
 }
 
@@ -5409,7 +5409,7 @@ select.select_bank {
   margin-left: -12px;
   width: 25px;
   height: 25px;
-  background-position: -37px -210px;
+  background-position: -142px -210px;
   display: block;
 }
 
@@ -5638,7 +5638,7 @@ select.select_bank {
   display: block;
   width: 6px;
   height: 10px;
-  background-position: -285.5px -186px;
+  background-position: -285.5px -166px;
 }
 
 .header .top_bar .btn_share {
@@ -5692,7 +5692,7 @@ select.select_bank {
   display: block;
   width: 15px;
   height: 15px;
-  background-position: -172px -247px;
+  background-position: -276px -210px;
   position: absolute;
   top: 50%;
   margin-top: -8px;
@@ -5723,7 +5723,7 @@ select.select_bank {
   display: block;
   width: 18px;
   height: 17px;
-  background-position: -112px -277px;
+  background-position: -84px -277px;
 }
 
 .header .top_bar .btn_search {
@@ -5828,7 +5828,7 @@ select.select_bank {
   margin-top: -3px;
   width: 11px;
   height: 6px;
-  background-position: -284px -277px;
+  background-position: -263px -277px;
   transition: .2s transform;
   transform: rotate(180deg);
 }
@@ -6038,7 +6038,7 @@ select.select_bank {
   content: '';
   width: 50px;
   height: 50px;
-  background-position: -242.5px 0px;
+  background-position: -60px -150px;
   display: block;
 }
 
@@ -6579,7 +6579,7 @@ input[type="radio"].type_btn_radio + label {
   margin-top: -6px;
   width: 14px;
   height: 13px;
-  background-position: -329.5px -100.5px;
+  background-position: -329.5px -76.5px;
 }
 
 .thum_list li .btn_like.on::before {
@@ -6607,7 +6607,7 @@ input[type="radio"].type_btn_radio + label {
   margin-top: -9px;
   width: 15px;
   height: 15px;
-  background-position: -197px -247px;
+  background-position: -147px -247px;
 }
 
 .thum_list li .btn_like2.on::before {
@@ -6861,13 +6861,13 @@ input[type="radio"].type_btn_radio + label {
 .introWrap li .intro_btns .btn_login span.log_naver:after {
   width: 18px;
   height: 18px;
-  background-position: -28px -277px;
+  background-position: 0px -277px;
 }
 
 .introWrap li .intro_btns .btn_login span.log_kakao:after {
   width: 18px;
   height: 18px;
-  background-position: 0px -277px;
+  background-position: -28px -277px;
 }
 
 .introWrap li .intro_btns .log_etc {
@@ -7409,7 +7409,7 @@ input[type="radio"].type_btn_radio + label {
   content: '';
   width: 15px;
   height: 15px;
-  background-position: -197px -247px;
+  background-position: -147px -247px;
   display: block;
   position: absolute;
   top: 2px;
@@ -7420,7 +7420,7 @@ input[type="radio"].type_btn_radio + label {
   content: '';
   width: 15px;
   height: 15px;
-  background-position: -222px -247px;
+  background-position: -172px -247px;
   display: block;
   position: absolute;
   top: 2px;
@@ -7431,7 +7431,7 @@ input[type="radio"].type_btn_radio + label {
   content: '';
   width: 15px;
   height: 15px;
-  background-position: -247px -247px;
+  background-position: -222px -247px;
   display: block;
   position: absolute;
   top: 2px;
@@ -7634,7 +7634,7 @@ input[type="radio"].type_btn_radio + label {
   top: 0;
   width: 25px;
   height: 25px;
-  background-position: -177px -210px;
+  background-position: -37px -210px;
 }
 
 .serv_wrap .serv_review_wrap .review_list li {
@@ -7696,7 +7696,7 @@ input[type="radio"].type_btn_radio + label {
   content: '';
   width: 15px;
   height: 15px;
-  background-position: -197px -247px;
+  background-position: -147px -247px;
   position: absolute;
   top: 50%;
   left: 0;
@@ -7819,7 +7819,7 @@ input[type="radio"].type_btn_radio + label {
   content: '';
   width: 25px;
   height: 25px;
-  background-position: -107px -210px;
+  background-position: -177px -210px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -7841,7 +7841,7 @@ input[type="radio"].type_btn_radio + label {
   content: '';
   width: 25px;
   height: 25px;
-  background-position: -142px -210px;
+  background-position: -107px -210px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -8357,7 +8357,7 @@ input[type="radio"].type_btn_radio + label {
   display: block;
   width: 50px;
   height: 50px;
-  background-position: 0px -150px;
+  background-position: -242.5px 0px;
 }
 
 .buy_booking .end span {
@@ -8713,7 +8713,7 @@ input[type="radio"].type_btn_radio + label {
   margin-left: -25px;
   width: 50px;
   height: 50px;
-  background-position: -180px -150px;
+  background-position: 0px -150px;
 }
 
 .reserv_detail_wrap .detail_tit.end:after {
@@ -8724,7 +8724,7 @@ input[type="radio"].type_btn_radio + label {
   margin-left: -25px;
   width: 50px;
   height: 50px;
-  background-position: 0px -150px;
+  background-position: -242.5px 0px;
 }
 
 .reserv_detail_wrap .detail_tit.cancel:after {
@@ -8735,7 +8735,7 @@ input[type="radio"].type_btn_radio + label {
   margin-left: -25px;
   width: 50px;
   height: 50px;
-  background-position: -120px -150px;
+  background-position: -180px -150px;
 }
 
 .reserv_detail_wrap .cancel_box {
@@ -9561,7 +9561,7 @@ input[type="radio"].type_btn_radio + label {
   margin-top: -8px;
   width: 15px;
   height: 15px;
-  background-position: -147px -247px;
+  background-position: -197px -247px;
 }
 
 .btn_stat_reserv.stat_disabled {
@@ -9571,7 +9571,7 @@ input[type="radio"].type_btn_radio + label {
 .btn_stat_reserv.stat_disabled:after {
   width: 15px;
   height: 15px;
-  background-position: -276px -210px;
+  background-position: -247px -247px;
 }
 
 .btn_chk_reserv {
@@ -9604,7 +9604,7 @@ input[type="radio"].type_btn_radio + label {
   margin-top: -5px;
   width: 10px;
   height: 10px;
-  background-position: -329.5px -275.5px;
+  background-position: -329.5px -255.5px;
 }
 
 .btn_chk_reserv.chk_disabled {
@@ -9614,7 +9614,7 @@ input[type="radio"].type_btn_radio + label {
 .btn_chk_reserv.chk_disabled span:after {
   width: 10px;
   height: 10px;
-  background-position: -243px -277px;
+  background-position: -329.5px -275.5px;
 }
 
 .my_count {
@@ -9706,7 +9706,7 @@ input[type="radio"].type_btn_radio + label {
   content: '';
   width: 50px;
   height: 50px;
-  background-position: -60px -150px;
+  background-position: -120px -150px;
   display: block;
 }
 
@@ -9814,7 +9814,7 @@ input[type="radio"].type_btn_radio + label {
   content: '';
   width: 15px;
   height: 15px;
-  background-position: -197px -247px;
+  background-position: -147px -247px;
   display: block;
   position: absolute;
   top: 2px;
@@ -9825,7 +9825,7 @@ input[type="radio"].type_btn_radio + label {
   content: '';
   width: 15px;
   height: 15px;
-  background-position: -222px -247px;
+  background-position: -172px -247px;
   display: block;
   position: absolute;
   top: 2px;
@@ -9836,7 +9836,7 @@ input[type="radio"].type_btn_radio + label {
   content: '';
   width: 15px;
   height: 15px;
-  background-position: -247px -247px;
+  background-position: -222px -247px;
   display: block;
   position: absolute;
   top: 2px;
