@@ -318,7 +318,29 @@ input[type="radio"].rdo:checked + label.rdo:after {@include sp_form($radio_on);}
     input { min-width: 80px; width:110px; }
     .select-box { margin:0  5px;  min-width: 100px; }
 }
+.select2-container--classic.select2-container--open.select2-container--below .select2-selection--single {background: none;}
+.select2-container--classic.select2-container--open .select2-selection--single {border:none;}
+.select2-container--classic .select2-selection--single {
+    
+    background:none;
+    border:none;
+    border-radius: 0;
+}
+.select2-container--classic .select2-results>.select2-results__options {@include shadow(0px, 0px, 25px, 0.05); }
+.select2-container--classic .select2-selection--single .select2-selection__arrow {
+    background: none; border:none;
+    &:after {content:''; position: absolute; left:0; top:50%; margin-top:-3px; @include sp_icons($arrow_down_ssm);}
+    b { display:none;}
+}
 
+.select2-container--classic .select2-selection--single .select2-selection__rendered {font-weight: 700; font-size:15px; color:#000;}
+.select2-container--classic.select2-container--open .select2-dropdown {
+    border:none; background:#f7f7f7; border-top: 5px solid #fd5b5b; width:120px !important; margin-left:-40px;
+}
+.select2-container--classic .select2-selection--single:focus {border:none;}
+.select2-results__option {text-align: center; padding:16px; font-size:15px; color:#000; background: url('/resources/images/common/dot_line_hor.png') repeat-x bottom left; background-size:4px 1px;;}
+.select2-results__option:last-child {background-image:none;}
+.select2-container--classic .select2-results__option--highlighted[aria-selected] {background:#808080;}
 
 select {
    width:100%;

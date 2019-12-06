@@ -19,6 +19,7 @@
     .top_left {position: absolute; left:0; top:0;}
     .top_right {position: absolute; right:0; top:0; vertical-align: middle;
       .btn_report, .btn_del, .btn_all_more, .btn_filter { margin: 18px 25px 0 0;}
+      .select_wrap { margin-top:20px; margin-right:25px;}
     }
     .history_back {  display:block; padding:27px 10px 28px 24px;
       &:before {content:''; display:block; @include sp_icons($history_back);}

@@ -508,8 +508,8 @@
 
 .ui-dialog .ui-dialog-titlebar ,
 .ui-draggable .ui-dialog-titlebar {display:none;}
-.ui-dialog .ui-dialog-content {padding:0;}
-.ui-widget.ui-widget-content {border:none;}
+.ui-dialog .ui-dialog-content {padding:0;overflow:visible;}
+.ui-widget.ui-widget-content {border:none; }
 .ui-dialog {padding:0;}
 .ui-widget-overlay {background:rgba(0,0,0,.5); opacity: 1;}
 

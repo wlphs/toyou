@@ -29,6 +29,15 @@
                     <div class="top_left">
                         <a href="javascript:history.go(-1);" class="history_back"><span class="hide">이전페이지로 이동</span></a>
                     </div>
+                    <div class="top_right">
+                        <div class="select_wrap">
+                            <select name="" id="" class="js-select2">
+                                <option value="">전체</option>
+                                <option value="">확인</option>
+                                <option value="">미확인</option>
+                            </select>
+                        </div>
+                    </div>
                 </div>
             </div>
         </header>
@@ -116,6 +125,10 @@
         <a href="#none" class="top_scroll">위로 이동</a>
     </div>
     <script>
+        $('.js-select2').select2({
+            minimumResultsForSearch: Infinity,
+            theme: 'classic'
+        });
         //토글버튼
         $(".toggle .togBtn").each(function() {
             var self = this;
