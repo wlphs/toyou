@@ -210,8 +210,20 @@
 
 
 .introWrap { width:100%; height:100vh; position: relative; background:url('/resources/images/common/splash_bg.jpg') no-repeat; background-size:cover; background-position:center bottom; 
-    li { height:100vh; 
-        .tit {font-size:27px; color:#fff; margin:175px 25px;}
+    .intro_bg_container {height:calc(100vh - 55px);position: absolute; top:0; left:0; width:100%; }
+    .bgWrap {  
+        li {width:100%; height:calc(100vh - 55px); height:100%;
+            &.bg0 {background:url('/resources/images/common/splash_bg00.png') no-repeat; background-size:cover; background-position:center bottom;}
+            &.bg1 {background:url('/resources/images/common/splash_bg01.png') no-repeat; background-size:cover; background-position:center bottom; }
+            &.bg2 {background:url('/resources/images/common/splash_bg02.png') no-repeat; background-size:cover; background-position:center bottom; }
+            &.bg3 {background:url('/resources/images/common/splash_bg03.png') no-repeat; background-size:cover; background-position:center bottom; }
+        }
+    }
+    .slider li { height:100vh; 
+        .btm_img {position: absolute; left:50%; bottom:55px; margin-left:-132px; height:58%;}
+        .tit {font-size:31px; color:#ff5c5c; font-weight: 700; position: relative; z-index:1;}
+        .tit2 {font-size:31px; color:#fff; font-weight:300; margin-left:25px; margin-top:170px; position: relative; z-index:1;}
+        .txt {font-size:17px; color:#000;position: relative; z-index:1;}
         .intro_btns {position: absolute; bottom:20px; width:100%;
             .btn_login { display:block; background:#fff; height:48px; text-align: center; margin-top:10px; padding:14px 0; box-sizing: border-box;
                 span { color:#000; font-size:15px; font-weight: 500; display:inline-block; padding-left:25px; position: relative;
@@ -227,10 +239,11 @@
             }
         }
     }
-    .intro_logo { position: absolute; top:30px; left:25px; z-index: 1;
+    .intro_logo { position: absolute; top:30px; left:25px; 
         img { height:30px;}
     }
     .intro_right_txt { width:10px; position: absolute; right:12px; top:45px;}
     .swiper-pagination { position: absolute; bottom:20px; width:100%;}
     .btn_intro_start { position: absolute; z-index: 2; right:25px; bottom:15px; color:#fff; font-size:15px; font-weight: 500;}
 }
+
