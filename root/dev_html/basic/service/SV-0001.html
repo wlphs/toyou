@@ -329,15 +329,16 @@
     
 <script>
     
-		var swiper_001 = new Swiper('.swiper-container.main', {
-			effect : 'fade',
-			loop : true,
-			slidesPerView: 'auto',
-			autoplay: {
-				delay: 5000,
-			},
-        })
-        
+
+var mySwiper = new Swiper('.serv_visual', {
+    speed: 400,
+    loop:true,
+    autoplay: {
+        delay: 5000,
+    },
+    spaceBetween: 0
+});
+
         $("#pop_share").dialog({
             autoOpen: false,
             modal: true,
