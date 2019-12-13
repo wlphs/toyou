@@ -130,6 +130,10 @@
 .icon_kakao { font-size: 15px; display:inline-block; padding:5px;
     &::before { content:''; display:inline-block; @include sp_icons($icon_kakao); vertical-align:top; margin:-2px 8px 0 0;}
 }
+//채팅
+.icon_chat { font-size: 15px; display:inline-block; padding:5px;
+    &::before { content:''; display:inline-block; @include sp_icons($icon_chat); vertical-align:top; margin:-2px 8px 0 0;}
+}
 //전화하기
 .icon_call {font-size: 15px; display:inline-block; padding:5px;
     &::before { content:''; display:inline-block; @include sp_icons($icon_call); vertical-align:top; margin:-2px 8px 0 0;}
