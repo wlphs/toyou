@@ -33,7 +33,7 @@
                 <form action="" id="test1">
                 <div class="join_title cont_inner mb30">
                     <h1 class="h1"><em>대표 분야를</em><br> 선택해 주세요.</h1>
-                    <p class="tit_desc mt10">(복수 선택 가능)</p>
+                    <p class="tit_desc mt10">(2개 선택 가능)</p> <!-- 191221 수정 -->
                 </div>
                 <div class="cont_inner filter_wrap ">
                         <p class="filter_tit">뷰티</p>
@@ -62,7 +62,7 @@
                             <input type="checkbox" id="f_standard4"  class="inp_filter js-pick">
                             <label for="f_standard4" class="inp_filter">명상</label>
                         </li>
-                        <li></li>
+                        <!-- 191221 빈 영역일경우 비어있는 li 를 생성하지 않습니다. -->
                     </ul>
                     
                     <p class="filter_tit mt30">홈트레이닝</p>
@@ -71,8 +71,7 @@
                             <input type="checkbox" id="f_standard5"  class="inp_filter js-pick">
                             <label for="f_standard5" class="inp_filter">요가</label>
                         </li>
-                        <li></li>
-                        <li></li>
+                        <!-- 191221 빈 영역일경우 비어있는 li 를 생성하지 않습니다. -->
                     </ul>
                 </div>
                 <div class="btn_bottom_fixed">
@@ -88,10 +87,20 @@
 		@@include('../../include/_toolbar.html')
 	</div>
 <script>
-
+    // 191221 스크립트 수정
+    var checkedAry = [];
 	$('.js-pick').on('change', function() {
+        var idx= $('.js-pick').index($(this));
+        if ($(this).prop('checked')) {
+            checkedAry.push(idx)
+        }
+        else {
+            let _del = checkedAry.indexOf(idx);
+            checkedAry.splice(_del,1);
+        }
         if ($('.js-pick:checked').length > 2) {
-            $(this).prop('checked', false);
+            $('.js-pick').eq(checkedAry[0]).prop('checked', false);
+            checkedAry.shift();
             return false;
         }
         if ($('.js-pick:checked').length ) {

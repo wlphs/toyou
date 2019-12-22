@@ -60,9 +60,9 @@
     .key_list { display:block; margin: 0 15px 0 5px;
         li { float:left; width: 33.333333%;
             a { display:block; font-weight: 500; text-align:center; padding-top: 48px;
-                &.beauty { background:url('/resources/images/common/icon_beauty.png') no-repeat center top; background-size: 27px 38px;}
-                &.healing { background:url('/resources/images/common/icon_healing.png') no-repeat center top; background-size: 37px 38px;}
-                &.homept { background:url('/resources/images/common/icon_homept.png') no-repeat center top; background-size: 28px 33px;}
+                &.beauty { background:url('/resources/images/common/icon_beauty.png') no-repeat center top; background-size: 33px 35px;}
+                &.healing { background:url('/resources/images/common/icon_healing.png') no-repeat center top; background-size: 41px 41px;}
+                &.homept { background:url('/resources/images/common/icon_homept.png') no-repeat center top; background-size: 46px 36px;}
             }
         }
     }
@@ -72,7 +72,7 @@
 .thum_list { display: block;
     li { width: 150px; overflow: hidden;
         a { display:block;}
-        span { font-size: 11px; vertical-align: middle;}
+        span { font-size: 12px; vertical-align: middle;}
         //.info_box { padding-left: 7px;}
 
         .img { height: 150px; overflow: hidden; margin-bottom: 9px; position: relative; //margin-left: -7px;
@@ -114,8 +114,8 @@
         }
 
         //
-        .btn_like2 { font-weight: 500; color:#000; position: relative; display:inline-block; padding: 0 0 0 20px; margin:9px 0 0; font-size: 11px; 
-            &::before { content:''; display:inline-block; position: absolute; left:0; top:50%; margin-top:-9px; @include sp_icons($serv_01); }
+        .btn_like2 { font-weight: 500; color:#000; position: relative; display:inline-block; padding: 0 0 0 20px; margin:9px 0 0; font-size: 13px; 
+            &::before { content:''; display:inline-block; position: absolute; left:0; top:50%; margin-top:-8px; @include sp_icons($serv_01); }
             &.on {
                 &::before {  @include sp_icons($icon_like_on); }
             }
@@ -221,8 +221,11 @@
     }
     .slider li { height:100vh; 
         .btm_img {position: absolute; left:50%; bottom:55px; margin-left:-132px; height:58%;}
-        .tit {font-size:31px; color:#ff5c5c; font-weight: 700; position: relative; z-index:1;}
-        .tit2 {font-size:31px; color:#fff; font-weight:300; margin-left:25px; margin-top:170px; position: relative; z-index:1;}
+        .tit {font-size:31px; color:#000; font-weight: 700; position: relative; z-index:1;
+            em {color:#ff5c5c;}
+        }
+        .tit2 {font-size:27px; color:#fff; font-weight:300; margin-left:25px; margin-top:170px; position: relative; z-index:1;}
+        .tit3 {font-size:27px; color:#fff; font-weight:100; margin-left:25px; margin-top:-70px; position: absolute; z-index:1; top:50%; left:0;}
         .txt {font-size:17px; color:#000;position: relative; z-index:1;}
         .intro_btns {position: absolute; bottom:20px; width:100%;
             .btn_login { display:block; background:#fff; height:48px; text-align: center; margin-top:10px; padding:14px 0; box-sizing: border-box;

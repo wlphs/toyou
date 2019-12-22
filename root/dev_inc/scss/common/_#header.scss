@@ -21,7 +21,7 @@
       .btn_report, .btn_del, .btn_all_more, .btn_filter { margin: 18px 25px 0 0;}
       .select_wrap { margin-top:20px; margin-right:25px;}
     }
-    .history_back {  display:block; padding:27px 10px 28px 24px;
+    .history_back {  display:block; padding:24px 10px 25px 24px;
       &:before {content:''; display:block; @include sp_icons($history_back);}
     }
     .btn_share { display:block; padding:5px; float:left;margin-top:16px; margin-right:15px;

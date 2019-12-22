@@ -433,7 +433,7 @@ table.bottom_bar   { border-bottom: $borderBottom !important; }
 */
 .swiper-pagination-bullet {width:15px; height:3px; border-radius: 2px; opacity: 1; background:#fff; transition: .2s all;}
 .swiper-pagination-bullet-active { transform: rotate(-45deg);}
-.swiper-pagination-bullet:nth-child(5) {display:none;}
+.swiper-pagination-bullet:nth-child(6) {display:none;}
 
 .highcharts-credits {display:none;}
 .chart_hover {position: absolute; top:0; left:0; width:100%; height:100%; background:transparent; z-index:1;}
@@ -449,4 +449,8 @@ table.bottom_bar   { border-bottom: $borderBottom !important; }
     background-color: #ffffff;
     padding: 5px;
     font-size: 9pt;
+}
+
+.ajax_loading {min-height: 250px; position: relative;
+    &:after{ content:''; position: absolute; top:50%; margin-top:-17px; width:35px; height:35px; background:url('/resources/images/common/loading.gif') no-repeat; left:50%; margin-left:-17px; background-size:35px;}
 }
