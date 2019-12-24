@@ -32,7 +32,7 @@
                     <div class="top_right">
                         <button class="btn_share js-share"><span class="hide">공유하기</span></button>
                         <span class="serv_like_wrap">
-                            <button class="btn_like"><span class="hide">좋아요</span></button><span class="link_num">100</span>
+                            <button class="btn_like"><span class="hide">좋아요</span></button><span class="link_num on">100</span>
                         </span>
                     </div>
                 </div>
@@ -409,6 +409,11 @@
                 }
             });
         }
+
+        // 191217 추가
+        $('.btn_like').on('click', function() {
+            $(this).toggleClass('on')
+        })
     </script>
 
 </body>
