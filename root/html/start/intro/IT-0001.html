@@ -26,6 +26,7 @@
                     <a href="#" class="btn_intro_start">시작하기</a>
                     <div class="swiper-container js-visual_bg intro_bg_container">
                         <ul class="bgWrap swiper-wrapper">
+                            <li class="bg4 swiper-slide"></li>
                             <li class="bg0 swiper-slide"></li>
                             <li class="bg1 swiper-slide"></li>
                             <li class="bg2 swiper-slide"></li>
@@ -33,44 +34,56 @@
                             <li class="bg4 swiper-slide"></li>
                         </ul>
                     </div>
+                    <!-- 191221 수정 s -->
                     <div class="swiper-container js-visual">
                         <ul class="slider swiper-wrapper">
+                            <li class="swiper-slide">
+
+                                <h1 class="intro_logo">
+                                    <img src="/resources/images/common/img_splash_logo.png" alt="TOYOU HOME">
+                                </h1>
+                                <img src="/resources/images/common/img_splash_txt.png" alt="" class="intro_right_txt">
+                                <p class="tit3">
+                                    그녀들을 위한<br>
+                                    뷰티ㆍ헬스케어<br>
+                                    <b>방문 홈서비스,</b><br>
+                                    <b>투유홈</b>
+                                </p>
+                            </li>
 
                             <li class="swiper-slide">
                                 <p class="txt tac mt65">
                                     그녀들을 위한 뷰티ㆍ헬스케어
                                 </p>
                                 <p class="tit tac mt10">
-                                    방문 홈서비스,<br>
-                                    투유홈
+                                    <em>홈서비스, 투유홈</em>
                                 </p>
                                 <img src="/resources/images/common/splash_img00.png" alt="" class="btm_img">
                             </li>
                             <li class="swiper-slide">
-                                <p class="tit tac mt65">
-                                    간편한 홈서비스
+                                <p class="tit tac mt30">
+                                    왜 <em>투유 홈서비스</em><br> 인가요?
                                 </p>
                                 <p class="txt tac mt10">
-                                    오고가는 시간을 절약하고,<br>
+                                    간편한 홈서비스, 오고가는 시간을 절약하고,<br>
                                     집에서 홈서비스 받아요!
                                 </p>
                                 <img src="/resources/images/common/splash_img01.png" alt="" class="btm_img">
                             </li>
                             <li class="swiper-slide">
-                                <p class="tit tac mt65">
-                                    안전한 홈서비스
+                                <p class="tit tac mt30">
+                                    우리집이 <br> <em>제일 안전하니까</em>
                                 </p>
                                 <p class="txt tac mt10">
-                                    투유 안전센터 모니터링, 실명인증, <br>
-                                    신분인증, 사진인증, 서비스 위치 트래킹, <br>
-                                    지인 안심 메시지 발송
+                                    원하는 시간에, 원하는 장소로<br>
+                                    검증된 투유 전문가가 찾아갑니다.
                                 </p>
                                 <img src="/resources/images/common/splash_img02.png" alt="" class="btm_img">
                             </li>
                             <li class="swiper-slide">
                                 <p class="tit tac mt65">
-                                    모바일 간편 예약 <br>
-                                    홈서비스
+                                    <em>모바일 간편 예약 <br>
+                                        홈서비스</em>
                                 </p>
                                 <img src="/resources/images/common/splash_img03.png" alt="" class="btm_img">
                             </li>
@@ -101,6 +114,7 @@
                         </ul>
                         <div class="swiper-pagination"></div>
                     </div>
+                    <!-- 191221 수정 e -->
                 </div>
             </div>
         </div>
@@ -125,7 +139,7 @@
             on: {
                 slideChangeTransitionStart: function() {
                     console.log(mySwiper.activeIndex);
-                    if (mySwiper.activeIndex == 4) {
+                    if (mySwiper.activeIndex == 5) {
                         $('.btn_intro_start').fadeOut(100);
                         $('.swiper-pagination').fadeOut(100);
                         $('.js-visual_bg').fadeOut(400);
@@ -149,7 +163,7 @@
         $(window).on('resize', visual_img);
         $(window).on('load', visual_img);
         $('.btn_intro_start').on('click', function() {
-            mySwiper.slideTo(4)
+            mySwiper.slideTo(5)
         })
     </script>
 </body>

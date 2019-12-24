@@ -145,11 +145,11 @@ $(".toggle .togBtn").each(function(){
 		if ( $(this).hasClass("active") ){
 			$(this).removeClass("active");
 			$(this).find("input[type=checkbox]").prop("checked",false);
-			$('.txt').html("off");
+			$('.txt',$(this)).html("off"); // 191221 수정 
 		}else{
 			$(this).addClass("active");
 			$(this).find("input[type=checkbox]").prop("checked",true);
-			$('.txt').html("on");
+			$('.txt',$(this)).html("on"); // 191221 수정 
 		}
 	});
 });

@@ -3,7 +3,7 @@ $(function(){
   $('#footer .js-open').click(function(){
       $(this).toggleClass('on');
   });
-
+  
   $(window).scroll(function () {
     let _st = $(window).scrollTop(),
         _h = $(window).height(),

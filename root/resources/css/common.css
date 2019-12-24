@@ -235,12 +235,12 @@ a, span, i, em {
 
 .icon_label, .btn_menu_arrow:after, .btn_trash:after, .btn_more:after, .btn_more.red:after, .btn_file::before, .photo::before, .btn_report::before, .btn_report2::before, .btn_all_more:after, .btn_plus:after, .btn_filter::before, .btn_del::before, .btn_del02::before, .icon_kakao::before, .icon_chat::before, .icon_call::before, .icon_01::before, .icon_02::before, .save_logout::before, .btn_more_point:after, .btn_arrow_type:after, .accordion-list > li .header-area .acc_btn:after, .trp.popupfixed-wrap .btn_close:after, .trp.popupfixed-wrap .caution_wrap:after, .trp.popupfixed-wrap .share_wrap .share_list li .btn_facebook:after, .trp.popupfixed-wrap .share_wrap .share_list li .btn_kakao:after, .trp.popupfixed-wrap .share_wrap .share_list li .btn_share:after, .select2-container--classic .select2-selection--single .select2-selection__arrow:after, .calendar_wrap .daterangepicker .calendar-table .prev:after, .calendar_wrap .daterangepicker .calendar-table .next:after, .header .top_bar .history_back:before, .header .top_bar .btn_share:after, .header .top_bar .btn_save_n_exit:after, .header .top_bar .filter_reset:after, .header .top_bar .btn_like:after, .header .top_bar .btn_like.on:after, .header .top_bar .btn_search:before, #footer .opne_text:after, .top_scroll::before, .btn_cart:before, .profile_photo_wrap .pf_photo_change:after, .agree_list li .agree_view:after, .main_header .h1_logo, .main_header .location_top::before, .main_header .tip::before, .main section.main_card .visual_txt .txt em, .thum_list li .img .btn_like::before, .thum_list li .img .btn_like.on::before, .thum_list li .btn_like::before, .thum_list li .btn_like.on::before, .thum_list li .btn_like2::before, .thum_list li .btn_like2.on::before, .introWrap .slider li .intro_btns .btn_login span.log_naver:after, .introWrap .slider li .intro_btns .btn_login span.log_kakao:after, .chatting_area .chatting_list > li .icon, .chatting_area .chatting_view > li .chat_area .chat_view::before, .chatting_area .chatting_view > li.answer .chat_area .chat_view::before, .alarm_area .alarm_list > li .link::before, .serv_wrap .serv_detail .serv_info .reaction li.like:after, .serv_wrap .serv_detail .serv_info .reaction li.review:after, .serv_wrap .serv_detail .serv_info .reaction li.reply:after, .serv_wrap .serv_review_wrap .review_total_like .like_count:after, .serv_wrap .serv_review_wrap .review_list li .writer .review_like .btn_review_like:after, .movieWrap .movie_play:after, .service_bottom .btn_chat:after, .service_bottom .btn_tel:after, .review_more_wrap .btn_review_more:after, .buy_booking .end:before, .reserv_detail_wrap .detail_tit.wait:after, .reserv_detail_wrap .detail_tit.end:after, .reserv_detail_wrap .detail_tit.cancel:after, .expert_profile .link_connect li a.ic_kakao:after, .expert_profile .link_connect li a.ic_chat:after, .expert_profile .link_connect li a.ic_call:after, .service_requset_wrap .req_wrap .req_cont .txt_wrap .ic_home, .profile_wrap .pf_photo_wrap .pf_photo_change:after, .profile_wrap .pf_photo_wrap .pf_photo_change.type2:after, .profile_wrap .pf_manage a.btn_edit_pf:after, .profile_wrap .pf_manage a.btn_edit_cert:after, .btn_stat_reserv:after, .btn_stat_reserv.stat_disabled:after, .btn_chk_reserv span:after, .btn_chk_reserv.chk_disabled span:after, .position_cont .photo_area .pf_photo_change:after, .expert_my_service .reaction li.like:after, .expert_my_service .reaction li.review:after, .expert_my_service .reaction li.reply:after, .user_confirm a::before, .user_01::before, .user_02::before, .icon_position::before {
   background-image: url("../images/common/sp_icons.png");
-  background-size: 358.5px 341.5px;
+  background-size: 367.5px 329px;
 }
 
-.category_list li .cate_link.ic_cl1:after, .category_list li .cate_link.ic_cl2:after, .category_list li .cate_link.ic_cl3:after, .category_list li .cate_link.ic_cl4:after, .category_list li .cate_link.ic_cl5:after, .category_list li .cate_link.ic_cl6:after, .category_list li .cate_link.ic_cl7:after, .category_list li .cate_link.ic_cl8:after {
+.category_list li .cate_link.ic_cl1:after, .category_list li .cate_link.ic_cl2:after, .category_list li .cate_link.ic_cl3:after, .category_list li .cate_link.ic_cl4:after, .category_list li .cate_link.ic_cl5:after, .category_list li .cate_link.ic_cl6:after, .category_list li .cate_link.ic_cl7:after, .category_list li .cate_link.ic_cl8:after, .category_list li .cate_link.ic_cl9:after, .category_list li .cate_link.ic_cl10:after, .category_list li .cate_link.ic_cl11:after {
   background-image: url("../images/common/sp_category.png");
-  background-size: 185px 185px;
+  background-size: 250px 185px;
 }
 
 /*  _mixin.scss
@@ -1739,7 +1739,7 @@ a.link_txt,
   display: inline-block;
   width: 27px;
   height: 27px;
-  background-position: 0px -210px;
+  background-position: -205px -52px;
 }
 
 /* wrap  */
@@ -2732,7 +2732,7 @@ table.bottom_bar {
   transform: rotate(-45deg);
 }
 
-.swiper-pagination-bullet:nth-child(5) {
+.swiper-pagination-bullet:nth-child(6) {
   display: none;
 }
 
@@ -2766,6 +2766,24 @@ table.bottom_bar {
   background-color: #ffffff;
   padding: 5px;
   font-size: 9pt;
+}
+
+.ajax_loading {
+  min-height: 250px;
+  position: relative;
+}
+
+.ajax_loading:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  margin-top: -17px;
+  width: 35px;
+  height: 35px;
+  background: url("/resources/images/common/loading.gif") no-repeat;
+  left: 50%;
+  margin-left: -17px;
+  background-size: 35px;
 }
 
 /* ui_common.scss */
@@ -2887,7 +2905,7 @@ table.bottom_bar {
   margin-top: -4px;
   width: 6px;
   height: 8px;
-  background-position: -26px -324px;
+  background-position: -330.5px -179px;
 }
 
 .btn_menu_arrow .sm_txt {
@@ -2970,7 +2988,7 @@ table.bottom_bar {
   display: block;
   width: 13px;
   height: 14px;
-  background-position: -329.5px -123.5px;
+  background-position: -353.5px -123.5px;
 }
 
 .btn_trash.pos_abs_right {
@@ -2995,7 +3013,7 @@ table.bottom_bar {
   margin-top: -4px;
   width: 5px;
   height: 9px;
-  background-position: -353.5px 0px;
+  background-position: -330.5px -197px;
 }
 
 .btn_more.red {
@@ -3014,7 +3032,7 @@ table.bottom_bar {
   margin-top: -5px;
   width: 6px;
   height: 10px;
-  background-position: -285.5px -186px;
+  background-position: -330.5px -96px;
 }
 
 .btn_file {
@@ -3033,7 +3051,7 @@ table.bottom_bar {
   display: inline-block;
   width: 20px;
   height: 23px;
-  background-position: 0px -247px;
+  background-position: -140px -253px;
   vertical-align: middle;
 }
 
@@ -3052,7 +3070,7 @@ table.bottom_bar {
   margin-top: -10px;
   width: 16px;
   height: 18px;
-  background-position: -302.5px -88.5px;
+  background-position: -302.5px -221.5px;
 }
 
 .btn_report {
@@ -3068,7 +3086,7 @@ table.bottom_bar {
   display: inline-block;
   width: 14px;
   height: 15px;
-  background-position: -329.5px 0px;
+  background-position: -353.5px 0px;
   margin-right: 8px;
 }
 
@@ -3088,7 +3106,7 @@ table.bottom_bar {
   margin-top: -6px;
   width: 13.5px;
   height: 15.5px;
-  background-position: -329.5px -25px;
+  background-position: -353.5px -25px;
   margin-right: 8px;
 }
 
@@ -3107,7 +3125,7 @@ table.bottom_bar {
   margin-top: -4px;
   width: 10px;
   height: 6px;
-  background-position: -21px -308px;
+  background-position: -330.5px -80px;
   transform: rotate(0deg);
   transition: .2s transform;
 }
@@ -3127,7 +3145,7 @@ table.bottom_bar {
   margin-top: -6px;
   width: 11px;
   height: 11px;
-  background-position: -329.5px -170.5px;
+  background-position: -353.5px -196.5px;
   transform: rotate(0deg);
   transition: .2s transform;
 }
@@ -3144,7 +3162,7 @@ table.bottom_bar {
   display: inline-block;
   width: 15px;
   height: 14px;
-  background-position: -244px -280px;
+  background-position: -251.5px -314px;
   vertical-align: top;
   margin: 2px 8px 0 0;
 }
@@ -3161,7 +3179,7 @@ table.bottom_bar {
   display: inline-block;
   width: 13px;
   height: 14px;
-  background-position: -329.5px -76.5px;
+  background-position: -353.5px -99.5px;
   vertical-align: top;
   margin: 2px 8px 0 0;
 }
@@ -3178,7 +3196,7 @@ table.bottom_bar {
   display: inline-block;
   width: 10px;
   height: 10px;
-  background-position: -329.5px -255.5px;
+  background-position: -353.5px -281.5px;
   vertical-align: top;
 }
 
@@ -3193,7 +3211,7 @@ table.bottom_bar {
   display: inline-block;
   width: 24px;
   height: 22px;
-  background-position: -136px -52px;
+  background-position: -133px -159px;
   vertical-align: top;
   margin: -2px 8px 0 0;
 }
@@ -3209,7 +3227,7 @@ table.bottom_bar {
   display: inline-block;
   width: 24px;
   height: 24px;
-  background-position: -212px -210px;
+  background-position: -99px -159px;
   vertical-align: top;
   margin: -2px 8px 0 0;
 }
@@ -3225,7 +3243,7 @@ table.bottom_bar {
   display: inline-block;
   width: 21px;
   height: 21px;
-  background-position: -170px -52px;
+  background-position: -190px -128px;
   vertical-align: top;
   margin: -2px 8px 0 0;
 }
@@ -3245,7 +3263,7 @@ table.bottom_bar {
   margin-top: -3px;
   width: 10.5px;
   height: 5.5px;
-  background-position: -61px -308px;
+  background-position: -330.5px -116px;
   transform: rotate(0deg);
   transition: .2s transform;
 }
@@ -3265,7 +3283,7 @@ table.bottom_bar {
   margin-top: -10px;
   width: 15.5px;
   height: 15px;
-  background-position: -302.5px -224.5px;
+  background-position: 0px -314px;
 }
 
 .save_logout {
@@ -3282,7 +3300,7 @@ table.bottom_bar {
   display: inline-block;
   width: 15px;
   height: 13.5px;
-  background-position: -269px -280px;
+  background-position: -276.5px -314px;
   margin-right: 8px;
 }
 
@@ -3499,7 +3517,7 @@ table.bottom_bar {
   margin-top: -5px;
   width: 6px;
   height: 10px;
-  background-position: -285.5px -186px;
+  background-position: -330.5px -96px;
 }
 
 .btn_arrow_type {
@@ -3516,7 +3534,7 @@ table.bottom_bar {
   margin-top: -7px;
   width: 8px;
   height: 14px;
-  background-position: -329.5px -231.5px;
+  background-position: -353.5px -257.5px;
 }
 
 .dot_type_list.space15 li {
@@ -3919,7 +3937,7 @@ table.bottom_bar {
   transform: rotate(180deg);
   width: 11px;
   height: 6px;
-  background-position: -294px -280px;
+  background-position: -353.5px -321.5px;
 }
 
 .accordion-list > li > .con-area {
@@ -4028,7 +4046,7 @@ table.bottom_bar {
   top: 22px;
   width: 16px;
   height: 16px;
-  background-position: -302.5px -143.5px;
+  background-position: -29px -288px;
 }
 
 .trp.popupfixed-wrap.cover_type .popup-layer {
@@ -4158,7 +4176,7 @@ table.bottom_bar {
   margin-top: -20px;
   width: 40px;
   height: 40px;
-  background-position: -242.5px -116px;
+  background-position: -120px -193px;
 }
 
 .trp.popupfixed-wrap .caution_wrap .tit {
@@ -4232,7 +4250,7 @@ table.bottom_bar {
   margin-left: -27px;
   width: 55px;
   height: 55px;
-  background-position: 0px -85px;
+  background-position: 0px -128px;
   display: block;
 }
 
@@ -4244,7 +4262,7 @@ table.bottom_bar {
   margin-left: -27px;
   width: 55px;
   height: 55px;
-  background-position: -65px -85px;
+  background-position: -75px -52px;
   display: block;
 }
 
@@ -4256,7 +4274,7 @@ table.bottom_bar {
   margin-left: -27px;
   width: 55px;
   height: 55px;
-  background-position: -130px -85px;
+  background-position: -140px -52px;
   display: block;
 }
 
@@ -5333,7 +5351,7 @@ input[type="radio"].rdo:checked + label.rdo:after {
   margin-top: -3px;
   width: 11px;
   height: 6px;
-  background-position: 0px -308px;
+  background-position: -330.5px -48px;
 }
 
 .select2-container--classic .select2-selection--single .select2-selection__arrow b {
@@ -5486,7 +5504,7 @@ select.select_bank {
   margin-left: -12px;
   width: 25px;
   height: 25px;
-  background-position: -142px -210px;
+  background-position: 0px -253px;
   display: block;
 }
 
@@ -5503,7 +5521,7 @@ select.select_bank {
   margin-left: -12px;
   width: 25px;
   height: 25px;
-  background-position: -72px -210px;
+  background-position: -70px -253px;
   display: block;
 }
 
@@ -5729,15 +5747,15 @@ select.select_bank {
 
 .header .top_bar .history_back {
   display: block;
-  padding: 27px 10px 28px 24px;
+  padding: 24px 10px 25px 24px;
 }
 
 .header .top_bar .history_back:before {
   content: '';
   display: block;
-  width: 6px;
-  height: 10px;
-  background-position: -285.5px -166px;
+  width: 10px;
+  height: 16px;
+  background-position: -353.5px -147.5px;
 }
 
 .header .top_bar .btn_share {
@@ -5753,7 +5771,7 @@ select.select_bank {
   display: block;
   width: 17px;
   height: 21px;
-  background-position: -302.5px 0px;
+  background-position: -197px -253px;
 }
 
 .header .top_bar .btn_save_n_exit {
@@ -5770,7 +5788,7 @@ select.select_bank {
   display: block;
   width: 15px;
   height: 14px;
-  background-position: -219px -280px;
+  background-position: -226.5px -314px;
   position: absolute;
   top: 50%;
   margin-top: -8px;
@@ -5791,7 +5809,7 @@ select.select_bank {
   display: block;
   width: 15px;
   height: 15px;
-  background-position: -227px -247px;
+  background-position: -125.5px -314px;
   position: absolute;
   top: 50%;
   margin-top: -8px;
@@ -5822,7 +5840,7 @@ select.select_bank {
   display: block;
   width: 18px;
   height: 17px;
-  background-position: -84px -280px;
+  background-position: -302.5px -85.5px;
 }
 
 .header .top_bar .btn_like.on:after {
@@ -5841,7 +5859,7 @@ select.select_bank {
   display: block;
   width: 19px;
   height: 20px;
-  background-position: -30px -247px;
+  background-position: -198px -159px;
 }
 
 #gnb .nav_box {
@@ -5933,7 +5951,7 @@ select.select_bank {
   margin-top: -3px;
   width: 11px;
   height: 6px;
-  background-position: -294px -280px;
+  background-position: -353.5px -321.5px;
   transition: .2s transform;
   transform: rotate(180deg);
 }
@@ -5993,10 +6011,10 @@ select.select_bank {
   display: none;
   position: fixed;
   bottom: 30px;
-  right: 12px;
+  right: 15px;
   z-index: 10;
-  width: 43px;
-  height: 43px;
+  width: 65px;
+  height: 65px;
   border-radius: 100%;
   border: 1px solid #dbdbdb;
   background: #fff;
@@ -6008,21 +6026,21 @@ select.select_bank {
 .top_scroll::before {
   content: '';
   display: inline-block;
-  width: 14px;
-  height: 17px;
-  background-position: -302.5px -169.5px;
+  width: 17px;
+  height: 22px;
+  background-position: -170px -253px;
   vertical-align: top;
-  margin-top: 13px;
+  margin-top: 22px;
 }
 
 .btn_cart {
-  width: 46px;
-  height: 46px;
-  border-radius: 23px;
+  width: 65px;
+  height: 65px;
+  border-radius: 33px;
   display: block;
   position: fixed;
-  bottom: 85px;
-  right: 12px;
+  bottom: 100px;
+  right: 15px;
   z-index: 10;
   font-size: 0;
   text-align: center;
@@ -6032,25 +6050,25 @@ select.select_bank {
 .btn_cart .num {
   display: block;
   position: absolute;
-  border-radius: 6px;
-  width: 12px;
-  height: 12px;
+  border-radius: 9px;
+  width: 18px;
+  height: 18px;
   background: #fff;
   color: #ff5c5c;
-  font-size: 8px;
+  font-size: 13px;
   text-align: center;
-  line-height: 12px;
-  top: 11px;
-  left: 25px;
+  line-height: 18px;
+  top: 15px;
+  left: 35px;
   font-weight: 500;
 }
 
 .btn_cart:before {
   content: '';
   display: block;
-  width: 46px;
-  height: 46px;
-  background-position: -242.5px -60px;
+  width: 65px;
+  height: 66px;
+  background-position: 0px -52px;
   position: absolute;
   left: 0;
   top: 0;
@@ -6143,7 +6161,7 @@ select.select_bank {
   content: '';
   width: 50px;
   height: 50px;
-  background-position: -120px -150px;
+  background-position: -242.5px -60px;
   display: block;
 }
 
@@ -6217,7 +6235,7 @@ select.select_bank {
   position: relative;
   width: 5px;
   height: 9px;
-  background-position: -353.5px 0px;
+  background-position: -330.5px -197px;
   display: block;
 }
 
@@ -6325,9 +6343,9 @@ input[type="radio"].type_btn_radio + label {
   left: 25px;
   top: 17px;
   display: inline-block;
-  width: 126px;
-  height: 23px;
-  background-position: 0px -52px;
+  width: 115px;
+  height: 21px;
+  background-position: -65px -128px;
 }
 
 .main_header .h1_logo a {
@@ -6349,7 +6367,7 @@ input[type="radio"].type_btn_radio + label {
   margin: -2px 0 0 2px;
   width: 11px;
   height: 13px;
-  background-position: -329.5px -147.5px;
+  background-position: -353.5px -173.5px;
 }
 
 .main_header .tip {
@@ -6371,7 +6389,7 @@ input[type="radio"].type_btn_radio + label {
   right: 25px;
   width: 10px;
   height: 6px;
-  background-position: -41px -308px;
+  background-position: -330.5px -64px;
 }
 
 .main section.main_card {
@@ -6403,7 +6421,7 @@ input[type="radio"].type_btn_radio + label {
   display: block;
   width: 21px;
   height: 20px;
-  background-position: -201px -52px;
+  background-position: -167px -159px;
   margin-bottom: 9px;
 }
 
@@ -6532,17 +6550,17 @@ input[type="radio"].type_btn_radio + label {
 
 .key_list_box .key_list li a.beauty {
   background: url("/resources/images/common/icon_beauty.png") no-repeat center top;
-  background-size: 27px 38px;
+  background-size: 33px 35px;
 }
 
 .key_list_box .key_list li a.healing {
   background: url("/resources/images/common/icon_healing.png") no-repeat center top;
-  background-size: 37px 38px;
+  background-size: 41px 41px;
 }
 
 .key_list_box .key_list li a.homept {
   background: url("/resources/images/common/icon_homept.png") no-repeat center top;
-  background-size: 28px 33px;
+  background-size: 46px 36px;
 }
 
 .thum_list {
@@ -6559,7 +6577,7 @@ input[type="radio"].type_btn_radio + label {
 }
 
 .thum_list li span {
-  font-size: 11px;
+  font-size: 12px;
   vertical-align: middle;
 }
 
@@ -6600,13 +6618,13 @@ input[type="radio"].type_btn_radio + label {
   margin-top: -6px;
   width: 19px;
   height: 16px;
-  background-position: -148px -247px;
+  background-position: 0px -288px;
 }
 
 .thum_list li .img .btn_like.on::before {
   width: 19px;
   height: 16px;
-  background-position: -119px -247px;
+  background-position: -254px -253px;
 }
 
 .thum_list li .thum_list_info {
@@ -6684,13 +6702,13 @@ input[type="radio"].type_btn_radio + label {
   margin-top: -6px;
   width: 14px;
   height: 13px;
-  background-position: -329.5px -100.5px;
+  background-position: -353.5px -76.5px;
 }
 
 .thum_list li .btn_like.on::before {
   width: 16px;
   height: 14px;
-  background-position: -193px -280px;
+  background-position: -200.5px -314px;
 }
 
 .thum_list li .btn_like2 {
@@ -6700,7 +6718,7 @@ input[type="radio"].type_btn_radio + label {
   display: inline-block;
   padding: 0 0 0 20px;
   margin: 9px 0 0;
-  font-size: 11px;
+  font-size: 13px;
 }
 
 .thum_list li .btn_like2::before {
@@ -6709,16 +6727,16 @@ input[type="radio"].type_btn_radio + label {
   position: absolute;
   left: 0;
   top: 50%;
-  margin-top: -9px;
+  margin-top: -8px;
   width: 15px;
   height: 15px;
-  background-position: -302.5px -249.5px;
+  background-position: -50.5px -314px;
 }
 
 .thum_list li .btn_like2.on::before {
   width: 16px;
   height: 14px;
-  background-position: -193px -280px;
+  background-position: -200.5px -314px;
 }
 
 .thum_list.big_type li {
@@ -6972,20 +6990,36 @@ input[type="radio"].type_btn_radio + label {
 
 .introWrap .slider li .tit {
   font-size: 31px;
-  color: #ff5c5c;
+  color: #000;
   font-weight: 700;
   position: relative;
   z-index: 1;
 }
 
+.introWrap .slider li .tit em {
+  color: #ff5c5c;
+}
+
 .introWrap .slider li .tit2 {
-  font-size: 31px;
+  font-size: 27px;
   color: #fff;
   font-weight: 300;
   margin-left: 25px;
   margin-top: 170px;
   position: relative;
   z-index: 1;
+}
+
+.introWrap .slider li .tit3 {
+  font-size: 27px;
+  color: #fff;
+  font-weight: 100;
+  margin-left: 25px;
+  margin-top: -70px;
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 0;
 }
 
 .introWrap .slider li .txt {
@@ -7031,13 +7065,13 @@ input[type="radio"].type_btn_radio + label {
 .introWrap .slider li .intro_btns .btn_login span.log_naver:after {
   width: 18px;
   height: 18px;
-  background-position: -28px -280px;
+  background-position: -302.5px -28px;
 }
 
 .introWrap .slider li .intro_btns .btn_login span.log_kakao:after {
   width: 18px;
   height: 18px;
-  background-position: 0px -280px;
+  background-position: -302.5px 0px;
 }
 
 .introWrap .slider li .intro_btns .log_etc {
@@ -7139,7 +7173,7 @@ input[type="radio"].type_btn_radio + label {
   display: inline-block;
   width: 15px;
   height: 15px;
-  background-position: -202px -247px;
+  background-position: -100.5px -314px;
   vertical-align: top;
   margin: 1px 0 0 5px;
 }
@@ -7256,7 +7290,7 @@ input[type="radio"].type_btn_radio + label {
   top: -1px;
   width: 12px;
   height: 10px;
-  background-position: -329.5px -211.5px;
+  background-position: -353.5px -237.5px;
 }
 
 .chatting_area .chatting_view > li .chat_area .chat_view.img {
@@ -7311,7 +7345,7 @@ input[type="radio"].type_btn_radio + label {
   top: 1px;
   width: 12px;
   height: 10px;
-  background-position: -329.5px -191.5px;
+  background-position: -353.5px -217.5px;
 }
 
 .chatting_area .chatting_view > li.answer .chat_area .chat_view.img {
@@ -7439,7 +7473,7 @@ input[type="radio"].type_btn_radio + label {
   margin-top: -8px;
   width: 5px;
   height: 9px;
-  background-position: -353.5px 0px;
+  background-position: -330.5px -197px;
 }
 
 .alarm_area .alarm_list > li .link em {
@@ -7563,7 +7597,7 @@ input[type="radio"].type_btn_radio + label {
   float: left;
   position: relative;
   padding-left: 20px;
-  margin-right: 28px;
+  margin-right: 20px;
 }
 
 .serv_wrap .serv_detail .serv_info .reaction li:last-child {
@@ -7578,7 +7612,7 @@ input[type="radio"].type_btn_radio + label {
   content: '';
   width: 15px;
   height: 15px;
-  background-position: -302.5px -249.5px;
+  background-position: -50.5px -314px;
   display: block;
   position: absolute;
   top: 2px;
@@ -7589,7 +7623,7 @@ input[type="radio"].type_btn_radio + label {
   content: '';
   width: 15px;
   height: 15px;
-  background-position: -177px -247px;
+  background-position: -75.5px -314px;
   display: block;
   position: absolute;
   top: 2px;
@@ -7600,7 +7634,7 @@ input[type="radio"].type_btn_radio + label {
   content: '';
   width: 15px;
   height: 15px;
-  background-position: -252px -247px;
+  background-position: -150.5px -314px;
   display: block;
   position: absolute;
   top: 2px;
@@ -7805,7 +7839,7 @@ input[type="radio"].type_btn_radio + label {
   top: 0;
   width: 25px;
   height: 25px;
-  background-position: -37px -210px;
+  background-position: -258px -193px;
 }
 
 .serv_wrap .serv_review_wrap .review_list li {
@@ -7868,7 +7902,7 @@ input[type="radio"].type_btn_radio + label {
   content: '';
   width: 15px;
   height: 15px;
-  background-position: -302.5px -249.5px;
+  background-position: -50.5px -314px;
   position: absolute;
   top: 50%;
   left: 0;
@@ -7942,7 +7976,7 @@ input[type="radio"].type_btn_radio + label {
   content: '';
   width: 12px;
   height: 16px;
-  background-position: -329.5px -50.5px;
+  background-position: -353.5px -50.5px;
   position: absolute;
   left: 50%;
   top: 50%;
@@ -7991,7 +8025,7 @@ input[type="radio"].type_btn_radio + label {
   content: '';
   width: 25px;
   height: 25px;
-  background-position: -177px -210px;
+  background-position: -35px -253px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -8013,7 +8047,7 @@ input[type="radio"].type_btn_radio + label {
   content: '';
   width: 25px;
   height: 25px;
-  background-position: -107px -210px;
+  background-position: -105px -253px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -8047,7 +8081,7 @@ input[type="radio"].type_btn_radio + label {
   margin-top: -4px;
   width: 10px;
   height: 6px;
-  background-position: -21px -308px;
+  background-position: -330.5px -80px;
 }
 
 .more_wrap {
@@ -8112,8 +8146,7 @@ input[type="radio"].type_btn_radio + label {
 }
 
 .filter_wrap .filter_list {
-  border-top: 1px solid #e5e5e5;
-  border-right: 1px solid #e5e5e5;
+  border-left: 1px solid #e5e5e5;
 }
 
 .filter_wrap .filter_list:after {
@@ -8124,11 +8157,17 @@ input[type="radio"].type_btn_radio + label {
 
 .filter_wrap .filter_list li {
   position: relative;
+  margin-top: -1px;
+  border-top: 1px solid #e5e5e5;
   border-bottom: 1px solid #e5e5e5;
-  border-left: 1px solid #e5e5e5;
+  border-right: 1px solid #e5e5e5;
   width: 33.3333%;
   height: 40px;
   float: left;
+}
+
+.filter_wrap .filter_list li.noline {
+  border: none;
 }
 
 .filter_wrap input.inp_filter {
@@ -8630,6 +8669,7 @@ input[type="radio"].type_btn_radio + label {
 .reserve_area .reserve_list li {
   border-top: 1px dashed #c5c5c7;
   padding: 15px 0;
+  position: relative;
 }
 
 .reserve_area .reserve_list li:first-child {
@@ -8815,13 +8855,13 @@ input[type="radio"].type_btn_radio + label {
 .category_list li .cate_link.ic_cl1:after {
   width: 55px;
   height: 55px;
-  background-position: 0px 0px;
+  background-position: -65px 0px;
 }
 
 .category_list li .cate_link.ic_cl2:after {
   width: 55px;
   height: 55px;
-  background-position: -65px 0px;
+  background-position: -130px -65px;
 }
 
 .category_list li .cate_link.ic_cl3:after {
@@ -8845,7 +8885,7 @@ input[type="radio"].type_btn_radio + label {
 .category_list li .cate_link.ic_cl6:after {
   width: 55px;
   height: 55px;
-  background-position: -130px -65px;
+  background-position: 0px 0px;
 }
 
 .category_list li .cate_link.ic_cl7:after {
@@ -8858,6 +8898,24 @@ input[type="radio"].type_btn_radio + label {
   width: 55px;
   height: 55px;
   background-position: -65px -130px;
+}
+
+.category_list li .cate_link.ic_cl9:after {
+  width: 55px;
+  height: 55px;
+  background-position: -130px -130px;
+}
+
+.category_list li .cate_link.ic_cl10:after {
+  width: 55px;
+  height: 55px;
+  background-position: -195px 0px;
+}
+
+.category_list li .cate_link.ic_cl11:after {
+  width: 55px;
+  height: 55px;
+  background-position: -195px -65px;
 }
 
 .reserv_detail_wrap {
@@ -8885,7 +8943,7 @@ input[type="radio"].type_btn_radio + label {
   margin-left: -25px;
   width: 50px;
   height: 50px;
-  background-position: -60px -150px;
+  background-position: 0px -193px;
 }
 
 .reserv_detail_wrap .detail_tit.end:after {
@@ -8907,7 +8965,7 @@ input[type="radio"].type_btn_radio + label {
   margin-left: -25px;
   width: 50px;
   height: 50px;
-  background-position: -180px -150px;
+  background-position: -60px -193px;
 }
 
 .reserv_detail_wrap .cancel_box {
@@ -9145,19 +9203,19 @@ input[type="radio"].type_btn_radio + label {
 .expert_profile .link_connect li a.ic_kakao:after {
   width: 24px;
   height: 22px;
-  background-position: -136px -52px;
+  background-position: -133px -159px;
 }
 
 .expert_profile .link_connect li a.ic_chat:after {
   width: 24px;
   height: 24px;
-  background-position: -212px -210px;
+  background-position: -99px -159px;
 }
 
 .expert_profile .link_connect li a.ic_call:after {
   width: 24px;
   height: 24px;
-  background-position: -246px -210px;
+  background-position: -65px -159px;
 }
 
 .expert_profile .prd_desc {
@@ -9569,7 +9627,7 @@ input[type="radio"].type_btn_radio + label {
   display: block;
   width: 21px;
   height: 20px;
-  background-position: -201px -52px;
+  background-position: -167px -159px;
   margin-bottom: 9px;
 }
 
@@ -9617,7 +9675,7 @@ input[type="radio"].type_btn_radio + label {
   content: '';
   width: 33px;
   height: 33px;
-  background-position: -242.5px -166px;
+  background-position: -215px -193px;
   display: block;
 }
 
@@ -9630,7 +9688,7 @@ input[type="radio"].type_btn_radio + label {
   content: '';
   width: 35px;
   height: 35px;
-  background-position: -195px -85px;
+  background-position: -170px -193px;
   display: block;
 }
 
@@ -9660,7 +9718,7 @@ input[type="radio"].type_btn_radio + label {
   display: block;
   width: 16px;
   height: 17px;
-  background-position: -302.5px -116.5px;
+  background-position: -302.5px -249.5px;
   position: absolute;
   top: 5px;
   left: 0;
@@ -9671,7 +9729,7 @@ input[type="radio"].type_btn_radio + label {
   display: block;
   width: 13px;
   height: 18px;
-  background-position: -302.5px -196.5px;
+  background-position: -330.5px 0px;
   position: absolute;
   top: 5px;
   left: 0;
@@ -9739,7 +9797,7 @@ input[type="radio"].type_btn_radio + label {
   margin-top: -8px;
   width: 15px;
   height: 15px;
-  background-position: -168px -280px;
+  background-position: -25.5px -314px;
 }
 
 .btn_stat_reserv.stat_disabled {
@@ -9749,7 +9807,7 @@ input[type="radio"].type_btn_radio + label {
 .btn_stat_reserv.stat_disabled:after {
   width: 15px;
   height: 15px;
-  background-position: -277px -247px;
+  background-position: -175.5px -314px;
 }
 
 .btn_chk_reserv {
@@ -9782,7 +9840,7 @@ input[type="radio"].type_btn_radio + label {
   margin-top: -5px;
   width: 10px;
   height: 10px;
-  background-position: -329.5px -275.5px;
+  background-position: -353.5px -301.5px;
 }
 
 .btn_chk_reserv.chk_disabled {
@@ -9792,7 +9850,7 @@ input[type="radio"].type_btn_radio + label {
 .btn_chk_reserv.chk_disabled span:after {
   width: 10px;
   height: 10px;
-  background-position: -280px -210px;
+  background-position: -330.5px -28px;
 }
 
 .my_count {
@@ -9884,7 +9942,7 @@ input[type="radio"].type_btn_radio + label {
   content: '';
   width: 50px;
   height: 50px;
-  background-position: 0px -150px;
+  background-position: -242.5px -120px;
   display: block;
 }
 
@@ -9992,7 +10050,7 @@ input[type="radio"].type_btn_radio + label {
   content: '';
   width: 15px;
   height: 15px;
-  background-position: -302.5px -249.5px;
+  background-position: -50.5px -314px;
   display: block;
   position: absolute;
   top: 2px;
@@ -10003,7 +10061,7 @@ input[type="radio"].type_btn_radio + label {
   content: '';
   width: 15px;
   height: 15px;
-  background-position: -177px -247px;
+  background-position: -75.5px -314px;
   display: block;
   position: absolute;
   top: 2px;
@@ -10014,7 +10072,7 @@ input[type="radio"].type_btn_radio + label {
   content: '';
   width: 15px;
   height: 15px;
-  background-position: -252px -247px;
+  background-position: -150.5px -314px;
   display: block;
   position: absolute;
   top: 2px;
@@ -10056,7 +10114,7 @@ input[type="radio"].type_btn_radio + label {
   margin-top: -8px;
   width: 1px;
   height: 17.5px;
-  background-position: 0px -324px;
+  background-position: -330.5px -131.5px;
 }
 
 .user_confirm a:first-child::before {
@@ -10069,7 +10127,7 @@ input[type="radio"].type_btn_radio + label {
   margin: 0 5px -2px 0;
   width: 20px;
   height: 16.5px;
-  background-position: -89px -247px;
+  background-position: -224px -253px;
 }
 
 .user_02::before {
@@ -10078,7 +10136,7 @@ input[type="radio"].type_btn_radio + label {
   margin: 0 5px -2px 0;
   width: 20px;
   height: 17.5px;
-  background-position: -59px -247px;
+  background-position: -205px -89px;
 }
 
 .icon_position::before {
@@ -10087,7 +10145,7 @@ input[type="radio"].type_btn_radio + label {
   margin: 0 6px -4px 0;
   width: 16.5px;
   height: 19.5px;
-  background-position: -302.5px -31px;
+  background-position: -302.5px -56px;
 }
 
 .payment_date {
