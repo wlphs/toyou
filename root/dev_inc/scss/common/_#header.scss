@@ -38,6 +38,9 @@
     }
     .btn_like {display:inline-block; padding:7px;
       &:after {content:''; display:block; @include sp_icons($sm_like)}
+      &.on {
+        &:after {@include sp_icons($sm_like_on)}
+      }
     }
     .btn_search {display:block; padding:23px 16px;
       &:before {content:''; display:block; @include sp_icons($ic_search);}
