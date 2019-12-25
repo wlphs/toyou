@@ -1,0 +1,102 @@
+@charset "utf-8";
+/* common.scss */
+@import "common/variables";
+@import "common/fonts"; 
+
+// nomalize
+@import "common/normalize";
+@import "lib/mixin";
+
+@import "common/base_pc";
+
+.header { position:fixed; width:100%; top:0; left:0; height:80px; z-index: 1111;
+    .logo {position: absolute; left:60px; top:20px; }
+    .util {position: absolute; right:60px; top:20px;
+        .util_txt {font-size:16px; color:#000; font-weight: 700; margin-right:10px;}
+        .btn_round {margin-left:10px; height:36px; border-radius: 18px; text-align: center; width:120px; border:1px solid #000; display:inline-block; 
+            
+            span {position:relative; line-height: 36px;  font-size: 14px; color:#000; display:inline-block; padding-left:22px;
+                &:after {content:''; position: absolute; left:0; top:50%; margin-top:-9px; width:15px; height:18px; }
+            }
+        }
+        .btn_ios span:after {background: url('/resources/images/intro/logo_ios_sm.png');}
+        .btn_android span:after {background: url('/resources/images/intro/logo_android_sm.png');}
+    }
+}
+
+.toyou_wrap {background:url('/resources/images/intro/pc_bg.jpg'); background-size:100%;
+    transition: 1s cubic-bezier(0.3, 0, 0.3, 1); background-repeat: no-repeat;
+}
+
+.sm_section { position: relative;
+    .sm_inner{ margin:0 auto; width: 1000px; position: relative; height:100%;
+        .sm_tit {font-size:50px; font-weight: 700; color:#000; line-height: 62px;
+            b {color:#ff5c5c;}
+        }
+        .sm_txt { font-size:26px; font-weight: 500; color:#000;line-height: 40px;}
+        .sm_txt_sm { font-size:20px; font-weight: 500; color:#000;}
+        .btn_box {width:550px; margin:0 auto;}
+        .btn_round { height:60px; border-radius: 30px; text-align: center; width:270px; background:#fff; display:block; float:left; @include shadow(5px, 5px, 20px, 0.05); 
+            &:first-child {margin-right:10px}
+            span {position:relative; line-height: 60px;  font-size: 16px; color:#000; display:inline-block; padding-left:36px;
+                &:after {content:''; position: absolute; left:0; top:50%; margin-top:-14px; width:24px; height:27px; }
+            }
+        }
+        .btn_ios span:after {background: url('/resources/images/intro/logo_ios.png');}
+        .btn_android span:after {background: url('/resources/images/intro/logo_android.png');}
+    }
+    .descript.pos_md {position: absolute; top:50%;}
+}
+.partners_list { @include clearfix(); text-align: center;
+    li {display:inline-block; margin-left:80px; 
+        &:first-child {margin-left:0;}
+    }
+}
+.user_list { @include clearfix(); margin-top:130px;
+    li {float:left; width:310px; background:#fff; position: relative; padding:65px 32px 32px; margin-left:20px; @include shadow(0px, 0px, 25px, 0.1); 
+        &:first-child {margin-left:0;}
+        .photo_wrap {position: absolute; top:-50px; left:50%; margin-left:-50px; border-radius: 50px; overflow: hidden;
+            img {width:100px; height:100px;}
+        }
+        .name {text-align: center; font-size:16px; font-weight: 700;}
+        .cont{ font-size:16px; margin-top:35px; }
+    }
+}
+
+.toyou_page0 {
+    .descript {position: absolute; top:16%; width:100%;}
+    .motion_wrap {
+        position: absolute; bottom:0; width:100%; 
+        height: 0;
+
+        .m_cont {position: absolute;  bottom: 0;left: 50%;margin-left: -194px;height: 607px;}
+        .m_case {position: absolute; bottom:0;  text-align: center; width:100%;
+            
+        }
+    }
+}
+
+.toyou_page2 {
+    .descript {margin-left:570px;}
+}
+
+.w100p {width:100%;}
+
+#footer { position: absolute; bottom:0; left:0; width:100%; background:#fff; border-top:1px solid #dddddd;
+
+    .footer-inner {
+        .logo {position: absolute; left:60px; top:30px;}
+    }
+    .footer_desc {padding:30px 60px; float:right;
+        .foot_list { @include clearfix();
+            li { font-size:14px; color:#000; padding : 0 13px; float:left; position: relative; line-height: 1.5;
+                &:after {content:''; width:1px; height:10px; background:#999; position: absolute; left:0; top:50%; margin-top:-5px;}
+                &:first-child {padding-left:0; 
+                    &:after {display:none;}
+                }
+            }
+        }
+        .caution_txt { font-size:14px; color:#666;}
+    }
+}
+
