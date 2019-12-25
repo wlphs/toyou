@@ -2291,7 +2291,8 @@ body {
 
 .toyou_page0 .descript {
   position: absolute;
-  top: 16%;
+  top: 50%;
+  margin-top: -300px;
   width: 100%;
 }
 
@@ -2304,10 +2305,25 @@ body {
 
 .toyou_page0 .motion_wrap .m_cont {
   position: absolute;
+  background: #fff;
+  overflow: hidden;
   bottom: 0;
   left: 50%;
   margin-left: -194px;
   height: 607px;
+}
+
+.toyou_page0 .motion_wrap .m_cont img {
+  margin-top: 0;
+  opacity: 0;
+  -webkit-animation-name: ani0;
+  -webkit-animation-duration: 24s;
+  animation-name: ani0;
+  animation-duration: 24s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }
 
 .toyou_page0 .motion_wrap .m_case {
@@ -2317,8 +2333,76 @@ body {
   width: 100%;
 }
 
+.toyou_page1 .motion_wrap {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.toyou_page1 .motion_wrap .m_cont {
+  position: absolute;
+  top: 0;
+  margin-top: -283px;
+  background: #fff;
+  overflow: hidden;
+  height: 534px;
+  margin-left: 27px;
+  /*img {margin-top:0; opacity: 0; 
+                -webkit-animation-name: ani0; 
+                -webkit-animation-duration: 24s; 
+                animation-name: ani0;
+                animation-duration: 24s;
+                animation-timing-function: ease-in-out;
+                animation-iteration-count: infinite;
+            }*/
+}
+
+.toyou_page1 .motion_wrap .m_case {
+  position: absolute;
+  top: 0;
+  margin-top: -370px;
+}
+
 .toyou_page2 .descript {
   margin-left: 570px;
+}
+
+.toyou_page3 .descript {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  margin-top: -500px;
+}
+
+.toyou_page3 .motion_wrap {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -183px;
+}
+
+.toyou_page3 .motion_wrap .m_cont {
+  position: absolute;
+  top: 0;
+  margin-top: -283px;
+  background: #fff;
+  overflow: hidden;
+  height: 534px;
+  margin-left: 27px;
+  /*img {margin-top:0; opacity: 0; 
+                -webkit-animation-name: ani0; 
+                -webkit-animation-duration: 24s; 
+                animation-name: ani0;
+                animation-duration: 24s;
+                animation-timing-function: ease-in-out;
+                animation-iteration-count: infinite;
+            }*/
+}
+
+.toyou_page3 .motion_wrap .m_case {
+  position: absolute;
+  top: 0;
+  margin-top: -370px;
 }
 
 .w100p {
@@ -2382,6 +2466,46 @@ body {
 #footer .footer_desc .caution_txt {
   font-size: 14px;
   color: #666;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes ani0 {
+  0% {
+    opacity: 0;
+    margin-top: 0;
+  }
+  4% {
+    opacity: 1;
+    margin-top: 0;
+  }
+  96% {
+    opacity: 1;
+    margin-top: -1400px;
+  }
+  100% {
+    opacity: 0;
+    margin-top: -1400px;
+  }
+}
+
+/* Standard syntax */
+@keyframes ani0 {
+  0% {
+    opacity: 0;
+    margin-top: 0;
+  }
+  4% {
+    opacity: 1;
+    margin-top: 0;
+  }
+  96% {
+    opacity: 1;
+    margin-top: -1400px;
+  }
+  100% {
+    opacity: 0;
+    margin-top: -1400px;
+  }
 }
 
 /*# sourceMappingURL=maps/intro.css.map */

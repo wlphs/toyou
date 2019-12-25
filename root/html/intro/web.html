@@ -62,6 +62,10 @@
                                             오고가는 시간을 절약하고,<br>
                                             집에서 홈서비스 받아요!</p>
                                     </div>
+                                    <div class="motion_wrap">
+                                        <div class="m_cont"><img src="/resources/images/intro/pc_phone_cont1.jpg" alt=""></div>
+                                        <div class="m_case"><img src="/resources/images/intro/pc_phonewrap1.png" alt=""></div>
+                                    </div>
                                 </div>
                             </div>
                             <div class="sm_section toyou_page2" id="">
@@ -81,6 +85,11 @@
                                             모바일 간편 예약<br>
                                             <b>홈서비스</b>
                                         </p>
+                                    </div>
+
+                                    <div class="motion_wrap">
+                                        <div class="m_cont"><img src="/resources/images/intro/pc_phone_cont2.jpg" alt=""></div>
+                                        <div class="m_case"><img src="/resources/images/intro/pc_phonewrap1.png" alt=""></div>
                                     </div>
                                 </div>
                             </div>
@@ -230,6 +239,11 @@
                                 $(this).css('margin-top', _t);
                             })
 
+                            $('.toyou_page0 .motion_wrap').css("transform", "scale(" + (wh / 2) / 700 * 1.2 + ")");
+
+                            //$('.toyou_page0 .motion_wrap').css("transform","scale("+(wh/2)/700*1.2+")");
+
+                            $('.toyou_page3 .motion_wrap').css("transform", "scale(" + (wh / 2) / 700 * 1.2 + ")");
                         }
                         $(window).on('resize', section_resize);
                         $(window).on('load', section_resize)
