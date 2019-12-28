@@ -3036,7 +3036,7 @@ table.bottom_bar {
   margin-top: -5px;
   width: 6px;
   height: 10px;
-  background-position: -332.5px -80px;
+  background-position: -332.5px -96px;
 }
 
 .btn_file {
@@ -3129,7 +3129,7 @@ table.bottom_bar {
   margin-top: -4px;
   width: 10px;
   height: 6px;
-  background-position: -332.5px -64px;
+  background-position: -332.5px -80px;
   transform: rotate(0deg);
   transition: .2s transform;
 }
@@ -3166,7 +3166,7 @@ table.bottom_bar {
   display: inline-block;
   width: 15px;
   height: 14px;
-  background-position: -226.5px -316px;
+  background-position: -251.5px -316px;
   vertical-align: top;
   margin: 2px 8px 0 0;
 }
@@ -3183,7 +3183,7 @@ table.bottom_bar {
   display: inline-block;
   width: 13px;
   height: 14px;
-  background-position: -355.5px -76.5px;
+  background-position: -355.5px -99.5px;
   vertical-align: top;
   margin: 2px 8px 0 0;
 }
@@ -3247,7 +3247,7 @@ table.bottom_bar {
   display: inline-block;
   width: 24px;
   height: 24px;
-  background-position: -65px -159px;
+  background-position: -99px -159px;
   vertical-align: top;
   margin: -2px 8px 0 0;
 }
@@ -3521,7 +3521,7 @@ table.bottom_bar {
   margin-top: -5px;
   width: 6px;
   height: 10px;
-  background-position: -332.5px -80px;
+  background-position: -332.5px -96px;
 }
 
 .btn_arrow_type {
@@ -3941,7 +3941,7 @@ table.bottom_bar {
   transform: rotate(180deg);
   width: 11px;
   height: 6px;
-  background-position: -332.5px -48px;
+  background-position: -355.5px -321.5px;
 }
 
 .accordion-list > li > .con-area {
@@ -4254,7 +4254,7 @@ table.bottom_bar {
   margin-left: -27px;
   width: 55px;
   height: 55px;
-  background-position: -75px -52px;
+  background-position: -140px -52px;
   display: block;
 }
 
@@ -4266,7 +4266,7 @@ table.bottom_bar {
   margin-left: -27px;
   width: 55px;
   height: 55px;
-  background-position: -140px -52px;
+  background-position: 0px -128px;
   display: block;
 }
 
@@ -4278,7 +4278,7 @@ table.bottom_bar {
   margin-left: -27px;
   width: 55px;
   height: 55px;
-  background-position: 0px -128px;
+  background-position: -75px -52px;
   display: block;
 }
 
@@ -5355,7 +5355,7 @@ input[type="radio"].rdo:checked + label.rdo:after {
   margin-top: -3px;
   width: 11px;
   height: 6px;
-  background-position: -355.5px -321.5px;
+  background-position: -332.5px -48px;
 }
 
 .select2-container--classic .select2-selection--single .select2-selection__arrow b {
@@ -5508,7 +5508,7 @@ select.select_bank {
   margin-left: -12px;
   width: 25px;
   height: 25px;
-  background-position: 0px -253px;
+  background-position: -258px -193px;
   display: block;
 }
 
@@ -5525,7 +5525,7 @@ select.select_bank {
   margin-left: -12px;
   width: 25px;
   height: 25px;
-  background-position: -258px -193px;
+  background-position: -35px -253px;
   display: block;
 }
 
@@ -5792,7 +5792,7 @@ select.select_bank {
   display: block;
   width: 15px;
   height: 14px;
-  background-position: -251.5px -316px;
+  background-position: -226.5px -316px;
   position: absolute;
   top: 50%;
   margin-top: -8px;
@@ -5813,7 +5813,7 @@ select.select_bank {
   display: block;
   width: 15px;
   height: 15px;
-  background-position: -100.5px -316px;
+  background-position: -175.5px -316px;
   position: absolute;
   top: 50%;
   margin-top: -8px;
@@ -5844,7 +5844,7 @@ select.select_bank {
   display: block;
   width: 18px;
   height: 17px;
-  background-position: -302.5px -166px;
+  background-position: -302.5px -112px;
 }
 
 .header .top_bar .btn_like.on:after {
@@ -5955,7 +5955,7 @@ select.select_bank {
   margin-top: -3px;
   width: 11px;
   height: 6px;
-  background-position: -332.5px -48px;
+  background-position: -355.5px -321.5px;
   transition: .2s transform;
   transform: rotate(180deg);
 }
@@ -6165,7 +6165,7 @@ select.select_bank {
   content: '';
   width: 50px;
   height: 50px;
-  background-position: -60px -193px;
+  background-position: 0px -193px;
   display: block;
 }
 
@@ -6393,7 +6393,7 @@ input[type="radio"].type_btn_radio + label {
   right: 25px;
   width: 10px;
   height: 6px;
-  background-position: -332.5px -100px;
+  background-position: -332.5px -64px;
 }
 
 .main section.main_card {
@@ -6417,7 +6417,7 @@ input[type="radio"].type_btn_radio + label {
   color: #fff;
   font-size: 19px;
   font-weight: 300;
-  line-height: 26px;
+  line-height: 27px;
   z-index: 1;
 }
 
@@ -6706,7 +6706,7 @@ input[type="radio"].type_btn_radio + label {
   margin-top: -6px;
   width: 14px;
   height: 13px;
-  background-position: -355.5px -100.5px;
+  background-position: -355.5px -76.5px;
 }
 
 .thum_list li .btn_like.on::before {
@@ -6734,7 +6734,7 @@ input[type="radio"].type_btn_radio + label {
   margin-top: -8px;
   width: 15px;
   height: 15px;
-  background-position: -125.5px -316px;
+  background-position: -100.5px -316px;
 }
 
 .thum_list li .btn_like2.on::before {
@@ -7294,7 +7294,7 @@ input[type="radio"].type_btn_radio + label {
   top: -1px;
   width: 12px;
   height: 10px;
-  background-position: -355.5px -217.5px;
+  background-position: -355.5px -237.5px;
 }
 
 .chatting_area .chatting_view > li .chat_area .chat_view.img {
@@ -7349,7 +7349,7 @@ input[type="radio"].type_btn_radio + label {
   top: 1px;
   width: 12px;
   height: 10px;
-  background-position: -355.5px -237.5px;
+  background-position: -355.5px -217.5px;
 }
 
 .chatting_area .chatting_view > li.answer .chat_area .chat_view.img {
@@ -7616,7 +7616,7 @@ input[type="radio"].type_btn_radio + label {
   content: '';
   width: 15px;
   height: 15px;
-  background-position: -125.5px -316px;
+  background-position: -100.5px -316px;
   display: block;
   position: absolute;
   top: 2px;
@@ -7627,7 +7627,7 @@ input[type="radio"].type_btn_radio + label {
   content: '';
   width: 15px;
   height: 15px;
-  background-position: -150.5px -316px;
+  background-position: -75.5px -316px;
   display: block;
   position: absolute;
   top: 2px;
@@ -7638,7 +7638,7 @@ input[type="radio"].type_btn_radio + label {
   content: '';
   width: 15px;
   height: 15px;
-  background-position: -175.5px -316px;
+  background-position: -50.5px -316px;
   display: block;
   position: absolute;
   top: 2px;
@@ -7843,7 +7843,7 @@ input[type="radio"].type_btn_radio + label {
   top: 0;
   width: 25px;
   height: 25px;
-  background-position: -105px -253px;
+  background-position: 0px -253px;
 }
 
 .serv_wrap .serv_review_wrap .review_list li {
@@ -7906,7 +7906,7 @@ input[type="radio"].type_btn_radio + label {
   content: '';
   width: 15px;
   height: 15px;
-  background-position: -125.5px -316px;
+  background-position: -100.5px -316px;
   position: absolute;
   top: 50%;
   left: 0;
@@ -8029,7 +8029,7 @@ input[type="radio"].type_btn_radio + label {
   content: '';
   width: 25px;
   height: 25px;
-  background-position: -35px -253px;
+  background-position: -105px -253px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -8085,7 +8085,7 @@ input[type="radio"].type_btn_radio + label {
   margin-top: -4px;
   width: 10px;
   height: 6px;
-  background-position: -332.5px -64px;
+  background-position: -332.5px -80px;
 }
 
 .more_wrap {
@@ -8586,7 +8586,7 @@ input[type="radio"].type_btn_radio + label {
   display: block;
   width: 50px;
   height: 50px;
-  background-position: -242.5px 0px;
+  background-position: -60px -193px;
 }
 
 .buy_booking .end span {
@@ -8873,13 +8873,13 @@ input[type="radio"].type_btn_radio + label {
 .category_list li .cate_link.ic_cl1:after {
   width: 55px;
   height: 55px;
-  background-position: 0px 0px;
+  background-position: -65px 0px;
 }
 
 .category_list li .cate_link.ic_cl2:after {
   width: 55px;
   height: 55px;
-  background-position: -65px 0px;
+  background-position: -130px -65px;
 }
 
 .category_list li .cate_link.ic_cl3:after {
@@ -8903,7 +8903,7 @@ input[type="radio"].type_btn_radio + label {
 .category_list li .cate_link.ic_cl6:after {
   width: 55px;
   height: 55px;
-  background-position: -130px -65px;
+  background-position: 0px 0px;
 }
 
 .category_list li .cate_link.ic_cl7:after {
@@ -8961,7 +8961,7 @@ input[type="radio"].type_btn_radio + label {
   margin-left: -25px;
   width: 50px;
   height: 50px;
-  background-position: 0px -193px;
+  background-position: -242.5px -120px;
 }
 
 .reserv_detail_wrap .detail_tit.end:after {
@@ -8972,7 +8972,7 @@ input[type="radio"].type_btn_radio + label {
   margin-left: -25px;
   width: 50px;
   height: 50px;
-  background-position: -242.5px 0px;
+  background-position: -60px -193px;
 }
 
 .reserv_detail_wrap .detail_tit.cancel:after {
@@ -8983,7 +8983,7 @@ input[type="radio"].type_btn_radio + label {
   margin-left: -25px;
   width: 50px;
   height: 50px;
-  background-position: -242.5px -120px;
+  background-position: -242.5px 0px;
 }
 
 .reserv_detail_wrap .cancel_box {
@@ -9233,7 +9233,7 @@ input[type="radio"].type_btn_radio + label {
 .expert_profile .link_connect li a.ic_call:after {
   width: 24px;
   height: 24px;
-  background-position: -99px -159px;
+  background-position: -65px -159px;
 }
 
 .expert_profile .prd_desc {
@@ -9815,7 +9815,7 @@ input[type="radio"].type_btn_radio + label {
   margin-top: -8px;
   width: 15px;
   height: 15px;
-  background-position: -75.5px -316px;
+  background-position: -125.5px -316px;
 }
 
 .btn_stat_reserv.stat_disabled {
@@ -9825,7 +9825,7 @@ input[type="radio"].type_btn_radio + label {
 .btn_stat_reserv.stat_disabled:after {
   width: 15px;
   height: 15px;
-  background-position: -50.5px -316px;
+  background-position: -150.5px -316px;
 }
 
 .btn_chk_reserv {
@@ -10068,7 +10068,7 @@ input[type="radio"].type_btn_radio + label {
   content: '';
   width: 15px;
   height: 15px;
-  background-position: -125.5px -316px;
+  background-position: -100.5px -316px;
   display: block;
   position: absolute;
   top: 2px;
@@ -10079,7 +10079,7 @@ input[type="radio"].type_btn_radio + label {
   content: '';
   width: 15px;
   height: 15px;
-  background-position: -150.5px -316px;
+  background-position: -75.5px -316px;
   display: block;
   position: absolute;
   top: 2px;
@@ -10090,7 +10090,7 @@ input[type="radio"].type_btn_radio + label {
   content: '';
   width: 15px;
   height: 15px;
-  background-position: -175.5px -316px;
+  background-position: -50.5px -316px;
   display: block;
   position: absolute;
   top: 2px;
