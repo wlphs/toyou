@@ -7,6 +7,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>TOYOUHOME</title>
         <link rel="stylesheet" href="/resources/css/library/fullpage.min.css">
+        <link rel="stylesheet" href="/resources/css/library/swiper.css">
         <link rel="stylesheet" href="/resources/css/intro.css">
 
         <!--[if lt IE 9]>
@@ -14,12 +15,13 @@
 	<![endif]-->
         <script type="text/javascript" src="/resources/js/library/jquery.min.js"></script>
         <script type="text/javascript" src="/resources/js/library/fullpage.js"></script>
+        <script type="text/javascript" src="/resources/js/library/swiper.js"></script>
 
     <body>
         <div class="wrapper">
 
             <header id="header" class="header">
-                <h1 class="logo"><a href="#"><img src="/resources/images/intro/pc_logo.png" alt="TOYOUHOME"></a></h1>
+                <h1 class="logo"><a href="#intro"><img src="/resources/images/intro/pc_logo.png" alt="TOYOUHOME"></a></h1>
                 <div class="util">
                     <span class="util_txt">투유 모바일앱 이용하기</span>
 
@@ -63,8 +65,32 @@
                                             집에서 홈서비스 받아요!</p>
                                     </div>
                                     <div class="motion_wrap">
-                                        <div class="m_cont"><img src="/resources/images/intro/pc_phone_cont1.jpg" alt=""></div>
+                                        <div class="m_cont">
+                                            <div class="swiper-container js-page1_swiper intro_swiper">
+                                                <ul class="swiper-wrapper">
+                                                    <li class="swiper-slide"><img src="/resources/images/intro/pc_phone_cont10.jpg" alt=""></li>
+                                                    <li class="swiper-slide"><img src="/resources/images/intro/pc_phone_cont11.jpg" alt=""></li>
+                                                    <li class="swiper-slide"><img src="/resources/images/intro/pc_phone_cont12.jpg" alt=""></li>
+                                                    <li class="swiper-slide"><img src="/resources/images/intro/pc_phone_cont13.jpg" alt=""></li>
+                                                    <li class="swiper-slide"><img src="/resources/images/intro/pc_phone_cont14.jpg" alt=""></li>
+                                                </ul>
+                                            </div>
+
+                                        </div>
                                         <div class="m_case"><img src="/resources/images/intro/pc_phonewrap1.png" alt=""></div>
+                                        <script>
+                                            var m_swiper = new Swiper('.js-page1_swiper', {
+                                                effect: 'fade',
+                                                loop: false,
+                                                allowTouchMove: false,
+                                                autoplay: {
+                                                    delay: 3000,
+                                                },
+                                                on: {
+                                                    slideChangeTransitionStart: function() {}
+                                                }
+                                            })
+                                        </script>
                                     </div>
                                 </div>
                             </div>
@@ -76,11 +102,14 @@
                                         <p class="sm_txt mt35">원하는 시간에, 원하는 장소로<br>
                                             검증된 투유 전문가가 찾아갑니다.</p>
                                     </div>
+                                    <div class="motion_wrap">
+                                        <div class="m_case"><img src="/resources/images/intro/pc_phonewrap2.png" alt=""></div>
+                                    </div>
                                 </div>
                             </div>
                             <div class="sm_section toyou_page3" id="">
                                 <div class="sm_inner">
-                                    <div class="descript pos_md js-pos_md w100p">
+                                    <div class="descript w100p">
                                         <p class="sm_tit tac">
                                             모바일 간편 예약<br>
                                             <b>홈서비스</b>
@@ -98,8 +127,46 @@
                                     <div class="descript pos_md js-pos_md w100p">
                                         <p class="sm_tit tac">투유 홈서비스가 특별한 이유<br>
                                             <b>지금 확인해 보세요!</b></p>
+
+                                        <div class="video_wrap">
+                                            <div class="rel js-video">
+                                                <video width="764" height="436" id="video0" poster="/resources/images/intro/pc_video_poster.jpg">
+                                                    <source src="/resources/images/intro/flower.mp4" type="video/mp4">
+
+                                                    Sorry, your browser doesn't support embedded videos.
+                                                </video>
+                                                <a href="#" class="video_play"></a>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
+                                <script>
+                                    var v_stat = false;
+                                    $('.video_play').on('click', function() {
+                                        if ($(this).hasClass('on')) {
+                                            $('#video0').trigger('pause');
+                                            $(this).removeClass('on')
+                                        } else {
+                                            $('#video0').trigger('play');
+                                            $(this).addClass('on')
+                                        }
+
+                                        //$('.video_play').hide();
+                                        return false;
+                                    })
+                                    $("#video0").on("ended", function() {
+                                        $('.video_play').removeClass('on');
+                                    });
+
+
+
+                                    $('.js-video').on('mouseenter', function() {
+                                        $('.video_play').show();
+                                    })
+                                    $('.js-video').on('mouseleave', function() {
+                                        if ($('.video_play').hasClass('on')) $('.video_play').hide();
+                                    })
+                                </script>
                             </div>
                             <div class="sm_section toyou_page5" id="">
                                 <div class="sm_inner">
@@ -227,7 +294,7 @@
                     </section>
                     <script>
                         function section_resize() {
-                            var wh = window.innerHeight, //$(window).innerHeight(),
+                            var wh = window.innerHeight,
                                 ww = window.innerWidth,
                                 hh = $('#header').height();
 
@@ -240,10 +307,9 @@
                             })
 
                             $('.toyou_page0 .motion_wrap').css("transform", "scale(" + (wh / 2) / 700 * 1.2 + ")");
-
-                            //$('.toyou_page0 .motion_wrap').css("transform","scale("+(wh/2)/700*1.2+")");
-
-                            $('.toyou_page3 .motion_wrap').css("transform", "scale(" + (wh / 2) / 700 * 1.2 + ")");
+                            $('.toyou_page1 .motion_wrap').css("transform", "scale(" + (wh / 2) / 550 * 1.2 + ")");
+                            $('.toyou_page2 .motion_wrap').css("transform", "scale(" + (wh / 2) / 550 * 1.2 + ")");
+                            $('.toyou_page3 .motion_wrap').css("transform", "scale(" + (wh / 2) / 650 * 1.2 + ")");
                         }
                         $(window).on('resize', section_resize);
                         $(window).on('load', section_resize)
@@ -307,6 +373,14 @@
                                 if (origin) {
                                     destroyMotion($('.sm_section').eq(origin.index));
                                 }*/
+                                //console.log(destination.index);
+                                if (destination.index) {
+                                    m_swiper.autoplay.start();
+                                } else {
+                                    m_swiper.autoplay.stop();
+                                    m_swiper.slideTo(0, 0)
+                                }
+
                             },
                             onLeave: function(origin, destination, direction) { // 출발
                                 $('.toyou_wrap').css('background-position-y', destination.index * 12.5 + "%");
@@ -320,6 +394,8 @@
                                     $('.sm_section').eq(destination.index).addClass('open');
                                 }
                                 section_resize();*/
+
+                                m_swiper.autoplay.stop();
                             }
                         });
 
