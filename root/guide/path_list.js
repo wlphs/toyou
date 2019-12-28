@@ -1478,9 +1478,9 @@ __CONSTANT_LIST = [
         dep2 		: '',
         dep3 		: '',
         dep4 		: '',
-        url 		: '/html/.html',
-        pubUpdate 	: '2019-0000',
-        etc 		: '2019-1201',
+        url 		: '/html/intro/web.html',
+        pubUpdate 	: '2019-1228',
+        etc 		: '2019-1228',
     },
 	{
         stateLine   : "", 

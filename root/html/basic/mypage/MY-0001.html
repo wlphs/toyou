@@ -89,7 +89,8 @@
                     <li><a href="#" class="btn_menu_arrow">버전 정보 (2.72) <span class="sm_txt colorP">최신버전(3.1)으로 업데이트하기</span></a></li>
                     <li><a href="#" class="btn_menu_arrow">이용 약관 및 개인정보 보호정책</a></li>
                     <li><a href="#" class="btn_menu_arrow js-logout">로그아웃</a></li>
-                    <li><a href="#" class="btn_menu_arrow js-secession">회원탈퇴 <span class="sm_txt">개인 정보와 설정이 모두 삭제됩니다.</span></a></li>
+                    <!-- 191228 클래스 수정 -->
+                    <li><a href="#" class="btn_menu_arrow js-withdrawal">회원탈퇴 <span class="sm_txt">개인 정보와 설정이 모두 삭제됩니다.</span></a></li>
                 </ul>
 
             </div>
@@ -151,7 +152,57 @@
             </div>
         </div>
     </div>
+    <!-- 191228 추가 s -->
+    <div id="pop_withdrawal" class="trp popupfixed-wrap">
+        <div class="popup-align">
+            <div class="popup-vertical caution">
+                <div class="popup-layer " style="width:100%;">
+                    <section class="section pd0" style="display: block;">
+                        <div class="cont_inner caution_wrap">
+                            <p class="tit">탈퇴하시겠습니까?</p>
+                            <p class="txt2">탈퇴 후 회원정보 및 개인서비스 이용기록은 모두 <br>삭제되며, 복구가 불가능합니다.</p>
 
+                            <div class="btn_set-double">
+                                <div class="btn_item"><a href="#" class="btn btn_lg btn_gray_w js-closepop ">취소</a></div>
+                                <div class="btn_item"><a href="#" class="btn btn_lg btn_point">회원탈퇴</a></div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        $("#pop_withdrawal").dialog({
+            autoOpen: false,
+            modal: true,
+            width: '100%',
+            position: {
+                my: "bottom",
+                at: "bottom"
+            },
+            create: function(event) {
+                $(".js-withdrawal").on("click", function() {
+                    modalFixedControl.open($(event.target));
+                    $(event.target).dialog("open");
+                    return false;
+                });
+            },
+            resizable: false,
+            open: function(event) {
+                $('.js-closepop', $(event.target)).off('click').on('click', function() {
+                    $(event.target).dialog("close");
+                    return false;
+                })
+            },
+            close: function() {
+                modalFixedControl.close();
+            }
+        });
+    </script>
+
+    <!-- 191228 추가 e -->
 
     <script>
         $("#pop_logout").dialog({
