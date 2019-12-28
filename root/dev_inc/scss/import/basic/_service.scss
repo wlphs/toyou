@@ -195,6 +195,9 @@
 .service { 
     .service.thum_list { margin-left:20px;}
 }
+.search_num { display:block; background:#f5f5f5; text-align:right; font-size: 13px; line-height: 30px; padding: 0 25px;
+    span { color: $colorP; font-weight: 500; }
+}
 .list_category_main { position: relative; width: 100%; overflow-x: auto; overflow-y: hidden; white-space: nowrap; -webkit-overflow-scrolling: touch;
     ul { width: 100%; font-size: 0; line-height: 0; white-space: nowrap; margin-left: 25px;border-bottom: 5px solid #f5f5f5;
         li { position: relative; display: inline-block;clear: both; margin-left: 5px; 

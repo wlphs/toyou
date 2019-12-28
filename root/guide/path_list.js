@@ -452,6 +452,16 @@ __CONSTANT_LIST = [
     },
 	{
         stateLine   : "", 
+        dep1 		: '',
+        dep2 		: '추천',
+        dep3 		: '',
+        dep4 		: '',
+        url 		: '/html/basic/service/SV-0014.html',
+        pubUpdate 	: '2019-0000',
+        etc 		: '2019-1117',
+    },
+	{
+        stateLine   : "", 
         dep1 		: '알림',
         dep2 		: '목록',
         dep3 		: '',

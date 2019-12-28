@@ -17,7 +17,7 @@
             img { width: 100%;}
         }
         .visual_txt {
-            .txt { position:absolute; left:32px; bottom:30px; color:#fff; font-size: 19px; font-weight: 300; line-height: 26px; z-index: 1;
+            .txt { position:absolute; left:32px; bottom:30px; color:#fff; font-size: 19px; font-weight: 300; line-height: 27px; z-index: 1;
                 em { display:block; @include sp_icons($icon_logo_w); margin-bottom: 9px;}
                 b { display:block; font-weight: 700;}
                 .txt_toyou { color:$colorP; font-weight: 700; margin-top:7px; display:inline-block;}
