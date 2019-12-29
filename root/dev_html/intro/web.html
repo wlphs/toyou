@@ -14,6 +14,8 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" 	type="text/javascript" charset="utf-8"></script>
 	<![endif]-->
 	<script type="text/javascript" src="/resources/js/library/jquery.min.js"></script>
+	<script type="text/javascript" src="/resources/js/library/easings.min.js"></script>
+	<script type="text/javascript" src="/resources/js/library/scrolloverflow.min.js"></script>
 	<script type="text/javascript" src="/resources/js/library/fullpage.js"></script>
 	<script type="text/javascript" src="/resources/js/library/swiper.js"></script>
 <body>
@@ -84,7 +86,7 @@ var m_swiper = new Swiper('.js-page1_swiper', {
     loop : false,
 	allowTouchMove:false,
 	autoplay: {
-		delay: 3000,
+		delay: 2000,
 	},
     on: {
         slideChangeTransitionStart : function() {
@@ -104,7 +106,13 @@ var m_swiper = new Swiper('.js-page1_swiper', {
 							검증된 투유 전문가가 찾아갑니다.</p>
 					</div>
 					<div class="motion_wrap">
-						<div class="m_case"><img src="/resources/images/intro/pc_phonewrap2.png" alt=""></div>
+						<div class="m_case">
+							<div id="animation_container" style="background-color:rgba(255, 255, 255, 0); width:482px; height:765px">
+								<canvas id="canvas" width="482" height="765" style="position: absolute; display: block; background-color:rgba(255, 255, 255, 0);"></canvas>
+								<div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:482px; height:765px; position: absolute; left: 0px; top: 0px; display: block;">
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -153,7 +161,6 @@ var m_swiper = new Swiper('.js-page1_swiper', {
 							$(this).addClass('on')
 						}
 						
-						//$('.video_play').hide();
 						return false;
 					})
 					$("#video0").on("ended", function() {
@@ -295,10 +302,6 @@ var m_swiper = new Swiper('.js-page1_swiper', {
 			</div>
 		</section>
 		<script>
-
-
-
-
 		    function section_resize() {
 		        var wh = window.innerHeight,
 		            ww = window.innerWidth,
@@ -318,53 +321,12 @@ var m_swiper = new Swiper('.js-page1_swiper', {
 				$('.toyou_page3 .motion_wrap').css("transform","scale("+(wh/2)/650*1.2+")");
 		    }
 		    $(window).on('resize', section_resize);
-			$(window).on('load',section_resize)
+			$(window).on('load',function() {
+				$('.sm_inner').css('opacity',1);
+				section_resize();
+			});
 		    section_resize();
 
-		    var _wheelAble = true;
-		    var _prevDeltaY = 0;
-
-
-		    function startMotion($this, num) {
-		        /*if ($('.iMotion', $this).length > 0) {
-		            var url = $('.iMotion', $this).data('url');
-		            if (window.innerWidth < 760 && $('.iMotion', $this).data('mburl')) {
-		                url = $('.iMotion', $this).data('mburl');
-		            }
-		            $('.iMotion', $this).css('opacity', 0);
-		            $('.iMotion', $this).attr('src', url);
-		            $('.iMotion', $this).load(function() {
-		                setTimeout(function() {
-		                    $('.iMotion', $this).css('opacity', 1);
-		                }, 10)
-		            })
-		        }*/
-		    }
-
-		    /* 181123 수정 s */
-            function destroyMotion($this, num) {
-                /*var is_arr = fp_scrolloverflow.iscrollHandler.iScrollInstances;
-                for (var i = 0; i < is_arr.length; i++) {
-                    if ($(is_arr[i].wrapper, $this).length > 0) {
-                        is_arr[i].scrollTo(0, 0);
-                    }
-                }
-
-
-                window.fp_scrolloverflow.iscrollHandler
-                if ($('.iMotion', $this).length > 0) {
-                    $('.iMotion', $this).attr('src', '');
-
-                    $this.removeClass('remove_dummy');
-
-                }*/
-            }
-            /* 181123 수정 e */
-
-		    function dummyImage(num) {
-		        $('.sm_section').eq(num).addClass('remove_dummy');
-
-		    }
 
 		    /* 180920 수정 s */
 		    var myFullpage = new fullpage('#fullpage', {
@@ -372,52 +334,106 @@ var m_swiper = new Swiper('.js-page1_swiper', {
 		        scrollOverflow: true,
 		        sectionSelector: '.sm_section',
 		        afterLoad: function(origin, destination, direction) { // 도착
-		            /*$('.sm_section').removeClass('open');
-		            $('.sm_section').removeClass('remove_dummy');
-		            $('.sm_section').eq(destination.index).addClass('open');
-		            startMotion($('.sm_section').eq(destination.index));
-		            if (origin) {
-		                destroyMotion($('.sm_section').eq(origin.index));
-		            }*/
-					//console.log(destination.index);
-					if (destination.index) {
+					if (destination.index ==1) {
 						m_swiper.autoplay.start();
 					}
 					else {
 						m_swiper.autoplay.stop();
 						m_swiper.slideTo(0,0)
 					}
+
+					if (destination.index==2) {
+						stage.getChildAt(0).play();
+					}
+					else {
+						stage.getChildAt(0).gotoAndStop(0);
+					}
 					
 		        },
 		        onLeave: function(origin, destination, direction) { // 출발
 				$('.toyou_wrap').css('background-position-y',destination.index*12.5 + "%");
-		            /*section_resize();
-		            if (destination.index == 0) {
-		                $('#header').removeClass('hide_header');
-		            } else {
-		                $('#header').addClass('hide_header');
-		            }
-		            if (destination.index == 6) {
-		                $('.sm_section').eq(destination.index).addClass('open');
-		            }
-		            section_resize();*/
-					
+		           
 					m_swiper.autoplay.stop();
 		        }
 		    });
-
-		    function getDummyImage() {
-		        /*var w = $('.mini_page1 .iMotion_dummy').width(),
-		            h = $('.mini_page1 .iMotion_dummy').height();
-		        return {
-		            width: w,
-		            height: h
-		        };*/
-		    }
 		</script>
 		<!-- 181001 스크립트 수정 e -->
 	</div>
 	<!-- //바디 컨텐츠 -->
+
+
+
+	
+<script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script>
+<script src="/resources/js/lock.js"></script>
+<script>
+	
+	$(window).on('load', init);
+var canvas, stage, exportRoot, anim_container, dom_overlay_container, fnStartAnimation;
+function init() {
+	console.log('init');
+	canvas = document.getElementById("canvas");
+	anim_container = document.getElementById("animation_container");
+	dom_overlay_container = document.getElementById("dom_overlay_container");
+	images = images||{};
+	ss = ss||{};
+	var loader = new createjs.LoadQueue(false);
+	loader.addEventListener("fileload", handleFileLoad);
+	loader.addEventListener("complete", handleComplete);
+	loader.loadManifest(lib.properties.manifest);
+}
+function handleFileLoad(evt) {	
+	if (evt.item.type == "image") { images[evt.item.id] = evt.result; }	
+}
+function handleComplete(evt) {
+	var queue = evt.target;
+	var ssMetadata = lib.ssMetadata;
+	for(i=0; i<ssMetadata.length; i++) {
+		ss[ssMetadata[i].name] = new createjs.SpriteSheet( {"images": [queue.getResult(ssMetadata[i].name)], "frames": ssMetadata[i].frames} )
+	}
+	exportRoot = new lib.lock();
+	stage = new createjs.Stage(canvas);
+	stage.addChild(exportRoot);	
+	fnStartAnimation = function() {
+		createjs.Ticker.setFPS(lib.properties.fps);
+		createjs.Ticker.addEventListener("tick", stage);
+	}	    
+	function makeResponsive(isResp, respDim, isScale, scaleType) {		
+		var lastW, lastH, lastS=1;		
+		window.addEventListener('resize', resizeCanvas);		
+		resizeCanvas();		
+		function resizeCanvas() {			
+			var w = lib.properties.width, h = lib.properties.height;			
+			var iw = window.innerWidth, ih=window.innerHeight;			
+			var pRatio = window.devicePixelRatio || 1, xRatio=iw/w, yRatio=ih/h, sRatio=1;			
+			if(isResp) {                
+				if((respDim=='width'&&lastW==iw) || (respDim=='height'&&lastH==ih)) {                    
+					sRatio = lastS;                
+				}				
+				else if(!isScale) {					
+					if(iw<w || ih<h)						
+						sRatio = Math.min(xRatio, yRatio);				
+				}				
+				else if(scaleType==1) {					
+					sRatio = Math.min(xRatio, yRatio);				
+				}				
+				else if(scaleType==2) {					
+					sRatio = Math.max(xRatio, yRatio);				
+				}			
+			}			
+			canvas.width = w*pRatio*sRatio;			
+			canvas.height = h*pRatio*sRatio;
+			canvas.style.width = dom_overlay_container.style.width = anim_container.style.width =  w*sRatio+'px';				
+			canvas.style.height = anim_container.style.height = dom_overlay_container.style.height = h*sRatio+'px';
+			stage.scaleX = pRatio*sRatio;			
+			stage.scaleY = pRatio*sRatio;			
+			lastW = iw; lastH = ih; lastS = sRatio;		
+		}
+	}
+	makeResponsive(false,'both',false,1);	
+	fnStartAnimation();
+}
+</script>
 </div></div>
 	</div>
 </body>

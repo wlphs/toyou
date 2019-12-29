@@ -299,7 +299,7 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/lock_atlas_.png?1577628908426", id:"lock_atlas_"}
+		{src:"/resources/images/intro/lock_atlas_.png?1577628908426", id:"lock_atlas_"}
 	],
 	preloads: []
 };

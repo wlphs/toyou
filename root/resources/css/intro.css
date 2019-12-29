@@ -2143,6 +2143,8 @@ body {
   width: 1000px;
   position: relative;
   height: 100%;
+  opacity: 0;
+  transition: .3s opacity;
 }
 
 .sm_section .sm_inner .sm_tit {
@@ -2176,6 +2178,7 @@ body {
 
 .sm_section .sm_inner .btn_round {
   height: 60px;
+  transition: .2s all;
   border-radius: 30px;
   text-align: center;
   width: 270px;
@@ -2198,8 +2201,10 @@ body {
   padding-left: 36px;
 }
 
-.sm_section .sm_inner .btn_round span:after {
+.sm_section .sm_inner .btn_round span:before {
   content: '';
+  transition: .2s all;
+  opacity: 1;
   position: absolute;
   left: 0;
   top: 50%;
@@ -2208,12 +2213,44 @@ body {
   height: 27px;
 }
 
-.sm_section .sm_inner .btn_ios span:after {
+.sm_section .sm_inner .btn_round span:after {
+  content: '';
+  transition: .2s all;
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin-top: -14px;
+  width: 24px;
+  height: 27px;
+}
+
+.sm_section .sm_inner .btn_round:hover {
+  background: #ff5c5c;
+}
+
+.sm_section .sm_inner .btn_round:hover span:before {
+  opacity: 0;
+}
+
+.sm_section .sm_inner .btn_round:hover span:after {
+  opacity: 1;
+}
+
+.sm_section .sm_inner .btn_ios span:before {
   background: url("/resources/images/intro/logo_ios.png");
 }
 
-.sm_section .sm_inner .btn_android span:after {
+.sm_section .sm_inner .btn_android span:before {
   background: url("/resources/images/intro/logo_android.png");
+}
+
+.sm_section .sm_inner .btn_ios span:after {
+  background: url("/resources/images/intro/logo_ios_over.png");
+}
+
+.sm_section .sm_inner .btn_android span:after {
+  background: url("/resources/images/intro/logo_android_over.png");
 }
 
 .sm_section .descript.pos_md {
@@ -2287,6 +2324,10 @@ body {
 .user_list li .cont {
   font-size: 16px;
   margin-top: 35px;
+}
+
+.toyou_page0 .sm_inner {
+  min-height: 700px;
 }
 
 .toyou_page0 .descript {
@@ -2390,6 +2431,10 @@ body {
   margin-top: -370px;
 }
 
+.toyou_page3 .sm_inner {
+  min-height: 700px;
+}
+
 .toyou_page3 .descript {
   position: absolute;
   top: 0;
@@ -2440,6 +2485,10 @@ body {
   position: relative;
 }
 
+.toyou_page4 .sm_inner {
+  min-height: 900px;
+}
+
 .toyou_page4 .video_wrap {
   height: 480px;
   width: 820px;
@@ -2461,6 +2510,18 @@ body {
 
 .toyou_page4 .video_wrap .video_play.on {
   background-position-x: -91px;
+}
+
+.toyou_page5 .sm_inner {
+  min-height: 900px;
+}
+
+.toyou_page6 .sm_inner {
+  min-height: 900px;
+}
+
+.toyou_page7 .sm_inner {
+  min-height: 900px;
 }
 
 .w100p {
