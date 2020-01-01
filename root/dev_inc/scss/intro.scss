@@ -86,9 +86,9 @@
     }
     &.fp-completely .motion_wrap .m_cont img {
         -webkit-animation-name: ani0; 
-        -webkit-animation-duration: 32s; 
+        -webkit-animation-duration: 26s; 
         animation-name: ani0;
-        animation-duration: 32s;
+        animation-duration: 26s;
         animation-timing-function: cubic-bezier(0.2, 0, 1, 1);
         animation-iteration-count: infinite;
     }
@@ -135,9 +135,9 @@
     
     &.fp-completely .motion_wrap .m_cont img {
         -webkit-animation-name: ani1; 
-        -webkit-animation-duration: 14s; 
+        -webkit-animation-duration: 12s; 
         animation-name: ani1;
-        animation-duration: 14s;
+        animation-duration: 12s;
         animation-timing-function: cubic-bezier(0.2, 0, 1, 1);
         animation-iteration-count: infinite;
     }
@@ -184,15 +184,19 @@
 @-webkit-keyframes ani0 {
     0% {opacity:1;margin-top:0;}
     4% {opacity:1;margin-top:0;}
-    96% {opacity:1;margin-top:-1400px;}
-    100% {opacity:0;margin-top:-1400px;}
+    92% {opacity:1;margin-top:-1400px;}
+    96% {opacity:0;margin-top:-1400px;}
+    97% {opacity:0;margin-top:0px;}
+    100% {opacity:1;margin-top:0px;}
 }
   
 @keyframes ani0 {
     0% {opacity:1;margin-top:0;}
     4% {opacity:1;margin-top:0;}
-    96% {opacity:1;margin-top:-1400px;}
-    100% {opacity:0;margin-top:-1400px;}
+    92% {opacity:1;margin-top:-1400px;}
+    96% {opacity:0;margin-top:-1400px;}
+    97% {opacity:0;margin-top:0px;}
+    100% {opacity:1;margin-top:0px;}
 }
 
 
@@ -200,12 +204,16 @@
     0% {opacity:1;margin-top:0;}
     4% {opacity:1;margin-top:0;}
     92% {opacity:1;margin-top:-400px;}
-    100% {opacity:0;margin-top:-400px;}
+    96% {opacity:0;margin-top:-400px;}
+    97% {opacity:0;margin-top:0px;}
+    100% {opacity:1;margin-top:0px;}
 }
   
 @keyframes ani1 {
     0% {opacity:1;margin-top:0;}
     4% {opacity:1;margin-top:0;}
     92% {opacity:1;margin-top:-400px;}
-    100% {opacity:0;margin-top:-400px;}
+    96% {opacity:0;margin-top:-400px;}
+    97% {opacity:0;margin-top:0px;}
+    100% {opacity:1;margin-top:0px;}
 }
