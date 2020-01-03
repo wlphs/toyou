@@ -1,0 +1,500 @@
+<!DOCtype- html>
+    <html lang="ko">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" id="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>TOYOUHOME</title>
+        <link rel="stylesheet" href="/resources/css/library/fullpage.min.css">
+        <link rel="stylesheet" href="/resources/css/library/swiper.css">
+        <link rel="stylesheet" href="/resources/css/intro_mb.css">
+
+        <!--[if lt IE 9]>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" 	type="text/javascript" charset="utf-8"></script>
+	<![endif]-->
+        <script type="text/javascript" src="/resources/js/library/jquery.min.js"></script>
+        <script type="text/javascript" src="/resources/js/library/easings.min.js"></script>
+        <script type="text/javascript" src="/resources/js/library/scrolloverflow.min.js"></script>
+        <script type="text/javascript" src="/resources/js/library/fullpage.js"></script>
+        <script type="text/javascript" src="/resources/js/library/swiper.js"></script>
+
+    <body>
+        <div class="wrapper">
+
+            <header id="header" class="header">
+                <div class="util">
+                    <div class="item">
+                        <a href="#" class="btn_round btn_ios"><span class="txt">앱스토어</span></a>
+                    </div>
+                    <div class="item">
+                        <a href="#" class="btn_round btn_android"><span class="txt">구글플레이</span></a>
+                    </div>
+                </div>
+            </header>
+
+            <div id="container">
+                <div id="contents">
+
+                    <!-- 바디 컨텐츠 -->
+                    <div class="body-contents toyou_wrap">
+
+                        <section class="" id="fullpage">
+                            <div class="sm_section toyou_page0" id="">
+                                <div class="sm_inner">
+                                    <div class="descript tac">
+                                        <div class="tac"><img src="/resources/images/intro/mb_logo.png" alt="" width="142"></div>
+                                        <p class="sm_txt_sm mt30">그녀들을 위한 뷰티ㆍ헬스케어</p>
+                                        <p class="sm_tit mt5"><b>홈 서비스, 투유홈</b></p>
+
+                                    </div>
+                                    <div class="motion_wrap">
+                                        <div class="m_cont"><img src="/resources/images/intro/pc_phone_cont0.jpg" alt=""></div>
+                                        <div class="m_case"><img src="/resources/images/intro/pc_phonewrap0.png" alt=""></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sm_section toyou_page1" id="">
+                                <div class="sm_inner">
+                                    <div class="descript tac">
+                                        <p class="sm_tit">왜
+                                            <b>투유 홈서비스</b><br>
+                                            인가요?</p>
+                                        <p class="sm_txt mt15">간편한 홈서비스,
+                                            오고가는 시간을 절약하고,<br>
+                                            집에서 홈서비스 받아요!</p>
+                                    </div>
+                                    <div class="motion_wrap">
+                                        <div class="m_cont">
+                                            <div class="swiper-container js-page1_swiper intro_swiper">
+                                                <ul class="swiper-wrapper">
+                                                    <li class="swiper-slide"><img src="/resources/images/intro/pc_phone_cont10.jpg" alt=""></li>
+                                                    <li class="swiper-slide"><img src="/resources/images/intro/pc_phone_cont11.jpg" alt=""></li>
+                                                    <li class="swiper-slide"><img src="/resources/images/intro/pc_phone_cont12.jpg" alt=""></li>
+                                                    <li class="swiper-slide"><img src="/resources/images/intro/pc_phone_cont13.jpg" alt=""></li>
+                                                    <li class="swiper-slide"><img src="/resources/images/intro/pc_phone_cont14.jpg" alt=""></li>
+                                                </ul>
+                                            </div>
+
+                                        </div>
+                                        <div class="m_case"><img src="/resources/images/intro/pc_phonewrap1.png" alt=""></div>
+                                        <script>
+                                            var m_swiper = new Swiper('.js-page1_swiper', {
+                                                effect: 'fade',
+                                                loop: false,
+                                                allowTouchMove: false,
+                                                autoplay: {
+                                                    delay: 2000,
+                                                },
+                                                on: {
+                                                    slideChangeTransitionStart: function() {}
+                                                }
+                                            })
+                                        </script>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sm_section toyou_page2" id="">
+                                <div class="sm_inner">
+                                    <div class="descript tac">
+                                        <p class="sm_tit">우리집이<br>
+                                            <b>제일 안전하니까</b></p>
+                                        <p class="sm_txt mt15">원하는 시간에, 원하는 장소로<br>
+                                            검증된 투유 전문가가 찾아갑니다.</p>
+                                    </div>
+                                    <div class="motion_wrap">
+                                        <div class="m_case">
+                                            <div id="animation_container" style="background-color:rgba(255, 255, 255, 0); width:482px; height:765px">
+                                                <canvas id="canvas" width="482" height="765" style="position: absolute; display: block; background-color:rgba(255, 255, 255, 0);"></canvas>
+                                                <div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:482px; height:765px; position: absolute; left: 0px; top: 0px; display: block;">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sm_section toyou_page3" id="">
+                                <div class="sm_inner">
+                                    <div class="descript w100p">
+                                        <p class="sm_tit tac">
+                                            <b>모바일 간편 예약<br>
+                                                홈서비스</b>
+                                        </p>
+                                    </div>
+
+                                    <div class="motion_wrap">
+                                        <div class="m_cont"><img src="/resources/images/intro/pc_phone_cont2.jpg" alt=""></div>
+                                        <div class="m_case"><img src="/resources/images/intro/pc_phonewrap1.png" alt=""></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sm_section toyou_page4" id="">
+                                <div class="sm_inner">
+                                    <div class="descript w100p">
+                                        <p class="sm_tit tac">투유 홈서비스가 <br>특별한 이유<br>
+                                            <b>지금 확인해 보세요!</b></p>
+
+                                        <div class="video_wrap mt40">
+                                            <div class="rel js-video">
+                                                <video width="776" height="436" id="video0" poster="/resources/images/intro/pc_video_poster.jpg">
+                                                    <source src="/resources/images/intro/flower.mp4" type="video/mp4">
+
+                                                    Sorry, your browser doesn't support embedded videos.
+                                                </video>
+                                                <a href="#" class="video_play"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <script>
+                                    var v_stat = false;
+                                    $('.video_play').on('click', function() {
+                                        if ($(this).hasClass('on')) {
+                                            $('#video0').trigger('pause');
+                                            $(this).removeClass('on')
+                                        } else {
+                                            $('#video0').trigger('play');
+                                            $(this).addClass('on')
+                                        }
+
+                                        return false;
+                                    })
+                                    $("#video0").on("ended", function() {
+                                        $('.video_play').removeClass('on');
+                                    });
+
+
+
+                                    $('.js-video').on('mouseenter', function() {
+                                        $('.video_play').show();
+                                    })
+                                    $('.js-video').on('mouseleave', function() {
+                                        if ($('.video_play').hasClass('on')) $('.video_play').hide();
+                                    })
+                                </script>
+                            </div>
+                            <div class="sm_section toyou_page5" id="">
+                                <div class="sm_inner">
+                                    <div class="descript w100p">
+                                        <p class="sm_tit tac">유저들이 말하는<br>
+                                            <b>TOYOU</b>
+                                        </p>
+                                    </div>
+                                    <div class="page5_swiper">
+                                        <div class="swiper-container js-page5_swiper">
+                                            <ul class="user_list swiper-wrapper">
+                                                <li class="swiper-slide">
+                                                    <div class="photo_wrap">
+                                                        <img src="/resources/images/intro/temp_user0.png" alt="">
+                                                    </div>
+                                                    <div class="user_cont">
+                                                        <p class="name">송혜교</p>
+                                                        <p class="cont">
+                                                            얼마전에 정말 중요한 미팅이 있어서 <br>
+                                                            프로페셔널하게 보이고 싶은 <br>
+                                                            날이었는데, 제가 상상하던 모습대로<br>
+                                                            정말 너무나 멋지게 변신<br>
+                                                            시켜주셨어요.<br>
+                                                            다음에 중요한 일이 있다면 꼭 또<br>
+                                                            한번 서비스 받아보고 싶어요!
+                                                        </p>
+                                                    </div>
+                                                </li>
+                                                <li class="swiper-slide">
+                                                    <div class="photo_wrap">
+                                                        <img src="/resources/images/intro/temp_user1.png" alt="">
+                                                    </div>
+                                                    <div class="user_cont">
+                                                        <p class="name">신민아</p>
+                                                        <p class="cont">
+                                                            유튜브 보고 따라해봐도 제대로 되지<br>
+                                                            않고, 남들 다 하는 거 말고 진짜<br>
+                                                            나한테 어울리는 메이크업을 해보고<br>
+                                                            싶었는데 여기서 완전 감동했어요.<br>
+                                                            주변에서도 다들 너무 예쁘다고<br>
+                                                            해줘서 너무 기분좋은 하루를 보냈<br>
+                                                            습니다.
+                                                        </p>
+                                                    </div>
+                                                </li>
+                                                <li class="swiper-slide">
+                                                    <div class="photo_wrap">
+                                                        <img src="/resources/images/intro/temp_user2.png" alt="">
+                                                    </div>
+                                                    <div class="user_cont">
+                                                        <p class="name">전지현</p>
+                                                        <p class="cont">
+                                                            얼마전에 정말 중요한 미팅이 있어서<br>
+                                                            프로페셔널하게 보이고 싶은 <br>
+                                                            날이었는데, 제가 상상하던 모습대로<br>
+                                                            정말 너무나 멋지게 변신<br>
+                                                            시켜주셨어요.<br>
+                                                            다음에 중요한 일이 있다면 꼭 또<br>
+                                                            한번 서비스 받아보고 싶어요!
+                                                        </p>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <script>
+                                    var m5_swiper = new Swiper('.js-page5_swiper', {
+                                        loop: false,
+                                        spaceBetween: 15,
+                                        slidesPerView: 1,
+                                        centeredSlides: true,
+                                        on: {
+                                            slideChangeTransitionStart: function() {}
+                                        }
+                                    })
+                                </script>
+
+                            </div>
+                            <div class="sm_section toyou_page6" id="">
+                                <div class="sm_inner">
+                                    <div class="descript w100p">
+                                        <p class="sm_tit tac">TOYOU 파트너사</p>
+                                        <div class="page6_swiper mt40">
+                                            <div class="swiper-container js-page5_swiper">
+                                                <ul class="partners_list swiper-wrapper">
+                                                    <li class="swiper-slide"><img src="/resources/images/intro/partner_img0.png" alt=""></li>
+                                                    <li class="swiper-slide"><img src="/resources/images/intro/partner_img1.png" alt=""></li>
+                                                    <li class="swiper-slide"><img src="/resources/images/intro/partner_img2.png" alt=""></li>
+                                                    <li class="swiper-slide"><img src="/resources/images/intro/partner_img3.png" alt=""></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <p class="sm_tit tac mt90">언론보도</p>
+                                        <div class="page6_swiper mt40">
+                                            <div class="swiper-container js-page5_swiper">
+                                                <ul class="partners_list swiper-wrapper">
+                                                    <li class="swiper-slide"><img src="/resources/images/intro/partner_img4.png" alt=""></li>
+                                                    <li class="swiper-slide"><img src="/resources/images/intro/partner_img5.png" alt=""></li>
+                                                    <li class="swiper-slide"><img src="/resources/images/intro/partner_img6.png" alt=""></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <script>
+                                    var m6_swiper = new Swiper('.js-page5_swiper', {
+                                        loop: false,
+                                        spaceBetween: 50,
+                                        slidesPerView: 1,
+                                        centeredSlides: true,
+                                        on: {
+                                            slideChangeTransitionStart: function() {}
+                                        }
+                                    })
+                                </script>
+                            </div>
+                            <div class="sm_section toyou_page7" id="">
+                                <div class="sm_inner">
+                                    <div class="descript js-hasft w100p">
+                                        <p class="sm_tit tac">지금 바로<br>
+                                            <b>투유 간편 홈서비스를<br> 시작해 보세요!</b></p>
+                                        <div class="btn_box mt25">
+                                            <a href="#" class="btn_round btn_ios"><span class="txt">아이폰으로 시작하기</span></a>
+                                            <a href="#" class="btn_round btn_android mt10"><span class="txt">안드로이드폰으로 시작하기</span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="footer">
+                                    <div class="footer-inner">
+                                        <div class="logo"><img src="/resources/images/intro/footer_logo.png" alt="TOYOUHOME"></div>
+                                        <div class="footer_desc">
+                                            <ul class="foot_list">
+                                                <li>(주)투유 코퍼레이션</li>
+                                                <li class="line">대표 홍길동</li>
+                                                <li class="pl0">사업자등록번호 123-12-12345</li>
+                                                <li class="pl0">통신판매업신고번호 2019-서울강남-12345호</li>
+                                            </ul>
+                                            <ul class="foot_list">
+                                                <li>주소 서울특별시 강남구 강남로로5길 7 AB타워 7층</li>
+                                                <li class="pl0">이메일 help@toyou.kr</li>
+                                            </ul>
+                                            <ul class="foot_list mt25">
+                                                <li>© TOYOU. ALL RIGHTS RESERVED.</li>
+                                            </ul>
+
+                                            <p class="caution_txt mt25">투유는 통신판매중개자이며 통신판매의 당사자가 아닙니다. 따라서 투유는 상품거래정보 및 거래에 대한 책임을 지지 않습니다.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <!-- footer -->
+
+
+
+
+                    </div>
+                    </section>
+                    <script>
+                        function section_resize() {
+                            var wh = window.innerHeight,
+                                ww = window.innerWidth,
+                                hh = $('#header').height();
+
+                            /*$('.pos_md').each(function() {
+                            	let _t = -($(this).innerHeight()-hh)/2;
+                            	if ($(this).hasClass('js-hasft')) {
+                            		_t -= $('.js-hasft').innerHeight()/2;
+                            	}
+                            	$(this).css('margin-top',_t) ;
+                            })*/
+
+                            $('.toyou_page0 .motion_wrap').css("transform", "scale(" + (wh / 2) / 700 * 1.2 + ")");
+                            $('.toyou_page1 .motion_wrap').css("transform", "scale(" + (wh / 2) / 650 * 1.2 + ")");
+                            $('.toyou_page2 .motion_wrap').css("transform", "scale(" + (wh / 2) / 550 * 1.2 + ")");
+                            $('.toyou_page3 .motion_wrap').css("transform", "scale(" + (wh / 2) / 550 * 1.2 + ")");
+
+                            let vh = $('.js-video video').width() / 776 * 436;
+                            $('.js-video video').height(vh);
+                        }
+                        $(window).on('resize', section_resize);
+                        $(window).on('load', function() {
+                            $('.sm_inner').css('opacity', 1);
+                            section_resize();
+                        });
+                        section_resize();
+
+
+                        /* 180920 수정 s */
+                        var myFullpage = new fullpage('#fullpage', {
+                            anchors: ['intro', 'why', 'safety', 'mobile', 'video', 'review', 'partners', 'start'],
+                            scrollOverflow: true,
+                            sectionSelector: '.sm_section',
+                            afterLoad: function(origin, destination, direction) { // 도착
+
+                                if (destination.index == 1) {
+
+                                    m_swiper.autoplay.start();
+                                } else {
+                                    m_swiper.autoplay.stop();
+                                    m_swiper.slideTo(0, 0)
+                                }
+
+                                if (destination.index == 2) {
+                                    stage.getChildAt(0).play();
+                                } else {
+                                    stage.getChildAt(0).gotoAndStop(0);
+                                }
+
+                            },
+                            onLeave: function(origin, destination, direction) { // 출발
+                                if (destination.index == 7) {
+                                    $('.header .util').addClass('over')
+                                    $('.header .util').removeClass('top')
+                                } else if (destination.index > 0) {
+                                    $('.header .util').removeClass('over')
+                                    $('.header .util').addClass('top')
+                                } else {
+                                    $('.header .util').removeClass('over')
+                                    $('.header .util').removeClass('top')
+                                }
+
+                                $('.toyou_wrap').css('background-position-y', destination.index * 12.5 + "%");
+
+                                m_swiper.autoplay.stop();
+                            }
+                        });
+                    </script>
+                    <!-- 181001 스크립트 수정 e -->
+                </div>
+                <!-- //바디 컨텐츠 -->
+
+
+
+
+                <script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script>
+                <script src="/resources/js/lock.js"></script>
+                <script>
+                    $(window).on('load', init);
+                    var canvas, stage, exportRoot, anim_container, dom_overlay_container, fnStartAnimation;
+
+                    function init() {
+                        console.log('init');
+                        canvas = document.getElementById("canvas");
+                        anim_container = document.getElementById("animation_container");
+                        dom_overlay_container = document.getElementById("dom_overlay_container");
+                        images = images || {};
+                        ss = ss || {};
+                        var loader = new createjs.LoadQueue(false);
+                        loader.addEventListener("fileload", handleFileLoad);
+                        loader.addEventListener("complete", handleComplete);
+                        loader.loadManifest(lib.properties.manifest);
+                    }
+
+                    function handleFileLoad(evt) {
+                        if (evt.item.type == "image") {
+                            images[evt.item.id] = evt.result;
+                        }
+                    }
+
+                    function handleComplete(evt) {
+                        var queue = evt.target;
+                        var ssMetadata = lib.ssMetadata;
+                        for (i = 0; i < ssMetadata.length; i++) {
+                            ss[ssMetadata[i].name] = new createjs.SpriteSheet({
+                                "images": [queue.getResult(ssMetadata[i].name)],
+                                "frames": ssMetadata[i].frames
+                            })
+                        }
+                        exportRoot = new lib.lock();
+                        stage = new createjs.Stage(canvas);
+                        stage.addChild(exportRoot);
+                        fnStartAnimation = function() {
+                            createjs.Ticker.setFPS(lib.properties.fps);
+                            createjs.Ticker.addEventListener("tick", stage);
+                        }
+
+                        function makeResponsive(isResp, respDim, isScale, scaleType) {
+                            var lastW, lastH, lastS = 1;
+                            window.addEventListener('resize', resizeCanvas);
+                            resizeCanvas();
+
+                            function resizeCanvas() {
+                                var w = lib.properties.width,
+                                    h = lib.properties.height;
+                                var iw = window.innerWidth,
+                                    ih = window.innerHeight;
+                                var pRatio = window.devicePixelRatio || 1,
+                                    xRatio = iw / w,
+                                    yRatio = ih / h,
+                                    sRatio = 1;
+                                if (isResp) {
+                                    if ((respDim == 'width' && lastW == iw) || (respDim == 'height' && lastH == ih)) {
+                                        sRatio = lastS;
+                                    } else if (!isScale) {
+                                        if (iw < w || ih < h)
+                                            sRatio = Math.min(xRatio, yRatio);
+                                    } else if (scaleType == 1) {
+                                        sRatio = Math.min(xRatio, yRatio);
+                                    } else if (scaleType == 2) {
+                                        sRatio = Math.max(xRatio, yRatio);
+                                    }
+                                }
+                                canvas.width = w * pRatio * sRatio;
+                                canvas.height = h * pRatio * sRatio;
+                                canvas.style.width = dom_overlay_container.style.width = anim_container.style.width = w * sRatio + 'px';
+                                canvas.style.height = anim_container.style.height = dom_overlay_container.style.height = h * sRatio + 'px';
+                                stage.scaleX = pRatio * sRatio;
+                                stage.scaleY = pRatio * sRatio;
+                                lastW = iw;
+                                lastH = ih;
+                                lastS = sRatio;
+                            }
+                        }
+                        makeResponsive(false, 'both', false, 1);
+                        fnStartAnimation();
+                    }
+                </script>
+            </div>
+        </div>
+        </div>
+    </body>
+
+    </html>
