@@ -1488,8 +1488,8 @@ __CONSTANT_LIST = [
         dep2 		: '',
         dep3 		: '',
         dep4 		: '',
-        url 		: '/html/.html',
-        pubUpdate 	: '2019-0000',
+        url 		: '/html/intro/mobile.html',
+        pubUpdate 	: '2019-1231',
         etc 		: '2019-1201',
     },
 	{

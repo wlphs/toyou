@@ -2080,7 +2080,7 @@ body {
 .header .util {
   padding: 20px 18px 0;
   margin-top: 146px;
-  transition: .3s margin-top;
+  transition: .4s margin-top;
   transition-delay: .3s;
 }
 
@@ -2317,12 +2317,12 @@ body {
 
 .user_list li .name {
   text-align: center;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 700;
 }
 
 .user_list li .cont {
-  font-size: 16px;
+  font-size: 15px;
   margin-top: 15px;
 }
 
