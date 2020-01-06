@@ -26,7 +26,8 @@
                     <a href="#" class="btn_intro_start">시작하기</a>
                     <div class="swiper-container js-visual_bg intro_bg_container">
                         <ul class="bgWrap swiper-wrapper">
-                            <li class="bg4 swiper-slide"></li>
+                            <!-- 200106 삭제 -->
+                            <!-- <li class="bg4 swiper-slide"></li> -->
                             <li class="bg0 swiper-slide"></li>
                             <li class="bg1 swiper-slide"></li>
                             <li class="bg2 swiper-slide"></li>
@@ -37,8 +38,9 @@
                     <!-- 191221 수정 s -->
                     <div class="swiper-container js-visual">
                         <ul class="slider swiper-wrapper">
-                            <li class="swiper-slide">
-
+                            <!-- 200106 삭제 -->
+                            <!-- <li class="swiper-slide">
+                                
                                 <h1 class="intro_logo">
                                     <img src="/resources/images/common/img_splash_logo.png" alt="TOYOU HOME">
                                 </h1>
@@ -49,7 +51,7 @@
                                     <b>방문 홈서비스,</b><br>
                                     <b>투유홈</b>
                                 </p>
-                            </li>
+                            </li> -->
 
                             <li class="swiper-slide">
                                 <p class="txt tac mt65">
@@ -139,7 +141,8 @@
             on: {
                 slideChangeTransitionStart: function() {
                     console.log(mySwiper.activeIndex);
-                    if (mySwiper.activeIndex == 5) {
+                    // 200106 스크립트 수정 5 -> 4
+                    if (mySwiper.activeIndex == 4) {
                         $('.btn_intro_start').fadeOut(100);
                         $('.swiper-pagination').fadeOut(100);
                         $('.js-visual_bg').fadeOut(400);

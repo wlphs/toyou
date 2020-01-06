@@ -2732,7 +2732,7 @@ table.bottom_bar {
   transform: rotate(-45deg);
 }
 
-.swiper-pagination-bullet:nth-child(6) {
+.swiper-pagination-bullet:nth-child(5) {
   display: none;
 }
 
