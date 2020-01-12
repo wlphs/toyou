@@ -3978,6 +3978,11 @@ table.bottom_bar {
   font-size: 15px;
 }
 
+.accordion-list > li > .con-area .policy_wrap {
+  max-height: 300px;
+  overflow-y: scroll;
+}
+
 .accordion-list > li > .con-area .qna_cont {
   font-size: 15px;
 }
@@ -3989,9 +3994,34 @@ table.bottom_bar {
 .accordion-list > li > .con-area .policy_cont .tit {
   font-weight: 500;
   font-size: 13px;
+  word-break: keep-all;
 }
 
 .accordion-list > li > .con-area .policy_cont .txt {
+  font-size: 13px;
+  word-break: keep-all;
+}
+
+.accordion-list > li > .con-area .policy_cont .txt_dot {
+  padding-left: 12px;
+  position: relative;
+  font-size: 13px;
+  word-break: keep-all;
+}
+
+.accordion-list > li > .con-area .policy_cont .txt_dot:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 9px;
+  width: 4px;
+  height: 4px;
+  background-color: #000;
+  border-radius: 2px;
+  display: block;
+}
+
+.accordion-list > li > .con-area .policy_cont .table_list th, .accordion-list > li > .con-area .policy_cont .table_list td {
   font-size: 13px;
 }
 

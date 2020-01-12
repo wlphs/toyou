@@ -387,10 +387,17 @@
             }
         }
         >.con-area { display: none;  padding: 0px 50px 20px 0; line-height: 23px; font-size:15px;
-            .qna_cont {font-size:15px;}
+            .policy_wrap {max-height: 300px; overflow-y:scroll;}
+            .qna_cont {font-size:15px; }
             .policy_cont {font-size:13px;
-                .tit {font-weight: 500; font-size:13px;}
-                .txt {font-size:13px;}
+                .tit {font-weight: 500; font-size:13px; word-break: keep-all;}
+                .txt {font-size:13px; word-break: keep-all;}
+                .txt_dot {padding-left:12px; position: relative; font-size:13px;  word-break: keep-all;
+                    &:after {content:''; position: absolute; left:0; top:9px; width:4px; height:4px; background-color:#000; border-radius: 2px; display:block;}
+                }
+                .table_list {
+                    th,td {font-size:13px;}
+                }
             }
         }
     }
