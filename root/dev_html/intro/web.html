@@ -328,7 +328,6 @@ var m_swiper = new Swiper('.js-page1_swiper', {
 		    section_resize();
 
 
-		    /* 180920 수정 s */
 		    var myFullpage = new fullpage('#fullpage', {
 		        anchors: ['intro', 'why', 'safety', 'mobile', 'video', 'review', 'partners', 'start'],
 		        scrollOverflow: true,
@@ -341,14 +340,20 @@ var m_swiper = new Swiper('.js-page1_swiper', {
 						m_swiper.autoplay.stop();
 						m_swiper.slideTo(0,0)
 					}
-
+/*200112 수정 s */
 					if (destination.index==2) {
-						stage.getChildAt(0).play();
+						try {
+							stage.getChildAt(0).play();
+						}
+						catch(e){ return true; }
 					}
 					else {
-						stage.getChildAt(0).gotoAndStop(0);
+						try {
+							stage.getChildAt(0).gotoAndStop(0);
+						}
+						catch(e){ return true; }
 					}
-					
+/*200112 수정 e */					
 		        },
 		        onLeave: function(origin, destination, direction) { // 출발
 				$('.toyou_wrap').css('background-position-y',destination.index*12.5 + "%");
@@ -357,7 +362,6 @@ var m_swiper = new Swiper('.js-page1_swiper', {
 		        }
 		    });
 		</script>
-		<!-- 181001 스크립트 수정 e -->
 	</div>
 	<!-- //바디 컨텐츠 -->
 

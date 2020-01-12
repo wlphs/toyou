@@ -377,11 +377,21 @@
                                     m_swiper.slideTo(0, 0)
                                 }
 
+                                /*200112 수정 s */
                                 if (destination.index == 2) {
-                                    stage.getChildAt(0).play();
+                                    try {
+                                        stage.getChildAt(0).play();
+                                    } catch (e) {
+                                        return true;
+                                    }
                                 } else {
-                                    stage.getChildAt(0).gotoAndStop(0);
+                                    try {
+                                        stage.getChildAt(0).gotoAndStop(0);
+                                    } catch (e) {
+                                        return true;
+                                    }
                                 }
+                                /*200112 수정 e */
 
                             },
                             onLeave: function(origin, destination, direction) { // 출발
