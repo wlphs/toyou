@@ -97,8 +97,8 @@
                                 <p class="chat_name">안다미로안다미로안다미로</p>
                                 <div class="chat_area">
                                     <div class="chat_view img">
-                                        <p class="img">
-                                            <img src="/resources/images/temp/sample_01.png" alt="" />
+                                        <p class="img ">
+                                            <a href="#none" class="js-layer_pop"><img src="/resources/images/temp/sample_01.png" alt="" /></a>
                                         </p>
                                     </div>
                                     <span class="time">2019.11.20</span>
@@ -108,7 +108,7 @@
                                 <div class="chat_area">
                                     <span class="time">2019.11.20</span>
                                     <div class="chat_view img">
-                                        <p class="img">
+                                        <p class="img js-layer_pop">
                                             <img src="/resources/images/temp/img_main_1.png" alt="" />
                                         </p>
                                     </div>
@@ -132,7 +132,6 @@
 
             </div>
         </div>
-
         <!-- //container -->
     </div>
 
@@ -160,6 +159,26 @@
                         </ul>
                     </section>
                 </div>
+            </div>
+        </div>
+    </div>
+
+    <!--사진레이어//-->
+    <div id="popup_layer0" class="trp popupfixed-wrap img_type modal">
+        <div class="popup-align">
+            <div class="popup-layer">
+                <div class="header">
+                    <div class="top_bar">
+                        <div class="top_right">
+                            <a href="#" class="btn_close js-closepop"><span class="hide">닫기</span></a>
+                        </div>
+                    </div>
+                </div>
+                <section class="section">
+                    <div class="full_img">
+                        <img src="/resources/images/temp/img_main_1.png" alt="" />
+                    </div>
+                </section>
             </div>
         </div>
     </div>
@@ -199,6 +218,32 @@
         // 이미지를 동그란 영역에 맞춰 중앙 정렬
         // 이미지가 변경될 때 아래 함수를 실행시켜 주세요
         $('.pf_photo img').coverImage();
+
+
+        $("#popup_layer0").dialog({
+            autoOpen: false,
+            modal: true,
+            width: '100%',
+            height: $(window).innerHeight(),
+            resizable: false,
+            create: function(event) {
+                $(".js-layer_pop").on("click", function() {
+                    modalFixedControl.open($(event.target));
+                    $(event.target).dialog("open");
+                });
+            },
+            open: function(event) {
+                $('.js-closepop', $(event.target)).on('click', function() {
+                    $(event.target).dialog("close");
+                    return false;
+                })
+            },
+            close: function() {
+                modalFixedControl.close();
+            }
+        });
+    </script>
+
     </script>
 </body>
 

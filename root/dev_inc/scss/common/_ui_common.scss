@@ -437,6 +437,16 @@
         }
         .alert_cont { font-size:15px; color:$colorB; text-align: left; padding-bottom:30px;}
     }
+    &.img_type { background:#fff;
+        .popup-layer {
+            .header { height: 50px;}
+            .btn_close { margin-top: -5px;}
+            .full_img { 
+                img { width:100%;}
+            }
+            .section { padding: 0 15px 15px;}
+        }
+    }
 
     .popup-layer.select_layer { border-top:10px solid $colorP;
         .sel_wrap { max-height:calc(100vh - 70px); overflow-y:auto;
