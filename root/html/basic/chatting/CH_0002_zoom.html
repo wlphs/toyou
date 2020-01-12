@@ -261,7 +261,6 @@
     </div>
 
     <script>
-        var trpLayerFixedPopupScroll_top;
         $('.js-zoom').on('click', function() {
             var img = $(this).find('img');
             var url = img.attr('src');
@@ -287,10 +286,9 @@
                     w: _w,
                     h: _h
                 }];
-                var pswp = new PhotoSwipe(pswpElement, PhotoSwipeUI_Default, items, options);
-                pswp.init();
+                var gallery = new PhotoSwipe(pswpElement, PhotoSwipeUI_Default, items, options);
+                gallery.init();
             }
-            return false;
         })
     </script>
 

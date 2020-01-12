@@ -4150,6 +4150,26 @@ table.bottom_bar {
   padding-bottom: 30px;
 }
 
+.trp.popupfixed-wrap.img_type {
+  background: #fff;
+}
+
+.trp.popupfixed-wrap.img_type .popup-layer .header {
+  height: 50px;
+}
+
+.trp.popupfixed-wrap.img_type .popup-layer .btn_close {
+  margin-top: -5px;
+}
+
+.trp.popupfixed-wrap.img_type .popup-layer .full_img img {
+  width: 100%;
+}
+
+.trp.popupfixed-wrap.img_type .popup-layer .section {
+  padding: 0 15px 15px;
+}
+
 .trp.popupfixed-wrap .popup-layer.select_layer {
   border-top: 10px solid #ff5c5c;
 }
