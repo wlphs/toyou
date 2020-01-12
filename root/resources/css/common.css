@@ -7368,6 +7368,7 @@ input[type="radio"].type_btn_radio + label {
   padding: 0;
   overflow: hidden;
   border-radius: 8px;
+  display: block;
 }
 
 .chatting_area .chatting_view > li .chat_area .chat_view.img .img img {

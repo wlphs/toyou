@@ -32,7 +32,7 @@
                     &::before { content:''; display:inline-block; position: absolute; left: -6px; top:-1px; @include sp_icons($icon_point_01);}
                     &.img { padding:0; border:0; background:none  !important;
                         &::before { display: none;}
-                        .img { padding: 0; overflow: hidden; border-radius: 8px;
+                        .img { padding: 0; overflow: hidden; border-radius: 8px; display:block;
                             img { width:100%;}
                         }
                     }

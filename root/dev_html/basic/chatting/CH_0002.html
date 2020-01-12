@@ -85,9 +85,10 @@
 								<p class="chat_name">안다미로안다미로안다미로</p>
 								<div class="chat_area">
 									<div class="chat_view img">
-										<p class="img">
+										<!-- 200112 a 태그로 변경 js-zoom 클래스 추가 -->
+										<a href="#" class="img js-zoom">
 											<img src="/resources/images/temp/sample_01.png" alt=""/>
-										</p>
+										</a>
 									</div>
 									<span class="time">2019.11.20</span>
 								</div>
@@ -96,9 +97,10 @@
 								<div class="chat_area">
 									<span class="time">2019.11.20</span>
 									<div class="chat_view img">
-										<p class="img">
+										<!-- 200112 a 태그로 변경 js-zoom 클래스 추가 -->
+										<a href="#" class="img js-zoom">
 											<img src="/resources/images/temp/img_main_1.png" alt=""/>
-										</p>
+										</a>
 									</div>
 								</div>
 							</li>
@@ -151,7 +153,6 @@
 			</div>
 		</div>
 	</div>
-
 <script>
 	$("#getPhoto").dialog({
 		autoOpen: false,
@@ -180,6 +181,104 @@
 	// 이미지를 동그란 영역에 맞춰 중앙 정렬
 	// 이미지가 변경될 때 아래 함수를 실행시켜 주세요
 	$('.pf_photo img').coverImage();
+
 </script>
+
+
+
+
+<!-- 200112 추가 s -->
+
+
+<link rel="stylesheet" href="/resources/css/library/photoswipe.css"> 
+<link rel="stylesheet" href="/resources/css/library/default-skin.css"> 
+<script src="/resources/js/library/photoswipe.min.js"></script>
+<script src="/resources/js/library/photoswipe-ui-default.min.js"></script>
+
+
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <div class="pswp__bg"></div>
+
+    <div class="pswp__scroll-wrap">
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script>
+
+$('.js-zoom').on('click', function() {
+	var img = $(this).find('img');
+	var url = img.attr('src');
+	var _w, _h;
+	var temp_img = new Image();
+	temp_img.src=url;
+	temp_img.onload= function(e) {
+		_w =e.path[0].width;
+		_h =e.path[0].height;
+		gallery_init(url, _w, _h)
+
+	}
+	function gallery_init(_src,_w,_h) {
+	
+		var options = {
+			index: 0,
+			maxSpreadZoom:10
+		};
+		var pswpElement = document.querySelectorAll('.pswp')[0];
+		var items = [
+			{
+				src:_src,
+				w: _w,
+				h: _h
+			}
+		];
+		var gallery = new PhotoSwipe( pswpElement, PhotoSwipeUI_Default, items, options);
+		gallery.init();
+	}
+})
+
+</script>
+
+
+<!-- 200112 추가 e -->
+
 </body>
 </html>
