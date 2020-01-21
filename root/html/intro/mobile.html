@@ -368,6 +368,13 @@
                             scrollOverflow: true,
                             sectionSelector: '.sm_section',
                             afterLoad: function(origin, destination, direction) { // 도착
+                                /* 200121 추가 s */
+                                if (destination.index == 0) {
+                                    $('.top').hide();
+                                } else {
+                                    $('.top').show();
+                                }
+                                /* 200121 추가 e */
 
                                 if (destination.index == 1) {
 
@@ -416,8 +423,11 @@
                 </div>
                 <!-- //바디 컨텐츠 -->
 
-
-
+                <!-- 200121 추가 s -->
+                <div class="fixed_btns">
+                    <a href="#intro" class="top" style="display:none;"><span class="hide">위로</span></a>
+                </div>
+                <!-- 200121 추가 e -->
 
                 <script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script>
                 <script src="/resources/js/lock.js"></script>

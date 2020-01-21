@@ -331,9 +331,18 @@
                             scrollOverflow: true,
                             sectionSelector: '.sm_section',
                             afterLoad: function(origin, destination, direction) { // 도착
+                                /* 200121 추가 s */
+                                if (destination.index == 0) {
+                                    $('.top').fadeOut(200);
+                                } else {
+                                    $('.top').fadeIn(200);
+                                }
+                                /* 200121 추가 e */
                                 if (destination.index == 1) {
+
                                     m_swiper.autoplay.start();
                                 } else {
+
                                     m_swiper.autoplay.stop();
                                     m_swiper.slideTo(0, 0)
                                 }
@@ -364,6 +373,11 @@
                 <!-- //바디 컨텐츠 -->
 
 
+                <!-- 200121 추가 s -->
+                <div class="fixed_btns">
+                    <a href="#intro" class="top" style="display:none;"><span class="hide">위로</span></a>
+                </div>
+                <!-- 200121 추가 e -->
 
 
                 <script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script>

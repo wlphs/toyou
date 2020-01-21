@@ -2587,6 +2587,20 @@ body {
   color: #666;
 }
 
+.fixed_btns {
+  position: fixed;
+  right: 40px;
+  bottom: 100px;
+}
+
+.fixed_btns .top {
+  width: 80px;
+  height: 80px;
+  display: block;
+  background: url("/resources/images/intro/exp_ic_top.png");
+  margin-top: 17px;
+}
+
 @-webkit-keyframes ani0 {
   0% {
     opacity: 1;
