@@ -77,7 +77,7 @@ $(document).ready(function () {
     });//.tooltip( "open" );       
 
 
-    $('.js-all_check')
+    
 });
 
 jQuery.fn.allCheckbox = function( $check_item){

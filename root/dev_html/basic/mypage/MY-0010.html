@@ -139,6 +139,8 @@
         <div class="popup-align">
             <div class="popup-vertical caution">
                 <div class="popup-layer " style="width:100%;">
+                    <!-- 200121 닫기 버튼 추가 -->
+                    <a href="#" class="btn_close js-closepop"><span class="hide">닫기</span></a>
                     <section class="section pd0" style="display: block;">
                         <div class="cont_inner caution_wrap no">
                             <dl class="form_list">
@@ -182,6 +184,12 @@
                     $(event.target).dialog( "close" );
                     return false;
                 })
+                /* 200121 딤드 닫기 추가 s */
+                $('.ui-widget-overlay').off('click').on('click', function() {
+                    $(event.target).dialog( "close" );
+                    return false;
+                })
+                /* 200121 딤드 닫기 추가 e */
             },
             close: function() {
                 modalFixedControl.close();

@@ -185,8 +185,7 @@ $(document).ready(function() {
                 "max-width": "500px;"
             }), $(selcet).html()) : element.is("[title]") ? element.attr("title") : element.is("img") ? element.attr("alt") : void 0;
         }
-    }), //.tooltip( "open" );       
-    $(".js-all_check");
+    });
 }), jQuery.fn.allCheckbox = function($check_item) {
     var _all = $(this), len = $($check_item).length;
     _all.on("change", function() {

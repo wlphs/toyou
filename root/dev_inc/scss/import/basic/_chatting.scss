@@ -80,7 +80,9 @@
                 &::before { display:none;}
             }
             &.bg_point {background:#ffe9e7;}
-            
+            .cont_inner {display:table; width:100%; height:43px;
+                .link {display:table-cell; vertical-align: middle;}
+            }
             .photo_img { position: absolute; left:25px; top:15px; width: 45px; height: 45px; overflow:hidden; border-radius: 100%; display:inline-block;
                 img { width:100%; height: 100%; }
             }

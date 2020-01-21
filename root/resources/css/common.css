@@ -7521,6 +7521,17 @@ input[type="radio"].type_btn_radio + label {
   background: #ffe9e7;
 }
 
+.alarm_area .alarm_list > li .cont_inner {
+  display: table;
+  width: 100%;
+  height: 43px;
+}
+
+.alarm_area .alarm_list > li .cont_inner .link {
+  display: table-cell;
+  vertical-align: middle;
+}
+
 .alarm_area .alarm_list > li .photo_img {
   position: absolute;
   left: 25px;
@@ -8374,26 +8385,21 @@ input[type="radio"].type_btn_radio + label {
 .list_category_main {
   position: relative;
   width: 100%;
-  overflow-x: auto;
-  overflow-y: hidden;
-  white-space: nowrap;
-  -webkit-overflow-scrolling: touch;
 }
 
 .list_category_main ul {
   width: 100%;
   font-size: 0;
   line-height: 0;
-  white-space: nowrap;
-  margin-left: 25px;
+  margin-left: 25px !important;
   border-bottom: 5px solid #f5f5f5;
 }
 
 .list_category_main ul li {
   position: relative;
-  display: inline-block;
-  clear: both;
   margin-left: 5px;
+  width: auto;
+  border-bottom: 5px solid #f5f5f5;
 }
 
 .list_category_main ul li:first-child {
@@ -8887,6 +8893,12 @@ input[type="radio"].type_btn_radio + label {
   font-size: 15px;
   text-align: center;
   padding: 7px 0;
+  height: 38px;
+}
+
+.select_time .time_check_list li input[type="checkbox"].chk_time + label.chk_time span.all {
+  padding: 9px 0;
+  display: inline-block;
 }
 
 .select_time .time_check_list li input[type="checkbox"].chk_time:checked + label.chk_time {
@@ -8896,8 +8908,17 @@ input[type="radio"].type_btn_radio + label {
   color: #fff;
 }
 
+.select_time .time_check_list li input[type="checkbox"].chk_time:checked + label.chk_time span.all {
+  font-weight: 400;
+  color: #fff;
+}
+
 .select_time .time_check_list li input[type="checkbox"].chk_time:disabled + label.chk_time {
   background: #f5f5f5;
+  color: #999;
+}
+
+.select_time .time_check_list li input[type="checkbox"].chk_time:disabled + label.chk_time span.all {
   color: #999;
 }
 

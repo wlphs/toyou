@@ -243,7 +243,6 @@
 </div>
 
 <script>
-var trpLayerFixedPopupScroll_top;
 $('.js-zoom').on('click', function() {
 	var img = $(this).find('img');
 	var url = img.attr('src');
@@ -251,8 +250,16 @@ $('.js-zoom').on('click', function() {
 	var temp_img = new Image();
 	temp_img.src=url;
 	temp_img.onload= function(e) {
-		_w =e.path[0].width;
-		_h =e.path[0].height;
+		/* 200118 수정 s */
+		try {
+			_w =temp_img.width;
+			_h =temp_img.height;
+		}
+		catch (error) {
+			_w = img.width();
+			_h = img.height();
+		}
+		/* 200118 수정 e */
 		gallery_init(url, _w, _h)
 
 	}
