@@ -145,10 +145,10 @@
 }
 
 //만족해요아이콘
-.icon_02 { color:#fff; position: relative; padding-right: 23px; 
+.icon_02 { color:#fff; position: relative; padding-right: 23px; display:inline-block; vertical-align:middle; height:21px;
     &::before { content:''; display:inline-block; position:absolute; right:0; top: 50%; margin-top: -10px;  @include sp_icons($serv_01_w);}
 }
-
+.col_white {color:#fff; }
 //저장및나가기
 .save_logout { color:#000; font-size: 14px; display:inline-block; font-weight: 500; padding:5px 0 5px 0; margin: 19px 25px 0 0;
     &::before { content:''; display:inline-block; @include sp_icons($icon_saveLogout); margin-right: 8px;}

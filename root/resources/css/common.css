@@ -3303,6 +3303,9 @@ table.bottom_bar {
   color: #fff;
   position: relative;
   padding-right: 23px;
+  display: inline-block;
+  vertical-align: middle;
+  height: 21px;
 }
 
 .icon_02::before {
@@ -3315,6 +3318,10 @@ table.bottom_bar {
   width: 15.5px;
   height: 15px;
   background-position: 0px -316px;
+}
+
+.col_white {
+  color: #fff;
 }
 
 .save_logout {
