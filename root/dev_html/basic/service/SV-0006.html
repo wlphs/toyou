@@ -66,7 +66,7 @@
 													<div class="thum_list_info">
 														<p class="title">
 															<span>이너뷰티</span>
-															<em class="ellipsis-2">건조한 요즘, 수분 가득 촉촉한 메이크업 메이크업</em> 
+															<em class="ellipsis-2">건조한 요즘, 수분 가득 촉촉한 메이크업 건조한 요즘, 수분 가득 촉촉한 메이크업</em> 
 														</p>
 														<p class="type"><span>메이크업</span> <span>홈테라피</span></p>
 														<p class="type2">
@@ -89,7 +89,100 @@
 													<div class="thum_list_info">
 														<p class="title">
 															<span>이너뷰티</span>
+															<em class="ellipsis-2"> 메이크업</em> 
+														</p>
+														<p class="type"><span>메이크업</span> <span>홈테라피</span></p>
+														<p class="type2">
+															<span>리뷰 10+</span>
+															<span>전문가 댓글 10+</span>
+														</p>
+													</div>
+												</a>
+												<span class="btn_like2">274</span>
+											</div>
+										</li>
+										<li>
+											<div class="info_box">
+												<a href="#none">
+													<p class="img">
+														<img src="/resources/images/temp/@temp4.png" alt="">
+														<span class="btn_like">274</span>
+													</p>
+													
+													<div class="thum_list_info">
+														<p class="title">
+															<span>이너뷰티</span>
 															<em class="ellipsis-2">건조한 요즘, 수분 가득 촉촉한 메이크업</em> 
+														</p>
+														<p class="type"><span>메이크업</span> <span>홈테라피</span></p>
+														<p class="type2">
+															<span>리뷰 10+</span>
+															<span>전문가 댓글 10+</span>
+														</p>
+													</div>
+												</a>
+												<span class="btn_like2">274</span>
+											</div>
+										</li>
+										<li>
+											<div class="info_box">
+												<a href="#none">
+													<p class="img">
+														<img src="/resources/images/temp/@temp4.png" alt="">
+														<span class="btn_like">274</span>
+													</p>
+													
+													<div class="thum_list_info">
+														<p class="title">
+															<span>이너뷰티</span>
+															<em class="ellipsis-2">건조한 요즘, 수분 가득 촉촉한 메이크업</em> 
+														</p>
+														<p class="type"><span>메이크업</span> <span>홈테라피</span></p>
+														<p class="type2">
+															<span>리뷰 10+</span>
+															<span>전문가 댓글 10+</span>
+														</p>
+													</div>
+												</a>
+												<span class="btn_like2">274</span>
+											</div>
+										</li>
+										<li>
+											<div class="info_box">
+												<a href="#none">
+													<p class="img">
+														<img src="/resources/images/temp/@temp1.png" alt="">
+														<span class="icon_label">라벨</span>
+														<span class="btn_like">274</span>
+													</p>
+													
+													<div class="thum_list_info">
+														<p class="title">
+															<span>이너뷰티</span>
+															<em class="ellipsis-2">건조한 요즘, 수분 가득 촉촉한 메이크업 건조한 요즘, 수분 가득 촉촉한 메이크업</em> 
+														</p>
+														<p class="type"><span>메이크업</span> <span>홈테라피</span></p>
+														<p class="type2">
+															<span>리뷰 10+</span>
+															<span>전문가 댓글 10+</span>
+														</p>
+													</div>
+												</a>
+												<span class="btn_like2">274</span>
+											</div>
+										</li>
+										<li>
+											<div class="info_box">
+												<a href="#none">
+													<p class="img">
+														<img src="/resources/images/temp/@temp3.png" alt="">
+														<span class="btn_like">274</span>
+													</p>
+													
+													<div class="thum_list_info">
+														<p class="title">
+															<span>이너뷰티</span>
+															<em class="ellipsis-2"> 메이크업</em> 
 														</p>
 														<p class="type"><span>메이크업</span> <span>홈테라피</span></p>
 														<p class="type2">
@@ -948,6 +1041,7 @@ var contSwiper = new Swiper('.js-serv_cont', {
 			$('.list_category_main li').removeClass('on')
 			$('.list_category_main li').eq(contSwiper.realIndex).addClass('on')
 			cateSwiper.slideTo(contSwiper.realIndex);
+			listHeight(); // 200129 스와이프 사용 할 경우
 		}
 	},
     spaceBetween: 0
@@ -957,6 +1051,26 @@ $('.list_category_main li a').on('click', function() {
 	contSwiper.slideTo(idx);
 	return false;
 })
+
+/* 200129 리스트 높이 s */
+function listHeight() {
+	$('.thum_list').each(function() {
+		let li = $('li', this);
+		for (let i=0; i<Math.floor(li.length/2); i++) {
+			let li1 = li.eq(i*2),
+				li2 = li.eq(i*2+1);
+			li1.css('height', 'auto');
+			li2.css('height', 'auto');
+
+			let _h = (li1.innerHeight() > li2.innerHeight()) ? li1.innerHeight() : li2.innerHeight();
+			li1.height(_h);
+			li2.height(_h);
+		}
+	})
+}
+listHeight();
+$(window).on('load', listHeight);
+/* 200129 리스트 높이 e */
 </script>
 <!-- 200121 구조 변경 및 스크립트 수정 e -->
 		
