@@ -2719,23 +2719,30 @@ table.bottom_bar {
 .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {margin:0; line-height:7px;}
 
 */
+/* 200130 수정 s  */
 .swiper-pagination-bullet {
-  width: 15px;
-  height: 3px;
-  border-radius: 2px;
+  width: 11px;
+  height: 11px;
   opacity: 1;
-  background: #fff;
+  background: transparent;
   transition: .2s all;
+  border: 2px solid #fff;
+  box-sizing: border-box;
+  margin-top: 2px;
+  position: relative;
+  top: 2px;
 }
 
 .swiper-pagination-bullet-active {
-  transform: rotate(-45deg);
+  opacity: 1;
+  background: #fff;
 }
 
 .swiper-pagination-bullet:nth-child(5) {
   display: none;
 }
 
+/* 200130 수정 e  */
 .highcharts-credits {
   display: none;
 }

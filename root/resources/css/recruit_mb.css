@@ -2232,16 +2232,62 @@ b {
   background: #ffe1f0;
   height: 580px;
   position: relative;
-  padding-top: 30px;
+  padding-top: 15px;
 }
 
-.p1 .logo {
-  margin-bottom: 30px;
-  text-align: center;
+.p1 .p_header {
+  margin: 0 20px 60px;
 }
 
-.p1 .logo img {
-  width: 145px;
+.p1 .p_header .logo img {
+  width: 123px;
+}
+
+.p1 .p_header .head_list {
+  position: absolute;
+  right: 12px;
+  top: 17px;
+}
+
+.p1 .p_header .head_list:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.p1 .p_header .head_list li {
+  float: left;
+  padding: 0 8px;
+  position: relative;
+  opacity: 0.4;
+}
+
+.p1 .p_header .head_list li a {
+  font-size: 14px;
+  color: #000;
+  font-weight: 300;
+}
+
+.p1 .p_header .head_list li.on {
+  opacity: 1;
+}
+
+.p1 .p_header .head_list li.on a {
+  font-weight: 700;
+}
+
+.p1 .p_header .head_list li:first-child:after {
+  display: none;
+}
+
+.p1 .p_header .head_list li:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 5px;
+  width: 1px;
+  height: 10px;
+  background: #ccc;
 }
 
 .p1 .v1 {
@@ -2532,6 +2578,74 @@ p {
   width: calc(95px * 2);
 }
 
+.btn_box {
+  margin: 0 16px;
+}
+
+.btn_box:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.btn_box .btn_round {
+  background: #fff;
+  height: 45px;
+  font-weight: 500;
+  border-radius: 23px;
+  text-align: center;
+  display: block;
+  position: relative;
+  width: calc(50% - 5px);
+  float: left;
+}
+
+.btn_box .btn_round:first-child {
+  margin-right: 10px;
+}
+
+.btn_box .btn_round span {
+  position: relative;
+  line-height: 45px;
+  font-size: 15px;
+  color: #000;
+  display: inline-block;
+  padding-left: 22px;
+}
+
+.btn_box .btn_round span:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin-top: -9px;
+  width: 15px;
+  height: 18px;
+}
+
+.btn_box .btn_ios span:after {
+  background: url("/resources/images/intro/logo_ios_sm.png");
+}
+
+.btn_box .btn_android span:after {
+  background: url("/resources/images/intro/logo_android_sm.png");
+}
+
+.btn_box .alert {
+  display: none;
+  position: absolute;
+  top: 35px;
+  left: 50%;
+  margin-left: -88px;
+  z-index: 1;
+}
+
+.btn_box .alert img {
+  display: inline-block;
+  box-shadow: 5px 5px 20px 0 rgba(0, 0, 0, 0.05), 5px 5px 20px 0 rgba(0, 0, 0, 0.05);
+  width: 177px;
+}
+
 #footer {
   width: 100%;
   background: #fff;
@@ -2592,22 +2706,24 @@ p {
 .fixed_btns {
   position: fixed;
   right: 20px;
-  bottom: 200px;
+  bottom: 20px;
 }
 
 .fixed_btns .chat {
-  width: 80px;
-  height: 80px;
+  width: 60px;
+  height: 60px;
   display: block;
   background: url("/resources/images/intro/exp_ic_chat.png");
+  background-size: 60px;
 }
 
 .fixed_btns .top {
-  width: 80px;
-  height: 80px;
+  width: 60px;
+  height: 60px;
   display: block;
   background: url("/resources/images/intro/exp_ic_top.png");
-  margin-top: 17px;
+  background-size: 60px;
+  margin-top: 13px;
 }
 
 /*# sourceMappingURL=maps/recruit_mb.css.map */

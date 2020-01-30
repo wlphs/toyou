@@ -17,7 +17,7 @@
         .item {width:50%; float:left; padding-left:5px; 
             &:first-child {padding-right:5px; padding-left:0;}
         }
-        .btn_round {background:#fff; height:45px; border-radius: 23px; text-align: center; display:block; 
+        .btn_round {background:#fff; height:45px;font-weight:500; border-radius: 23px; text-align: center; display:block; position: relative;
             
             span {position:relative; line-height: 45px;  font-size: 15px; color:#000; display:inline-block; padding-left:22px;
                 &:after {content:''; position: absolute; left:0; top:50%; margin-top:-9px; width:15px; height:18px; }
@@ -28,6 +28,9 @@
     }
 }
 
+.alert { display:none; position: absolute; top:35px; left:50%; margin-left:-88px; z-index: 1;
+    img {display:inline-block; @include shadow(5px, 5px, 20px, 0.05); width:177px; }
+}
 .toyou_wrap {background:url('/resources/images/intro/pc_bg.jpg'); background-size:100%;
     transition: 1s cubic-bezier(0.3, 0, 0.3, 1); background-repeat: no-repeat;
 }
@@ -42,7 +45,7 @@
         .btn_box {margin:0 auto; padding:0 25px;}
 
         
-        .btn_round {background:#fff; height:45px; border-radius: 23px; text-align: center; display:block; @include shadow(5px, 5px, 10px, 0.05);
+        .btn_round {position:relative;background:#fff;font-weight:500; height:45px; border-radius: 23px; text-align: center; display:block; @include shadow(5px, 5px, 10px, 0.05);
             
             span {position:relative; line-height: 45px;  font-size: 15px; color:#000; display:inline-block; padding-left:22px;
                 &:after {content:''; position: absolute; left:0; top:50%; margin-top:-9px; width:15px; height:18px; }

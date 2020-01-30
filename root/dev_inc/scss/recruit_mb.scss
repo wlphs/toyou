@@ -69,10 +69,23 @@ b {color:#ff5c5c;}
 .colorP {color:#ff5c5c !important; }
 .colorW {color:#fff;}
 .colorB {color:#000;}
-.p1 {background:#ffe1f0; height:580px; position: relative; padding-top:30px; 
-    .logo {margin-bottom:30px; text-align: center;
-        img {width:145px; }
+.p1 {background:#ffe1f0; height:580px; position: relative; padding-top:15px; 
+    .p_header { margin:0 20px 60px;
+        .logo {
+            img {width:123px; }
+        }
+        .head_list { position: absolute; right:12px; top:17px; @include clearfix();
+            li {float:left; padding: 0 8px; position: relative;  opacity:0.4;;
+                a{ font-size:14px; color:#000; font-weight: 300;}
+                &.on {opacity: 1;
+                    a{ font-weight: 700;}
+                }
+                &:first-child:after {display:none;}
+                &:after {content:''; position: absolute; left:0 ;top:5px; width:1px; height:10px; background:#ccc;}
+            }
+        }
     }
+    
     .v1 {position: absolute; bottom:0; left:50%; width:360px; margin-left:-180px; }
     .p_inner {
         
@@ -156,6 +169,22 @@ p {word-break: keep-all;}
 }
 
 
+.btn_box { margin :0 16px; @include clearfix();
+    .btn_round {background:#fff; height:45px;font-weight:500; border-radius: 23px; text-align: center; display:block; position: relative; width:calc(50% - 5px); float:left;
+               &:first-child {margin-right:10px;} 
+        span {position:relative; line-height: 45px;  font-size: 15px; color:#000; display:inline-block; padding-left:22px;
+            &:after {content:''; position: absolute; left:0; top:50%; margin-top:-9px; width:15px; height:18px; }
+        }
+    }
+    .btn_ios span:after {background: url('/resources/images/intro/logo_ios_sm.png');}
+    .btn_android span:after {background: url('/resources/images/intro/logo_android_sm.png');}
+
+
+    .alert { display:none; position: absolute; top:35px; left:50%; margin-left:-88px; z-index: 1;
+    img {display:inline-block; @include shadow(5px, 5px, 20px, 0.05); width:177px; }
+    }
+}
+
 
 #footer { width:100%; background:#fff; border-top:1px solid #dddddd;
 
@@ -178,7 +207,7 @@ p {word-break: keep-all;}
 }
 
 
-.fixed_btns{ position:fixed; right:20px; bottom:200px;
-    .chat {width:80px; height:80px; display:block; background:url('/resources/images/intro/exp_ic_chat.png'); }
-    .top {width:80px; height:80px; display:block; background:url('/resources/images/intro/exp_ic_top.png'); margin-top:17px}
+.fixed_btns{ position:fixed; right:20px; bottom:20px;
+    .chat {width:60px; height:60px; display:block; background:url('/resources/images/intro/exp_ic_chat.png'); background-size:60px; }
+    .top {width:60px; height:60px; display:block; background:url('/resources/images/intro/exp_ic_top.png'); background-size:60px; margin-top:13px}
 }

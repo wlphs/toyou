@@ -24,7 +24,11 @@
 	<header id="header" class="header">
 		<div class="util">
             <div class="item">
-                <a href="#" class="btn_round btn_ios"><span class="txt">앱스토어</span></a>
+				<!-- 200130 수정 s -->
+				<a href="#none" class="btn_round btn_ios"><span class="txt">앱스토어</span>
+					<i class="alert"><img src="/resources/images/intro/msg_mb.png" alt=""></i>
+				</a>
+				<!-- 200130 수정 e -->
             </div>
             <div class="item">
                 <a href="#" class="btn_round btn_android"><span class="txt">구글플레이</span></a>
@@ -129,6 +133,7 @@ var m_swiper = new Swiper('.js-page1_swiper', {
 					</div>
 				</div>
 			</div>
+			<!-- 200130 삭제 
 			<div class="sm_section toyou_page4" id="">
 				<div class="sm_inner">
 					<div class="descript w100p">
@@ -295,13 +300,20 @@ var m_swiper = new Swiper('.js-page1_swiper', {
 	})
 </script>
 			</div>
+
+			-->
 			<div class="sm_section toyou_page7" id="">
 				<div class="sm_inner">
 					<div class="descript js-hasft w100p">
 						<p class="sm_tit tac">지금 바로<br>
 							<b>투유 간편 홈서비스를<br> 시작해 보세요!</b></p>
 						<div class="btn_box mt25">
-							<a href="#" class="btn_round btn_ios"><span class="txt">아이폰으로 시작하기</span></a>
+							
+							<!-- 200130 수정 s -->
+							<a href="#" class="btn_round btn_ios"><span class="txt">아이폰으로 시작하기</span>
+								<i class="alert"><img src="/resources/images/intro/msg_mb.png" alt=""></i>
+							</a>
+							<!-- 200130 수정 e -->
 							<a href="#" class="btn_round btn_android mt10"><span class="txt">안드로이드폰으로 시작하기</span></a>
 						</div>
 					</div>
@@ -310,20 +322,22 @@ var m_swiper = new Swiper('.js-page1_swiper', {
 					<div class="footer-inner">
 						<div class="logo"><img src="/resources/images/intro/footer_logo.png" alt="TOYOUHOME"></div>
 						<div class="footer_desc">
+							<!-- 200130 수정 s -->
 							<ul class="foot_list">
-								<li>(주)투유 코퍼레이션</li>
-								<li class="line">대표 홍길동</li>
-								<li class="pl0">사업자등록번호 123-12-12345</li>
-								<li class="pl0">통신판매업신고번호 2019-서울강남-12345호</li>
+								<li>(주)투유코퍼레이션</li>
+								<li class="line">대표 김다정</li>
+								<li class="pl0">사업자등록번호 191-81-01323</li>
+								<li class="pl0">통신판매업신고번호 2019-서울강남-05583호</li>
 							</ul>
 							<ul class="foot_list">
-								<li>주소 서울특별시 강남구 강남로로5길 7 AB타워 7층</li>
-								<li class="pl0">이메일 help@toyou.kr</li>
+								<li>주소 서울특별시 강남구 도산대로90길 17-4, NAO 빌딩 4층</li>
+								<li class="pl0">이메일 help@toyouhome.kr</li>
+								<li class="pl0">대표번호 02-544-6757</li>
 							</ul>
 							<ul class="foot_list mt25">
-								<li>© TOYOU. ALL RIGHTS RESERVED.</li>
+								<li>ⓒ TOYOUHOME. All rights reserved.</li>
 							</ul>
-							
+							<!-- 200130 수정 e -->
 							<p class="caution_txt mt25">투유는 통신판매중개자이며 통신판매의 당사자가 아닙니다. 따라서 투유는 상품거래정보 및 거래에 대한 책임을 지지 않습니다.</p>
 						</div>
 					</div>
@@ -370,7 +384,8 @@ var m_swiper = new Swiper('.js-page1_swiper', {
 
 		    /* 180920 수정 s */
 		    var myFullpage = new fullpage('#fullpage', {
-		        anchors: ['intro', 'why', 'safety', 'mobile', 'video', 'review', 'partners', 'start'],
+		        // anchors: ['intro', 'why', 'safety', 'mobile', 'video', 'review', 'partners', 'start'],
+		        anchors: ['intro', 'why', 'safety', 'mobile', 'start'], // 200130 수정
 		        scrollOverflow: true,
 		        sectionSelector: '.sm_section',
 		        afterLoad: function(origin, destination, direction) { // 도착
@@ -507,6 +522,23 @@ function handleComplete(evt) {
 	makeResponsive(false,'both',false,1);	
 	fnStartAnimation();
 }
+
+
+/* 200130 추가 s */
+$('.btn_ios').on('click', function() {
+	var alert = $(this).find('.alert')
+	alert.fadeIn(300);
+	return false;
+})
+$('html,body').on('click', function() {
+	$('.alert').each(function() {
+		if (parseInt($(this).css('opacity'))== 1) {
+			$(this).stop().fadeOut(300);
+		}
+	})
+})
+/* 200130 추가 e */
+
 </script>
 </div></div>
 	</div>

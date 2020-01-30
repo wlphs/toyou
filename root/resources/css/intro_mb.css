@@ -2114,9 +2114,11 @@ body {
 .header .util .btn_round {
   background: #fff;
   height: 45px;
+  font-weight: 500;
   border-radius: 23px;
   text-align: center;
   display: block;
+  position: relative;
 }
 
 .header .util .btn_round span {
@@ -2144,6 +2146,21 @@ body {
 
 .header .util .btn_android span:after {
   background: url("/resources/images/intro/logo_android_sm.png");
+}
+
+.alert {
+  display: none;
+  position: absolute;
+  top: 35px;
+  left: 50%;
+  margin-left: -88px;
+  z-index: 1;
+}
+
+.alert img {
+  display: inline-block;
+  box-shadow: 5px 5px 20px 0 rgba(0, 0, 0, 0.05), 5px 5px 20px 0 rgba(0, 0, 0, 0.05);
+  width: 177px;
 }
 
 .toyou_wrap {
@@ -2214,7 +2231,9 @@ body {
 }
 
 .sm_section .sm_inner .btn_round {
+  position: relative;
   background: #fff;
+  font-weight: 500;
   height: 45px;
   border-radius: 23px;
   text-align: center;
