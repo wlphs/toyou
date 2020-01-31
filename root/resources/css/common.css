@@ -7221,7 +7221,8 @@ input[type="radio"].type_btn_radio + label {
   position: absolute;
   z-index: 2;
   right: 25px;
-  bottom: 15px;
+  bottom: 18px;
+  /* 200131 수정 */
   color: #fff;
   font-size: 15px;
   font-weight: 500;

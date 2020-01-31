@@ -2062,6 +2062,66 @@ body {
   position: relative;
 }
 
+.p_header {
+  margin: 0px 20px;
+}
+
+.p_header .logo {
+  padding-top: 20px;
+}
+
+.p_header .logo img {
+  width: 123px;
+}
+
+.p_header .head_list {
+  position: absolute;
+  right: 12px;
+  top: 22px;
+}
+
+.p_header .head_list:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.p_header .head_list li {
+  float: left;
+  padding: 0 8px;
+  position: relative;
+  opacity: 0.4;
+}
+
+.p_header .head_list li a {
+  font-size: 14px;
+  color: #000;
+  font-weight: 300;
+}
+
+.p_header .head_list li.on {
+  opacity: 1;
+}
+
+.p_header .head_list li.on a {
+  font-weight: 700;
+  color: #ff5c5c;
+}
+
+.p_header .head_list li:first-child:after {
+  display: none;
+}
+
+.p_header .head_list li:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 5px;
+  width: 1px;
+  height: 10px;
+  background: #ccc;
+}
+
 .header {
   position: fixed;
   width: 100%;
