@@ -2661,6 +2661,14 @@ body {
   position: fixed;
   right: 40px;
   bottom: 100px;
+  height: 177px;
+}
+
+.fixed_btns .chat {
+  width: 80px;
+  height: 80px;
+  display: block;
+  background: url("/resources/images/intro/exp_ic_chat.png");
 }
 
 .fixed_btns .top {

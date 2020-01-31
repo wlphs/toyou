@@ -78,7 +78,7 @@ b {color:#ff5c5c;}
             li {float:left; padding: 0 8px; position: relative;  opacity:0.4;;
                 a{ font-size:14px; color:#000; font-weight: 300;}
                 &.on {opacity: 1;
-                    a{ font-weight: 700;}
+                    a{ font-weight: 700;color:#ff5c5c; display:inline-block; margin-top:-1px;}
                 }
                 &:first-child:after {display:none;}
                 &:after {content:''; position: absolute; left:0 ;top:5px; width:1px; height:10px; background:#ccc;}
@@ -208,6 +208,6 @@ p {word-break: keep-all;}
 
 
 .fixed_btns{ position:fixed; right:20px; bottom:20px;
-    .chat {width:60px; height:60px; display:block; background:url('/resources/images/intro/exp_ic_chat.png'); background-size:60px; }
-    .top {width:60px; height:60px; display:block; background:url('/resources/images/intro/exp_ic_top.png'); background-size:60px; margin-top:13px}
+    .chat {width:40px; height:40px; display:block; background:url('/resources/images/intro/exp_ic_chat.png'); background-size:40px; }
+    .top {width:40px; height:40px; display:block; background:url('/resources/images/intro/exp_ic_top.png'); background-size:40px; margin-top:10px}
 }

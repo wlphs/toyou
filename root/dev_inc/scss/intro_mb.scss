@@ -26,7 +26,7 @@
 }
 
 
-.header { position:fixed; width:100%; top:0; left:0; height:80px; z-index: 1111;
+.header { position:fixed; width:100%; top:0; left:0; height:0px; z-index: 1111;
     .logo {position: absolute; left:60px; top:20px; }
     .util {padding:20px 18px 0; @include clearfix(); margin-top:146px;   transition: .4s margin-top; transition-delay: .3s;
         &.top { margin-top:0;transition-delay: 0s;}
@@ -258,8 +258,9 @@
 }
 
 
-.fixed_btns{ position:fixed; right:10px; bottom:30px;
-    .top {width:40px; height:40px; display:block; background:url('/resources/images/intro/exp_ic_top.png'); background-size:40px; margin-top:17px}
+.fixed_btns{ position:fixed; right:20px; bottom:20px; height:90px;
+    .chat {width:40px; height:40px; display:block; background:url('/resources/images/intro/exp_ic_chat.png'); background-size:40px;}
+    .top {width:40px; height:40px; display:block; background:url('/resources/images/intro/exp_ic_top.png'); background-size:40px; margin-top:10px }
 }
 
 
