@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<!-- header -->
+	@@include('../../include/_head.html', {"title" : "TOYOUCORP."})
+	<!-- //header -->
+</head>
+
+<body class="pageclass">
+	<p class="accessibility" id="skipTop">
+		<a href="#container">본문 바로가기</a>
+		<a href="#gnb" class="js-gnb_btn">주메뉴 바로가기</a> 
+	</p>
+	<div class="wrapper">
+		<!-- header --> 
+		<header id="header" class="header">
+			<div class="header_fixed_group"> 
+                <div class="top_bar">
+                    <div class="locations pl20"> 
+                        <div class="view_page"><h1 class="sub_title exp_main_tit"><img src="/resources/images/common/img_mail_logo.png" alt="to you home"> 예약내역</h1></div>
+                    </div>
+                    <div class="top_right">
+                        <a href="#" class="filter_reset js-reset">&nbsp;<span class="hide">리프레시</span></a> 
+                    </div>
+                </div>
+			</div> 
+		</header>
+		<!-- //header -->
+
+		<!-- container -->
+		<div id="container">
+			<div id="contents">
+                
+				<!-- 200410 수정 s -->
+				<div class="main">
+					<section class="main_card ml0 mb0">
+						<div class="slider_wrap swiper-container main">
+							<ul class="swiper-wrapper ">
+								<li class="swiper-slide">
+									<p class="big_banner">
+										<img src="/resources/images/corona/banner_corona_01.jpg" class="" alt=""/>
+									</p>
+								</li>
+								<li class="swiper-slide">
+									<p class="big_banner">
+										<img src="/resources/images/corona/banner_corona_02.jpg" class="" alt=""/>
+									</p>
+								</li>
+								<li class="swiper-slide">
+									<p class="big_banner">
+										<img src="/resources/images/corona/banner_corona_03.jpg" class="" alt=""/>
+									</p>
+								</li>
+								<li class="swiper-slide">
+									<p class="big_banner">
+										<img src="/resources/images/corona/banner_corona_04.jpg" class="" alt=""/>
+									</p>
+								</li>
+							</ul>
+							<div class="corona_pagination">
+								<div class="page_count">
+									<span class="page_crt">1</span>
+									<span class="page_blit">/</span>
+									<span class="page_total">4</span>
+								</div>
+								<div class="corona_link">
+									<a href="#" class="link">전체보기</a>
+								</div>
+							</div>
+						</div>
+					</section>
+				</div>
+				<script>
+							
+				$(function() {
+					var swiper_001 = new Swiper('.swiper-container.main', {
+						effect : 'slide',
+						loop : true,
+						slidesPerView: 'auto',
+						autoplay: {
+							delay: 8000,
+						},
+						pagination: {
+							el: '.corona_pagination .page_count',
+							type: 'fraction',
+						}
+					})
+				});
+				</script>		
+                <!-- 200410 수정 e -->
+                
+                <div class="cont_inner">
+                    <div class="tab-wrap tab_type">
+                        <div class="tab_menu_wrap">
+                            <ul class="tab_menu clearfix tab_col3">
+                                <li class="on"><a href="#">진행중</a></li>
+                                <li><a href="#">완료</a></li>
+                                <li><a href="#">미진행/취소</a></li>
+                            </ul> 
+                        </div>
+                    </div>
+                </div>
+                <div class="cont_inner_right">
+                    <ul class="reserv_list_type mt10 mb10"> <!-- 200410 수정 -->
+                        <li class="no_data_list">
+                            <div class="no_data pt40 pb0"> <!-- 200410 수정 -->
+                                <span class="img"></span>
+                                <p>
+                                    <span>새 서비스 예약 요청을<br><b class="colorB">기다리는 중입니다.</b></span>
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+			</div>
+		</div>
+
+        
+		<!-- //container -->
+		@@include('../../include/_toolbar.html')
+	</div>
+
+    <script>
+        $(window).on('load', function() {
+            $('.js-ellipsis_end').each(function() {
+                var etc_w = $('.etc', $(this)).innerWidth();
+                $(this).css({"padding-right":etc_w})
+            })
+            
+        })
+    
+    </script>
+</body>
+</html>

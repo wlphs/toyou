@@ -252,6 +252,33 @@ __CONSTANT_LIST = [
         etc 		: '2019-1113',
     },
 	{
+        stateLine   : "corona", 
+        dep1 		: '홈(코로나)',
+        dep2 		: '',
+        dep3 		: '',
+        url 		: '/html/basic/main/home_corona.html',
+        pubUpdate 	: '2020-0410',
+        etc 		: 'corona',
+    },
+	{
+        stateLine   : "corona", 
+        dep1 		: '코로나 리스트',
+        dep2 		: '',
+        dep3 		: '',
+        url 		: '/html/basic/main/corona.html',
+        pubUpdate 	: '2020-0410',
+        etc 		: 'corona',
+    },
+	{
+        stateLine   : "corona", 
+        dep1 		: '공지사항',
+        dep2 		: '',
+        dep3 		: '',
+        url 		: '/html/basic/policy/NT-0001.html',
+        pubUpdate 	: '2020-0410',
+        etc 		: 'corona',
+    },
+	{
         stateLine   : "", 
         dep1 		: '',
         dep2 		: '홈서비스 주소입력',
@@ -329,8 +356,17 @@ __CONSTANT_LIST = [
         dep2 		: '상세',
         dep3 		: '소개',
         url 		: '/html/basic/service/SV-0001.html',
-        pubUpdate 	: '2019-1117',
+        pubUpdate 	: '2020-0000',
         etc 		: '2019-1117',
+    },
+	{
+        stateLine   : "corona", 
+        dep1 		: '',
+        dep2 		: '상세',
+        dep3 		: '소개',
+        url 		: '/html/basic/service/SV-0001_corona.html',
+        pubUpdate 	: '2020-0410',
+        etc 		: 'corona',
     },
 	{
         stateLine   : "", 
@@ -502,8 +538,17 @@ __CONSTANT_LIST = [
         dep2 		: '서브메인',
         dep3 		: '',
         url 		: '/html/basic/mypage/MY-0001.html',
-        pubUpdate 	: '2019-0000',
+        pubUpdate 	: '2020-0000',
         etc 		: '2019-1117',
+    },
+	{
+        stateLine   : "corona", 
+        dep1 		: '마이페이지',
+        dep2 		: '서브메인',
+        dep3 		: '',
+        url 		: '/html/basic/mypage/MY-0001_corona.html',
+        pubUpdate 	: '2020-0410',
+        etc 		: 'corona',
     },
 	{
         stateLine   : "", 
@@ -623,8 +668,18 @@ __CONSTANT_LIST = [
         dep3 		: '',
         dep4 		: '1일전',
         url 		: '/html/basic/mypage/MY-0014.html',
-        pubUpdate 	: '2019-0000',
+        pubUpdate 	: '2020-0000',
         etc 		: '2019-1120',
+    },
+    {
+        stateLine   : "corona", 
+        dep1 		: '',
+        dep2 		: '',
+        dep3 		: '',
+        dep4 		: '1일전',
+        url 		: '/html/basic/mypage/MY-0014_corona.html',
+        pubUpdate 	: '2020-0410',
+        etc 		: 'corona',
     },
     {
         stateLine   : "", 
@@ -849,8 +904,17 @@ __CONSTANT_LIST = [
         dep2 		: '서비스 등록하기',
         dep3 		: '',
         url 		: '/html/expert/service/SV-0014.html',
-        pubUpdate 	: '2019-0000',
+        pubUpdate 	: '2020-0000',
         etc 		: '2019-1124',
+    },
+	{
+        stateLine   : "corona", 
+        dep1 		: '예약 내역',
+        dep2 		: '서비스 등록하기',
+        dep3 		: '',
+        url 		: '/html/expert/service/SV-0014_corona.html',
+        pubUpdate 	: '2020-0410',
+        etc 		: 'corona',
     },
 	// {
     //     stateLine   : "", 
@@ -912,8 +976,17 @@ __CONSTANT_LIST = [
         dep2 		: '',
         dep3 		: '데이터 없음',
         url 		: '/html/expert/mypage/MY-0009.html',
-        pubUpdate 	: '2019-0000',
+        pubUpdate 	: '2020-0000',
         etc 		: '2019-1124',
+    },
+	{
+        stateLine   : "corona", 
+        dep1 		: '',
+        dep2 		: '',
+        dep3 		: '데이터 없음',
+        url 		: '/html/expert/mypage/MY-0009_corona.html',
+        pubUpdate 	: '2020-0410',
+        etc 		: 'corona',
     },
 	{
         stateLine   : "", 
@@ -934,6 +1007,16 @@ __CONSTANT_LIST = [
         url 		: '/html/expert/mypage/E_MY-0010.html',
         pubUpdate 	: '2019-0000',
         etc 		: '2019-1124',
+    },
+	{
+        stateLine   : "corona", 
+        dep1 		: '',
+        dep2 		: '예약하기 상세',
+        dep3 		: '미진행/예정확정/GPS',
+        dep4 		: '',
+        url 		: '/html/expert/mypage/E_MY-0010_corona.html',
+        pubUpdate 	: '2020-0410',
+        etc 		: 'corona',
     },
 	{
         stateLine   : "", 
@@ -964,6 +1047,16 @@ __CONSTANT_LIST = [
         url 		: '/html/expert/mypage/E_MY-0013.html',
         pubUpdate 	: '2019-0000',
         etc 		: '2019-1124',
+    },
+	{
+        stateLine   : "corona", 
+        dep1 		: '',
+        dep2 		: '',
+        dep3 		: '1일전',
+        dep4 		: '',
+        url 		: '/html/expert/mypage/E_MY-0013_corona.html',
+        pubUpdate 	: '2020-0410',
+        etc 		: 'corona',
     },
 	{
         stateLine   : "", 
@@ -1269,8 +1362,17 @@ __CONSTANT_LIST = [
         dep2 		: '예약가능/불가능',
         dep3 		: '',
         url 		: '/html/expert/mypage/MY-1001.html',
-        pubUpdate 	: '2019-0000',
+        pubUpdate 	: '2020-0000',
         etc 		: '2019-1124',
+    },
+	{
+        stateLine   : "corona", 
+        dep1 		: '마이페이지',
+        dep2 		: '예약가능/불가능',
+        dep3 		: '',
+        url 		: '/html/expert/mypage/MY-1001_corona.html',
+        pubUpdate 	: '2020-0410',
+        etc 		: 'corona',
     },
 	{
         stateLine   : "del", 
@@ -1525,7 +1627,7 @@ __CONSTANT_LIST = [
  
 ];
 
-__CONSTANT_RULE = { getIndex: function () { var _idx = ++window['INDEX'] || (window['INDEX'] = 0); return _idx + 1; }, li_option: function ($item) { var _return = ""; /*topLine*/ if ($item.title) { _return += ' t-title'; }; if ($item.dep1) { _return += ' t-divide'; }; /*compareUpdate*/ if ($item.pubUp && $item.devUp) { if ($item.pubUp > $item.devUp) { _return += ' is-different'; } }; /*isDone*/ if ($item.stateHTML && $item.stateJS) { if ($item.stateHTML && $item.stateJS) { _return += ' is-done'; } }; /* 상태라인 */ if ($item.stateLine) { if ($item.stateLine == "edit") { _return += ' edit'; } if ($item.stateLine == "del") { _return += ' del'; } }; return _return; }, path: function () { return '..' + this.url; }, getfileName: function ($item) { var aURL = $item.url.split('/'); return aURL[aURL.length - 1]; }, };
+__CONSTANT_RULE = { getIndex: function () { var _idx = ++window['INDEX'] || (window['INDEX'] = 0); return _idx + 1; }, li_option: function ($item) { var _return = ""; /*topLine*/ if ($item.title) { _return += ' t-title'; }; if ($item.dep1) { _return += ' t-divide'; }; /*compareUpdate*/ if ($item.pubUp && $item.devUp) { if ($item.pubUp > $item.devUp) { _return += ' is-different'; } }; /*isDone*/ if ($item.stateHTML && $item.stateJS) { if ($item.stateHTML && $item.stateJS) { _return += ' is-done'; } }; /* 상태라인 */ if ($item.stateLine) { if ($item.stateLine == "corona") { _return += ' corona'; } if ($item.stateLine == "edit") { _return += ' edit'; } if ($item.stateLine == "del") { _return += ' del'; } }; return _return; }, path: function () { return '..' + this.url; }, getfileName: function ($item) { var aURL = $item.url.split('/'); return aURL[aURL.length - 1]; }, };
 
 var _data = {_temp_dep1:""}; Vue.component('search-component', { props: ['listItem', 'dep1SearchIndex'], data: function(){ return _data }, template: '<cite style="position:absolute; font-size:0; line-height:0">{{ listItem.dep1? _temp_dep1 = listItem.dep1 : _temp_dep1 }}</cite>' });
 __GUIDE_LIST = new Vue({el: '#guide_list',data: {config : __SITENAME,t_head : __CONSTANT_HEAD,t_rule : __CONSTANT_RULE,t_body : __CONSTANT_LIST,}, methods: __CONSTANT_RULE, beforeCreate: function(){ $("#guide_list").show() }, });
@@ -1533,3 +1635,14 @@ __GUIDE_LIST = new Vue({el: '#guide_list',data: {config : __SITENAME,t_head : __
 
 $(document).ready(function () { /* 배열 변수넣기 */var _updateArr = [];$("._GUIDE__list__col--update-pub").each(function (index) {_updateArr.push($("._GUIDE__list__col--update-pub").eq(index).text().replace("-", ""));}); /* 배열 최대값 */var _max = _updateArr.reduce(function (a, b) {return Math.max(a, b);}); /* 최대값 클래스 넣기 */for (var i in _updateArr) {if (_updateArr[i] == _max) {$("._GUIDE__list__col--update-pub").eq(i).addClass("new_update");}}; /* 검색 */var searchFn = function () {var n = $("#tpl-body").html(),o = $("#list-body");$("#list-sch_txt").on("keydown keyup", function () {var t = $(this).val();o.find("li").hide(), o.find(":contains(" + t + ")").closest("li").show();});};$("#list-head").length && searchFn();});
 
+function getParameterByName(name) {
+    name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+    var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+        results = regex.exec(location.search);
+    return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+}
+
+var _search = getParameterByName('search');
+$(document).ready(function () {
+    if (_search) {$('#list-sch_txt').val(_search);$('#list-sch_txt').trigger('keydown');}
+});

@@ -140,6 +140,17 @@ input[type="checkbox"].chk + label.chk { font-size:15px; color:#000; padding-lef
 }
 input[type="checkbox"].chk:checked + label.chk:after {@include sp_form($checkbox_on);}
 
+
+input[type="radio"].chk {position: absolute; top:50%; margin:0; margin-top:-10px; left:0; opacity: 0;width:1px; height:1px; 
+}
+input[type="radio"].chk + label.chk { font-size:15px; color:#000; padding-left:33px; display:inline-block; font-weight: 400; position: relative; line-height: 25px;
+	&:after {content:''; @include sp_form($checkbox_off); position: absolute; top:50%; margin-top:-13px; left:0; }
+	
+}
+input[type="radio"].chk:checked + label.chk:after {@include sp_form($checkbox_on);}
+
+
+
 input[type="radio"].rdo {position: absolute; top:50%; margin:0; margin-top:-10px; left:0; opacity: 1;width:20px; height:20px;  }
 input[type="radio"].rdo + label.rdo { font-size:13px; color:#000; padding-left:25px; display:inline-block; font-weight: 400;
 	&:after {content:''; @include sp_form($radio_off); position: absolute; top:50%; margin-top:-10px; left:0; }

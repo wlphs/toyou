@@ -36,6 +36,10 @@
 .btn.btn_gray2 { 
     background:#c8c8c8; border:1px solid #c8c8c8; color:#fff;
 }
+.btn.btn_gray3 { 
+    background:#b7b7b7; border:1px solid #b7b7b7; color:#fff;
+}
+
 .btn.btn_gray_w { 
     background:#ccc; border:1px solid #ccc; color:#fff;
 }
@@ -385,10 +389,15 @@
                     position: absolute; top:18px; right:15px; transform :rotate(180deg);
                    @include sp_icons($arrow_up_md);}
             }
+            .date {display:block; margin-top:5px; font-size:13px; color:#888888; font-weight: 300;}
         }
         >.con-area { display: none;  padding: 0px 50px 20px 0; line-height: 23px; font-size:15px;
             .policy_wrap {max-height: 300px; overflow-y:scroll;}
-            .qna_cont {font-size:15px; }
+            .qna_cont {font-size:15px; 
+            }
+            .notice_cont {
+                img{ width:100%;}
+            }
             .policy_cont {font-size:13px;
                 .tit {font-weight: 500; font-size:13px; word-break: keep-all;}
                 .txt {font-size:13px; word-break: keep-all;}
@@ -427,7 +436,7 @@
         text-align: center;vertical-align: middle;
     }
     .popup-layer {   position: relative; z-index: 20; display: inline-block;*display: inline;zoom: 1;background: #fff;}
-    .btn_close { position: absolute;top: 0px;right: 0px; 
+    .btn_close {z-index:1; position: absolute;top: 0px;right: 0px; 
         width: 50px; height: 60px; margin: 0; 
         font-size: 0px; line-height: 1; color: transparent; box-sizing: border-box;
         &:after { content:''; position: absolute; right:16px; top:22px; @include sp_icons($layer_close);}
@@ -454,7 +463,6 @@
             .section { padding: 0 15px 15px;}
         }
     }
-
     .popup-layer.select_layer { border-top:10px solid $colorP;
         .sel_wrap { max-height:calc(100vh - 70px); overflow-y:auto;
             > li { background: url('/resources/images/common/dot_line_hor.png') repeat-x top left; background-size:4px 1px;

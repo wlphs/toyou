@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<!-- header -->
+	@@include('../../include/_head.html', {"title" : "TOYOUCORP."})
+	<!-- //header -->
+</head>
+
+<body class="pageclass">
+	<p class="accessibility" id="skipTop">
+		<a href="#container">본문 바로가기</a>
+		<a href="#gnb" class="js-gnb_btn">주메뉴 바로가기</a> 
+	</p>
+	<div class="wrapper">
+		<!-- header --> 
+		<header id="header" class="header">
+			<div class="header_fixed_group">
+				<div class="top_bar">
+					<div class="locations pl20"> 
+						<div class="view_page"><h1 class="sub_title exp_main_tit"><img src="/resources/images/common/img_mail_logo.png" alt="to you home"></h1></div>
+					</div>
+				</div>
+			</div> 
+		</header>
+		<!-- //header -->
+
+		<!-- container -->
+		<div id="container">
+			<div id="contents">
+				
+				<!-- 200410 수정 s -->
+				<div class="main">
+					<section class="main_card ml0 mb0">
+						<div class="slider_wrap swiper-container main">
+							<ul class="swiper-wrapper ">
+								<li class="swiper-slide">
+									<p class="big_banner">
+										<img src="/resources/images/corona/banner_corona_01.jpg" class="" alt=""/>
+									</p>
+								</li>
+								<li class="swiper-slide">
+									<p class="big_banner">
+										<img src="/resources/images/corona/banner_corona_02.jpg" class="" alt=""/>
+									</p>
+								</li>
+								<li class="swiper-slide">
+									<p class="big_banner">
+										<img src="/resources/images/corona/banner_corona_03.jpg" class="" alt=""/>
+									</p>
+								</li>
+								<li class="swiper-slide">
+									<p class="big_banner">
+										<img src="/resources/images/corona/banner_corona_04.jpg" class="" alt=""/>
+									</p>
+								</li>
+							</ul>
+							<div class="corona_pagination">
+								<div class="page_count">
+									<span class="page_crt">1</span>
+									<span class="page_blit">/</span>
+									<span class="page_total">4</span>
+								</div>
+								<div class="corona_link">
+									<a href="#" class="link">전체보기</a>
+								</div>
+							</div>
+						</div>
+					</section>
+				</div>
+				<script>
+							
+				$(function() {
+					var swiper_001 = new Swiper('.swiper-container.main', {
+						effect : 'slide',
+						loop : true,
+						slidesPerView: 'auto',
+						autoplay: {
+							delay: 8000,
+						},
+						pagination: {
+							el: '.corona_pagination .page_count',
+							type: 'fraction',
+						}
+					})
+				});
+				</script>		
+                <div class="service_requset_wrap">
+                    <div class="req_wrap type2">
+                            <img src="/resources/images/common/img_splash_txt3.png" alt="" class="img_tag">
+                        <div class="req_cont cont_inner">
+                            
+                            <div class="txt_wrap">
+                                <p class="ic_home"></p>
+                                <p class="txt1">투유홈으로</p>
+                                <p class="txt1 ft_b">보다 더 많은 고객을</p>
+                                <p class="txt1 ft_b">만나보세요!</p>
+                            </div>
+                            <a href="" class="mt15 mb10 btn btn_lg btn_point w100p ft_b">서비스 등록하기</a>
+                            <p class="txt"><b>서비스 정보 등록 후</b> 예약 요청을 받으실 수 있습니다.</p>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- 200410 수정 e -->
+			</div>
+		</div>
+        
+		<!-- //container -->
+	</div>
+
+<script>
+	$('.info_box .btn_like').on('click', function () {
+		$(this).toggleClass('on');
+    })
+    //<!-- 200410 수정 s -->
+    $(window).on('load resize', function() {
+        var _h = $('.main_card').height()
+        $('.req_wrap.type2').css('height', 'calc(100vh - 65px - '+_h+'px)');
+    })
+    //<!-- 200410 수정 e -->
+</script>
+		
+</body>
+</html>

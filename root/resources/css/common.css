@@ -228,14 +228,14 @@ a, span, i, em {
   outline: none;
 }
 
-.input_del button:after, input[type="checkbox"].chk + label.chk:after, input[type="checkbox"].chk:checked + label.chk:after, input[type="radio"].rdo + label.rdo:after, input[type="radio"].rdo:checked + label.rdo:after, .formsearch-box .search-btn:after, .formsearch-box.type2:after, .datepicker-box:after {
+.input_del button:after, input[type="checkbox"].chk + label.chk:after, input[type="checkbox"].chk:checked + label.chk:after, input[type="radio"].chk + label.chk:after, input[type="radio"].chk:checked + label.chk:after, input[type="radio"].rdo + label.rdo:after, input[type="radio"].rdo:checked + label.rdo:after, .formsearch-box .search-btn:after, .formsearch-box.type2:after, .datepicker-box:after {
   background-image: url("../images/common/sp_form.png");
   background-size: 90px 85px;
 }
 
-.icon_label, .btn_menu_arrow:after, .btn_trash:after, .btn_more:after, .btn_more.red:after, .btn_file::before, .photo::before, .btn_report::before, .btn_report2::before, .btn_all_more:after, .btn_plus:after, .btn_filter::before, .btn_del::before, .btn_del02::before, .icon_kakao::before, .icon_chat::before, .icon_call::before, .icon_01::before, .icon_02::before, .save_logout::before, .btn_more_point:after, .btn_arrow_type:after, .accordion-list > li .header-area .acc_btn:after, .trp.popupfixed-wrap .btn_close:after, .trp.popupfixed-wrap .caution_wrap:after, .trp.popupfixed-wrap .share_wrap .share_list li .btn_facebook:after, .trp.popupfixed-wrap .share_wrap .share_list li .btn_kakao:after, .trp.popupfixed-wrap .share_wrap .share_list li .btn_share:after, .select2-container--classic .select2-selection--single .select2-selection__arrow:after, .calendar_wrap .daterangepicker .calendar-table .prev:after, .calendar_wrap .daterangepicker .calendar-table .next:after, .header .top_bar .history_back:before, .header .top_bar .btn_share:after, .header .top_bar .btn_save_n_exit:after, .header .top_bar .filter_reset:after, .header .top_bar .btn_like:after, .header .top_bar .btn_like.on:after, .header .top_bar .btn_search:before, #footer .opne_text:after, .top_scroll::before, .btn_cart:before, .profile_photo_wrap .pf_photo_change:after, .agree_list li .agree_view:after, .main_header .h1_logo, .main_header .location_top::before, .main_header .tip::before, .main section.main_card .visual_txt .txt em, .thum_list li .img .btn_like::before, .thum_list li .img .btn_like.on::before, .thum_list li .btn_like::before, .thum_list li .btn_like.on::before, .thum_list li .btn_like2::before, .thum_list li .btn_like2.on::before, .introWrap .slider li .intro_btns .btn_login span.log_naver:after, .introWrap .slider li .intro_btns .btn_login span.log_kakao:after, .chatting_area .chatting_list > li .icon, .chatting_area .chatting_view > li .chat_area .chat_view::before, .chatting_area .chatting_view > li.answer .chat_area .chat_view::before, .alarm_area .alarm_list > li .link::before, .serv_wrap .serv_detail .serv_info .reaction li.like:after, .serv_wrap .serv_detail .serv_info .reaction li.review:after, .serv_wrap .serv_detail .serv_info .reaction li.reply:after, .serv_wrap .serv_review_wrap .review_total_like .like_count:after, .serv_wrap .serv_review_wrap .review_list li .writer .review_like .btn_review_like:after, .movieWrap .movie_play:after, .service_bottom .btn_chat:after, .service_bottom .btn_tel:after, .review_more_wrap .btn_review_more:after, .buy_booking .end:before, .reserv_detail_wrap .detail_tit.wait:after, .reserv_detail_wrap .detail_tit.end:after, .reserv_detail_wrap .detail_tit.cancel:after, .expert_profile .link_connect li a.ic_kakao:after, .expert_profile .link_connect li a.ic_chat:after, .expert_profile .link_connect li a.ic_call:after, .service_requset_wrap .req_wrap .req_cont .txt_wrap .ic_home, .profile_wrap .pf_photo_wrap .pf_photo_change:after, .profile_wrap .pf_photo_wrap .pf_photo_change.type2:after, .profile_wrap .pf_manage a.btn_edit_pf:after, .profile_wrap .pf_manage a.btn_edit_cert:after, .btn_stat_reserv:after, .btn_stat_reserv.stat_disabled:after, .btn_chk_reserv span:after, .btn_chk_reserv.chk_disabled span:after, .position_cont .photo_area .pf_photo_change:after, .expert_my_service .reaction li.like:after, .expert_my_service .reaction li.review:after, .expert_my_service .reaction li.reply:after, .user_confirm a::before, .user_01::before, .user_02::before, .icon_position::before {
+.icon_label, .btn_menu_arrow:after, .btn_trash:after, .btn_more:after, .btn_more.red:after, .btn_file::before, .photo::before, .btn_report::before, .btn_report2::before, .btn_all_more:after, .btn_plus:after, .btn_filter::before, .btn_del::before, .btn_del02::before, .icon_kakao::before, .icon_chat::before, .icon_call::before, .icon_01::before, .icon_02::before, .save_logout::before, .btn_more_point:after, .btn_arrow_type:after, .accordion-list > li .header-area .acc_btn:after, .trp.popupfixed-wrap .btn_close:after, .trp.popupfixed-wrap .caution_wrap:after, .trp.popupfixed-wrap .share_wrap .share_list li .btn_facebook:after, .trp.popupfixed-wrap .share_wrap .share_list li .btn_kakao:after, .trp.popupfixed-wrap .share_wrap .share_list li .btn_share:after, .select2-container--classic .select2-selection--single .select2-selection__arrow:after, .calendar_wrap .daterangepicker .calendar-table .prev:after, .calendar_wrap .daterangepicker .calendar-table .next:after, .header .top_bar .history_back:before, .header .top_bar .btn_share:after, .header .top_bar .btn_save_n_exit:after, .header .top_bar .filter_reset:after, .header .top_bar .btn_like:after, .header .top_bar .btn_like.on:after, .header .top_bar .btn_search:before, #footer .opne_text:after, .top_scroll::before, .btn_cart:before, .profile_photo_wrap .pf_photo_change:after, .agree_list li .agree_view:after, .main_header .h1_logo, .main_header .location_top::before, .main_header .tip::before, .main section.main_card .visual_txt .txt em, .thum_list li .img .btn_like::before, .thum_list li .img .btn_like.on::before, .thum_list li .btn_like::before, .thum_list li .btn_like.on::before, .thum_list li .btn_like2::before, .thum_list li .btn_like2.on::before, .introWrap .slider li .intro_btns .btn_login span.log_naver:after, .introWrap .slider li .intro_btns .btn_login span.log_kakao:after, .chatting_area .chatting_list > li .icon, .chatting_area .chatting_view > li .chat_area .chat_view::before, .chatting_area .chatting_view > li.answer .chat_area .chat_view::before, .alarm_area .alarm_list > li .link::before, .serv_wrap .serv_detail .serv_info .reaction li.like:after, .serv_wrap .serv_detail .serv_info .reaction li.review:after, .serv_wrap .serv_detail .serv_info .reaction li.reply:after, .serv_wrap .serv_review_wrap .review_total_like .like_count:after, .serv_wrap .serv_review_wrap .review_list li .writer .review_like .btn_review_like:after, .movieWrap .movie_play:after, .service_bottom .btn_chat:after, .service_bottom .btn_tel:after, .review_more_wrap .btn_review_more:after, .buy_booking .end:before, .reserv_detail_wrap .detail_tit.wait:after, .reserv_detail_wrap .detail_tit.end:after, .reserv_detail_wrap .detail_tit.cancel:after, .expert_profile .link_connect li a.ic_kakao:after, .expert_profile .link_connect li a.ic_chat:after, .expert_profile .link_connect li a.ic_call:after, .service_requset_wrap .req_wrap .req_cont .txt_wrap .ic_home, .service_requset_wrap .req_wrap.type2 .req_cont .txt_wrap .ic_home, .profile_wrap .pf_photo_wrap .pf_photo_change:after, .profile_wrap .pf_photo_wrap .pf_photo_change.type2:after, .profile_wrap .pf_manage a.btn_edit_pf:after, .profile_wrap .pf_manage a.btn_edit_cert:after, .btn_stat_reserv:after, .btn_stat_reserv.stat_disabled:after, .btn_chk_reserv span:after, .btn_chk_reserv.chk_disabled span:after, .position_cont .photo_area .pf_photo_change:after, .expert_my_service .reaction li.like:after, .expert_my_service .reaction li.review:after, .expert_my_service .reaction li.reply:after, .user_confirm a::before, .user_01::before, .user_02::before, .icon_position::before {
   background-image: url("../images/common/sp_icons.png");
-  background-size: 369.5px 331px;
+  background-size: 371.5px 347.5px;
 }
 
 .category_list li .cate_link.ic_cl1:after, .category_list li .cate_link.ic_cl2:after, .category_list li .cate_link.ic_cl3:after, .category_list li .cate_link.ic_cl4:after, .category_list li .cate_link.ic_cl5:after, .category_list li .cate_link.ic_cl6:after, .category_list li .cate_link.ic_cl7:after, .category_list li .cate_link.ic_cl8:after, .category_list li .cate_link.ic_cl9:after, .category_list li .cate_link.ic_cl10:after, .category_list li .cate_link.ic_cl11:after {
@@ -1466,6 +1466,7 @@ a, span, i, em {
   position: absolute;
   width: 100%;
   height: 0;
+  background: url("/resources/images/common/point_bg.jpg");
 }
 
 .accessibility a {
@@ -2898,6 +2899,12 @@ table.bottom_bar {
   color: #fff;
 }
 
+.btn.btn_gray3 {
+  background: #b7b7b7;
+  border: 1px solid #b7b7b7;
+  color: #fff;
+}
+
 .btn.btn_gray_w {
   background: #ccc;
   border: 1px solid #ccc;
@@ -2943,7 +2950,7 @@ table.bottom_bar {
   margin-top: -4px;
   width: 6px;
   height: 8px;
-  background-position: -332.5px -179px;
+  background-position: -91px -314.5px;
 }
 
 .btn_menu_arrow .sm_txt {
@@ -3026,7 +3033,7 @@ table.bottom_bar {
   display: block;
   width: 13px;
   height: 14px;
-  background-position: -355.5px -123.5px;
+  background-position: -357.5px -123.5px;
 }
 
 .btn_trash.pos_abs_right {
@@ -3051,7 +3058,7 @@ table.bottom_bar {
   margin-top: -4px;
   width: 5px;
   height: 9px;
-  background-position: -332.5px -197px;
+  background-position: 0px -338.5px;
 }
 
 .btn_more.red {
@@ -3070,7 +3077,7 @@ table.bottom_bar {
   margin-top: -5px;
   width: 6px;
   height: 10px;
-  background-position: -332.5px -96px;
+  background-position: -75px -314.5px;
 }
 
 .btn_file {
@@ -3108,7 +3115,7 @@ table.bottom_bar {
   margin-top: -10px;
   width: 16px;
   height: 18px;
-  background-position: 0px -288px;
+  background-position: -329.5px -193.5px;
 }
 
 .btn_report {
@@ -3124,7 +3131,7 @@ table.bottom_bar {
   display: inline-block;
   width: 14px;
   height: 15px;
-  background-position: -355.5px 0px;
+  background-position: -357.5px 0px;
   margin-right: 8px;
 }
 
@@ -3144,7 +3151,7 @@ table.bottom_bar {
   margin-top: -6px;
   width: 13.5px;
   height: 15.5px;
-  background-position: -355.5px -25px;
+  background-position: -357.5px -25px;
   margin-right: 8px;
 }
 
@@ -3163,7 +3170,7 @@ table.bottom_bar {
   margin-top: -4px;
   width: 10px;
   height: 6px;
-  background-position: -332.5px -80px;
+  background-position: -162px -288px;
   transform: rotate(0deg);
   transition: .2s transform;
 }
@@ -3183,7 +3190,7 @@ table.bottom_bar {
   margin-top: -6px;
   width: 11px;
   height: 11px;
-  background-position: -355.5px -196.5px;
+  background-position: -357.5px -196.5px;
   transform: rotate(0deg);
   transition: .2s transform;
 }
@@ -3200,7 +3207,7 @@ table.bottom_bar {
   display: inline-block;
   width: 15px;
   height: 14px;
-  background-position: -251.5px -316px;
+  background-position: -25px -314.5px;
   vertical-align: top;
   margin: 2px 8px 0 0;
 }
@@ -3217,7 +3224,7 @@ table.bottom_bar {
   display: inline-block;
   width: 13px;
   height: 14px;
-  background-position: -355.5px -99.5px;
+  background-position: -357.5px -99.5px;
   vertical-align: top;
   margin: 2px 8px 0 0;
 }
@@ -3234,7 +3241,7 @@ table.bottom_bar {
   display: inline-block;
   width: 10px;
   height: 10px;
-  background-position: -355.5px -281.5px;
+  background-position: -357.5px -281.5px;
   vertical-align: top;
 }
 
@@ -3265,7 +3272,7 @@ table.bottom_bar {
   display: inline-block;
   width: 24px;
   height: 24px;
-  background-position: -133px -159px;
+  background-position: -65px -159px;
   vertical-align: top;
   margin: -2px 8px 0 0;
 }
@@ -3301,7 +3308,7 @@ table.bottom_bar {
   margin-top: -3px;
   width: 10.5px;
   height: 5.5px;
-  background-position: -332.5px -116px;
+  background-position: -182px -288px;
   transform: rotate(0deg);
   transition: .2s transform;
 }
@@ -3324,7 +3331,7 @@ table.bottom_bar {
   margin-top: -10px;
   width: 15.5px;
   height: 15px;
-  background-position: 0px -316px;
+  background-position: -302.5px -59px;
 }
 
 .col_white {
@@ -3345,7 +3352,7 @@ table.bottom_bar {
   display: inline-block;
   width: 15px;
   height: 13.5px;
-  background-position: -276.5px -316px;
+  background-position: -50px -314.5px;
   margin-right: 8px;
 }
 
@@ -3562,7 +3569,7 @@ table.bottom_bar {
   margin-top: -5px;
   width: 6px;
   height: 10px;
-  background-position: -332.5px -96px;
+  background-position: -75px -314.5px;
 }
 
 .btn_arrow_type {
@@ -3579,7 +3586,7 @@ table.bottom_bar {
   margin-top: -7px;
   width: 8px;
   height: 14px;
-  background-position: -355.5px -257.5px;
+  background-position: -357.5px -257.5px;
 }
 
 .dot_type_list.space15 li {
@@ -3982,7 +3989,15 @@ table.bottom_bar {
   transform: rotate(180deg);
   width: 11px;
   height: 6px;
-  background-position: -355.5px -321.5px;
+  background-position: -357.5px -321.5px;
+}
+
+.accordion-list > li .header-area .date {
+  display: block;
+  margin-top: 5px;
+  font-size: 13px;
+  color: #888888;
+  font-weight: 300;
 }
 
 .accordion-list > li > .con-area {
@@ -3999,6 +4014,10 @@ table.bottom_bar {
 
 .accordion-list > li > .con-area .qna_cont {
   font-size: 15px;
+}
+
+.accordion-list > li > .con-area .notice_cont img {
+  width: 100%;
 }
 
 .accordion-list > li > .con-area .policy_cont {
@@ -4102,6 +4121,7 @@ table.bottom_bar {
 }
 
 .trp.popupfixed-wrap .btn_close {
+  z-index: 1;
   position: absolute;
   top: 0px;
   right: 0px;
@@ -4121,7 +4141,7 @@ table.bottom_bar {
   top: 22px;
   width: 16px;
   height: 16px;
-  background-position: -78px -288px;
+  background-position: -329.5px -276.5px;
 }
 
 .trp.popupfixed-wrap.cover_type .popup-layer {
@@ -4917,6 +4937,44 @@ input[type="checkbox"].chk:checked + label.chk:after {
   background-position: -35px 0px;
 }
 
+input[type="radio"].chk {
+  position: absolute;
+  top: 50%;
+  margin: 0;
+  margin-top: -10px;
+  left: 0;
+  opacity: 0;
+  width: 1px;
+  height: 1px;
+}
+
+input[type="radio"].chk + label.chk {
+  font-size: 15px;
+  color: #000;
+  padding-left: 33px;
+  display: inline-block;
+  font-weight: 400;
+  position: relative;
+  line-height: 25px;
+}
+
+input[type="radio"].chk + label.chk:after {
+  content: '';
+  width: 25px;
+  height: 25px;
+  background-position: 0px 0px;
+  position: absolute;
+  top: 50%;
+  margin-top: -13px;
+  left: 0;
+}
+
+input[type="radio"].chk:checked + label.chk:after {
+  width: 25px;
+  height: 25px;
+  background-position: -35px 0px;
+}
+
 input[type="radio"].rdo {
   position: absolute;
   top: 50%;
@@ -5446,7 +5504,7 @@ input[type="radio"].rdo:checked + label.rdo:after {
   margin-top: -3px;
   width: 11px;
   height: 6px;
-  background-position: -332.5px -48px;
+  background-position: -121px -288px;
 }
 
 .select2-container--classic .select2-selection--single .select2-selection__arrow b {
@@ -5599,7 +5657,7 @@ select.select_bank {
   margin-left: -12px;
   width: 25px;
   height: 25px;
-  background-position: -258px -193px;
+  background-position: -70px -253px;
   display: block;
 }
 
@@ -5850,7 +5908,7 @@ select.select_bank {
   display: block;
   width: 10px;
   height: 16px;
-  background-position: -355.5px -147.5px;
+  background-position: -357.5px -147.5px;
 }
 
 .header .top_bar .btn_share {
@@ -5866,7 +5924,7 @@ select.select_bank {
   display: block;
   width: 17px;
   height: 21px;
-  background-position: -197px -253px;
+  background-position: -302.5px 0px;
 }
 
 .header .top_bar .btn_save_n_exit {
@@ -5883,7 +5941,7 @@ select.select_bank {
   display: block;
   width: 15px;
   height: 14px;
-  background-position: -226.5px -316px;
+  background-position: 0px -314.5px;
   position: absolute;
   top: 50%;
   margin-top: -8px;
@@ -5904,7 +5962,7 @@ select.select_bank {
   display: block;
   width: 15px;
   height: 15px;
-  background-position: -175.5px -316px;
+  background-position: -302.5px -234px;
   position: absolute;
   top: 50%;
   margin-top: -8px;
@@ -5935,13 +5993,13 @@ select.select_bank {
   display: block;
   width: 18px;
   height: 17px;
-  background-position: -302.5px -112px;
+  background-position: -329.5px -85.5px;
 }
 
 .header .top_bar .btn_like.on:after {
   width: 18px;
   height: 17px;
-  background-position: -302.5px -193px;
+  background-position: -329.5px -166.5px;
 }
 
 .header .top_bar .btn_search {
@@ -6046,7 +6104,7 @@ select.select_bank {
   margin-top: -3px;
   width: 11px;
   height: 6px;
-  background-position: -355.5px -321.5px;
+  background-position: -357.5px -321.5px;
   transition: .2s transform;
   transform: rotate(180deg);
 }
@@ -6330,7 +6388,7 @@ select.select_bank {
   position: relative;
   width: 5px;
   height: 9px;
-  background-position: -332.5px -197px;
+  background-position: 0px -338.5px;
   display: block;
 }
 
@@ -6462,7 +6520,7 @@ input[type="radio"].type_btn_radio + label {
   margin: -2px 0 0 2px;
   width: 11px;
   height: 13px;
-  background-position: -355.5px -173.5px;
+  background-position: -357.5px -173.5px;
 }
 
 .main_header .tip {
@@ -6484,7 +6542,7 @@ input[type="radio"].type_btn_radio + label {
   right: 25px;
   width: 10px;
   height: 6px;
-  background-position: -332.5px -64px;
+  background-position: -142px -288px;
 }
 
 .main section.main_card {
@@ -6537,6 +6595,59 @@ input[type="radio"].type_btn_radio + label {
   right: 18px;
   top: 24px;
   z-index: 1;
+}
+
+.main .corona_pagination {
+  padding: 2px 10px 3px;
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+.main .corona_pagination:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.main .corona_pagination .page_count {
+  float: left;
+  font-size: 10px;
+  color: #fff;
+  font-weight: 300;
+  width: auto;
+  line-height: 1.8;
+}
+
+.main .corona_pagination .page_count span {
+  font-size: 10px;
+  color: #fff;
+  font-weight: 300;
+}
+
+.main .corona_pagination .corona_link {
+  float: left;
+  margin-left: 7px;
+  position: relative;
+  padding-left: 7px;
+}
+
+.main .corona_pagination .corona_link:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 7px;
+  width: 1px;
+  height: 6px;
+  border-left: 1px dotted #fff;
+}
+
+.main .corona_pagination .corona_link a {
+  color: #fff;
+  font-size: 10px;
+  display: inline-block;
 }
 
 .main section.fixbtn {
@@ -6713,13 +6824,13 @@ input[type="radio"].type_btn_radio + label {
   margin-top: -6px;
   width: 19px;
   height: 16px;
-  background-position: -302.5px -220px;
+  background-position: -59px -288px;
 }
 
 .thum_list li .img .btn_like.on::before {
   width: 19px;
   height: 16px;
-  background-position: -302.5px -246px;
+  background-position: -30px -288px;
 }
 
 .thum_list li .thum_list_info {
@@ -6797,13 +6908,13 @@ input[type="radio"].type_btn_radio + label {
   margin-top: -6px;
   width: 14px;
   height: 13px;
-  background-position: -355.5px -76.5px;
+  background-position: -357.5px -76.5px;
 }
 
 .thum_list li .btn_like.on::before {
   width: 16px;
   height: 14px;
-  background-position: -200.5px -316px;
+  background-position: -302.5px -259px;
 }
 
 .thum_list li .btn_like2 {
@@ -6825,13 +6936,13 @@ input[type="radio"].type_btn_radio + label {
   margin-top: -8px;
   width: 15px;
   height: 15px;
-  background-position: -100.5px -316px;
+  background-position: -302.5px -159px;
 }
 
 .thum_list li .btn_like2.on::before {
   width: 16px;
   height: 14px;
-  background-position: -200.5px -316px;
+  background-position: -302.5px -259px;
 }
 
 .thum_list.big_type li {
@@ -7160,13 +7271,13 @@ input[type="radio"].type_btn_radio + label {
 .introWrap .slider li .intro_btns .btn_login span.log_naver:after {
   width: 18px;
   height: 18px;
-  background-position: -302.5px -54.5px;
+  background-position: -329.5px 0px;
 }
 
 .introWrap .slider li .intro_btns .btn_login span.log_kakao:after {
   width: 18px;
   height: 18px;
-  background-position: -302.5px -26.5px;
+  background-position: -329.5px -28px;
 }
 
 .introWrap .slider li .intro_btns .log_etc {
@@ -7227,6 +7338,100 @@ input[type="radio"].type_btn_radio + label {
   font-weight: 500;
 }
 
+.corona_list li {
+  margin-top: 10px;
+}
+
+.corona_list li:first-child {
+  margin-top: 0;
+}
+
+.corona_list li img {
+  width: 100%;
+}
+
+.corona_banner img {
+  width: 100%;
+}
+
+.corona_test {
+  text-align: left;
+  padding: 0 25px;
+  max-height: calc(100vh - 85px);
+  overflow-y: auto;
+}
+
+.corona_test > .tit {
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 27px;
+}
+
+.corona_test > .txt {
+  font-size: 15px;
+  margin-top: 15px;
+  line-height: 23px;
+}
+
+.corona_test .corona_check {
+  margin-top: 30px;
+}
+
+.corona_test .corona_check li {
+  margin-top: 25px;
+}
+
+.corona_test .corona_check li:first-child {
+  margin-top: 0;
+}
+
+.corona_test .corona_check li .covid_quest {
+  padding-left: 15px;
+  position: relative;
+  font-size: 15px;
+  color: #000;
+}
+
+.corona_test .corona_check li .covid_quest .num {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.corona_test .corona_check li .covid_answer {
+  margin-top: 15px;
+}
+
+.corona_test .corona_check li .covid_answer .an_item {
+  position: relative;
+  display: inline-block;
+  margin-left: 30px;
+}
+
+.corona_test .corona_check li .covid_answer .an_item:first-child {
+  margin-left: 0;
+}
+
+.corona_test .covid_alert {
+  color: #ff5c5c;
+  font-size: 15px;
+  margin-top: 20px;
+  padding-top: 20px;
+  background: url("/resources/images/common/dot_line_hor.png") repeat-x top left;
+  background-size: 4px 1px;
+}
+
+.corona_test .corona_bottom_btn {
+  height: 85px;
+}
+
+.corona_test .corona_bottom_btn > div {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
 .chatting_area {
   margin-bottom: 30px;
 }
@@ -7268,7 +7473,7 @@ input[type="radio"].type_btn_radio + label {
   display: inline-block;
   width: 15px;
   height: 15px;
-  background-position: -25.5px -316px;
+  background-position: -302.5px -84px;
   vertical-align: top;
   margin: 1px 0 0 5px;
 }
@@ -7385,7 +7590,7 @@ input[type="radio"].type_btn_radio + label {
   top: -1px;
   width: 12px;
   height: 10px;
-  background-position: -355.5px -237.5px;
+  background-position: -357.5px -237.5px;
 }
 
 .chatting_area .chatting_view > li .chat_area .chat_view.img {
@@ -7441,7 +7646,7 @@ input[type="radio"].type_btn_radio + label {
   top: 1px;
   width: 12px;
   height: 10px;
-  background-position: -355.5px -217.5px;
+  background-position: -357.5px -217.5px;
 }
 
 .chatting_area .chatting_view > li.answer .chat_area .chat_view.img {
@@ -7580,7 +7785,7 @@ input[type="radio"].type_btn_radio + label {
   margin-top: -8px;
   width: 5px;
   height: 9px;
-  background-position: -332.5px -197px;
+  background-position: 0px -338.5px;
 }
 
 .alarm_area .alarm_list > li .link em {
@@ -7719,7 +7924,7 @@ input[type="radio"].type_btn_radio + label {
   content: '';
   width: 15px;
   height: 15px;
-  background-position: -100.5px -316px;
+  background-position: -302.5px -159px;
   display: block;
   position: absolute;
   top: 2px;
@@ -7730,7 +7935,7 @@ input[type="radio"].type_btn_radio + label {
   content: '';
   width: 15px;
   height: 15px;
-  background-position: -75.5px -316px;
+  background-position: -302.5px -134px;
   display: block;
   position: absolute;
   top: 2px;
@@ -7741,7 +7946,7 @@ input[type="radio"].type_btn_radio + label {
   content: '';
   width: 15px;
   height: 15px;
-  background-position: -50.5px -316px;
+  background-position: -302.5px -109px;
   display: block;
   position: absolute;
   top: 2px;
@@ -7946,7 +8151,7 @@ input[type="radio"].type_btn_radio + label {
   top: 0;
   width: 25px;
   height: 25px;
-  background-position: 0px -253px;
+  background-position: -258px -193px;
 }
 
 .serv_wrap .serv_review_wrap .review_list li {
@@ -8009,7 +8214,7 @@ input[type="radio"].type_btn_radio + label {
   content: '';
   width: 15px;
   height: 15px;
-  background-position: -100.5px -316px;
+  background-position: -302.5px -159px;
   position: absolute;
   top: 50%;
   left: 0;
@@ -8083,7 +8288,7 @@ input[type="radio"].type_btn_radio + label {
   content: '';
   width: 12px;
   height: 16px;
-  background-position: -355.5px -50.5px;
+  background-position: -357.5px -50.5px;
   position: absolute;
   left: 50%;
   top: 50%;
@@ -8132,7 +8337,7 @@ input[type="radio"].type_btn_radio + label {
   content: '';
   width: 25px;
   height: 25px;
-  background-position: -105px -253px;
+  background-position: 0px -253px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -8154,7 +8359,7 @@ input[type="radio"].type_btn_radio + label {
   content: '';
   width: 25px;
   height: 25px;
-  background-position: -70px -253px;
+  background-position: -105px -253px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -8188,7 +8393,7 @@ input[type="radio"].type_btn_radio + label {
   margin-top: -4px;
   width: 10px;
   height: 6px;
-  background-position: -332.5px -80px;
+  background-position: -162px -288px;
 }
 
 .more_wrap {
@@ -9340,13 +9545,13 @@ input[type="radio"].type_btn_radio + label {
 .expert_profile .link_connect li a.ic_chat:after {
   width: 24px;
   height: 24px;
-  background-position: -133px -159px;
+  background-position: -65px -159px;
 }
 
 .expert_profile .link_connect li a.ic_call:after {
   width: 24px;
   height: 24px;
-  background-position: -65px -159px;
+  background-position: -133px -159px;
 }
 
 .expert_profile .prd_desc {
@@ -9772,6 +9977,39 @@ input[type="radio"].type_btn_radio + label {
   font-size: 15px;
 }
 
+.service_requset_wrap .req_wrap.type2 {
+  height: calc(100vh - 255px);
+  position: relative;
+  background: url("/resources/images/common/intro_img1.jpg") no-repeat;
+  background-size: cover;
+  background-position: top center;
+}
+
+.service_requset_wrap .req_wrap.type2 .req_cont {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  width: 100%;
+}
+
+.service_requset_wrap .req_wrap.type2 .req_cont .txt_wrap .ic_home {
+  display: block;
+  width: 19px;
+  height: 19px;
+  background-position: -197px -253px;
+  margin-bottom: 9px;
+}
+
+.service_requset_wrap .req_wrap.type2 .req_cont .txt_wrap .txt1 {
+  font-size: 19px;
+  color: #000;
+}
+
+.service_requset_wrap .req_wrap.type2 .req_cont .txt {
+  color: #000;
+  font-size: 15px;
+}
+
 .profile_wrap {
   padding-top: 16px;
 }
@@ -9849,7 +10087,7 @@ input[type="radio"].type_btn_radio + label {
   display: block;
   width: 16px;
   height: 17px;
-  background-position: -52px -288px;
+  background-position: -329.5px -249.5px;
   position: absolute;
   top: 5px;
   left: 0;
@@ -9860,7 +10098,7 @@ input[type="radio"].type_btn_radio + label {
   display: block;
   width: 13px;
   height: 18px;
-  background-position: -332.5px 0px;
+  background-position: -302.5px -31px;
   position: absolute;
   top: 5px;
   left: 0;
@@ -9928,7 +10166,7 @@ input[type="radio"].type_btn_radio + label {
   margin-top: -8px;
   width: 15px;
   height: 15px;
-  background-position: -125.5px -316px;
+  background-position: -302.5px -184px;
 }
 
 .btn_stat_reserv.stat_disabled {
@@ -9938,7 +10176,7 @@ input[type="radio"].type_btn_radio + label {
 .btn_stat_reserv.stat_disabled:after {
   width: 15px;
   height: 15px;
-  background-position: -150.5px -316px;
+  background-position: -302.5px -209px;
 }
 
 .btn_chk_reserv {
@@ -9971,7 +10209,7 @@ input[type="radio"].type_btn_radio + label {
   margin-top: -5px;
   width: 10px;
   height: 10px;
-  background-position: -355.5px -301.5px;
+  background-position: -357.5px -301.5px;
 }
 
 .btn_chk_reserv.chk_disabled {
@@ -9981,7 +10219,7 @@ input[type="radio"].type_btn_radio + label {
 .btn_chk_reserv.chk_disabled span:after {
   width: 10px;
   height: 10px;
-  background-position: -332.5px -28px;
+  background-position: -221px -128px;
 }
 
 .my_count {
@@ -10181,7 +10419,7 @@ input[type="radio"].type_btn_radio + label {
   content: '';
   width: 15px;
   height: 15px;
-  background-position: -100.5px -316px;
+  background-position: -302.5px -159px;
   display: block;
   position: absolute;
   top: 2px;
@@ -10192,7 +10430,7 @@ input[type="radio"].type_btn_radio + label {
   content: '';
   width: 15px;
   height: 15px;
-  background-position: -75.5px -316px;
+  background-position: -302.5px -134px;
   display: block;
   position: absolute;
   top: 2px;
@@ -10203,7 +10441,7 @@ input[type="radio"].type_btn_radio + label {
   content: '';
   width: 15px;
   height: 15px;
-  background-position: -50.5px -316px;
+  background-position: -302.5px -109px;
   display: block;
   position: absolute;
   top: 2px;
@@ -10245,7 +10483,7 @@ input[type="radio"].type_btn_radio + label {
   margin-top: -8px;
   width: 1px;
   height: 17.5px;
-  background-position: -332.5px -131.5px;
+  background-position: -230px -159px;
 }
 
 .user_confirm a:first-child::before {
@@ -10258,7 +10496,7 @@ input[type="radio"].type_btn_radio + label {
   margin: 0 5px -2px 0;
   width: 21px;
   height: 16.5px;
-  background-position: -254px -253px;
+  background-position: -256px -253px;
 }
 
 .user_02::before {
@@ -10276,7 +10514,7 @@ input[type="radio"].type_btn_radio + label {
   margin: 0 6px -4px 0;
   width: 16.5px;
   height: 19.5px;
-  background-position: -302.5px -82.5px;
+  background-position: -329.5px -56px;
 }
 
 .payment_date {

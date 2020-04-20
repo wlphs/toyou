@@ -645,6 +645,15 @@
             }
             .txt {color:#fff; font-size:15px;}
         }
+        &.type2 { height:calc(100vh - 255px); position: relative; background: url('/resources/images/common/intro_img1.jpg') no-repeat; background-size:cover; background-position: top center;
+            .req_cont { position: absolute; bottom:20px; left:0; width:100%;
+                .txt_wrap {
+                    .ic_home { display:block; @include sp_icons($icon_logo_c); margin-bottom: 9px; }
+                    .txt1 { font-size:19px; color:#000;}
+                }
+                .txt {color:#000; font-size:15px;}
+            }
+        }
     }
 }
 
