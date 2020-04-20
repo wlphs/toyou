@@ -227,8 +227,9 @@
     }
 }
 
-.fixed_btns{ position:fixed; right:40px; bottom:100px;
-    .top {width:80px; height:80px; display:block; background:url('/resources/images/intro/exp_ic_top.png'); margin-top:17px;}
+.fixed_btns{ position:fixed; right:40px; bottom:100px; height:177px;
+    .chat {width:80px; height:80px; display:block; background:url('/resources/images/intro/exp_ic_chat.png');}
+    .top {width:80px; height:80px; display:block; background:url('/resources/images/intro/exp_ic_top.png');  margin-top:17px;}
 }
 
 

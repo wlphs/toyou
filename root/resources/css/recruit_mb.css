@@ -2274,6 +2274,9 @@ b {
 
 .p1 .p_header .head_list li.on a {
   font-weight: 700;
+  color: #ff5c5c;
+  display: inline-block;
+  margin-top: -1px;
 }
 
 .p1 .p_header .head_list li:first-child:after {
@@ -2710,20 +2713,20 @@ p {
 }
 
 .fixed_btns .chat {
-  width: 60px;
-  height: 60px;
+  width: 40px;
+  height: 40px;
   display: block;
   background: url("/resources/images/intro/exp_ic_chat.png");
-  background-size: 60px;
+  background-size: 40px;
 }
 
 .fixed_btns .top {
-  width: 60px;
-  height: 60px;
+  width: 40px;
+  height: 40px;
   display: block;
   background: url("/resources/images/intro/exp_ic_top.png");
-  background-size: 60px;
-  margin-top: 13px;
+  background-size: 40px;
+  margin-top: 10px;
 }
 
 /*# sourceMappingURL=maps/recruit_mb.css.map */
