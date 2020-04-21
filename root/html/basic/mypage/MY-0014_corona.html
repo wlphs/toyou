@@ -253,7 +253,7 @@
                                     </div>
                                 </li>
                             </ul>
-                            <p class="covid_alert colorP">위 자가진단 항목 중 1개 이상 해당 사항이 있는 경우
+                            <p class="covid_alert colorP" style="display:none">위 자가진단 항목 중 1개 이상 해당 사항이 있는 경우
                                 전문가님에게 채팅으로 알리고 예약을 취소해 주세요. </p>
                         </div>
                         <div class="corona_bottom_btn">
@@ -316,6 +316,7 @@
         </div>
     </div>
     <script>
+        var checkInterval; /* 200421 추가 */
         $("#corona_popup").dialog({
             autoOpen: false,
             modal: true,
@@ -349,8 +350,16 @@
                     $(event.target).dialog("close");
                     return false;
                 })
+                /* 200421 추가 s */
+                checkInterval = setInterval(function() {
+                    var _t = $(window).innerHeight() - $("#corona_popup").height();
+                    $("#corona_popup").parent().css('top', _t);
+                }, 100);
+                /* 200421 추가 e */
+
             },
             close: function() {
+                clearInterval(checkInterval); /* 200421 추가 */
                 modalFixedControl.close();
             }
         });
@@ -387,8 +396,15 @@
                     $(event.target).dialog("close");
                     return false;
                 })
+                /* 200421 추가 s */
+                checkInterval = setInterval(function() {
+                    var _t = $(window).innerHeight() - $("#corona_popup").height();
+                    $("#corona_popup").parent().css('top', _t);
+                }, 100);
+                /* 200421 추가 e */
             },
             close: function() {
+                clearInterval(checkInterval); /* 200421 추가 */
                 modalFixedControl.close();
             }
         });

@@ -421,6 +421,7 @@
     </div>
 
     <script>
+        var checkInterval; /* 200421 추가 */
         $("#corona_popup").dialog({
             autoOpen: false,
             modal: true,
@@ -454,8 +455,15 @@
                     $(event.target).dialog("close");
                     return false;
                 })
+                /* 200421 추가 s */
+                checkInterval = setInterval(function() {
+                    var _t = $(window).innerHeight() - $("#corona_popup").height();
+                    $("#corona_popup").parent().css('top', _t);
+                }, 100);
+                /* 200421 추가 e */
             },
             close: function() {
+                clearInterval(checkInterval); /* 200421 추가 */
                 modalFixedControl.close();
             }
         });

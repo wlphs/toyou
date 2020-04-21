@@ -365,7 +365,7 @@ __CONSTANT_LIST = [
         dep2 		: '상세',
         dep3 		: '소개',
         url 		: '/html/basic/service/SV-0001_corona.html',
-        pubUpdate 	: '2020-0410',
+        pubUpdate 	: '2020-0421',
         etc 		: 'corona',
     },
 	{
@@ -678,7 +678,7 @@ __CONSTANT_LIST = [
         dep3 		: '',
         dep4 		: '1일전',
         url 		: '/html/basic/mypage/MY-0014_corona.html',
-        pubUpdate 	: '2020-0410',
+        pubUpdate 	: '2020-0421',
         etc 		: 'corona',
     },
     {
@@ -1015,7 +1015,7 @@ __CONSTANT_LIST = [
         dep3 		: '미진행/예정확정/GPS',
         dep4 		: '',
         url 		: '/html/expert/mypage/E_MY-0010_corona.html',
-        pubUpdate 	: '2020-0410',
+        pubUpdate 	: '2020-0421',
         etc 		: 'corona',
     },
 	{
@@ -1055,7 +1055,7 @@ __CONSTANT_LIST = [
         dep3 		: '1일전',
         dep4 		: '',
         url 		: '/html/expert/mypage/E_MY-0013_corona.html',
-        pubUpdate 	: '2020-0410',
+        pubUpdate 	: '2020-0421',
         etc 		: 'corona',
     },
 	{
