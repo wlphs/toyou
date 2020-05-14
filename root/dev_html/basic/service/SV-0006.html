@@ -1032,6 +1032,9 @@ var cateSwiper = new Swiper('.list_category_main', {
 		freeModeMomentumBounce: false,
 		spaceBetween: 0
 	})
+
+	$(window).on('load', function() { cateSwiper.update(); }) // 200514 추가 
+
 var contSwiper = new Swiper('.js-serv_cont', {
     speed: 400,
     loop:true,

@@ -8605,7 +8605,7 @@ input[type="radio"].type_btn_radio + label {
 .list_category_main {
   position: relative;
   width: 100%;
-  overflow-x: auto;
+  /*overflow-x: auto;*/
   overflow-y: hidden;
   white-space: nowrap;
   -webkit-overflow-scrolling: touch;
@@ -8615,7 +8615,6 @@ input[type="radio"].type_btn_radio + label {
   width: 100%;
   font-size: 0;
   line-height: 0;
-  margin-left: 25px !important;
 }
 
 .list_category_main ul li {
@@ -8625,11 +8624,15 @@ input[type="radio"].type_btn_radio + label {
 }
 
 .list_category_main ul li:first-child {
-  margin-left: 0;
+  margin-left: 20px;
 }
 
 .list_category_main ul li:first-child a {
   padding-left: 0;
+}
+
+.list_category_main ul li:last-child {
+  margin-right: 20px;
 }
 
 .list_category_main ul li a {
