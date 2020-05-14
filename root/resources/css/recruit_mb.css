@@ -2350,7 +2350,7 @@ section {
 }
 
 .p34_bg {
-  background: url("/resources/images/intro/exp_mb_img4.jpg");
+  background: url("/static/resources/images/intro/exp_mb_img4.jpg");
   background-size: 100% 100%;
 }
 
@@ -2381,7 +2381,7 @@ section {
 }
 
 .p7 .p_inner {
-  background: url("/resources/images/intro/exp_pc_img3.jpg");
+  background: url("/static/resources/images/intro/exp_pc_img3.jpg");
   background-size: 100% 100%;
   text-align: center;
   padding-top: 50px;
@@ -2458,7 +2458,7 @@ p {
   width: 22px;
   height: 11px;
   display: block;
-  background: url("/resources/images/intro/mb_arrow.png");
+  background: url("/static/resources/images/intro/mb_arrow.png");
   background-size: 22px 11px;
 }
 
@@ -2515,7 +2515,7 @@ p {
 
 .list_type3 dd:after {
   content: '';
-  background: url("/resources/images/intro/sp_category.png") no-repeat;
+  background: url("/static/resources/images/intro/sp_category.png") no-repeat;
   background-size: 250px 185px;
   position: absolute;
   left: 20px;
@@ -2627,11 +2627,11 @@ p {
 }
 
 .btn_box .btn_ios span:after {
-  background: url("/resources/images/intro/logo_ios_sm.png");
+  background: url("/static/resources/images/intro/logo_ios_sm.png");
 }
 
 .btn_box .btn_android span:after {
-  background: url("/resources/images/intro/logo_android_sm.png");
+  background: url("/static/resources/images/intro/logo_android_sm.png");
 }
 
 .btn_box .alert {
@@ -2716,7 +2716,7 @@ p {
   width: 40px;
   height: 40px;
   display: block;
-  background: url("/resources/images/intro/exp_ic_chat.png");
+  background: url("/static/resources/images/intro/exp_ic_chat.png");
   background-size: 40px;
 }
 
@@ -2724,7 +2724,7 @@ p {
   width: 40px;
   height: 40px;
   display: block;
-  background: url("/resources/images/intro/exp_ic_top.png");
+  background: url("/static/resources/images/intro/exp_ic_top.png");
   background-size: 40px;
   margin-top: 10px;
 }

@@ -31,7 +31,7 @@
   .later_link {font-size:17px; display:inline-block; padding:10px;}
 }
 .agree_all_warp {padding-bottom:18px;
-  background: url('/resources/images/common/dot_line_hor.png') repeat-x bottom left; background-size:4px 1px;
+  background: url('/static/resources/images/common/dot_line_hor.png') repeat-x bottom left; background-size:4px 1px;
   label.chk {font-weight: 700 !important;}
 }
 .agree_list {
@@ -57,7 +57,7 @@ input[type="radio"].type_btn_radio {
   position: absolute; opacity: 0; width:1px; height:1px;
 }
 input[type="radio"].type_btn_radio:checked + label {
-  background:url('/resources/images/common/point_bg.jpg'); background-size: 100% 100%; color:#fff; text-align: center; border:none;
+  background:url('/static/resources/images/common/point_bg.jpg'); background-size: 100% 100%; color:#fff; text-align: center; border:none;
   padding: 0px; height:45px; line-height: 45px;  min-width: auto;  font-size: 15px;
   display:block;  font-weight: 500;
 }

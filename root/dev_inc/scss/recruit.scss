@@ -100,10 +100,10 @@ b {color:#ff5c5c;}
         .alert { display:none; 
             img {display:inline-block; margin-top:-20px; @include shadow(5px, 5px, 20px, 0.05);  }
         }
-        .btn_ios span:before {background: url('/resources/images/intro/logo_ios.png');}
-        .btn_android span:before {background: url('/resources/images/intro/logo_android.png');}
-        .btn_ios span:after {background: url('/resources/images/intro/logo_ios_over.png');}
-        .btn_android span:after {background: url('/resources/images/intro/logo_android_over.png');}
+        .btn_ios span:before {background: url('/static/resources/images/intro/logo_ios.png');}
+        .btn_android span:before {background: url('/static/resources/images/intro/logo_android.png');}
+        .btn_ios span:after {background: url('/static/resources/images/intro/logo_ios_over.png');}
+        .btn_android span:after {background: url('/static/resources/images/intro/logo_android_over.png');}
     }
 
 section {width:100%; overflow:hidden; position: relative;}
@@ -117,7 +117,7 @@ section {width:100%; overflow:hidden; position: relative;}
 .p4 {height:1140px; position: relative;
     .p_inner{ padding-top:110px; width:1000px; margin: 0 auto;}
 }
-.p34_bg {background:url('/resources/images/intro/exp_pc_img4.jpg') top center;}
+.p34_bg {background:url('/static/resources/images/intro/exp_pc_img4.jpg') top center;}
 
 .p5 {height:700px; background:#f7f7f7;
     .p_inner {width:760px; position: absolute; right:50%; top:110px; text-align: center;
@@ -129,7 +129,7 @@ section {width:100%; overflow:hidden; position: relative;}
     .p_inner {padding-top:110px; }
 }
 .p7 {
-    .p_inner {background:url('/resources/images/intro/exp_pc_img3.jpg') 100% 100%; height:400px; text-align: center; padding-top:80px;
+    .p_inner {background:url('/static/resources/images/intro/exp_pc_img3.jpg') 100% 100%; height:400px; text-align: center; padding-top:80px;
 
         .btn {@include shadow(5px, 5px, 20px, 0.05); width:270px; color:#ff5c63;}
     }
@@ -147,7 +147,7 @@ section {width:100%; overflow:hidden; position: relative;}
 .list_type2{ text-align: center;
     li {display:inline-block; padding:0 40px; position: relative;
         &:first-child:after {display:none;}
-        &:after {content:''; position: absolute; top:80px; left:0; margin-left:-5px; width:15px; height:22px; display:block; background:url('/resources/images/intro/pc_arrow.png');}
+        &:after {content:''; position: absolute; top:80px; left:0; margin-left:-5px; width:15px; height:22px; display:block; background:url('/static/resources/images/intro/pc_arrow.png');}
     }
 }
 
@@ -160,7 +160,7 @@ section {width:100%; overflow:hidden; position: relative;}
     }
     dd{ width:110px; margin-left:47px; text-align: center; padding-top:130px; position: relative; float:left;
         &:first-child {margin-left:0;}
-        &:after {content:'';background:url('/resources/images/intro/sp_category.png') no-repeat; position: absolute; left:0; top:0; width:110px; height:110px; display:block;}
+        &:after {content:'';background:url('/static/resources/images/intro/sp_category.png') no-repeat; position: absolute; left:0; top:0; width:110px; height:110px; display:block;}
         &.ic_serv0:after{ background-position:-130px 0;}
         &.ic_serv1:after{ background-position:-260px -130px;}
         &.ic_serv2:after{ background-position:0px -130px;}
@@ -201,6 +201,6 @@ section {width:100%; overflow:hidden; position: relative;}
 
 
 .fixed_btns{ position:fixed; right:20px; bottom:200px;
-    .chat {width:80px; height:80px; display:block; background:url('/resources/images/intro/exp_ic_chat.png'); }
-    .top {width:80px; height:80px; display:block; background:url('/resources/images/intro/exp_ic_top.png'); margin-top:17px}
+    .chat {width:80px; height:80px; display:block; background:url('/static/resources/images/intro/exp_ic_chat.png'); }
+    .top {width:80px; height:80px; display:block; background:url('/static/resources/images/intro/exp_ic_top.png'); margin-top:17px}
 }

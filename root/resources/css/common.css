@@ -1466,7 +1466,7 @@ a, span, i, em {
   position: absolute;
   width: 100%;
   height: 0;
-  background: url("/resources/images/common/point_bg.jpg");
+  background: url("/static/resources/images/common/point_bg.jpg");
 }
 
 .accessibility a {
@@ -1771,7 +1771,7 @@ a.link_txt,
   width: 130px;
   height: 100px;
   margin-bottom: 17px;
-  background: url("/resources/images/common/img_nodata.png") no-repeat center top;
+  background: url("/static/resources/images/common/img_nodata.png") no-repeat center top;
   background-size: 130px 100px;
 }
 
@@ -2792,7 +2792,7 @@ table.bottom_bar {
   margin-top: -18px;
   width: 36px;
   height: 36px;
-  background: url("/resources/images/common/loading.png") no-repeat;
+  background: url("/static/resources/images/common/loading.png") no-repeat;
   left: 50%;
   margin-left: -18px;
   background-size: 36px;
@@ -2868,7 +2868,7 @@ table.bottom_bar {
 }
 
 .btn.btn_point {
-  background: url("/resources/images/common/point_bg.jpg");
+  background: url("/static/resources/images/common/point_bg.jpg");
   background-size: 100% 100%;
   color: #fff;
   text-align: center;
@@ -3014,7 +3014,7 @@ table.bottom_bar {
   right: 5px;
   top: 50%;
   margin-top: -5px;
-  background: url("/resources/images/common/sm_arrow.svg");
+  background: url("/static/resources/images/common/sm_arrow.svg");
   width: 4px;
   height: 7px;
 }
@@ -3949,7 +3949,7 @@ table.bottom_bar {
 }
 
 .accordion-list > li {
-  background: url("/resources/images/common/dot_line_hor.png") repeat-x bottom left;
+  background: url("/static/resources/images/common/dot_line_hor.png") repeat-x bottom left;
   background-size: 4px 1px;
 }
 
@@ -4214,7 +4214,7 @@ table.bottom_bar {
 }
 
 .trp.popupfixed-wrap .popup-layer.select_layer .sel_wrap > li {
-  background: url("/resources/images/common/dot_line_hor.png") repeat-x top left;
+  background: url("/static/resources/images/common/dot_line_hor.png") repeat-x top left;
   background-size: 4px 1px;
 }
 
@@ -4241,7 +4241,7 @@ table.bottom_bar {
   bottom: 0;
   left: 0;
   width: 100%;
-  background: url("/resources/images/common/dot_line_hor.png") repeat-x top left;
+  background: url("/static/resources/images/common/dot_line_hor.png") repeat-x top left;
   background-size: 4px 1px;
 }
 
@@ -4506,7 +4506,7 @@ table.bottom_bar {
 }
 
 .dot_type_list2 li {
-  background: url("/resources/images/common/dot_line_hor.png") repeat-x bottom left;
+  background: url("/static/resources/images/common/dot_line_hor.png") repeat-x bottom left;
   background-size: 4px 1px;
 }
 
@@ -4635,7 +4635,7 @@ input[type="text"].input_youtube, input[type="password"].input_youtube, input[ty
 
 input[type="text"].input_arrow {
   background-color: #f5f5f5;
-  background-image: url("/resources/images/common/select_arrow.png");
+  background-image: url("/static/resources/images/common/select_arrow.png");
   background-repeat: no-repeat;
   background-position-x: 95%;
   background-position-y: center;
@@ -5534,7 +5534,7 @@ input[type="radio"].rdo:checked + label.rdo:after {
   padding: 16px;
   font-size: 15px;
   color: #000;
-  background: url("/resources/images/common/dot_line_hor.png") repeat-x bottom left;
+  background: url("/static/resources/images/common/dot_line_hor.png") repeat-x bottom left;
   background-size: 4px 1px;
 }
 
@@ -5803,14 +5803,14 @@ select.select_bank {
   border: none;
   margin: 0 10px;
   font-size: 21px;
-  background-image: url("/resources/images/common/select_arrow.png");
+  background-image: url("/static/resources/images/common/select_arrow.png");
   background-repeat: no-repeat;
   background-size: 10px;
   background-position: right center;
 }
 
 .calendar_wrap .daterangepicker .calendar-table thead tr:first-child {
-  background: url("/resources/images/common/dot_line_hor.png") repeat-x bottom left;
+  background: url("/static/resources/images/common/dot_line_hor.png") repeat-x bottom left;
   background-size: 4px 1px;
 }
 
@@ -5819,7 +5819,7 @@ select.select_bank {
 }
 
 .calendar_wrap .daterangepicker .calendar-table table {
-  background: url("/resources/images/common/dot_line_hor.png") repeat-x bottom left;
+  background: url("/static/resources/images/common/dot_line_hor.png") repeat-x bottom left;
   background-size: 4px 1px;
 }
 
@@ -6078,7 +6078,7 @@ select.select_bank {
   font-size: 0;
   width: 115px !important;
   height: 21px !important;
-  background: url("/resources/images/common/h2_footer_logo.png") no-repeat center;
+  background: url("/static/resources/images/common/h2_footer_logo.png") no-repeat center;
   background-size: 100%;
 }
 
@@ -6339,7 +6339,7 @@ select.select_bank {
 
 .agree_all_warp {
   padding-bottom: 18px;
-  background: url("/resources/images/common/dot_line_hor.png") repeat-x bottom left;
+  background: url("/static/resources/images/common/dot_line_hor.png") repeat-x bottom left;
   background-size: 4px 1px;
 }
 
@@ -6414,7 +6414,7 @@ input[type="radio"].type_btn_radio {
 }
 
 input[type="radio"].type_btn_radio:checked + label {
-  background: url("/resources/images/common/point_bg.jpg");
+  background: url("/static/resources/images/common/point_bg.jpg");
   background-size: 100% 100%;
   color: #fff;
   text-align: center;
@@ -6755,17 +6755,17 @@ input[type="radio"].type_btn_radio + label {
 }
 
 .key_list_box .key_list li a.beauty {
-  background: url("/resources/images/common/icon_beauty.png") no-repeat center top;
+  background: url("/static/resources/images/common/icon_beauty.png") no-repeat center top;
   background-size: 33px 35px;
 }
 
 .key_list_box .key_list li a.healing {
-  background: url("/resources/images/common/icon_healing.png") no-repeat center top;
+  background: url("/static/resources/images/common/icon_healing.png") no-repeat center top;
   background-size: 41px 41px;
 }
 
 .key_list_box .key_list li a.homept {
-  background: url("/resources/images/common/icon_homept.png") no-repeat center top;
+  background: url("/static/resources/images/common/icon_homept.png") no-repeat center top;
   background-size: 46px 36px;
 }
 
@@ -7139,7 +7139,7 @@ input[type="radio"].type_btn_radio + label {
   width: 100%;
   height: 100vh;
   position: relative;
-  background: url("/resources/images/common/splash_bg.jpg") no-repeat;
+  background: url("/static/resources/images/common/splash_bg.jpg") no-repeat;
   background-size: cover;
   background-position: center bottom;
 }
@@ -7159,25 +7159,25 @@ input[type="radio"].type_btn_radio + label {
 }
 
 .introWrap .bgWrap li.bg0 {
-  background: url("/resources/images/common/splash_bg00.png") no-repeat;
+  background: url("/static/resources/images/common/splash_bg00.png") no-repeat;
   background-size: cover;
   background-position: center bottom;
 }
 
 .introWrap .bgWrap li.bg1 {
-  background: url("/resources/images/common/splash_bg01.png") no-repeat;
+  background: url("/static/resources/images/common/splash_bg01.png") no-repeat;
   background-size: cover;
   background-position: center bottom;
 }
 
 .introWrap .bgWrap li.bg2 {
-  background: url("/resources/images/common/splash_bg02.png") no-repeat;
+  background: url("/static/resources/images/common/splash_bg02.png") no-repeat;
   background-size: cover;
   background-position: center bottom;
 }
 
 .introWrap .bgWrap li.bg3 {
-  background: url("/resources/images/common/splash_bg03.png") no-repeat;
+  background: url("/static/resources/images/common/splash_bg03.png") no-repeat;
   background-size: cover;
   background-position: center bottom;
 }
@@ -7418,7 +7418,7 @@ input[type="radio"].type_btn_radio + label {
   font-size: 15px;
   margin-top: 20px;
   padding-top: 20px;
-  background: url("/resources/images/common/dot_line_hor.png") repeat-x top left;
+  background: url("/static/resources/images/common/dot_line_hor.png") repeat-x top left;
   background-size: 4px 1px;
 }
 
@@ -7636,7 +7636,7 @@ input[type="radio"].type_btn_radio + label {
   max-width: 77%;
   text-align: left;
   border: 0px;
-  background: url(/resources/images/common/point_bg.jpg);
+  background: url(/static/resources/images/common/point_bg.jpg);
   background-size: 100% 100%;
   color: #fff;
 }
@@ -7674,7 +7674,7 @@ input[type="radio"].type_btn_radio + label {
   height: 1px;
   top: 50%;
   z-index: -1;
-  background: url(/resources/images/common/dot_line_hor.png) repeat-x bottom left;
+  background: url(/static/resources/images/common/dot_line_hor.png) repeat-x bottom left;
 }
 
 .chatting_area .chatting_view > li .chat_date em {
@@ -7719,7 +7719,7 @@ input[type="radio"].type_btn_radio + label {
 .alarm_area .alarm_list > li::before {
   content: '';
   display: inline-block;
-  background: url(/resources/images/common/dot_line_hor.png) repeat-x bottom left;
+  background: url(/static/resources/images/common/dot_line_hor.png) repeat-x bottom left;
   background-position: top;
   position: absolute;
   left: 0;
@@ -7827,7 +7827,7 @@ input[type="radio"].type_btn_radio + label {
   font-size: 14px;
   display: block;
   text-align: center;
-  background: url(/resources/images/common/dot_line_hor.png) repeat-x top left;
+  background: url(/static/resources/images/common/dot_line_hor.png) repeat-x top left;
 }
 
 .select_alarm li:first-child {
@@ -7969,7 +7969,7 @@ input[type="radio"].type_btn_radio + label {
 .serv_wrap .serv_detail .expert_wrap .introduce {
   padding: 30px 0 30px 90px;
   position: relative;
-  background: url("/resources/images/common/dot_line_hor.png") repeat-x left bottom;
+  background: url("/static/resources/images/common/dot_line_hor.png") repeat-x left bottom;
   background-size: 4px;
 }
 
@@ -8261,7 +8261,7 @@ input[type="radio"].type_btn_radio + label {
 
 .serv_dot_border > li {
   padding: 17px 0;
-  background: url("/resources/images/common/dot_line_hor.png") repeat-x left bottom;
+  background: url("/static/resources/images/common/dot_line_hor.png") repeat-x left bottom;
   background-size: 4px;
 }
 
@@ -8371,7 +8371,7 @@ input[type="radio"].type_btn_radio + label {
 .review_more_wrap {
   text-align: center;
   padding: 15px;
-  background: url("/resources/images/common/dot_line_hor.png") repeat-x left top;
+  background: url("/static/resources/images/common/dot_line_hor.png") repeat-x left top;
   background-size: 4px;
 }
 
@@ -8503,7 +8503,7 @@ input[type="radio"].type_btn_radio + label {
 }
 
 .filter_wrap input.inp_filter:checked + label.inp_filter {
-  background: url("/resources/images/common/point_bg.jpg") left top;
+  background: url("/static/resources/images/common/point_bg.jpg") left top;
   background-size: 100% 100%;
   color: #fff;
   font-weight: 500;
@@ -8518,7 +8518,7 @@ input[type="radio"].type_btn_radio + label {
 .irs--modern .irs-bar {
   border: none;
   border-radius: 2px;
-  background: url("/resources/images/common/point_bg.jpg") no-repeat left top;
+  background: url("/static/resources/images/common/point_bg.jpg") no-repeat left top;
   background-size: 100% 100%;
 }
 
@@ -8605,6 +8605,10 @@ input[type="radio"].type_btn_radio + label {
 .list_category_main {
   position: relative;
   width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
 }
 
 .list_category_main ul {
@@ -8612,12 +8616,10 @@ input[type="radio"].type_btn_radio + label {
   font-size: 0;
   line-height: 0;
   margin-left: 25px !important;
-  border-bottom: 5px solid #f5f5f5;
 }
 
 .list_category_main ul li {
   position: relative;
-  margin-left: 5px;
   width: auto;
   border-bottom: 5px solid #f5f5f5;
 }
@@ -9380,7 +9382,7 @@ input[type="radio"].type_btn_radio + label {
   right: 12%;
   height: 4px;
   margin-left: -13px;
-  background: url("/resources/images/common/dot_line_hor.png") repeat-x left center;
+  background: url("/static/resources/images/common/dot_line_hor.png") repeat-x left center;
   background-size: 4px;
 }
 
@@ -9408,7 +9410,7 @@ input[type="radio"].type_btn_radio + label {
   width: 25px;
   height: 25px;
   margin-left: -13px;
-  background: url("/resources/images/common/img_step_point.png") repeat-x left center;
+  background: url("/static/resources/images/common/img_step_point.png") repeat-x left center;
   background-size: 25px 25px;
 }
 
@@ -9560,7 +9562,7 @@ input[type="radio"].type_btn_radio + label {
   text-align: center;
   padding-top: 16px;
   padding-right: 24px;
-  background: url("/resources/images/common/dot_line_hor.png") repeat-x left top;
+  background: url("/static/resources/images/common/dot_line_hor.png") repeat-x left top;
   background-size: 4px;
 }
 
@@ -9577,7 +9579,7 @@ input[type="radio"].type_btn_radio + label {
   font-weight: 500;
   padding-top: 15px;
   padding-bottom: 10px;
-  background: url("/resources/images/common/dot_line_hor.png") repeat-x left top;
+  background: url("/static/resources/images/common/dot_line_hor.png") repeat-x left top;
   background-size: 4px;
 }
 
@@ -9645,7 +9647,7 @@ input[type="radio"].type_btn_radio + label {
   content: '';
   width: 1px;
   height: 100%;
-  background: url(/resources/images/common/dot_line.png);
+  background: url(/static/resources/images/common/dot_line.png);
   background-size: 1px;
   position: absolute;
   left: 3px;
@@ -9686,7 +9688,7 @@ input[type="radio"].type_btn_radio + label {
 .expert_profile_edite .profile_edite_list > li {
   position: relative;
   padding: 20px 25px 20px 0;
-  background: url(/resources/images/common/dot_line_hor.png) repeat-x left top;
+  background: url(/static/resources/images/common/dot_line_hor.png) repeat-x left top;
   background-size: 4px;
   overflow: hidden;
 }
@@ -9751,7 +9753,7 @@ input[type="radio"].type_btn_radio + label {
 .photo_add_list li {
   display: block;
   padding: 20px 25px 20px 0;
-  background: url(/resources/images/common/dot_line_hor.png) repeat-x left top;
+  background: url(/static/resources/images/common/dot_line_hor.png) repeat-x left top;
   background-size: 4px;
   overflow: hidden;
 }
@@ -9861,7 +9863,7 @@ input[type="radio"].type_btn_radio + label {
 .money_wrap .money_list_wrap .money_list > li {
   position: relative;
   padding: 15px 25px 15px 35px;
-  background: url(/resources/images/common/dot_line_hor.png) repeat-x left bottom;
+  background: url(/static/resources/images/common/dot_line_hor.png) repeat-x left bottom;
   background-size: 4px;
 }
 
@@ -9941,7 +9943,7 @@ input[type="radio"].type_btn_radio + label {
 .service_requset_wrap .req_wrap {
   height: calc(100vh - 65px);
   position: relative;
-  background: url("/resources/images/common/intro_img0.jpg") no-repeat;
+  background: url("/static/resources/images/common/intro_img0.jpg") no-repeat;
   background-size: cover;
   background-position: top center;
 }
@@ -9981,7 +9983,7 @@ input[type="radio"].type_btn_radio + label {
 .service_requset_wrap .req_wrap.type2 {
   height: calc(100vh - 255px);
   position: relative;
-  background: url("/resources/images/common/intro_img1.jpg") no-repeat;
+  background: url("/static/resources/images/common/intro_img1.jpg") no-repeat;
   background-size: cover;
   background-position: top center;
 }
@@ -10186,7 +10188,7 @@ input[type="radio"].type_btn_radio + label {
   padding-bottom: 10px;
   margin-top: 13px;
   margin-right: 25px;
-  background: url("/resources/images/common/point_bg.jpg");
+  background: url("/static/resources/images/common/point_bg.jpg");
   background-size: 100% 100%;
   color: #fff;
   text-align: center;
@@ -10246,7 +10248,7 @@ input[type="radio"].type_btn_radio + label {
   float: left;
   width: 25%;
   padding: 16px 0 14px;
-  background: url("/resources/images/common/dot_line.png") no-repeat left center;
+  background: url("/static/resources/images/common/dot_line.png") no-repeat left center;
   background-size: 1px;
 }
 
@@ -10526,7 +10528,7 @@ input[type="radio"].type_btn_radio + label {
 }
 
 .payment_view .prd_price {
-  background: url("/resources/images/common/dot_line_hor.png") repeat-x left top;
+  background: url("/static/resources/images/common/dot_line_hor.png") repeat-x left top;
   background-size: 4px;
 }
 
@@ -10550,7 +10552,7 @@ input[type="radio"].type_btn_radio + label {
 }
 
 .payment_view .cancel_reason {
-  background: url("/resources/images/common/dot_line_hor.png") repeat-x left top;
+  background: url("/static/resources/images/common/dot_line_hor.png") repeat-x left top;
   background-size: 4px;
   padding-top: 15px;
   margin-bottom: 40px;
@@ -10597,7 +10599,7 @@ input[type="radio"].type_btn_radio + label {
 
 .payment_view_detail .prd_detail .prd_detail1 {
   padding-bottom: 20px;
-  background: url("/resources/images/common/dot_line_hor.png") repeat-x left bottom;
+  background: url("/static/resources/images/common/dot_line_hor.png") repeat-x left bottom;
   background-size: 4px;
 }
 
@@ -10675,7 +10677,7 @@ input[type="radio"].type_btn_radio + label {
 }
 
 .payment_list li {
-  background: url("/resources/images/common/dot_line_hor.png") repeat-x left bottom;
+  background: url("/static/resources/images/common/dot_line_hor.png") repeat-x left bottom;
   background-size: 4px;
   padding: 25px 25px 20px 0;
 }
@@ -10702,7 +10704,7 @@ input[type="radio"].type_btn_radio + label {
 
 .reserv_list_type li {
   padding: 20px 25px 20px 0;
-  background: url("/resources/images/common/dot_line_hor.png") repeat-x left bottom;
+  background: url("/static/resources/images/common/dot_line_hor.png") repeat-x left bottom;
   background-size: 4px;
 }
 

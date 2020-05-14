@@ -4,13 +4,13 @@
     
     
     
-    .prd_price { background:url('/resources/images/common/dot_line_hor.png') repeat-x left top; background-size:4px;
+    .prd_price { background:url('/static/resources/images/common/dot_line_hor.png') repeat-x left top; background-size:4px;
         li {padding-top:15px; position: relative;
             .tit {font-size:15px; position: absolute; left:0; top:15px;}
             .price {font-weight: 700;font-size:15px; text-align: right; padding-right:25px;}
         }
     }
-    .cancel_reason{ background:url('/resources/images/common/dot_line_hor.png') repeat-x left top; background-size:4px; padding-top:15px; margin-bottom:40px;
+    .cancel_reason{ background:url('/static/resources/images/common/dot_line_hor.png') repeat-x left top; background-size:4px; padding-top:15px; margin-bottom:40px;
         li {margin-bottom:15px; position: relative; padding-left:85px; padding-right:25px;
             .tit {font-weight: 700;font-size:15px; position: absolute; left:0; top:0px;}
             .txt {font-size:15px; line-height: 22px; }
@@ -23,7 +23,7 @@
         img {width:100%; }
     }
     .prd_detail {
-        .prd_detail1 { padding-bottom:20px; background:url('/resources/images/common/dot_line_hor.png') repeat-x left bottom; background-size:4px;
+        .prd_detail1 { padding-bottom:20px; background:url('/static/resources/images/common/dot_line_hor.png') repeat-x left bottom; background-size:4px;
             &.no_border { background:none; padding-bottom:0;}
             .name {font-weight: 700; font-size:15px;}
             .title { position: relative; margin-top:5px;
@@ -42,7 +42,7 @@
     }
 }
 .payment_list { margin-top:5px;
-    li {background:url('/resources/images/common/dot_line_hor.png') repeat-x left bottom; background-size:4px; 
+    li {background:url('/static/resources/images/common/dot_line_hor.png') repeat-x left bottom; background-size:4px; 
         padding:25px 25px 20px 0}
     a {display:block; padding-right:0px;}
     .payment_view_detail {background: none;
@@ -57,7 +57,7 @@
 
 
 .reserv_list_type {
-    li {padding:20px 25px 20px 0; background:url('/resources/images/common/dot_line_hor.png') repeat-x left bottom; background-size:4px; 
+    li {padding:20px 25px 20px 0; background:url('/static/resources/images/common/dot_line_hor.png') repeat-x left bottom; background-size:4px; 
         &.no_data_list {background:none;}
         .btn_arrow_type {display:block; position: relative;}
         .stat { padding:2px 8px; min-width: 65px; text-align: center; display:inline-block; box-sizing: border-box; font-size:13px;

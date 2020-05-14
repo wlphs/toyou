@@ -62,13 +62,13 @@
                 &:after {content:''; position: absolute; left:0; top:50%; margin-top:-9px; width:15px; height:18px; }
             }
         }
-        .btn_ios span:after {background: url('/resources/images/intro/logo_ios_sm.png');}
-        .btn_android span:after {background: url('/resources/images/intro/logo_android_sm.png');}
+        .btn_ios span:after {background: url('/static/resources/images/intro/logo_ios_sm.png');}
+        .btn_android span:after {background: url('/static/resources/images/intro/logo_android_sm.png');}
     }
     */
 }
 
-.toyou_wrap {background:url('/resources/images/intro/pc_bg.jpg'); background-size:100%;
+.toyou_wrap {background:url('/static/resources/images/intro/pc_bg.jpg'); background-size:100%;
     transition: 1s cubic-bezier(0.3, 0, 0.3, 1); background-repeat: no-repeat;
 }
 
@@ -97,10 +97,10 @@
         .alert { display:none; 
             img {display:inline-block; margin-top:-20px; @include shadow(5px, 5px, 20px, 0.05);  }
         }
-        .btn_ios span:before {background: url('/resources/images/intro/logo_ios.png');}
-        .btn_android span:before {background: url('/resources/images/intro/logo_android.png');}
-        .btn_ios span:after {background: url('/resources/images/intro/logo_ios_over.png');}
-        .btn_android span:after {background: url('/resources/images/intro/logo_android_over.png');}
+        .btn_ios span:before {background: url('/static/resources/images/intro/logo_ios.png');}
+        .btn_android span:before {background: url('/static/resources/images/intro/logo_android.png');}
+        .btn_ios span:after {background: url('/static/resources/images/intro/logo_ios_over.png');}
+        .btn_android span:after {background: url('/static/resources/images/intro/logo_android_over.png');}
     }
     .descript.pos_md {position: absolute; top:50%;}
 }
@@ -192,8 +192,8 @@
 .rel {position: relative;}
 .toyou_page4 {
     .sm_inner {min-height: 900px;}
-    .video_wrap { height:480px; width:820px; margin:50px auto 0; background:url('/resources/images/intro/pc_video_poster_bg.jpg') no-repeat right bottom; 
-        .video_play {position: absolute; top:50%; margin-top:-45px; left:50%; margin-left:-45px; display:block; width:91px; height:91px; background: url('/resources/images/intro/btn_video_start.png');
+    .video_wrap { height:480px; width:820px; margin:50px auto 0; background:url('/static/resources/images/intro/pc_video_poster_bg.jpg') no-repeat right bottom; 
+        .video_play {position: absolute; top:50%; margin-top:-45px; left:50%; margin-left:-45px; display:block; width:91px; height:91px; background: url('/static/resources/images/intro/btn_video_start.png');
             &.on { background-position-x: -91px;}
         }
     }
@@ -228,8 +228,8 @@
 }
 
 .fixed_btns{ position:fixed; right:40px; bottom:100px; height:177px;
-    .chat {width:80px; height:80px; display:block; background:url('/resources/images/intro/exp_ic_chat.png');}
-    .top {width:80px; height:80px; display:block; background:url('/resources/images/intro/exp_ic_top.png');  margin-top:17px;}
+    .chat {width:80px; height:80px; display:block; background:url('/static/resources/images/intro/exp_ic_chat.png');}
+    .top {width:80px; height:80px; display:block; background:url('/static/resources/images/intro/exp_ic_top.png');  margin-top:17px;}
 }
 
 

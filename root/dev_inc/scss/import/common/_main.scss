@@ -69,9 +69,9 @@
     .key_list { display:block; margin: 0 15px 0 5px;
         li { float:left; width: 33.333333%;
             a { display:block; font-weight: 500; text-align:center; padding-top: 48px;
-                &.beauty { background:url('/resources/images/common/icon_beauty.png') no-repeat center top; background-size: 33px 35px;}
-                &.healing { background:url('/resources/images/common/icon_healing.png') no-repeat center top; background-size: 41px 41px;}
-                &.homept { background:url('/resources/images/common/icon_homept.png') no-repeat center top; background-size: 46px 36px;}
+                &.beauty { background:url('/static/resources/images/common/icon_beauty.png') no-repeat center top; background-size: 33px 35px;}
+                &.healing { background:url('/static/resources/images/common/icon_healing.png') no-repeat center top; background-size: 41px 41px;}
+                &.homept { background:url('/static/resources/images/common/icon_homept.png') no-repeat center top; background-size: 46px 36px;}
             }
         }
     }
@@ -218,14 +218,14 @@
 
 
 
-.introWrap { width:100%; height:100vh; position: relative; background:url('/resources/images/common/splash_bg.jpg') no-repeat; background-size:cover; background-position:center bottom; 
+.introWrap { width:100%; height:100vh; position: relative; background:url('/static/resources/images/common/splash_bg.jpg') no-repeat; background-size:cover; background-position:center bottom; 
     .intro_bg_container {height:calc(100vh - 55px);position: absolute; top:0; left:0; width:100%; }
     .bgWrap {  
         li {width:100%; height:calc(100vh - 55px); height:100%;
-            &.bg0 {background:url('/resources/images/common/splash_bg00.png') no-repeat; background-size:cover; background-position:center bottom;}
-            &.bg1 {background:url('/resources/images/common/splash_bg01.png') no-repeat; background-size:cover; background-position:center bottom; }
-            &.bg2 {background:url('/resources/images/common/splash_bg02.png') no-repeat; background-size:cover; background-position:center bottom; }
-            &.bg3 {background:url('/resources/images/common/splash_bg03.png') no-repeat; background-size:cover; background-position:center bottom; }
+            &.bg0 {background:url('/static/resources/images/common/splash_bg00.png') no-repeat; background-size:cover; background-position:center bottom;}
+            &.bg1 {background:url('/static/resources/images/common/splash_bg01.png') no-repeat; background-size:cover; background-position:center bottom; }
+            &.bg2 {background:url('/static/resources/images/common/splash_bg02.png') no-repeat; background-size:cover; background-position:center bottom; }
+            &.bg3 {background:url('/static/resources/images/common/splash_bg03.png') no-repeat; background-size:cover; background-position:center bottom; }
         }
     }
     .slider li { height:100vh; 
@@ -286,7 +286,7 @@
             }
         }
     }
-    .covid_alert { color:$colorP; font-size:15px; margin-top:20px; padding-top:20px; background: url('/resources/images/common/dot_line_hor.png') repeat-x top left; background-size:4px 1px;}
+    .covid_alert { color:$colorP; font-size:15px; margin-top:20px; padding-top:20px; background: url('/static/resources/images/common/dot_line_hor.png') repeat-x top left; background-size:4px 1px;}
     
     .corona_bottom_btn { height:85px;
         > div {position: absolute; bottom:0; left:0; width:100%;}

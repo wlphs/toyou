@@ -40,15 +40,15 @@
                 &:after {content:''; position: absolute; left:0; top:50%; margin-top:-9px; width:15px; height:18px; }
             }
         }
-        .btn_ios span:after {background: url('/resources/images/intro/logo_ios_sm.png');}
-        .btn_android span:after {background: url('/resources/images/intro/logo_android_sm.png');}
+        .btn_ios span:after {background: url('/static/resources/images/intro/logo_ios_sm.png');}
+        .btn_android span:after {background: url('/static/resources/images/intro/logo_android_sm.png');}
     }
 }
 
 .alert { display:none; position: absolute; top:35px; left:50%; margin-left:-88px; z-index: 1;
     img {display:inline-block; @include shadow(5px, 5px, 20px, 0.05); width:177px; }
 }
-.toyou_wrap {background:url('/resources/images/intro/pc_bg.jpg'); background-size:100%;
+.toyou_wrap {background:url('/static/resources/images/intro/pc_bg.jpg'); background-size:100%;
     transition: 1s cubic-bezier(0.3, 0, 0.3, 1); background-repeat: no-repeat;
 }
 
@@ -68,8 +68,8 @@
                 &:after {content:''; position: absolute; left:0; top:50%; margin-top:-9px; width:15px; height:18px; }
             }
         }
-        .btn_ios span:after {background: url('/resources/images/intro/logo_ios_sm.png');}
-        .btn_android span:after {background: url('/resources/images/intro/logo_android_sm.png');}
+        .btn_ios span:after {background: url('/static/resources/images/intro/logo_ios_sm.png');}
+        .btn_android span:after {background: url('/static/resources/images/intro/logo_android_sm.png');}
         /*
         .btn_round { height:60px; transition: .2s all; border-radius: 30px; text-align: center; width:270px; background:#fff; display:block; float:left; @include shadow(5px, 5px, 20px, 0.05); 
             &:first-child {margin-right:10px}
@@ -85,10 +85,10 @@
                 }
             }
         }
-        .btn_ios span:before {background: url('/resources/images/intro/logo_ios.png');}
-        .btn_android span:before {background: url('/resources/images/intro/logo_android.png');}
-        .btn_ios span:after {background: url('/resources/images/intro/logo_ios_over.png');}
-        .btn_android span:after {background: url('/resources/images/intro/logo_android_over.png');}*/
+        .btn_ios span:before {background: url('/static/resources/images/intro/logo_ios.png');}
+        .btn_android span:before {background: url('/static/resources/images/intro/logo_android.png');}
+        .btn_ios span:after {background: url('/static/resources/images/intro/logo_ios_over.png');}
+        .btn_android span:after {background: url('/static/resources/images/intro/logo_android_over.png');}*/
     }
     .descript.pos_md {position: absolute; top:50%;}
 }
@@ -202,9 +202,9 @@
     .descript {
         position: absolute; top:0; width:100%; margin-top:120px;
     }
-    .video_wrap { width:100%; background:url('/resources/images/intro/pc_video_poster_bg.jpg') no-repeat right bottom; padding-bottom:15px;
+    .video_wrap { width:100%; background:url('/static/resources/images/intro/pc_video_poster_bg.jpg') no-repeat right bottom; padding-bottom:15px;
         video {width:100%;}
-        .video_play {position: absolute; top:50%; margin-top:-23px; left:50%; margin-left:-23px; display:block; width:46px; height:46px; background: url('/resources/images/intro/btn_video_start.png'); background-size:92px;
+        .video_play {position: absolute; top:50%; margin-top:-23px; left:50%; margin-left:-23px; display:block; width:46px; height:46px; background: url('/static/resources/images/intro/btn_video_start.png'); background-size:92px;
             &.on { background-position-x: -46px;}
         }
     }
@@ -259,8 +259,8 @@
 
 
 .fixed_btns{ position:fixed; right:20px; bottom:20px; height:90px;
-    .chat {width:40px; height:40px; display:block; background:url('/resources/images/intro/exp_ic_chat.png'); background-size:40px;}
-    .top {width:40px; height:40px; display:block; background:url('/resources/images/intro/exp_ic_top.png'); background-size:40px; margin-top:10px }
+    .chat {width:40px; height:40px; display:block; background:url('/static/resources/images/intro/exp_ic_chat.png'); background-size:40px;}
+    .top {width:40px; height:40px; display:block; background:url('/static/resources/images/intro/exp_ic_top.png'); background-size:40px; margin-top:10px }
 }
 
 

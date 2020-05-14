@@ -105,7 +105,7 @@ section {width:100%; overflow:hidden; position: relative;}
 .p4 { position: relative;
     .p_inner{ padding-top:60px; padding-bottom:95px;}
 }
-.p34_bg {background:url('/resources/images/intro/exp_mb_img4.jpg') ; background-size:100% 100%; }
+.p34_bg {background:url('/static/resources/images/intro/exp_mb_img4.jpg') ; background-size:100% 100%; }
 
 .p5 {background:#f7f7f7; height:840px;
     .p_inner {text-align: center; padding-top:55px;
@@ -117,7 +117,7 @@ section {width:100%; overflow:hidden; position: relative;}
     .p_inner {padding-top:60px; padding-bottom:60px; }
 }
 .p7 {
-    .p_inner {background:url('/resources/images/intro/exp_pc_img3.jpg') ; background-size:100% 100%; text-align: center; padding-top:50px; padding-bottom:65px;
+    .p_inner {background:url('/static/resources/images/intro/exp_pc_img3.jpg') ; background-size:100% 100%; text-align: center; padding-top:50px; padding-bottom:65px;
 
         .btn {@include shadow(5px, 5px, 20px, 0.05); width:190px; color:#ff5c63;}
     }
@@ -136,7 +136,7 @@ p {word-break: keep-all;}
     li { padding: 20px 20px 20px 60px  ; position: relative;
         .ic {position: absolute; width:35px; height:30px; left:0;}
         &:first-child:after {display:none;}
-        &:after {content:''; position: absolute; top:0px; left:50%; margin-left:-11px; margin-top:-3px; width:22px; height:11px; display:block; background:url('/resources/images/intro/mb_arrow.png'); background-size: 22px 11px;}
+        &:after {content:''; position: absolute; top:0px; left:50%; margin-left:-11px; margin-top:-3px; width:22px; height:11px; display:block; background:url('/static/resources/images/intro/mb_arrow.png'); background-size: 22px 11px;}
     }
 }
 
@@ -149,7 +149,7 @@ p {word-break: keep-all;}
     }
     dd{ font-size:13px; font-weight: 400; width:95px; text-align: center; padding-top:70px; position: relative; float:left;
         &:first-child {margin-left:0;}
-        &:after {content:'';background:url('/resources/images/intro/sp_category.png') no-repeat; background-size:250px 185px; position: absolute; left:20px; top:0; width:55px; height:55px; display:block;}
+        &:after {content:'';background:url('/static/resources/images/intro/sp_category.png') no-repeat; background-size:250px 185px; position: absolute; left:20px; top:0; width:55px; height:55px; display:block;}
         &.ic_serv0:after{ background-position:-65px 0;}
         &.ic_serv1:after{ background-position:-130px -65px;}
         &.ic_serv2:after{ background-position:0px -65px;}
@@ -176,8 +176,8 @@ p {word-break: keep-all;}
             &:after {content:''; position: absolute; left:0; top:50%; margin-top:-9px; width:15px; height:18px; }
         }
     }
-    .btn_ios span:after {background: url('/resources/images/intro/logo_ios_sm.png');}
-    .btn_android span:after {background: url('/resources/images/intro/logo_android_sm.png');}
+    .btn_ios span:after {background: url('/static/resources/images/intro/logo_ios_sm.png');}
+    .btn_android span:after {background: url('/static/resources/images/intro/logo_android_sm.png');}
 
 
     .alert { display:none; position: absolute; top:35px; left:50%; margin-left:-88px; z-index: 1;
@@ -208,6 +208,6 @@ p {word-break: keep-all;}
 
 
 .fixed_btns{ position:fixed; right:20px; bottom:20px;
-    .chat {width:40px; height:40px; display:block; background:url('/resources/images/intro/exp_ic_chat.png'); background-size:40px; }
-    .top {width:40px; height:40px; display:block; background:url('/resources/images/intro/exp_ic_top.png'); background-size:40px; margin-top:10px}
+    .chat {width:40px; height:40px; display:block; background:url('/static/resources/images/intro/exp_ic_chat.png'); background-size:40px; }
+    .top {width:40px; height:40px; display:block; background:url('/static/resources/images/intro/exp_ic_top.png'); background-size:40px; margin-top:10px}
 }
