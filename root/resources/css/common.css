@@ -8609,6 +8609,17 @@ input[type="radio"].type_btn_radio + label {
   overflow-y: hidden;
   white-space: nowrap;
   -webkit-overflow-scrolling: touch;
+  padding-bottom: 5px;
+}
+
+.list_category_main:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 5px;
+  width: 100%;
+  background: #f5f5f5;
 }
 
 .list_category_main ul {
@@ -8620,7 +8631,6 @@ input[type="radio"].type_btn_radio + label {
 .list_category_main ul li {
   position: relative;
   width: auto;
-  border-bottom: 5px solid #f5f5f5;
 }
 
 .list_category_main ul li:first-child {
@@ -8657,6 +8667,10 @@ input[type="radio"].type_btn_radio + label {
   right: 0px;
   height: 5px;
   background: #ff5c5c;
+}
+
+.list_category_main + .slider_wrap .swiper-slide {
+  min-height: calc(100vh - 103px);
 }
 
 .list_category_sub {
