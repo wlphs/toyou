@@ -62,7 +62,7 @@
                                 <div class="reserv_item_info">
                                     <p class="name">이너뷰티</p>
                                     <p class="title js-ellipsis_end">
-                                        <span class="tit">[스킨&바디케어] 매끈한 얼굴 매끈한 얼굴매끈한 얼굴</span>
+                                        <span class="tit">[스킨] 매끈한 얼굴</span>
                                         <span class="etc">외 1건</span>
                                     </p>
                                     <p class="date">2019-11-16(목) / 오후 02:30~03:30 (1시간)</p>
@@ -77,7 +77,7 @@
                                 <div class="reserv_item_info">
                                     <p class="name">이너뷰티</p>
                                     <p class="title js-ellipsis_end">
-                                        <span class="tit">[스킨&바디케어] 매끈한 얼굴 매끈한 얼굴매끈한 얼굴</span>
+                                        <span class="tit">[스킨&바디케어] 매끈한 얼굴 매끈한 얼굴</span>
                                         <span class="etc">외 1건</span>
                                     </p>
                                     <p class="date">2019-11-16(목) / 오후 02:30~03:30 (1시간)</p>
@@ -177,17 +177,28 @@
   -->
         <a href="#none" class="top_scroll">위로 이동</a>
     </div>
-
     <script>
+        // 200519 수정 s 
         $(window).on('load', function() {
             $('.js-ellipsis_end').each(function() {
                 var etc_w = $('.etc', $(this)).innerWidth();
-                $(this).css({
-                    "padding-right": etc_w
-                })
+                $('.tit', $(this)).css('display', 'inline-block');
+                if ($('.tit', $(this)).innerWidth() < $(this).width() - etc_w) {
+                    $('.etc', $(this)).css({
+                        'position': 'relative',
+                        'top': 'auto',
+                        'right': 'auto',
+                        'vertical-align': 'top'
+                    });
+                } else {
+                    $('.tit', $(this)).css('display', '');
+                    $(this).css({
+                        "padding-right": etc_w
+                    })
+                }
             })
-
         })
+        // 200519 수정 e 
     </script>
 </body>
 
