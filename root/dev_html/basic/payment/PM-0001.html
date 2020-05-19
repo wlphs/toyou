@@ -86,13 +86,21 @@
 		@@include('../../include/_toolbar.html')
 	</div>
     <script>
+        // 200519 수정 s 
         $(window).on('load', function() {
             $('.js-ellipsis_end').each(function() {
                 var etc_w = $('.etc', $(this)).innerWidth();
-                $(this).css({"padding-right":etc_w})
+                $('.tit', $(this)).css('display', 'inline-block');
+                if ($('.tit', $(this)).innerWidth() < $(this).width()-etc_w) {
+                    $('.etc', $(this)).css({'position': 'relative', 'top':'auto', 'right':'auto' ,'vertical-align':'top'});
+                }
+                else {
+                    $('.tit', $(this)).css('display', '');
+                    $(this).css({"padding-right":etc_w})
+                }
             })
-            
         })
+        // 200519 수정 e 
     
     </script>
 </body>
