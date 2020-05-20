@@ -356,8 +356,8 @@ __CONSTANT_LIST = [
         dep2 		: '상세',
         dep3 		: '소개',
         url 		: '/html/basic/service/SV-0001.html',
-        pubUpdate 	: '2020-0000',
-        etc 		: '2019-1117',
+        pubUpdate 	: '2020-0519',
+        etc 		: 'class 변경',
     },
 	{
         stateLine   : "corona", 
@@ -365,8 +365,8 @@ __CONSTANT_LIST = [
         dep2 		: '상세',
         dep3 		: '소개',
         url 		: '/html/basic/service/SV-0001_corona.html',
-        pubUpdate 	: '2020-0421',
-        etc 		: 'corona',
+        pubUpdate 	: '2020-0519',
+        etc 		: 'corona class 변경',
     },
 	{
         stateLine   : "", 
@@ -592,7 +592,7 @@ __CONSTANT_LIST = [
         dep2 		: '예약내역',
         dep3 		: '진행중',
         url 		: '/html/basic/mypage/MY-0006.html',
-        pubUpdate 	: '2019-0000',
+        pubUpdate 	: '2020-0519',
         etc 		: '2019-1120',
     },
 	{
@@ -601,7 +601,7 @@ __CONSTANT_LIST = [
         dep2 		: '',
         dep3 		: '완료',
         url 		: '/html/basic/mypage/MY-0007.html',
-        pubUpdate 	: '2019-0000',
+        pubUpdate 	: '2020-0519',
         etc 		: '2019-1120',
     },
 	{
@@ -610,7 +610,7 @@ __CONSTANT_LIST = [
         dep2 		: '',
         dep3 		: '미진행/취소',
         url 		: '/html/basic/mypage/MY-0008.html',
-        pubUpdate 	: '2019-0000',
+        pubUpdate 	: '2020-0519',
         etc 		: '2019-1120',
     },
 	{
@@ -619,7 +619,7 @@ __CONSTANT_LIST = [
         dep2 		: '',
         dep3 		: '리스트없음',
         url 		: '/html/basic/mypage/MY-0009.html',
-        pubUpdate 	: '2019-0000',
+        pubUpdate 	: '2020-0519',
         etc 		: '2019-1120',
     },
 	{
@@ -628,7 +628,7 @@ __CONSTANT_LIST = [
         dep2 		: '',
         dep3 		: '예약내역 상세',
         url 		: '/html/basic/mypage/MY-0010.html',
-        pubUpdate 	: '2019-0000',
+        pubUpdate 	: '2020-0519',
         etc 		: '2019-1120',
     },
 	{
@@ -638,7 +638,7 @@ __CONSTANT_LIST = [
         dep3 		: '',
         dep4 		: '예약확정',
         url 		: '/html/basic/mypage/MY-0011.html',
-        pubUpdate 	: '2019-0000',
+        pubUpdate 	: '2020-0519',
         etc 		: '2019-1120',
     },
 	{
@@ -648,7 +648,7 @@ __CONSTANT_LIST = [
         dep3 		: '',
         dep4 		: '취소된 서비스',
         url 		: '/html/basic/mypage/MY-0012.html',
-        pubUpdate 	: '2019-0000',
+        pubUpdate 	: '2020-0519',
         etc 		: '2019-1120',
     },
     {
@@ -658,7 +658,7 @@ __CONSTANT_LIST = [
         dep3 		: '',
         dep4 		: '예약미진행',
         url 		: '/html/basic/mypage/MY-0013.html',
-        pubUpdate 	: '2019-0000',
+        pubUpdate 	: '2020-0519',
         etc 		: '2019-1120',
     },
     {
@@ -668,7 +668,7 @@ __CONSTANT_LIST = [
         dep3 		: '',
         dep4 		: '1일전',
         url 		: '/html/basic/mypage/MY-0014.html',
-        pubUpdate 	: '2020-0000',
+        pubUpdate 	: '2020-0519',
         etc 		: '2019-1120',
     },
     {
@@ -678,7 +678,7 @@ __CONSTANT_LIST = [
         dep3 		: '',
         dep4 		: '1일전',
         url 		: '/html/basic/mypage/MY-0014_corona.html',
-        pubUpdate 	: '2020-0421',
+        pubUpdate 	: '2020-0519',
         etc 		: 'corona',
     },
     {
@@ -688,7 +688,7 @@ __CONSTANT_LIST = [
         dep3 		: '',
         dep4 		: '이동중',
         url 		: '/html/basic/mypage/MY-0015.html',
-        pubUpdate 	: '2019-0000',
+        pubUpdate 	: '2020-0519',
         etc 		: '2019-1120',
     },
     {
@@ -698,7 +698,7 @@ __CONSTANT_LIST = [
         dep3 		: '',
         dep4 		: '서비스 시작',
         url 		: '/html/basic/mypage/MY-0016.html',
-        pubUpdate 	: '2019-0000',
+        pubUpdate 	: '2020-0519',
         etc 		: '2019-1120',
     },
     {
@@ -708,7 +708,7 @@ __CONSTANT_LIST = [
         dep3 		: '',
         dep4 		: '서비스중',
         url 		: '/html/basic/mypage/MY-0017.html',
-        pubUpdate 	: '2019-0000',
+        pubUpdate 	: '2020-0519',
         etc 		: '2019-1120',
     },
     {
@@ -718,7 +718,7 @@ __CONSTANT_LIST = [
         dep3 		: '',
         dep4 		: '서비스종료',
         url 		: '/html/basic/mypage/MY-0018.html',
-        pubUpdate 	: '2019-0000',
+        pubUpdate 	: '2020-0519',
         etc 		: '2019-1120',
     },
 	{
@@ -768,7 +768,7 @@ __CONSTANT_LIST = [
         dep2 		: '결제내역',
         dep3 		: '리스트',
         url 		: '/html/basic/payment/PM-0000.html',
-        pubUpdate 	: '2019-0000',
+        pubUpdate 	: '2020-0519',
         etc 		: '2019-1120',
     },
 	{
@@ -777,7 +777,7 @@ __CONSTANT_LIST = [
         dep2 		: '',
         dep3 		: '결제',
         url 		: '/html/basic/payment/PM-0001.html',
-        pubUpdate 	: '2019-0000',
+        pubUpdate 	: '2020-0519',
         etc 		: '2019-1120',
     },
 	{
@@ -949,7 +949,7 @@ __CONSTANT_LIST = [
         dep2 		: '예약하기',
         dep3 		: '진행중',
         url 		: '/html/expert/mypage/MY-0006.html',
-        pubUpdate 	: '2019-0000',
+        pubUpdate 	: '2020-0519',
         etc 		: '2019-1124',
     },
 	{
@@ -958,7 +958,7 @@ __CONSTANT_LIST = [
         dep2 		: '',
         dep3 		: '완료',
         url 		: '/html/expert/mypage/MY-0007.html',
-        pubUpdate 	: '2019-0000',
+        pubUpdate 	: '2020-0519',
         etc 		: '2019-1124',
     },
 	{
@@ -967,7 +967,7 @@ __CONSTANT_LIST = [
         dep2 		: '',
         dep3 		: '미진행/취소',
         url 		: '/html/expert/mypage/MY-0008.html',
-        pubUpdate 	: '2019-0000',
+        pubUpdate 	: '2020-0519',
         etc 		: '2019-1124',
     },
 	{
@@ -976,7 +976,7 @@ __CONSTANT_LIST = [
         dep2 		: '',
         dep3 		: '데이터 없음',
         url 		: '/html/expert/mypage/MY-0009.html',
-        pubUpdate 	: '2020-0000',
+        pubUpdate 	: '2020-0519',
         etc 		: '2019-1124',
     },
 	{
@@ -985,7 +985,7 @@ __CONSTANT_LIST = [
         dep2 		: '',
         dep3 		: '데이터 없음',
         url 		: '/html/expert/mypage/MY-0009_corona.html',
-        pubUpdate 	: '2020-0410',
+        pubUpdate 	: '2020-0519',
         etc 		: 'corona',
     },
 	{
@@ -1005,7 +1005,7 @@ __CONSTANT_LIST = [
         dep3 		: '미진행/예정확정/GPS',
         dep4 		: '',
         url 		: '/html/expert/mypage/E_MY-0010.html',
-        pubUpdate 	: '2019-0000',
+        pubUpdate 	: '2020-0519',
         etc 		: '2019-1124',
     },
 	{
@@ -1015,7 +1015,7 @@ __CONSTANT_LIST = [
         dep3 		: '미진행/예정확정/GPS',
         dep4 		: '',
         url 		: '/html/expert/mypage/E_MY-0010_corona.html',
-        pubUpdate 	: '2020-0421',
+        pubUpdate 	: '2020-0519',
         etc 		: 'corona',
     },
 	{
@@ -1025,7 +1025,7 @@ __CONSTANT_LIST = [
         dep3 		: '예약확정',
         dep4 		: '',
         url 		: '/html/expert/mypage/E_MY-0011.html',
-        pubUpdate 	: '2019-0000',
+        pubUpdate 	: '2020-0519',
         etc 		: '2019-1124',
     },
 	{
@@ -1035,7 +1035,7 @@ __CONSTANT_LIST = [
         dep3 		: '예약 미진행',
         dep4 		: '',
         url 		: '/html/expert/mypage/E_MY-0012.html',
-        pubUpdate 	: '2019-0000',
+        pubUpdate 	: '2020-0519',
         etc 		: '2019-1124',
     },
 	{
@@ -1045,7 +1045,7 @@ __CONSTANT_LIST = [
         dep3 		: '1일전',
         dep4 		: '',
         url 		: '/html/expert/mypage/E_MY-0013.html',
-        pubUpdate 	: '2019-0000',
+        pubUpdate 	: '2020-0519',
         etc 		: '2019-1124',
     },
 	{
@@ -1055,7 +1055,7 @@ __CONSTANT_LIST = [
         dep3 		: '1일전',
         dep4 		: '',
         url 		: '/html/expert/mypage/E_MY-0013_corona.html',
-        pubUpdate 	: '2020-0421',
+        pubUpdate 	: '2020-0519',
         etc 		: 'corona',
     },
 	{
@@ -1065,7 +1065,7 @@ __CONSTANT_LIST = [
         dep3 		: '서비스장소 이동',
         dep4 		: '',
         url 		: '/html/expert/mypage/E_MY-0014.html',
-        pubUpdate 	: '2019-0000',
+        pubUpdate 	: '2020-0519',
         etc 		: '2019-1124',
     },
 	{
@@ -1075,7 +1075,7 @@ __CONSTANT_LIST = [
         dep3 		: '서비스장소 도착',
         dep4 		: '',
         url 		: '/html/expert/mypage/E_MY-0015.html',
-        pubUpdate 	: '2019-0000',
+        pubUpdate 	: '2020-0519',
         etc 		: '2019-1124',
     },
 	{
@@ -1085,7 +1085,7 @@ __CONSTANT_LIST = [
         dep3 		: '서비스완료/리뷰',
         dep4 		: '',
         url 		: '/html/expert/mypage/E_MY-0016.html',
-        pubUpdate 	: '2019-0000',
+        pubUpdate 	: '2020-0519',
         etc 		: '2019-1124',
     },
 	{
@@ -1431,7 +1431,7 @@ __CONSTANT_LIST = [
         dep3 		: '리스트',
         dep4 		: '',
         url 		: '/html/expert/payment/PM-1000.html',
-        pubUpdate 	: '2019-0000',
+        pubUpdate 	: '2020-0519',
         etc 		: '2019-1127',
     },
 	{
@@ -1441,7 +1441,7 @@ __CONSTANT_LIST = [
         dep3 		: '결제',
         dep4 		: '',
         url 		: '/html/expert/payment/PM-1001.html',
-        pubUpdate 	: '2019-0000',
+        pubUpdate 	: '2020-0519',
         etc 		: '2019-1127',
     },
 	{
