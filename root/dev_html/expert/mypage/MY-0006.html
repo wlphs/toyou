@@ -161,8 +161,10 @@
 
     <script>
         // 200519 수정 s 
+        $('.js-ellipsis_end .etc').hide();
         $(window).on('load', function() {
             $('.js-ellipsis_end').each(function() {
+                $('.etc', $(this)).show();
                 var etc_w = $('.etc', $(this)).innerWidth();
                 $('.tit', $(this)).css('display', 'inline-block');
                 if ($('.tit', $(this)).innerWidth() < $(this).width()-etc_w) {
